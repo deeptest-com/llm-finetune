@@ -31,4 +31,4 @@ def load_model(llama3_model_path, max_seq_length, dtype, load_in_4bit):
     )
     FastLanguageModel.for_inference(model)  # Enable native 2x faster inference
 
-    return  model, tokenizer
+    return model, tokenizer
