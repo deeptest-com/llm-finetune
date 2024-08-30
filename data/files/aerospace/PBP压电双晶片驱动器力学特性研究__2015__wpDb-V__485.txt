@@ -1,0 +1,302 @@
+PBP压电双晶片驱动器力学特性研究
+为了获得后屈曲预压缩（PBP）驱动器的力学特性,该文通过解析模型、有限元模型及实验验证对其进行了研究,3种结果符合较好。结果表明,PBP驱动器可达到10°的输出转角峰-峰值,3倍于施加同样电压的普通压电双晶片,设计空间增大。其一截频率达到178Hz,远高于普通微小型电动伺服舵机。该文可为PBP舵机驱动器原理样机的研制提供理论基础和实验方法。
+
+后屈曲预压缩(PBP) 压电双晶片 伺服驱动器 增大转角  
+
+PBP压电双晶片驱动器力学特性研究
+胡凯明1,文立华!,李“双
+(1.西北工业大学航天学院,陕西西安710072;2.苏州大学城市轨道交通学院,江苏苏州215131〉
+携“要:为了获得后屈曲预压缩(PBP)驱动器的力学特性,该文通过解析模型、有限元模型及实验验证对其进
+行了研究,3秋结果符合较好。结果表明,PBP驱动器可达到10“的输出转角峰-峰值,3倍于施加同样电压的普通
+压电双晶片,设计空间增大。其一截频率达到178Hz,远高于普通微小型电动伺服舵机。该文可为PBP舵机驱动
+器原理样机的研制提供理论基础和实验方法。
+关 键 词 : 后 屈 曲 预 压 缩 (PBP) ; 压 电 双 晏 片 ; 伺 服 驱 动
+器;增大转角
+中图分类号:V19;TB381文献标识码:A
+0 Introduction
+Due to its advantages of the high bandwidth
+none of these methods increase the electromechani-
+and low power consumption, the piezoelectric ma-
+cal coupling coefficient.
+terial was predicted as the best choice for manufac-
+With this background, Lesieutre G and Davis
+turing the aircraft drivers, with the premise of o-
+C proposed the Low Net Passive Stiffness(LNPS)
+vercoming the defect of small strainsrl1、Recently
+technique, which can increase the electromechani-
+various methods to increase the displacement pro-
+cal coupling coefficient by applying axial compres-
+duced by piezo-drivers were proposed, such as me
+sion force on the bimorph. When the axial com
+chanical accumulation methodra , flexure hinge
+pression force reached the buckling critical load ,
+Received date:2015-05-07
+theoretically the electromechanical coupling coeffi-
+cient of the bimorph could reach 1, while that of
+single piezoelectric patch was only 0. 34. This
+pre-compression method can increase the end rota-
+tion and output torque of bimorph actuators simul-
+taneously. As a result, the design space of the bi-
+morph, that is the available output torque and end
+rotation, was increased greatly comparing with the
+conventional bimorph.
+Based on this finding, a new class of post-
+buckled pre-compressed (PBP) bimorph actuators
+was proposed by Barrett R in 2005!%, Then they
+were used successfully as the servoactuators of mi-
+cro rotor aircraft, small UAV, miniature missiles
+and guided bullet et al'??, The end rotation of
+PBP bimorphs was up to 土 6“, which is more than
+three times comparing with the traditional bi-
+morphs, and without sacrificing the output torque.
+To further improve the output angle, one PBP
+scheme with a connecting rod mechanism was pro-
+posed by Hu in 2014, the simulation results
+showed that the output angle could be up to 30“[91.
+Besides, Hu et al had also studied the cantilever
+PBP actuator[l21 ,which can be directly installed in
+the inside of the rudder, and thus saving the interi-
+or space of UAV significantly.
+But above works just analyze the several forms
+of PBP theoretically, in order to verify the actual
+performance of PBP and fabricate its prototype, in
+this paper, the static and dynamic characteristic
+behaviors of PBP actuators were analyzed theoreti-
+cally and experimentally, through the comparison
+between the obtained solutions ,to validate the ac-
+tual performance of PBP. This work can provide
+experimental methods for the development of PBP
+bimorph actuator prototype.
+1 Analytical Modeling
+1.1 Analytical static model
+A schematic representation of a piezoelectric
+bimorph actuator element is presented in Figure 1.
+It consists of two piezoelectric sheets that are ad-
+hesively bonded to each side of a substrate. The si-
+zes along the 1%, 2?, and 3“ direction are called as
+the width, length, and thickness of the element,
+respectively.
+Figure 1 Structure of piezoelectric bimorph
+For the case with very thin adhesive layers,
+the deformation of transmission loss between adhe-
+sive and the piezoelectric layer can be ignored. So
+the bimorph can be considered as a three-layer
+composite beam. It’s bending stiffness EI can be
+evaluated by
+工一〕I『_=王;二c才:cZ)(一熹-2重筐__一Z[)2壹c′暑一誓〉卉_互骠(1
+Where 5 is the width of bimorph, E. is the elastic
+stiffness along the 1* direction of piezoelectric
+sheet, E, is the elastic stiffness of substrate, ￠. is
+the thickness of piezoelectric sheet and ￠, is the
+thickness of substrate.
+The moment, which is produced by the piezo-
+electric effect with respect to the 1“ axis, can be
+calculated by
+Where A 二 dsi XE; is the strain in the 1* direction
+which is introduced by the electric-field strength
+P in the 3“ direction.
+The curvature in the 1° direction induced by
+the piezoelectric drive moment can be calculated by
+Figure 2 The analytical static model for PBP
+The loads applied to the beam consists of the axial
+force F, and the external torque M,, produced by a
+torsion spring with its torsion stiffness being K,. y
+is the initial shape which is caused by piezoelectric
+effect. The ultimate deformed shape 3 can be eval-
+uated by
+The end rotation can be computed by
+[髻mn(y命五+参-
+When M,, and K, is 0, 3 and 6 is bimorph’s end ro-
+tation under free state,
+Then according to the variation of torsion
+stiffness, the relationship between the end rotation
+and the output torque can be obtained:
+M: 二 8(K:) , 区 。 (6)
+1.2 Analytical dynamic model
+The 1“ natural frequency of the analytical
+model for PBP can be calculated by [8,11].
+Where the shape function is W(x) =C X sin (ry/
+Lx), and the average density is p= (2pct. + puts) /
+(2t. +t).
+2 FEM Model of PBP Actuator
+In order to verify the analytical formulations
+(5) and (7), the PBP’s FEM model was developed
+using ANSYS software. The solid5 coupling field
+element was used for these two layers of piezoelec-
+tric sheets and solid45 was used for the substrate
+layer. The FEM model is shown in Figure 3. The
+width of the model is 10 mm; the length is 50 mm.
+The total thickness is 0. 6 mm with the thickness
+of each layer being 0.2 mm,
+Figure 3 FEM model for the PBP actuator
+The properties of the materials in the FEM
+model are listed in Table 1.
+Table 1 Properties of piezoelectric
+bimorph materials
+Actuator sheet Substrate
+Material type Pzt Carbon fiber
+Relative Dielectric constant eh /&o 4 400
+Pzt charge constant ds; /(pC/N) —500
+Stiffness E/GPa 40 10
+Density p/ (kg/m?) 7 600 1 300
+3 Experimental Setup
+A test bed was built to check the static and
+dynamic performance of the PBP actuator, as
+shown in Figure 4. The PBP actuator was pinned
+between an output shaft and a sliding shaft, allo-
+wing axial loads to be transferred to the PBP ele-
+ment. The axial force was regulated by changing
+the weight.
+To measure end rotation of the output shaft, a
+metal slice was fixed on the output shaft as a re-
+flector. The laser displacement meter (Keyence
+LK-G80) was mounted to measure the displace-
+ment A of the reflector in the x direction. Since the
+peak-to-peak end rotation of the output shaft is
+within 10°, it can be computed approximately by
+where R is the distance between the reflector and
+the axis of the output shaft,
+To get the design space of the PBP actuator,a
+lever rod was fixed on the output shaft, with the
+other end tied to a tension spring as shown in Fig-
+ure 4. The output torque can be calculated by the
+stiffness of the spring, the deflection of the lever
+rod and the length of the lever.
+The data acquisition system is shown in Figure
+5. The system was composed of an industrial con-
+trol computer with Quanser quarc/Simulink hard-
+ware-in-the-loop simulation system, a QPID data
+acquisition card, a power amplifier XMT XE501-
+A600. Al, a laser sensor and the test bed.
+Figure 5 Schematic layout of data acquisition
+4 Results
+4. 1 Static Results
+The QDA60-10-0, 6 bimorph actuators pro-
+duced by Sinocera Piezotronics Inc were used as the
+specimens in our experiments. The size of the
+specimens is 60 mm X 10 mm X 0. 6 mm. The
+length of the piezoelectric layer is 50 mm.
+The end rotations of the actuator with various
+axial forces were measured with ￡90 V, 0.05 Hz
+sinusoidal voltage applied. The results are shown
+in Figure 6. The free peak-to-peak end rotation can
+reach 10. 13° with the axial forces being 20. 3 N,
+which is three times bigger than that produced by
+the bimorph without axial forces. The analytical
+and FEM results are in good conformity, the maxi-
+mum relative error is 1%. This indicates that the
+analytical model can reflect the static characteristic
+of actual PBP actuator accurately. Experimental
+results are slightly larger than the numerical re-
+sults. It may be caused by the inaccurate material
+parameters in the numerical model and the axial
+forces error between numerical model and experi-
+ment.
+Figure 6 Numerical and experimental results of statics
+The design spaces were achieved by illustra-
+ting the end rotation and the output torque with
+different torsion stiffness, as shown in Figure 7.
+The end rotation and output torque can be compu-
+ted by the analytical model or the FEM analysis.
+Then they are measured in the experiments with
+the tension spring being one or two in parallel.
+(5) ,FEM results and the experimental results are
+illustrated in Figure 7. It can be seen that the FEM
+results and the theoretical predictions of the output
+torque and end rotation agree with each other very
+well, with maximum misfit being about 2%. The
+block torque of the PBP actuator is 1. 3 N 。 ￠m,
+slightly higher than the block torque of the original
+bimorph, which is 1 N ￠? em. The maximum end
+rotation reaches 5.1 °, which is magnified 3 times.
+As a result, the design space of bimorph actuator
+is increased more than three times. The divergence
+of the measured output torque and the numerical
+results are relatively high. This may be caused by
+relatively low values of the measured force and the
+nonlinear behavior of the tension spring under very
+low forces. The manufacturing errors of the spring
+and the experimental fixture may also be one of the
+reasons,
+4.2 Dynamic Results
+Exposed to different axial loads, the linear
+sweep frequency tests of the PBP actuator were
+carried out, with the amplitude of supplied sinu-
+soidal voltage being 30 V and the sweep frequen-
+cies ranging from 1 Hz to 500 Hz. The harmonic
+responses of the displacement on the mid-point of
+the PBP actuator are illustrated in Figure 8.
+creases with increasing applied axial force. This is
+expected since the equivalent bending stiffness
+would decrease when an axial force is applied, as
+shown in Eq. (7). The magnification factor de-
+creases, and the damping ratio increases with in-
+creasing applied axial force. From the phase-fre-
+quency curve it can be observed that after the reso-
+nance frequency phase lag reaches —220°,it may be
+caused by the constant time delays in the measure-
+ment loop.
+The 1“ natural frequencies of the PBP actua-
+tors under various axial forces are illustrated in
+Figure 9. It can be seen that the theoretical predic-
+tions computed by Eq. (7) and the FEM results
+are in good correlation, with the maximum error
+being about 1. 5%. When the axial force is less
+than 10 N,the experimental results are lower than
+the numerical results; while when the axial force is
+larger than 10 N, the experimental results are
+higher than the numerical results with the maxi-
+mum error being 18%. This may be caused by the
+inaccuracy of material parameters in numerical
+model. Anyway, in general the experimental re-
+sults conform well to the trend of the numerical re-
+sults. In the case with the axial force being
+20. 3 N, although the 1* natural frequency of the
+PBP actuator drops to 178 Hz, it’s still much
+higher than that of conyentional sub-scale servoac-
+tuators due to the high control bandwidth of the
+PBP piezoelectric actuator.
+The static and dynamic behaviors of PBP actu-
+ators are studied by theoretical analysis, FEM sim-
+ulation and experiments. From the numerical and
+experimental results, the following conclusions can
+be drawn;
+1) The numerical and experimental results
+show that under an axial force, the PBP actuator
+free peak-to-peak end rotation can reach 10. 1° and
+the block output torque can increase slightly.
+Therefore, the design space of PBP actuator can
+increase more than three times of the original pie-
+zoelectric bimorph. The 1* natural frequency can
+reach 178 Hz, which is much higher than the band-
+width of conventional sub-scale servoactuators.
+2) The experimental results coincide well with
+the numerical results, indicating that the test sys-
+tem established in this paper can be used as a test
+platform for the development of PBP bimorph ac-
+tuator prototype.
+《下转第401页》
+Applied Physics Letters,2010,96(7) :1-3.
+[2] SHI Chuang, GAN W 8S. Development of parametric
+loudspeaker[LJ]. IEEE Potentials, 2010, 29 (6): 20-
+24,
+[3]李学生,徐利梅,陈敏,等.微型声频定向换能器阵
+列指向性研究[JJ.压电与声光,2012,34(4):553-
+560.
+LI Xuesheng, XU Limei, CHEN Min, et al. Research
+on the directivity of micro audio directional transducer
+array[ J]. Piezoelectrics 匹 Acoustooptics, 2012, 34
+(4) :553-560.
+[4]“欧达毅,沈勇,安康.优化扬声器阵列的指向性与声功
+率 级 [J]- 应 用 声 学 , 2008,27(2):125-130,
+OU Dayi, SHEN Yong, AN Kang, Optimizing direc-
+tivity and acoustic power level of loudspeaker array
+[J]. Applied Acoustics, 2008, 27(2):125-130.
+[5]林建,马建敏,庄子听.换能器组阵对声场指向性的
+mil].噪声与振动控制,2010,3:55-59.
+LIN Jian, MA Jianmin, ZHUANG Ziting. Influence
+of transducer array on directivity of acoustic fields[ J].
+Noise and Vibration Control, 2010, 3:55-59.
+[6]李婷婷,王炳和,杨亦春.一种新型抛物线型阵列的次
+声聚焦特性[J].声学技术,2009,28:79-82.
+(上接第397页)

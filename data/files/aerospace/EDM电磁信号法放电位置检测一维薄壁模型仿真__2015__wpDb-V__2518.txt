@@ -1,0 +1,230 @@
+EDM电磁信号法放电位置检测一维薄壁模型仿真
+从理论分析入手，阐述了电火花加工 (EDM)中电磁信号法放电位置检测的基本原理。结合电路理论、电磁场理论及传感器的原理，建立了一维放电位置与霍尔效应传感器输出之间的理论关系，并在此基础上进行了数值仿真。
+
+电火花加工 电磁信号法 放电位置 一维薄壁模型  
+
+758 REPRESENTATIONS OF DISCOURSE AND
+OF THE FEMININE IN HOMER’S ODYSSEY
+Various strategies intensify the narrativity of a story. More traditional ones such as fables and epics tend to
+have a more linear chronology and progression action, therefore a more complex narrativity. The more the
+narrative subverts canonical elements of narrative such as time, space and duration, the less narrativity it
+contains. Nonetheless, one should not confuse narrativity with complexity. As a matter of fact, novels with low
+narrativity tend to demonstrate high complexity in style. Let us focus on some of these aspects understanding
+Penelope as the protagonist.
+Adventures in the Megaron
+Penelope definitely plays a fundamental role as a character in Homer’s Odyssey. We can even perceive the
+entire development of the narrative focusing Penelope as the “dramatis persona”. To understand the condition of
+Penelope’s protagonism a parallel will be made with the
+actions executed by her husband, essential figure of the
+epic. Every great deed performed by Odysseus has an equivalent one executed by Penelope. We can say that if
+Penelope is not the “dramatis persona” herself, she at least shares the same level of protagonism of the Greek hero.
+It is true that Penelope’s dislocation is restricted to the Megéron, which in a Proppian perspective would
+already unable the queen to be the protagonist, for she
+must initiate a voyage that would suppose leaving the
+realm of Ithaca, but I will consider the palace as a major
+adventure place, where the mobilization of the character
+requires a full detachment of the concept of the Megaron. A household does not have to be necessarily a space of
+passivity and recollection. We will notice that Penelope becomes restricted to the gynoecium after the suitors take
+over the Herkeios and other major chambers of the palace. Nonetheless, her cunning strategies allow the queen to
+be an active character.
+The focus of this action will be on the shroud mainly, although we do understand that Penelope parallels
+Odysseus protagonism in various episodes. The table that follows compares the events that each character goes
+through, clarifying their equal importance in the epic (see Table 1).
+Table 1
+Odysseus’ attack to the Ciconians makes him lose
+many men and a considerable amount of his war prizes.
+REPRESENTATIONS OF DISCOURSE AND OF THE FEMININE IN HOMER’S ODYSSEY 759
+The suitors drain the king’s property while waiting for Penelope’s decision. The adventures of Odysseus with the
+Lotophagous and Lestrygonians remind us of Penelope’s worries when Telemacus is abroad at Pylos and Sparta.
+Odysseus in courted by Circe and Calypso while Antinous and Eurymachus seem to be the most articulated
+suitors. Odysseus visits the ghosts from the underworld
+facing a “katabasis” and Penelope confronts her internal
+fears dreaming about the massacre of her pet geese. The Sirens’ songs are of grief as well as the songs of the
+singer Phemius in the palace of Ithaca. Scylla and Charybdis synthesize Odysseus ordeals and the bow contest in
+Book XX Penelope’s ones. All Odysseus’ soldiers die after their excessive behavior concerning the cattle of the
+Sun and many slave girls lose their lives after betraying the queen. Penelope performs intense actions but the one
+involving the shroud enhances her abilities with discourse and will be considered her major heroic trait.
+The Shroud and the Trope
+Penelope’s shroud is perhaps the most enigmatic object in Homer’s Odyssey. In the primeval stage of
+writing, copyist wrote their texts on cloths, hence the Latin word fextere to describe something registered on
+texture. From such lexicon derived the radical form
+text-, present in various Western languages, usually
+describing the act of writing itself. The fact that the product was literally written on a texture, and this texture was
+a confection, contributed to the close relation between discourse and weaving.
+In Penelope「s etymological background we see the
+radical ivi) which is the Greek term for shuttle, bobbin
+or distaff, as well as thread, wool or, even, fabric, cloth.
+Such devices were very common in Mycenaean Greece
+and are frequently described in Homeric narratives. Jenny Strauss Clay reminds us that the Ancient Greek names
+have a very literal meaning. Considering this assumption, we would have something like: action-of-the-thread or
+weaving-of-the-distaff as the meaning of Penelope. Although this a considered etymology, the most common one
+points out that Penelope derives from nv8xowlatype of wild duck; quite plausible if we consider that the queen
+of Ithaca is the daughter of the naiad Periboea.
+Penelope’s name already shows the many nuances of the tropos in the story and we can observe that
+metaphors are figures of speech immensely exploited
+in Greek Epics. Understanding the complexity of the
+metaphor as a narrative strategy, the author recurs to Paul Ricoeur’s acclaimed The Rule of Metaphor (2008) to
+analyze the resourcefulness of the Homeric metaphor in
+the verses of the Odyssey, concentrating specifically on
+Penelope as a major representation of discourse and of the feminine.
+Ricoeur sees metaphor in three distinct levels. First, he analyzes it in the works of Aristotle, mainly Poetics,
+to study the figure of speech in its lexis, a “word level”;
+Second, the structuralist linguistician Emile Benveniste
+is contemplated to illustrate the metaphor in its phrasal level. Ricouer concludes his study presenting the
+metaphor in a discourse level, its most complex and complete manifestation.
+According to Ricoeur, Aristotle considers the metaphor as a transposition of a name to another name via
+analogy. Within the metaphor we face the intricate concepts of displacement, extension and substitution of the
+name. The major goal of this strategy would be persuasion, mainly in oral discourse and in tragic poetry.
+to confirm a more enigmatic Penelope.
+name was Ameirace, Arnacia,Arnaeaor Nauplia. Her parents
+760 REPRESENTATIONS OF DISCOURSE AND
+OF THE FEMININE IN HOMER'S ODYSSEY
+We can observe the use of metaphors in Penelope’s action in the Odyssey, described here by the suitor
+Antinous:
+she set up a great loom in the royal halls
+and she began to weave, and the weaving finespun,
+the yarns endless, and she would lead us on...
+The second verse literally says: “lifting a great loom”. The vertical threads of the loom are called othpoveg
+or IlCrmnhtand are woven by the distaff, in greek kp6km or rnvnl. Through a bobbin, the lorov or 1610￠ (Greek for
+fabric), is made’.
+We can observe that the radical iaro-is also in the lexis IoTopw, meaning to narrate or tell. In a way it is almost
+compelling to associate thread and story since both share the Greek radical, but the lexicon guides us to a more
+intricate relation, the fact that Penelope is stalling the suitors through the weaving and unweaving of her shroud.
+The importance of the ruse of the web is evident. If we consider that Odysseus was gone ten years fighting in
+the war and took ten more to come back, the queen’s plan to stall the suitors should have lasted at least four years,
+time necessary to maintain Ithaca in its amorphic state
+until the original king was back. In a way Penelope’s
+action is similar to the one performed by the epic singer, even though she is weaving on texture, something that
+would remind us more of written discourse. Nonetheless, Penelope can undo her story and reinvent another one,
+just like the exercise performed by the oral singer. To weave and to narrate have the same implication. The warp
+and weft of the shroud deceived the suitors like the discourse in a fictional narrative, a simulacrum that can
+become as sublime as its idea. The ability of weaving and manipulating discourse is Penelope’s heroic talent. She
+is, as her husband, a polytrépos, a person with discursive tricks.
+Allegorically speaking the shroud can be considered a representation of written discourse, subtly woven to
+dialectally postpone the intention of the suitors. It reminds Odysseus deceiving the Cyclops. The hero tricks
+Polyphemus with a lexical/semantical pun, taking advantage of the monster’s barbarism calling himself
+“Nobody“(Ourlc).
+Penelope also deceives the suitors with a representation of discourse, a texture that does not exist in fact. A
+texture that will not be seen, it is a shroud promised for Laertes but its completion was never the intention. That’s
+the story, the fabulation. Deceived by the weaving and unweaving of the Iloroc, the suitors never notice that the
+real nature ofdiscourse is to be rewritten or reinvented’.
+The reviving and the erasing of the tropos illustrate that
+discourse can never be narrated or interpreted the same way.
+It is observed that Penelope transcends the divine act of the Muses and of the Morai. The daughters of
+Nonetheless the dialectical purpose withstands for the maids reported to the suitors what Penelope was weaving,
+a horizontal position, but stood upright. The threads of the warp
+REPRESENTATIONS OF DISCOURSE AND OF THE FEMININE IN HOMER「S ODYSSEY 761
+Memory do not register their songs; they rely on the singer to tell them, while the Fates weave the story of every
+being but cannot unweave their doing. Penelope demiurgically remakes what she weaves, narrates and unfolds
+her story magically. This magic is, in fact, what maintains Ithaca in lethargy so Odysseus can reclaim it.
+Probably the shroud had a theme. We can infer that by the scene containing Helen’s weaving in the Iliad.
+Usually the shroud contained an illustrated theme related to heroic deeds. Although it is not mentioned in the
+verses of the Odyssey, we can speculate about it. Being a present for Laertes, the web could have pictured his
+accomplishment in the4rgoraxutica. Another possibility, the most accurate one, is that the queen was retelling the
+voyage of Odysseus himself. Both of them are metatextual, but if we understand that the shroud’s theme is the
+voyage of Odysseus, Penelope is, together with the singer, participating of the entire retelling of the narrative.
+She does, though, undo what she is weaving, having to weave other versions, somewhat her actions are even more
+sophisticated than the ones performed by the singer. Metaphorically the texture executes the same act as the oral
+performance. What was woven would overcome memory, since it could be undone.
+Many studies focus on Penelope’s discursive ambiguity. Katz (1991) reveals an accented dissimulation of
+the character as does Felson-Rubin (1997), although more nuanced. The last author uses the Baktinian dialogic
+model of literary studies to carefully look at Penelope’s interaction with other characters and verify her
+boldness. Clayton (2004) emphasizes the queen’s use of weaving to demonstrate her cleverness, while
+Papadopoulou-Belmedi (1994) takes the strategy of unraveling the shroud as a “representation of the
+ambiguity of action through an endless reconfiguration of the shroud”, there by Penelope is metaphorically
+remaking her own story. Penelope is shown here as cunning and dubious, but not in any way indeterminate. As
+for Heitman in Taking Her Seriously: Penelope and the
+Plot of Homer's Odyssey (2005), Penelope is seen as an
+independent thinker always maintaining her integrity, although the character does apply her tricks enhancing
+her indeterminate nature.
+All of the studies mentioned here examine the acts of Penelope in a metaphorical sense. In Ricoeur’s
+conception, it would be considered a metaphor in its discursive level. The philosopher understands that Language
+has infinite resources that enhance discourse in creative ways. The elaboration of metaphors and creation of
+narratives are genuine ways of vivid discourse confection.
+The major debate in The Rule of Metaphor, centers itself “in the linguistic productive imagination that
+generates and regenerates meaning through the power ofmetaphoricity to state things in new ways” (Dauenhauer
+& Pellauer, 2011). Ricoeur (2008) points out that new
+metaphors, ones that weren’t reduced to commonplace,
+see referents in a new perspective. Metaphors transform
+language and are not only rhetorical ornaments.
+It is understood that the figure of language has a genuine cognitive importance and isuntranslatable without
+remainder into literal language” (idem). The same happens to narratives and the act of narrating itself, where
+literature can take meaning to another level.
+Apparently the shroud takes a larger dimension, standing for the expression and voice of Penelope, if taken
+in the perspective suggested by Ricoeur. The entire epic is an elaborate texture of the queen making a stand in the
+gynoecium, confirming her heroic status in the narrative.
+Since the beginning Odysseus is aided by the goddess Athena. This is not hard to understand in a
+metaphorical sense. The goddess of wisdom would obviously be inclined to help the most intelligent hero. In a
+way, all his cleverness is Athena manifesting her designated attributes. The same occurs with Penelope. It is
+762 REPRESENTATIONS OF DISCOURSE AND OF THE FEMININE IN HOMER’S ODYSSEY
+known that Athena is the deity that protects the weavers and craftsmen. Therefore, Penelope is also blessed by the
+goddess?. The act of weaving, an exclusive woman’s act in Ancient Greece, refers to the ability of Penelope to
+fabulate. The ability to master threads is equivalent to the one ofmastering discourse. Allegorically the shroud is
+a representation of argumentation, dissimulation and misleading.
+It is understood that Penelope transcends the Muses and the Fates, memory, and destiny, since she dominatesthe
+thread in its completion, the crux inepic narrative. Threads confection nets, the original act of entangling; weaving is
+the act of plotting, making points.Allegorizing the action of weaving via Penelope and associating it with speech and
+discourse is a discursive metaphor, considered by Ricoeur as a powerful tool in literature.
+To elaborate on the importance of metaphor in the narrative of the Odyssey, two incidental stories are
+analyzed. Willcock (1998) usually understood these
+stories as mythological paradigms that associated the
+content of the story to something meaningful in the main narrative. These examples were inserted in a cyclical
+form linking the metadiegetical text with the main structure of the epic. Willcock himself devised some
+schematics, developing circular diagrams to illustrate his point.
+Two paradigms involving Penelope are quite meaningful. The first one to be considered is retold by
+Penelope herself, while she is explaining her suffering to
+a disguised Odysseus. The queen of Ithaca elaborates on
+the myth of Aedona, having the suffering of a woman and mother as a main theme. It is a myth of origin,
+explaining the existence of the nightingale and how
+its song is associated with sadness. The daughter of
+Pandareus is envious of her sister in law Niobe, for she had had vast offspring while she bore an only child.
+Aedona devises a plan to kill Niobe’s first born,Amareus. This hybris makes her assassin her own son Itylus by
+mistake. After the excess, she prays to the gods to end her pain. She is then transformed in a nightingale, a bird
+that sings, according to the Greeks, the name of Itylus himself (Iti!Iti!). In fact, the Greek word for nightingale is
+aédon. The figure follows (see Figure 1):
+of the gods cannot be contested.
+REPRESENTATIONS OF DISCOURSE AND OF THE FEMININE IN HOMER’S ODYSSEY 763
+Penelope begins describing how the sorrow of her
+husband’s absence afflicts her. Such pain provokes her
+weeping, the element that links the main narrative to the story. The cry of Aedona is sad and varied, very similar
+to the crying done by Penelope. Weeping is the key word to leave the paradigm and come back to the homilia, the
+moment that Penelope in conversing with Odysseus. The myth is a metaphorical description of the queen’s
+feeling at the moment and helps Odysseus understand the suffering Penelope has been through.
+Another significant story is the myth involving the adultery of Aphrodite and Ares. The blind singer
+Demodocus tells us this adventure but, metaphorically, the example is associated with Penelope’s fidelity. Again
+a figure is shown (see Figure 2):
+interesting to see a story that tells one of the most remarking cases of adultery in Greek Mythology being
+addressed to Odysseus. It is an allusion or a prolepsis to
+the greatest of challenges that is yet to come. More than
+regaining his kingdom dwells the fact if his most beloved wife remained faithful all these years. The myth also
+enhanced Penelope「s perseverance and how her integrity is one of her most celebrated traits. The actions of
+Aphrodite have a consequence and the paradigm illustrates how this can be disastrous if an ethos is not followed.
+The story is a reminder of the delicate situation Odysseus may be facing at Ithaca. Penelope’s condition appears
+in both these paradigms. The sad condition of Aedon confirms her depression and the story containing Aphrodite
+and Ares celebrates one of the most valued traits of the demigod: fidelity.
+Smaller units of the story metaphorically translate the major theme of the epic narrative. The story grammar
+of the Odyssey can be perfectly understood as the maintenance of Ithaca as a realm belonging to the Laertiades
+and issues including Penelope are major issues for the development of the story.
+Penelope’s trope is what narrates the Odyssey, understood as a story about a great return, an epic of
+Mine is a rugged land but good for raising sons—
+And I myself, I know no sweeter sight on earth
+Than a man’s own native country.
+764 REPRESENTATIONS OF DISCOURSE AND
+OF THE FEMININE IN HOMER「S ODYSSEY
+We are aware that the hero only has a home to call his own because of his wife’s actions, metaphorically
+weaving her husband’s return to his identity and being
+the major theme of one of the most celebrated canons
+of Western literature.
+Conclusions
+Hopelessly, the herostruggles justto understandthat itisimpossible tofully know everything and that you
+must go through an intense adventure to notice so.
+As for Penelope, her anagndrisis had already been
+accomplished and she ensures this by mastering the thread.
+The Odyssey is introduced mentioning the house of
+Mycenae and of Ithaca. The attitude queen Clytemnestra
+and her lover Aegistus had is brought to light by Zeus himself. Helen’s sister confirms her tragic destiny by
+killing her husband with her lover and triggering fate to a sad disclosure: being killed by her own son, Orestes. On
+the other hand, Penelope unweaves, unravels, deconstructs, and disconcerts her mantle, avoiding a tragic end.
+She is the Ur-weaver of an irresolvable narrative that will originate a genre of dialogism and polyphony.
+Betrayedby one of themaids, she eventually had to end her story, but her original intent was always to weave and
+unravel her thread again and again.

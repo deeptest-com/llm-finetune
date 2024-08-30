@@ -1,0 +1,390 @@
+检定医用数字摄影（DR）系统X射线辐射源影像的均匀性
+根据JJG 1078-2012《医用数字摄影（CR、DR）系统X射线辐射源》中关于影像均匀性的检定方法,从多方面分析人为因素影响影像均匀性技术指标的评价,为实施影像均匀性检测提供参考。
+
+数字X射线摄影系统 影像均匀性 合格评定 检定方法  
+
+1 Introduction
+As a matter of fact,the inlet and exit tem-
+perature levels and pressure are progressively get-
+ting higher in modern gas-turbine combustors
+while the percentage of compressed air available
+for cooling purpose becomes more limited. Un-
+doubtedly, the decrease of the quantity of cooling
+air available and the increase of the gas tempera-
+ture in the combustion chamber are contradictory
+elements of the problem, which presents a great
+challenge for engineers to design an efficient cost-
+effective cooling system to meet combustor dura-
+bility requirement.
+Jet impingement is one of the most efficient
+solutions for the effective cooling of the combus-
+tor in gas turbine enginest''??. The heat and mass
+transfer produced by the turbulent impinging jets
+have been characterized in a number of investiga-
+tions reviewed by Viskantars Weigand and
+Spring, Basic investigations on single impin-
+ging jet with and without cross-flow were conduc-
+ted for example by Goldstein and Behbahani?!,
+Lee et a.l〔〈s〕 [ and Colucci and Viskantat?. These
+investigations have shown that the heat transfer
+produced by an impinging jet depends mainly on a
+number of parameters,including the Reynolds
+number of the jet, the nozzle-to-plate spacing,
+the presence of a confining wall, and the Prandtl
+number, etc. Convective heat transfer enhance-
+ment, increase in the heat transfer rate uniformi-
+ty, improvement in the coverage of the impinge-
+ment surface, and decrease in the coolant mass
+flow rate are some of the concerns of jet impinge-
+Iment[8-441 ,
+With regards to the effects of a confining
+wall on the jet impingement, Garimella and
+Riceri51 as well as Fitzerald and Garimella[16] per-
+formed experiments to examine the flow field of a
+confined jet impingement. A toroidal recircula-
+tion-flow pattern in the downstream was clearly
+shown. Angibletti et al[l17l1 investigated the flow
+field and heat transfer for a jet impinging on a flat
+plate. Zhang et al’ and Wang et al**! studied the
+effect of crossflow on jet impingement heat trans-
+fer for inline and staggered arrays. Parida et all?’
+made an experimental and numerical investigation
+on the confined oblique impingement configura-
+tions for high heat flux applications. It was ob-
+served that for the inclined impingement case, the
+flow had to turn and adjust to the cylindrical jet
+before starting to develop inside the jet holes.
+This caused the formation of two nonsymmetrical
+secondary flow regions. Especially due to this
+large secondary flow region, the jets got acceler-
+ated and flowed out at relatively higher velocity
+causing the heat transfer rates to increase locally.
+Moreover, the swirl generated after impingement
+sustained itself for a longer distance, thereby in-
+creasing the overall heat transfer rates. Some re-
+searchers addressed the effects of nozzle geometry
+on heat transfer and fluid flow.
+Although a considerable amount of investiga-
+tions have been conducted on the jet impingement
+heat transfer so that the design of impingement
+cooling systems could be optimized to produce the
+most effective cooling with a minimum amount of
+coolant, little work has been made on the heat
+transfer characteristics of jet impingement inside
+a semi-confined channel where the coolant air is
+constrained to evacuate in a single preferential di-
+rection toward the trailing exit, This situation
+could be viewed as a simplified model of impinge-
+ment-convection heat transfer encountered in the
+combustor liner cooling configurations, The mo-
+tivation of present study is to expiore the effects
+of the impingement Reynolds number, impinge-
+ment distance and the hole pitch on the flow and
+heat transfer characteristics inside the semi-con-
+fined channel.
+2 Experimental Procedures
+2.1 Experimental setup
+The experimental setup is sketched in
+Fig. 1(a). It basically consists of a test section
+connected to a coolant air supply passage. The
+coolant air from the compressor is firstly drawn
+through a standard flow meter and forced to enter
+into the plenum chamber. Then the coolant air is
+discharged through the orifice plate to impinge at
+the target plate. After impingement on the target
+plate, the spent air is constrained inside the semi-
+channel to exit in only one direction (the positive
+z-direction as seen in Fig. 1(b)).
+5 mm thickness. The spanwise width 《 y-direc-
+tion) is 100 mm and the streamwise length (z-di-
+rection) is 200 mm. Single-row and double-row
+of circular sharp-edged holes are used to generate
+the impinging jets. The diameter (d) of each hole
+is equal to 2 mm, as shown in Fig. 1(c). Single-
+row of impinging jets is positioned 3d from the
+closed side of the test section. The spanwise pitch
+(y.) between adjacent holes varies from 3d to 5d.
+With regard to the double-row configuration, the
+first row of jets is positioned 3d downstream from
+the closed side of the test section. Two rows of
+jets are arranged inline with streamwise pitch
+(x,) of 3d, 4d or 5d, respectively.
+The impingement target is a thin constantan
+foil of 0.01 mm thickness (70 mm long, 100 mm
+wide) which is mounted on the inner surface of a
+nylon plate《200 mm long,100 mm wide and
+20 mm thick). The foil spans the width of the
+plate and is tightened up by the adjustable copper
+bars to tension the foil after it is heated. The im-
+pingement distance or the nozzle-to-plate spacing
+between the orifice plate and the target plate is
+adjusted by a spacer thickness, giving some dif-
+ferent non-dimensional orifice-to-target space ra-
+tios(z,/d, impingement distance to the diameter
+of jet hole). The foil is heated by DC current with
+two-side edges connecting to the copper bars to
+ensure uniform heat flux, The voltage (V) and
+the current (I) are recorded to determine the heat
+flux. In the experiment, the constant heat-flux
+on the heating foil surface is set as 5 000 W/m?,
+To make the object thermal image be detected by
+the infrared camera, a viewing window with
+30 mm wide and 70 mm long is opened in the ny-
+lon insulation plate.
+2.2 Measurement and parameter definition
+The impingement Reynolds number is deter-
+mined as
+where d is the inlet diameter of jet hole, v the ki-
+nematic viscosity of the jet, xi the mean jet veloc-
+ity at the inlet, m the total mass flow rate of the
+air emerging from the orifice plate,x is the dy-
+namic viscosity of the jet, and N is the number of
+holes in the orifice plate,
+The temperature distribution on the rear face
+of the foil (the opposite side of jet impingement)
+is measured by an infrared camera (TVS-2000
+MK) working in the 3 一 5 um band at speed of 30
+frames per second. The field of view is 25° X
+18. 8°/0. 4 m, the instantaneous field of view is
+1. 3 mrad, and the thermal sensitivity is 0. 07 °C
+at 30 °C. The infrared camera calibration is con-
+ducted by using a series of thermocouples placed
+on the black painted test surface to act as the
+benchmark!?'?2J, These thermocouples are used
+to estimate the emissivity of the test surface. The
+emissivity of the black painted surface when
+viewed directly is about 0. 96. Three copper-con-
+stantan thermocouples are fixed on the foil to
+check the heater temperature and to help deter-
+mine steady-state conditions. Once the tempera-
+ture field on the impinging target reaches steady ,
+the thermal image is recorded by the infrared
+camera. The detective distance is set as 100 mm
+and accordingly the transmissivity for the infrared
+camera is approximately regarded as 1.
+In the present case, the infrared camera is
+used in conjunction with the“heated thin foil”
+steady state heat transfer sensof《Carlomagno and
+Cardone'?). Since the impingement target thick-
+ness is very thin, the Biot number《B5 二 A5/2。,
+where h is the convective heat transfer coefficient
+on the target surftace,6 and A, are the thickness
+and thermal conductivity of the thin target plate,
+respectively) is small with respect to unity, the
+temperature on the face of the foil opposite to the
+jet impingement may be considered practically the
+same as that on the target surface directly im-
+pinged by the jets. Considering the energy bal-
+ance of a thin plate in steady state conditions ,the
+local convective heat transfer coefficient on the
+target surface is evaluated as
+where T, is the target wall temperature, T; the
+impinging jet temperature (metered in the ple-
+num chamber), g; the Joule heat flux, and Gaadation
+the radiation heat flux, and Quonvectoa the natural
+convection heat flux on the rear foil surface.
+Due to the thermal inertia of the foil and the
+time averaging process of the image, present
+measurements have to be considered as time aver-
+aged. This means that temperature fluctuations
+due to flow turbulence are not measured.
+The net rate of radiation heat flux is esti-
+mated as
+q艾′adatio】′`【一e[:_a【二丨(夜〈TsT:)(3)
+where T, is the surrounding ambient tempera-
+ture, en. the emissivity of nylon plate, and x the
+Stefan-Boltzmann constant.
+The heat loss from the back of foil by natural
+convection mode is determined according to the
+empirical relation for natural convection from ver-
+tical flat plate.
+嘎c{)】_I\′E…c【i【〕【】一hs(T,—T,)4
+where h; is the natural convection heat transfer
+coefficient over the back of heated foil , which is
+determined according to the empirical relation for
+natural convection from vertical flat plate.
+Heat transfer measurements are expressed in
+dimensionless form in terms of Nusselt number.
+The laterally-averaged Nusselt number is defined
+as
+Nz′乙…囊、′,>】′'=oval(5)
+where 》 is the thermal conductivity of air, and
+h.... the laterally-averaged convective heat trans-
+fer coefficient.
+The discharge coefficient, which is inversely
+proportional to the pressure drop across the cool-
+ant hole in the rib-roughened channel, is defined
+as
+where “ is the coolant flow total pressure in the
+plenum chamber metered by a pressure probe, p,
+the coolant flow static pressure at semi-confined
+channel outlet, approximately regarded as the
+ambient pressure.
+In all experiments,the measured tempera-
+ture difference (between the surface and ambient)
+is at least 10 °C with an uncertainty of + 2%.
+The uncertainty of the power supplied to the
+heater, is assumed to be the same as the uncer-
+tainty of the heat flux out of the heater, that is,
+approximately +6%. The uncertainty in the
+thermal conductivity of air, given the small tem-
+perature fluctuations, is estimated to be less than
++29%. The uncertainty of the flow rate is about
+1%. And the measured errors of pressure are es-
+timated as 土 3%.Following the uncertainty anal-
+ysis based on Moffat'?*!, the maximum uncertain-
+ty in the measurement of the average convective
+heat transfer is + 8%. The uncertainty in dis-
+charge coefficient measurements is estimated in
+the order of +5%.
+2.3 Baseline validation of single jet impingement
+Baseline validation is made to provide checks
+on the present measurement apparatus and proce-
+dures. The baseline test aiming at a single round
+jet employed for this purpose matches that em-
+ployed by Gao et al?? with Re; =23 000 and noz-
+zle-to-plate distance of 2 diameters. Fig. 2 pres-
+ents the comparison of area-averaged Nusselt
+number profiles. Here the area-averaged Nusselt
+number is defined in terms of the region of radius
+(R) surrounding the jet impinging stagnation
+point.
+numbers under single jet impingement
+Fig. 2 illustrates that the averaged Nusselt
+number distributions on the impinged plate for
+both works exhibite the same behaviors. The
+good agreement of area-averaged Nusselt number
+distribution with Gao et all?! validates the experi-
+mental procedures and apparatus employed in the
+present study.
+3.1 Temperature distributions
+Fig. 3 presents the temperature distributions
+on the constant heat-flux (g=5 000 W/m?) heat-
+ing foil surface under orifice-to-target spacing z,/
+d=2 and spanwise pitch y,/d=3. Fig. 4 presents
+3.2 Heat transfer coefficients to that of single-row case. With regard to the
+Heat transfer variations with the impinge- double-row case, the interaction of the jets from
+ment distance z,/d have been investigated exten- front row and rear row will play an important role
+sively, A few laterally-averaged Nusselt number in the heat transfer, In the case of z,/d=1, the
+profiles extracted from these measurements are stagnation Zone corresponding to each row may be |
+displayed in Fig. 5. seriously éffested by the other row. The junction |
+As a consequence, it is notable that the im- effect muy be supérior to confinement effect, re-
+x/d
+(a) Re;=16200,,/d=4
+ferent z,/d
+sulting in tremendous heat transfer enhancement
+under z,/d=1.
+crease of y,/d. With regard to the double-row
+case, the increase of z,/d extends the impinging
+cooling region. Besides, there is a little decrease
+of heat transfer coefficient in the region between
+two row impinging holes,
+ferent y,/d
+By comparison of the single-row and double-
+row cases, it is found that the laterally-averaged
+MNusselt number distributions within the zone of
+the first row of double-row case do not fit perfect-
+ly with the single-row case. Downstream of this
+region, heat transfer is drastically reduced in the
+single-row case since the impingement is not effi-
+cient any more whereas the impinging jets from
+ferent .z`′′/d
+the secondary row maintain high heat exchanges
+in the double-row configuration,
+It is noticed that the quantity of air used to
+impinge the target is associated with the number
+of impinging jets and the impingement Reynolds
+number. Therefore, one should not compare di-
+the overall cooling efficiency of the different 1m-
+pingement configurations and to compare these
+different impingement cases directly, one can
+work at a fixed mass flow rate of coolant per unit
+area of cooled surface G;'**). In the present study,
+G, is expressed as
+where G; represents the air quantity devoted to
+the cooling of a given area (as seen in Fig. 1) sur-
+rounding the impinging jet.
+For the sigle-row jet impingement with z,/d
+一 2, the area-averaged Nusselt numbers are ex-
+pressed as functions of G in Fig. 8. It is interest-
+transter rate will be certainly increased at a fixed
+value of Gi. As an example, for G fixed at 8. 5,
+area-averaged Nusselt number is increased by
+20% when changing the impingement configura-
+tion from y,/d =4 and Re; 一 28 400 to v./d=75
+and Re; = 34 800. Furthermore the influence of
+y,/d on area-averaged Nusselt number seems
+more significantly under the larger impingement .
+Revnolds number.
+know, the jets from the first row impinging holes
+form uneven cross flow relative to the down-
+stream jets, which deflects the downstream jets
+from the normal direction and weakens the con-
+vective heat transfer capacity of downstream jets.
+Simultaneously, the secondary jets behave as
+"disturbed pins’ to the cross flow, which often
+enhances the convective heat transfer capacity of
+cross flow. The contradictory aspects are respon-
+sible for the complicated heat transfer features
+along downstream of the first row. In the case of
+z,/d=1, the impingement jets maintain stronger
+penetration in the surrounding fluid, which is
+weakly affected by the cross flow. At the same
+time, the cross flow is strengthened more obvi-
+ously, so that the heat transfer enhancement
+shows advantageous in the region corresponding
+to the secondary row. While in the case of a lar-
+ger z,/d, the jet penetration is decadent to be
+tive heat transfer of the cross flow is also weak-
+en, and the laterally-averaged Nusselt number is
+the peak Nusselt number on the first row.
+3.3 Discharge coefficients
+ence of z,/d on the discharge coefficients in the
+tested for the single-row case, which indicates
+spanwise jet-to-jet pitch is smaller.
+z./d
+Re, 10°
+(D) z/d=4 .
+Fig. 10 Discharge coefficients vs. Re; under different:
+「yn/7口EE【
+, Re N10’
+Fig. 11 Comparison of discharge coefficients
+row case. It can be found that the discharge coef-
+ficient in the double-row case decreases compared
+with that of the single-row case at the same im-
+pingement Reynolds number. Due to the interac-
+tion of jets between adjacent streamwise rows,
+the flow loss inside the channel increases, which
+is contributed to the decrease of the discharge co-
+efficient.
+4 Conclusions
+: Experimental investigation is conducted to
+investigate the flow and heat transfer perform-
+ances of impingement cooling inside semi-confined
+channel. Effects of impingement Reynolds num-
+ber, orifice-to-target spacing and hole pitch on
+the convective heat transfer coefficient and dis-
+charge coefficient are revealed. The results are
+summarized as follows:
+(1) The impingement distance z,/d=2 leads
+to the highest local heat transfer over the range of
+impingement distances tested for the single-row
+case. The impingement heat transfer is enhanced
+with the increase of impinging Reynolds number
+or the decrease of spanwise jet-to-jet pitch.
+(2) The laterally-averaged Nusselt number
+distributions within the zone of the first row of
+double-row case do not fit perfectly with the sin-
+gle-row case. The optimum impingement distance
+is z,/d=1 in the double-row case, And the later-
+ally-averaged Nusselt number is reduced on the
+second row compared to the first row at larger
+impingement distance.
+(3) The spanwise jet-to-jet pitch has an im-
+portant effect on the discharge coefficient. A
+smaller jet-to-jet pitch generally results in a lower
+discharge coefficient. This influence is more sig-
+nificant under the higher impingement Reynolds
+number. The discharge coefficient in the double-
+row case is decreased relative to the single-row
+case at the same impingement Reynolds number.

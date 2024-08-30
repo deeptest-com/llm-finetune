@@ -1,0 +1,399 @@
+放飞机的人
+2014年无人机无处不在。无人机送快递、无人机高空求爱、无人机摄影、无人机地质航拍……随着价格的下降，过去被视为专业器材的无人机，如今落入寻常爱好者的手中，在中国掀起了无人机热潮。
+
+飞机 无人机 航拍  
+
+DOI: 10.3969/j.issn.1673-1379.2013.05.003
+0“引言
+空间站的热分析特别是系统级热分析,是一项
+重要而复杂的基础工作。由于空间站系统庞大,各
+分系统间强烈耦合、相互影响,热分析通常要综合
+考虑电源、环控生保、结构、乘员及热控等分系统;
+需要对热量的收集、传输、利用及排散等过程进行
+分析;涉及辐射换热,通风对流换热,导热,气体
+组分扩散与控制,以及空气温湿度控制等复杂的传
+热、传质过程。因此,空间站热分析的工作量和难
+度是其他航天器无法比拟的。
+本文以国际空间站(ISS》为背景,从舱内空气
+流动分析、温湿度控制分析和以流体回路为核心的
+整体热建模分析万个方面系统地介绍空间站热分析
+的国内外研究进展情况,盱在支持空间站的系统级
+设计。
+1舱内空气流动分析
+国外已有的研究表明,采用计算流体动力学
+(CFD)软件对空间站密封舱内的空气流动进行仿
+真研究并辅以试验验证是一种非常有效的技术途
+2,fFISS通风设计中,利用CFD软件分析确
+定了乘员活动区札用上送下回的循环送风方式1。
+Johannes等口利用CFD软件分析了微重力条件下
+实验舱机柜内的空气流场,给出了把CFD分析所
+获得的对流换热系数集成到热数学模型中的方法,
+以及CFD软件与SINDA软件的集成方法.Andreas
+等出分析了机柜内的空气流动情况,由于机柜的独
+立性,分析上应该和乘员区流场有所区别。Klymln
+对ISS采用的典型分布式通风方案进行了详细的
+分析,认为采用分布式送风系统的主要缺陷是设备
+的总质量较集中式送风系统大;优点是系统的性能
+和可扩展性都非常好,世系统的组装可分开进行,
+分布式送风的单次组装质量并不大,Son等[““用试
+验手段分多种情况研究了ISS的美国实验舱内的
+空气速度分布情况,研究中考虑了机柜通风和舱间
+通风的影响,特别是文献[7]还将试验结果同用
+FLUENT软件获得的数值仿真结果进行了对比,结
+果表明数值仿真方法是非常有效的。此后有关ISS
+舱内空气流动的研究几乎都是基于数值仿真方法,
+而不再进行试验验证。Zapata用FLUENTS分析
+了ISS的Cupola舱内的通风和温湿度特性,对不
+同工况下的空气速度分布情况进行了较详细的研
+ 1.Speiser”FilCFD软件详细分析了ISS的Node1
+舱内空气流速分布情况。SonH0用CFD方法模拟了
+ISS(共12个舱)整体组装完毕后的空气流动情况。
+随着国内载人航天计划的开展,载人航天器内
+空气流动分析研究也取得了不少成果。潘维等L
+针对目标飞行器的实验舱进行了空气速度场分析;
+付仕明等[L““3对空间站舱内的空气流速分布和舱
+间通风的影响进行了分析;为了描述通风量变化对
+主要从事大型航天器热试验、热管理及载人环境的相关研究。
+舱内空气速度分布的影响,文献[14]引入“流量裕
+度“的概念,评价实际通风量相对设计值的变化对
+舱内空气速度分布的影响;文献[15]针对空间站的
+狭小空间,提出了对乘员睡眠区内的CO2扩散问题
+的分杯方法,获得了睡眠区通风不良时航天员的最
+长可停留时间;韩海鹰等U4对标准机柜内部通风换
+热的风量、风道设计和通风温度等影响因素进行了
+分析。
+综上所述,数值仿真方法(特别是CFD方法)
+在分析舱内空气流动方面是非常有效的,其主要应
+用包括:
+DD舱内特殊区域流场的细致分析。主要提供
+乘员活动区、睡眠区、机柜、节点舱等区域的通风
+设计依据,支持试验验证。
+2)舱段级和多舱集成分析。主要考察舱间通
+风的影响,以及多舱之间的气体流动和调配等,用
+于空间站总体空气管理、热调配和污染控制等的设
+计和评估验证。
+3)速度场、温度场和浓度场等综合集成分析,
+用于空间站温湿度控制和污染管理的设计与验证。
+4〉获取空气与舱壁的换热系数,以利于实现
+空气回路、液体回路和舶体结构热模型等的集成,
+从而形成空间站整体的热数学模型。
+2“舱内温湿度控制分析
+国际空间站的温涨度控制(THC)系统主要用
+于舱内空气温湿度控制、空气中尘粒/微生物控制、
+舱间通风(IMV)和设备的空气冷却,以及食品和
+药品储存的温湿度控制“空间站温湿度控制分
+析的目的主要是获取舱内温湿度分布特性,为系统
+设计优化、试验验证和在轨管理提供依据。
+(波音公司专门为“自由号“空间站(SSF)的环控
+与生保系统开发的集成分析程序)在ISS集成分析
+中的应用。该程序可以动态地反映温涨度控制,空
+气控制和供应,空气再生及水处理等子系统的性
+能,对空间站正常工况以及有轨道器停泊、航天员
+出舱等工况的分析非常有效。Reeves等]以舱内
+的热量平衡方程为主,用MATRIX工具建立模型,
+实现了对SSF温湿度控制系统的动态性能分析,
+芸在此基础上,对热量平衡方程进行线性化,得到
+了ISS的温湿度控制模拟的线性模型。他们的研究
+都以热量平衡方程为基础,设定舱内露点,结合湿
+宇气的饱和压力等,实现舱内空气温湿度控制系统
+的模拟。
+国内,黄家荣等““1采用CFD方法对空间站密
+封舱内的湿度场分布进行了分析;付仕明等7在完
+成空间站热湿载荷分析后,基于湿空气的热量平衡
+和水汽质量平衡,推导出空间站舱内空气的含湿量
+方程和焰方程,对空间站的温涨度控制特性进行了
+分析。
+综上所述,空间站温湿度控制分析的主要应用
+包括:
+1》温涨度控制系统的动态特性分析。获取空
+间站的温度涨度控制特性,以支持空间站的系统设
+计和在轨管理。
+2)舱内温湿度分布分析。一般与空气流动分
+析鹤合,获取密封舱内的温湿度分布情况,为通风
+系统设计和试验验证打下基础。
+3空间站整体热建模分析
+3.1“美国相关工作
+Hartley等P4针对SSF的热控系统进行了功能
+仿真。NASA为了发展SSF计划,开发了G1894A
+和热综合系统(TSS)等软件。TSS是由约翰逊空
+间中心开发的,由于程序中算法本身的特点决定了
+其解决问题的时间随模型的大小成指数增长,故设
+计中采用了C语言,TSS还支持并行和分布式处
+理P;!。TandierleI开发了一个用于SSF能量传输子
+系统闭相互作用的集成分析模型,能量传输子系统
+包括电源子系统、内部热控子系统、外部热控子系
+统及舱内温涨度控制子系统(包括电子风冷、舱内
+风冷及舱间风冷),利用该模型可评估SSF能量传
+输系统的总体性能。
+SINDA/FLUINT软件作为空间站分析的“官方
+工具“被广泛用于主动热控系统的稳态或动态特性集
+成分析“72空间站主动热控系统包含外部主动热控
+系统(EATCS)和内部主动热控系统(IATCS),它
+们是相互影响的热/流体系统。ISS的USL、MNode2、
+JEM、APM和RM等压力舱均拥有EATCS和
+IATCS。集成分析时用SINDA/FLUINT建立这些
+系统的模型,把它们集成起来作为统一模型进行分
+#7. Tran 等 2 用 SINDA/FLUINT 建 立 了 ISS 的 热 -
+水力模型,并分析热控系统的稳态和动态响应,得
+出优化的管径、流量分配及关键部件的温度等情
+况 。 AugustineB0 用 SINDA/FLUINT 集 成 了 THC 系
+统模型,即THC系统将热量传递给低温水回路,
+IATCS的水回路从几个部件(冷藏器/制冷器、THC
+的换热器和冷板等〕获得热量,并通过中间换热器
+传递给EATCS,再通过辐射器排散到空间。Barker
+等I验证了USLAB和Node1之间的THC/IMV管
+道系统,获得了管道的流量和压降数据,并同理论
+分析的数据进行对比修正。LeeFJ利用SINDA/
+FLUINT进行了空间站主动热控系统的水力设计,
+认为SNDA/FLUINT可以在所需的不确定度范围
+内优化系统重量和泵功耗等,并开展了系统对设计
+参数的敏感性研究。BerriosZtISS外部主动
+热控回路进行了动态分析。
+3.2欧洲航天局相关工作
+SIMTAS软件曾被用于ISS的Columbus舶生
+保系统的模拟分析“1。FHTS作为ESATAN功能的
+扩展,被用于Columbus舱的热分析731。在热分析
+过程中,欧洲航天局(ESA)的各单位建立了大量
+的分析模型(大部分为集成模型5,例如用ESATAN
+建立了集成全局分析模型(即IOTMM,近900个
+节点);用ESACAP建立了简化主动热数学模型;
+用ESATAN-FHTS建立了局部热水力模型(近250
+个节点)等F4l。与以往将舱内(乘员舱)空气回路
+和电子设备空气回路分开研究不同,Renatio等BT
+将MPLM(多功能加压后勤舱)舱内空气回路和
+电子设备空气回路耦合起来,认为该方法可以保证
+MPLM的排热和环控要求,并使其在控制、成本
+及重量方面更优;但Renatio仅讨论了MPLM的空
+气回路,没有耦合水回路、氨外回路及热节点网络
+模型等。Gargioli等Bg结合Columbus舱的[OTMM
+模型集成分析了舱内热舒适度,与APM〔附加压
+力舱》集成的IOTMM综合分析了该舱的热行为,
+包括APM的子系统、设备和有效载荷引起的THC
+系统热载荷,以及太阳热流和航天员的影响等。
+Romera等P用ESA自己开发的EcosimpPro软件分
+析了APM的瞬态模式(主要由正常模式的转变或
+紧急情况引起)。AlexanderZINETHCFD手
+段计算空气换热系统以提高Columbus舱IOTMM
+性能的过程。
+3.3俄罗斯相关工作
+Altov等M用TERM热分析软件完成ISS的俄
+画斯服务舶的热数学建模和热分析。TERM软件由
+ARTIST. FLUX. VIEWF. TEMP. STR 及 GRAPH
+共6个模块组成,具有外热流分析、辐射换热系数
+计算、结构热分析及流体回路热分析等功能。
+3.4国内的进展
+国内,徐小平等2提出了对空间站热管理系统
+进行敏感性分析、优化设计、诙验参数修正、参数
+置信度分析、鲁棒性设计等设想。张立等J利用
+MATLAB编程对流体回路系统进行集成仿真,并
+与SINDA/FLUINT的仿真结果进行了对比,两者
+针对温度和压力的仿真偏差小于0.05%;但针对飞
+船和空间站等复杂系统仍推荐使用SINDA/FLUINT
+进行集成仿真。付仕明等M针对小型空间站利用
+SINDA/FLUINT进行了外热流、被动热控系统和主
+动热控系统(主要是流体回路,含液体回路和空气
+回路),以及密封舱和非密封舱等的集成仿真。
+3.5“小结
+空间站的整体热建模分析基于其整体热数学模
+型(如IOTMM〉进行,是空间站系统级设计优化、
+地面试验和在轨管理的基本依据。分析手段多样,
+可用自己开发的软件,也可利用商用软件二次开发。
+商用软件包括SNDA/FLUINT和ESATAN等。
+综上所述,空间站整体热建模分析的主要内容
+和特点包括:
+1)不同舱段集成状态下的热分析。如针对ISS
+实验舱、节点舱、Columbus舱和居住舱等多舱段
+的集成分析。
+2)不同分系统的集成。突破传统意义上分系
+统的界限,通常集成热控系统、环控生保系统和电
+源系统等。
+3)空间站热模型主要包括内回路、外回路和
+空气回路等主动热控模型,也包括传统的被动热控
+模型,国际空间站的美国舱段、俄罗斯舱段和
+Columbus舱等的热模型都是如此。
+4“结束语
+鉴于系统级热分析在空间站的研制、试验和在
+轨运行中的重要作用,本文从舱内空气流动分析、
+温湿度控制分析和整体热建模分析三个方面对国
+内外技术进展进行了跟踪研究,得到以下启示:
+1系统级热分析的重要性日益凸显。系统级
+热分析已由早期的辅助手段发展成为现在的主要
+设计验证手段,试验验证已大为减少。这一方面要
+归功于工程试验数据的积累,另一方面则是因为计
+算技术的飞速发展。但国内目前在型号研制中仍然
+大量依靠试验验证,系统级热分析的深度和广度还
+有待提高。
+2)系统级热分析技术向集成化方向发展。这
+主要体现在多物理场(如速度场、压力场、浓度场
+和温度场等)、跨系统(如环控系统、热控系统和
+电源系统等)和多舱段(空间站各舱段)等的集成。
+国内目前对多舶段和多物理场的大系统集成热分
+析开展较少,大系统级优化水平有待提高。
+3)热分析手段各异,但功能和目的趋同。美
+国、ESA和俄罗斯的系统级热分析工具各有差异,
+既有用自研软件的,也有基于商用软件进行二次开
+发的,但软件应用的目的都是要获得大系统集成情
+况下的温度场、浓度场和速度场等参数,为系统设
+计、诙验和运行管理提供支持。国内目前还没有自
+主研制的系统级热分析工具,利用商用软件进行二
+次开发的程度和水平也较低,亚需提高。
+参考 文献 (References )
+[1] Wieland P O. Designing for human presence in space: An
+introduction to environmental control and life support
+systems, NASA RP1994-1324[R], 1994: 5-48; 185;
+219-225
+[2] Diamant B L, Humphries W R. Past and present
+environmental control and life support systems on
+manned spacecraft, SAE 901210[R], 1990
+[3] Johannes A, Dieter S, Michael R. Precise convective
+cooling simulation of electronic equipment under various
+g-conditions[C)//Proceedings of the 4? European
+Symposium on Space Environmental and Control
+Systems. Florence, Italy, 1991-10
+[4] Andreas N, Markus H Thermophydraulic analysis of the
+cooling air flow in a rack, SAE 932134[R], 1993
+AIAA 1994-4467[R]
+[6] Son C H, Barker R S. US lab: A module cabin air
+distribution in space station, SAE 932192[R], 1993
+{71 Son C H, Barker R S, Eugene H,et al. Numerical
+prediction and evaluation of space station inter module
+ventilation and air distribution performance, SAE
+941509[R], 1994
+[8] ZapataJ L, Son C H. Analysis of air ventilation and crew
+comfort for the International Space Station Cupola, SAE
+2002-01-2340[R]
+[9] Speiser D, Pines D, Son C H. Computational fluid
+dynamic of air flow in Node I of the International Space
+Station, SAE 2005-01-2797[R]
+[10] Son C H. Integrated computational fluid dynamics
+ventilation model for the International Space Station,
+SAE 2005-01-2794[R]
+[11]潘维,钟奇,麻慧涛,等.载人航天器密封舱内流动换
+热数值模拟研究[航天器工程,2008,17(3):51-56
+Pan Wei, Zhong Qi, Ma Huitao, et al. Numerical simulation
+of flow and heat transfer process in manned spacecraft
+cabin[J]. Spacecraft Engineering, 2008, 17(3): 51-56
+[12]付仕明,徐小平,李劲东,等.空间站舱内空气速度分
+布 的 CFD 分 析 [ 宇 航 学 报 , 2006, 27(6): 1137-1141
+Fu Shiming, Xu Xiaoping, Li Jindong, et al. CFD
+analysis of air velocity distribution in space station
+cabin[J]. Journal of Astronautics, 2006, 27(6): 1137-1141
+(13] Fu Shiming, Pei Yifei. Influence of IMV on space
+station[C]//Proceedings of World Academy of Science,
+Engineering and Technology. Venice, Italy, 2009:
+831-835
+[14] Fu Shiming, Xu Xiaoping, Li Jindong, et al. The
+application of MFR in ventilation system design, SAE
+2007-01-3072[R]
+[15]付仕明,徐小平,李劲东,等.空间站乘员睡眠区二
+氧化碳精集现象[J].北京航空航天大学学报,2007,
+33(5): 523-526
+Fu Shiming, Xu Xiaoping, Li Jindong,et al. Carbon
+dioxide accumulation of space station crew quarters[J].
+Journal of Beijing University of Aeronautics and
+Astronautics, 2007, 33(5): 523-526
+[16]韩海鹰,姜军.抽屉式标准机柜换热性能仿真及设计[]
+守 航 学 报 , 2009, 30(1): 332-337
+Han Haiying, Jiang Jun. The simulation of heat
+exchange performance and design of drawer standard
+chassis[J]. Journal of Astronautics, 2009, 30(1): 332-337
+[17] Bacskay A S, Dalee R C. Space Station Freedom ECLSS
+design configuration: a post restructure update, SAE
+911414[R], 1991
+[18] Sato K, Sato M, Hamami H, et al. A trade study method
+for determining the design parameter of CELSS
+subsystems, SAE 921198[R], 1992
+[19] Barker R S, von Jouanne R G G189A modeling of
+Space Station Freedom’s ECLSS[C]//Proceedings of the
+4" European Symposium on Space Environmental and
+Control Systems. Florence, Italy, 1991-10
+[20] von Jouanne R G Barker R S. Detailed integration
+analysis of the space station life support system, SAE
+941510[R], 1994
+[21] Reeves D R , Barker R S. Space station temperature and
+humidity control dynamic analysis, AIAA 1994-4465[R]
+[22]黄家荣,范含林.载人航天器生活舱内湿度场的稳态
+数值模拟[]宇航学报,2005,26(3):349-353
+Huang Jiarong, Fan Hanlin. Steady numerical simulation
+for the humidity distribution in manned spacecraft
+habitation cabin[J]. Journal of Astronautics, 2005, 26(3):
+349-353
+[23]付仕明,李劲东,潘增富.空间站温涨度控制子系统
+的动态分析门宇航学报,2008,29(2):683-687
+Fu Shiming, Li Jindong, Pan Zengfu. Dynamic analysis
+of space station temperature and humidity control
+subsystem[J]. Journal of Astronautics, 2008, 29(2):
+683-687
+[24] Hartley J G Colwell G T Development of an emulation-
+simulation thermal control model for space station
+application, NASA-CR-182409[R],1988
+[25] Panczak T Rickman S, Fried L, et al. Thermal synthesizer
+system: An integrated approach to spacecraft thermal
+analysis, SAE 911582[R], 1991
+[26] Tandler J. Integrated energy balance analysis for Space
+Station Freedom, SAE 911338[R], 1991
+[27] Schmidt R A. Two-phase thermal control system modelling
+using SINDA’85/FLUINT, SAE 911590[R], 1991
+[28] Bellmore P Integrated active thermal control system
+analysis of Space Station Freedom operational scenarios,
+SAE 932200[R], 1993
+[29] Tran O N, Navickas J. Development of a thermo-
+hydraulic math model of the space station single-phase
+active thermal control system, SAE 951612(R], 1995
+[30] Augustine J. Space station integrated temperature and
+humidity control analysis using SINDA/FLUINT, SAE
+961350[R], 1996
+[31] BarkerR S, von Jouanne R G Schrader T . International
+Space Station THC/IMV development test and
+analytical model correlation, SAE 961401[R], 1996
+[32] Lee L C. Hydraulic design of the space station active
+thermal control system utilizing SINDA/FLUINT flow
+models, SAE 972346[R], 1997
+[33] Berrios I, Clark R W, Morrison R H. Dynamic analysis
+of the International Space Station external active
+thermal control system, SAE 2003-01-2588[R]
+[34] Simon R, Eickhoff J. SIMTAS: Thermo and fluid dynamic
+European Symposium on Space Environmental and
+Control Systems. Florence, Italy, 1991-10
+[35] Kirtley C J, Boillot Y, Lebru A. FHTS-active thermal
+control analyser, verification, validation and upgrade,
+SAE 911545[R], 1991
+[36] Veneri R, Pugliese V, Gargioli E, et al. Modelling
+approach for the thermal/environmental system of the
+Columbus attached pressurised module, SAE 911546[R],
+1991
+[37] Renatio D, Tiziano M. A combined cabin/avionics air
+loop design for the space station logistic module[C)/
+Proceedings of the 4" European Symposium on Space
+Environmental and Control Systems. Florence, Italy,
+1991-10
+[38] Gargioli E, Lobascio C, Nava L, Thermal comfort in the
+Columbus attached pressurized module, SAE 961367[R],
+1996
+[39] Romera J A, Persson P J, Witt J, et al. Mode transition
+analyses of the attached pressurized module cabin air
+loop with EcosimPro, SAE 2000-01-2366[R]
+[40] Alexander R, Jan P Johannes W et al. Improving the
+Columbus integrated overall thermal mathematical
+model (IOTMM) using computational fluid dynamics
+(CFD), SAE 2005-01-2796[R]
+[41] Altov V V Zaletaev S V Belyavskiy E P. Thermal
+analysis of ISS service module active TCS, SAE
+2000-01-2314[R]
+[42]“徐小平,李劲东,范含林.大型航天器热管理系统集
+成分析[中国空间科学技术,2004,24(4):11-17
+Xu Xiaoping, Li Jindong, Fan Hanlin. Integrated
+analysis of thermal management system in large
+spacecraft[J]. Chinese Space Science and Technology,
+2004, 24(4): 11-17
+[43]张立,范含林.单相流体回路系统的性能集成分析[才
+中国空间科学技术,2004,24(4):47-53
+Zhang Li, Fan Hanlin. Integrative analysis on thermal
+and flow performance of single-phase fluid loop
+system[J]. Chinese Space Science and Technology, 2004,
+24(4): 47-53
+[44]付仕明,徐小平,裴一飞.空间站集成全局热数学模型
+的建模和分析[航天器环境工程,2010,27(1):75-79
+Fu Shiming, Xu Xiaoping, Pei Yifei. The integrated
+overall thermal mathematical model of a space station[J].
+Spacecraft Environment Engineering, 2010, 27(1): 75-79

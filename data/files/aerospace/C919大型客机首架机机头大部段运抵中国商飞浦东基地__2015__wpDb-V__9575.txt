@@ -1,0 +1,213 @@
+C919大型客机首架机机头大部段运抵中国商飞浦东基地
+2014年10月15日下午1点，C919大型客机首架机机头大部段运抵中国商飞公司总装制造中心浦东基地。这是C919项目研制过程中第四个交付的大部段。
+
+大型客机 浦东 中国 机头 研制过程 总装  
+
+1 Introduction
+GOCE satellite with the first combination of satellite
+gravity gradiometry ( SGG) and satellite-to-satellite
+tracking (SST) technique has been launched success-
+fully on March 17, 2009. Great improvements have
+been achieved in the field of geophysics, ,geodynamics ,
+geodesy and so on since GOCE started tp provide high-
+precision and high-resolution gravity field informa-
+tion!" =", Currently, there are three methods to deter-
+mine earth gravity field by SST: integral method
+(IM), acceleration method (AM) and energy conser-
+vation method ( ECM). Satellite acceleration can be
+derived either from its position or from its velocity.
+Studies show that the accuracy and reliability of
+Received:2013-02-06; Accepted :2013-03-01
+Corresponding author; Jiang Nan, E-mail; jiangnanl112@ 163. com
+This work is supported by the National Natural Science Foundation of Chi-
+na (41174008) ) the Open Foundation of State Key Laboratory of Geode-
+sy and Earth’ s Dynamics ( SKLGED20134-2-EZ) and the Foundation
+for the Author of National Excellent Doctoral Dissertation of China
+acceleration derived from velocity is better than those
+from I)0siti0Il〔乏署〕 . However, the precondition of the a-
+bove conclusion is that the orbit data includes both po-
+sition and velocity. Therefore, acceleration determina-
+tion from velocity is easily realized by using dynamic
+orbit (DO) or reduced-dynamic orbit (RDO) but hard
+for kinematic orbit ( KO). Moreover, prior gravity
+field model used in dynamic or reduced-dynamic orbit
+determination inevitably influences the gravity field re-
+covery when DO or RDO is used. The best way is to
+use KO for gravity field recovery since there is not any
+prior gravity field model included in KO?'. A Cheby-
+shev fitting method with redundant observations
+(CRO) is proposed and it can reach a 3D precision of
+0.3 mm/s!"'. Tt still can’t meet the requirement of
+high-precision gravity field recovery.
+In order to improve the interpolation accuracy, the
+authors study the direct proportion relationship between
+velocity error and orbit coordinates, and then propose a
+remove and restore method ( RRM) since it can im-
+prove the stability of values and the interpolation preci-
+sion. In addition, KO obviously has some outliers. In
+order to clear away the outliers ,an outliers detection
+method (ODM) is proposed. Synthesizing the advanta-
+and it can reach the highest precision compared to the
+primary two methods. In this paper, we use some ex-
+then expound its advantages.
+2 Principle of the new algorithm
+2.1 Principle of CRO
+In order to calculate the Chebyshev polynomial coeffi-
+cients, firstly fitting period must be transformed into
+section [ - 1,1]. Transformational formula can be
+shown as:
+where 1, is the starting epoch and At is the sampling in-
+terval. Then the Chebyshev recursion formula can be
+defined as:
+To(7) = 1
+(7) =277.(7) -T, (1) n=12,
+The size of coefficient matrix B is m x (n +1), in
+which m is the number of sampling points. In general
+r覆u苛']′)[】】「]3〕， so the size of matrix Bis (n +1) x(n +
+1). However, the number of sampling points m in CRO
+method should be greater than n + 1 (m>n+1).
+Then the column vector L = (X;, , 友 , 友 , can be
+error equation 1s:
+V=BC-L (4)
+where C is the n + 1 coefficient of Chebyshev polyno-
+mial. The coefficient matrix C can be calculated hy
+least squares:
+2.2 Principle of RRM
+increment between KO and reference orbit can be cal-
+culated :
+where Pko is the KO position, P ; 1s the position of
+RDO, AP is the position increment.
+Velocity increment can be interpolated by CRO when
+the orbit increment is used as observation.
+where AP, is the Chebyshev fitting polynomial, AV is
+the velocity increment which is derived from position
+ity increment to reference velocity-
+where V_ is the velocity of RDO, Vy, is the final ve-
+locity of KO.
+However, the basic of RRM method is that both or-
+is transformed into the same as KO.
+2.3 Principle of ODM
+The procedures of ODM method are as follows:
+The KO RMS (s) is calculated by
+The epoch in which the position increment exceeds
+vation ( CRO).
+30 is marked when iterating. Then the marked epoch
+Scheme 2: CRO combining with remove and restore
+above will be replaced by the reference orbit to gain a
+method (CRO + RRM).
+clearer KO product without outliers.
+RDO and KO of GOCE satellite on Nov. 3 2009
+the above schemes.
+are used for computations and analyses. The RDO
+The error statistics are shown in tables 1 to 4 and the
+with 10 s sampling interval has the position accura-
+errors in scheme 1 are shown from figure 1 to figure 6.
+cy of 1 cm and the velocity accuracy of 0. 1 mm/s.
+Figure 7 displays KO coordinate of GOCE. The com-
+The KO with non-integer second sampling interval
+parison of 3D precision is shown in figure 8.
+Table 1 Statistics of velocity accuracy in scheme 1( unit: mm/s)
+一一走一
+Sampling points order a ae TT iS
+一一一一一一一一一一万万一一一一一一一一
+3 points 4 order 1.814 0. 326 1.960 0.327 7.500 0.625 0.777
+7 points 4 order 1.354 0.182 1.237 0.182 5.031 0.345 0.430
+9 points 4 order 0.741 0.130 0.676 0.131 3.110 0.234 0.298
+11 points 4 order 0.623 0.149 0.623 0.150 1.945 0.218 0.304
+13 points 4 order 1.139 0.265 0.696 0.264 2,287 0.331 0.499
+15 points 4 order 2.045 0.478 1.838 0.478 4.062 0.580 0.891
+_ se ee —_-  m me
+Samplingpoints/order一一一忐一_I、泛薯】亡【“Ll呈丽一一一豇」/罡一扁厂3DRMS
+匙′_一一_~_一一一一_一_`-，_^喊-一_一___】'_-豁_一_一_一_一_一喻
+5 points 4 order 1.765 0.338 2.027 0.337 7.522 0.636 0.795
+7 points 4 order 1.368 0.185 1.197 0.185 5.025 0.348 0.435
+9 points 4 order 0. 807 0. 126 0.673 0. 126 3. 119 0.232 0.293
+11 points 4 order 0.522 0.094 0.652 0.095 1.957 0.172 0.218
+13 points 4 order 0.466 0.074 0.612 0.076 1. 497 0. 137 0. 173
+15 points 4 order 0. 455 0. 062 0. 460 0. 063 1. 145 0. 112 0. 143
+17 points 4 order 0.388 0.054 0.385 0.055 1.014 0.095 0.122
+21 points 4 order 0.284 0.043 0.321 0.043 0.706 0.072 0.094
+Table 3 Statistics of velocity accuracy in scheme 3 (unit: mm/s)
+Vy
+5 points 4 order 1.814 0.333 1.762 0.343 2.861 0.473 0.673
+7 points 4 order 1.354 0.184 1.056 0.187 1.639 0.257 0.367
+9 points 4 order 0.721 0.131 0.667 0.134 1.025 0.179 0.259
+11 points 4 order 0.617 0.150 0.630 0.151 1.308 0.188 0.284
+13 points 4 order 1. 139 0.264 0.782 0.265 2.287 0.319 0.492
+15 points 4 order 2.045 0.478 1.838 0.478 4.063 0.575 0.887
+Table 4 Statistics of velocity accuracy in scheme 4 ( unit: mm/s)
+V.
+Samplingpoints/ordey“一一一一一一一一r一一一一一一一一一3DRMS
+Max RMS Max RMS Max RMS
+5 points 4 order 1.765 0.343 1.722 0.347 2.902 0.486 0. 689
+7 points 4 order 1.368 0.187 1.064 0.188 1.622 0.261 0.372
+9 points 4 order 0. 736 0. 127 0.673 0.128 0.995 0.176 0.252
+11 points 4 order 0.522 0.094 0.552 0.096 0.933 0.131 0.188
+13 points 4 order 0.475 0.074 0.612 0.077 0.652 0.103 0.148
+15 points 4 order 0.455 0.060 0.352 0.063 0.489 0.084 0.121
+17 points 4 order 0.388 0.052 0.361 0.054 0.394 0.072 0.104
+19 points 4 order 0.291 0.045 0.264 0.047 0.356 0.062 0.090
+21 points 4 order 0.259 0.040 0.242 0.042 0.300 0.054 0.0795
+From the tables 1 ~4 and figures 1 - 8,the follow-
+X and Y are better than 0. 06 mm/s and that in direc-
+ing conclusions can be drawn.
+(1) Table 1 shows 3D interpolation precision of ve-
+(4) Comparing table 1 with table 3, the following
+locity in scheme 1 is superior to 0. 3 mm/s, but it still
+facts can be drawn. ODM method has little effect on
+can’ t meet the requirement of high-precision gravity
+improving the precision in directions X and Y. Because
+field recovery. When the number of sampling points is
+there is nearly no outliers in directions X and 工 But it
+9 in directions X, Y and 11 in direction Z, the inter-
+obviously improves the precision in direction Z which
+polation accuracy is best. As a result if there is only
+has larger number of outliers.
+KO data for us, CRO method is recommended for
+(5) From table 2 to table 4 the following facts can
+using.
+(2) Figure 1 to figure 7 clearly illustrate that the in-
+sion in direction Z, but also improve the calculating ef-
+terpolation errors of velocity have a direct proportion
+ficiency by using fewer sampling points.
+relationship with satellite coordinates. That means if
+(6) Figure 8 demonstrates that scheme 1 has the
+satellite coordinate is reduced, the higher precision ve-
+same precision as scheme 2 when the number of sam-
+locity can be gained. RRM method can exactly meet
+pling points is less than 9, but scheme 2 has higher
+this requirement.
+(3) It’ s shown from the comparison of table 1 and
+main reason is that RRM method changes the orbit co-
+table 2, RRM method can greatly improve the interpo-
+ordinate into a smaller section ,and the interpolation
+lation precision of velocity when keeping the same
+error will reduce with the decreasing of coordinate.
+number of sampling points. When the number of sam-
+Scheme 3 and scheme 4 have the similar situation as
+pling points is 17 ,the velocity precisions in directions
+scheme 1 and scheme 2, but have higher precision
+since the outliers have been cleared away by ODM
+method. In scheme 1 and scheme 3 the interpolation
+Sp4o 7p4o 9pdo llpdo 13pdo 15pdo 17p4o 19pdo 2tp4o
+Point number
+Figure 8 The comparison of 3D accuracy in 4 schemes
+the outliers. From table 2 table 4 and figure 8, when
+the number of sampling points is 19 ,the 3D precision
+can be superior to 0.1 mm/s.
+4 Conclusion
+The precision of velocity determination using CRO
+method can not meet the requirement of high-precision
+gravity field recovery. Taking the advantages of RRM
+method and ODM method , CRROD method carn reach
+a 3D precision of 0. 1 mm/s for GOCE satellite velocity
+interpolation, which is above 3 times better than the
+that of CRO method and far better than those of con-
+ventional interpolation methods. The further investiga-
+tion will focus on the gravity field recovery using ECM
+based on the high-precision velocity information by the
+proposed method.
+Acknowledgments
+The authors are grateful to the ESA for providing the
+GOCE reduced-dynamic orbits and kinematic orbits for
+this investigation.

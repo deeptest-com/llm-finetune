@@ -1,0 +1,479 @@
+火箭应用  大有作为
+提到火箭,人们很快想到运载火箭,它把各种卫星、宇宙飞船、空间站和星际探测器送上太空,为科学技术发展作出了巨大贡献。我国的运载火箭在许多方面已达到世界先进水平。长征系列运载火箭已投入使用了9种型号,形成长征家族,可以满足当今世界发射市场各种卫星的发射服务要求。除了运载火箭之外,火箭在其他领域还有许多应
+
+运载火箭 模型火箭 增雨 滑轨 架线 种型 降落伞 发射服务 西康铁路 终南山  
+
+0 Introduction
+Aircraft aerodynamic surfaces are subject to ice
+accretion when flying through clouds of supercooled
+water droplets, ice accretion on the wing or on the
+tail wing can lead to serious degradation of the aero-
+dynamic performance, such as an increase in drag, a
+decrease in the stall angle, altered moment charac-
+teristics of the aircraft and a decrease in lift. More
+importantly, ice accretion on propellers or engine
+nacelles can cause dangerous accident when the ice
+accretion breaks free. Traditionally, the design of
+de-icing and anti-icing systems is based on the im-
+pingement limits corresponding to Mean Volumetric
+Diameters (MVD) of 40pm or less, which is cur-
+rently defined in Appendix C of the Federal Aviation
+Regulation (FAR) 25 regulations. SLD (MVD 一
+40pm) induce severe icing conditions, cause water
+film run back on longer distances and freeze beyond
+the areas protected by the anti-icing system, when
+the de-icing system is activated, the dangerous ridge
+ice accretion can occur on the wing behind the lead-
+ing edge de-icing system, In fact, in two relatively
+recent aircraft accidents ( ATR-72 commuter at
+Roselawn, IN, in 1994 and Embraer-120 twin tur-
+boprop at Detroit in 1997) the primary cause has
+been attributed to ice ridges due to SLD. A
+research program on aircraft in-flight icing conducted by
+and Ottawa showed that SLD occurred 41% of the
+time during in-flight icing conditions experienced
+near Ottawa and 73% near St. John’ 8S, SO these
+dangerous conditions are quite frequent,
+It is very clear that the design of anti-icing and
+de-icing system based on the MVD of 40um is insuf-
+ficient, and an extension of numerical approach to
+account for SLD effects is needed. The problem is
+such an extension is difficult for the SLD regime vi-
+olates some assumptions made by Bourgault et all?l,
+The first one is SLD do not travel at the freestream
+velocity because of their large MVDs, SLD no lon-
+ger enjoy a stable velocity,so an additional velocity
+component needs to be introduced in the initial ve-
+locity. The second one is SLD are prone to deform
+under the influence of shear forces, resulting in an
+oblate disk shapes. The last one is the splashing and
+rebound effects may lead to partial deposition of the
+impinging droplet mass.
+Many researchers have done lots of work to
+take into account the effects of terminal velocity,
+droplet deformation, splashing and rebound. One of
+the detailed experimental studies was performed by
+Stow who reported on the impact of water drops on
+a dry surface’. Khan and Richardson derived an
+expression to take into account the effects of termi-
+nal droplet velocity!??. Yarin and Weiss proposed a
+splashing model as a type of kinematic discontinui-
+tyl??. Bai and Gosman did a lot of work on rebound
+model”. In china, many people have done research
+on numerical simulation of ice accretion, such as Yi
+Xian, Wei Dong , Wang Jiangfeng et al[810] but few
+people did research related to SLD regimes, Jian-
+ping Hu and Zhenxia Liu did a research on SLD im-
+pact behaviors on Aero-engine Strut in 201114,
+In this study, an Eulerian droplet tracking
+method together with models for splashing and re-
+bound are described. First of all, the splashing and
+rebound model calibration is needed. A recent study
+performed by Papadakis facilitates the calibration of
+the modeln21, The experiment was carried on a NA-
+CA23012 airfoil of 1. 8288 span over a large range of
+conduct the calibration work. To examine the accu-
+racy of the model, the splashing model was then
+used along with the rebound model to generate ice
+shapes on a NACA0012 airfoil, the dataset chosen
+was reported by Potapczuk in 200331, To establish
+the model’ s applicability to arbitrary geometries,
+flow conditions and droplet size distributions, a
+three-element airfoil consists of a slat, a main ele-
+ment and a flap was chosen to evaluate the effects of
+SLD on the impingement results and predicted ice
+…1c〔:]亡e′[:i(〕~n1二1′薹_l5二_.
+1 Formulation and numerical method
+1.1 Governing equations for gas phase
+The flow field for air can be obtained by solving
+the Reynolds-Averaged Navier-Stokes (N-S) equa-
+tions. Numerical approach is based on the finite vol-
+ume form of the integral equations. In a domain of a
+volume 2 with boundary 3, the equation can be
+written in the integral form:
+晕王王〔〕亘(i\/」「Ia′】妄晏_「。.ndS=g|F.、AdS(1
+The vector of the conserved variables, the con-
+vective flux term, and the viscous flux term are giv-
+en as follows, respectively.
+The Cell-centered finite volume method is em-
+ployed to solve the N-S equations, and the Lower-
+Upper Symmetric Gauss-Siedel ( LU-SGS ) algo-
+rithm for time marching, Roe Flux Difference Split-
+ting scheme for the spatial discretization of the con-
+vective flux is implemented into codes. The treat-
+ment of the far field boundary condition is based on
+the introduction of Riemann invariants for a one di-
+mensional flow normal to the boundary, Chi and
+proper for simulating ice accretion. The N-S equa-
+tions are closed by the S-A model with thermally
+perfect gas and temperature-dependent properties,
+see details in Reference [17].
+1.2 Governing equations for droplets
+The continuity equation and momentum equa-
+tions for droplets are a set of partial differential e-
+quations, one of the source terms for the momen-
+tum balance will have to be the drag force, since it
+is the main force for the droplet phase. The equa-
+tions for mass and momentum conservation of the
+droplet phase are[18-191 ,
+The other source term considered besides the
+drag force f4us are gravity force, pressure gradient
+force, mass force, Basset history force, Magnus
+force and Saffman force.
+The drag fore is modeled using the drag coeffi-
+cient Cp.
+`/`(二丨】′鲁】g=_珙嘉【′J儡_[J(薯丨(4)
+Where Re, is the droplets Reynolds number, K is an
+inertia parameter, L is reference length, is the
+droplet diameter,ps ,D。 ps denote the density of
+water, freestream velocity and molecular viscosity
+coefficient respectively.
+Droplets having large diameter are prone to de-
+form under the influence of shear forces, resulting
+in the increase in aerodynamic drag at SLD condi-
+tions[201 ;
+了 二 1.0 一 (1.0 十 0.0R/ HWe ) 一 (7)
+Weber number 1S:
+Ca and Cas represent the drag coefficients of a
+spherical particle and oblate disk, respectively. gy is
+the droplet surface tension,
+_′【〉g艾`zl\′it}′=_〈二l>_【′:)酞/K)(_【)_矗熹玄(9
+Froude number is expressed as[211 ;
+The Saffman force describes a lift force for
+small particles, it is more important for small parti-
+cles than for the larger particles that are being stud-
+ied. The Basset force models the effect of the
+change in drag as a function of time which is used to
+model the flow of gas bubbles, this effect is unim-
+portant for present study, since the viscosity of air
+is much less than that of droplets. Saffman and Bas-
+set forces can be safely ignored based on calculation
+in LEWICE. For large droplets with big inertia,
+Magnus force is negligible. The ratio of mass force
+to the drag force, is of the order of 10* in icing con-
+ditions, since ice accretion involves no shock wave,
+so the pressure gradient force can be neglected rea-
+sonably.
+The finite volume method is applied to dis-
+cretize the governing equations, the convective term
+is discretized using the QUICK (Quadratic Upwind
+Interpolation of Convective Kinematics) scheme,
+and the deferred correction method is used to ensure
+the diagonal dominance in the discretized equations.
+In order to guarantee the stability of the iterative
+solution of algebraic equations,the source term is
+disposed linearly, the Alternating Direction Implicit
+(ADD iteration method is utilized to solve the alge-
+braic equations. In the Eulerian method, the setting
+of the wall boundary condition is very important in
+the calculation of collection efficiency,a permeable
+wall boundary condition is applied to simulate the
+droplets’ impingement onto the wallt???,
+2 SLD model
+2.1 Terminal velocity of droplets
+Khan and Richardson used a dimensionless Gal-
+ileo number defined as a function of physical proper-
+ties of the droplet and gas phase to account for the
+terminal velocity,
+Ma
+Terminal Reynolds number is:
+The corresponding terminal velocity can be ob-
+tained from terminal Reynolds number:
+given MVD is determined, the initial velocity may
+be changed accordingly (three dimensional case) ;
+2.2 Interactions between droplet and ice accreting
+surface
+Bai and Gosman collected a number of results
+from literature and tried to identify some threshold
+levels in terms of dimensionless numbers for impact
+droplets when impact occurs(Fig. 1),
+Fig.1 Schematic of droplet-wall interaction mechanisms
+图 1 水滴和物面相互作用示意图
+Stick, We<2
+Rebound, 2 一 We 一 10
+Spread, 10<<We<(1320La??*
+accounted for automatically in governing equations;
+rebound and splashing mechanisms are required to
+The model tor mass-loss due tO spiasning in
+SLD conditions by Honsek is used'?!, the mass-loss
+coefficient is expressed as:
+With the Ohnesorge number defined as:
+Trujillo determined the number of secondary
+Ky is a function of the non-dimensional surface
+roughness ks, ,
+Cosali number is similar to Rom :
+K., 二 Oh 圣 。 We (20)
+When splashing occurs, the normal and tangen-
+tial components of secondary droplet velocities are
+determined by functions based on the experimental
+data reported by Mundor25 ,
+The average size of secondary droplets can be
+? determined by:
+乙z…一二〔Z〔旨}一)了乙z(23)
+About rebound, the components of velocities
+follow the expressions below:
+TT VL. U 0 “ U UVODD U
+Where § =90 — arctan (GL)
+For an Eulerian method, the splashing and re-
+bound phenomenon cause mass loss, this phenome-
+non is implemented by defining a splashing bounda-
+ry condition and a rebound boundary condition,
+which means adding a source term to the flux in the
+mass and momentum equations at the wall bounda-
+ry, the source terms for mass equation are:
+The source terms for momentum equations are:
+With source terms M and 〖 included, the fol-
+lowing droplet governing equations are obtained:
+冒'z急Z…_<量王′′_′_v“【()【粤′,乏【J【z′〉乏_基_z\左S【)】富】l暴蚤【】_鲁__Z\4[)(〕′l1n【:E′_'?_0(30)
+Where i=1,2,++,N,, indicates the droplet bin,
+3 Collection efficiency
+The collection efficiency shows the distribution
+of liquid on ice accreting surface, with the solution
+of droplet volume fraction, a, and the distribution
+of velocity, the collection efficiency 8 can be ob-
+tained with the following expression;
+Where n is unit vector normal to wall, 口 。 and qo.
+are the velocity and the droplet volume fraction of
+far field.
+4 Icing model
+The icing model is based on the model proposed
+by Messingerr2“1,the icing model consists of mass
+and energy conservation equations, for each control
+volume, tne COonservdrion equdrion OI aropletr mass
+can be described as follows,
+Mimp + Miowin 一 92flowout 一 Mice 一 Msub 一 Meva 二 0
+Where mn, is the flux of impinging droplets, mown
+is the total mass flux entering the control volume
+from the previous control volume, yztlowou is the total
+mass flux flow out of the control volume, m,. is ice
+accumulation in the control volume, m,, is the flux
+due to ice sublimation in control volume, m.,, is the
+flux caused by water evaporation in control volume
+under consideration.
+The improved thermal conservation equation
+can be expressed as the following ,
+Qc[)】'】tj + Qimp + Q.va + Qc. + Qeonv + Qin +
+Qo + Quiowin + Qitowout =0 ( 34 )
+Where Qo is conductive heat through the ice accre-
+ting surface,Qim is the heat carried by impinging
+droplets, Q.., is the heat transfer induced by water
+evaporation, Q,. is the freezing heat stored in accre-
+ted ice, Qn is convective heat,Qu is aerodynamic
+heating by airflow, Q,, is heat transfer caused by
+ice sublimation,Qaovi is the heat added into the
+present control volume from previous control vol-
+ume, Qtowout is the heat transfer out of the control
+volume, further information may be found in Refer-
+ence[25] .
+5 Results
+5.1 Model calibration with NACA23012
+Papadakis performed experiment with different
+MVDs for a NACA23012 airfoil at angle of attack e-
+quals to 2. 5°, one case of MVD equals 111pm was
+selected to carry on the calibration work, the select-
+ed case and the corresponding conditions are shown
+in table 1. In order to get more accurate results,
+droplet size distribution of Langmuir D is employed
+for selected case. The splashing and rebound model
+mentioned above are implemented into present
+code, it is easier for Eulerian method to implement
+re-injection phenomenon than Lagrangian method
+does. The catching efficiency with splashing and re-
+bound effects is compared with the catching efficien-
+cy without the effects as well as experimental re-
+sults. The catching efficiency calculated is shown in
+Fig. 2, a dramatic improvement is observed when
+the SLD model is employed. Due to the SLD
+effects, the catching efficiency decreases almost eve-
+rywhere, especially near the impingement limitation
+as shown in Fig. 2. It should be noted that over-pre-
+dicted decrease occurs near leading edge and im-
+pingement limitation. Anyway, close agreement
+with experimental data can be obtained by taking in-
+to account the SLD effects.
+Table 1 Test conditions for model calibration
+裘1模型验证计算条件
+a/(") 2.5
+Uo /(m es!) 78.22
+MVD/xm 111
+Chord/m 0.9144
+二 WC/Cg, rm3 ) 0.5
+P../kPa 94.8
+Fig. 2 Water collection efficiency of NACA23012
+图 2 NACA23012翼型水滴收集率
+The Liquid Water Content (LWC) can be ob-
+tained easily since the full field of the droplets can
+be provided by Eulerian method, the calculated
+LWC for selected case is shown in Fig. 3 for this
+case, there is apparent difference in the LWC with
+and without SLD effects, especially near the leading
+edge, showing a region of increased LWC concen-
+tration, The reason for this is once the splashing
+effect occurs near leading edge, the splashed sec-
+ondary droplets are re-injected into a smaller bin
+corresponding to the diameter closest to the second-
+ary droplet diameter obtained from the splashing
+model,
+From the above discussion, the proposed math-
+ematical model may be considered mathematically
+consistent and physically representative,
+The splashing model is then used along with
+the rebound model to generate ice shape on a NA-
+CA0012 airfoil, the selected case 1s Run 1-23 which
+was reported by Potapczuk!?!, the calculate condi-
+tions are shown in table 2. The same as NA-
+CA23012,Langmuir D distribution is used here.
+The comparison shows a slight decrease in the over-
+all shape when the splashing model is activated, as
+illustrated in Fig. 4d, the calculation captures the o-
+verall size and shape of the experimental ice shape,
+whereas the calculation is unable to reproduce the
+detail of the ice shape surface nor is it able to depict
+the small structures aft of the main ice shape. The
+using of the SLD model decreases the amount of ice
+accretion almost everywhere, especially near the aft
+limits of the ice shape.
+For the calculated ice shape, corresponding wa-
+ter collection efficiency is shown in Fig. 4c,collec-
+tion efficiency decreases after accounting for SLD
+effects, especially near icing limit whereas unappar-
+ent decrease near leading edge. Since breakup oc-
+curs only in regions of high velocity gradient,so
+Table 2 Parameters for ice accretion on NACA0012
+表 2 NACA0012冰形预测计算条件
+Case no Case 1-23
+t/s 714
+T/K 253.95
+MVD/um 70
+c /(m est) 77.0
+工 WCA(g。 3 》 0. 65
+a/ ( ) 0
+Chord/m 0.5334
+(a) Liquid water content distribution without SLD effects
+(b) Liquid water content distribution with SLD effects
+edge, while rebound phenomenon dominates near
+the icing limit. This explains why catching efficien-
+cy decreases more severely near icing limit, for the
+mass-loss coefficient equals to 1 when rebound oc-
+curs, when it comes to splashing, the mass-loss co-
+efficient is less than 1.
+Fig. 4b shows the LWC distributions for the SLD
+effects around the airfoil, near the suction and pres-
+sure side of the airfoil, there are two symmetry
+shadow zones in which droplet volume fraction near-
+ly equals to zero, the calculation with SLD effects
+have smaller shadow zone than the calculation with-
+out SLD effects. Particularly, SLD effects which
+are the splashed and rebounded phenomenon due to
+the droplet-wall interaction are observed as a result
+of LWC distributions, Fig.4b demonstrates that
+SLD effects tend to enhance the LWC concentration
+around the airfoil.
+5.3 Ice accretion on three-element airfoil
+In this section, a high lift airfoil section is se-
+lected to address the needs of large transport air-
+craft, it is an advance high lift system which de-
+signed in the early 1990「s. The three element airfoil
+consists of a slat, a main element and a flap with 36
+inches chord. For this case, only the landing config-
+uration is considered in this investigation, for the
+landing configuration the slat deflection is 30° lead-
+ing edge down and the flap deflection is 30° trailing
+edge down, the definition of deflection of the high-
+lift components is set with respect to the main ele-
+ment wing reference plane. The gap and overlap are
+defined to depict the slot size between the main ele-
+ment and the high lift components. Gap is the mini-
+mum distance between the leading edge of the
+downstream element and the trailing edge of the up-
+stream element, for the flap, the gap is 0. 457 in-
+ches and for the slat it is 1. 062 inches. Overlap is
+the horizontal distance from the leading edge of the
+downstream element and the trailing edge of the up-
+stream element, the overlaps for the flap and slat
+are 0.09 and -0. 9 inches respectively. Test parame-
+ters are in table 3, the temperature for the ice accre-
+tion is 260. 65K, Langmuir D distribution is used to
+compute the overall impingement distribution.
+Table 3 Parameters fir ice accretion on three-element airfoil
+表 3 一殿翼冰形预测计葛桧件
+t/s 600
+工 WC/(8,rm3》 0.22
+a/() 4
+Chord/m 0. 9144
+Po /kPa 101. 325
+are shown in Fig. 6 and Fig. 7 respectively, around the
+airfoil, some shadow zones appear near the pressure
+side of the slat and flap, the suction side and the
+trapped vortex area of the main element. Droplets
+splashing, rebound and re-impingement had rela-
+tively greater effects on the flap element compared
+to the slat and main element, for concentration
+zones (Fig, 6b) are observed near the leading edge
+of the flap and the pressure side of the three-ele-
+ment airfoil, which are thought to be contributed by
+the splashed droplets. As shown in Fig. 7, all ele-
+ments experience significant mass loss due to drop-
+let splashing and rebound process, which means
+SLD effects can not be ignored. Fig. 7 also shows
+that accounting for SLD effects has resulted in a
+better agreement with the experimental impinge-
+ment distributions for all the elements, especially
+for slat and flap elements. The collection efficiency
+near the trailing edge of the flap is over-predicted
+slightly while an under-prediction collection efficien-
+cy is found in the main element, this is very likely
+due to the sensitivity of the droplet rebound model
+Fig.6 Liquid water content distribution
+围6“三段养液态水含量分布云图
+(￠) Flap
+Fig.7 Water collection efficiency |
+图 7 三赖翼水蒲收集率|
+For the icing shape caleulated from the catehing
+efficietioy with and without SLD effects, shown in
+Fig.8, a of the ice thickness cin be observed
+downstream of the leading edge compared with that of
+without SLI) effects. For all the elements, there are
+significant changes when compared to those ealcu-
+lated without SLD effectss so the SLD effects can
+not be negligible.
+A suitable mathematical model for the droplet-
+wall interactions in an Eulerian method has been
+proposed and successfully calibrated against experi-
+| mental data on the collection efficiency of NA-
+‖ SLD model was then used to generate ice shape on a
+NACA0012 airfoil. At last an assessment of SLD
+effects on the simulation of droplet impingement
+and ice accretion prediction on a three-element air-
+foil has been presented. SLD effects tend to enhance
+the LWC concentration around the airfoil and cause
+reduction of collection efficiency near the leading
+edge, Droplets splashing occurred in all three ele-
+ments with different degree of intensity, the main
+and slat elements experienced mainly droplet splas-
+hing while the flap element experienced both splas-
+hing and re-impingement on the pressure side of the
+element,
+SLY effects include droplet splashing, rebound
+and re-impingement, the splashing and rebound
+effects are accounted for by adding source terms into
+the governing equations of droplet, the re-impinge-
+ment effect is carried on by re-injecting secondary
+droplets inte the droplet bin corresponding to the di-
+ameter closest to the secondary droplet diameter ob-
+tained from the splashing model. The good agree-
+ment between experimental and numerical data
+shows that the SLD model is feasible and effective,
+but the experimental and numerical results still have
+slight disagreement, which is possibly caused by the
+sensitivity of the rebound model and splashing mod-
+el which have only been validated qualitatively due
+to the lack of quantitative data and the accuracy of
+re-impingement approach, in the future; more
+works should be done on the improvement of SLD
+model.
+Ackaowledgement:
+The authors would like to thank Professor Tom
+I-P Shih, head of school of Aeronautics and Astro-
+nautics, Purdue University, for giving so much
+help.

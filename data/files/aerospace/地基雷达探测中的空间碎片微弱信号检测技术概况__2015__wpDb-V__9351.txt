@@ -1,0 +1,272 @@
+地基雷达探测中的空间碎片微弱信号检测技术概况
+空间碎片的日益增多。已对航天活动构成严峻威胁。空间碎片的精确监测是对航天员和飞行器实施安全防护的重要前提，也对空间微小碎片探测能力提出了更高要求。文章对国外地基雷达探测空间碎片现状，以及对在雷达微弱信号检测技术方面比较常用的以信号处理为基础的长时间积累检测技术和基于时频分析的雷达微弱信号检测技术研究现状进行了综述。
+
+信号检测技术 空间碎片 雷达探测 地基 航天活动 安全防护 探测能力 时频分析  
+
+DOI: 10.3969/j.issn.1673-1379.2013.03.001
+0 Introduction
+The Moon is commonly considered as a heavenly body
+without significant atmosphere or global magnetic fields and
+in absence of any ionosphere. Unlike magnetized bodies
+(Earth, Jupiter, Saturn, etc.) that would interact with the solar
+wind, the Moon, when it periodically immerses in the
+interplanetary medium, would act as an obstacle that directly
+absorbs the solar wind particles that impact its sunlit surface,
+creating a downstream plasma-void cavity left behind it for
+several lunar radii, which is referred to as the ‘lunar wake’t!],
+Most of these basic views about the solar wind-Moon
+interactions have been formed from early plasma/magnetic
+field experiments onboard Explorer and the Apollo
+missionsP3]、 Further detailed properties of structured lunar
+plasma in the lunar wake were explored by the WIND
+satellite, It has been believed that the solar wind electrons
+can approach the lunar nightside region in ahead of the ions,
+because the electrons are lighter, more mobile, and have a
+greater thermal speed. The electron-rich status of the lunar
+wake yields a bipolar (inward) electric field at the wake
+into the near-Moon wake by their Larmor motion in the
+direction perpendicular to the IMFU1
+Another significant feature of the lunar plasma
+environment is the scattering/reflection of the solar wind
+protons at the lunar dayside surface. When these reflected
+particles come back to the solar wind, they immediately
+encounter the convective electric field and are accelerated
+and picked-up by the solar wind to obtain at most 9 times of
+the original kinetic energy'?. This acceleration, which is
+called ‘self-pickup’ process, occurs on the dayside of the
+Moon. The accelerated pickup ions are observed to gyrate
+within the lunar noon meridian plane when the IMF B,
+dominates[?-14 and some ions with higher energy make a
+large gyro-radius motion and even enter the lunar wake
+directly from the dayside!'?, Those pickup ions around the
+Moon are found to cover a distances of up to 20,000 km from
+the lunar surface!’ Recently, Chang’E-1(CE-1) observational
+data shows that the pickup ions near the Moon exhibit three
+dimensional asymmetric properties under various IMF
+(:′o薹](:囊i丨二i()_:ls[】^.]- Nevertheless, the destination of the
+self-pickup protons has never been clearly known.
+As the first Chinese lunar probe, CE-1 is a three-axis
+stabilized lunar polar orbiter at an altitude of about 100 一
+200 km with a period of about 2 hours. Two identical solar
+wind ion detectors(SWIDs) were onboard to measure the
+particle environment around the Moon!'?), Each SWID is a
+hemispheric-cap-shaped electrostatic analyzer. Its field-of-
+view (FOV) is 6.7cx180“ and a wide slit of 180° is divided
+into 12 sectors. Each sector has 48 energy channels
+sweeping from 0.04 keV/q to 20keV/q quasi-logarithmically.
+The FOV slit of the SWID-B looks up to the space and
+locates in the orbit plane, and the FOV of SWID-A is
+perpendicular to the current orbit plane and also space-facing
+(see Figure 3 in [16]). Thus, the SWID-B can receive an ion
+flux of sufficient intensity to determine its normalized
+distribution function, and the SWID-A can detect the full ion
+flux once in one revolution. In this paper, we reported the
+CE-1 observations of double ion beams in the slow solar
+wind. The solar wind pickup ions accelerated by the
+convective electric field at the lunar dayside surface and the
+solar wind ions accelerated by the bipolar electric field at the
+wake boundary were analyzed in detail. Such two kinds of
+the solar wind features were observed by the SWIDs many
+times during the whole mission.
+dayside
+On Dec 30, 2007, the Moon was located in the solar
+wind at ~3.0/-60.0/1.4 Rg (Earth radii) in the geocentric solar
+ecliptic (GSE) coordinate system (as shown in Figure 1(b)). The
+CE-1 spacecraft was at ~200 km altitude at this time. Figure
+1(a) shows the satellite orbit and the geometries of the
+SWID-B slit and its 12 sectors. The sector 1(S1) points 15°
+below the horizon and the sector 2(S2) always directs along
+the horizon. The inclination angle is increased by 15° for
+each sector. The orbit plane is ~4° deviated from the
+noon-midnight plane in this event. The data in Figure 1(c)
+shows the typical ion flux obtained in two orbit periods. The
+superposed energy spectra of ions is collected by all
+available sectors (S1~ S12, except S9 and S12). The
+two-hour orbital period of CE-1 produces similar signatures
+in the energy-time when the CE-1 is on the
+dayside, moving from the South Pole to the North Pole via the
+noon-equator. Figure 1(d) displays the positions of the CE-1 in
+the selenocentric solar ecliptic (SSE, with the longitude being
+matked in blue and the latitude in red) coordinate and the
+evolution of the solar zenith angle (SZA) of the satellite.
+When the longitude is ~0°, the CE-1 is orbiting along the noon
+meridian; when the latitude is about -90°(+90°) and SZA is
+~90°, the satellite is located at the South (North) Pole. Figure
+1(e) shows the IMF data observed by ACE satellite at the first
+Lagrange point. The IMF data is plotted by a time shift
+UHEUUU Ul auuul UU LILUVWEGS。 Luring ume 10ocuscu ume
+interval, the B, component dominates in most of the time.
+Dec 30, 2007
+(a) CE-1 orbit and the observational geometry of SWID-B in the
+selenocentric solar ecliptic(SSE) coordinate system
+(b) Position of the Moon in the geocentric solar ecliptic (GSE)
+coordinate system
+(c) The summed ions energy-time spectrum of all 10 sectors
+(except sector 9 and 12)
+(d) The latitude (red) and longitude (blue) of the in
+the SSE frame and the evolution of solar zenith angle(SZA) (green)
+(￠) The interplanetary magnetic field (in GSE) shifted from L1
+point measurement (ACE/MAG data)
+Fig. 1 SWID-B observation of solar wind double ion beams from 03:00
+to 07:30 UT on Dec 30, 2007
+The ion energy spectrum shows that two distinct
+populations are detected in the lunar dayside surface. One
+major population is the incident solar wind particles (see
+Figure 1(c)). The bulk velocity calculated from the energy
+spectrum of the solar wind is about 370 km/s, which is
+consistent with the shifted solar wind data from the ACE
+satellite. It has two energy peaks of almost constant values of
+~0.7 keV and ~1.4 keV, which can be identified as H and
+Another ion population appears first at the latitude of ~30° in
+the southern hemisphere near the noon meridian. The energy
+of this population continues to increase as the satellite moves
+northward. Similar accelerated ion populations were also
+observed by the CE-1 on May 28, 2008, which were
+confirmed as the pickup ions by the test particle tracking
+calculations”), At the North Pole, the energy reached its
+maximum of ~4 keV, about 6 times of the solar wind 玖
+energy, which was consistent with previous observations by
+Kaguyalf、These accelerated pickup protons were also
+reported by Nishino et al, and found at a lower altitude of
+100 km, During the time interval, the IMF points to
+persistently duskward(see Figure 1(e)). Thus, the solar wind
+convective electric field is northward. Once the solar wind
+ions are scattered/reflected from the lunar dayside surface,
+they move backward against the solar wind and northward
+along the convective electric field, thus being accelerated.
+The ions detected in the regions close to the North Pole may
+have experienced the accelerations for a longer time, so that
+the pickup ion energies are increased when they move
+toward the north pole.
+Figure 2 shows a sample of two-dimensional ion velocity
+distributions on the orbital plane by using observations from
+all 10 available sectors of the SWID-B within a 30s interval,
+The velocity distribution is at the location of latitude of 30°N
+of the dayside, marked by t2 in Figure 1. The axis of x(z) is
+approximately directed to the Sun (z axis in SSE), and the
+white arrow points to the lunar center. The color code
+indicates the averaged flux,and the four white dash circles
+correspond to energies of 0.75keV 1.5keV, 3.0keV and 6.0keV,
+respectively. The incident solar wind with double peak
+components is clearly seen to move against the x-axis at bulk
+velocity of ~370 km/s. The pickup ions distribute around the
+horizontal line and can be easily distinguished from the solar
+wind population. The energies of the pickup ions are closely
+related to the particle incident angle, identified by the angle
+between the particle incident direction and the white arrow. It
+suggests that the distribution of the pickup ions is sensitively
+angle-dependent. However, since there was no mass
+spectrometer onboard the CE-1 spacecraft, it was not sure
+whether those pickup ions were all protons.
+plane with 30s averaged near point t2 in Figure 1
+2 Solar wind ions accelerated in the lunar
+wake boundary
+observed the solar wind flows inside the wake boundary
+when the solar wind came directly into the FOV of the
+SWID-B. Figure 3(a) shows the superposed energy-time
+spectrograms of ions during two orbit periods. The He?"
+population was again identified in the solar wind during this
+time interval. The protons show an energy peak at ~0.6 keV,
+corresponding to the shifted solar wind speed of 340 km/s
+observed by the ACE spacecraft. Figure 3(b) shows the
+positions of the CE-1 in the SSE and the evolution of the
+SZA of the satellite, and Figure 3(c) shows the shifted IMF
+data observed by ACE satellite. The IMF changed from
+being +B, dominant to being -B, dominant at ~12:27 UT.
+During the time interval, the CE-1 spacecraft passed the
+north wake border (lat. 62°N) between sunlit and shaded
+regions twice: ~11:15 UT and ~13:25 UT (denoted by two
+dash lines in Figure 3). In the first orbit crossing, the IMF
+was +B, dominant. A gradual decrease of the proton energy
+from ~0.6 keV to ~0.3 keV was observed inside the wake
+boundary between 11:15 UT and 11:20 UT (lat. 46°N).
+During the second orbit period, the IMF changed to being
+-B dominant. The energies of the entering solar wind
+protons inside the wake boundary gradually increased from
+~0.6keV to ~1.0keV between 13:25 UT and 13:30 UT (lat.
+46°N). These observations show that the solar wind protons
+lose (gain) kinetic energy in the northern hemisphere around
+the wake boundary as they intrude deep into the wake from
+the sunlit (shaded) border.
+(a) The energy-time spectrogram measured by SWID-B between
+10:00 and 14:00 UT on Dec 30, 2007;
+(b) The CE-1 position in GSE;
+(c) The IMF;
+(end (g) Sector! data snd the IMF data (-B, dominated) for the
+Fig. 3 Time yedits data showing the acceletstion (deceleration) of
+solar wind particles around the lunar wake boundary under the
+davmward (duskward) BMF conditions
+The observations confirmed the fact that under the slow
+solar wind with a similar orbit, the solar wind
+horizon), those eatering ions could be detected during the
+north wake crossing, ‘which suggests that the
+distribution of these accelerated/decelerated ions in the wake
+is in ngroew beams. Figures 3(d) and 3(f) show the
+measurements in sector 1 during two orbit wake boundary
+crossings. fteah be clearly seen that the solar wind He" can
+also enter the wake region. But the He?" population intrudes
+less deeply than H? with smaller &cceletationdeceletation,
+3 Conclusions
+incident solar Wind: protons, near the wake
+boundary obsérved by the CE-1 spucectaft on Dec 30, 2007,
+In this event, both protons and alpha particles were identified
+in the slow solar wind. Under the IMF +B, dominant
+conditions, the pickup ion energy was increasing as the
+spacecraft moved northward. The ion velocity distributions
+show that the energy of the pickup ions is closely related to
+the particle incident angle relative to the horizontal direction
+of the Moon and is sensitively location-dependent. Under the
+IMF -H-B8,eonditions,the (accelerated) solar
+wind protons intruded deep into the wake from the wake
+in the northern hemisphere, while the He
+population intended Joss déiepty than. 训 The above observed
+kinetic f ave in the solar
+wind-Mopt teraction and. the near:Moon plasma
+environment.
+Acknowledgments
+Thank ail the members of the SWIDs work team and
+the ACE team for providing the solar wind plasma and IMF
+data. This research is sponsored by Nationsal High-
+1OCIIDICRKY X55S9ICR and Lreveropment oI vama
+(No. 2010AA122205).
+[1] Lyon EF, Bridge HS, Binsack J H. Explorer 33 plasma
+measurements in the vicinity of the Moon[J], Journal
+of Geophysics 1967, 72(23): 6113-6117
+[2] Ness N E Interaction of the solar wind with the
+Dordrecht: D Reidel Publ Comp, 1972: 159-205
+[3] Schubert G Lichtenstein B R. of Moon-
+plasma interactions by orbital and surface
+experiments{J], Reviews of Geophysics, 1974, 12(4):
+592-626
+[4] Bosqued J M, Lormant N, Réme H, et al. Moon-solar
+wind interactions: first results from the WIND/3DP
+23(10): 1259-1262
+[5] Trévniek P, Hellinger P Schriver D, et al, Structure of
+the lunar wake: two-dimensional hybrid
+32(6): L06102
+[6] Ogilvie K W, Steinberg J T, Fitzenreiter R 了 et al.
+Observations of the lunar plasma wake from the WIND
+on 27, 1994{J]. Geophysical
+Research Letters, 1996, 23(10): 1255-1258
+[71 Nishino M N, Maezawa K, Fujimoto M, et al. Pairwise
+energy gain-loss feature of solar wind protons in the
+near-Moon wake[J]. Geophysical Letters,
+2009, 36(12): L12108
+[8] Saito Y, Yokota 8 Tanaka T, 6t al. Solar wind proton
+reflection at the lunar low eamergy ion
+measurement by MAP-PACE SELENE
+35(24): 1.24205
+[9] Nishino M 玖 M, Maezawa K, et al.
+Solar-wind 佳 e secess deep into the near-Moon
+L16103
+[10] Wang X D, Bian W, Wang J S, et al. Acceleration of
+scattered solar wind protons at the polar terminator of
+the Moon: Results from Chang'E-1/SWIDs{J].
+Geophysical Research Letters, 2010, 37(7): L07203
+[11] Futaana Y Barabash S, Wieser M, et al. Protons in the
+near-lunar wake observed by the Sub-keV Atom
+Reflection Analyzer on board Chandrayaan-1[J].
+Journal of Geophysics Research, 2010, 115(A10):
+A10248
+[12] Nishino M N, Fujimoto M, Saito Y ct al. Effect of the
+solar wind entry into the lunar wake[J},

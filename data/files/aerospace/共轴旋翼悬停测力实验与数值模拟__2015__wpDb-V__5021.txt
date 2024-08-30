@@ -1,0 +1,181 @@
+共轴旋翼悬停测力实验与数值模拟
+为改善单旋翼的拉力不足的问题,对具有前后对称翼型的共轴旋转机翼,进行悬停测力实验,探索了单、双旋翼的最佳安装角。通过三维非定常旋翼绕流的CFD数值模拟,分析了上下旋翼之间的相互干扰影响。研究发现,受上旋翼下洗流影响,下旋翼的最佳安装角远大于单旋翼最佳安装角;共轴旋翼间的气动干扰使下旋翼拉力减小比上旋翼拉力减小程度大。实验表明,同转速双旋翼最大拉力超过单旋翼最大拉力的两倍,表明在特定情况下,双旋翼能改善单旋翼的拉力不足的缺点。
+
+共轴旋转机翼 悬停实验 CFD 非定常流动 拉力  
+
+Introduction
+During the War of Resistance to Japan (1937-45), many films, operas, and stage
+plays,especially those with historical
+Japanese-occupied “orphan island“Shanghai.! Women warriors such as Hong
+1 Edward Gunn, Unwelcome Muse: Chinese Literature in Shanghai and Peking, 1937-1945,
+149.
+themes, featured female leads in the
+and renowned historical beauties such as Diao Chan and Ll Xiangjun foiled the
+incompetence of male characters in troubled historical times.
+This phenomenon, in a “total war” situation nationally and a local context of
+of Chinese society encountering the colonial Other. I suggest that the war
+the nation in later literary and cultural practices.
+War”
+In a recent article on affect theory, Ben Anderson delineated the relationship
+society.
+object of state propaganda practice.
+at a stadium: The audience’s shouting, cursing, tramping, and applauding
+certainly influence each other’s physical
+and emotional response to the game. As
+Anna Gibbs describes it, “Bodies can catch feelings as easily as catch fire: Affect
+structure of the national imagination.
+By any measure, the War of Resistance to Japan amounted to a “total war”
+situation in China, and morale was certainly an object for the state and cultural
+elites to mobilize. However, the state and the independent intellectuals seemed to
+have employed different strategies to
+homogeneous national collectivity in the hinterland, the intellectuals in
+Japanese-occupied Shanghai differentiated the populace into the courageous and
+8 Anna Gibbs, “Contagious Feelings: Pauline Hanson and the Epidemiology of Affect,” 1.
+is veiled or erased.
+questions such as modernity, the spiritual health of the nation, and anti-
+women, and women’s concerns were
+ideology” and “male-as-norm.”
+Japanese and satisfied the pleasure-seeking desire of audience.
+Second, it could be seen as an involuntary projection of trauma, of intense
+existence. This danger was most clearly manifested in the terrorism that
+by another does not mean that an affect simply passes or ‘leaps’ from one body to
+effect of the affect is conditioned by how we are “programmed” psychologically
+and emotionally in the first place. For many Chinese who had been imbued with
+strong sentiments of nationalism and patriotism, personal terror could only evoke
+shame and anger. Shame because the gesture of symbolic rape reminded one of
+his inability and the rape of the nation by the Japanese; anger because many male
+Shame.” 78.
+the context mn which the writer lived and wrote.” Shame and anger, as both
+figures, as a result, took the central stage and embodied national imagination in
+a romantic and family setting.
+that puzzled him:
+Given the highly patriarchal norms
+of Chinese society in the mid-twentieth
+century, it is striking to see the extent to which cultural decency, wartime
+strength, and anticolonialism are
+gendered female in these films, all
+of which were written and directed
+by men. Similarly, it is surprising to see
+the extent to which cultural degeneration, weakness under wartime
+conditions, and the failure to resist
+While Pickowicz did not provide an explanation for this occurrence, it seems
+reasonable to assume that postwar Shanghai cinema continued the wartime
+practice, and two powerful emotions still motivated such gendered representation
+in male producers 一 shame and anger
+Female Leads: Writing Shame and Anger
+There was a long established view among modern Chinese intellectuals that
+Chinese culture was feminine compared to Western counterparts. In fact, the
+stigma of being effeminate, and thus not fully “civilized,” had registered in the
+intellectuals’ consciousness since the
+late Qing period,and motivated their
+practice in pursuing modernity and building a modern nation. Scholars have
+progressed from ‘ignorance to knowledge, and from rude to civilized manners,’
+the position of women improved accordingly, from being virtual slaves of men to
+society.
+signified the “backwardness” of Chinese
+Japanese peopie「s enthusiasm for the
+Guo Moruo stated that, compared with Western men, Chinese men were almost
+more precisely, the discovery of a gendered quality in Chinese culture under the
+man. As a result, intellectuals lamented,
+required to confront Western militant
+ds Cullurdl UDIOVOKCIS, WW UIddDOCUL 1idllullidl 11dawd ClllUUUICU 1H xULLLAEBSE L alll
+“failure”: “The articulations of Chinese
+self-awareness that thrived not on affirmation but on self-reproach and
+incompetence and betrayal; on the other hand, they were reintroduced in family
+aiming to make a profit and appealing to the indecent tastes (diji quwei) of the audience.
+H Xiangjun: Shameful Love
+In the late 1930s, Ouyang Yugian wrote
+a Peking opera Peach Blossom Fan and
+a film script Mulan Joins the Army. While both stories originated from classical
+woman warrior Hua Mulan nonetheless
+Ouyang’s scripts, both women stand up
+country. The author seems to suggest that, for a woman, there is nothing more
+pride than fighting for your country.
+Peach Blossom Fan was adapted
+from the early Qing dramatist Kong
+Shangren’s opera of the same title. For
+the popularity of the story, the play has
+and loyalty to the country. Consequently, it is more of a political drama than a
+romance saga.
+Hou Chaozong is an influential leader of the late Ming political association,
+Fu She, literally Revival Society, which is constituted by righteous literati
+scholars who hope to revitalize the Ming from its decline and who take the
+former dominant eunuch Wei Zhongxian and his followers as their enemies.
+During his temporary stay in Nanjing, Hou asks his artist friend Yang Wencong
+to introduce him to a high-class brothel
+well known for the celebrated courtesan
+3 Ouyang Yuqian, Preface to Taohua shan (Peking Opera), 1-2.
+人 d ave
+Xiangjun’s precious first time to fulfill his desire. To his delight, Yang Wencong
+offers to take care of the dowry, which, as later revealed to both Xiangjun and
+Hou, comes from Ruan Dacheng, former follower of the eunuch Wei Zhongxian.
+scholars despise him. Trapped in this
+awkward situation and saves his reputation as an untainted scholar. Xiangjun
+She friends, forcing Hou into exile. The young couple is thus separated by the
+unavoidable political turmoil: The vulnerable Southern Ming regime,while
+matchmaker Yang Wencong and move
+2 Haiyan Lee, Revolution of the Heart: A Genealogy of Love in China, 1900-1950, 68.
+Chinese, while Hou Chaozong mirrored
+wartime.
+the submissive collaborators during the
+3 Ibid., 176.
+forward.
+36 Liu Zhijian, “Ye tan Hou Fangyu de ‘chujia’ wenti,” 335.
+a reclusive life after he reluctantly took
+Hua Mulan: The Return of the Foundational Family
+de zhenshi dao yishu de zhenshi.“
+people. She was obviously attractive, for
+L5LULLNLLE vilallll 命 PSECE5 WW YUYCOULIDLUL
+nationalistic discourse. As Shengqing Wu astutely asserted, the idealized and
+nation bound private desire and passion
+masculinized woman, hence, at once continues the theme of women’s
+mobilization whenever needed.
+弛 Ibid.,, 64.
+LLIOLLE ULE 巳 L 巳 , _，c_′}】l-】lll己 CIUVLIVIDILL 1H UL
+women embody “a certain tension or
+Zhou Yibal, the ending is rather different.
+The Proliferation of Images of Zhen Fei
+campaign is finished. * Zhou’s play,
+It is nothing unique in wartime historical representation for writers to alter an
+image of a historical personality or freely single out a time period in a hero’s life
+to eschew the tragic or unfavorable ending of an event. Ouyang Yugian’s
+portrayal of Hou Chaozong and Zhou Yibai’s depiction of the emperor in
+Mulan’s story both demonstrate the ideological contingency in a discursive
+historical moment that obscures historical truth. In the name of “borrowing
+history to mirror reality,” intellectuals favored the present over the past, a literary
+practice that is most notably theorized
+by Guo Moruo who, in 1942, made an
+symptomatic artifacts of the war period, through which we could view the
+contemporary public sphere of heterogeneous concerns.
+In this light, whereas Zhou challenged the legitimacy of a regime (also with
+shame and anger), Ouyang Yudian emphasized the function of family and the
+centrality of women in a foundational family. “Foundational family” is a term
+tradition of love triangles that typically lead to tragic endings, Sommer observed,
+token, the union or separation between the lovers in Ouyang Yudqian「“s plays also
+projects the ultimate blueprint of the
+nation, in which productive romance
+functions as the imaginary force that grounds the (ideal) nation. Whereas Li
+Xiangjun’s rejection of the family is
+to defy the immoral husband and the
+illegitimate ruler, Mulan’s marriage suggests a foundational family that produces
+quality subjects for the nation. In wartime Shanghai, Mulan’s grand reunion
+could be a mesmerizing pill to brighten
+the suffocating atmosphere, or to satisfy
+the much-needed “pleasure principle”
+against outside oppressive terror. Yet
+perhaps its success for the most part is evidence of the positive mobilizing effect,
+the rhetorical function of a historical tale—that if everybody, including women,
+national defense and nation building.
+Conclusion
+In the “total war” situation of the War of Resistance to Japan while the survival
+of the “nation” was at stake, how may we understand the gendered representation
+the “masculine” portrayal of resistance in the unoccupied hinterland?
+argues that, whereas the Chinese state
+effectively targeted the morale of the
+public as a site of activity to construct a
+rekindling the shameful observation of earlier intellectuals that Chinese culture
+was effeminate in comparison with the West.
+Moreover, the centrality of women
+manifested in the film Mulan Joins the Army. As an ideal combination of
+foreground of national defense, prefiguring the more masculinized women
+revolutionaries in later literature to join the collective effort of national building.

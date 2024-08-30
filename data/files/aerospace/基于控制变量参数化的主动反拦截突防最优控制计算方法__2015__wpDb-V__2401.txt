@@ -1,0 +1,650 @@
+基于控制变量参数化的主动反拦截突防最优控制计算方法
+针对由于敌防空系统防御能力不断提高所带来的进攻导弹突防难题,提出主动反拦截突防（IAIP）的概念,以弥补传统机动突防仅考虑进攻导弹的逃逸而忽略其攻击任务的缺陷。根据IAIP制导的内涵,在综合考虑目标的机动性能、拦截导弹末段的拦截特性及进攻导弹的控制系统性能的基础上,建立进攻导弹-目标-拦截导弹的三体运动模型。将突防制导指令的设计等效为最优控制的求解,其中突防指令为实现燃料最省目标的最优解,进攻导弹的过载、拦截导弹的脱靶量、进攻导弹的攻击角、打击精度和突防后的视线角,分别为控制约束、路径约束和末端约束。借鉴控制变量参数化（CVP）方法将最优控制问题转化为非线性数学规划问题,并将路径约束离散化后采用序列二次规划（SQP）算法得到突防时机给定条件下制导指令的数值解。提出基于CVP的混合遗传算法（CVP-GA）,用于求解最优突防时机及制导指令。仿真结果显示,采用IAIP最优控制算法的进攻导弹在成功突防后的打击精度仍可满足任务要求,且其燃料消耗相对于传统串联式突防方法降低了23.7%,验证了该方法的有效性及优越性。
+
+主动反拦截突防 最优控制 控制变量参数化 路径约束离散化 遗传算法  
+
+Article ID: 1671-9433(2013)03-0298-17
+1 Introduction
+Liquid sloshing is one of the most severe problems in
+transportation. Sloshing has been defined as the free surface
+oscillations of liquid in a partially filled container. When a
+partially filled liquid container gets accelerated in one or
+more directions due to external forces, waves will occur on
+the liquid free surface. This type of sloshing is called
+externally induced sloshing. Sometimes, self induced
+sloshing also arises while transferring the liquid from one
+container to another. Most of the researchers have
+concentrated their efforts on externally induced sloshing
+because of its practical significance. The knowledge of
+liquid free surface natural frequencies is important in the
+design of liquid containers subjected to different types of
+Received date: 2012-10-14,
+Accepted date: 2012-11-02.
+*Corresponding author Email: saha@iitg.ac.in
+? Harbin Engineering University and Springer-Verlag Berlin Heidelberg 2013
+(1951), and Graham and Rodriguez (1952) performed some
+basic studies relevant to this topic. Housner (1957, 1963)
+developed an analytical method for the determination of
+hydrodynamic wall pressures under the assumption that the
+container is a rigid structure fixed at the base. Faltinsen
+(1974), Faltinsen and Timokha (2002), and Frandsen and
+Borthwick (2003) presented approximate theoretical forms
+for inviscid sloshing motion in fixed and moving containers.
+Extensive numerical analyses of liquid slosh dynamics have
+been undertaken by using numerical methods such as the
+finite difference method, boundary element method, finite
+volume method, etc. Techniques, such as marker and cell
+(MAC), volume of fluid (VOF) are available to handle the
+free surface of the moving fluid (Popov er al., 1993;
+Akyildiz and Unal, 2006; Cho ez al., 2005; Arafa, 2007; Hirt
+and Nichols, 1981; Eswaran et al., 2009). Since these
+methods require complex computer programming to treat
+the time varying free surface boundary and computational
+mesh needs to be updated at every time step, use of
+o-transformation for treating the liquid free surface has
+gained widespread popularity in recent years. The
+o-transformation technique is simple, easy to implement and
+Journal of Marine Science and Application (2013) 12: 298-314
+eliminates the need for remeshing of the computational
+Turnbull et al. (2003), Chen and Nokes (2005), Dai and Xu
+(2006), Eswaran and Saha (2009a, 2009b, 2010). Originally,
+o - transformation was proposed for meteorological weather
+forecasting by Phillips (1957), however, later, Blumberg and
+Mellor (1980) and Mellor and Blumberg (1985) applied it in
+the context of oceanic and coastal flows. Recently, Frandsen
+(2004) investigated numerically steep free surface sloshing
+in 2D fixed and base-excited rectangular containers, with a
+focus on moving liquid free surface using o-transformation
+and compared the results with third-order single modal
+solutions and theoretical results (multidimensional modal
+analysis) of Faltinsen et al. (2000). Thus, it was revealed
+that all the investigations as reported above have used sigma
+transformation technique for 2D containers only. Studies
+addressing 3D containers have not been reported so far in
+literature reviews. In view of this, the current investigation,
+modifications have also been performed in the existing
+o-transformation technique.
+The main objective of this paper was to develop a new
+computational algorithm for capturing the liquid free surface
+“ for idealized 2D and 3D sloshing waves of inviscid fluid in a
+rectangular liquid container. In order to accomplish this, a
+modified o-transformation technique was used to map the
+asymmetric physical domain onto a square computational
+domain, such that the moving free surface in the physical
+plane becomes a fixed plane surface in the computational
+domain. The finite difference scheme was used to solve the
+discretized governing equations in the transformed
+computational domain to obtain the free surface elevation
+elevations are captured in the regularly and randomly
+excited container in vertical direction at different locations
+of the 2D and 3D domains while varying the modes of
+oscillation (#=1, 2 and 3). Two initial wave profiles for the
+sinusoidal wave profiles) are used for the 3D fluid domain
+to observe the variation in the free surface elevation time
+histories at different locations of the container. Section 2 is
+focused on the mathematical formulation of the present
+work. Section 3 presents the mapping procedure which maps
+domain and 3D domain. In section 4, the finite difference
+discretizations of the governing equation and boundary
+conditions in the computational domain have been given.
+The free surface elevation of liquid, phase plane diagram,
+spectrum analysis and free surface profiles are discussed for
+vertically excited container in section 5.
+299
+2 Mathematical formulation
+A rectangular Cartesian coordinate system was initially
+employed with origin on the mean free-surface at the left
+wall of the container. Primarily, a 2D nonlinear wave
+problem was considered, as depicted in Fig. 1, where is
+the free-surface elevation above still water level, b is the
+length of the container, and 4; is the still water depth. The
+fluid in the container was assumed to be inviscid and
+irrotational Taking the assumption that the fluid was
+governed by potential flow theory, the velocity potential ￠
+left, right and bottom boundaries were indicated by L, R,
+and B, respectively (Fig. 1). The free surface occurs at the
+interface between two fluids. Such an interface requires two
+boundary conditions to be applied, viz., (i) a kinematic
+condition that relates the motion of the free interface to the
+fluid velocities at the free surface (i.e., T,) and (ii) a
+components normal to the walls and bottom of the container
+were zero, Zero pressure at the free surface of the fluid was
+also assumed for the analysis. In view of the fact mentioned
+above, kinematic and dynamic conditions must be satisfied
+on the free surface. Therefore, the governing equations in
+the physical domain were presented as,
+Fig. 1 Sketch of a standing wave in 2D container
+Here, 卫 is the acceleration of the container in the
+vertical direction which can be neglected from the free
+surface dynamic boundary condition for fixed container
+where g is the acceleration due to gravity, 4 the wave
+amplitude, ￥, the acceleration of the container and # the
+time. Here X , 卫 , 习 , 芸 , t and 办 represent the
+as following,
+terms or products of unknown parameters.
+3 Mapping procedure
+in the horizontal direction which stretches between the left
+3.1 Transformation of 2D container ,
+Initially, formulations were developed for the fixed
+container condition, so the horizontal and vertical excitation
+terms were neglected from the Eq. (4) in the following
+formulation part.
+domain (Fig. 3). The mapping function C(x,) was defined
+as
+〈)-=一乏'普'一叠(12)
+where
+Fig. 3 The 2D intermediate domain after first transformation
+to 1. The value of C at the bottom of the container is 0,
+while at the free surface is 1. The first-order derivatives of
+o can be calculated as follows:
+The potential function @(x,y,t) in the physical domain
+was transformed to the potential function 8(X,,7) in
+the o -transformed domain.
+xX, X=2x-1
+teoT. T=t
+Using the chain rule, the first set of derivatives of ￠
+with respect to x, y and f gets transformed as
+Journal of Marine Science and Application (2013) 12: 298-314
+The second set of derivatives of ￠ with respect to x and
+y gets transformed as,
+Hence, by using the C -transformation, we can derive the
+new governing equation and boundary conditions specified
+on the rectangular o& -transformed domain. The governing
+equation after the first coordinate transformation was
+provided as:
+where
+Boundary conditions after the first coordinate
+transformation are given as:
+301
+Fig. 4 The 2D computational domain after second
+transformation
+Step 2: Second coordinate transformation
+After the first coordinate transformation, the liquid
+domain becomes a rectangle defined by -1<X<+1,
+—-1<Y<+1. The time-varying curved free surface was,
+hence, replaced by the fixed straight line. Any numerical
+method can be employed to solve the governing equations in
+the computational domain. Now the second transformation
+free surface. The second coordinate transformation was
+applied by the following equations
+Xoét=X
+transformation produces clustering of the grids near the free
+surface depending on the value of 广 selected. The clustering
+of grids near the free surface improved accuracy and eased
+convergence of the computational algorithm. As 厂
+the free surface of the liquid. Another parameter in the
+transformation X adjusts the position of the bottom in the
+transformed coordinates. Here the value of Q has been taken
+as —1 so that the computational domain after the second
+transformation is a rectangle defined by 1 卢 <1 and
+-1<17 <1 with grid stretching near free surface as shown
+in Fig. 4. The mapping was performed from the
+o -transformed @(X,Y,T) domain to the computational
+domain p(6,7,7}) . AR(X,7) the height of the liquid
+surface was transformed to A (&,7), the height of the
+liquid surface in the transformed computational domain.
+h,; was the difference between the nodal indices along 工
+axis of the grid after the first coordinate transformation.
+The derivatives of the function @(X,Y,T) with respect
+to 龙 工 and T were transformed into derivatives of
+o(&,n,7) with respect to &, 〗 and 7. The first set of
+derivatives of @(X,Y,T) gets transformed as:
+302 Eswaran M, et al. Numerical Simulation of 2D and 3D Sloshing Waves in a Regularly and Randomly Excited Container
+where
+The second set of derivatives gets transformed as follows:
+After the second coordinate transformation the governing
+equation (Eq. 12) becomes,
+where
+given as:
+where
+The governing equation and the boundary conditions in
+the computational domain were provided by Eqs. (33)—~(40)
+and any numerical method can be used to solve them. One
+more feature of this C-transformation technique was that it
+could easily be extended to 3D coordinates in a similar way.
+3.2 Extension to 3D rectangular container
+The 3D rectangular domain was bounded by 5 regular
+surfaces and 1 free surface. The velocity components normal
+to the fixed surfaces were zero. The left, right, front and
+back and the bottom boundary conditions were indicated by
+LB, RB, FB, BB and BMB, respectively in Eqs. (42]-(44).
+As usual, the top surface had two boundary conditions, viz.
+the kinematic condition (TB,) and dynamic condition (TB,).
+When the container was subjected to vertical acceleration,
+the non-dimensional governing equations based on the
+potential flow theory are as follows:
+where w is width of the rectangular container. The derivation
+of the governing equations can be performed in the same
+way as the two-dimensional case by the following two
+transformations. The first transformation was performed for
+conversion from physical domains (Figs. 5 and 6) to
+o -transformed domain (Fig. 7) and the second
+transformation was for o￠ -transformed domain to
+computational domain (Fig. 8).
+Journal of Marine Science and Application (2013) 12: 298-314
+Fig. 5 The 3D physical domain with initial wave profile 1
+Fig. 6 The 3D physical domain with initial wave profile 1
+and 2
+The mapping relations for first transformation were
+provided as,
+Hence the transformed governing equation becomes:
+where
+The boundary conditions are given as:
+Fig. 7 The 3D intermediate domain after first transformation
+Fig. 8 The 3D intermediate domain after second
+transformation
+On the free surface.
+帕H雾=隐雾一岘噩噩_锄噩噩onI=+1(53)
+where
+The mapping relations for second transformation were
+given as,
+艺 43 吊 , 占 二 友 ; Zox,k=Z; Tor, t=T;
+The mapping was performed from the C -transformed
+304 Eswaran M, et al. Numerical Simulation of 2D and 3D Sloshing Waves in a Regularly and Randomly Excited Container
+&(X,Y,Z,T) domain to the computational
+domainp(6,7,k,7) . The height of the liquid, A(X,Z,T)
+surface was transformed to the height of the liquid in the
+transformed computational domain, 瓜 (6kK,7) The hy,
+is the difference between the nodal indices along I axis of
+the grid after the first coordinate transformation. The
+derivatives of the function &(X,Y,Z,T) with respect to 必
+Y Z and T are transformed into derivatives
+of ￠(&,n,x,7) with respect to &,m,x and 7. After the
+Boundary conditions after the second transformation are
+given as:
+On the free surface,
+where
+Since sloshing is a highly nonlinear phenomenon,the
+amplitude of excitation, frequency of excitation and
+container dimensions play a vital role in determining the
+shape of the nonlinear free surface. An
+amplitude—frequency relationship for the fluid response in
+system exactly matches the time-dependent free-surface
+wave profile due to the o -transformation. Here, we
+should note that the mean water level in the container
+remains constant, so that the sum of the wave height along
+the x direction is kept at zero to maintain the volume
+conservation.
+4 Finite difference discretization in the
+computational domain
+In the current study, a finite difference scheme is used for
+the numerical study of the liquid sloshing. The
+computational domain is rectangular in shape for 2D
+numerical simulations and cuboidal for 3D numerical
+simulations. The governing equation and boundary
+conditions in the computational domain (Egs. (33) to (40))
+are discretized using finite difference method.
+Adams-Bashforth scheme is utilized for the computation of
+nonlinear solutions. As Adams-Bashforth scheme requires
+results from previous time steps to calculate the current time
+step result, hence the semi-implicit scheme is used to
+generate results for the initial time steps.
+Journal of Marine Science and Application (2013) 12: 298-314
+of the computational domain. As discussed, the top
+boundary consists of two conditions, viz. kinematic
+condition and dynamic condition. In computational domain,
+the kinematic condition (Eq. (38)) was discretized by a
+forward scheme at 7 =1 as follows
+where
+At o=1, the dynamic condition (Eq. (39)) was
+discretized as:
+where
+The value of ￠"*' was computed using Eq. (66) and
+was substituted in Eq. (67). Then, the new ￠"*' was found
+equations were discretized by means of second order central
+the boundaries.
+4.2 Adams-Bashforth scheme
+future time steps. Here, three Point Adams-Bashforth
+schemes as mentioned in Eqs. (69) and (70) have been used.
+The governing equation (Eq. (33)) was discretized by the
+standard fourth order central difference approximation and
+is given by
+305
+are the first and second order central difference operators
+along 不 and 1 directions respectively, and 656 is the
+mixed second order central difference operator.
+4.3 Convergence criteria used for the iterative solver
+solving a linear equation 44b = in the fluid domain at
+available, but the iterative methods have been chosen for
+this work to find the solution to the velocity potential ￠ at
+every time step since these are known to have the
+advantages of lesser discretization error and better speed of
+Successive over relaxation method has been chosen fo solve
+the iteration error has decreased by an acceptable amount.
+Iteration errors (Ferziger and Peric, 2002) can be calculated
+as,
+6“ =￠? —￠" = (4 - D(A) aw, (73)
+where 6“ is the difference between solutions at iterations
+n+l and n, and 办 is the spectral radius or the largest
+eigenvalue of the iteration matrix. It can be estimated from
+Eq. (74).
+square) of a. After obtaining an estimate of the largest
+eigenvalue ( 力 ),the iteration error can be approximated
+from Eq. (75).
+Hence a good estimate of iteration error is available. The
+volume errors for all the cases studied were found to be
+within the range of [—107°,10~ ] as shown in Fig. 9. This
+when the difference between two successive iterations falls
+below a predefined tolerance limit) since the difference
+between two successive iterations falling below a particular
+limit does not ensure that the iteration error has also fallen
+The residual and iteration error are related as,
+306 Eswaran M, et al. Numerical Simulation of 2D and 3D Sloshing Waves in a Regularly and Randomly Excited Container
+As, =p, (76)
+where 4 represents the iteration matrix, ￠, the iteration
+error norm and p, the residual norm at any particular
+residual norm below the tolerance limit does not ensure that
+the error norm has also fallen below the same tolerance limit.
+Hence, it is essential for the iteration to have proper
+evaluation of error to ensure the accuracy of solutions. In the
+case of two dimensional vertical regular excitations in a
+rectangular container, a comparison was done for the various
+iterative solver stopping criteria as shown in Fig. 10. For
+iterations at the first time step, the variation of norm of the
+exact iteration error, estimated iteration error with the above
+0.2x{07, hence this stopping criterion is not suited for the
+as the exact iteration error in this case (except for the initial
+iterations where it shows slight oscillations). Using residual
+K,=0.015) versus non-dimensional time (fx)
+In the present study, the initial value of velocity potential
+2D liquid domain and the initial value of free surface
+domain, initial value of free surface elevation ( {) is
+considered in two cases say, initial profile 1
+are the respective amplitudes of the initial wave profiles on
+the liquid free surface along the X and Z axes (Fig. 6), 又 ,
+(=nm/b), K, (= nm/w) are the respective wave numbers of
+container. The initial wave steepness defined for fixed
+container studies is as given below:
+where 4 is the amplitude of the initial wave profile on the
+liquid free surface, ?, the natural sloshing frequency of
+considered as 1 : 2. The linear natural sloshing frequencies
+in the two dimensional rectangular container is expressed as:
+Now the term 卫 in the dynamic boundary condition (Eq.
+(4)) was switched off for fixed container condition. Two
+was determined from the wave steepness using Eq. (77).
+Here, numerical simulations are conducted for case A, case B
+Journal of Marine Science and Application (2013) 12: 298-314
+case C, and case D. Case A represents 2D numerical
+simulation of regularly excited liquid container in vertical
+direction and case B represents 3D numerical simulation of
+regularly excited liquid container in vertical direction with
+initial profile 1 for liquid free surface. Case C represents 3D
+numerical simulation of regularly excited liquid container in
+vertical direction with initial profile 1 and 2 for fluid free
+surface and Case D represents the 3D numerical simulation
+of the randomly excited liquid container in vertical direction.
+5.1 Grid independence and validation test
+The wave characteristics include a crest at the top and a
+trough at the bottom. The difference in elevation between the
+crests and trough is the wave height. The distance between
+the adjacent crests or troughs of wave is termed as the
+wavelength. The ratio of wave height to wavelength is the
+wave's steepness. While increasing the wave steepness the
+nonlinearity of the wave increases. Before proceeding with
+the solution of the governing equations on the computational
+domain, grid independence study to choose a suitably refined
+grid for the solution is very important. Grid was successively
+refined along the three dimensional axes and the free surface
+plots along the container length for all the grids at time 7.5
+seconds and Z=0 were compared. As shown in Fig. 11,
+initially the grid was refined in the horizontal and axial
+directions of container. Since the container was bounded by
+fixed vertical walls in the horizontal and axial directions, free
+surface plots do not seem to be affected by refining along
+these directions. But attention is required in the vertical
+direction, because of the moving free surface on the top. The
+grid points along the vertical direction were increased from
+21 to 41 and then to 61 mesh points and we found that the
+free surface plot for the 41 x 61 x 41 grid nearly overlaps with
+the free surface plot for the 41 x 41 x 41 grid. Hence
+41x61x 41 grid is a suitable grid for the current study.
+Faltinsen er al. (2000) did comprehensive analysis of
+sloshing through theoretical and experimental techniques to
+provide results considered as benchmark results for the
+sloshing problems. Fig. 12 shows the comparison of present
+numerical work with theoretical result of Faltinsen et al.
+(2000) for the test case: v = 1.283; 4, = 0.029 m and Kj, =
+0.069. The wave peaks and troughs match well with present
+work. Therefore, the numerical solution was in reasonable
+agreement with the work of Faltinsen et al. (2000) for this
+particular test case. The specific test case was previously
+solved by Hill (2003) and Frandsen (2004) and similar
+results were obtained. Frandsen (2004) has compared his
+results with Faltinsen et al. (2000).
+5.2 Vertically excited container: regular motion
+The initial condition of the liquid free surface used to
+simulate sloshing in a vertically excited container is the
+same as for the sloshing motion simulation in a fixed
+container. It is difficult to simulate sloshing with a vertical
+excitation only. In order to have an initial perturbation in the
+free surface inside the container, horizontal motions need to
+be excited before the vertical excitation. To avoid this
+307
+situation, the initial standing wave profile was assumed for
+this work. Initial wave impulse at the fluid free surface was
+required for vertically excited condition and it is considered
+in two ways, initial profile 1 and initial profile 1 and 2 (as
+discussed in section 5). The vertical acceleration of the
+container is given by 卫 = (-@,4d,cos(@) ,where 4, is
+the vertical forcing amplitude,f is the time, w, is the
+angular frequency of forced vertical motion. The initial
+velocity potential in the fluid domain is considered as
+P(E). =0.
+5.3 Effect of mode number on regular waves oscillation
+The waves generated by the vertical excitation are called
+Faraday waves as explored by Faraday (1831) through his
+the excitation frequency is twice the natural frequency for
+some initial perturbation in the container. This resonance
+condition is called parametric resonance.
+four different grids (21 x 21 x 21, 41 x 21 x 41,
+41x41x 41 and 41x61 x 41) for K,=0.033 at time
+7.5 s and Z=0
+work showing the free-surface elevation at the left
+wall in horizontally excited container; w,=1.283,
+Ap, = 6.029 m and y = 0.069
+08 Eswaran M, et al. Numerical Simulation of 2D and 3D Sloshing Waves in a Regularly and Randomly Excited Container
+atr=3s
+=0.4, E, = 0.003 3 and = 0.015
+fK:-0.4, E, = 0.002 4 and K, =0.015
+=0.4, E, =0.001 6 and K, =0.015
+Q,=w,/w, and K, and discussed results from stability
+K=04).
+Journal of Marine Science and Application (2013) 12: 298-314
+locations (left wall (L), center (C) and right wall
+and .=0.015
+1 at different locations (left front (LF), center front
+(CF), right front (RF), left back (LB), center back
+(CB) and right back (RB) for n=l,
+Figs. 13 and 14 show liquid free surface elevation along
+seconds, respectively. The mode number defines the shape
+of the free surface during the numerical simulations. The
+first few mode natural frequencies of system are dangerous
+for the structural integrity of the container during violent
+motions.
+Figs. 15 through 17 show the free surface elevations of
+E;=0.003 3 and K,=0.4. The case A and case B show almost
+similar elevation histories. But, case C shows large wave
+oscillations.
+Fig. 20 Free surface elevation for case C at different
+locations (left front (LF), center front (CF), right
+' front (RF), left back (LB), center back (CB) and
+-1.0 -0.5 0 0.5 1.0
+{A
+-15 -1.0 05 0 0.5 1.0 1.5
+{iA
+(b) Case C
+Fig. 21 Vertically excited container phase-plane diagram at
+and K, =0.015
+310 Eswaran M, et al. Numerical Simulation of 2D and 3D Sloshing Waves in a Regularly and Randomly Excited Container
+5.4 Free surface elevation on different locations
+Due to the wall effect, one can find the maximum wave
+amplitude near the wall, while the wave amplitude reduces
+as we move towards the centre. Here, three points were
+considered for case A (L,p, Cop and Rop), and six points
+were considered for the case B and case C (LFsp,CFaD,
+RF;p, LBsD, CBsp and RB;p). These points were shown in
+Figs. 5 and 6. Fig. 18 shows free surface wave elevation
+time history in the vertically excited 2D container for case A
+at three different locations. The free surface wave elevation
+time history for case B and case C were shown in Figs. 19
+and 20. In all cases, one can observe that the free surface
+elevation time histories of case A and case B are similar.
+Since the assumed initial profiles are the same in both cases
+initial profile 1 and 2) shows dissimilar behavior and the
+difference between the crests and troughs also drastically
+varies from case B due to high nonlinearity. Fig. 21 (a) and
+(b) show the phase plane diagram at LTapfor (2 = 1.253, E,
+= 0.0033 and X, = 0.4. In Fig. 21 (a), the phase plane
+diagram shows the uniform repeating pattern, but Fig. 21(b)
+shows the non-uniform repeating pattern behavior.
+5.5 Vertically exeitedcontainer: random motion
+In most practical situations, the excitation or the time
+variation of the system parameters were random in nature
+(Ibrahim, 2005). The behavior of such systems under
+deterministic or regular wave parametric excitation was an
+idealization and an oversimplification of the real behavior
+The random excitation originates from many natural and
+artificial sources. Recently, the 2D sloshing waves generated
+by the random excitations were studied by Wang and Khoo
+(2005), and Sriram ef al. (2006). The random vertical
+oscillation of the container was considered in this section,
+As we know, a random input wave can be generated by the
+linear superposition of a number of monochromatic waves.
+The total supplied energy to the system was kept constant.
+Bretschneider spectrum was selected to serve as the input
+excitation spectrum to generate the random input wave. The
+time history generated by the spectrum were shown in Figs.
+22 and 23,
+modal or peak frequency of the wave. The random input
+excitation wave is described by,
+where is time, @; the frequency of ith linear wave, and
+N, the number of the linear monochromatic waves. 4; and
+Y; are the wave amplitude and phase of each linear wave,
+respectively. @; and 丰 ; are a set of random variables
+within a pre-selected range.
+and w, = l
+N, denotes the number of linear waves superposed to
+create the random wave. In the present case, N,, is chosen to
+be 512 since such a high number ensures that a lot of
+frequencies within a given range contribute towards the
+generation of the random wave. The range of the angular
+frequencies is set as [0, 5w,] as the frequencies above
+5 @p do not have a significant contribution towards the
+generation of the random wave. In the present case, w, is
+taken equal to the first natural frequency of the system w
+which is 3.759 371 rad/s.
+From Fig, 22, it is evident that in the energy spectrum, the
+wave energy (Sc ) has the highest values around the modal
+or peak frequency (wp ), hence a large number of angular
+frequencies were chosen in the narrow band around the
+value, . Around 150 values of angular frequencies were
+Journal of Marine Science and Application (2013) 12: 298-314
+selected randomly in the range of [2.5, 5.0] which was a
+very narrow band around the peak frequency marked as 4 in
+Fig. 22 and B represents the range [0.0, 2.5] and 62 values
+of angular frequencies are selected randomly in this range.
+As can be seen from Fig. 22, the energies in this range were
+near to zero and hence have negligible contribution in the
+energy of the final generated random wave. Band C, D and
+E represent the ranges [5.0, 10.0], [10.0, 15.0] and [15.0,
+5, ] and 100 values of angular frequencies were selected
+use of a fixed seed number and a custom built function
+energy spectrum for angular frequencies above 10.0 rad/s
+falls well below 0.01x107% J, hence less number of
+where Aw is nothing but, the difference between adjacent
+angular frequencies (Aw = @;,; — @;).
+5.5.2 Selection of the phase angle (vy; )
+selected random values of angular frequencies ( @; ),
+amplitudes (4 and phase angles (y; ) in Eq. (80), we can
+excitation for an initial steepness of 0.288 and w, =a; - In
+the case of random excitation in vertical direction,the
+311
+equal to twice the first mode (parametric resonance)
+irrespective of initial perturbation. Fig. 26 shows the surface
+non-dimensional time step Af = 0.6 units. The surface plots
+show a half cycle of wave’s movement. The frames were
+shown for a wave steepness K, = 0.040 16.
+steepness of 0.288; w, = l
+steepness of 0.288 and w, = a;
+6 Conclusions
+cases presented herein, it eliminated the need for free
+non-overturning and non-breaking waves. Present results
+were compared with the benchmark solutions of Faltinsen et
+Journal of Marine Science and Application (2013) 12: 298-314
+different initial conditions for liquid free surface and finally,
+3D container with random excitation in the vertical direction.
+A fully non-linear inviscid numerical model was developed
+based on potential flow theory with the mapped governing
+using finite difference method. Results of liquid sloshing
+induced by harmonic base excitations were presented for
+mode] was validated for use of any water depth, with the
+exception of shallow and deep water sloshing. An error
+estimation method was used to estimate the error for all
+iterations to serve as a basis for stopping the iterative solver
+when the steady state results are reached. The model was
+validated for different wave length and steepness. Good
+agreement was found between present and previously
+published theoretical solutions for the same type of test
+excited containers were carried out for the stable region
+conditions. Sloshing effects in a vertically excited container
+in stable regions display similar characteristics as free
+sloshing motions in a fixed container when the forcing
+parameter (K,) is low. The phase plane diagrams showed the
+nonlinearity of the free surface waves with respect to time.
+Initially, the wave elevation time history were observed for
+first few modes of sloshing on the free surface at the left wall
+for 2D regular (case A) and 3D regularly excited container
+with two initial profiles (case B and C) in vertical direction.
+The wave elevation time histories were plotted at different
+locations of the free surface. The wave elevation time history
+at a particular point on the free surface in the domain was then
+compared for cases A, B and C. Near the container wall the
+wave elevations were more due to the wall effect while the
+center of the container had low wave elevation profiles. The
+2D and 3D container with initial profile 1 had similar wave
+elevation time history. If nonlinearity in the axial direction is
+increased by using profile 1 and 2 i.e. a linear superposition of
+two sinusoidal wave profiles, the 3D container will show a
+different wave elevation time history. The free surface
+elevation got the intricate shapes for the case C. Sloshing in
+randomly excited container in vertical direction was also
+studied. Bretschneider spectrum is selected to serve as the
+input excitation spectrum to generate the random input wave.
+The ratio of the excitation frequency and the natural
+frequency of the system ( {2 ) was kept as 1.253 in the study.
+Hence, the results reported were from the stable regions only.
+Nomenclature
+A Wave amplitude
+A; Wave amplitude of ith linear wave
+A, Transverse excitation amplitude
+2 Length of the container
+DT" Transverse acceleration of the container
+313
+E, Amplitude-length ratio (=4/b)
+Ey Volume error
+h Instant water height from container bottom
+厅 Significant wave height
+K, K: Wave numbers along the X and Z directions
+K, Forcing parameter for vertical acceleration
+亿 Wave steepness
+n Mode number of oscillation
+N,, Number of linear monochromatic waves
+t Time
+W Axial width of the container
+Greek symbols
+@, , Natural angular frequency of sloshing
+Dy Angular frequency of vertical excitations
+五套盒i董'冒羞亡′(言皇l董菖'l二亡ti()l′lofthecontainerinvertical
+i Phase angle of ith linear wave
+D “ Frequency of ith linear wave
+?, oon or peak frequency of the wave
+$c Wave energy due to Bretschneider spectrum
+G Iteration error at n? iteration
+6 Free-surface elevation
+C Grid Stretching Factor
+d(x, y,1) ay potential function in physical domain
+8Crg,7) 彗萱重T(董薯l:重】t箕 api function in computational
+力 Spotl radius hd the largest eigen value of
+工 Container displacement
+丕(宣 5, poner second order central difference
+frequency of vertical excitations.

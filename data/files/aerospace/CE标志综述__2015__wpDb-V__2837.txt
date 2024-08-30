@@ -1,0 +1,241 @@
+CE标志综述
+概述了使用CE标志的意义 ,介绍了欧盟和CE标志的发展过程、CE标志与贸易技术壁垒的联系 ,重点对CE标志和CE标志指令的要求等内容作了阐述 ,并介绍了已被采用的CE标志指令。
+
+CE标志 CE指令 贸易技术壁垒 认证 介绍 欧洲  
+
+2 Approach dynamics model of carrier
+aircraft
+The dynamics model for landing of carrier air-
+craft is not different from the land-based aircraft
+when it flights along the — 4°~ - 3° glide slope of-
+fered by aided landing system. The 6 degree of free-
+dom (DOF) dynamics model of the aircraft is given in
+Eq.(U~Eq.(3)0
+Vol. 11 No.6,Dec. 2013 19
+the rotation inertias corresponded to x,y,z body ax-
+is; , _, I, are the products of inertias; L, 2, 0 are
+the speed components along the three ?x, y, 2 body ax-
+is directions; p, g,r are the angular velocities of rota-
+tion along the x, y, # body axis; X,Y, Z are the com-
+tic diagram of simulation model.
+of carrier aircraft
+The landing success ratio is affected directly by
+movement to the military thrust position while at the
+minimum approach speed , .
+20 ENGINEERING SCIENCES
+3) Altitude correction criterion. Altitude correc-
+tion requests illuminate the ability to correct the alti-
+tude error of the aircraft. A 15 m altitude error must
+be corrected in 5 s while using no more than one half
+of the maximum normal acceleration capability.
+while at Vi min “
+5) Field-of-view criterion. The slowest acceptable
+level flight and with the pilot「s eyes at the design eye
+and well line up.
+4 Determining the approach speed envelope
+4.1 The limitations of field of view
+The source of optical slope locates at 152 m for-
+ward of the ramp, 19.8 m above the waterline. Ac-
+152 m forword of the ramp
+Fig.2 Approach field of view schematic diagram of
+carrier aircraft
+With reference to Fig.2, the angle between line
+of vision and 4° glide slope is 0.8°. From the geome-
+try relationship, the line of vision is determined by a.
+Measured from the body x axis, the angle of the line
+of vision is a+4.8°. When the maximum depression
+angle 0. is determined, the maximum permissible at-
+tack angle is a, =06. —4.8°. The maximum depression
+angle of carrier aircraft is 20°, and the maximum per-
+missible attack angle is 15.2°. The speed of straight
+and level flight can be got from Eq. (4).
+where, m is mass of aircraft; g is the gravitational ac-
+celeration; P is engine thrust; a is attack angle; ￠, is
+engine setting angle; C, is lift coefficient; S is wing
+area; p is atmospheric density.
+For approach configuration of an aircraft, the
+maximum lift coefficient is 2.04; weight of aircraft is
+21 000 kg and wing area is 70 m’. The 15.2° is al-
+ready over the critical attack angle. From Eq.(4), the
+stall speed of the approach configuration is 41.5 m/s.
+So it can meet the requirement of field-of-view criteri-
+on as long as the aircraft is not in stall during ap-
+proaching.
+4.2 The limitations of engine response time on
+approach speed
+The wave off often occurs in landing. The bad
+landing environment, flight technical error or beyond
+the safety landing state may result in wave off. The ca-
+pability of longitudinal acceleration is the key factor
+for wave off of carrier aircraft. When carrier aircraft
+is approaching at the minimum approach speed, it is
+demanded that the level state of zero track angle and
+longitudinal accelerative effect must be enough from
+the accelerator action to the military thrust position;
+the acceleration must be 1.5 m/s” at least in 2.5 s.
+Fig.3 is the engine response sketch map. 7 is the
+response time from trim thrust P to military thrust P,.
+According to the approach dynamics model in section
+2,the effect on the longitudinal accelerative perfor-
+mance is given in different response time through ad-
+justing z . Fig.4 shows that the engine response time
+affects the approach speed distinctly and when
+F<2.5_5, 175 kmyh<MV, <233 km/h or z=3 s,
+175 kmyh< V,,<195 km/h ,the accelerative perfor-
+mance satisfies the requirement. However, when
+t>2.5 s,the maximum limit of V,, decreases quick-
+ly; when f=3 s, the scope of the limitation is too
+narrow. So the engine response time is not permitted
+to exceed 2.5 s.
+Fig.3 Engine response schematic diagram
+Fig.4 The effect of engine response time on
+longitudinal acceleration
+4.3 The limitations of elevator efficiency and
+deflection rate on approach speed
+According to the altitude correction criteria, a
+15 m altitude error must be corrected in 5 s while u-
+sing no more than one half of the maximum normal
+acceleration capability. Based on the approach dyna-
+mics model, the altitude correct ability is verified
+through the simulation with different elevator efficien-
+cies and deflection rates. The AOA control law is ad-
+opted to prevent the stall. Fig.5 presents the control
+law model.
+Fig.6 presents the simulation results of the alti-
+tude correction based on different elevator efficien-
+cies and deflection rates with no throttle changes.
+Fig.6 shows that with the increase of the speed and
+elevator efficiency, a 15 m altitude error can be cor-
+rected in shorter time. The deflection rate has small
+impact on the altitude correct capability except that
+the speed is slower than 190 km/h. When the speed is
+faster than 190 km/h, a 15 m altitude error can be cor-
+rected in longer time due to a lower deflection rate
+and control law. With the deflection rate increasing,
+the aircraft does not have the altitude correction abili-
+ty. Fig.6 also shows that if the approach speed is fas-
+ter than 190 km/h, a 15 m altitude error can be cor-
+rected in 5 s while using no more than one half of the
+maximum normal acceleration capability; otherwise,
+the altitude corrected capability can not satisfy the re-
+Vol. 11 No.6,Dec. 2013 21
+quirement of the specification.
+approach speed
+Thanks to the development of the modern con-
+trol system, when the flying qualities of the uncon-
+trolled aircraft, which can not satisfy the standards,
+can be relaxed in aircraft design. The corresponding
+items can be adjusted through the control system. If
+the flight control systems fail, the handling quality
+can be degraded. The carrier aircraft must land on the
+carrier safely, even on the flight control system mal-
+function. The aircraft responds need to meet the lan-
+ding requirements to avoid the danger, which de-
+mands the uncontrolled aircraft has good quality.
+Fig.7~Fig.9 present the natural characteristics
+calculation results of an aircraft. The figures show
+that the short-period characteristics meet the require-
+ments of the standards; the long-period characteris-
+tics only satisfy the level 2 at low speeds. When the
+speed increases, damping ratio enhances. From the re-
+sults,the aircraft should improve the approach speed
+to ensure the better quality characteristics when the
+control system fails,
+Fig.7 Long-period damping ratio of an aircraft
+(approach configuration)
+22 ENGINEERING SCIENCES
+Fig.8 Short-period damping ratio of an aircraft
+(approach configuration)
+Fig.9 Control anticipant parameter (CAP) of an aircratft
+(approach configuration)
+4.5 Stall speed margin
+Stall speed margin is a critical parameter used by
+carrier aircraft designers in determining approach
+speed. When the carrier- based propeller- driven air-
+craft approaches straight- deck carriers using a“flat-
+paddles” approach technique, the specifications spe-
+cify the design approach speed to be 1.05~1.10 times
+the stall speed. Subsequently, the jet aircraft indi-
+cates that the minimum approach speed must be 1.1
+times higher than the stall speed.
+According to the requirements of the stall speed
+margin, the approach speed of a carrier aircraft is
+1.1 times higher than the power-on stall speed V,,.
+The power-on stall speed is 168 km/h depending on
+the aerodynamic characteristics of the carrier aircraft.
+So the approach speed V,is higher than 185 km/h.
+4.6 Other limitations
+4.6.1 Gear load limitation
+Due to the limitations of gear load and arrest sys-
+tem, the landing speed is not too high. Ref. [5] presen-
+tedthemaximum sinkingspeed calculation formula
+where, V,, is the average engaging speed,
+Vip = 1.05V, . Then we can get
+From Eq. (6), we can get
+.=387 km/h (7)
+where,f,x is the maximum approach speed of the
+landing gear load restrictions at which the deck mo-
+tion is excluded.
+Considering the moderate sea condition, the ad-
+ditional sinking speed caused by the deck motion is
+1.5 m/s; here V,,... is 200 km/h,
+4.6.2 Arrest system limitation
+For different landing weights, the engaging
+speed is not higher than the limited speed. Table 1
+presents the limited engaging speed of the arrest sys-
+tem MK7-1, MK7-2 and MK7-3, where the aircraft
+mass is 21 000 kg. Table 1 shows the limited enga-
+ging speed of the MK7-3 is 252 km/h
+Table 1 The limited engaging speed
+Arrest system Limited engaging speed/(km+h?)
+MK7-1 204
+MK7-2 230
+MK7-3 252
+4.7 The determination of approach speed envelope
+Table 2 presents the limitations of the approach
+speed of a carrier aircraft. It shows that the maximum
+approach speed is limited by the longitudinal accelera-
+tion ability, landing gear load and the arrest system
+capacity. Considering the moderate sea condition,
+when the engine response time is 2.5 s, the maximum
+approach speed is 200 km/h, which is restricted by
+landing gear. The maximum approach speed is
+230 km/h limited by the longitudinal acceleration
+ability without considering the deck motion. The mini-
+mum approach speed is limited by the field of view,
+stall speed margin and altitude correction ability. The
+minimum approach speed is 195 km/h, which is re-
+stricted by altitude correction ability.
+Considering moderate sea condition, the ap-
+proach speed envelope of the aircraft is
+195 knyh < u <200 km/h (8)
+Without considering the deck motion,the approach
+speed envelope of the aircraft is
+195 km/h <Y,, <230 km/h ?
+The sea condition has the important influence on
+the approach speed envelope. The sea condition is
+more wild, and approach envelope is narrow. The fly-
+ing qualities limitations on the approach speed are not
+Table 2 Limitations of the approach speed
+of an carrier aircraft
+Factors poe iotations Remark
+Field of view V.>V,.=168 km/h No limitations
+margin
+r c Fi
+Arrest system T, <252 km/h MK7-3
+presented in Table 2, which are mainly reflected in
+the control system failure. The requirements of the
+flying qualities are different for different failure
+states, and the approach restrictions are determined
+based on the specific malfunctions.
+5 Conclusions
+The engine response time and the elevator effi-
+ciency have important influence on the approach
+speed envelope. With faster engine response, the
+maximum approach speed is higher; with higher ele-
+vator efficiency, the minimum approach is lower. A
+series of restrictions of landing gear can be given ac-
+cording to different sea conditions. The approach
+speed envelope is narrow for an aircraft only conside-
+ring the moderate sea condition. It is not practical
+without considering the sea condition.

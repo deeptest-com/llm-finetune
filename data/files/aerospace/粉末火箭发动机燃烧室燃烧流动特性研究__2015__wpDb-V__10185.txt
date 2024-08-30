@@ -1,0 +1,274 @@
+粉末火箭发动机燃烧室燃烧流动特性研究
+选取颗粒轨道模型,对Al/AP粉末颗粒在粉末火箭发动机内流动和燃烧进行三维数值模拟,为以Al粉末燃料和AP粉末氧化剂作为推进剂的新型燃烧室的设计以及实验研究提供参考。文中提出了一种粉末火箭发动机构型,通过对发动机燃烧室进行冷态和热态数值模拟,研究了氧燃比、Al粉末颗粒大小、燃烧室体积等因素对粉末火箭发动机燃烧室燃烧性能的影响。结果表明,一定范围内氧燃比较高时,燃烧室温度反而较低;较小粉末颗粒在燃烧室内更易离散;Al颗粒粒径越小越易燃烧,Al燃烧率也越高;验证了在Al/AP粉末火箭发动机的设计中引入特征长度来匹配Al粉粒径与燃烧室体积的合理性。
+
+粉末火箭发动机燃烧室 数值模拟 两相流 铝颗粒 高氯酸铵颗粒  
+
+中图分类号:V435文献标识码:A文章编号:1006-2793(2014)06-0792-05
+DOI; 10.7673/j.issn.1006-2793.2014.06.010
+Study on flow and combustion characteristics in the thrust
+chamber of powder rocket
+LI Yue,HU Chun-bo,SUN Hai-jun, DENG Zhe
+(Science and Technology on Combustion, Internal , Flow and Thermal-Structure Laboratory,
+Northwestern Polytechnical University , Xi「an 710072 ,China )
+At】stl_履(亡l′，=3D flow and combustion in the chamber of Al/AP
+powder rocket was numerically simulated by the particle trajectory
+model so as to provide reference for the design of the thrust chamber and the experimental investigation.The effects of oxidizer/fuel
+radio, particle diameter of Al and the volume of the combustion chamber were analyzed by a new engine configuration. The results
+show that the temperature of the chamber is lower when the oxidant/fuel ratio is higher in certain range , the combustion is easier
+when the particle of Al is smaller and the combustion efficiency of Al is higher.It is reasonable to choose an appropriate chamber
+characteristic length to adapt to the particle diameter of Al.
+Key words:powder rocket chamber; numerical simulation;two-phase flow;aluminum particle;ammonium perchlorate particle
+0引言
+粉未火箭发动机是一种以固体粉末为燃料的新型
+机最先由Bell航空公司““7「提出,并验证了点火及燃
+火箭发动机。该发动机通过调节粉末颗粒的流量,并
+烧可行性,但有关粉末火箭发动机燃烧室内流动、相变
+控制开关状态,具有推力可调、多次启动关机的性能,
+和燃烧研究未见报道。
+且具有燃料储存性能好等诸多优点。
+针对不同应用背景,粉未火箭发动机有较多种类,
+机燃烧流场进行了三维数值模拟,研究了不同氧燃比、
+NASAL“开展了用于火星探测的Mg/COa粉未火箭发
+不同颗粒粒径对燃烧流动的影响,验证了引人特征长
+动机的研究,并成功进行了点火试验;国内西北工业大
+度在燃烧室设计过程中来确定燃烧室体积大小的合理
+学[““近年来也对Mg/CO,粉末火箭发动机进行了大
+性,为粉末火箭发动机燃烧室设计及热态实验提供了
+量的实验研究;国外“研究了粉未冲压发动机的理
+参考。
+1_颗粒燃烧模型及燃烧理论
+1.1“热力计算
+通过热力计算对AMAP粉未火箭发动机理论性
+能进行计算分析,并与美国贝尔航空公司“计算结果
+进行对比,其计算结果基本一致,对比结果如图1所
+示。由图1可见,氧燃比为2.5时,燃烧室理论比冲最
+高;在一定范围内,燃烧室温度随氧燃比升高而降低,
+当氧燃比为1.5时,燃烧室最高温度达到4289K。
+由图1可知,AMAP粉未火箭发动机具有可观的
+能量特性。然而,必须设计合理的燃烧室结构,才能实
+现比冲效率的最大化。
+图 1 发动机理论比冲和温度随氧燃比O/F的变化
+Fig.1 Change of specific impulse,temperature with O/F
+1.2“颗粒相变
+本研究反应包含均质和异质反应,但起主导作用
+的是均质反应,颗粒首先应相变为气体,才能剧烈燃
+烧。Al粉和AP粉末的反应中,AP的分解速度较快,
+分解产物主要有Cl、0,、H:0、No、HCL、NO、N20,具体
+的成分组成主要与AP分解的环境条件有关。根据
+AP的分解温度不同,可分为低温热分解和高温热分解
+2个阶段[“。本文研究中,认为AP在粉末火箭发动机
+中的分解过程属于高温分解,设计氧燃比(0/F=2.5)
+下,其具体的分解方程如下;
+2AP—Cl,+2N0+0,+4H,0
+AP分解速度的控制方程可表示为
+根据Ki-hongKim「实验结果,式(1)中:B,=800,
+E,=137.18 kJ/mol,
+由于粉末火箭发动机中Al颗粒的燃烧环境与固
+体火箭发动机中Al颗粒燃烧环境相似,文中借鉴文献
+[9]Al颗粒燃烧模型(Hermsen修正模型)来描述Al
+颗粒粒径变化,该模型是在大量实验数据““「和Brook
+等[提出的描述Al颗粒直径变化的公式基础上,对
+D“法则进行修正而得到的,颗粒变化的控制方程可写
+成如下形式:
+D** = Di* - kt (2)
+二叉tp“T4a(3)
+式中Dy为颗粒初始直径;D为某时间点时的颗粒直
+径;为燃烧速率系数,hmys/ms;aoano、aa,分别为
+0,.H,0和Cl,对Al液滴蒸发的影响因子,根据Beck-
+steadL八总结研究得出的结果和估算分别取1.0.0.6和
+1-1;C为氧化剂的摩尔分数;p为环境压强,atm;Ty为
+颖粒初始温度,K。
+颗粒全部燃烧所需的时间t由式(4)可得到:
+1.3化学反应方程
+燃烧室中,Al颗粒与AP颖粒间的反应较复杂,参
+考PaiVernekerVR等L21关于AlMAP混合物反应的研
+究,将此过程简化为Al蒸汽与AP颗粒分解产物之间
+的气相反应,设计氧燃比下,主要反应式如下:
+Al+1.50, 一 0.5Al0,
+Al+1.5H,0—0.5A1,0,+1.5H,
+Al+1.5Clb 一 AlCL
+1.4计算模型验证
+1968~1976年间,美国贝尔航空公司(BellAero-
+spaceCompany)的Loftus等最早开展了AVAP粉未火
+箭发动的实验研究,并获得了燃烧室工作的相关数据。
+采用上述计算模型,对该试验发动机工作过程进行数
+值模拟。通过对比发现,在发动机设计氧燃比附近
+(0/F=1.5~3.0),计算数据与试验所得数据吻合度较
+好(见图2),燃烧室特征速度误差在10%以内,具有较
+强的可信度。
+0 2 4 o/F ? 8 10
+图 2 特征速度对比
+Fig.2 Contrast of characteristic velocity
+1.5特征长度理论及燃烧室构型
+燃烧室的设计过程中,在保证燃烧效率的同时,燃
+烧室体积应尽可能小,故引人燃烧室特征长度L“(如
+—793一
+图 3 所示)来确定燃烧室的体积;
+* =V_J/A, (5)
+可通过估计燃烧室内颗粒和燃气的湛留时间7,
+来估计燃烧室特征长度,其中
+譬m丨=′′′′逞苔
+联立方程式(7)、式(8):
+卫。=p垦蕾^′壶_蜇7"u(7)
+可得到特征长度的估计式:
+式中“为燃烧室体积;4,为燃烧室喉部截面积;0,
+为燃烧产物气相质量分数;p。为燃烧室压强;gm为燃
+烧产物的质量流率;ps为燃烧产物的平均密度;7.为
+燃烧室总温。
+一种粉末火箭发动机构型,主要由带挡板粉未离散装
+置、燃烧室、喷管3部分组成,见图4。供粉装置将AP
+与Al粉颗粒探混,并经由离散器进人燃烧室内,进行
+两相燃烧。
+2.1“数值模拟假设
+粉未发动机燃烧室内部流动和反应较复杂,在上
+述粉末火箭发动机进行数值计算时,需对其进行适当
+的筒化和处理。计算过程中,简化和假设条件如下:
+(1)发动机内部流场为定常反应流场;
+(2)Al与AP的反应简化为Al熙汽与AP的高温
+分解产物之间的反应,气相反应为一步反应;
+—794—
+(3)燃气为理想气体;
+(4)忽略重力和反应辐射;
+(5)忽略氧化铝的疑结沉积模型。
+2.2边界条件
+挡板前流化气携带AP/AL粉未颗粒以3m/s进人
+离散装置,人口温度300K,初始压强piu.=2MPa,燃
+烧室出口为常压常温环境。Al颗粒质量流率m,=
+62.6g/s,氧燃比为1.5时,AP的质量流率m,,=
+93.9g/s,氯燃比为2.5BF,AP的质量流率my,=
+156.68g/s;流化气质量流率mp=15.6g/e。
+23“计算工况
+数值模拟中,AP颗粒粒径为100wm,BEEMEASHy
+22mm,喷管为锥形喷管,喷管扩张比为10.2,计算工
+况见表1。燃烧室的特征长度主要由颗粒间燃烧的难
+易程度决定,假设
+T,=白十口(10)
+其中,为Al颗粒蒸发反应前在燃烧室中停留时间,
+取 7 ms,
+据式(4)、式(9)、式(10)估算,30.40、60umAl颖
+粒对应的燃烧室特征长度分别为1.6.2.03.0m,
+表 1 计算工况
+Table 1 Calculation cases
+3计算结果及分析
+3.1“冷态流动
+图 5 为流化气体在冷态条件下速度分布图。从图
+5可看出,气流绕过挡板进人燃烧室时,速度可达100
+m/s,其在挡板后及燃烧室头部靠近壁面区域有涡流,
+此区域气体流动速度较低。这是由于气体流动通道结
+构与截面积窃变所致,在热态的反应中,有稳定火焰的
+YER.
+图 6 依次为30.40.60umAl颗粒,100pmAP频
+粒识态条件下在流场中流动轨迹。图6中,AP颖粒粒
+径最大,其流动速度最小,进人燃烧室时AL颗粒的速
+度随着颗粒粒径的减小而逐渐增大,颗粒在燃烧室中
+速度逐渐净小。对比图4中的流场,颗粒运动总是滞
+后于气体流动,Al颗粒粒径越小,其随流性也赳好,在
+燃烧室中的速度变化也越月春;在颗粒绕过挡板进人
+燃烧室时,部分颗粒在燃烧室头部继续治轴向运动,鄂
+分受到气体涡流的卷股偏向壁面,这有利于颗粒在燃
+烧室离敬,也会增加壁面的热防护压力。
+Hig.5 Gas velocity magnitude distribution of chamber
+国6“冷态流场中颜粒辅选
+Fig.6 Track of aluminum particles
+3.2氧燃比对燃烧流勒的影临
+遍在2.600上谊上,惧高渥度可达到4000K以上,氧
+燃沛较大时,燃烧室温度反而较低,与发动机理论性能
+计算结果一致。氧燃比为1.5时,燃烧室的高温区域
+靠近燃烧室头部,当氧燃比增加至2.5时,燕烧室的高
+温区域后移。这主要是四为AP颗粒在燃烧室头部分
+解产生的大量的气体,当AP含量增加时,燃烧室头部
+产生燃气量增加,气流速度也会相应增加,因此高温区
+域会后移。另一方面,燕煌室壁面湿度在3SOK左
+右,这增如丁燃烧室内壁面热防护的难度,燃烧室的构
+垒胡如依据内鄯燃烧组织进行完咤。
+图 8 为工况3(0/F=t.5)和工况6(0/F=2.5)时
+AP颗粒运动和分解轨迹图。由图8可见,氢燃比为
+1.5时,AP颗粒的分解区主要分布垂挡振后燕热室头
+部区域,当气燃比增加至2.5时,AP颜粒在绕经挡板
+时就已经开始分解。这主要是因为氯燃比为2.5时,
+计算缤果中,燎烧室压强pu=1.9MPa,相比氧燕比为
+1.5时,燃烧室压强p增高了0.3MPa,在来流总压一
+定的情况下,AP粉未在离散装置中的速度降低,湍流
+换热对其影响更加明显,从而AP颗粒进入燃烧室前
+就已经开姗分解。
+Fig.7 Tebhbetatnre distribution of combustor
+图 8 AP顾敖流动轨流
+Fig.8 Track of ammonium perchlorate particles
+图 为 工况3(0/Ff=1.5)和工况6(0/F=2.5)8￠
+燃烧室内流场速度分布云图。从图9可看出,燃烧室
+内气流速度递渐加快,当氧燃比为1.5时,燥烨室壁面
+附近区域气体流速较高。这是由于AP和Al颗粒在绕
+过挡板时,速度偏向燃烧室壁面,燃烧室气体主要由
+AP分解产生,而AP颉粱的分解主要发生在挡板后的
+燃烧室中,颖粒的分解,燃发.反应使燎烧室中壁面附
+近气流加速更为明显。当氧燕比增加至2.3时,燕烧
+室轶线附近区垣气体流速较高。这是由于APBRE
+绵过挡板前已经开始分解,气流进人燃烧室时,轴向速
+度很大,颢粱在燃烧宾内的径向离散效果减鹏。
+围9燃烧室内逯根分布
+Fig.9 Velocity magnitude distribution of combustor
+3.3Al颗粥粒径对燃烧流动船影响
+图 10 是工况4,5、7Al颗粒在燃痕室的轨迹,
+其对应的Al颗粒的粒苔劣别为30、40、68pen,JE
+10叶濮岩,扬颢粮进人燕姬室以后,粒称隧骥敬的运
+动涛根嫁少;工冶4中,坤郡Al颖粕在燧烈堀中完全
+荚盎;工泊$中,66:288破雕顺粮在燃娴坤中完全蒸
+发;工浚7中vt0x295皎蠡敏在熹炳垮中完全蒸发。据
+式(8)可知,办颜粥粒径趣小,其完全燕发燕熏断需时
+分,燕拱效临高。医些,在条件免许的情况下,选取
+辉绍的Al颖粮,吴提斋AL的燃烧效率,从丽提高粉未
+火篱取动椿皋性能。
+表 2 妍骠物梅旋率
+3.4
+工况5和工况7中鹳灯烧室是针对40pm的Al
+图 EFGa 姬80ponAL颖粱在特征长度为2.0m的
+燃烧室中粗径硬养狼澈难化图。从图中可看出,Al颗
+妹的蒂柏交颜粒行雄酥濑为70~130mm的蕉国内变
+化最闵春,在追踪的从颧粒中,有96.1%在颗粒行进
+践高为85~-260mus鹄精糯内薄发消失;图11(b)230
+kmAl颜粱在士6m:牧毯松庭的燃痿室中AL颗粒的粒
+徕陶其软逢鸦变化图。应园中可看出,AL颗粒在燃烧
+—T96—
+宦内宾全羲发浦失,其役迹踏离坂要分布在150~300
+wun的萝震内。线台衬锭缤柱,对钢ta)(b)WIRE2
+现;(1)在行迹跋瘾冲76~130的英樵侃,见
+跋巾近庞特息。留于此梅丹懋魅垮头郭,搜板贺存在
+和流助的突扩,导状此区城渊荣骥提装大,荣棣中的构
+4络论
+(1)冬悉担浩中,糕末糙程超大,其髓流性趟差,
+在洪榕中速庞变祉趣不碧蛭;褚苑趣小,在流杨中的速
+度变化趟闵星,绕这持叛同,胺褐装柔趣好。
+(2)颊燧比对燧旗蛮的流戟和燃炳影酪独星,适
+HAIL, SRA RT, RENE
+移,有刹于燧洁培维然茵护。
+(下粉第803颊)
+(6] Johnson G R, Jayaratne E R, Lau J, et al. Remote measure-
+ment of diesel locomotive emission factors and particle size
+distributions [ J ]. Atmospheric Environment, , 2013 81; 148-
+157.
+[7] Bird G A.Molecular gas dynamics and the direct simulation of
+gas flows{ M].London; Oxford Univ.Press, 1994.
+[8] Ivanov M S,Khotyanovskyy D V,Kudryavtsev A N ,et al.Nu-
+merical study of backflow for nozzle plumes expanding into
+Vacuum[ R].ATAA 2004-2687.
+[9]李志辉,李中华,杨东升,等.卫星婀控发动机混合物羽流
+场分区耦合计算研究[刀.空气动力学学报,2012,30(4):
+483-491.
+[10] Gallis M A,Rader D J, Torczynski J R.DSMC simulations of
+the thermophoretic force on a spherical macroscopic particle
+[R]. AIAA 2001-2890, American Institute of Aeronautics
+and Astronautics, Washington ,D C,2001.
+[11] Burt J M,Boyd I D.Development of a two-way coupled mod-
+el for two phase rarefied flows [ C]//42nd AIAA Aerospace
+Sciences Meeting and Exhibit , Reno, Nevada,5-8 Jan.2004,
+AIAA 2004-1351.
+[12] Burt J M,Boyd I D.Monte carlo simulation of a rarefied mul-
+tiphase plume flow [ C]//43rd AIAA Aerospace Sciences
+Meeting and Exhibit 10-13 January 2005, Reno, Nevada.
+HLOCACO CMCC LA CACHACOALA CALA COA CEACACA LA COCO CACC EA LACOHN CON CACA COA CACACA CA CACO CACAO CALA EA CA COCA CA CACO
+(上接第796页)
+(3)Al颗粒粒径大小对燃烧过程影响较大,Al的
+燃烧率随其变化显著,较小的Al颗粒反应更容易,燃
+烧更充分。
+(4)通过特征长度方法来匹配燃料颗粒与燃烧室
+体积是合理的。

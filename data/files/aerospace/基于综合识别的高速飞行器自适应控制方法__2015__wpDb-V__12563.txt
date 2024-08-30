@@ -1,0 +1,226 @@
+基于综合识别的高速飞行器自适应控制方法
+针对高速飞行器的传统自适应控制方法中控制器参数获取时间长，辨识存在收敛性的问题，设计了一种基于综合识别方法的新型自校正控制方案。首先，由在线直接可测量构成特征模型的特征状态量，并以特征模型作为参考模型来设计控制器；其次，通过获得的特征状态量来在线调配对象系统的零极点，输出达到期望性能所需要的控制参数。仿真结果表明：该方法能较理想地实现在线自适应控制，保证系统良好的鲁棒性和快速性，同时在工程上易于实现。
+
+高速飞行器 综合识别 特征状态量 在线控制 自适应控制  
+
+Introduction
+The research for control system of High Speed Ve-
+hicle(HSV ) has some challenges, such as time-varying
+parameters, fast response, strong robustness and effec-
+tive control etc [11. The traditional adaptive method of
+HSV is self-tuning control. It online identify typical
+characteristic parameters of the plant, then automati-
+cally adjust the control quantity with result obtained.
+The application of adaptive controller [2 - 3 has been
+widely used due to identifying the parameters of process
+automatically, regulating the quantity of controller au-
+tomatically, and having adaptability for variable coeffi—
+cients. But how to accomplish quickly online identifica—
+tion for HSV is a new challenge. To a fast time-varying
+process, control system must response quickly and need
+short sample period. Online identification can not guar-
+antee the real time operation, so it restrict the applica-
+tion of adaptive control strategy to be used in the attitude
+control system's design. The paper [41 propose an adap—
+tive control method base on characteristic model. it have
+built a characteristic model 3! on 6-DOF dynamic model
+of hypersonic vehicle on glide phase, then design a in-
+ner-outer loop adaptive controller base on characteristic
+model respectively. The paper 【61 design a feed forward
+compensated adaptive controller based on both parame-
+ter identification for the state equation and Pole~assign-
+ment for maneuvering reentry vehicles control problem
+on the condition of large scale fight envelope and hardly
+aerodynamic couple. Though those methods all have a
+nice simulation result for the control strategy of hyper-
+sonic vehicle, the control parameters all need online i-
+dentification. For HSV「s control system within a plant of
+high-order time~varying property and controller of
+complex construct, it increase both time and magnitude
+of calculation due to system identification. Furthermore
+it's harmful to the control system of HSV which has high
+time—sensitivity. '
+In this paper, an attitude control method based on
+integrated identification strategy was proposed. The
+characteristic state variables were consist of measurable
+quantity which can be online measured directly without
+iteration, and the reference model of self-tuning con-
+troller are derived bv characteristic state variables. Then
+quantity of controller was calculated by adjusting the
+plant's pole-~zero to achieve the ideal performance. The
+simulation results improve the effectiveness of this
+method.
+1 Dynamic Model and Characteris—
+tic Model
+Refer to the database of NASA Langley research
+center 【7,the original model of this paper is
+Winged—Coned model. Meanwhile we focus on the atti-
+tude control system's design in glide phase of HSV.
+and kinematics equations of variable~mass system are
+considered as form of constant mass rigid body. Then
+motion equations are derived as follow:
+where V is the velocity of vehicle, 0 is rotational
+angular velocity of ballistic coordinate system relative to
+Earth~surface coordinate system ,w, is the Earth's rate
+of rotation, w; is rotational angular velocity of body co~
+ordinate system relative to translational coordinate sys~
+tem, Fis the sum of forces, M is the sum of moments,
+X is the position of mass center,r is the position vector
+of mass center in the inertial coordinate system, m is the
+mass of vehicle, [is inertial tensor, dr Urry Yr are Euler
+angle of body coordinate system relative to translational
+coordinate system by “3-2-1" order.
+. For the attitude control system,angle of attack
+(AOA), side slip angle and flight path angle are often
+considered to be the control quantities of pitch, yaw and
+roll path respectively. In order to design and analysis
+control system, the differential equations of these con-
+trol quantities should be derived. The characteristic
+model would be derived in pitch path for example. There
+are steps:
+Stepl: Build the angular motion equation of vehi-
+cle. Refer to the definition of attitude angular between
+different coordinate systems and the equivalence rela~
+tionship of rotational angular velocity, two vector equa~-
+tions can be derived:
+哎 -Cey -CfGlr - 咤 = X Dy + By xQby + Op, X ly
+(6)
+where T,F,H ,V ,B represent translational coordi-
+nate system, launch coordinate system, ballistic coor-
+dinate system , velocity coordinate system and body sys—
+tem respectively. C represents transformation matrix. w
+represents rotational angular velocity between two coor—
+dinate system, w is the derivative of angular velocity in
+the mapping coordinate system.
+Substituting equation (5) and (6) into equation
+*109。
+(4), the control-oriented differential equation of pitch
+path can be obtained:
+区 = —cosa tan Blak, ~(@ha ~wi p cosa) J+
+元 (v, cosy, +8 cosy, siny,. )secB -
+Step2: Make the Earth's rate of rotation dissociated
+from attitude equation obtain:
+(置…=_(〉()s(〕【tal]/灵〔(…)〔′盂'_(〔')彗】'(j乙__颤〔)叁…z/室c0S(7乙)工i+(8)
+sina tan B| a, ~ (af Bsina- wha) +
+〔(三)叁菁z一(〔又)〔3j爵…煊cosC—ob,Bsina)]+
+Step3: Consider long-~period motion parameters as
+constant on glide phase, neglect high derivative, the e-
+quation (8) can be written as
+Step4: Note that in the longitudinal motion, the
+quantity of lateral motion can be considered too small to
+be neglected. Obtain:
+(j迂=(!)莒妻z_淳(〔囊)(套j】『cosa—wg,sina)(10)
+StepS: Build nominal motion equation, combine
+with equation (2),Substitute the expanded formula of
+moment and neglect the component of aerodynamic
+nonlinear
+Where f, is the disturbing force of pitch path.
+Step6: According to the nominal equation above,
+substitute the linearization reference points ay, 84, and
+is defined as :
+“110「
+lar acceleration due to damping moment with respect to
+angular acceleration due to stabilizing moment with re-
+spect to disturbing AOA, and it represent the ability of
+producing angular acceleration due to per unit disturb-
+acceleration due to manipulate moment with respect to
+disturbing rudder deflection, and it represent the ability
+of producing angular acceleration due to per unit dis-
+turbingrudder(](…i1{奇(〕ti0【薹;〔/.)鬟皇′z，(<iz,，′7Z亘'】=，′′2…工贲=arean—
+gular velocity of pitch path, rudder deflection, the
+derivative of statically stable, damping moment coe 余 -
+cient of pitch path and manipulate effectiveness.
+dentification
+From the characteristic model (equation(12)), we
+define characteristic state variables of longitudinal mo~
+tion as follow 【
+Where a,, is the ratio of stabilizing moment to AOA
+and it represents the ability of producing angular accel
+eration due to per unit AOA. b, is the ratio of manipulate
+moment to rudder deflection, and it represent the ability
+of producing angular acceleration due to per unit rudder
+deflection.
+So, the characteristic model can be written in the
+form :
+In order to applying the characteristic model to
+control law's design process, the procurability problem
+of characteristic state quantities must be resolved firstly.
+Consider the time-varying character of characteristic
+state quantities, the traditional method of parameter i—-
+dentification have some problems such as mass data
+calculation, parameters for lag, initial value issue and
+identifiability of close-loop. If the transient characteris—
+tic of system which consist of characteristic state quan-
+tities can't be timely response to the controller, the ap-
+proach of integrated identification would lost its advan-
+tage.
+Fig2 Process of integrated identification method
+The integrated identification method is based on
+measuring characteristic state quantities by sensors
+aboard. The main idea of this paper is to use the sensor
+to get the information from high order system replacing
+the parameter identification method based on principle
+of statistics, and to enhance the online rapidity of get
+ting characteristic state quantities by increase number
+and sort of sensor. The process of this approach is illus-
+trated in Figure (2). The key steps of integrated identi
+fication method are showed :
+Stepl: Sample information from sensors, physical
+quantities need to be measured are vector of fight atti-
+L 心 [6., 5.17, trajectory state vector I'=[V,H]7, these
+quantities are consider to be get in time by sensors.
+Step2: The quantities measured are used in the
+follow equation:
+ment coefficient m, 3 it can be fit as the functional form
+consist of measured quantities by according to the char-
+acteristic of aerodynamic damp. Function x, = f (a) can
+be calculated online.
+Step3: Calculate the trim coefficient L = ~a, / b,
+from the char acteristic of model we have:
+When the sampling period is sufficiently small, it
+is assumed that quantities as b , can be neglect. So the
+estimating expression of trim coefficient can be derived:
+Step4: Calculate the remaining characteristic state
+quantities :
+So that, all characteristic state quantities have
+been obtained.
+3 Controller design based on in-
+tegrated identification
+The approach of integrated identification identify
+characteristic state quantities, then obtain characteris—
+tic. The output of control quantity by adjusting the de-
+sired plant's pole-~zero point is used to achieve the ideal
+(3).
+Fig 3 The structure of self-tuning controller
+be written in form as;
+While, the equal two order characteristic equation
+of plant is:
+Simultaneous equations (19) and (20) obtain the
+characteristic gain K,, the characteristic frequency w,
+and the characteristic damping &,.
+The PD feedback corrector is taken into the control
+system, Assume the transfer function is
+Where K, is proportional gain coefficient, XK is
+differential gain coefficient. The closed-loop transfer
+function of corrective circuit can be described as:
+Assume the desired frequency, desired damping of
+nominal plant is w, and ￡, respectively, obtain
+The closed-loop gain of feedback system is
+So, the balance coefficient of gain is
+Fig 4 Curve of Height and Velocity Fig 5 Curve of AOA Fig 6 Curve of Rudder
+5 Conclusions
+For the problem of long time to calculate the
+quantity for controller and the convergence issue of
+identification, we presented an approach of adaptive
+control based on integrated identification. It's a valuable
+explore to study the online control of HSV ,and apply a
+realizable path to implementing adaptive control method.
+Characteristic state variables were consist of measurable
+quantities which can be measured directly online,and
+the reference model of the self-tuning controller were
+derived by characteristic state variables quickly by
+avoiding iteration and convergence issue. This method
+can retain the control characteristic of nominal plant by
+parameter self-tuning inner circuit, furthermore, the
+logic of inner circuit is simple, physical signification is
+clear and it's implemented easily.

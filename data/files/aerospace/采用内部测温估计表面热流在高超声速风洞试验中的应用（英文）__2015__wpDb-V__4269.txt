@@ -1,0 +1,339 @@
+采用内部测温估计表面热流在高超声速风洞试验中的应用（英文）
+表面热流预估方法利用试验件内部的温度来预估其表面热流。该方法的最大优点是测量温度的热电偶是内埋在试验件内部,不与外界的高温气流直接接触。该方法为高超声速飞行器飞行实验估计表面热流提供一种可行的途径。为了验证该方法在预测外界流场特性方面的能力,在航天空气动力技术研究院（CAAA）的FD-03风洞中开展了一系列高超声速气动热风洞试验。试验中采用一块铝合金试验板,部分试验采用光滑平板,其余试验在试验平板的表面添加拌线以干扰外界流场。而后采用热流估计方法预估试验板的表面热流。预估结果表明,如由拌线产生的激波等外流场的强烈变化将在估计的热流结果中得到清晰的显示。
+
+热传导逆问题 表面热流 估计 气动热 风洞试验  
+
+中图分类号:V211.71文献标识码:A
+0 Introduction
+The aero-heating effect of a hypersonic aircraft
+cannot be ignored. As the Mach number increases,
+the temperature in the boundary layer on the hyper-
+Received date: 2014-07-27;Revised date:2015-01-20
+% Corresponding Author E-mail: zhangsy701@sina, com
+引 用 格 式 : Zhang SY, Zhao X J, Chen Z L. Application of surtace-heat-flux estimation by measuring model interior temperature in hypersonic wind
+tunnel tests. Journal of Experiments in Fluid Mechanics, 2015,29(2): 61-67. 弛 石 玉 , 赵 学 军 , 陈 则 霖 , 采 周 内 邹 活 渥 估 计 裕 面 热
+sonic aircraft surface could increase to thousands of
+degrees centigrade[l31. It is very difficult to measure
+the aero-heating heat flux directly at such high tem-
+peratures by applying general sensors such as Schmidt-
+Boelter gagery41 coaxial thermocouplest?? and general
+(2): 61-67.
+ched on the heating surface and would be easily de-
+stroyed by high temperature outflow. In order to
+solve this problem, one available method to esti-
+mate the surface heat flux is to embed temperature
+sensors inside the thermal insulation layer, and use
+the measured temperatures to estimate the surface
+heat flux. Such an approach is based upon the prin-
+ciple of Inverse Heat Conduction Problem (IHCP)
+[8-12]
+Cai "1, Zhou”, and Coyri2 applied the IHCP
+to evaluate the heat flux by adopting simulation da-
+ta. The heat flux in Ref. [12] is described by a pol-
+ynomial model, which is impractical under general
+hypersonic vehicle flight conditions. Practical situa-
+tion is that the heat flux value is transient and chan-
+ging with time. The Sequential Future-Information
+(SFI) method is used in this paper to predict the in-
+itial heat flux, which changes with time and is de-
+pendent on the priori heat flux.
+Qian"* and Mehta" applied a similar method
+for electrical heating tests and combustion tests to
+estimate the heat flux at the heating area, and a-
+chieved reasonable results,
+In Ref. [2], we adopted the surface heat flux
+estimation method for hypersonic aero-heating wind
+tunnel tests in CAAA to estimate the aero-heating
+heat flux, the result of which is inaccordance with
+the result of empirical methods. Based on this re-
+search, this paper is aimed to verify the applicability
+of estimated heat flux to predict the outflow field .
+characteristics. ,
+The basic physical mechanism and mathemati-
+cal method of heat-flux estimation method are intro-
+duced in Section one, and a series of hypersonic aer-
+o-heating tests at wind tunnel FD-03 of CAAA are
+displayed in Section two. Then surface-heat-flux of
+test plate is estimated and analyzed to demonstrate
+the usefulness of the heat-flux estimation method in
+hypersonic flight tests in Section three.
+1 Heat-flux estimation mechanism
+Utilizing inside temperature measurements to
+estimate boundary heat flux is an inverse heat con-
+史 人 a F ACEA 飞 野 上 一 k 一 J ad MLCSUCLE UESUL HL Nel, | 14
+and Ref. [15]. The flow chart of this estimation
+method is shown in Fig. 1. The general process
+could be simplified as “Prediction & Correction”.
+At the beginning, the initial heat flux on the upwind
+surface is predicted. Then the temperature inside
+the plate can be calculated via the heat conduction
+simulation codes. Then, according to the error cri-
+terion from an optimization algorithm, the corrected
+heat flux is estimated. After that, repeat the heat
+conduction calculation applying the corrected heat
+flux as a new boundary condition, and iterate the a-
+bove processes until the error criterion is satisfied.
+process of IHCP is unstable, as illustrated in Ref.
+[14-15]. It means that small errors in temperatures
+will lead to large errors in the heat flux. Conse-
+quently, Finite Impulse Response (FIR) low-pass
+filter is adopted to preprocess the measured temper-
+ature to reduce the high frequency noises before the
+heat-flux estimation.
+In following sections, the heat transfer model,
+heat-flux estimation criterion and optimization algo-
+rithm will be introduced briefly.
+1.1 Heat transfer model
+Figure 2 shows a one-dimensional heat transfer
+model of the shell of a hypersonic flight vehicle,
+wherein OY represents the heated surface, OX is
+the thickness direction of the shell, and d is the
+thickness. Assuming that the temperature gradient
+in the direction of OY can be ignored, the heat
+transfer model can be simplified to a one-dimension-
+al heat conduction model. Take the upwind surface
+as the heat-flux boundary and the back surface as
+the isolation boundary, the one-dimensional heat
+transfer function can be expressed as follows:
+and the boundary conditions as,
+Where A denotes the thermal conductivity of the
+shell, p denotes the density and C is the specific
+heat ratio. The initial temperature distribution a-
+long OX is T (x) . The heated surface 乙 一 0 is set
+to be the heat-flux boundary as Q(0,2) . The back
+surface where Z 一 d is set to be the isolation bounda-
+ry. The finite difference method is used to solve
+such partial differential equations.
+图 2 高超声速飞行器壳体一维热传导模型
+1.2 Heat-flux estimation criterion and optimization
+algorithm
+Sequential Future-Information (SFI) method
+developed by James V. Beck '*! is applied to predict
+the initial heat flux at the beginning of a time step.
+Considering the time step ty , the heat flux is pre-
+dicted by r time steps after td . Heat flux of time
+step 以 十 1 to M+ r is initialized by the following
+function.
+Quin =Qu +n (Qu 一 Qd-1) , 二 17 (2)
+Where (Qu — Qu: ) denotes the difference value be-
+tween the time step M and M-1. The parameter 7
+represents the z time step after M.
+The estimation criterion is selected as tempera-
+ture-error criterion, which is the sum of squares of
+residual errors between measured and calculated
+temperatures in 7 time stepsrL1 as follows.
+Where yu. denotes the temperatures measured by
+embedded thermocouples and T(x, stm.) denotes
+tion method.
+In the optimization process, Newton-Raphson
+(NR) minimization algorithm is used to correct the
+heat flux Q. The NR optimization function is given
+as follows,
+Where & and & 十 1 denote the optimizing steps.
+The whole estimation process can be simplified
+as follows: firstly, the initial heat flux of Q, should
+be initialized by Eq. (2), and then the NR optimi-
+zation function of Eq. (4) is applied to iterate the
+heat fluxes of the next x steps, that Q, to Qy+,, un-
+til the relative error of temperature-error-criterion J
+(Eq. (3)) is convergent. Then turn to the next
+time step to iterate the new heat flux. Details of
+this estimation process can be found in Ref, [1] and
+Ref. [2].
+2 Hypersonic wind tunnel tests
+The previous study of heat-flux estimation
+method in standard plate heating tests refers to the
+research of Qian Weiqi etc. [133 They inserted an e-
+lectric resistance into a test plate to heat the plate,
+aiming to verify the experimental precision of this
+technology,
+In previous research of CAAA, a series of hy-
+personic wind tunnel tests were implemented to ver-
+ify the reliability of the method for wind tunnel
+tests. All of these research results can be found in
+Wind Tunnel of CAAA, which is an intermittent
+hypersonic scientific research wind tunnel, can op-
+erate at four Mach numbers, as Ma 5, 6, 7 and 9,
+and the stagnation temperature is from 358K to
+1028K.
+The test model is a flat plate made of aluminum
+alloy with the size of 390mm X 180mm X 30mm.
+The width of the test plate is equal to that of the in-
+flow section of the wind tunnel, in order to ensure
+me entre upwina suriace O1 tne test plate in a hom-
+ogeneous flow field. Meanwhile, in order to reduce
+the heat dissipation, the test plate is packed with i-
+solation materials around except for the upwind sur-
+face. Nickel chrome-nickel silicon thermocouples
+are embedded into the test plate to measure inner
+temperatures, with measurement error of 0. 75% X
+tem perature('C).
+The wind tunnel is operated at Ma 5 in tests,
+with stagnation temperature of nearly 481K and the
+environment temperature of nearly 281K.
+A series of tests are implemented, including
+general tests and trip-line tests. A photograph of a
+general test is shown in Fig. 3, and a trip-line test
+picture is shown in Fig. 4. The trip line is bounded
+between the 7* and the 8* thermocouples, and the
+diameter of the trip line is 1.5mm. The primary
+states of experiments are shown in Table 1.
+表 1 风湛试验及实验模城主要状态参数
+Table 1 Primary states of WT tests and test model
+Ma T-inflow/K T-environment/K
+5 481 281
+Aluminum alloy 390X 180X 30 203
+闽3风涂试骏安装图
+Fig. 4 Pictere of test plate with a trip line tied up
+图 4 拌线试验风洞安装图
+The photograph of the back surface and the
+sketch of embedded thermocouples are shown in
+Fig. 5(a) and Fig. 5(b) respectively. It can be seen
+that there are 14 thermocouples, whiie the 1“t0 the
+13 thermocouples are installed inside the plate and
+the depth is 15mm. Meanwhile, the distance be-
+tween two thermocouples is equal in the outflow di-
+rection. And the 14 thermocouple is installed on
+the back surface, between the 6? and the 7 口 ther-
+mocouples, as a validation measurement. The
+analysis of the thermocouples can be found in Ref.
+[2].
+It should be noticed that, there are two Data
+Acquisition Units (DAUS) used to acquire tempera-
+ture data. The 1* to the 7* thermocouples are con-
+nected to DAU A. The others are connected to
+DAU B. As the test results indicate, the collected
+data of DAU A and B are with non-negligible bias.
+In order to eliminate this bias error, this paper utili-
+zes the data acquired by DAU A only.
+In the wind tunnel tests, the primary three fac-
+tors that strongly affect the estimated heat flux are
+described as follows; firstly, the characteristics of
+outflow field, secondly, the inflow temperature,
+and thirdly, the initial temperature of the test
+plate. In order to prove the applicability of the esti-
+mated heat flux to analyze the characteristics of the
+of the second and the third factors. For the second
+factor, as there is an inflow heater in front of the in-
+flow section, it is enssured that the inflow tempera-
+ture could be controlled nearly at the same tempera-
+ture, But the initial temperature of the test plate is
+hard to control precisely in practice due to the limi-
+tation of test instruments and test time, As a re- ,
+sult, the initial temperatures of the same thermo-
+couple are not identical in different tests, with devi-
+ations of nearly 0. 3 to 0. 6K, which means that it is
+necessary to choose those tests whose initial tem-
+peratures are as close as possible to eliminate the in-
+fluence of different initial temperatures. After com-
+paring all tests data, two groups of tests are select-
+ed to estimate the aerodynamic heat flux whose ini-
+tial temperatures are close to each other. The first
+test group contains two general tests as test 1 and
+test 2, and the second group contdins a general test
+and a trip-line test as test 3 and test 4, as shown in
+Fig. 6.
+thermocouples in selected tests are shown in Fig. 6 ,
+where test 1, test 2 and test 3 are general tests, and
+test 4 is a trip-line test.
+Fig. 6 Initial temperatures of the 1* to the 7'? points in four tests
+图 6 4次试验的1-7号热电偶初始温度
+The surface heat fluxes estimated by the 1*
+thermocouple for the four tests are shown in Fig. 7.
+As the figure shows, the start times of the wind
+tunnel in the four tests are not the same. Mean-
+while, the durations of steady periods in the four
+tests are different too (It is controlled by research-
+ers but not so exactly in every tests. But it does not
+influence the heat flux analysis, as interpreted in
+Ref. [2]). At the same time, the four test measure-
+first stage is the initial period. As the wind tunnel
+test does not start, the heat flux in this period is
+nearly zero. When the wind tunnel turns on, a high
+heat flux period arises which is named as starting-
+peak period. After almost 20 seconds, the test de-
+velops to the steady period, while the heat flux
+keeps constant. At last when the heat flux is raised
+in every curve, it develops to the wind tunnel turn-
+off period (The detailed introduction of the heat
+flux peak can be found in Ref. [2], too. ). In order
+to analyze the outflow characteristics, the average
+value of the heat flux curve at the early 40 seconds
+in the steady period is analyzed because the average
+heat flux is more stable and the trend of the heat
+flux is clearer.
+Fig. 8 is the comparison of the average heat flux
+values from the early 40s of the steady periods of
+test 1 and test 2. From this figure, it can be conclu-
+ded that:
+heat flux is decreasing from the 1“ to the 7 ther-
+mocouple, which is opposite to Fig. 6, as the initial
+initial temperatures of the thermocouples are in-
+creasing, the heat flux is decreasing. It is in coinci-
+dence with the heat conduction theory. These re-
+sults indicate that the initial temperature is the
+dominant factor that determines the trends of heat
+flux curves in general tests,
+it can be seen that the differences of heat fluxes at
+the same thermocouple between two tests are ap-
+proximately identical. Meanwhile, the initial tem-
+perature differences in Fig. 6 at the same point are
+nearly identical, too. It means that the heat flux in
+general tests is estimated with good consistency.
+and test 4 from the early 40s of the steady stage.
+As shown in Fig. 9, the heat flux curve of test
+4 is absolutely different from that of test 3. Al-
+though the initial temperatures of these two tests in
+Fig. 6 are close, the heat-flux curve of test 4 is with
+a significant difference to that of test 3. From this
+figure it can be concluded that:
+much larger than the measurement result before.
+As previously mentioned, test 4 is designed to bind
+a trip line between the 7" and the 8" thermocou-
+ples. It is supposed that the trip line is the primary
+factor that causes the high heat flux to the 7“ ther-
+mocouple. As a proof, the schlieren picture in Fig.
+10 displays that there is an oblique shock in the out-
+flow near the trip line. As we know, the heat flux
+before the shock wave would grow up strongly.
+This result indicates that the estimated heat flux can
+field. In addition, it can be extended that the sur-
+face-heat-flux estimation can be used to solve many
+problems, for instance, to search transition loca-
+tion, to identify shock wave indirectly, to evaluate
+the strong changes in outflow field, etc.
+Fig. 10 Schlieren photograph of test4 in steady period
+图 10 “诙验4稳定段纹影图
+(2) As previously mentioned,considering that
+there is no trip line in test 4, the heat flux should be
+higher than that in test 3. But the estimated results
+indicate that from the 2? to the 6? measurement the
+heat flux of test 4 is smaller than that of test 3.
+Meanwhile, the gradient of this heat-flux curve is
+larger than the curve of test 3. As we presumed,
+the reason is that the shock wave may interfere with
+the boundary layer in the forward distance. This
+conclusion needs to be verified in further research.
+At last, the estimated heat flux of test 4 indi-
+cate that when there is a shock wave in the flow
+field, the flow characteristics are the dominant fac-
+tor that strongly influence the heat flux.
+4 Conclusions
+Surface-heat-flux estimation is applied to esti-
+mate the aerodynamic heat flux of a test plate in hy-
+personic wind tunnel tests. A series of tests are im-
+plemented to study the applicability of the estimated
+heat flux to predict the outflow characteristics, in-
+cluding general tests and trip-line tests. The results
+indicate that the estimated heat flux can be utilized
+to identify the intensive changes in the outflow. As
+a conclusion, the surface-heat-flux estimation meth-
+od of this paper could be used as follows: (1) to es-
+timate the aero-heating flux of hypersonic and high
+temperature flow fields, (2) to analyze complex hy-
+personic flow fields, (3) to identify the location of the
+protection schemes, etc.
+In future research, it is necessary to develop
+two-dimensional and three-dimensional heat-flux es-
+timation methods to improve the ability to analyze
+the whole aero-heating area.

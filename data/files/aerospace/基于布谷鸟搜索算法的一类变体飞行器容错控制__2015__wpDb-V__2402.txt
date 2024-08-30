@@ -1,0 +1,408 @@
+基于布谷鸟搜索算法的一类变体飞行器容错控制
+针对一类存在执行机构故障的分布式结构变体飞行器的控制分配问题,结合整数规划理论,提出一种基于布谷鸟搜索算法的容错控制方法。首先,设计虚拟控制指令,使得系统状态能够很好地跟踪参考模型;然后,将执行器概率性故障与饱和约束转换为整数规划问题中决策变量的约束,从而将执行器控制分配问题转化为一类整数规划问题;最后,采用改进的布谷鸟搜索算法进行求解,得到实际的执行器控制分配指令。仿真结果表明,在执行器存在概率性故障的情况下,该容错控制方法较无容错策略的情况能够有效提升系统的跟踪性能;与遗传算法相比,该算法得到的执行器控制分配结果更加精确。
+
+变体飞行器 容错控制 控制分配 优化问题 布谷鸟搜索  
+
+dynamics (CFD); ACTRAN
+Article ID: 1671-9433(2013)03-0351-10
+1 Introduction
+In the high temperature and pressure steam pipe, the
+working condition is so adverse that it can not only seriously
+affect the service life of the valve used chronically, but also
+produce a lot of noises. This kind of problem has caused
+many attentions of the designing departments and researching
+units. The noise induced by the fluctuant steam flows because
+of the high pressure differences and is one of the most
+important components of the valve noises. It speciaily
+contributes to the radiant noises at the mouth of the pipe. In
+addition, it also has many difficulties in reducing the
+flow-induced noise mostly with low-frequency. When the
+main frequencies of the noises are close to the natural acoustic
+frequencies of the valve, the resonance may lead to significant
+vibrations and noises or may even cause structural damages to
+appear. In specific critical conditions, the valve noise gets
+even up to 150 dB. Therefore, in terms of the service life or
+the way to control the valve noise, the numerical simulation of
+level of the far field with the integral or acoustic analogy
+strategy. One of the most fundamental assumptions of the
+indirect simulation method is that it ignores the interactions
+between the acoustic source field and the flow field, making
+this method more suitable for the low Mach number
+situations. For the high Mach number situation or the
+heterogeneous liquid, we considered the average flow
+effects on the acoustic field. After that we used the
+Mohring’s acoustic analogy to solve the problem. The
+advantages of this method were to estimate the
+characteristics of the heterogeneous liquid and take the
+average flow effects on the acoustic field into account.
+For the direct or indirect simulation method, the control
+equations can be calculated by the direct numerical
+simulation (DNS), the large eddy simulation (LES) or the
+unsteady Reynolds-averaged Navier-Stokes (RANS) model.
+However, the LES was the most promising numerical method
+for estimating the noises of the turbulent flow field, and it
+can effectively solve the problem of the Reynolds number
+limitation in the DNS simulation. In recent years, many
+scholars have employed LES to investigate the mechanism of
+generation, propagation and radiation of the flow-induced
+noises in detail. Especially, literature regarding the
+flow-induced noise of jets using the LES has often been seen
+in the last few years. For instance, an investigation of an
+isothermal Mach 0.75 jet and its radiated sound using
+large-eddy simulation and Kirchhoff surface integration was
+352 Jiming Liu, et al. Numerical Study On Flow-induced Noise For a Steam Stop-valve Using Large Eddy Simulation
+conducted (Anderson er al., 2005). The predicted sound
+pressure levels were for all observer locations within a 3 dB
+deviation from the measured levels and for most observer
+locations within a 1 dB deviation. Aerodynamic results and
+predicted sound pressure levels were both in good agreement
+with the experiments. A computation of a high Reynolds
+number jet and its radiated noise using large eddy simulation
+based on explicit filtering was also performed (Bogey and
+Bailly, 2006). The flow and the acoustic field obtained
+directly by LES also had good agreement with the
+measurements of the literature. These studies increased the
+number research of jobs on the field being done as well (Xia
+et al., 2009; Shur et al., 2010; Lele et al., 2010; Cavalieri et
+al., 2011). Otherwise, the unsteady flow and aerodynamic
+noise of NACA0018 airfoil using large-eddy simulation were
+computed (Kim ef al, 2006). The computation using
+aero-acoustic analogy indicates the primary discrete peak at
+the Strouhal frequency of 0.15 by the vortex shedding from
+the trailing edge, which is in close agreement with the
+experiment. The cavity flow induced noise by LES and
+FW-H acoustic analogy was numerically simulated (Zhang et
+al., 2010). The computed results were compared with
+experimental data of Large Circulation Channel in CSSRC
+and it showed that the numerical prediction method was
+credible. Based on all of the literature, it provides a body of
+good evidence that using LES to investigate the mechanism
+of generation, propagation and radiation of the flow-induced
+noises is a feasible choice.
+An examination of the flow-induced noise in a steam
+stop-valve was studied by utilizing LES with LES-WALE
+and Lighthill’s acoustic analogy. The study was carried out
+with CFD and ACTRAN, and the numerical prediction
+method was validated by Sandberg et al. (2006). They have
+presented this aeroacoustic approach for predicting the noise
+level generated by an idealized HVAC blower and an axial
+fan. It is based on a two-step procedure. In the first step an
+unsteady flow is computed using CFD. This first step serves
+to predict aerodynamic sources of noise. In the second step,
+an acoustic computation is made using Actran. Preliminary
+acoustic results have been obtained, showing a pretty good
+agreement with experimental results. So employing the
+same numerical prediction method to predict the
+flow-induced noise in a steam stop-valve is credible.
+In this paper, it aims at establishing a suitable numerical
+method about how to deal with the compressibility of the
+steam when predicting the flow-induced noise of stop-valve
+in pipeline and whether the heat preservation of the wall has
+influence on the noise. The present paper is organized as
+follows. The numerical procedure, computational model and
+mesh, numerical schemes, boundary conditions, evaluation
+indexes, are all presented in Section 2. The results, including
+those of all the schemes such as validation of meshes,
+treatment of compressibility, effect of velocity, effect of heat
+preservation, are shown in Section 3 where the sound
+pressure level and sound power level are studied.
+Concluding remarks are then given in Section 4.
+2 Problem definition and assumptions
+For purposes of this paper,the researchers examined a
+flange-connected stop-valve model with nominal diameter
+D=200 mm, with the open height of the stop-valve disc at
+30% of the nominal diameter, namely the valve reaching the
+full open position. The steam flow direction is top-bottom,
+and two straight pipes with consistent nominal diameter
+were set-up at the upstream and downstream of the valve in
+order to get the steam flow fully developed, constituting the
+sound source domain, as shown in Fig. 1. The other two
+straight pipes beyond the sound source domain were used to
+decrease the errors generated by the pipe truncation effects.
+The acoustic model should be constituent of sound source
+domain and propagation domain. Here, two 200 mm straight
+pipes beyond the sound source domain were set-up as the
+propagation domain due to ignoring the sound radiation
+through the pipe walls, as shown in Fig. 2.
+joint. The paper is mainly written to investigate the noise
+induced by the eddy in pipes, therefore, in order to simplify
+the problem and strengthen the aim of the results, all the
+pipes are regarded as rigid. That is to say, the noise induced
+by the vibration of the pipes was not considered in the study.
+In addition, the pipes were assumed sound-insulating. The
+fluid was saturated water steam and the inlet flow of the
+stop-valve was assumed to be a fully developed turbulent
+flow generated in a straight pipe.
+3 Numerical simulation
+3.1 Numerical simulation procedure
+In this paper, the CFD in which large eddy simulation
+employing the LES-WALE dynamic model as the
+sub-grid-scale model was implemented, used to calculate the
+three-dimensional flow field of the stop-valve, and the
+ACTRAN was used to calculate the flow-induced noise with
+Lighthill’s acoustic analogy. Based on the properties of the
+flow field, the calculating process is shown in Fig. 3. Firstly,
+Journal of Marine Science and Application (2013) 12: 351-360
+domain is not necessarily included (for instance, the CFD
+the fluid solvers such as CFX, Star-CD, Star-CCM+, Fluent,
+Power flow, AcuSolve, Open FOAM, etc. And then the
+variables are exported in Ensight-Gold format which is a
+general format of most CFD code, like speeds, temperatures,
+pressures, densities, efc. Thirdly, iCFD in ACTRAN is used to
+volume source gained from iCFD into the acoustic grids.
+Fig. 3 Calculation process of the flow-induced noise
+fluctuating motion and it uses a sub-grid scale turbulence
+model for the small-scale motion, which means the
+number, is shown using index notation in Eq. (1).
+And the Navier-Stokes equations are given in Eq. (2)
+353
+where i, j=1, 2, 3, and any repeated subscript means
+summation over that subscript. The governing equations for
+LES are obtained by filtering the time-dependent
+Navier-Stokes equations in the physical space. The filtering
+processes effectively filter out eddies and decompose the
+flow variable into large scale (resolved) and small scale
+(unresolved) parts. b can be defined in Eq. (3) as
+P(x) = (x) + p(x") (3)
+where ￠(x) is defined through volume averaging in Eq. (4)
+Substituting Eq. (5) into Eq. (4) yields
+Filtering the Navier-Stokes equations leads to additional
+unknown quantities. The filtered incompressible momentum
+equation can be written in the following way:
+It includes the effect of the small scale and
+T, SUU; — Ul; (8)
+influence of the small scale is taken into account in
+appropriate sub-grid-scale (SGS) model. The original SGS
+and LES WALE model which is a wall-adapted local
+eddy-viscosity model was presented (Nicoud and Ducros,
+1999).
+of the WALE model are the capability to reproduce the
+laminar to turbulent transition and the design of the model to
+return the correct wall-asymptotic y“ -vatiation of the SGS
+viscosity. It offers therefore, the same advantages as the
+Dynamic Smagorinsky-Lily model and at the same time
+The flow-induced noise can be well simulated by
+ACTRAN which is based on Lighthill「s acoustic analogy,
+well (Sandberg et al., 2006), therefore, it also can be
+354 Jiming Liu, et al. Numerical Study On Flow-induced Noise For a Steam Stop-valve Using Large Eddy Simulation
+adopted to simulate the noise induced by the fluctuating
+steam flow in this paper.
+Lighthill’s acoustic analogy is suitable for flows where
+the convection and refraction effects can be neglected in
+relation to other effects, which is generally true if the Mach
+number is low enough (below 0.2). So Lighthill「s acoustic
+analogy theory is used to simulate the sound features. The
+derivation of Lighthill’s acoustic analogy theory comes from
+N-S equation. Because of the nonlinearity and the coupling
+of flow and acoustics, the equation is hard to solve.
+Therefore the acoustic field is divided into near field and far
+field. The near field is the source area and the far field is the
+radiation area. This paper is based on the assumption that
+the flow in the radiation area has no effect on the sound
+features. In this assumption, the continuity equation and the
+momentum equation were simplified to get the Lighthill’s
+acoustic analogy equation:
+written as:
+To solve the equation, some assumptions are made. First,
+the small stress tensor is ignored according to the actual
+flow conditions. Secondly, the interaction between flow and
+sound is ignored. Ignoring the fluctuation of fluid density
+and pressure, the Lighthill’s stress tensor was simplified as
+2-磊′=p1′童1'/'
+3.3 Computational mesh
+The precision of the flow field simulation depends on the
+number of nodes, allowing adoption of the tetrahedron nets
+for the stop-valve area and hexahedral nets for the others, as
+shown Fig. 4 (Front view) below, consequently getting more
+nodes with the same amount of the units. As we can see
+from the left view, the grids at boundary layer get very good
+treatment by employing the “O-Grid” of ICEM. The
+acoustic field simulation with ACTRAN has no strict
+demand of grids. In order to save calculation time,
+tetrahedron grids were applied to all areas, and the grids at
+the disordered flow fields such as downstream areas of the
+valve were subdivided.
+Fig. 4 Mesh for the flow field computation
+3.4 Numerical schemes and boundary conditions
+The properties of the saturated water steam at 250 “C are
+given in Table 1, while the pressure is 3.977 7 MPa. Table 2
+shows the numerical schemes and boundary conditions
+completely. Firstly, the mesh for the computation of the flow
+field was validated, by computing three different kinds of
+elements, as well as the acoustic field. Secondly, the
+influence of steam treatment on the flow-induced noise was
+discussed in detail. The steam treated as incompressible gas,
+ideal gas, real gas, is respectively computed. The density of
+the ideal gas was calculated in accordance with the ideal gas
+law and the real gas was simulated by using the Redlich
+Kwong equation of state. Thirdly, the flow-induced noises
+under different inlet velocities (2, 4, 6 m/s) were compared.
+Lastly, an investigation on whether or not the heat transfer
+coefficient of the wall leads to significant contribution to the
+flow-induced noise was analyzed. The heat transfer
+In the paper, the flow computation is implemented with
+the speed for inlet boundary condition and the pressure for
+outlet boundary condition. The time-step is Se~-4 s,and
+more than 10000 steps were preceded. As the flow field
+becomes stable, the results of 1 000 steps were stored. At the
+moment, the resolution ratio of the acoustic field is 2 Hz.
+The frequency domain taken into account in this paper was
+30-1000 Hz.
+3.5 Evaluation indexes
+The streamline and velocity vector are qualitative analysis,
+so we introduce the parameter of uniformity of velocity
+distribution to confirm the feasibility of the meshes. The
+parameter of uniformity of velocity distribution at certain
+simulation time is defined as:
+where x is the number of nodes on the certain plane.
+Because of LES, uniformity at different simulation time is
+not the same,and this paper takes average of uniformity
+over stimulation time.
+Sound pressure level and sound power level at a specific
+frequency is defined as follows:
+Total sound pressure level and total sound power level
+between f; and f￡; is defined as follows:
+Journal of Marine Science and Application (2013) 12: 351-360
+Table 1 Properties of saturated water steam at 250 C
+20.01 4.009 2.801 6.072 1.75￠—5 5.125e-2 501.76
+Table 2 Numerical schemes and boundary conditions
+1 489 676 (coarse) 297 634 (fine)
+2 144 227 (fine)
+Treatment of steam 2 144 227 (fine) 297 634 (fine) Ideal 4 100
+5 649 654 (refined)
+4 Computation and results
+4.1 Validation of mesh
+Fig. 5 shows the comparisons of the uniformities of
+velocity distribution of three kinds of meshes, varying with
+the dimensionless distance L whose head end and extending
+direction is showed in Fig. 1. It can be seen that three curves
+are coincident in the main. So from this standpoint, these
+three kinds of meshes are all applicative. Moreover,
+uniformity decreases with the increase of distance and when
+the distance becomes 6D, uniformity almost remains the
+same value, which validates the sound source region was
+sufficient for computing fluid-borne noise.
+characteristics of the three kinds of flow field meshes. The
+Incompressible
+Real
+100
+radiated sound power from the inlet or outlet both indicates
+the fine mesh has good agreement with the refined mesh in
+more comprehensive verification, Table 3 gives the
+difference among total sound pressure level at the
+observing-point and total sound power level from
+inlet/outlet. The difference between fine mesh and refined
+mesh is less than 1 dB while that between coarse mesh and
+refined mesh is much larger, about 8 dB. In addition, the
+acoustic characteristics at the inlet and outlet are almost the
+same in the same condition.
+Fig. 7 shows the comparison of the acoustic
+characteristics of the three kinds of acoustic field meshes.
+The radiated sound power from the inlet or outlet both
+indicates that the acoustic results have little reliance on the
+meshes of the acoustic field. However, it shows that there is
+a better coincidence between the fine mesh and the refined
+mesh. In order to get more comprehensive verification,
+Table 4 gives the difference among total sound pressure
+level at the observing-point and total sound power level
+from inlet/outlet. The difference between fine mesh and
+refined mesh is less than 1 dB as well as that between coarse
+mesh and refined mesh. Just as it shows in the previous
+section, the acoustic characteristics at the inlet and outlet are
+almost the same in the same condition as well.
+In light of the results gained above, the fine meshes of the
+flow field (2 144 227 elements) and the acoustic field
+(297634 clements) are sufficient for later calculations. And
+356 Jiming Liu, et al. Numerical Study On Flow-induced Noise For a Steam Stop-valve Using Large Eddy Simulation
+the same meshes of the flow field and the acoustic field are
+In order to get more comprehensive verification, Table 5
+order to eliminate the influence of the grid.
+gives the difference among total sound pressure or power
+levels. The difference between the incompressible gas and
+4.2 Treatment of steam
+In this section of the paper, namely the treatment of the
+gas is much larger, about 25 dB. Hence, by predicting the
+Fig. 8 shows the speed contours under different
+flow. However, it is easy to find that there is some difference
+between the acoustic characteristics at the upstream and the
+non-uniform, especially in the stop-valve. And the
+downstream of the real gas. Fig. 11 gives the sound pressure
+maximum speed was under 26 m/s, and as a result the Mach
+number is under 0.052. Fig. 9 and Fig. 10 show the
+outlet of the stop-valve and the downstream.
+treatments. The sound pressure level at the observing-points
+Based on the conclusions gained at present, in the latter
+parts, the steam is treated as incompressible gas flow and
+indicate that the incompressible gas has good agreement
+just the status at the downstream is paid with close attention.
+with the ideal gas in the whole frequency range, while the
+ideal gas has larger deviations, especially at low frequencies.
+Coarse mesh 137.0 138.0 -1.0 79.0 79.9 -0.9
+Fine mesh 145.5 145.8 -0.3 87.4 87.7 —0.3
+Refined mesh 144.9 145.4 -0.5 86.8 87.3 —0.5
+p G 2 FR
+Coarse mesh 145.1 145.2 —0.1 87.2 87.4 -0.2
+Fine mesh 145.5 「 145.8 -0.3 87.4 87.7 —0.3
+Refined mesh 145.8 146.1 -0.3 87.5 87.8 —0.3
+Difference Coarserefined 07 o no
+sound power level )
+Journal of Marine Science and Application (2013) 12: 351-360
+total sound power level)
+inlet velocities were compared. Fig. 12 shows the
+observing-point 2 and Fig. 12(b) gives the radiated sound
+spectrum’s magnitude is the same all along the frequency
+domain. In order to see much more vivid variation of the
+flow-induced noise along with the inlet velocity, Fig. 13
+shows how the total sound pressure or power level depends
+on inlet velocity. Broadly, the total level enlarges when the
+inlet velocity increases, but the enlarging gradient slows
+about 7dB from 4 m/s to 6 m/s. To sum up, the inlet
+357
+noise.
+4.4 Effect of heat transfer
+Does the heat preservation of the wall influence the
+flow-induced noise? Fig. 14 shows the comparison of the
+acoustic spectrums with different heat transfer coefficients.
+coefficient. It’s clear that the figures all indicate the
+the same when the heat transfer coefficient exceeds
+50W-(m*K)?". To sum up, the heat preservation of the wall
+had little influence on the noise of the stop-valve.
+Jiming Liu, et al. Numerical Study On Flow-induced Noise For a Steam Stop-valve Using Large Eddy Simulatic
+different treatments
+Table 5 Difference among L, or L,, under different treatments
+Value 145.5 145.8 —0.3 87.4 87.7 -0.3
+Ideal gas 170.6 170.6 0 112.5 112.6 0.1
+Real gas 147.2 145.9 1.3 89.2 87.9 -1.3
+Difereree Mncmal i 恩 二 根 江 。
+Journal of Marine Science and Application (2013) 12: 351-360
+0 100 (G00
+丁H
+(a) Sound pressure level at observing-point 2
+three velocities
+levels on inlet velocity
+0 100 1000
+加Hz
+(b) Radiated sound power from outlet
+on inlet velocity
+5 Conclusions
+In the paper, numerical studies on the flow-induced noise
+credible. The study also validate that two million elements
+were sufficient for examining the situations in the paper.
+Conclusions were draw as follows:
+1) When predicting the flow-induced noise of the
+stop-valve based on the properties of the flow field, the
+steam treated as incompressible gas in the flow field with
+low inlet velocity has good agreement with that treated as
+treated as incompressible gas were sufficient for predicting
+the flow-induced noise.
+2) The inlet velocity has remarkable influence on the
+flow-induced noise. When the inlet velocity increases from
+2 m/s to 4 m/s, the total level increases by about 22.5 dB,
+and it’s about 7 dB from 4 m/s to 6 m/s,
+coefficient increases from 0 W.(m2>K)T to 50 W-(m2KJ
+exceeds 50 W-(m>K)?.
+obvious that more work is needed in this area.
+Acknowledgement
+The authors would like to express sincere gratitude to
+Hikey-Sheenray Information Technology Corporation Ltd
+for ACTRAN technology support.

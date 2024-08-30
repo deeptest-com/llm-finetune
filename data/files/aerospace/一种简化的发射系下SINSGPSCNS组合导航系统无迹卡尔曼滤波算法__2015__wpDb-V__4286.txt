@@ -1,0 +1,263 @@
+一种简化的发射系下SINS/GPS/CNS组合导航系统无迹卡尔曼滤波算法
+在弹载等高动态环境下组合导航系统状态方程具有强非线性,且各状态相互耦合影响,传统的扩展卡尔曼滤波（E KF）算法因忽略高阶项相互影响,其模型线性化展开会导致模型不准确引起导航精度下降;无迹卡尔曼滤波（UKF）算法能有效避免引入线性化误差,却存在因组合导航系统维数过高引起大量粒子递推滤波计算复杂而影响算法实时性的问题.为此,针对发射惯性系下弹载组合导航系统对滤波算法高实时性和高精确性的要求,设计了一种简化UKF（SUKF）算法,SUKF算法通过对导航系统的状态参数直接进行建模估计,解决了传统UKF算法实时性差的问题,同时继承了传统UKF算法无需模型一阶线性化展开的优点,提高了导航系统的精度.算法仿真结果表明,SUKF算法有效提高了系统解算的实时性和滤波精度,非常适合用于实际工程系统.
+
+控制科学与技术 无迹卡尔曼滤波 简化无迹卡尔曼滤波 捷联惯导系统 导航星全球定位系统 天文导航系统 组合导航  
+
+球定位系统;天文导航系统;组合导航
+中图分类号:V448.2文献标志码:A
+文 章 编 号 : 1000-1093(2015)03-0484-08
+DOI: 10. 39697j. issn. 1000-1093. 2013. 03.016
+A Simplified UKF Algorithm for SINS/GPS/CNS Integrated
+Navigation System in Launch Inertial Coordinate System
+PAN Jia-liang' , XIONG Zhi’, WANG Li-na’, YU Feng’, ZHAO Hui’, LIN Ai-jun’
+(1. College of Automation Engineering, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, Jiangsu, China;
+2. Beijing Aerospace Automatic Control Research Institute, Beijing 100854, China;
+3. College of Astronautics, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, Jiangsu, China)
+Abstract; Each state of integrated navigation system
+is strongly nonlinear and coupled with each other un-
+der missile-borne high-dynamic environment. Since the traditional extended Kalman filter algorithm ignors
+the interaction of higher order terms, its linear expansion may teads to its inaccuracy and the decrease in
+navigation precision. UKF algorithm can effectively avoid bringing a linearization error, but the real-time
+of the algorithm can be affected by the complex filtering calculation for a large number of particles in
+high-dimensional integrated navigation system. A simplified unscented Kalman filter ( SUKF) algorithm is
+proposed for the requirement of high real-time and
+system in launch inertial coordinate system. SUKF can be used to directly estimates the state parameters
+of the navigation system to achieve the real-time and
+extension in traditional EKF. The simulation results
+filtering precision of algorithm, so SUKF is very suitable for the actual engineering system.
+ter; SINS; GPS; CNS; integrated navigation
+0“引言
+构建发射惯性系下的捷联惯导系统/导航星全
+球定位系统/天文寻航系统(SINS/GPS/CNS)多信
+息组合导航系统是实现未来高超、空天高动态飞行
+器高精度导航的有效手段之一“,而发射惯性系
+下组合导航系统的核心技术是多信息融合处理方
+法。针对未来高超、空天飞行器飞行轨迹高动态性
+和导航系统状态强非线性等特点,传统的扩展卡尔
+曼溏波(EKF)算法因系统模型线性化展开的要求而
+会影响估计的精度““。为此,Julier等提出的无损卡
+尔曼源波(UKF)方法可以有效解失模型线性化展
+开所带来的模型不准确这一问题“““,其核心恺想
+是通过利用一系列近似高斯分布的采样点,通过无
+迹变换(UT)迷行状态和误差协方差阵的递推和更
+新,不需要对系统非线性方程进行线性化,因而可以
+有效避免引人线性化误差,提高导航精度。
+但对于高阶扩维的多组合导航系统,由于组合
+系统状态维数过高,传统的UKF算法存在大量采样
+粒子计算过程,递推滤波计算步骤繁琐.运算复杂等
+问题,影响系统的实时性,使其不便于工程实现。为
+此,针对发射惯性系下SINS/CPS/CNS组合导航系
+统状态模型非线性而观测模型线性的特点,本文设
+计了一种简化UKF算法(SUKF)直接进行导航参数
+的估计,在算法模型等效原则下可以简化计算步骤,
+降低计算的复杂度,提高算法的实时性,同时SUKF
+算法由于缘承了UKF算法无需状态模型一阶线性
+化展开的优点,能获得比EKF算法更高精度的导航
+结果,十分适合算法的工程应用。
+1发射系下组合导航系统SUKF算法
+1.1“组合导航系统数学模型
+本文选取发射惯性系作为导航坐标系SINS/
+GPS/CNS组合导航系统相关解算方程如下:
+accuracy for the missile-borne integrated navigation
+improve the navigation precision without linearization
+show that SUKF effectively improves the real-time and
+式中:4为姿态四元数(包括一维标量部分qo和三
+维矢量部分g,、g2、4s)sp为发射惯性系下的位署
+值;v“为发射惯性系下的速度值;g为地球的万有引
+力;Cs为发射惯性系相对于载体系的姿态矩阵;C「
+为发射惯性系相对于地心惯性系的姿态矩阵;丫为
+加速度实际测量值:f为加速度计随机游走误差;@。
+为角速度实际测量值;为陀螺随机游走误差;山。
+为陀螺测量噪声;w,、f,分别为陀螺和加速度计随
+机游走驱动噪声。
+考虑到姿态的变化主要反映在四元数的矢量部
+分,同时为了减少滤波器的计算量,本文选取方程
+(1)式中的姣态四元数三维矢量部分(g、)、
+三维位置矢量p、三维速度矢量“、三维陀螺随机游
+走误差w.、三维加速度计随机游走误差丫作为状态
+量构建滢波器状态方程,状态量定义:=[9,。
+q; P. pP, P, v, v, v, 仁 x (【)l〉)′ 亿 c Jee
+fo乙],系统白噪声矢量为
+W=lo, w,, @, 仁 nx (【)【l〕r 亿 Sos So fe]
+选取CPS和星敏感器分别输出的位置信息和
+姻态信息(矢量部分)作为观测量,则有观测方程:
+式中:9.,,为姿态观测量的矢量部分;gu,为惯导系
+统姿态参数的矢量部分;q。,,,为姿态量测噪声;p.为
+位置观测量;pu为惯导系统的位置参数;P。为位置
+量测噪声;习=[T6:s0。:s,];7为量测噪声阵。
+由上述分析,可以获得发射系下组合导航系统
+的状态方程和量测方程一般形式表示为
+式中:状态量不维数为15维;系统噪声向量WH
+9维;系统量测噪声向量7为6维。
+1.2SUKF算法实现方樊
+发射惯性系下的SINS/CPS/CNS组合导航系统
+状态方程具有非线性,基于UT的UKF滤波算法是
+处理非线性问题的一种有效方法““-“,传统UKF
+算法需要将系统嵇声和量测噪声都增广为系统状
+态,不失一般性,假设系统状态维数为n维,系统状
+恭噪声阵为w维,系统量测噪声阵为v维,则增广后
+的系统状态维数将由原来的n维扩展为n+t+8
+维,扩维后的系统状态向量表示如下:
+豇 = [XT w Vv,
+超 = [ ( amt oan
+x二一[],
+式中;一表示扩维后的系统状态向量;X“「为扩维后
+的状态对应的采样点向量;表示扩维后系统状态
+初始均值;P5为增广后的状态向量初始传方差阵;
+P,为原状态向量初始协方差阵;Q为系统噪声阵;R
+为量测器声阵。
+从扩维后的系统状态向量可以看出,如果系统
+自身的状态噪声和量测噪声维数较高,则通过相应
+的状态量增广处理后,进一步增大了状态维数,从而
+较大增加了滤波算法运算量,如以本文研究的发射
+惨性系组合导航系统数学模型为例,按照传统UKF
+算法状态扩维后,其状态维数将由15维增加到
+30维,从而极大增加了算法的计算量。
+为此,在系统状态自身维数较高的倩况下,为净
+少UKF算法计算量,结合发射系下组合导航系统量
+测方程线性的特点,本文设计了一种降维的SUKF
+实现算法,主要对传统UKF算法中,xu_,、P.和P,
+的计算方法进行简化,具体简化部分对应的简化原
+理如下;
+1.2.1“初始化
+基于发射惯性系下系统状态方程非线性而量测
+方程线性这一特点,将系统噪声增广为状态向量,而
+不把量测噪声增广为状态向量,这样可以有效降低
+扩维后系统状态的维数,设简化后的UKF算法的增
+d门里山角4,州性团不仍咤门量y力XsRY
+CIE
+彦 = [XT wl,
+=H" GH,
+x, = 不 [ ] ,
+式中;志为增广状态的初始均值;P;为增广后的状
+态向量初始协方差阵;Po为原状态向量初始协方差
+阵;为系统噪声阵。
+1.2.2系统量测方程
+由传统的UKF算法公式,则有
+基于发射惯性系下SINS/GPS/CNS组合导航系
+统线性量测方程,将(4)式代人(5)式、(6)式得
+飓衅胱_[=肚〈永宣尸卜I)=/_/'r宣^二i′:/′=_l，(7)
+|二′6)((…{)6)<(〕二__二〈′毫"`′^亡/′誓一薹)ll`('壬"菅/'重_l)′I`〕'1`-毫:`/'查/′馨_l，
+式中:t*vx_-1表示状态向量的分块部分,即姿态和位
+置向量部分。
+1.2.3“系统估计误差方差阵
+基于传统UKF算法模型有
+将(7)式、(8)式代人(9)式、(10)式得
+乙=〗l;骸盲_二z童,/$//f_薹_二z`/偏/′c-l二_〔〈′zi,/'/′c_l_乏`′c/′翼_】二}1`+足=
+艺蓼r'盲_二′薹入'宣菅/6//[_l_"′′′裹:`/=//[_l二__二′聋'\'…】'更′'/′c_丨一
+Hx, "+R =
+=HP,, H' +R =
+'′,′矗//重一]′叟′麦`=|二′，′′查麦′颧一】′)′菅寅′′c-l二丨丨二/6)(6()6>(9工丨′].=′，/^′_查麦′^:-.]，
+式中:R表示系统量测噪声阵;Pts-,表示由P:u_的
+为有效验证本文算法的性能,在MATLAB
+2009Ra环境下,对分别采用UKF、SUKF和EKF滤
+波方法的发射惯性系下的SINS/GPS/CNS组合导航
+系统性能进行对比分析,同时还将UKF与SUKF的
+计算量进行了对比分析。
+2.1“仿真条件
+导弹发射初始绢度、纬度、高度为:118。、322、
+0m,初始航向角为90。,发射时间为2014年6月1
+H0时0分0秒,《行时间为600s;捷联解算周期
+为0.02s,滤波周期为1s;仿真中设置捷联惯性传
+感器仿真参数为;陀螺随机游走驱动噬声0.2°/h,
+陀螺白噪声0.2“/h,加速度计随机游走驱动噪声
+前六行与前六列构成的分坚矩阵;Py,表示由
+Pu,u-1的前十五行与前六列构成的分块矩阵,
+根据上述分析,传统UKF算法中的计算式
+(6)式、(9)式和(10)式可分别由(8)式、(11)式和
+(12)式代替,简化了矩阵运算维数,从而大大降低
+了计算的复杂度。由此可以得到改进后的SUKF算
+法基本计算流程如图1所示,其中n为增广后的系
+统状态向量维数,A=a"(n+k)-n,a坚定采样点
+距均值的远近程度,通常被赋一个较小的正值,本文
+Ba”=0.002,k=0保证方差阵的半正定性,本文取
+0,6用于包含状态量分布的高阶成分信息,本文
+取2.
+星敏感器仿真参数为:卫星导航位置误差15m,星
+光跟踪仪误差21“.
+2.2“仿真分析
+2.2.1标准弹道飞行航迹
+为有效验证本文算法性能,设计了一条标准导
+弹飞行轨迹如图2所示。仿真误差曲线如下所示,
+图 3 为采用UKF、SUKF与EKF算法求解得到的姿
+态误差曲线对比图,图4为采用UKF、SUKF与EKF
+算法求解得到的位置误差曲线对比图,图5为采用
+UKF、SUKF与EKF算法求解得到的速度误差曲线
+对比图。并根据相应的仿真数据,可以获得各类导
+航参数的均方误差RMS统计结果如表1所示。
+同时佶计误差协方差阵曲线如图6所示,由于
+此给出滚动角误差、7轴位置误差和Z轻速度误差
+对应的估计误差协方差参数。从图6中可以看出,
+达到稳态时,采用UKF、SUKF与EKF算法求解得到
+的滚动角估计误差协方差参数为2.362rad,2.362rad,
+3.774 rad; Xk Ff UKF 、SUKF 5 EKF 算 法 求 解 得 到 的
+Y轴位置估计误差协方差参数为3.038m,3.038m,
+4.166m;采用UKF、SUKF5EKF算法求解得到的
+2轴速度估计误差协方差参数为0.078m/s,
+0.078 m/s,0. 206 m/s.
+从以上误差曲线对比图、误差RMS统计表以及
+XfSUKF和UKF算法的计算量进行对比分析,
+如表2所示。
+从表2中还可以看出在同样的仿真计算条件
+下,SUKF算法的计算时间大约比传统UKF算法跟
+LT18%,有效降低了计算的复杂度。
+表 ! “组合导航系络UKVSUKKF与KK霍法说差对比表
+Tab.1 UKF,SUKF and EKF RMS errors of integrated navigation system
+姣态误差/(“)
+XH Y #4 ZH X
+表 2 算法计算量分析(低动态)
+Tab.2 Calculated amount (low dynamic range)
+滤波算法仿真时间/s实际运行时间/s
+UKF 600 8.521
+SUKF 600 6.948
+为有效验证本文算法的性能,还设计了一条高
+动态环境下导弹飞行轨逢如图7所示,包含了高速
+姿态机动等过程。仿真误差曲线如下所示,图8为
+采用UKF、SUKF与EKF算法求解得到的妍态误差
+曲线对比图,图9为采用UKF、SUKF与EKF算法求
+解得到的位置误差曲线对比图,图10为采用UKF、
+SUKF与EKF算法求解得到的速度误差曲线对比
+图 。 并根据相应的仿真数据,可以获得各类导航参
+Y轻Z轻叉辅轻工轻
+2. 787 3. 001 0. 088 0. 068 0. 075
+2. 787 3. 001 0. 088 0. 068 0. 075
+3. 428 3.855 0.166 0.131 0.136
+数的均方误差RMS统计结果,如表3所示。
+KI“坦合二舫杀纭UKIDUKEJLAF鼻汪侯奉为比与4闰刘悍)
+Tab.3 UKF,SUKF and EKF RMS errors of integrated navigation system
+姿态误差A(“)
+rEYY一r一一
+叉轲“轲乙轻Xih
+EKF算法求解得到的Z轴位置估计误差协方差参
+数 为 3. 028 m,3.028 m,4. 158 m; 札 用 UKF、SUKF 与
+EKF算法求解得到的2轻速度估计误差华方差参
+数 为 0. 079 m/s,0. 079 m/s,0. 206 m/s.
+从以上误差曲线对比图、误差RMS统计表以及
+估计误差协方差参数可以看出,在高动态环境下,
+SUKF依然具备UKF精度高这一优点,其滤波精度
+较EKF有显著的提升。
+对SUKF和UKF算法的计算量进行对比分析
+如表4所示。
+从表4中还可以看出,在高动态的仿真计算条
+件下,SUKF算法的计算时间大约比传统UKF算法
+减少了17.7%,有效降低了计算的复杂度。
+位置误差/mHEREms!
+Yih乙轲叉鞅Y轴Z轻
+4. 250 3. 148 0. 089 0. 135 0. 064
+4. 250 3. 148 0. 089 0. 135 0. 064
+4. 794 4. 478 0. 206 0. 192 0. 170
+表 4 算法计算量分析(高动态)
+Tab.4 Calculated amount (high dynamic range)
+滤波算法仿真时间/s实际运行时间/s
+UKF 600 8. 827
+SUKF 600 7.263
+3“结论
+弹载等高动态环境下组合导航系统状态方程具
+有强非线性,日各状态相互耦合影响,传统的EKF
+算法由于需要对模型进行线性化展开从而影响导航
+系统精度,而传统的UKF算法又囚组合导航系统维
+数过大而存在滤波过程计算复杂和计算量大的不
+足,不利于工程实现。为此,本文针对发射惯性系下
+SINS/GPS/CNS组合导航系统状态模型非线性而观
+测模型线性的特点,设计了一种SUKF算法对组合
+导航系统状态参数直接进行估计,从而简化了UKF

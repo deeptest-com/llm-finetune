@@ -1,0 +1,439 @@
+锡、镓对铝钛异种合金真空钎焊的影响
+在铝硅钎料中加入一定比例的锡和镓元素，具有改善接头组织形态、降低钎料熔点、提高钎料润湿铺展性、提高钎焊接头机械性能的作用，从而有效的改善了铝钛异种合金真空钎焊的工艺性能。
+
+锡 镓 铝钛合金 真空钎焊  
+
+by physical products alone.
+As a result, PSSs (product-service systems) [2-4]
+which provide value by combining a product and a
+service, have gradually been attracting more attention.
+To increase the productivity of services, to analyze
+developed large-scale and complicated services or to
+create new services, a systematic approach to design
+services is important. The authors, therefore, have
+carried out fundamental research on SE (service
+for services from an engineering perspective [5-7].
+To build or maintain long-term relationships with
+their customers and continue to make a profit, it is
+important for a company to provide highly reliable
+service. In general, reliability consists of narrow
+reliability and maintainability. Narrow reliability is the
+ability of a device to operate successfully for a specific
+period of time. Maintainability is how quickly and
+748 A Method for Structuring Service Failure Factors to Realize Highly Reliable Services
+effectively a device can be restored to normal operation
+after a failure. It is necessary that we enhance both
+narrow reliability and maintainability in order to
+improve reliability. As compared to the products
+themselves, service relies on a customer’s experience
+with goods and the credibility of those goods. This
+impression is changed by object design whether a
+service designer focuses on narrow reliability or
+maintainability. Service negatively influences the
+purchasing behavior when customers feel they have
+received less than they expected. Therefore, in this
+study, we first focused on narrow reliability.
+In product design, preventing product failures from
+occurring for customers is a widely accepted approach
+for improving reliability. FMEA (failure mode and
+effects analysis) [8] and FTA (fault tree analysis) [9]
+are representative failure analysis methods used in
+various fields. However, in the service field, there have
+been few discussions on failures as compared to the
+product field. Thus, the service field requires an
+engineering method against service failures,
+Preventing the occurrence of service failures is
+important for improving service narrow reliability.
+Analysts who work in the service field must identify
+factors that could cause service failures and take
+appropriate measures against the target failure factor in
+advance to prevent service failures.
+As compared to those of physical products, service
+failure factors and their relationships are varied
+because service failures occur due to elements of
+uncertainty, such as human factors. Taking measures
+against all service failure factors is unrealistic when we
+take into account money and time cost [10]. In this
+study, our goal is to enable service analysts to identify
+the critical failure factors from a number of failure
+factors. To achieve this, we have identified complex
+failure factors and the relationships among them from
+the perspective of the field where the service is
+provided, and we have determined the priority number
+of failure factors for which appropriate measures
+should be taken. In this study, (1) First, we visually
+represented the relationship between the failure factors
+based on information from analysts in the field where
+the service is provided because service failure factors
+and the relationships among them depend on the
+environment where the service is provided. Moreover,
+it is difficult to get quantitative statistics about service
+failures since service includes human factors; (2) Next,
+we compare this with the structure based on past failure
+information to give objectivity to the result of (1); (3)
+After this, we identify factors for which we most need
+to take measures. This paper proposes the method for
+achieving (1). However, analysts who work in the
+service field have only limited understanding. In
+achieving (1), we can increase the understanding of
+analysts, achieving not only direct recognition, but also
+indirect recognition. Therefore, we extract service
+failure factors from a mathematical framework and
+visually represent the relationships between the failure
+factors by using a system modeling method.
+The rest of this paper consists of the followings:
+Section 2 explains service reliability and failure in this
+study; Section 3 introduces element techniques that
+are applied to the proposed method; Section 4 presents
+a method for structuring service failure factors; and
+Section 5 demonstrates its application; Section 6
+discusses the result of application and Section 7
+concludes this paper.
+2. Service Reliability and Failure
+2.1 Service Reliability
+As mentioned above, although service has attracted
+attention, service reliability and service failure are not
+discussed from an engineering perspective because
+service has some unique properties that products do not
+have. One of these unique properties is the
+synchronization of production and consumption. A
+definition of the method for product reliability has
+already been established. According to the IEC
+(International Electrotechnical Commission),
+reliability is defined as “the ability of an item to
+perform a required function under given conditions for
+A Method for Structuring Service Failure Factors to Realize Highly Reliable Services 749
+the item” [11]. The word “item” refers to any part,
+component, device, subsystem or functional unit. In
+this way, reliability is a concept of temporal quality that
+a device will operate appropriately for a specific term
+without failure. Reliability is one of five dimensions
+(Table 1) that customers use to evaluate the quality of
+the provided service. Although customers evaluate
+service reliability after they have received the service
+offering, they evaluate the other four dimensions
+during the service offering. Therefore, a service
+provider can try to modify tangibles, responsiveness,
+assurance and empathy. However, it is difficult to
+modify reliability during the service offering. In
+addition, reliability is consistently considered to be the
+most important ofthe five dimensions when evaluating
+the service quality. Based on this fact, in this study, we
+regarded service reliability as a temporal quality
+concept equal to the product itself and positioned it as
+the main element of service quality.
+2.2 Service Failure
+Recognition of service failure is different depending
+on the research field or objective. For example, the field
+of service marketing defines service failure as an
+operational miss. The literature in this field includes
+many discussions on service recovery and how to
+recover from operational misses [13, 14]. In the field of
+reliability engineering, Masuda defines service failure
+as a service defect [15]. On the other hand, Yokoyama
+defines service failure as the dissatisfaction that
+customers experience during the service offering [16].
+In this study, the fundamental interpretation of
+product failure and service failure is essentially the
+same, because services, like physical products, are
+also artifacts created by humans. Therefore, services
+and physical products should not be considered
+different things. Consequently, in this study, the
+definition of failure by the IEC as mentioned above
+has also been applied to service. In this case, the
+difference between product failure and service failure
+is the way of understanding the word “item” in the
+IEC’s definition. Specifically, an “item” refers to a
+part of a physical product or system, such as any part,
+component, or functional unit. Human beings should
+also be included in the term “item” when we focus on
+services: a human being is one of the most important
+elements since the quality of products depends on
+physical behaviors, but the quality of services depends
+on activity by human beings. Here, human beings
+refers not only to service providers, but also to
+customers because if an activity of a customer has a
+bad influence on a whole service, in general, this case
+is recognized as a failure. In addition, an item’s
+functional loss is divided into two components:
+functional loss that impacts customer satisfaction and
+functional loss that has no negative influence on
+customer satisfaction.
+Based on the above, this study recognizes a service
+failure as the termination of an item’s ability to
+perform a function intended by its designer, i.e., its
+function as designed to meet a customer reduirement.
+The word “item” here refers to human beings,
+physical products, systems, etc. that assume the
+exertion of a function.
+3. Existing Research
+3.1 Service Realization Structure
+In service engineering,service is defined as an
+activity between a service provider and a service
+750 A Method for Structuring Service Failure Factors to Realize Highly Reliable Services
+receiver that changes the state of the receiver. Namely,
+the state of the receiver changes when he or she
+receives tangible or intangible items. According to
+this definition. a receiver is satisfied when his or her
+state changes to a new desirable state. Namely, service
+design should be based on the receiver’s change of
+state. In a service design, the target receiver’s state is
+represented as a set of parameters called RSPs
+(receiver state parameters) [5-7].
+In service engineering, a sub-model, called a view
+model, is proposed to represent a realization structure
+for changing an RSP. The functions in a view model
+are expressed by FPs (function parameters). FPs
+represent target parameters of functions; therefore,
+these functions are evaluated by the value of the FPs.
+In addition, FPs are associated with APs (attribute
+parameters) that represent the attributes of entities.
+Entities actualize service functions in the view model
+and, therefore, represent not only physical products,
+but also facilities, employees and information systems.
+Fig. 1 presents an example of a view model that
+describes a part of the realization structure of a coffee
+shop service. As shown in Fig. 1, the RSP in this case
+is a comfortable environment. Functions are described
+hierarchically in order to change the RSP. The FP of
+each lowest function is associated with an entity. This
+model enables designers to determine relationships
+between functions and entities.
+3.2 The Causes of Service Failure Extraction Template
+[17]
+Table 2 (the causes of service failure extraction
+template) makes it possible to exhaustively extract
+factors that occur in service failure by supporting
+Comfortable
+predictive ability about the causes of service failure. In
+general, the number and quality of failure causes
+extracted by designers depend on their abilities and
+experience. Designers use “knowledge with regard to
+failure“ and “estimate ability” when they assume
+failure causes [18]. The former is supported by
+building for the designer a knowledge database with a
+unified form flled with reusable knowledge about
+failure. This must be supported by giving the designer a
+multidirectional point of view. “The causes of service
+failure extraction template“ is a template that provides
+a multidirectional point of view so the designer can
+exhibit his or her prediction capabilities effectively.
+Specifically, this template can apply classifications to
+causes such as time, result and cause proposed in the
+ontology of faults.
+3.3 ISM (Interpretive Structural Modeling)
+ISM is astructured method for system modeling that
+A Method for Structuring Service Failure Factors to Realize Highly Reliable Services 751
+was developed by the Battelle Memorial Institute in the
+United States [19]. ISM enables system analysts to
+visualize the overview of relationships between the
+elements by conducting paired comparisons. The
+method consists of three steps. The first step is making
+an adjacency matrix by conducting paired comparisons
+between the elements based on the recognition of an
+analyst in order to identify direct relationships between
+elements. Adjacency matrices consist of qualitative
+values of only 0 and 1. The 1 expresses that there is a
+direct effect between elements: 0 means that there is no
+relationship between elements.
+The second step is creating a reachability matrix in
+order to identify not only direct relations but also
+indirect relations between elements. In numerical
+formula (1), the reachability matrix is T when an
+adjacency matrix is A and the identity matrix is E. The
+calculation of numerical formula (1) is based on
+Boolean algebra. The last step is making a hierarchical
+directed graph by referring to both the adjacency
+matrix and the reachability matrix. In this study, it is
+necessary to grasp an overview of the relations between
+failure factors in order to visualize the analyst’s
+understanding of the causation relationship of failure
+factors. Therefore, the method is applied to this study
+as a visualization method.
+(A+E)"#(A+Ef=(A+E)"' =T (UD)
+4. A Method for Structuring Service Failure
+Factors
+4.1 Outline
+In this paper, we have identified the relations among
+service failure factors based on an analyst’s
+understanding,since service failure factors and the
+relationships between them depend on the environment
+where service is provided. Moreover, it is difficult to
+obtain quantitative score statistics regarding service
+failure due to the diversity of service configuration. In
+order to identify the relationships among service failure
+factors based on an analyst’s understanding, a method
+for structuring service failure factors is proposed. A
+structured method ofISM,an extraction template ofthe
+causes service failure, and models are applied to the
+proposed method to achieve the objective of this study.
+In the product field, the analyst can grasp relationships
+between product components based on design drawing.
+However, in the service field, it is difficult to grasp the
+relationships between components of service since the
+design drawing used for products does not exist in the
+service field. Another cause of this problem is that
+relationships among service failure factors are varied
+because service involves many human factors. In
+addition, service failure factors vary due to the
+service-providing environment. For example, at a
+hospital with enriched facilities, the failure of medical
+examination machines must be considered. but at a
+medical facility without an examination machine, the
+failure of medical examination machines hardly needs
+to be considered. Thus, in this study, we visually
+represent the analyst’s recognition of the causation
+between the service failure factors in everv
+environment where the service is provided.
+Specifically, at first, we identify the service failure and
+extract service failure factors by using the models
+proposed in service engineering. Next, we visually
+represent the relationship between the service failure
+factors extracted by structuring service failure factors.
+The detail of the proposed method is demonstrated in
+the next section.
+4.2 A Procedure for Structuring Service Failure Factors
+The proposed method consists ofthe following three
+steps:
+Step 1: identify service failure factors
+In this method. service failure factors are identified
+by constructing a view model. In this study, a service
+failure factor is defined as the termination of an item’s
+ability to perform a function intended by its designer,
+i.e., the designed function in order to achieve a
+customer requirement. In service engineering, “item”
+means entity and “function in order to achieve a
+customer requirement” corresponds to the lowest
+752 A Method for Structuring Service Failure Factors to Realize Highly Reliable Services
+function in a view model. Moreover, “the termination
+of an item’s ability to perform a function” could be
+understood as the negative expression of the function
+in a view model. Based on the above, in this study, a
+failure is represented by the negative expression of the
+bottom function in a view model. Therefore, service
+failures are identified by constructing a view model.
+Step 2: Extract service failure factors
+In this step,service failure factors are extracted
+from exhaustive points of view by using the causes of
+service failure extraction template as mentioned in
+chapter 3.2. Service failure factors must be extracted
+through all items to realize exhaustive analysis.
+Step 3: Structure causation relationships between
+service failure factors by using ISM
+In this step,the relationships among identified
+service failure factors are represented visually by
+structuring service failure factors based on an
+analyst’s understanding. The first step is paired
+comparison against service failure factors based on the
+analyst’s recognition. The extracted factors are placed
+in a line and a row of the matrix. If a horizontal factor
+causes a vertical factor in the square matrix, “1” is
+indicated; otherwise it is “0” in the adjacency matrix.
+Through this work against all factors, the adjacency
+matrix, which reflects the fragmentary recognition of
+the analysts, is constructed. For example, as shown in
+Table 3, red 1 means “factor 1 happens by factor 2”.
+5. Application
+In this chapter, the proposed method is applied to a
+nursing-care service. First, in order to identify the
+service failure, customer requirements are identified as
+Factor n
+RSPs. Functions to realize RSPs are described in a
+view model. In this application, “live in security” was
+derived as a RSP (receiver state parameter). This
+identiftcation of an RSP is based on existing studies in
+service engineering. In service engineering, a customer
+image is built through describing a persona, and the
+customer’s action is described as a scenario. An RSP is
+identified based on this scenario. At this point, the view
+model proposed to represent a realization structure for
+changing an RSP was described. As a function of “live
+in security“ for anyone needing nursing care,for
+example, “provide toilet service” and “support the
+elderly in taking a bath” were described. In a nursing
+home, employees should have enough information
+about customers in order to provide appropriate service.
+Moreover, the employee who cares for anyone who
+needs limited nursing care cannot grasp well the state
+of anyone who fully needs nursing care. To solve these
+problems, nursing service has a function of “hand
+over” for information exchange. In this application,
+“can not hand over” is focused upon as a service failure
+because it is very critical for service.
+Forty-six service failure factors associated with “can
+not hand over“ are extracted by using the template for
+extracting service failure factors (Table 4). For
+example, “lacking in communication with customers
+who need nursing care” is extracted from the viewpoint
+of “structural influence” in the template, and “lack of
+education for the employee“is extracted from the
+viewpoint of “internal cause” in the template.
+The numbers in Table 4 accord with Fig. 2. A square
+matrix of 46 rows and columns as an adjacency matrix
+was made. Then, an adjacency matrix was converted to
+A Method for Structuring Service Failure Factors to Realize Highly Reliable Services 753
+Table 4 Service failure factors extracted.
+a reachability matrix, and a hierarchical directed graph
+is constructed (Fig. 3).
+The improved algorithm has good acquisition
+performance and these values obtained from it can
+initialize the tracking loop.
+In conclusion, the speed of improved acquisition
+doubles that of traditional acquisition. The traditional
+algorithm can be instead of improved algorithm.
+First, we could improve acquisition method to
+increase the GPS receiver sensibility. Second, new
+754 A Method for Structuring Service Failure Factors to Realize Highly Reliable Services
+Fig. 3 Hierarchical directed graph in this application.
+acquisition algorithm needs to be developed for future
+signal, such as L2 and L5.
+5. Discussion
+As shown in Table 4, relationships between many
+failure factors are visualized based on the recognition
+of the subject. As shown in Fig. 2, factor 7, “failure to
+secure time to hand over” is caused by factor 3, “lack
+of leadership” and factor 16, “a lower priority duty”.
+After this application, we asked a subject about this
+result.
+Therefore, the proposed method can be said to
+reflect the understanding ofthe analyst. In addition, the
+proposed method could clarify indirect influence
+relationships and express comprehensive causation
+relationships between service failure factors. For
+example, the subject did not recognize factor 16, “a
+lower priority duty“to cause factor 31,“failure to
+communicate information”. Namely, we could confirm
+that the proposed method could supplement the
+analyst’s understanding about failure factors. However,
+the method proposed in this paper focuses on visually
+representing the understanding of the analyst.
+Therefore, it is necessary to maintain legitimacy by
+different methods. In the future, we will examine a
+method for maintaining legitimacy by unifying the
+understanding of plural analysts. Moreover, in order to
+identify factors for which measures should be taken,
+we will examine a method to decide the priority of
+failure measures based on criteria such as cost or
+effectiveness in quality engineering. These criteria, in
+general, are trade-off relationships [10].
+7. Conclusions
+The purpose of this paper is to visually represent the
+relationship between service failure factors in order to
+search for a critical factor. To achieve this purpose, this
+paper has proposed a method for structuring service
+failure factors. Specifically, we have defined service
+failure and identified service failures. In addition.
+service failure factors have been extracted and
+structured using a structured method of ISM. The
+proposed method was applied to a nursing-care service.
+The results of this application have made it possible to
+visualize the relationships among service failure
+factors based on an analyst’s understanding. A future
+work will examine a method for maintaining
+legitimacy by unifying the understanding of plural
+analysts. In addition, in order to identify factors that
+should be measured, we will examine a method for
+determining the priority of failure measures based on
+cost and relationships of the effects necessary to take
+measures by referring to a discussion of quality
+engineering.

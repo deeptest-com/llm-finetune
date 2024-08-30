@@ -1,0 +1,217 @@
+Application of a Keplerate type giant nanoporous isopolyoxomolybdate as a reusable catalyst for the synthesis of 1,2,4,5-tetrasubstituted imidazoles
+Keplerate类型巨大的 nanoporous  isopolyoxomolybdate ( NH  4)42[Mo VI  72瞬间  V  60 O  372-(CH3咕咕叫) 30(H2 O )表示的72],{瞬间132},被一个壶为 1,2,4,5-tetrasubstituted 咪唑的合成用作催化剂，有在没有溶剂的条件下面的芳香的醛，主要的胺，和铵醋酸盐的 benzil 的四部件的热反应。催化剂用便宜、容易地可得到的开始的材料根据一个以前出版的文学过程被准备，并且随后由英尺红外描绘了，紫外并且 X 光检查衍射光谱学，以及微量分析。结果显示出那 { 瞬间 132} 向 1,2,4,5-tetrasubstituted 咪唑的合成展出了高催化的活动，与被形成在的需要的产品对高收益好。而且，催化剂是 recyclable 并且没有任何看得清的损失，能在它的催化活动被再使用至少三次。总的来说，为 1,2,4,5-tetrasubstituted 咪唑的合成的这个新催化方法提供快速的存取给跟随一个简单病情的检查过程的需要的混合物，并且避免有害器官的溶剂的使用。这个方法因此在为 tetrasubstituted 咪唑的合成当前可得到的方法上代表重要改进。
+
+取代咪唑 合成方法 可重复使用 纳米多孔 催化剂 e型 应用 催化活性  
+
+1762 Ahmad Nakhaei et al. / Chinese Journal of Catalysis 35 (2014) 1761-1767
+used to model passive cation transport through membranes, as
+use of POMs as catalysts for multicomponent reactions.
+The imidazole ring system is an important nitrogen-con-
+number of natural products and pharmacologically active
+have been reported to possess interesting biological properties,
+and B-Raf kinase [19]. Furthermore, recent advances in green
+via the four-component reaction of 1,2-diketones or a-hy-
+droxyketones with aldehydes, primary amines, and ammonium
+acetate in the presence of a catalyst such as L-proline [24],
+[32], FeCls/montmorillonite K10 under microwave irradiation
+{33]}, p-dodecylbenzenesulfonic acid [34], and montmorillonite
+K10 supported titanium [35]. 1,2,4,5-Tetrasubstituted imidaz-
+oles can also be accessed by the hetero-Cope rearrangement or
+the N-alkylation of trisubstituted imidazoles [36,37]. However,
+some ofthese synthetic methods have been limited in terms of
+their application because of poor yields or their requirement
+for expensive catalysts, long reaction time, and tedious isola-
+method using an inexpensive catalyst with high catalytic activ-
+ity for the synthesis of 1,2,4,5-tetrasubstituted imidazoles.
+As a result of our interest in the synthesis of heterocyclic
+compounds [38-41], and as part of our ongoing research to-
+wards the development of environmentally friendly methods
+for the synthesis of organic compounds using reusable catalysts
+[42-48], we report herein the use of the Keplerate type giant
+catalyst for the efficient solvent-free synthesis of 1,2,4,5-
+tetrasubstituted imidazoles. This new process allows for the
+one-pot synthesis of 1,2,4,5-tetrasubstituted imidazoles by the
+that the clusters possessed a periodic structure with an average
+diameter of approximately 3 nm. This experimentally deter-
+mined diameter was in good agreement with the theoretical
+value for the inner diameter of the ball-shaped POM [8,9].
+2. Experimental
+2.1. Synthesis of the Keplerate {Mo132}
+162.2 mmol) in Hz0 (250 ml}, and the resulting solution was
+stirred for 10 min, during which time it became blue-green in
+color. The mixture was then treated with 50% CHsCOOH (83
+ml} to give a green solution, which was stored in an open
+500-ml Erlenmeyer flask at 20 °C without stirring. It is note-
+worthy that the solution became dark brown in color on
+washed sequentially with absolute ethanol and diethyl ether,
+before being dried in air [8].
+2.2. General procedure for the synthesis of
+1,2,4,5-tetrasubstituted imidazoles 5a-5m
+mmol), primary amine 3 (1 mmol), ammonium acetate 4 (1
+mmol), and {Mo132} (0.1 g) was heated in the oil bath at 140 °C
+for 20-90 min. Upon completion of the reaction, as determined
+by thin-layer chromatography (TLC), the mixture was diluted
+with hot ethanol and then filtered to remove the catalyst. The
+catalyst was then washed with a small portion of hot ethanol
+(10 ml), and the combined filtrates were concentrated in vol-
+by filtration, and recrystallized from ethanol to give com-
+pounds Sa-5m in high yields (Scheme 1). The melting points
+were recorded using a Stuart SMP3 melting point apparatus.
+The FT-IR spectra of the products were recorded on a Tensor
+27 Bruker spectrophotometer as KBr disks. The 1H NMR spec-
+tra were recorded on Bruker 400 and 500 spectrometers at
+400 and 500 MHz, respectively.
+Ahmad Nakhaei et al. / Chinese Journal of Catalysis 35 (2014) 1761-1767 1763
+3.1. Characterized results of {Moi3z}
+The {Mois2} catalyst was characterized by FT-IR, UV/Vis,
+and X-ray diffraction (XRD) spectroscopy, as well as microa-
+nalysis. The FT-IR spectrum of the catalyst is shown in Fig. 2(1)
+and contains the characteristic vibrational bands of the Mo=0
+bond at 969 and 936 cm-1, as well bands belonging to the COO-
+and NH4a+ groups at 1544 and 1406 cm-l, respectively. The
+FT-IR spectrum of the catalyst also contained bands at
+2500-3600 and 1618 cm-!, which indicated the presence of
+water. Pleasingly, the FT-IR spectrum of the {Mots2} catalyst
+prepared in the current study was consistent with those re-
+ported by Miiller’ [8] and Zhou’ [9] groups. The UV/Vis spec-
+trum of the {Mots2} catalyst provided further confirmation of
+its structure, and the characteristic absorption bonds at 213,
+232, 265, and 447 nm were consistent with those reported in
+the literature [8]. The XRD pattern of {[Molsz} catalyst (Fig. 3)
+4000 3500 3000 2500 2000 1500 1000 S00
+Wavenumber (cm )
+recovered catalyst ((2-4), runs 2-4}.
+10 20 30 40 50 60 70 80
+20(°)
+Fig. 3. XRD pattern of {Moa}.
+30.2125° 44.1001° and 50.2848°. Furthermore, elemental
+analysis of the {Mois2} catalyst gave satisfactory data, which
+corresponded to a molecular formula of CcoH4ozMols2N420504
+(Calcd.: C 3.21%, H 1.81%, N 2.62%; found: C 3.30%, H 1.92%,
+N 2.49%).
+3.2. Evaluation of catalytic activity of {Mo13z} towards the
+reaction
+The catalytic activity of {Mo132} was evaluated in the syn-
+thesis of 1,2,4,5-tetrasubstituted imidazoles. The synthesis of
+compound 5b by the four-component reaction of benzil (1
+mmol) with 4-chlorobenzaldehyde (1 mmol), aniline (1 mmol),
+and ammonium acetate (1 mmol) was initially selected as a
+model reaction to optimize the reaction conditions. Several
+reaction parameters were evaluated during this optimization
+stage, including the loading of the {Mo132} catalyst, the temper-
+ature of the reaction, and the reaction solvent (Table 1). It is
+clear from the results shown in Table 1 that the shortest reac-
+tion time and best yield were achieved under solvent-free con-
+ditions (Table 1, entry 14). These results also revealed that the
+loading of the catalyst and the reaction temperature had a sig-
+nificant impact on the yield of compound 5b when the reaction
+was conducted under solvent-free conditions. For example, the
+reaction gave a very low yield of the product when it was con-
+Table 1
+Optimization of reaction conditions for synthesis of compound 5b cat-
+alyzed by {Mos}.
+1 一 一 140 120 30
+2 0.10 一 r.t 120 一
+3 0.04 一 100 90 59
+4 0.04 一 120 90 67
+5 0.04 一 140 90 85
+6 0.06 一 100 90 70
+7 0.06 一 120 30 82
+8 0.06 一 140 75 86
+9 0.08 一 100 90 74
+10 0.08 一 120 80 87
+11 0.08 一 140 60 89
+12 0.10 - 一 100 80 81
+13 0,10 一 120 60 90
+14 0.10 一 140 50 97
+15 0.10 一 150 50 96
+16 0.15 一 150 60 96
+17 0.10 Hz0 reflux 300 11
+18 0.10 CH;0H reflux 300 31
+19 0.10 CH3CH:0H reflux 300 43
+20 0.10 CHsCN reflux 300 trace
+1764 Ahmad Nakhaei et al. / Chinese Journal of Catalysis 35 (2014) 1761-1767
+ducted in the absence of the catalyst at 140 °C (Table 1, entry
+of the catalyst at room temperature (Table 1, entry 2). These
+results therefore highlighted the importance of the catalyst
+loading and reaction temperature on the success of the reac-
+tion. Increases in the amount of the catalyst and reaction tem-
+perature up to 0.10 g and 140 °C, respectively, led to an in-
+Table 2
+董塞二】薹二】菅工′l(雷slSof1,2a:5a-5m=—:B-:
+at 140 °C under solvent-free conditions.
+crease in the yield of the product 5b, although further increases
+in these parameters did not lead to further improvements in
+With the optimized conditions in hand, we proceeded to ex-
+with a range of other aromatic aldehydes 2 and primary amines
+3 (Table 2). As shown in Table 2, the {Mo132} catalyst efficiently
+Ahmad Nakhaei et al. / Chinese Journal of Catalysis 35 (2014) 1761-1767 1765
+Table 3
+Comparison of the efficiencies of different catalysts for the one-pot four-component synthesis of 1,2,4,5-tetrasubstituted imidazoles.
+Catalyst 一翩蘸忏 Time (min) Yield (%) Ref.
+catalyzed the condensation reactions of 1, 2, 3, and 4 to give
+the desired products 5a-5m in high yields over relatively short
+reaction time. It is noteworthy that the products could be read-
+ily separated from the catalyst, making this method especially
+useful for the synthesis of a wide range of 1,2,4,5-tetrasubsti-
+tuted imidazoles.
+catalyst were compared with those previously reported for the
+synthesis of 1,2,4,5-tetrasubstituted imidazoles using a variety
+of different catalysts (Table 3). The results of this comparison
+revealed that the {Mois} catalyst gave shorter reaction time
+than all of the other conditions [except for the reaction cata-
+lyzed by FeCla/montmorillonite K10 under microwave irradia-
+tion), as well as higher yields of the desired products.
+The reusability of the catalyst {Moi32} was also evaluated
+under the optimized reaction conditions. Upon completion of
+the reaction, the catalyst was recovered according to the pro-
+cedure described in the experimental section. The recovered
+catalyst was washed with hot ethanol and then dried under
+vacuum at 50 °C for 1 h before being reused in the same reac-
+tion. The results of this reusability study revealed that the cat-
+alyst could be used at least four times with only a slight reduc-
+tion in its activity (Fig. 4). Furthermore, the FT-IR spectra of the
+recovered catalyst (Fig. 2(2)-(4)) were almost identical to that
+of the fresh catalyst (Fig. 2(1)), which indicated that the struc-
+ture of the catalyst was unchanged by the reaction.
+A plausible mechanism for the {Mots2}-catalyzed formation
+ofthe 1,2,4,5-tetrasubstituted imidazoles is shown in Scheme 2.
+The {Mo132} catalyst has several accessible Mo sites and NHa
+groups, which could act as Lewis acid and Bronsted acid cen-
+ters, respectively, and therefore promote the reaction. The cat-
+alyst would play a significant role in increasing the electrophilic
+character of the electrophiles in the reaction. Ammonia could
+be released from the ammonium acetate in the reaction which
+could be detected using a pH indicator. When a piece of pH
+paper was held above the reaction mixture, a blue coloration
+was observed. This result indicated that the reaction proceeded
+by the initial nucleophilic attack of ammonia and the primary
+amine on the carbonyl group of the {Moisz}-activated aldehyde
+with concomitant dehydration to give intermediate I. Interme-
+diate I would then react with [Mois2}-activated benzil to afford
+intermediate II, which would be converted to intermediate II
+through a dehydration reaction. Finally, the dehydration of
+intermediate III would give the 1,2,4,5-tetrasubstituted imid-
+azole product. According to this mechanism, the {Motsz} cata-
+lyst would facilitate the formation of intermediates I, Il, and IIL
+Several attempts were made to isolate these intermediates
+under the optimized conditions, but all of these efforts were
+unsuccessful.
+4, Conclusions
+In conclusion, we have used the Keplerate-type giant na-
+noporous isopolyoxomolybdate {Mo132} as an efficiently cata-
+lyst for the synthesis of 1,2,4,5-tetrasubstituted imidazoles in
+the one-pot, four-component reaction of benzil with an aro-
+matic aldehyde, primary amine, and ammonium acetate under
+solvent-free conditions. This method provided the desired
+products in high yields over short reaction time, following a
+facile work-up process. Furthermore, the catalyst could be
+readily recycled, and reused at least three times without any
+discernible reduction in its catalytic activity. The procedure is
+also advantageous in the sense that it is a solvent-free reaction
+and therefore operates under environmentally friendly condi-
+tions.
+1766 Ahmad Nakhaei et al. / Chinese Journal of Catalysis 35 (2014) 1761-1767
+CH;COONH,
+The authors express their gratitude to the Islamic Azad
+University, Mashhad Branch for its financial support.

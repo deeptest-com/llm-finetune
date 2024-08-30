@@ -1,0 +1,462 @@
+钛在航空领域的用量将得到提升
+有色金属行业分析师认为，商用飞机的用钛量将以平均每年9．1％的速度增长，至2018年达到7．87×10^-4t，飞机机身用钛量会超过发动机用钛量。总部位于克利夫兰的Northcoast Research Holdings公司的Lloyd O’Carroll分析师，最近在一份报告中指出：2014年世界商用飞机用钛量为5．56×10^4t（1．225×10^8磅），到2018年，用钛量将增长到7．87×10^4t（1．736×10^8磅）；这期间机身用钛量的复合年增长率为11％，而发动机用钛量的复合年增长率为6．7％；从波音787及空客A350的生产中可以发现，机身用钛量的增长速度高于发动机。
+
+航空领域 钛 发动机用 用量 飞机机身 商用飞机 年增长率 行业分析  
+
+0引言
+行星(包括其卫星》的着陆探测是21世纪世
+界航天发展的重要领域,备受关注。从20世纪60
+年代至今,人类已成功实现了对月球、金星、火星
+和小行星等的着陆探测。在这些着陆探测中,对月
+球实施探测所取得的成就最大,苏联、美国、中国
+先后成功实现了月球着陆及巡视探测,美国还实现
+了6次载人登月,苏联实现了3次无人采样返回。
+苏联发射了多颗金星探测器之后,于1972年成功
+实现了对金星的着陆探测,并发回有关金星大气成
+分及物理特性等的宝贵数据。火星作为太阳系中自
+然环境与地球最为相似的行星,一直是人类行星探
+测特别是着陆探测的首选目标。从苏联成功发射第
+一颗火星探测器“火星1号“至今,人类已经实施
+了47次火星探测任务,其中着陆探测任务19次,
+成功7次。1976年,美国发射的“海盗1号“首
+次成功着陆在火星表面,为后续的火星着陆探测奠
+定了基础,1996年的“火星探路者“、2007年的
+“RBS”以及2011年发射的“好奇号“探测磁
+均实现了对火星的着陆探测。尤其是“好奇号“探
+测器采用了“圭中吊车《SkyCrane)“的创新着
+陆方式,其着陆精峥由百km级提升至10km量级,
+这种先进的着陆方式使得实施特定区域探测成为
+可能,也体现了美国最新一代火晋着陆探测技术的
+水平和木来行星着陆探测技术的发展方向。
+2001年美国的NEAR探测器在完成预期的科
+学探测任务后,首次成功着陆在Eros小行星的表
+面。2005年日本的Hayabusa探测器采用悬停下降
+附着的方式实现了对Itokawa小行星的采样、目前
+美国、欧空局、日本等的相关研究机构正在规划实
+施多个小天体探测任务,并考虑进行着陆探测。
+在行星(指地外行星,下同)着陆探测过程中,
+动力学建模与控制是影响任务成败的关键因素之
+一。本文将针对行星着陆探测动力学与控制中的共
+性问题,总结分析火星着陆探测、小行星附着探测
+的动力学与控制研究进展,旨在提出我国未来实施
+行星着陆探测任务涉及的动力学与控制问题的发
+展建议。
+1行星着陆探测动力学与控制中的共性问题
+由于行星大气剧烈活动、表面环境异常复杂,
+给着陆探测的实施带来了困难与挑战。在着陆探测
+动力学与控制领域,所逼到的共性问题或挑战如下:
+1.1“行星表面大气环境复杂及其运动的不确定性
+行星的大气与地球有很大差异,昆其运动具有很
+大的不确定性。以火星和金星为例,火星表面大气
+的密度约为地球的1984,大气层厚度约为125kml!
+火星大气的主要成分是二氧化碳,在火星极区的冬
+季,低温使得大气中的大量二氧化碳凝华成干诉,
+而到了夏季,再度升华至气态二氧化硬,这个过程
+侧得火星大气成分、气压、密度、运动等出现较大
+变 化 , BH, HRB EEERARLS, FE
+30me。图!为火晋大气运动情形图,金星的大气
+比地球稻密,气压约为地球的92倍。受超高速大
+气环流和超慢速自转影响,金星表面的风速最高可
+达100tys,而且风速随高度下降而降低,在两极
+迦有反气旋皇浪流现象。
+Fig. 1 Complex motion of Mars atmosphere
+这给行星着陆探测的动力学控制带来图难,若
+没有这些行星大气的原位测量数据支持,则难以建
+立精确的模型,导致大气进入着陆器动力学模型存
+在较大的不确定性,也为地面开晚着陆探测的动力
+学和控制研究带来困难。
+1.2着陆过程环境恶劣且阶殴性控制能力弱
+如图2所示,对于有大气的行星,当着陆器以
+高超声速进入时,由于大气状态的不穗定性及运动
+的不确定性将对着陆动力学及控制产生较大的影
+响,同时,由于防热罩的遮挡及超高速进入大气所
+导致的热电离引起通信黑障,此阶段对着陆器的测
+控能力很弱。在降落伟减速下降阶段,由于其速度
+较优,受大气运动的影响,昆不具备制导与控制能
+planetary landing
+1.3行星表面复杂地形对着陆嚣机动能力的要求
+复杂地形地貌通常是地质活跃的一种表现,获
+取这些形貌的数据对于移学研究有重要意义。在复
+杂地形地貌区域分布了大量岩石、阳石坑、山脊、
+斜坡以及不连续的形貌〔如图3所示3,而通过天
+文观测手段很难准确获取这些形貌数据,已实施的
+实时测量数据的处理与建模、探测器着陆动力学分
+析、表商障碍检测与规避控制、着陆点实时评估与
+Fig.3 Complex and landforms on the Mars surface
+1.4小行星的形状不规则东模型不确定性大
+小行星探测是行星探测中比较特殊的一类,该
+类目标形态各异、种类繁多,如图4所示。多数小
+行星的物理特性限于地面观测,而基于地面观测所
+得到的模型具有很大的不确定性。小行星的尺寸跨
+度从几百km到几rx,形状有类似马铃薰、也有类
+似骨棒等,自旋状态与大行星相差较大,有超快自
+旋、也有极慢自旋,同时也出现了非主轴自旋等,
+这些独特的物超特性使得小行星附近动力学环境
+异常复杂.对于小行星的附着探测而言,其着陆制
+导与控制的精度要求比大行星更高,因为徽小的速
+2火星着陆探测动力学与控制
+火星着陆过程依次经历大气进入段、下降段和
+着陆段,如图5所示团。
+1)大气进入殴
+太气进入段〔跟火星表面125~10Tm)又称
+为高超声速段,是拼从进入大气层开始到降落伞完
+全展开为止。着陆器在大气进入段,将经历峰值过
+载、峰值动压,并且由于摩擦产生大量的气动热。
+为了保护着陆器免受恶劣环境的影响,一般将其安
+置在热防护罩内、
+2)下降县
+下降段(跌火星表面10kn~20m)是指从打
+开减速伞至末端制动发动机开机结束,可分为降落
+伞丁降段与动力下降段。着陆器在下降段需堤经历
+伞的超声速准速、动力制动减速、着陆误差修正及
+着陆场障碍检测与规避机动。
+3)着陆段
+着陆段是指从主着陆发动机开启到着陆器软
+着陆到火星地面。
+在以上三个阶段中,大气进入段和下降段的机
+动控制对着陆精度有重要影响,也是动力学与控制
+最为复杂的阶段。下面将重点介绍这两个阶段涉及
+的动力学与控制问题的研究情况。
+2.1“大气进入段的动力学与控制
+火星大气环境存在强烈的扰动性,同时进入
+点的探测器状态、气动参数、结构参数等都难以精
+确确定,这些都使得进入段动力学系统具有很强的
+不确定性,从而导致火星着陆的精度较低、对火星
+着陆过程不确定度的分析是随机动力学系统主要
+研究内容之一。目前主要采用Monte-Carlo法,即
+通过对系统初姗状态及参整的随机采样得到大气
+进入状态捉迹簇,从而利用统计方法计算进入状态
+轨迹的统计信息。该方法的误差与随机采样次数的
+平方成反比,计算量极大,特别是对于高维随机动
+力学系统。Hastings"!Liu等5曾提出札用贝叶斯
+Monte-Carlo法、序列Monte-Catrlo法等来提高计算
+效率。对于非线性动力学系统,其常用的方法是如
+何实现系统的线性化,但线伯化会带来较大的截断
+误差。针对截断误差问题,Park等I提出了对非线
+性助力学系绕高阶近做的随机动力学不确定度分
+析方法,侄该方法涉及大量的张量计算,针对截断
+误差和计算量大的问题,Prabhakar等[提出了基于
+混沌多项式系统的高超声速动力学的描述,并结合
+Galerkin投影法给出了湾泉多码式系统的变化规
+律,迹而对状宝不信家庞翁惠揣煌稠进行了分析,
+并对精庭和订算量雌租邝娟息x
+火星大气进入段的制导与控制对提升着陆精度
+具有重要意义,是近年来研究的热点。利用火星大
+气产生的空气动力对着陆器进行控制,使得在减小
+额外燃料消耗及满足着陆器受热约束和结构约束的
+前提下,更准确地将着陆器导引和控制到开伞点条
+HO. hah, BT KEES SECRET
+构型,其控制能力相对较弱,因而在大气进入段的
+标称轨迹设计也非常重要。探测器在大气进入段的
+动力学形式比较复杂,进入飞行轨迹对控制变量敏
+感度高且进入过程非线性约束较强,故标称轨迹的
+设计主要集中在多约束的轨迹优化。Benito等吊通
+过对火星进入飞行轨迹的优化,给出了火星大气进
+入段的可达集与可控集,并通过评估给出了最佳进
+入点与着陆点。Tetzmann0将进入飞行轨迹优化问
+题转化为参数优化问题,提高了计算效率。Lafleur
+等L通过给定初始进入状态,采用粒子群优化算法
+对进入飞行轨迹进行了优化,分析了特定构型着陆
+器的可实施控制的最大着陆高度。文献[12-14]提出
+利用转迹制导与姿态控制相结合的控制算法减少
+着陆器在进入过程中的进入点航迹角、进入时刻等
+误差,同时减小大气模型不确定性、着陆器气动参
+数不确定性等引起的误差,以提高着陆精度。
+综合以上研究工作可以看出,火星着陆进入段
+动力学与控制的关键问题主要集中在3个方面:火
+星着陆过程随机动力学系统不确定性的研究;复杂
+约束集下最优着陆标称轨迹的规划与设计;旨在消
+除误差的辅迹制导与姿态控制相结合的控制算法
+研究。
+2.2下降段的动力学与控制
+下降段主要包括降落伞减速段和动力下降段。
+降落伞减速段没有采取其他控制措施,受火星表面
+强风等因素的干扰,会造成着陆器数km的着陆偏
+差L51,由于对强风因素很难进行建模预测,为了满
+足未来火星高精度着陆的要求,有必要考虑对强风
+干扰的补偿。目前主要有两种补偿方法,1发展
+可控翼伞,进行实时在轨风速估计、翼伞调整,以
+减小强风对着陆器的影响;2)在降落伞下降段不
+对强风干扰进行补偿,而是在抛伞后利用着陆器所
+携带的燃料进行制导控制,以消除强风所带来的影
+响。文献[15-17]对这两种补偿方法进行对比评估
+后,认为第二种方法具有更高的效费比和操作性。
+相比降落伞减速段,学者们对动力下降段的研
+究较多,特别是其制导算法。目前采用的制导控制
+方法主要有重力转弯制导、多项式制导、最优动力
+下降制导、闭合解析燃料消耗最优的制导、基于出
+规划理论的制导等.重力转弯制导是在着陆过程
+中通过姿控系统使制动加速度方向与速度矢量的
+反方向保持一致,该方法的优点是控制算法简单,
+且具有燃料消耗最优性,曾在“海盗号“着陆任
+务中使用。Wong等0针对火星软着陆障碍规避问
+题,基于重力转弯制导方法设计了三维多项式制导
+律。该方法将三轴方向的加速度规划为关于剩余时
+间的二次函数,然后利用探测器初始状态和终端状
+态对制导参数进行求解,得到探测器的实时控制
+量。Souzar11、文献[22-23]基于凸规划理论针对火
+星定点着陆问题引入了松弛变量,将推力约束条件
+下的软迹规划问题转化为凸优化问题,得到最优的
+定点着陆轨迹。动力下降段将会消耗探测器所携带
+的绝大部分燃料,因而燃料消耗最优对探测器的设
+`王/“丨`′具_有重二要意义°Blackmore5￠TASHESrR
+动机的性能,表明此类发动机的推力约柬为非凸,
+并提出了一种基于二阶凸规划的制导控制方法,将
+非凸控制约束转化为凸约束,进而进行快速求解,
+既满足了动力下降过程控制的实时性,又满足了燃
+料消耗规划的最优性。但不足的是该方法的制导控
+制策略为开环策略,在火星大气环境存在较大扰动
+的情况下容易产生误差。针对此问题,Shen等5
+THT pA TARE FE RE MAUS J) TF
+最优轨迹与控制方法,其目标函数包含了燃料消耗
+和跟踪控制性能,具有一定的抗扰动性。
+行星表面地形复杂,需要考虑着陆器在动力下
+降过程中的安全问题,因此,行星表面障碍规避与
+定点着陆制导是实现安全、精确着陆的关键。Wolf
+等9对火星软着陆障碍规避技术进行了研究,提出
+了一套障碍规避方法。着陆器根据障碍检测所得到
+的局部地形情况,选择出安全着陆区,同时根据探
+测器当前的位置、速度,以及期望达到的位置、速
+度和加速度等规划出一条安全的障碍规避着陆辐
+迹。Brady等]对障碍规避也进行了相关的研究,
+以期在复杂的行星地形区域开展应用。其基本思路
+是:对于新选定的着陆点,将探测器的障碍规避过
+程分为侧向加速、侧向减速、自由降落等几个阶段,
+然后利用序列二次规划算法设计一条以燃料消耗
+最优为指标的障碍规避着陆轨迹。通过姿态的调
+整,使探测器获得侧向的推力,对标称轨迹进行跟
+踪。该方法最主要的特点是探测器在障碍规避过程
+中的推力大小保持不变,因此采用定推力发动机就
+可以实现探测器在三维空间的位置机动。
+由以上研究工作可以看出,火星着陆下降段的
+动力学与控制的关键问题主要包括:超声速伞降的
+建模与控制;动力下降最优制导与控制;着陆区障
+碍的检测与规避控制。
+3“小行星附着探测动力学建模与控制
+与大行星的动力学环境不同,小行星无大气、
+形状不规则且引力弱,其着陆过程以主动控制为
+主,主要包括接近段和悬停着陆段。不同的小行星
+其着陆过程还有区别。如美国的NEAR任务对质量
+较大的Eros小行星(形状似马铃薯,尺寸为34.4kmx
+11.2kmx11.2km)进行了着陆探测,探测器在着陆前
+已 分 别 在 200 kmx200 km. 50 kmx50 km、35 kmx
+35km的稳定绕飞轨道上对小行星引力场、自旋、
+地表形态等物理参数实施了探测评估,评估之后采
+取主动控制方式着陆在小行星的表面。日本
+Hayabusa任务对质量较小的Itokawa小行星(形状
+为不规则的细长形,尺寸为0.535kmx0.294kmx
+0.209km)进行了探测,任务采用了悬停附着的方
+式。NEAR任务和Hayabusa任务的着陆探测如
+图 6 NEAR任务和Hayabusa任务的着陆探测
+Fig. 6 Touchdown of NEAR mission and Hayabusa mission
+3.1“动力学建模
+动力学建模是小行星附着探测的基础,主要涉
+及不规则形状的引力场建模,对于形状各异、形态
+复杂而又缺乏翔实数据的小行星而言,其引力场的
+精确建模是一个挑战。归结而言,常用建模方法大
+致包括级数逼近法和三维模型逼近法两类。
+1)级数逼近法
+该方法主要通过采用无穷级数来逼近引力势
+能,进而完成引力场建模,主要有球谐函数模型和
+棚球谐函数模型。对于形状不规则的小行星而言,
+球谐函数模型误差较大,日存在收敛性问题。椅
+球谐函数模型可以较好地解决这些问题,但其系数
+求解困难21。,Dechambre等D给出的椭球谐系数
+简化求解方法,可使椭球谐函数模型具有较好的应
+用前景。
+2)三维模型逼近法
+此方法主要是通过采用筒化的三维模型来逼
+近不规则形状体,通过数值计算得到引力势能,进
+而完成引力场建模。主要有三轴椭球体模型、多面
+体模型和质点群模型。三轴椭球体模型是天文观测
+上常用的模型,该模型虽然可基本反映小行星尺寸
+信息,但无法描述其形状特性。Werner等F“231提
+出的多面体模型可比较精确地描述不规则形状的
+小行星,但对不同密度分布的小行星却无法准确表
+达,质点群模型可以有效解决小行星的不同密度分
+布问题,但计算比较复杂.图7为1620Geograohos
+小行星的多面体模型。
+估也是一项重要的研究内容,因为小行星真实的质
+量、引力场、自旋状态等在探测器实现交会前是未
+知的。设计所采用的数据均为预估值,交会得到新
+的信息后,需要对小行星的动力学环境进行重新评
+估,而重新评估后的参数被用于探测器接近段、着
+_珏f晕段睾._…=白〈〕z'′'…艾'_′i`首设_玉`丨_。Scheeres"焉一狮一…=[36]茎=歹4l盖三出了—FiRE
+地快速评估小行星附近动力学环境的方法,分析了
+小行星引力场和自旋状态对探测器轨道的影响,并
+将该方法应用于Eros小行星的交会与着陆。
+3.2制导与控制
+小行星的着陆过程主要采用主动控制,考虑到
+不规则形状的扰动力、环境干扰力等因素的影响,
+一般采用悬停着陆方式。Sawai等B“3研究了均匀
+自旋和非均匀自旋小行星的悬停轨道控制与稳定
+性问题,并给出了一种闭环控制策略。Broschart
+等4以着陆为背景研究了星体固连系与惯性系
+下的悬停控制问题,给出了稳定区域。除了悬停控
+制以外,附着的制导与控制也是研究的另一个重
+点。Lan等I以安全、精确附着为目标,提出了一
+种基于时间约束的附着控制方法,将着陆误差分解
+为位置误差和视线角误差,分别设计控制律使得有
+限时间内视线角误差稳定在原点,位置误差收敛于
+零。与传统方法相比,该方法的渐近稳定控制具有
+较好的收敛性和抗于扰性。Furfaro等[21基于高阶
+滑模控制理论提出了一种小行星精确附着的多滑
+模面制导控制方法,该方法在无模型有界扰动下具
+有一定鲁棒性。Guetman等M“研究了在有限推力情
+况下着陆小行星的接近段与下降段的控制问题,给
+出了最优燃料消耗的小行星着陆轨迹设计方法。
+Broschart等M基于对不规则形状小行星着陆动力
+学的研究,给出了星体固连系下着陆的常推力解,
+并通过误差估计的方法对该解进行了改进,同时提
+出了自由着陆下降流形的概念。Li等以小行星
+着陆为应用背景设计了具有初值和终端约束的下
+降轨迹,然后提出了采用基于误差分机和调宽调频
+制导控制律来跟踪的方案.DeLafontaine等M以彗
+核为对象提出了基于激光测距仪的慢着陆下降策
+略和基于微波测距的快速下降策略,并对这些策略
+进行了分析。此外,为了保证探测器精确安全地着
+陆于目标小行星,Uilamec等(针对小行星表面地
+形的特点并基于计算机视觉,提出了通过跟踪可见
+的特征点或识别路标来达到探测器的精确制导和
+避障的方法。Kominato等8研究了着陆小行星的
+自主制导技术,以MUSES-C任务为背景,考虑小
+天体的弱引力环境特点,提出了利用光学测量实现
+自主着陆小行星的制导方案。
+通过以上分析可以看出,小行星附着控制的研
+究主要集中在3个方面:着陆器悬停控制及其稳定
+性分析;下降着陆燃料最优制导与鲁棒控制方法研
+究;基于表面特征识别的精确制导与避障控制方法
+研究。
+4“结束语
+我国在成功实施月面巡视探测的同时,也开展
+了火星和小行星探测的相关论证与研究。“嫦娥三
+号“的成功落月,更为未来开展行星着陆探测奠定
+了技术基础。针对我国未来可能开展行星着陆探测
+的任务需要,在行星着陆探测的动力学与控制领域
+提出如下发展建议:
+DD火星进入段的制导与控制
+火星进入段在着陆过程中是容易产生和累积
+误差的阶段。由于火星大气的稀薄、不稳定特性以
+及不同的探测器再入气动构型等导致进入段控制
+能力弱,需要重点开展以提高着陆精度为目标,在
+不同的气动构型和再入姿态下的进入段制导与控
+制研究。
+2)动力下降段的制导与控制补偿
+通过超声速降落伞减速后,着陆器的速度已经
+达到一个可控范围。但由于火星大气的不稳定性及
+强风的干扰,容易导致伞降减速后位置出现较大偏
+离。因此,有必要开展动力下降段的减速和位置误
+差补偿,以及着陆区障碍检测与规避控制策略等综
+合研究。
+3)小行星动力学环境建模与快速评估
+小行星物理参数多数来源于地基观测,其可信
+度有待近距离探测评估。利用在轨测量所获得的物
+理参数数据,快速、准确地评估与修正小行星动力
+学环境模型,是一项重要的研究课题。
+4)最优鲁棒附着制导与避障控制
+与大行星着陆探测相比,小行星弱引力的特性
+使得探测器的机动能力相对较强,但同时也使得干
+扰力的效应增强。如何充分利用非球形摄动、太阳
+光压等扰动力的联合效应,并将最优鲁棒着陆制导
+与避障控制相结合,实现小行星表面的精确着陆,
+具有重要的意义。
+老->堇考_文律i犬(References)
+[1] Braun R D, Manning R M. Mars exploration entry,
+descent, and landing challenges[ 刀 - Journal of Spacecraft
+and Rockets, 2007, 44(2): 310-323
+[2]崔平远,于正湿,朱圣英,火星进入段自主导航技术
+研究现状与展望[宇航学报,2013,34(4):447-456
+Cui Pingyuan, Yu Zhengshi, Zhu Shengying. Research
+progess and prospect of autonomous navigation
+techniques for Mars entry phase[J]. Joural of
+Astronautics, 2013, 34(4): 447-456
+[3] Ashwin R V Allen C, Jeffrey R B, et al. Assessment of
+environments for Mars Science Laboratory entry,
+descent, and surface operations[J]. Space Science
+Review, 2012, 170: 793-835
+[4] Hastings W K. Monte-Carlo sampling methods using
+Markov chains and their applications[ 刀 Biometrika,
+1970, 57(1): 97-109
+[5] Liu J S, Chen R. Sequential Monte-Carlo methods for
+dynamic systems[J]. Journal of the American Statistical
+Association, 1998, 93(443): 1032-1044
+[6] Park R, Scheeres D. Non-linear mapping of Gaussian
+statistics: theory and applications to spacecraft trajectory
+design[J]. Journal of Guidance, Control, and Dynamics,
+2006, 29(6): 1367-1375
+[7] Prabhakar A, Fisher J, Bhattacharya R. Polynomial
+chaos-based analysis of probabilistic uncertainty in
+hypersonic flight dynamics[J]. Journal of Guidance,
+Control, and Dynamics, 2010, 33(1): 222-234
+[8] Benito J, Mease K D. Mars entry guidance with
+improved altitude control[C]//AIAA/AAS Astrodynamics
+Specialist Conference and Exhibit. Keystone, Colorado,
+USA, 2006-08-21
+[9] Benito J, Mease K D. Reachable and controllable sets for
+planetary entry and landing[J]. Journal of Guidance,
+Control, and Dynamics, 2010, 33(3): 641-654
+[10] Tetzman D G Simulation and optimization of spacecraft
+re-entry trajectories[D]. University of Minnesota, 2010
+[11] Lafleur J M, Cerimele C J. Mars entry bank profile
+design for terminal state optimization[J]. Journal of
+Spacecraft and Rockets, 2011, 48(6): 1012-1024
+[12] Murray J E, Tartabini P V Development of a Mars
+airplane entry, descent, and flight trajectory[R]. National
+Aeronautics and Space Administration,Dryden Flight
+Research Center, 2001
+[13] Kluever C A. Entry guidance performance for Mars
+precision landing[ 刀 . Journal of Guidance, Control, and
+Dynamics, 2008, 31(6): 1537-1544
+[14] Calhoun P Queen E. Entry vehicle control system design
+for the Mars Smart Lander{C]//AIAA Atmospheric Flight
+Mechanics Conference and Exhibit. Monterey, CA,
+2002-08-05
+[15] Wolf A A, Tooley J, Ivanov M, et al. Performance trades
+for Mars pinpoint landing[C]//2006 IEEE Aerospace
+Conference. Big Sky, MT, 2006
+[16] Wolf A A, Acikmese, B, Cheng Y, et al. Toward
+improved landing precision on Mars[C)//2011 IEEE
+Aerospace Conference, Big Sky, MT, 2011-03-05
+[17] Striepe S A, Way D W, Dwyer A M, et al. Mars science
+laboratory simulations for entry, descent, and landing[J].
+[18] Stahl B A, Braun R D. Guidance, navigation, and control
+technology system trades for Mars pinpoint landing[R].
+Space System Design Lab, Georgia Institute of
+Technology, 2008
+[19] Ploen S, Acikmese B, Wolf A A. A comparison of
+powered descent guidance laws for Mars pinpoint
+landing[C]//AIAA Guidance, Navigation, and Control
+Conference. Keystone, CO, 2006
+[20] Wong E, Singh G Masciarelli J P Autonomous guidance
+and control design for hazard avoidance and safe landing
+43(2): 378-384
+[21] Dr Souza C N. An optimal guidance law for planetary
+landing[C]//AIAA Guidance, Navigation and Control
+Directorate Conference. New Orleans, USA, 1997-08
+[22] Acikmese B, Ploen S R. Convex programming approach
+to powered descent guidance for Mars landing[J].
+Journal of Guidance, Control, and Dynamics, 2007,
+30(5): 1353-1366
+[23] Carson J M, Acikmese B, Blackmore L, et al
+Capabilities of convex powered-descent guidance
+IEEE Aerospace Conference. Big Sky, MT, 2011-03
+[24] Blackmore L B, Acikmese B, Scharf D P Minimum-
+landing-error powered-descent guidance for Mars landing
+using convex optimization[J]. Journal of Guidance,
+Control, and Dynamics, 2010, 33(4): 1161-1171
+[25] Shen H, Seywald H, Powell R W. Desensitizing the
+minimum-fuel powered descent for Mars pinpoint
+landing[J]. Journal of Guidance, Control, and Dynamics,
+2010, 33(1): 108-115
+[26] Wolf A A, Sklyanskiy B, Tooley J, et al. Mars pinpoint
+landing systems[J]. Astrodynamics, 2007, 129: 959-977
+[27] Brady T, Robertson E, Epp C, et al. Hazard detection
+methods for lunar landing[C]/2009 IEEE Aerospace
+Conference. Big Sky, MT, USA, 2009: 561-568
+[28]崔平远,乔栋.小天体附近轨道动力学与控制研究现
+WERE]. 力 学 进 履 , 2013, 43(5): 526-539
+Cui Pingyuan, Qiao Dong. Research progress and
+prospect of orbital dynamics and control near small
+bodies[J]. Advances in Mechanics, 2013, 43(5): 526-539
+[29] Rossi A, Marzari F, Farinella P Orbital evolution around
+1173-1180

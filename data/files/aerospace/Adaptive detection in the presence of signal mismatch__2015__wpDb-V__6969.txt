@@ -1,0 +1,258 @@
+Adaptive detection in the presence of signal mismatch
+The problem of adaptive detection in the situation of signal mismatch is considered; that is, the actual signal steering vector is not aligned with the nominal one. Two novel tunable detectors are proposed. They can control the degree to which the mismatched signals are rejected. Remarkably, it is found that they both cover existing famous detectors as their special cases. More importantly, they possess the constant false alarm rate(CFAR)property and achieve enhanced mismatched signal rejection or improved robustness than their natural competitors. Besides, they can provide slightly better matched signals detection performance than the existing detectors.
+
+信号抑制 自适应检测 失配 不匹配 探测器 导向矢量 CFAR 恒虚警率  
+
+INTRODUCTION
+The finite volume method has been common-
+ly used in computational fluid dynamics (CFD).
+However, the accuracy of the finite volume meth-
+od is limited to the second order in most cases.
+The accuracy can be improved by high resolution
+schemes that usually involve high computational
+effort. The discontinuous Galerkin (DG) method
+is regarded as an alternative approach for CFD
+based on the finite volume framework. The DG
+finite element method has been popular as a nu-
+merical technique for solving the conservation
+laws[Leland has been successfully applied to a va-
+riety of problems, such as fluid dynamics, acous-
+tics and magnetohydrodynamics.
+Depending on the basis function applied to
+the scheme, the DG scheme may be divided into
+Imodalrr4i or nodal??!, It has also been developed
+for the Burgers equationrlr2 which is a simpli-
+fied model equation of the hyperbolic conservation
+laws, and the compressible Navier-Stokes-Fourier
+Foundation items: Supported by the National Research Foundation of the Ministry of Education, Science and Technolo-
+gy of Korea (Priority Research Centers Program NRF
+R1A2A2A02-046270).
+Received date: 2013-04-15; revision received date: 2013-07-20
+Corresponding author: Rho Shin Myong, Professor, Ph. D. , E-mail: myong@ gnu. ac. kr.
+(NSF) equations'*?1, This method combines key
+features of the finite element and finite volume
+methods. In the DG method, field variables are
+considered discontinuous across elemental bound-
+ary, which circumvents the need of assembling
+computationally demanding global matrix and
+leads to a less in-core memory required in compu-
+tation. The DG method easily handles complicat-
+ed geometry and boundary conditions by utilizing
+unstructured grids and multi-grids. Moreover,
+the DG method can be parallelized and thus suits
+well for parallel computer platforms. The DG
+method has several useful mathematical proper-
+ties with respect to conservation, stability, and
+convergence[] These advantages are the motiva-
+tions to select the DG method for numerical solu-
+tions of the conservation laws in the present
+work. The aim of the present study is to develop
+an explicit modal DG scheme for the conservation
+laws in conjunction with nonlinear coupled constt-
+tutive relation (NCCR) models in order to inves-
+tigate the structure of shock waves in thermal
+2012-048078; Basic Science Research Program NRF 2012-
+nonequilibrium. The theoretical breakthrough of
+the proposed scheme is that a DG scheme for rar-
+efied gases is developed by introducing an auxilia-
+ry unknown of the stress and by solving the non-
+Newtonian constitution relation in algebraic way.
+1 DG SCHEME FOR NSF EQU-
+ATIONS
+Non-dimensional vector form of the NSF
+equations can be expressed as[7-4]
+9 心 十 fu,(U) 十 Fs(U, U) 二 0
+the mass density,x the fluid velocity in z-direc-
+tion, p the pressure, E the total energy density,
+IT the shear stress in z-direction, and Q the heat
+flux. H the spatial coordinate is reduced by the
+mean free path A, the dimensionless parameters
+are N, = +/2y/x Ma, Reynolds number Re =
+Vyr/2Ma, and Ec=(y—1)Ma*", The parame-
+ter Y is the specific heat ratio of gas, Pr the
+Prandtl number, and Ma the reference Mach
+number. For classical NSF model, the shear
+stress IT and the heat flux Q are computed as fol-
+lows:TI 一 一 (4/3) x(ax/9zr),Q 一 一 K(3T/3z),
+where K is the thermal conductivity K =T°,T
+the gas temperature and s a constant, 了 一 p/p,
+and x the viscosity, ug 二 亡 The relation, p=
+yXMaz(y 一 1) (pE 一 0. 5px2: ), is also used in the
+formulation.
+The mixed DG formulation proposed in
+Ret. [4] is employed in spatial discretization of
+the NSF equations. This formulation will solve
+the second-order derivatives in viscous terms by
+adding auxiliary unknown S,because the second-
+order derivative cannot be accommodated directly
+in a weak formulation using a discontinuous func-
+tion space. In this work, § is chosen to be deriva-
+tives of the conserved variables U, setting S(U)=
+T° VU. Then a coupled system for S and U can be
+derived as
+The spatial derivatives of primitive variables
+such as x: are then computed by expanding the
+derivatives of the conservable variables, for ex-
+ample 了 x: = (1/p 《 T" (pu), — T°p,u). Consti-
+tutive relations for two models are expressed as
+follows: For the NSF model (IT, Q )xusF =
+finer (S(U)), and for the NCCR model (IT,
+Q) Neer = froontiner (SU), py T). In order to dis-
+crete the coupled system (1), the numerical solu-
+tions of U and § are approximated by LUh and Sh ,
+respectively, shown as
+where p is the basis function. Computational do-
+main contains N elements (cells) that are equally
+spaced. In this study, orthogonal Legendre basis
+function is adopted for the function @. The cou-
+pled system (1) is multiplied with the basis func-
+tion p ,and then integrated by parts for derivative
+terms over element I s SO the weak formulation of the
+coupled system can be derived to find Uy, and Su
+where 31 denotes the boundaries of the element
+I. The equations of auxiliary unknowns are re-
+solved first to compute the derivatives of conser-
+vative variables, in which the variable T(x) is
+updated at each time step. The boundary inte-
+grals of each element are replaced by a numerical
+flux function h as follows.
+h.(U ,U ,n)=0.5[F, WU )+
+Hu,(U+ ) 一 C(CU+ 一 - ]
+where C=max(|u~ | 十 ar/Ma, |x+ | 十 a+ /Ma).
+For inviscid terms, the local Lax-Friedrichs
+(LxF) flux,fRuv is applied. The Mach number
+a/Ma, instead of the speed of sound a (= T?),
+appears in formulation of the coefficient C from
+the characteristic speed in dimensionless form.
+The central flux is applied to the remaining
+boundary integrals
+h, (U?,8 ,U",S";n) =~
+0.5[F,;,(U,8)+F,,(U",8)]
+hx (UU 3n) =
+0.5[T~U + T+U+]
+The volume integrals within the element I
+are resolved by the Gaussian quadrature with the
+(2k+1) Gaussian points[I1, The slope limiter and
+shock detection proposed in Ref. [2] are adopted
+for this DG scheme. At the upstream boundary,
+all Euler characteristics are incoming for super-
+sonic flow and therefore their initial values can be
+pre-determined. Otherwise, at the subsonic
+downstream boundary, only one characteristic is
+incoming and thus one physical condition must be
+imposed?. In the present study, the downstream
+velocity specified by the Rankine-Hugoniot condi-
+tion is retained to maintain the shock stationary,
+Other variables are extrapolated by using the in-
+terior adjacent values. Finally, the coupled sys-
+tem (1) can be written in semi-discrete form
+L(3U/3t) = R (U), which is resolved by the
+Runge-Kutta time integration. The time step At
+is computed ast?
+where CFL is Courrant-Friedrichs-Lewycondition
+(CFL),
+2 BURGERS EQUATION
+An explicit modal DG scheme is first devel-
+oped for the Burgers equation
+英+兰一张
+with exact solution
+WC) = ST
+`扇_=z羲】_叁_乙囊【
+where u; and &: are the fixed boundary values, In
+this model equation, the auxiliary unknown S 一
+IT 二 一 L9x/9z only is set to resolve second-order
+derivative, and 亿 1s assumed constant, The varia-
+bles x and S are numerically approximated as U,
+and S、、The LxF flux is selected for solving the
+boundary integral of nonlinear term 〔(《xzs/2) with
+the coefficient C= max (u~ su’ ). The central flux
+is applied for the remaining boundary integral to
+find U, and Sh in weak formulation. The limiter
+proposed in Ref. [2] and orthogonal Legendre ba-
+sis functions are used for calculations. The linear
+element and first-order Runge-Kutta time integra-
+tion are used to resolve L(3u/at) =R(u). Ele-
+ments are equally spaced in computational do-
+main, The NCCR model for the Burgers equation
+is also implemented into the DG scheme via an it-
+erative method. The values IT at elemental inter-
+faces are obtained via the iterative method. For
+positive and negative 亢
+瓦 , =arcsinh(fI,(1 十 交 , ) )
+where the caret "~" over a symbol represents a di-
+mensionless quantity in the ratio of the stress to
+the pressure,
+Figs.1 一 2 show computational results of the
+Burgers equation with N = 200, Ax = 0. 04,
+CFL=0.25, and x 二 0. 1. In Fig. 1, the DG NS
+results give good agreement with exact analytic
+solution, and show the effect of the NCCR model
+in computational results. Fig. 2 presents the nor-
+mal stress IT between the NS and NCCR models.
+Fig. 1 Shock structure profiles of velocity with NS and
+NCCR models
+models
+3 EXTENSION TO NSF AND CON-
+SERVATION LAWS WITH NCCR
+The NCCR model for the conservation laws
+developed on the basis of the moment method
+proposed in Refs. [7-8] is implemented into the
+DG scheme. Initial shear stress and heat flux in
+the NCCR model are computed by the values IT
+and Q at elemental interfaces from the NSF model
+The NCCR model is expressed as
+卯 ( 吹 ) = UT + DI,
+Qq(R) =UT+ DQ
+Rei二′忑一a!I-(:、si】尸薹】】[c(f+1)大,]
+For positive and negative II and Q, we have
+the equations
+1=塞董【l一(二Si【】宣`鹭〈三薹要rj)亢,,=`旨lrCSir1薹(亘砻己亡〕z要()Qs
+Solution of iterative method for NCCR equa-
+tions is considered converged when | 大 . 一 R. |<
+10“5 The converged values at the iteration (n+
+1) are then embedded back into the DG scheme
+via the following calculations
+n=.》Q=p′′!′`Z姜(箩(2s〉nt1
+4 COMPUTATIONAL RESULTS
+Upstream boundary values are set with 力 二
+u=p=T=1 at initial condition, and are main-
+tained in whole computed procedure. The Ran-
+kine-Hugoniot conditions are used to compute
+downstream boundary values. A computational
+domain 602 is used in all cases, covering the en-
+tire shock structure. The Maxwellian monatomic
+gas with s=1.0, c 二 1. 0138,Pr 一 0. 75,CFTL 二
+0. 5, and AX 二 0. 2 are used for all simulations.
+Steady state solution is reached when the RMS
+norm of the density is below 107°. The linear ele-
+ment and first Runge-Kutta method are selected
+for all simulations. Computational results are
+normalized based on quantity such as in case of
+the density p= (p— {Pupstream ) / ( aownstresm 一 Pu【)量了′t】"霉晏lm ) .
+, The simulation results of the cases Ma 一 5
+and 8 are presented in Figs. 3—5. For the NSF
+model, the results agree well with the exact ana-
+NCCR models
+Fig.4 Shock structure profiles at Ma 二 8 with NSF and
+NCCR models
+lytic solution. The difference between numerical
+results of the NSF and NCCR models is shown in
+Figs. 3 一 4,and the DG NCCR results give good
+agreement to the finite volume method (FVM)
+NCCR results in a previous work'??, Fig. 5
+shows numerical results of heat fluxes and shear
+stresses between the NSF and NCCR models.
+Fig. 6 presents the normalized density profiles at
+various Mach numbers with the NCCR model.
+Ma 二 5 and 8 with NSF and NCCR models
+numbers with NCCR model
+s CONCLUSION
+An explicit modal DG scheme has been de-
+veloped for simulating the shock wave structures.
+The mixed DG scheme based on the idea of adding
+auxiliary unknowns is employed in spatial discret-
+ization of the Burgers, NSF and NCCR equa-
+tions. The proposed scheme is limited to the one
+dimensional problem for simplicity,but it can be
+readily extended to the more complicated multi-
+dimensional situations.

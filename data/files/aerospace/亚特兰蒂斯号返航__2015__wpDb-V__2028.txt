@@ -1,0 +1,303 @@
+亚特兰蒂斯号返航
+美国航天飞机亚特兰蒂斯号9月8日在肯尼迪航天中心升空,成功地执行了一次国际空间站飞行任务。在飞行了11天19小时10分钟后,它已于美国东部时间9月20
+
+国际空间站 航天飞机 飞行任务 宇航员 肯尼迪 恒星 服务舱 俄罗斯 蓄电池 升空  
+
+CLC number: TB33 Document code: A Article ID:1005-1120(2013>04-0328-07
+INTRODUCTION
+In the past years ceramic materials have be-
+come increasingly important because these mate-
+rials combine the advanced behavior of ceramics
+such as high strength,high strength at elevated
+temperature and wearability with a non-brittle
+stress-strain behavior, However, ceramic com-
+posites are energetically prone to the formation of
+multiple matrix cracks prior to complete laminate
+failure. This, combined with the inherent com-
+plexities and stochastic nature of failure in non-
+homogeneous materials, makes the modeling of
+ceramic matrix composites (CMCs) quite diffi-
+cult. Models have been presented by several au-
+thors to predict the critical stress at which the
+matrix cracks initiates[rs31、In order to explain the
+Website of on-line first:http: / www. cnki. net/detail/32. 1
+Foundation items: Supported by the National Natural Science Foundation of China (51075204,51105195) ; the Aeronau-
+tical Science Foundation of China (2011ZB52024),
+Received date: 2011-10-28; revision received date: 2012-02-17
+Corresponding author: Gao Xiguang, Associate Professor, E-mail: gaoxiguang@ nuaa, edu. cn,
+stochastic feature of matrix cracking, Crutin et
+al. performed the study based on the statistic
+method", Trying to simulate the whole re-
+sponse of ceramic composites, Solti?! performed
+the study based on the shear lag method. Howev-
+er the shear lag method is too simple to calculate
+the microscopic stress field exactly. In addition to
+the model proposed by Solti, other models based
+on the continuum damage mechanics were pro-
+posed[rl which were however experiential.
+In this paper,a comprehensive model rela-
+ting the macro and micro response of unidirec-
+tional fiber toughened CMCs is proposed under
+tensile loading. The model describes the longitu-
+dinal strain response of C/SiC composite through-
+out the entire tensile test,taking into account all
+relevant damage. The mechanisms governing the
+389. V. 20121226.1652.011. html (2012-12-26 16.52).
+non-linear response of the composite are the ma-
+trix cracking, fiber/matrix interface debonding
+and fiber fracture. The model is based on the
+multi-scale process[IL131 and is solved by the finite
+element method(FEM).
+1 FEM-BASED MULTI-SCALE
+APPROACH
+Considering a composite wherein the micro-
+structure is periodically distributed in the axis di-
+rections (Fig. 1), where the representative vol-
+ume element (RVE) used to construct the period-
+ic array is highlighted. In the framework of Su-
+quet L the displacements are decomposed as
+follows
+where X=(X,,X,,X;) is the macroscopic (glob-
+al) coordinate, X 一 (xl,Xay, s 》the displacement,
+5s the global strain, u; the fluctuating displace-
+ment,
+Fig.1 Composite material with periodic microstructure
+The global strain and stress are defined as
+the average of the local strain and stress within
+RVE, shown as
+If the effect of body force is ignored, the vir-
+tual work principle has the following form
+where stands for the domain of RVE, and S, the
+stress boundary.
+For the linear material, the constitutive
+equation 1s
+Substitution of Eq. (4) into Eq. (3) gives
+that
+The Cauchy infinitesimal strain tensor is de-
+fined as
+Substitution of Eq. (1) into Eq. (6) gives that
+E万=昌邑翼+e;C7》
+where
+辜缅=告(z夏i'j一卜一z;j'乏)(8)
+Substitution of Egs. (1,7) into Eq. (5) gives
+that
+The global strain keeps constant in the
+process of deformation. Therefore the variation of
+sy is zero. Eq. (9) becomes
+The domain 1s discretized into a set of ele-
+ments and the shape function“N* is defined on
+each element. Then Eq. (10) becomes
+Then the fluctuating displacement and varia-
+tion of fluctuating displacement are approximated
+by linear combinations of their nodal values and
+shape functions, namely
+Then the fluctuating strain becomes
+where
+Combination of Eqs. (11—13) gives that
+辜〕j′ST言Z`/′】(箩′z〕刍【'ds(15)
+Simplification of Eq. (15) gives that
+where
+If the periodic boundary conditions are em-
+ployed, the relation between global strains and
+nodal values of fluctuating displacement are given
+by the solution of Eq. (16), which has the follow-
+ing form
+“宏一区Cnpnnem十[(18)
+where “ 七 Cum is the component of a four-order
+tensor and decided by the material properties and
+the shape of element, ‘UZ the component of a two-
+order tenser and decided by the stress boundary
+conditions.
+The integral is performed in each element.
+Then global stress becomes
+where ‘cy is the average strain of element and de-
+fined as
+Substitution of Eq. (12) into Eq. (20) gives that
+Then the global stress becomes
+Substitution of Eq. (18) into Eq. (22) gives
+that
+Simplification of Eq. (23) gives that
+where
+Eq. (25) gives the formulation of effective
+elastic tenser of material.
+2 DAMAGE MECHANISMS AND
+MODELING
+In CMCs continuous cylindrical fibers are
+embedded in a high performance ceramic matrix
+which is typically some derivatives (oxide, ni-
+tride, or carbide) of silicon, aluminum, titanium
+or zirconium. An example is C/SiC CMCs which
+embed small diameter carbide fibers into a carbo-
+rundum matrix. CMCs exhibit a remarkable in-
+crease in toughness compared with their mono-
+lithic counterparts.
+The degree of toughening exhibited by CMCs
+is a function of the strength of the interface, the
+frictional of shear resistance within debonded re-
+gions and the strength of the matrix and fiber. In
+order to describe the train response of CMCs un-
+der a tensile test, three damage mechanisms
+which are micro-cracking of tmatrix,fiber/matrix
+interface debonding and fiber fracture are em-
+ployed in this model. The model consists of a rec-
+tangular array of perfectly aligned fibers in a ma-
+trix (Fig. 1). The thickness of the interphase be-
+tween fiber and matrix is assumed to be negli-
+gible.
+2.1 Matrix failure
+Previous work on unidirectional fiber tough-
+ened CMCs has indicated that during tensile
+stressing matrix cracks develop into more or less
+periodic arrays, with a characteristic spacing.
+The proposed model assumes the cracks to be
+equidistant and spanning the entire cross section
+of the material. The crack distance L is deter-
+mined by the critical matrix strain energy
+(CMSE) approach [i4151、 In general, the CMSE
+criterion states that matrix cracking at any strain
+level e with the average crack spacing of 工 and a
+fiber/matrix length d (Fig. 2) will occur when
+the matrix strain energy is equal to its critical val-
+ues rm Le,
+U =Ucm 27
+in the matrix at the critical composite stress, o..
+That means U,, keeps constant and equals to 厂 .
+at any stress lever which is greater than go.
+However, the initial crack spacing, 止 x at 5 二
+Oc? Must be determined for the CMSE failure cri-
+terion. For the current analysis, the initial crack
+spacing is chosen such that the strain energy of
+the damaged configuration is “close” to the strain
+energy in the undamaged configuration U,,. For
+example, the deviation is three percent (i. e.
+U 二 0. 97LJ ), [LTuo is the matrix strain energy
+calculated by
+where S is the area of matrix, E, the elastic
+modulo of matrix, E, the elastic modulo of com-
+posite,which is
+E.=vEi+v,En (29)
+where Vt ? Uy are the volume fraction of the fiber
+and matrix. For the present study, a constant de-
+viation of one percent is used for all cases, that is
+Uecm 一 0. 99U no (30)
+2.2 Interface debonding
+As matrix cracks form within the composite,
+they can also induce interface debonding. These
+usually result from the large stress fields near the
+matrix crack-tip. Since the debonding is in reality
+a crack which propagates along the fiber/matrix
+interface, the extent of debonding can be esti-
+mated using classical fracture mechanics tech-
+niquesn5-18],However,to avoid the complexities
+which accompany such approaches,a simple and
+more common approach is to employ a maximum
+stress criterion in which the debonding occurs
+whenever the interface shear stress exceeds the
+ultimate bond strength of the interface,
+rult[119“201、 万 he parameter rut is assumed to be a
+material constant, and, if known, the extent of
+interface debonding can be determined by ensu-
+ring that the maximum shear along the interface
+never exceeds this maximum amount, i.e.
+Ti (x) max — Tul 3D)
+The shear stress in the debonding region is typi-
+cally assumed to be constant and governed by
+Coulomb friction with magnitude 7; [20211.
+2.3 Fiber fracture
+The percentage of fracture fibers, f, in
+CMCs is typically determined using some type of
+statistical failure criterion. The most common ap-
+proach is to use a two-parameter Weibull distri-
+bution like the following.
+苋=1一f:xp{(r量)′′'}_】(32)
+where ￠, is the characteristic fiber strength and m
+the tradition Weibull modulus. From Eq. (32), a
+corresponds to a survival probability of 0. 37%.
+The shape and scaling parameters, m and a,? may
+be determined by fitting empirical data; however,
+their solution is somewhat involved since the vari-
+ation in f versus d cannot be solved directly.
+2.4 Simulation of damage process
+The modeling process is divided into four
+steps: -
+(1) Before damage developing, the compos-
+ite is represented by a perfect RVE (Fig. 3 (a)).
+At this step, the material is elastic, and the glob-
+al behavior is described by Eq. (29).
+(2) When the matrix cracking occurs and the
+interface is perfect, the configuration of RVE is
+presented by Fig. 3 (b). At this step, the crack
+space is determined by
+U(广)二口.(33)
+(3) In the presence of matrix cracking and
+partially debonded interfaces, the composite is
+described by a corresponding RVE with a matrix
+crack and a partially debonding interface
+(Fig.3 (￠)). The crack space and debonding
+length are determined by
+Un (Lyd) =Uims tmx (Lyd) 二 ru: (34)
+where d denotes the debonding length of inter-
+face, and ruk the shear strength of the perfect in-
+terface.
+(4) When d is close to L/2, the configura-
+tion of RVE is presented by Fig. 3 (d). In this
+case, the behavior of the composite is dominated
+by
+at — fevie Efee=0 (35)
+where g; denotes the fiber stress while v; the vol-
+ume fraction of fiber.
+(a) Perfect RVE (b) RVE with a matrix crack
+Fig. 3 Configurations of RVE at each damage state
+3 FINITE ELEMENT RESULTS
+AND DISCUSSION
+The constituent properties used for the simu-
+lation are summarized in Table 1. RVE is loaded
+by uniaxial tensile stress in fiber direction. The
+initial linear elastic behavior ends because of the
+crack initiation in the matrix and the debonding of
+interface.
+Table 1 Material property data of C/SiC
+the fiber fracture occurs, Then there is a reduc-
+tion of the elastic coefficients of the fiber. The
+experimentally determined points[2 and simula-
+ted results are given in Fig. 4, where the range
+between A and B is linear because RVE is per-
+fect. For higher loading of RVE, matrix cracking
+initiates and the interface debonding occurs (B-
+C). In the range between C and D, the matrix
+cracks saturate because the matrix cannot receive
+enough energy from fiber since the interface
+debonding. In this range interface debonding is the
+only damage mechanism which dominates the be-
+havior of the material. As load increases, the in-
+terface debonding length approaches L/2 and the
+fiber fracture dominates the mechanics behavior
+of the composite (D-E). The curves of matrix
+crack space and interface debonding length which
+are calculated by the model are shown in Fig. 5.
+along with experimental values
+4 CONCLUSION
+A FEM-based multi-scale approach is pro-
+posed to simulate the non-linear mechanical be-
+havior of ceramic matrix composite. The present
+results suggest that:
+the model proposed in this paper is fit quite well
+with the experience.
+(2) Fiber reinforced CMC is an approximate
+linear composite if there is no damage. The stiff-
+ness of CMC declines when the damage appears.
+(3) The matrix cracking, interface debond-
+ing and fiber fracture are the basic damage mech-
+anism of ceramic composites, When the external
+load exceeds the critical stress, matrix cracking
+initiates and then the interface debonding occurs.
+4) The matrix cracks saturate because the
+matrix cannot receive enough energy from fiber
+because of the interface debonding. In this range
+interface debonding is the only damage mecha-
+nism which dominates the material behavior .
+(5) As load increases, the interface debond-
+ing length approaches half of the distance between
+adjacent matrix cracks, and the fiber fracture will
+be the main factor affecting the mechanics behav-
+ior of the composite.

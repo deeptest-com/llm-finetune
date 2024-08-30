@@ -1,0 +1,229 @@
+STUDY OF FASTT RANSFER  ALIGNMENT ON MOVING BASE
+This&nbsp;paper&nbsp;holds&nbsp;that&nbsp;the&nbsp;key&nbsp;to&nbsp;improve&nbsp;the&nbsp;hitting&nbsp;rate&nbsp;of&nbsp;air-to-air&nbsp;missiles&nbsp;is&nbsp;to&nbsp;decrease&nbsp;the&nbsp;error&nbsp;of&nbsp;initial&nbsp;alignment&nbsp;of&nbsp;the&nbsp;inertial&nbsp;navigation&nbsp;system.&nbsp;Therefore,&nbsp;considering&nbsp;that&nbsp;the&nbsp;alignment&nbsp;should&nbsp;be&nbsp;completed&nbsp;within&nbsp;a&nbsp;specified&nbsp;short&nbsp;time,&nbsp;this&nbsp;paper&nbsp;presents&nbsp;the&nbsp;theory&nbsp;of&nbsp;transfer&nbsp;alignment&nbsp;and&nbsp;the&nbsp;computing&nbsp;way&nbsp;of&nbsp;accuracy&nbsp;in&nbsp;an&nbsp;air-to-air&nbsp;missile,&nbsp;where&nbsp;the&nbsp;platform&nbsp;inertial&nbsp;navigation&nbsp;system,&nbsp;or&nbsp;master&nbsp;INS,&nbsp;is&nbsp;adopted&nbsp;on&nbsp;aircraft,&nbsp;and&nbsp;the&nbsp;strap-down&nbsp;inertial&nbsp;navigation&nbsp;system,&nbsp;or&nbsp;slave&nbsp;INS,&nbsp;is&nbsp;used&nbsp;on&nbsp;missile.&nbsp;It&nbsp;emphasizes&nbsp;the&nbsp;idea&nbsp;of&nbsp;transfer&nbsp;alignment,&nbsp;that&nbsp;is,&nbsp;calibration&nbsp;of&nbsp;the&nbsp;slave&nbsp;INS&nbsp;is&nbsp;based&nbsp;on&nbsp;the&nbsp;master&nbsp;platform,&nbsp;and&nbsp;adopts&nbsp;a&nbsp;reasoning&nbsp;measure&nbsp;to&nbsp;deal&nbsp;with&nbsp;the&nbsp;installing-error-angle.&nbsp;And&nbsp;it&nbsp;is&nbsp;proved&nbsp;by&nbsp;simulation&nbsp;that&nbsp;the&nbsp;transfer&nbsp;alignment&nbsp;can&nbsp;be&nbsp;quickly&nbsp;achieved.
+
+TRANSFER alignm ENT M oving BASE inertialnavigation  
+
+0引言
+复合固体推进剂在火箭推进领域成为研究热点已
+超过50年,20世纪60~70年代期间,主要在复合推进
+剂燃烧特性和理论建模方面进行了广泛的研究,致力
+解决燃速-压力关系;在其后的15年间,研究步人一个
+相对低迷期,紧接着由于实验诊断技术和数值模拟的
+发晚,复合固体推进剂的研究又逐渐兴起。AP/HTPB
+复合固体推进剂燃烧时,出现复杂的多火热结构,在实
+际火箭发动机燃烧室中,由于该火焰的微观儿何特性,
+使得研究该火焰结构非常困难。直到198648,Price!”
+采用三明治推进剂(氧化剂/燃料/氧化剂)结构布置
+后,才使得研究该火焰结构成为可能。复合固体推进
+剂燃烧过程中,出现明显的扩散火焰,在燃烧表面附
+近,由于温度较低,扩散火焰不能一直延伸到推进剂表
+面,因此出现火焰前沿;在火焰前沿与推进剂表面之
+间,氧化剂和粘合剂分解气体发生探混,所以前沿结构
+也表现出部分预混特性,Price称该结构为前沿火焰结
+ 4(leading-edge-flame,LEF)。其后,由于实验诊断技
+术的发展,使得观察该火焰结构成为可能。Chorpening
+等““、Ramakrishna等““通过高速摄影的方式,观察到
+前沿火焰结构的分离情况,该结构对燃烧表面轮廓有
+较大影响。Fitzgerald等1通过紫外发射和透射成像
+技术讨论了不同条件下前沿火焰结构合并、分离情况,
+并给出了其合并、分离区域及过渡转变的临界条件。
+本文以三明治结构布置,针对复合固体推进剂扩
+散火焰结构,研究了Pe数和Da对前沿火焰结构的影
+咿,对认识复合固体推进剂燃烧有参考价值。
+1“物理模型
+AP/HTPB固体推进剂燃烧二维三明治模型如图
+1所示,仅针对复合固体推进剂燃烧表面上方的扩散
+火焰结构,未考虑燃面与气相之间的耦合,假设燃烧表
+面为平面,界面处质量流量为常数,氧化剂和粘合剂在
+燃烧表面处分解为氧化性气体X和粘合剂产物Y,气
+相成分只考虑组分X.Y和燃烧产物P,化学效应只考
+虑与扩散火焰结构相关的一阶有限速率化学反应;气
+相密度为常数,故忽略气体状态方程;气相区域采用
+Ossenf近似,认为只存在竖直方向的速度分量,消除
+动量方程;在气相中,Le=1;在实际的固体火箭发动机
+工作条件下,对流速率和组分输运速率在一个量级“,
+燃烧表面处的边界条件由传统的Dirichlet边界条件变
+为流量边界条件。
+2“数学模型
+21控制方程
+采用如图1所示坐标系,组分方程和能量方程为
+式中X为沿y方向的质量流量;p为气相密度;D为
+二元扩散系数;c,为气体比定压热容;A为气体热导
+率;ax、ay为基于质量的化学计量系数;42为化学反应
+源项;@为化学反应热释放总量。
+2.2气相化学动力学
+AP一步分解反应生成氧化性气体混合物XX
+为 :1.62H,0+1.1050,+0.265N,+0.12N,0+0.23NO+0.
+76HC1+0.12Cl, ,
+当AP/HTPB复合固体推进剂燃烧时,由于AP独
+特的物化特性,使得AP单元火焰主要在集中在AP表
+面上方,作用是维持AP自持分解,厚度仅为几个微
+米。因此,在栋种程度上,可把APBITKESEER
+相表面反应““。在实际的火箭发动机工作环境下,
+Gordon 和 McBride!” IF T AP/HTPB 的 气 相 化 学 反
+应可等效为AP/C,Hs的气相反应过程,故HTPB的分
+解产物Y为CH,因此,氧化剂AP在燃烧表面处分
+解产生氧化性气体混合物X,粘合剂HTPB在燃烧表
+面出分解产生CJHs,AP/HTPB的气相化学反应简化
+为X和工的扩散化学反应。
+故气相化学反应为
+ayX + ayY = Products (2)
+其化学反应源项为
+式中8为指前因子;p为燃烧压强;n为燃烧压强指
+数;为活化能;R为普适气体常数。
+为讨论方便,将压力项包含在指前因子中
+B=Bp",
+2.3边界条件
+(1)燃烧表面处边界条件为
+(2)远在边界
+(3)对称边界
+24“无量纲化
+作无量纲变换:
+同时,引人贝克莱数Pe=ML/pD和达姆科勒数Da
+=BLayay/M,Pe表征对流速率与组分输运速率的相对
+—767一
+大小,Da表征无量纲化学反应速率大小,那么方程组
+变为
+其边界条件变为
+25“参数取值
+对AP/HTPB复合固体推进剂,氧化剂蒸气与粘
+合剂蒸气化学计量比8一般在7左右,满足化学计量
+配比时,粘合剂含量为a=1/(148);Pe的变化范围是
+0.5~20,Da的量级大致为0.1e“%,可取Da=Se%;axay
+为化学计量参数,其比值满足ax/axs=B即可。假设无
+量纲绝热火焰温度按Burke-Schumann扩散火焰面温
+度给出:
+11
+—_—十~一
+ay Qy
+本 文 计 算 过 程 中 ,8=7,58=0.1~0.5,7.=1,7, = l/
+3,1/ax=16/21,1/ay=16/7,
+3“结果分析
+3.1 Schvab-Zeldovich 分 析
+引 人 Shvab-Zeldovich 变 量 Z =a, ( 丁 - 九 ) , 按
+Burke-Schumann同轻射流扩散火焰理论,在火焰面处,
+组分XY将变为零,即Z=0,那么Z=0可称为化学计
+量 表 面 ( stoichiometric level surface,SLS) , 或 称 为 虚 拟
+扩散火焰面,其位置由式(14)求得:
+该式边界条件为
+该边界条件为流量边界条件,即考虑了Pe数较小
+时,对流输运速率与组分扩散速率在相合量级时,来流
+质量流量等于对流输运质量流量与扩散输远质量流量
+之和,化学计量表面SLS与推进剂表面的交点在氧化
+剂与粘合剂交界面处偏向氧化剂侧,见图2。
+一768一
+图 2 化学计量表面SLS随PeTH(a=0.125)
+Fig.2 Variation of stoichiometric level surface vs
+Pe number (a=0.125)
+该偏移将随着Pe数的增大而逐渐趋近于氧化剂
+和粘合剂交界面Ix!=0.125处。假设当Pe一o时,式
+(15)的边界条件变将为Dirichlet边界条件,即
+采用流量边界条件与Dirichlet边界条件的主要区
+别在于燃烧表面处的Z值是否连续。当札用Dirichlet
+边界条件时,在氧化剂和粘合剂交界面处,Z值由1阶
+既变化到-~8,而流量边界条件则连续,如图3所示。当
+采用流量边界条件时,Z=0在1x1=0.26处,偏离氧化
+剂和粘合剂交界面|x|=0.125;当采用Dirichlet边界条
+件时,从Z值分布可看出,氧化剂不能出现在粘合剂
+侧,粘合剂不也能出现在氧化剂侧,该结果与实际条件
+不相符“。
+图 3 不同边界条件下燃烧表面处Z值分布
+〔a=0.125,Pe=5)
+Fig.3 Z values of the surface for different boundary
+condition{ @=0.125,Pe=5)
+图 4 给出了采用流量边界时的组分分布,虚线表
+示化学计量表面SLS。氧化性组分X穿越化学计量表
+面SLS出现在粘合剂上方,而粘合剂产物Y也出现在
+看,将在粘合剂上方出现富燃预混区,氧化剂上方出现
+贫燃预混区,而沿着化学计量表面SLS出现弱的扩散
+火焰区,整个火焰区结构将沿着化学计量表面延伸到
+燃烧表面。
+图 5 给出了不同Pe数下的无量纲化学反应速率
+分布。如果按照Burke-Schumann纯扩散火焰理论,其
+扩散火焰结构应分布在化学计量表面SLS曲线两侧,
+并延伸到推进剂表面。但图5表明,该火焰结构仅占
+据化学计量表面SLS一部分,在SLS曲线之间,出现部
+分预混的火焰结构。一方面,由于燃烧表面附近温度
+较低,而不足以使化学反应延伸到燃烧表面,因而出现
+火焰前沿;另一方面,在火焰前沿与燃烧表面之间,组
+分X和Y相互扩散混合,在粘合剂上方出现部分预混
+火焰,最大化学反应速率出现在前沿火焰结构LEF
+中,该结构在SLS曲线偏向富燃预混区。随着Pe数的
+增大,对流速率逐渐增强,而扩散混合速率基本不变,
+组分混合受到抑制,预混火焰区域变薄,扩散火焰高度
+增加,热释放核心区域的化学反应速率也逐渐增强。
+图 6 给出了不同Da数下的无量纲化学反应速率
+分布。随着达姆科勒数的增加,化学反应速率逐渐增
+强,火焰结构逐步靠近燃烧表面;另一方面,随着达姆
+科勤数的增加,在粘合剂上方所形成的预混化学反应
+逐渐减弱,合并的前沿火焰结构逐渐分离,形成一个不
+太 明 显 的 三 重 火 煊 ( Tribrachial or triple flame ) [13] 的 前
+沿火焰结构LEF,在粘合剂上方,该结构有明显的富燃
+预混火焰区,但处在氧化剂上方的贫燃预混火焰结构
+却不明显。气相区的扩散火焰由部分预混的前沿火焰
+结构LEF和沿着化学计量表面SLS的尾迹扩散火焰组
+成。当粘合剂含量a为0.2,Pe为10时,Da数的变化
+并不能改变化学计量表面SLS的位置,但使热释放核
+心更加集中在前沿火焰结构LEF中,扩散火焰更加集
+中在化学计量表面SLS两侧。
+(a)Pe=5 (b)Pe=7 (c)Pe=10
+图 5 不同Pe数下的化学反应速率和火焰面分布
+【a=0.2,5=0.1)
+Fig.5 Reaction rate and flame sheet distribution of
+different Pe number(a=0.2,6=0.1)
+(a)6=0.1 (b)5=0.2 (c)6=0.5
+图 6 不同Da数下的化学反应速率和火焰面
+SH (a=0.2,Pe=10)
+Fig.6 Reaction rate and flame sheet distribution of
+different Da number(a=0.2,Pe=10)
+3.3“粘合剂含量对火焰结构的影响
+图 7 是不同粘合剂含量下的化学反应速率分布。
+(a)a=0.1 (b)a=0.125 (￠)a=0.2
+图 7 不同粘合荣吴量下的化学反应速率和
+火焰面分布(Pe=5,6=0.2)
+Fig.7 Reaction rate and flame sheet distribution of
+different content of binder(Pe=5,5=0.2)
+当B=7时,氧化剂和粘合剂的化学计量配比是c
+=1/(1t+B)=0.125,如果粘合剂含量a<c,则类似于
+>c,则形成类似于Burke-Schumann的过通风情形,如
+图 7(e) 所示。同时,随粘合剂含量增加,燃烧表面上
+方扩散长度尺度增加,扩散混合效果将减弱,粘合剂中
+心x=0上方的预混化学反应逄渐喜弱,扩散火焰结构
+逐渐延伸到氧化剂中心Ix1=1。
+3.4“火焰结构对气相热反馋的影响
+图 8 给出了不同Da数下的气相对燃烧表面的无
+量纲热反馈(97/3y),虚线表示化学计量表面SLS与
+燃烧表面的交点。
+图 8 不同Da数下的气相热反馈(a=0.2,Pe=5)
+Fig.8 Heat feedback from the gas of different Da number
+(@=0.2,Pe=5)
+气相区的热释放分布星“W“状,因而气相对燃烧
+表 面 的热反馈君倒“W“的驼峰状,最大热反馈恰好出
+现在化学计量表面与燃烧表面的交点处,因此在桅种
+程度上说,化学计量表面SLS对气相区域的热反馈有
+重大影响。由于沿着化学计量表面SLS的尾迹扩散区
+域的化学反应速率较低东距燃烧表面较远,其作用主
+要是增加气相区火焰温度,对燃烧表面的热反馈可以
+忽略;而气相场的热释放核心集中在前沿火焰结构
+LEF中,且该结构距燃烧表面的距离较近,因此,气相
+对燃烧表面的热反馈主要由该结构主导。由前述分析
+知,当粘合剂含量不变时,Pe数决定化学计量表面SLS
+的位置,而Da数却决定气相对燃烧表面热反偷的大
+小;当Pe和Da数不变时,粘合剂含量的变化将改变化
+学计量表面SLS的位置,从而也将影响到燃烧表面的
+热反馈。因此,它们共同影响着气相区扩散火焰结构,
+从而影响复合固体推进的燃烧状态。
+4结论
+(1)讨论了AP/HTPB复合固体推进剂燃烧过程
+中,组分扩散输运速率与对流输运速率在同一个量级
+时,燃烧表面处采用流量边界条件而不是Dirichlet边
+界条件,化学计量表面SLS与燃烧表面的交点在氧化
+剂与粘合剂交界面处偏向氯化剂侧,该偏移对气相热
+反馋有重要影响。
+一770—
+(2)气相区的扩散火焰由部分预混的前沿火焰结
+构LEF和沿着化学计量表面SLS的尾迹扩散火焰组
+成,化学反应核心区域出现在前沿火焰结构LEF中。
+(3)当粘合剂含量不变时,Pe数增加时,扩散火焰
+高度增加;当Da数增加时,将改变前沿火焰结构LEF
+距离燃烧表面的距离,它们共同影响着扩散火焰结构。

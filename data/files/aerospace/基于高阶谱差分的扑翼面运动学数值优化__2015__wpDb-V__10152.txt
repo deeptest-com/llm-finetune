@@ -1,0 +1,689 @@
+基于高阶谱差分的扑翼面运动学数值优化
+基于高阶谱差分（SD）格式的高成本效益的优化方法被用以优化扑翼面的运动学，从而达到最大推进效率。具体来说，基于梯度的优化算法与高阶谱差分的纳维-斯托克斯流动求解器被耦合用以研究一系列NACA 对称翼型的最优运动学。在此研究中，翼型做沉标和俯仰运动。数值优化在粗网格上进行。得到最优解后，在密网格上用高阶 SD 求解器捕获处于最优运动学状态下扑翼面的详细涡结构。提出的数值优化框架被用以研究翼型厚度，雷诺数和俯仰中心位置对最佳巡航飞行的影响。通过研究相关流场，气动力以及等效攻角（AOA）的变化，我们解释了与最佳扑翼面运动相关的流动物理特性。
+
+扑翼面空气动力学 数值优化 高精度计算流体力学方法 谱差分 推进效率  
+
+Nomenclature
+A = pitching amplitude
+AOA = angle of attack
+a = speed of sound
+C =chord length
+C, =specific heat at constant pressure
+(Comer? =time averaged power coefficient,
+CG, =thrust coefficient, Thrust/ (0.
+Spl C)
+E =total energy
+F,G =vectors of fluxes in the physical domain
+丁 , G =vectors of fluxes in the computational domain
+十 = oscillation frequency
+五 =inverse Hessian matrix
+h = plunging amplitude
+Ma =Mach number
+Ma, =Mach number of the free stream
+m =mass flow rate
+n,n, =face normal components in x, y direction, respectively
+Pr = Prandtl number
+p = pressure
+Po =pressure of the free stream
+0, 0 =vectors of conservative variables in the physical and computational domains
+Re -=Reynolds number based on the chord length, pU_C/u
+Str = Strouhal number,2fh/U_
+卜 丁 =time in the physical and computational domain
+u,v =non-dimensional velocities in x, y direction
+v, = grid velocity
+x,y = non-dimensional Cartesian coordinates in the physical domain
+LN JON TS SS FT 外 =metrics coefficients of the time-dependent coordinate transformation
+个 =ratio of specific heats
+TM power = propulsive efficiency, (C r)
+/〈 Cover)
+6 = pitching angle of the airfoil
+人 =dynamic viscosity
+占 ,] =Cartesian coordinates in the
+computational domain
+p =density
+73 = viscous stress tensors, i, j can be x or y
+4 =phase lag between pitching
+and plunging motions
+? =angular frequency of oscillation, 2xf
+0 Introduction
+Unsteady flapping-wing aerodynamics has attracted
+NAVs; on the other hand, the optimization outputs (e.g. ,
+considerable research attention recently due to the
+flow fields ) can further enhance our understanding on
+increased interest in designing Micro Air Vehicles (MAVs)
+unsteady flapping flight. One example to demonstrate
+and NanoAir Vehicles (NAVs) for a variety of missions,
+the power of numerical optimization on both roles is the
+including reconnaissance and surveillance, targeting and
+work by Berman and Wang" . In this work, they reported
+sensing. Comprehensive reviews''?! are available for the
+the energy-minimizing kinematics of several hovering
+latest progress in this area, but there are still many open
+insects. Interestingly, by examining the optimization
+problems needed to be tackled before our current un-
+results, they also explained why in the optimal kinematics
+derstanding on unsteady flapping flight can be systemati-
+the stroke maintains a constant leading edge throughout
+cally integrated into design of aerodynamically efficient
+a flapping period even when a symmetry between the
+MAVs and NAVs. Numerical optimization is such a
+leading and trailing edges of the wing is assumed.
+powerful tool to address these issues. On one hand,
+In the last three decades, there has been a continuous
+geometry and/or kinematics to achieve the optimal aero-
+dynamic performance in terms of lift, lift to drag ratio,
+thrust, propulsive efficiency, power consumption, etc. ,
+with different level of fidelity. Early in 1980s, Jones 21
+had calculated the optimum load distribution along the
+wing for a given wing-root bending moment during the
+pure flapping motion based on classic aerodynamic the-
+ories. They found that the optimum loading was able to
+generate thrust more efficiently compared with an elliptic
+loading, which was suggested to be optimal for steady
+flight. After that, numerical optimization based on low
+fidelity aerodynamic models is carried out to optimize the
+hovering or forward flapping flight. Most of these studies
+adopted blade element momentum (BEM) theories’ "4!
+or vortex lattice methods’ to model aerodynamic
+loadings. A trade-off of these low fidelity aerodynamic
+models is the low computational cost. Although these
+researches have made substantial progress in optimal
+flapping flight, low fidelity aerodynamic models may fail
+to provide appropriate level of complexity of the flow
+information when viscous effects became non-negligible!”
+or the 3D nonlinear effects dominate the flow fields? 。
+The growing sophistication of computational hardware
+and simulation tools now allows for the direct coupling
+between optimization algorithms and high-fidelity Navier-
+Stokes solvers for the purpose of flapping motion optimi-
+zation, Tuncer and Kaya[2“ optimized the weighted sum
+consisting of thrust and propulsive efficiency of a flap-
+ping airfoil in combined plunging and pitching motion by
+coupling a gradient-based optimization method with a 2D
+Navier-Stokes solver supporting moving overset grids.
+Willis et alL. 00 exploited a collection of computational
+tools with multiple fidelity levels in the design of effective
+flapping wing vehicles. In 2009, Pesavento and
+Wang[21 further confirmed that 2D flapping flight can be
+aerodynamically more efficient than the optimal steady
+motion. Recently, Culbreth et al. [2] presented several
+optimization results for flapping airfoils and wings obtained
+from an optimization framework constructed by a gradient-
+based optimization algorithm and a low-dissipation kinetic
+energy preserving ( KEP) finite volume Navier-Stokes
+solver. They found that the maximum propulsive
+of leading edge separation. Jones and Yamaleev'*!
+performed shape and kinematics optimization of flapping
+wings for maximum propulsive efficiency using the 3D
+unsteady Reynolds averaged Navier-Stokes simulation. Tt
+is found that the combined optimization of wing shape
+and kinematics can significantly improve the performance
+of thrust and propulsive efficiency.
+In the present study, we focus on maximizing
+endurance time for long-duration cruising flight. Therefore,
+the propulsive efficiency is chosen as the objective
+function. Optimization studies!’ ">?! for forward
+flight have been carried out with the vortex lattice method
+or low-order ( <2) CFD methods. Considering that
+flapping wing aerodynamics features vortex-dominated
+flow, we propose to take a high-order accurate CFD
+method based cost-effective high-fidelity optimization
+approach to provide further insights into flapping motions
+with maximum propulsive efficiency. At the first stage,
+a gradient-based optimization algorithm is coupled with a
+high-order spectral difference (SD) Navier-Stokes solver
+to search for the optimal kinematics on a’ coarse mesh.
+Then a high-order SD Navier-Stokes solver is used to
+simulate the flow fields with the optimized flapping kine-
+matics on a fine mesh. Note that grid and polynomial
+order refinement studies are performed to make sure that
+the optimal kinematics obtained on the coarse mesh is
+still optimal on the fine mesh. Results from the refine-
+ment study will be presented in Section 2. Simulations on
+fine meshes can better resolve the detailed vortex structures
+associated with the optimal kinematics and help understand
+flow physics.
+The remainder of this paper is organized as follows.
+In Section 1, the optimization framework including the
+numerical method is introduced. Numerical results are
+displayed and discussed in Section 2. Section 3 briefly
+concludes the present work and points out possible
+future work.
+1 Optimization framework
+1.1 Governing equations
+Numerical simulations are performed with an un-
+steady compressible Navier-Stokes solver using dynamic
+form read ,
+where Q=(p,pu,pv,E) T are the conserved variables,
+and F,G are the total fluxes including both the inviscid
+and viscous flux vectors, i.e., 万 = 上 -F“ and G=G'-
+C“ which takes the following form
+In Eq. (2), p is the fluid density, ,z and v are the
+Cartesian velocity components, p is the pressure, and E
+is the total energy, pu is dynamic viscosity, C, is the
+specific heat at constant pressure, Pr is the Prandtl
+number, and T is the temperature. The stress tensors in
+Eq. (2) take the following form
+On assuming that the perfect gas law is obeyed ,the
+To achieve an efficient implementation, a time-
+dependent coordinate transformation from the physical
+domain (t,x,y) to the computational domain (7,￡,7),
+as shown in Fig. 1(a) is applied to Eq. (1). And we
+obtain
+nates in the computational domain. In the transformation
+shown above, the Jacobian matrix J takes the following
+form
+Note that the grid velocity v, =(x%, ,Y: is related
+with (￡,,7,) by
+The SD method is used for the space discretization.
+In the SD method, two sets of points are given, namely
+the solution and flux points, as shown in Fig. 1(b).
+Conservative variables are defined at the solution points
+(SPs), and then interpolated to flux points to calculate
+local fluxes. In the present study, the solution points
+are chosen as the Chebyshev-Gauss quadrature points
+and the flux points are selected to be the Legendre-
+Gauss points with end points as -1 and 1. Then using
+common inviscid flux on the interface. The reconstruction
+_ of the common viscous flux is based on the average of the
+more detailed implementation procedures.
+1.3 Simulation parameters
+In this study, the kinematics of the airfoil is specified
+as follows:
+Plunging motion: y = hsin( wt) ;
+Pitching motion; 8 = Asin( wt + ￠)
+where y and 6 are the plunging displacement and pitching
+angle of the airfoil respectively,〖 and A are the plunging
+and pitching amplitude respectively, w is the angular
+frequency of the oscillation and ￠ is the phase lag
+between the plunging and pitching motions.
+The aerodynamic parameters are specified as follows.
+The Reynolds number (Re) based on the airfoil chord
+length and the free stream velocity is defined as Re =
+pU, C/u, well within the insect flight regime. The
+Strouhal number Sir based on the plunging amplitude h
+is defined as Str = 2fh/U, , where 卜 = wx/(2r is the
+oscillating frequency. The reduced frequency k based on
+the airfoil chord length C is defined as k= 2wfC/U,.
+The free stream Mach number ( Ma) in this study is
+fixed at Ma =0.1. The AUSM「-up approximate Riemann
+solver for all speeds'”? is used to resolve the low Mach
+number flow.
+1.4 Optimization procedure
+For simplicity,we consider an unconstrained opti-
+mization problem of the form
+where ],wor is the propulsive efficiency, (C,) is
+the time averaged thrust coefficient, (C,,,.,) is the time
+averaged power coefficient of the oscillating airfoil, and x
+denotes the optimization parameters. For 2D simulations,
+the time averaged thrust coefficient (C,) is defined as
+where 4 is the pitch angle of the airfoil. The unsteady
+flow solver is used to evaluate the propulsive efficiency
+′，7 pawer *
+Newton algorithm and can achieve a superlinear rate of
+convergence. The BFGS algorithm is briefly reviewed
+here for (t0]]]蓦ZOl(三tf三I](妻sS〔28] .
+Denote the function to be minimized by f (f= N power
+in our case). Givean educated guess of the optimization
+parameters as X,. Let the convergence tolerance be ￡>0,
+s =xXi -Xo ,and y,= Vf,~Vf,. Then, the initial inverse
+‘Hessian approximation 及 , can be specified as below;
+Let k=0,
+while | Vf, || >,
+Compute line search direction
+p.=-H Vf,
+Set x,,, =x,+a,p, ,wWhere q, is the line search step
+length, which satisfies the Wolfe condition,
+八 x +aupy) <f(x,) +ciax Vip,
+Vf(xy+aupu) p=, Vip,
+Update s,, y,, and H,, using the following
+formulas H
+^s`/矗 =X —X
+了x=〉′"′cJ′l__v./'′蘑
+f)′′:`餐l一〈/_p′髻_曹'′:-),乏、〉′,鹭′髻(′_″′I辜-}′′麝^譬′′查`)+″′誓^s'′曹`~';鬣【'
+where p, =1/(y,s,).
+k=k+1
+end (while)
+Typical values for ￠, and c, in the Wolfe condition
+suggested in Ref. [28] are ￠, =1x10* and ￠,=0.9. In
+the present optimization ,a relatively large line search
+step length is used, namely a, = 1. 0. If the Wolfe
+condition is not satisfied, then a contraction ratio 0.1 is
+multiplied to a, to limit the step size. The convergence
+criteria s for ‖ Vn ||, is set as 10°. Based on our
+previous studies 21 , although sometimes j 9 || , does
+extrema. Under such circumstances, another criterion is
+augmented to judge convergence. It states that if the
+differences of the absolute value of 7 in successive
+optimization steps are smaller than 10”, then the optimi-
+zation process will stop and the current optimization
+parameters are deemed as optimal.
+2 Optimization results and discussions
+Optimization variables are flapping kinematics
+parameters, including the phase shift between plunge and
+pitch motions ￠, the pitch and plunge amplitudes h h
+and the oscillation angular frequency w. Since the
+aerodynamic performance can vary significantly with airfoils
+thickness「“「201 | three NACA 4-digit airfoils, namely,
+NACA0006,NACA0012 and NACA0030,in combined
+plunge and pitch motion are used to test the effects of
+airfoil thickness on optimal flapping kinematics. The
+effects of Reynolds number and pitching pivot location
+on optimal flapping kinematics are also presented in this
+section.
+2. 1 Numerical verification
+First of all, the optimization framework is verified
+using the NACA0012 airfoil. The optimization parameter
+is the phase shift between plunge and pitch motions ￠.
+Initially, ￠ is set as 70°. Other parameters are specified
+as Str=0.3, k=1.0, A=20° and Re=1,200. Both h-
+refinement (grid refinement) and p-refinement ( polynomial
+degree) studies are carried out to determine the suitable
+grid and scheme accuracy. The results are displayed in
+Table 1. For the coarse mesh, 34 elements are placed on
+the airfoil surface and 23 elements are assigned in the
+radial direction from the airfoil. For the medium mesh .
+the element number in the radial direction is kept the
+same as that for the coarse mesh ,while the element
+number in the circumferential direction ( along the airfoil
+surface) is 70 elements. For the fine mesh, the element
+number in the circumferential direction is 100 ,and that
+in the radial direction is 35. The minimum cell size
+normalized by the airfoil chord length in the radial direction
+is 0. 001 for all cases,which has been demonstrated
+(i.e., n and ￠) using P’ reconstruction on the coarse
+mesh agree well with those using P’ reconstruction on
+both the coarse and medium meshes. The results using
+P' reconstruction are converging towards those values.
+To save computational cost,P7“ reconstruction on the
+coarse mesh is used in all optimization simulations. A
+thorough verification of the current Navier-Stokes flow
+solver for unsteady flapping wing aerodynamics simulations
+can be found in Ref. [25, 27].
+Table 1 Optimization results for the oscillating NACA0012
+airfoil from h-refinement and p-refinement studies
+at Str=0.3, k=1.0, A=20°and Re=1,200
+2m order 3 order 4" order
+刀9L￠n￠
+coarse 34.8% 90.9° 37.0% 87.3° 37.0% 87.9%
+medium 36.9% 89.6° 37.1% 88.0° 一 一
+fine 37.3% 88. 8? 一 一 一 一
+The convergence histories of the L, norm of Vg
+and ￠ using P? reconstruction on the coarse grid are
+shown in Fig. 2. We observe that the optimal propulsive
+efficiency is achieved after only six optimization iterations.
+From the convergence path, it is clear that the propulsive
+(a) L, norm of Vn versus iteration numbers
+Since the gradient-based optimization algorithm is
+used to search for the local extrema, initial guess needs
+to be sufficiently close to the optimal point to ensure a
+solution. Thus, the initial guess must be based on the flow
+physics of flapping flight. In this paper, initial values of
+the optimization variables are chosen based on the previous
+stu(i}′[z7〕. After optimization, in order to elucidate the
+detailed vortical structures under the optimal airfoil
+oscillation, flow fields associated with the optimized
+kinematics are simulated using a 3“ order accurate SD
+scheme on the fine mesh.
+2.2.1 Effects of airfoil thickness
+The optimization results of flapping kinematics for
+NACA0006,NACA0012 and NACA0030 airfoils are
+presented in Table 2. The Reynolds number is chosen as
+1,200, and the pitch pivot is located at C/3 from the
+leading edge of the airfoil. From this table, it is found
+that the optimized flapping kinematics and propulsive
+efficiency for _NACA0006 and NACA0012 are very
+similar. For both airfoils, the propulsive efficiency is
+larger than 50% . The maximum propulsive efficiency
+for the oscillating NACA0030 airfoil is about 32% ,and
+the optimized flapping kinematics is very different from
+that of NACA0006 and NACAOO12. These results indicate
+that airfoil thickness has large influence on the optimal
+flapping kinematics, and relatively thin airfoils have more
+potential to acquire superior aerodynamic performance.
+This trend agrees well with the observation from previous
+studies"?!
+Table 2 Optimization results for a series of NACA 4-digit
+airfoils with Re =1,200 and the pitch pivot located
+at C/3 from the leading edge of the airfoil
+申 A kh/C k Str (Cp) 刀
+NACA0006 87.0° 41.9° 1.54 0.83 0.41 0.67 56.9%
+NACA0012 88.4° 41.9° 1.57 0.84 0.42 0.60 53.4%
+NACA0030 105.5° 35.0° 1.30 1.10 0.46 0.90 32.2%
+NACA0012 and NACA0030 airfoilswith the optimized
+kinematics at four phases, namely, 0 , T/2 , T and 37/2,
+are displayed in Fig. 3 ~ Fig. 5, respectively. It is found
+quickly shed from the airfoil and the flow then attaches
+to the airfoil surface again. During most of the
+oscillation cycle, no leading edge separation shows up.
+These flow features may be critical for maintaining high
+will be further discussed in the Section 2.3. We also
+observe that the flow fields for NACA0006 and NACA0012
+(a) Phase 0 (b) Phase rm/2
+(c) Phase T (d) Phase 3m/2
+Fig.3 Vorticity fields with optimized kinematics at
+different phases for the NACA0006 airfoil
+(a) Phase 0 (b) Phase w/2
+(c) Phase T (d) Phase 3w/2
+Fig.4 Vorticity fields with optimized kinematics at
+different phases for the NACA0012 airfoil
+(a) Phase 0 (b) Phase 7/2
+(c) Phase T (d) Phase 37/2
+Fig.5 Vorticity fields with optimized kinematics
+at different phases for the NACA0030 airfoil
+airfoils are very similar. The separation region on the
+NACA0030 airfoil at phases w/2 and 3%/2 is much
+larger than that on the thin airfoils. This will affect the
+aerodynamic force generation.
+The time histories of the thrust and lift force coefficients
+for all three airfoils are compared in Fig. 6. From the
+results it is observed that both the thrust and lift force
+histories of NACA0006 and NACA0012 airfoils are verv
+similar, while that of the NACA0030 airfoil exhibits
+larger peaks. Especially for the lift force history, the
+peak lift value on NACA0030 near the phases n/2 and
+31/2 is more than twice of that on both NACAO0006 and
+NACA0012. This corresponds well with the flow fields
+discussed previously.
+Furthermore,these phenomena explain why the
+optimized propulsive efficiencies for NACA0006 and
+shown in Table 2. Specifically, according to the definition
+of the propulsive efficiency 7, if the thrust coefficient
+《Cr〉is similar, then the propulsive efficiency is deter-
+mined by the input power (C,,,.). If we assume that
+the mass and moment of inertia of the airfoil can be
+neglected (i. e. no inertia), then the input power is
+actually the work done by the lift force and the aerodynamic
+moment per unit time. It has been examined that the
+work done by the aerodynamic moment is much smaller
+than that done by the lift force. Therefore, it is clear
+propulsive efficiency. The large lift generation on the
+NACA0030 airfoil results in inferior propulsion
+performance.
+with optimized kinematics for a series of NACA 4-digit
+airfoils with Re=1,200 and the pitch pivot located
+at C/3 from the leading edge of the airfoil
+2.2.2 Effects of Revnolds number
+The optimization results of flapping kinematics for
+NACA0012 under different Reynolds numbers are
+presented in Table 3. The pitch pivot is located at from
+the leading edge of the airfoil. Several observations are
+concluded from this table. First of all, larger propulsive
+efficiency is obtained as the Reynolds number increases.
+According to Anderson et al. 2 the propulsive efficiency
+of an oscillating NACA0012 airfoil can reach as high as
+87% in the Strouhal number range 0.3 ~ 0. 4 at Re =
+40, 000. In this study, the maximum propulsive
+efficiency of the NACA0012 airfoil at Re = 1,200 is
+achieved at Str = 0. 42 with a value of 53. 4%. The
+relatively low propulsive efficiency is probably due to the
+optimal Strouhal number range 0. 25 ~ 0. 35 reported
+in[21、This is due to that the analysis in[21 is based on
+high Reynolds number flow. Current results show
+similarity with the literature reported for low Reynolds
+number range (e.g. , 100) (343
+Table 3 Optimization results for a NACA0012 airfoil
+with different Reynolds numbers
+一 A WC k Sr (Cp) gq
+Re=300 88.7° 60.3° 2.50 0.98 0.78 1.29 37.7%
+Re=600 85.2% 45.0° 1.50 0.96 0.46 0.55 44.9%
+Re=1,200 88.4° 41.9° 1.57 0.84 0.42 0.60 53.4%
+(The pitch pivot is located at C/3 from the leading edge of the airfoil)
+airfoil with the optimized kinematics at the first two phases ,
+namely,0 and Tm/2 for both Reynolds numbers 300
+and 600 are shown in Fig. 7. Note that since anti-
+symmetric vortex patterns will show up for phases r and
+3m/2 as illustrated in Fig. 3 ~ Fig. 53 only the vorticity
+fields at the first two phases are presented. Similarly as
+in the cases for different thicknesses, no leading edge
+separation shows up during most of the oscillation cycle ;
+large scale leading edge separation only occurs when the
+airfoil starts to reverse its plunging direction.
+(a) Phase 0, Re = 300 (b) Phase w/2, Re=300
+(c) Phase 0, Re=600 (d) Phase ?/2, Re=600
+Fig.7 Vorticity fields with optimized kinematics
+at phases 0 and r/2 for different Reynolds numbers
+the cases with Re = 600 and Re = 1,2000 are similar,and
+depart from those of the case with Re=300. Besides, the
+detailed vortical structures at Re = 300 are quite different
+from those at Re=600 and Re = 1 ,200 as shown in Fig. 4
+and Fig. 7. This is primarily due to the distinct
+differences presented in the optimal kinematics as shown
+in Table 3.
+with optimized kinematics for a NACA0012 airfoil with
+different Reynolds numbers ( the pitch pivot is located
+at C/3 from the leading edge of the airfoil)
+2.2.3 Effects of pivot location
+The optimization results of flapping kinematics with
+different pitching pivot locations are presented in Table
+4. Three frequently adopted pivot locations, in previous
+C/3 and C/2, are used in this section. The NACA0012
+airfoil is adopted in this section ,and the Reynolds
+number is fixed at 1,200. The vorticity fields around the
+oscillating NACAQD12 airfoil with the optimized kinematics at
+the first two phases, namely, 0 and m/2, for both
+are compared in Fig. 10. From Table 4 and Fig. 10, it is
+(a) Phase 0, pivot location at C/4 (b) Phase m/2,pivot location at C/4
+(c) Phase 0, pivot location at C/2  (d) Phase m/2 pivot location at C/2
+Fig.9 Vorticity fields with optimized kinematics at
+phases 0 and 7/2 for different pitch pivot locations
+不 A h/C k Sir (Cp) 。 一
+found that the optimized flapping kinematics and the
+aerodynamic performance for all these cases are very
+similar. From Fig. 9, it is observed that although the
+aredynamic performance of the cases with different
+pitching pivot locations is similar,the detailed vortical
+structures with pitching pivot located at C/4 are apparently
+ditferent from those with pitching pivot located at C/3
+and C/2. Based on all the results, we conclude that the
+locations of the three frequently adopted pitching pivots
+pitching pivot do not significantly affect the kinematics
+optimization.
+2.3 Discussion of the optimized kinematics
+In this section, aerodynamic performance and the
+corresponding flow fields from the optimized and non-
+optimized cases around an oscillating NACA0006 airfoil
+are compared. From Table 5, it is clear that although
+the time averaged thrust coefficient is almost the same
+for these two cases, the propulsive efficiency for the
+optimized case is about 2. 5 times of that for the non-
+optimized case. The time histories of the thrust and lift
+force coefficients with optimized and non-optimized
+kinematics for a NACA0006 airfoil with Re = 1 ,200 and
+the pitch pivot located at C/3 are presented in Fig. 11.
+The vorticity fields with the non-optimized kinematics
+parameters at four phases are displayed in Fig. 12. It is
+obvious that large leading edge separation appears during
+the entire oscillation cycle. Also observed from Table 5 ,
+there exists apparent difference on the pitching
+amplitude between the optimized and non-optimized
+cases. This infers that the large leading edge separation
+from the non-optimized case could be connected with the
+variation of the effective angle of attack (404) .
+The definition of the effective AOA for the combined
+plunge and pitch motion is given as
+Q。tr 二 arctan( 7 - 8
+assuming that the pitch speed is negligible. Sketch of
+(a). It is obvious that for the optimized case, the peak
+absolute value of effective AOA is well controlled below
+15°. This feature can help prevent the appearance
+Table 5 Comparison of kinematics parameters and
+aerodynamic performance of a NACA0006 airfoil with
+optimized and non-optimized kinematics parameters
+( the Reynolds number is fixed at Re =1,200 and the pitch
+pivot is located at C/3 from the leading edge of the airfoil )
+一 A h/C k Sr (Cr) gq
+with optimized and non-optimized kinematics for a
+NACA0006 airfoil with Re=1,200 and the pitch pivot
+located at C/3 from the leading edge of the airfoil
+(a) Phase 0; (b) Phase w/2
+(c) Phase T (d) Phase 3m/2
+Fig.12 The vorticity fields with non-optimized kinematics
+at different phases for the NACA0006 airfoil at Re=1,200
+( the pitch pivot is located at C/3 from the leading edge
+of the airfoil. Other parameters are tabulated in Table 5)
+of large leading edge separation. However for the non-
+optimized case, the peak absolute value of effective AOA
+can reach about 40° and during the entire oscillation
+cycle, the effective AOA remains at large value. Then a
+large leading edge separation appears during the entire
+oscillation cycle for the non-optimized case.
+Fig. 13 Sketch of the effective angle of attack
+during the combined plunge and pitch motion
+pitch pivot located at C/3 from the leading edge of the airfoil
+(c) Comparison among different Reynolds numbers for
+a NACAOO12 airfoil with the pitch pivot located at
+C/3 from the leading edge of the airfoil
+(d) Comparison among different pitch pivot locations
+for a NACA0012 airfoil with Re=1,200
+FHig.14 Effective angle of attack
+The variation of the effective AOA for different airfoils,
+Reynolds numbers and pivot locations with optimized
+kinematics parameters is shown in Fig. 13(b) ~ Fig. 13
+(d). For the airfoil thickness tests, it is clear that the
+variation trend for both NACA0006 and NACA0012 is
+quite similar, but different from that for NACA0030. It
+is also found that the peak absolute value of effective
+AOA of NACA0030 is about 30°, which is twice that of
+the other two airfoils. Thus the lift generation on
+NACA0030 can be much larger than that on NACA0006
+and NACA0012. Based on the analyses in Section 2.2.1,
+the lower optimized propulsive efficiency of NACA0030
+can be attributed to the large variation of the effective
+AOA. For both the Reynolds number and pitching pivot
+location tests, it is found that the peak absolute values of
+effective AOA are well controlled below 20° for all these
+cases.
+3 Conclusions and future work
+A high-order SD method based numerical optimization
+gradient-based optimization algorithm is coupled with a
+high-order SD Navier-Stokes solver to search for the
+optimal kinematics for a certain airfoil undergoing
+combined plunging and pitching motion on a coarse
+mesh. Specifically, the quasi-Newton optimization
+algorithm BFGS is used to speed up the convergence.
+Then the high-order SD scheme is used to simulate the
+detailed vortex structures associated with the optimal
+kinematics of the flapping flight on a fine mesh.
+The proposed optimization procedure isused to optimize
+several flapping kinematics, including the oscillation
+frequency ,plunging and pitching amplitudes and the
+phase lag between the plunging and pitching motion.
+The effects of airfoil thickness, Reynolds number, and
+pivot location on the optimization output are investigated.
+It is found that the maximum propulsive efficiency for
+NACA0006 and NACA0012 airfoils is more than 50%
+after four kinematics parameters are optimized. However,
+the optimized propulsive efficiency for a NACA0030
+airfoil can only reach about 30%. As Reynolds numbers
+increase, the propulsive efficiency becomes larger. It is also
+found that locations of pitching pivot do not significantly
+affect the kinematics optimization. Based on the comparison
+between optimized and non-optimized cases for the
+NACA0006 airfoil, it is found that the variation of effective
+AOA plays a key role in achieving high propulsive efficiency.
+Specifically, under optimized conditions, the variation of
+effective AOA is well controlled to avoid the occurrence
+of large leading edge separation during most of the
+oscillation cycle.
+We note that this work is a first attempt to incorporate
+high-order accurate numerical schemes into the optimization
+framework for unsteady vortex-dominated flow. In future
+work, more sophisticated flapping flight conditions will
+be considered, such as including the constraints of lift
+and power. In order to extend the current work for
+efficient 3D optimization of both kinematics and geometry,
+an adjoint-based numerical optimization framework
+needs to be established. These issues are reserved for
+future publications.
+and flow control for flapping wing flyers[ J]. Progress in Aerospace
+Sciences, 2003, 39(8 ) ; 635-681.
+[2] PLATZER M F, JONES K D, YOUNG J, et al. Flapping-wing aer-
+(9): 2136-2149.
+[3】] ROZHDESTVENSKY K V, RYZHOV V A. Aerohydrodynamics of
+39(8 ) ; 585-633.
+[4] SHYY W, AONO H, CHIMAKURTHI S, et al. Recent progress in
+flapping wing aerodynamics and aeroelasticity[ J). Progress in Aero-
+space Sciences, 2010, 48(7) : 284-327.
+[5] SHYY W, BERG M , LIUNGQVIST D. Flapping and flexible wings
+for biological and micro air vehicles J]. Progress in Aerospace Sci-
+ences, 1999, ,355 ; 455-505.
+[6] SHYY W, LIAN Y , TANG J], et al. Aerodynamics of low Reynolds
+number flyers[ M]. New York; Cambridge Univ. Press, 2008.
+[7] TRIANTAFLYLLOU M S, TECHET A H, HOVER F S. Review of
+experimental work in biomimetic foils[ J]. IEEE Journal of Oceanic
+Engineering, 2004, 293. 585-594.
+[8] WANG Z J. Dissecting insect flight[ J]. Annual Review of Fluid
+Mechanics 2005, , 371: 183-210.
+[9] BERMAN GJ, WANG Z J. Energy-minimizing kinematics in hove-
+ring insect flight[ 刀 . 一 Fluid Meck. , 2007, 582; 153-168.
+[10] JONES R T. Wing flapping with minimum energy[ R]. NASA Tech-
+nical Memorandum 81174, 1980.
+[11] HAMDAOUI M , MOURET J B, DONCIEUX S,et al, Optimization
+of kinematics for birds and UAVs using evolutionary algorithms[ J].
+World Academy of Science, Engineering and Technology, 2008, 47;
+181-192.
+[12] STANFORD B, KURDI M, BERAN P, et al. Shape, structure,
+and kinematic parameterization of a power-optimal hovering wing
+[R]. In: 51st AIAA/ASME/ASCE/AHS/ASC Structures, Struc-
+tural Dynamics, and Materials Conference. Orlando, Florida,
+2010. AIAA-2010-2963.
+[13] GOGULAPATI A, FRIEDMANN P P, MARTINS J R R A. Optimi-
+zation of the kinematics of a flapping wing MAV in hover for en-
+hanced performance[R]. In; 54th AIAA/ASME/ASCE/AHS/ASC
+Structures, Structural Dynamics, and Materials Conference. Boston,
+Massachusetts, 2013. 2013-1646.
+[14] WANG Q, GOOSEN H, KEULEN F V. Optimal hovering kinemat-
+ics with respect to various flapping-wing shapes [ C] In: Interna-
+tional Micro Air Vehicle Conference and Flight Competition
+(IMAV2013 ) Toulouse France, 2013.
+[15] HALL K C, HALL S R. Minimum induced power requirements for
+315.
+【161 ITO K. Optimization of flapping wing motion [ C]. In: ICAS 2002
+CONGRESS, 2002.
+[17] STANFORD B K, BERAN P S. Analytical sensitivity analysis of an
+[C]. In: 2010 AIAA ATIO/ISSMO Conference, 2010.
+[19] GHOMMEM M , COLLIER N, NIEMI A H, et al. On the shape
+optimization of flapping wings and their performance analysis[ J].
+Aerospace Science and Technology, 2014, 32 : 274-292.
+[20] WILLIS D J, PERSSON P 0, ISRAELI E R et al. Multifidelity ap-
+proaches for the computational analysis and design of effective flap-
+ping wing vehicles[ C]. In; 46th AIAA Aerospace Sciences Meeting
+and Exhibit. Reno, Nevada, 2008. AIAA-2008-518.
+[21] TUNCER IH, KAYA M. Optimization of flapping airfoils for maxi-
+4311 : 2329-2336.
+[22] PESAVENTO U , WANG Z J. Flapping wing flight can save aerody-
+namic power compared to steady fight[ J]. Physical Review Letters,
+2009, 103: 1181024.
+[23] CULBRETH M, ALLANEAU Y, JAMESON A. High-fidelity opti-
+mization of flapping airfoils and wings[ R]. In: 29th AIAA Applied
+Aerodynamics Conference. Honolulu, Hawaii, 2011. AIAA-2011-
+3521.
+[24] JONES M, YAMALEEV N K. Adjoint-based shape and kinematics
+AIAA Fluid Dynamics Conference. San Diego, CA, 2013. AIAA-
+2013-2472.
+[25] YU M L, WANG Z J, HU H. A high-order spectral difference meth-
+48: 84-97.
+[26] LIOU M S. A sequel toc AUSM Part 11: AUSM +-up for all speeds
+【 刀 . Journal of Computational Physics, 2006, 214: 137-170.
+[27] YUM L, WANG Z J, HU H. High fidelity numerical simulation of
+airfoil thickness and kinematics effects on flapping airfoil propulsion
+[J]. Journal of Fluids and Structures, 2013, 42: 166-186.
+[28] NOCEDAL J, WRIGHT S. Numerical optimization, Springer,
+2000.
+[29] YU M L, WANG Z J, HU H. High-fidelity optimization of flapping
+airfoils for maximum propulsive efficiency[R]. In: 51st AIAA Aer-
+ospace Sciences Meeting Including the New Horizons Forum and
+Aerospace Exposition, Grapevine ( Dallas/Ft. Worth Region). Tex-
+as, 2013. AIAA-2013-0085
+[30] YU M L, WANG Z J, HU H. Airfoil thickness effects on the thrust
+1434-1439.
+[31] ASHRAF M A, YOUNG J, LAI J CS. Reynolds number, thickness
+and camber effects on flapping airfoil propulsion [ 了 , Journal of
+Fluids and Structures, 2011 , 27 : 145-160.
+[32] ANDERSON J M, STREITLIEN K, BARRETT D S, et al. Oscilla-
+ting foils of high propulsive efficiency [ J]. Journal of Fluid
+Mechamics, ,1998 , 360: 41-72.
+[33] TRIANTAFLYLLOU G S, TRIANTAFLYLLOU M S, GROSEN-
+BAUGH M A. Optimal thrust development in oscillating foils with
+application to fish propulsion [ J]. Journal of Fluids and Structures,

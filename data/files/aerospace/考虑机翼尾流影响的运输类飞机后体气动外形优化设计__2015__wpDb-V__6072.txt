@@ -1,0 +1,362 @@
+考虑机翼尾流影响的运输类飞机后体气动外形优化设计
+在某典型运输机翼身组合体的构型上，进行了考虑机翼尾流影响的机身后体气动外形优化设计研究。基于翼身组合体构型建立了考虑尾流影响和部分工程约束的优化设计系统，并对后体构型在巡航状态下进行了优化设计。以比较适合描述后体变形的 NURBS 样条基函数为空间控制体属性引入 FFD 自由变形技术，通过在 FFD 控制框架对该运输机后体进行了空间属性构建。采用无限差值动网格技术提高空间网格的更新效率并保证网格质量。利用改进 Kriging 代理模型、量子粒子群优化算法提高优化效率和全局寻优能力。为减小巡航阻力，对某运输机后体的上翘角、截面形状等参数进行了优化设计，优化结果显示，设计后的机身气动特性明显提高。
+
+多学科优化设计 运输类飞机 FFD 技术 气动外形优化 KRIGING 代理模型 无限差值 量子粒子群  
+
+值;量子籼子群
+技术;气动外形优化;Kriging代理模型;无限差
+JQ, SunZ W, Dong J H, et al. Afterbody aerodynamic optimization design of
+0 Introduction .
+The: technique .of transport’ 8 afterbedy shape de-
+of the atterbody is about 1/3 of the total drag of the
+transport'*!. Flow separation will easily occur? for
+that the flow field is so complex under the influence of
+downwash, which will farther cut down the safety and
+economy due to the structural oscillation of the after-
+body'*!. Hence the research on the design method of
+transport’ s afterbody shape with consideration of flow
+separation and vortex-induction drag has been paid a lot
+of attention in many countries, which keep ahead in
+advanced aeronautical techniques. It is of great value in
+both theory and engineering to study the influence of
+, aftetbody shape on flow characteristics'?! , which is the
+key technique of transport’ s body design. Statistical
+results show that the drag could be reduced by about
+0.5% -3% with a good design of the shape, hence
+remarkable economic benefit will be achieved.
+The upswept angle, fineness, flatness and contrac-
+tion ratio are several key design parameters in the shape
+design of the afterbody. Upswept angle mainly deter-
+mines the flow field separation characteristics which
+directly relate to the pressure drag and structural oscilla-
+tion. Most of these research works on optimizing the pa-
+er, when wing is a primary part to affect the flow field
+with downwash, they will have a great effect on the flow
+field and the optimized result. Therefore, in order to get
+the optimized afterbody shape in a whole aircraft model,
+a more refined optimization frame has to be carried out
+considering the wing wake flow.
+The main difficulty in optimization lies on
+the parametric techniques and optimized frame to reduce
+the computational cost. In present analysis, a transport’s
+afterbody shape is optimized by a comprehensive optimi-
+zation framework that has been established by integration
+of advanced surrogate model and geometric parameteriza-
+tion. Firstly, Free Form Deformation { FFD). technique
+is used for afterbody shape parametric model, Secondly,
+Kriging surrogate model is for aerodynamic characteristics
+Edni国i荣朐河nt
+for spatial grid deformation. Finally, the aftetbady opti-
+mization design result shows that the drag cvefficient of
+wingbody configuration. ia drarpaticelly,
+1 FFD parametric method
+The FFD method, which integrates the deformed
+modeling method into traditional GAD/CAM system,
+was proposed in 1986 by Sederberg and Parry of
+Brigham Young University. It can provide the designers
+with more freedom in the shape with deforma-
+tion, and hus. 4 good property 妙 ensure smoothies and
+easily under the action of external forces.
+The procedures of FFD method to manipulate
+theobject’ s geometry ate as following:
+{1) The first step is creating a deformation tool to
+define a control frame with control points lying on each
+of its edges and the local i-j-k as their identity, as shown
+in Figure 1,
+Cartesian coordinates ‘of the research object’ s control
+points and mapping the research object from the Carte-
+sian coordinate system to parameter space. The parame-
+ter coordinates of the research pbject s geometrical
+points in the parameter space should be calculated ac-
+cording to the local Cartesian coordinates.
+(3) Modifying the deformation tool. The control
+points’ original coordinates in the tensor product control
+, body can be changed to get the new global coordinates,
+as shown in Figure 2.
+The new Cartesian coordinates of the research ob-
+ject can be calculated by control points’ new global co-
+ordinates and the local parameter coordinates of the re-
+search object in the constant parameter space, as Figure
+3 shows.
+nate system are along the directions of length, width and
+height. Assuming the control points are uniformly select-
+ed along each edge, then!?*]
+〖=0，l，′"，z，′觅=0,1,ym,k=0,1,,n
+Where, X,(0') is the coordinate of the local coor-
+dinate system’ s origin point in the Cartesian coordi-
+nates. X is the Cartesian coordinate of an arbitrary point
+inside the control frame, whose local coordinates are 5 ,
+t,u separately. The value range of s,,X is 0<s,t,u<
+1. §,T,U are the axis vectors of local coordinate sys-
+tem, and I[+1,m+1,n+1 are the numbers of control
+points of the control frame along S,T,U directions.
+Since the basis function of the FFD algorithm cho-
+sen in present analysis is NURBS function, the method
+has several geometric characteristics similar to NURBS
+surface, such as continuity, convex hull property and
+local approximation, therefore, this method is more suit-
+able for afterbody geometry design compared to other
+methods. In addition, the FFD method will guarantee
+trol the changing degree of volume.
+2'丨‖g
+grid technique
+In the application of aerodynamics optimization, the
+deforming grid technique is required for efficiency as the
+shape changing. In present work, grid-peint-connecting
+multi-block structured grid is used to discretize computa-
+tional domain. The number of contrel frames could be
+set hundreds or thousands when the shape is complex.
+The requirements of the deforming grid technique are as
+follows;
+1) The capacity to express a new shape.
+2) The high quality of grid.
+3) Using parallel computing method to guarantee
+the efficiency.
+4) Guarantee the characteristics of grid point con-
+nection.
+In order to get a rational multi-block’ s topological
+structure when the shape is changed, the volume spline
+interpolation technique is used to compute the deforma-
+tion of block vertices. The technique is expressed as fol-
+lows H
+where the coefficients &;,i=0---N are computed
+from interpolation condition d(x,) = 2 together with side
+condition 乏_: "a, = 0.
+After the displacement is computed by volume
+spline interpolation technique, other grid points’ coordi-
+nates in the block could be computed by transfinite in-
+terpolation ( TFTI ) method!" , which includes three
+steps of iteration and has been widely used to achieve
+grid deformation. The first step is by linear interpolation
+to compute the inner displacement along the 6 direction.
+The second step is to superimpose the displacement to
+the 9 direction
+Similarly, along the y direction
+NI, NJ, NK are the dimensions of the grid points
+in the grid blocks.
+The expression of S, ,,, is
+Similarly the t,,, u,, could be computed.
+achieved.
+3 Flow field numerical simulation
+The flow control equations are 3-dimensional com-
+pressible unsteady Navier-Stokes equations in an integral
+form. The expression in Cartesian coordinate system is
+The turbulence model considered here is Menter’s
+k-w SSTmodel. For spatial discretion, 3-order upwind
+MUSCL interpolation ROE scheme is used, together with
+multi-grid and parallel computing technique'''’. By
+comparing the numerical results with experimental re-
+sults of DLR-F6 wing-body as shown in Figure 4, the
+CFD code used in this study is proved to be reliable.
+10°
+Fig.4 DLR-F6 wing-body lift-drag performance
+图 4 DLR-F6升阻极峡线
+4 Optimization framework
+The modified particle swarm algorithm hss been
+applied as the optimization method. Sun J and his fel-
+lows put forward the Quantum-Behaved Particle Swarm
+Optimization, namely the QRSOI It is different from
+SPSO that the searching pattern is along the track, the
+position of the searching particle is determined by the
+probability density function, which leads to a better
+global searching performance. The equation of the QPSO
+algorithm can be denoted as follows
+In the functions above, M is thé number of parti-
+cles of the swarm population, mbest is the average posi-
+tion of the pbest of each particle, ￠,u are random xtum-
+bers in (0, I), which are selected as the probability of
+both +50% and -50% ,and 孕 记 the elastic coefficient
+as the control parameter in 0PSQ with its value decrea-
+sing from 1.0 to 0.5 as the iteration continues.
+As high accuracy surrogate model is the key tech-
+nique for improving the efficiency of optimization
+design, the surrogate model used here is the
+Kriging surrogate model. Kriging surrogate model origi
+nates from the spatial statistics in geography. It is the
+unbiased estimation model whose estimating variance is
+the smallest. Kriging surrogate model has the character-
+istics of local approximation by the correlation fune-
+tion, can well predict the function value distribution
+at the unknown points. The relation of response and
+design variables can be denoted as the following equation
+in Kriging surrogate model,
+Regressive model F(x) is the universal approxima-
+tion of the design space. It is the certainty part, and can
+be divided into three categories: 0 order constant), ,1-
+order( linear) and 2-order ( binomial), z(x) is a statis-
+tical random procedure whose average value is 0 and
+variance is o°. Covariance of two interpolation points is,
+Where R is the correlation function of point x*” and
+x0、The Gaussian Function is used in present analysis
+and also in most applications,
+and the vanance approximation ls shown as tollowing,
+Where
+Therelated model parameter 6, is determined by
+maximum similarity approximation ,
+妻曜琴(″」n磊2lnRI,an
+The related model parameter has great influence on
+the performance of the surrogate model. The traditional
+Kriging method solves the related parametersusing pat-
+tern searching method, which depends on the selection
+of the initial points and is easy to be trapped in the local
+optimum area. The standard particle swarm algorithm is
+used to optimize the related parameter of the Kriging sur-
+rogate model in order to improve the 霍夏薹)薹)!'o】【im薯己ti0【1[】′攀].
+For the reason that uniform designcan describe the
+sample space characteristics commendably and uniform
+samples have certain advantages in solving multi-level
+problem ,the samples in present analysis are selected
+uniformly. the average relative error ( ARE) is com-
+pared between the initial Kriging model and the modified
+Kriging model by PSO algorithm.
+Table 1 shows that the average relative error of
+wing-body’ s drag coefficient reduces 0. 173123% after
+optimization and we can see from Figure 5 that the most
+optimized predicting values are closer to the CFD results
+than the values before optimization.
+表 1 ARE对比
+Tables 1 ARE comparing
+ARE
+Initial Kriging 0.947589%
+Optimal Kriging 0.774466%
+Fig.5 The predictive compare of test sample
+图 5 测试样本预测对比
+‘The loosening surrogate model management trame is
+employed in this optimization 薹)!`()(妻娼〉(iu!'(曾[】5] .
+5 Numerical results
+In order to optimizea transport’ s afterbody under
+wing interference in drag reduction, the designed after-
+body shapes with and without wing interference are ana-
+lyzed and compared. The grid is shown in Figure 6.
+Structured grid with 30 blocks in the total flow field has
+been used, and the grid number is 3 million. Parallel
+computing technique, Roe spatial discretion method,
+LU-SGS implicit time advancing method, k-w SST tur-
+bulence model and multi-grid accelerating technique are
+applied in the CFD calculation. The design status is:
+Ma_=0.85, Re=1. 0x10", and C, is fixed to the value
+equal to cruise lift coefficient.
+The optimization target is to reduce the drag by op-
+timizing the configuration of afterbody at cruising status.
+Since the upswept angle would affect the tail down an-
+gle,a constraint is given for upswept angle to make sure
+it would not decrease. Considering the requirement of
+minimum space for capacity and body structure, the area
+of three sections are constrained to larger than specific
+value.
+The optimization design problem could be denoted
+as below:
+s. t.
+^s喜e【:丨i()'_ = S min
+7'′s鏖【】【i("_'_=Tn
+Cy = Cy initial
+T constraints of afterbody come from two
+places, as shown in Figure 7. One is the combination of
+floor and fuselage structure at the 78% length of the fu-
+selage. The keel line of the fuselage must be lower than
+the plane of floor by 200 mm to save enough space for
+structure. The other is the cargo height, which must be
+higher than the initial height. § is the cross section area,
+and three cross section area is concerned at 70% ,
+80% , 90% length of the fuselage respectively. Cyu is
+the pitching moment constraint. All the constraints are
+added to the objective function by using linear penalty
+function. The objective function shows as follows
+J objective 一 0V0 8
+十。)】薹薹l蓁潼瑾二`(爹′，'(^g喜0'矗丨叠('I丨一Sia)1
++ max] 0, (Tuy = Ton) ]
+the function (23}., it can be found that fhe constraints
+term would equal to when the constraints are satis-
+fied, otherwise, the objective would increase. Figure 8
+shows the control fiame and the afterbody geometry. The
+control point of I, and J, move rigidly to ensure that the
+surface’ 8 curvature between the middlebody and after-
+body are continuous. K, and 叉 , move along Z direction
+that can modify the crown line and the keel line of the
+airplane, and J, point moves along Y direction that can
+modify the maximum half breadth shapes.
+proach. The geometry surface of afterbody is deformed
+by changing the FFD control frame vertices as intro-
+duced previously, then the geometry parameters of after-
+ALY y DULL GD LUG DOULIVIL DITRPT: HU MO UPSWTN BIEN 4
+would be modified. The optimization algorithm is the
+quantum particle swarm algorithm with a population of
+90. The Latin hyper-cube method has been implemented
+in sample selection for establishment of the surrogate
+model. The total number of samples is 300.
+With the Kriging surrogate model , the approxima-
+tion error (% RMSE) of drag is 0.6% by crossed testifi-
+cation method. The optimization search is carried out for
+60 generations, and the swrogate model is updated by
+CFD solver in every 10 generations. So the program
+calls updated geometry model for 6 times, and the CFD
+solver has been invoked 306 times. The total computa-
+tional time is 734.4 machine-hours for computer with i7
+3820 CPU and 8G RAM.
+The body section area at 60% of fuselage length
+before and after the optimization is compared in the Fig-
+ure 9. The initial body section is a dual circle shape,
+and the optimization result decreases the curvature vari-
+ance gradient while the curvature radius is increased.
+The section shape is no longer a dual circle, which de-
+creases the circumferential pressure gradient and desta-
+bilization of afterbedy flow.
+Fig.9 X/C=0.6 section shape comparison
+图 9 X/C=0.6敏面外形优化绑果对比
+The symmetry contour of the body is shown in Fig-
+ure 10 with the comparison of with and without the wing
+interference. Because the local angle of attack of the body
+has been reduced by the downwash of the wing, the highest
+location of the symmetry contour under the wing interfer-
+ence is more ahead than that without wing interference.
+The bottom contour is lower than the result without effect
+of wing to reduce the pressure tebovery gradient.
+The pressure distributions of the plane of symmetry
+and plane at 60% of fuselage length are shown in Figure
+11 and Figure 12, in which the decrease of the pressure
+recovery gradient after optimisation can be clearly seen,
+sing state ssrodynamic characteristics before and after
+- the design are shown in table 2, in which
+the drag: coefficient by 6 .counts and the lift-
+drag ratio increases by 3% , which is a great benefit in
+drag reduction. C, is the pitching moment coefficient,
+which is slightly deeressed to meet the constraint. From
+the: line on the afterbody in figure 13, we
+can see that the reduces to a small area,
+which would vanish if consider an APU system.
+Fig.11 Pressure distribution on the symmetry plane
+图 11 NBEEHSS
+表 2 侩伟莲后气劲犊性
+Table 2 Aerodynamic characteristics after the optimization
+Cc, C. L/D
+Initial 0.0189 40. 10874 21.06
+Optimized 0.0183 0. 10469 21.69
+Fig.13 Limiting stream line on afterbody
+图 13 “裘番梓限流线对比
+6 Conclusion
+The presented work in this paper is the optimization
+design of transport afterbody by FFD parametric method
+integrated with Kriging surrogate model and quantum
+particle swarm algorithm, which are adopted to establish
+the aerodynamic optimization design management frame.
+A numerical test is for a typical transport af-
+terbody considering the wing wake flow, from which the
+result shows that the downwash of the wing could lead to
+a decrease of the local angle of attack of the body flow
+field, so the maximum height location of the upper out-
+line of the optimized configuration is more ahead than
+that without the wing interference, and the bottom out-
+line with the wing interference becomes lower than that
+without the wing interference. This test shows that the
+afterbody flow field is affected by the wing wake flow
+dramatically, so the design of the afterbody should take
+that influence into consideration.
+The body pressure dragis reduced after the optimi-
+zation design by reducing the pressure recovery gradi-
+ent. The drag coefficient decreases by 6 counts with
+comparisen of that prior optimization and the lift-drag
+ratio increases by 3%.
+The aerodynamic optimization design system for
+transport’ s afterbody established in this study is of good
+optimization design efficiency and indicates a promising
+future of engineering application.

@@ -1,0 +1,195 @@
+航天器主要采用什么电源？
+航天器上许多电子设备,所以,电源对于航天器来讲是必不可少的,电源功率的大小和寿命对航天器的性能有至关重要的影响。现代航天器在与火箭分离后首先要展开太阳电池翼,否则难以正常工作运行。在实际运行过程中,也常常出现因电源故障而导致航天器报废。因此,航天器电源至关重要。
+
+航天器电源 电源功率 运行过程 太阳电池翼 电子设备 电源故障 火箭  
+
+Research in nanoscience is of great importance for both
+technological implications and for the fundamental explo-
+ration of the properties of nanostructures. Of particu-
+lar interest is the study of spin dynamics, which hopes
+to explore a number of interesting physical phenomena
+and potential applications in spintronic devices.1=5! In
+this context, the spin-orbit coupling effect in low dimen-
+sional semiconductor heterostructures has attracted a con-
+siderable theoretical and experimental attention.[2:6-16]
+There are mainly two types of SO interactions in semi-
+conductor heterostructures. One is the Dresselhaus SO
+interaction induced by the bulk inversion asymmetry of
+the lattice structure (BIA),!”] the other is the Rashba
+,S0 interaction induced by the structure inversion asym-
+"metry (SIA) of the confining potential.['? Recently, Es-
+merindo Bernardes, et al. found a new SO interaction in
+GalnAs/GalnAs QWs, which is nonzero even in symmet-
+ric heterostructures. [19-21]
+Since the SO parameters decrease as the band gap in-
+creases, one can expect very small SO parameters in wide
+band-gap materials, such as Ga(Al)N. However, in sys-
+tems with asymmetric potential, both the Rashba and
+the intersubband SO parameters are related to the elec-
+tric field.[4,18,22~23] Moreover, a high internal electric field
+generates at the heterointerface of AlxGal_rxN/GaN het-
+erostructures, as a result of the large conduction band dis-
+continuity and the strong piezoelectric and spontaneous
+polarization effect. Therefore the SO parameters in III-
+nitride semiconductor heterostructures grown along the
+c-axis is considerable and could be greatly engineered by
+the polarized field.[?:24—26]
+* 卫 -mail: mingli245@163.com
+? 2013 Chinese Physical Society and IOP Publishing Ltd
+In previous work, the characteristic equation is pro-
+jected into the subspace of the conduction band,and a
+general expression for the SO parameters are obtained,
+including the Rashba SO parameter for the first two
+subbands (al,a2}〗and the intersubband SO parameter
+(mua).[27-28] It is found that the SO parameters in the
+Alp 5GapsN/GaN QW can be modulated by the well
+thickness[27] and gate voltage.[28] What’s more, compared
+with the Rashba SO parameters, the intersubband SO pa-
+rameter is of the same order of magnitude.
+However, because of the Piezoelectric and Spontaneous
+polarization, the Al mole fraction of the barrier has more
+considerable impact on the polarized electric field in the
+well, the confined energy, the band gap, and the spatial
+distribution of electrons. Therefore, we expect the SO
+parameters can be greatly modulated by the Al content
+of the barrier. In this paper, we explore the factors con-
+tributing to the SO parameters for QWs and how they
+vary as a function of x.
+2 Theory and Model
+By eliminating the three valence band components of
+the envelope functions, the eight-band Kane Hamiltonian
+is projected into the 2 x 2 conduction band spacel23—24
+and the SO parameter in QWs with two subbands (v and
+v') can be written as[9,19,21,27 一 28]
+Nov = —PLP[?,{0)@4 (0)(Bw 一 Bi)
+= ?4(L)?w (L)(Bw — Br)
+十 (u|BrFr|y)r 十 (u|BmwFty|ly)m
++ (olBRFRjy)R] , (1)
+http://www.iop.org/EJ/journal/ctp http://ctp.itp.ac.cn
+ergy level su and the envelope function ?, are determined
+potential, and F' = (1/q)(8V/9z) is the space-dependent
+electric field. ?,(0) and ?,(L) denote the amplitude of
+Table 1 Parameters of AlzGial-_zN/GaN QWs.
+Effective mass along c axis (mp)
+Static dielectric constant (eg)
+Conduction band offset (meV)
+3 Results and Discussion
+In this section, the SO parameters in Alz:Gal_zN/GaN
+discussed quantitatively. We adopt the material parame-
+m(z) = 0.22 十 0.26z
+er 一 10.4 — 0.3z
+AE; 一 19002
+C13 二 103 + 52, C33 一 405 一 32
+Moreover, the magnitude of the electric field around the
+As can be seen from Eq. (1), five terms contribute to
+they depend on the amplitude of the first two envelope
+functions at the hetercinterface. The third and the fifth
+terms denote contributions of the left and right barrier
+the first two subbands.
+Figures 2(a) and 2(c) show the envelope functions and
+the average positions of electrons taking up the frst sub-
+band of Al,Ga;_,N/GaN QWs. As z increases, the abil-
+ity of the QW to confine electrons becomes stronger with
+the elevation of the right barrier. Then the peak of the
+envelope function moves towards the left heterointerface,
+and the envelope function becomes less expanded. So the
+average position of electrons occupying the first subband
+moves gradually to the left of the QW.
+the average position ofelectrons occupying the second sub-
+band in AlxGal-zN/GaN QWs. Because of the strong
+built-in electric field, the higher excited states may be
+squeezed outside of the well region. We can see clearly in
+ist. That is to say, when 2 decreases to a certain value, the
+potential barrier becomes too low to confine electrons oc-
+cupying the second subband. Therefore, for a given sheet
+carrier concentration, there are at least two confined states
+when the Al content of the barrier exceeds a critical value
+2min. So we assume x > 0.3 when discussing quantities
+about the second subband. As z increases, the envelope
+function for the second subband becomes less expanded,
+and the peak, especially the valley of it moves towards the
+left heterointerface. Therefore, when 2 > 0.4, the average
+position of electrons occupying the second subband also
+decreases with Q.
+Fig. 4 Al-content-dependent intersubband SO parameter.
+The well「s contribution is the largest, and next comes the
+contribution from the heterointerface, while the barrier’s
+contribution is relatively small and varies slowly. With
+increasing z, the expansion region of the envelope func-
+,tion decreases, the magnitude of the envelope function at
+the left heterointerface increases, while that of the right
+heterointerface decreases. So the contribution from the
+heterinterface increases with x. What is more, the elec-
+tric field in the well increases with z, especially the electric
+field around the left heterointerface is much stronger than
+that of the right heterointerface. The decrease of the ex-
+pansion region of the envelope functions further leads to
+the increase of the average electric field in the well. So
+the well’s contribution increases with z. Since the proba-
+bility of electrons located in the barrier is relatively small,
+the barrier’s contribution is small and varies slowly with
+z. Figure 3(b) illustrates the Rashba parameter for the
+second subband (a2 一 ya2).When Z is larger than 0.3,
+just as al, the magnitude of ay also increases with , and
+the contribution of the well is the largest, the lesser con-
+tribution is from the heterointerface, and the contribution
+of the barrier is the smallest and varies slowly. However,
+compared with a, as is smaller, because the envelope
+functions of the higher subbands are more expanded and
+the corresponding average electric field is weaker.
+Figure 4 shows the intersubband SO parameter (712).
+When z > 0.3, the magnitude of 7,2 increases slowly,
+and the main contribution is from the heterointerface, the
+lesser contribution with the opposite sign is from the well,
+and the smallest contribution is from the barrier. which
+varies slowly with 2. According to Eq. (1), the envelope
+functions of the first two subbands and their overlap are
+crucial to Vl2. Just as stated above, as “ increases, the
+expansion region of the envelope function for the second
+subband decreases, the amplitude of the envelope function
+at the left heterointerface increases, and the average elec-
+tric field in the well increases. Therefore, contributions to
+12 from the well and the heterointerface increase simul-
+taneously with z, but the heterointerface contribution is
+canceled to a certain degree by the well contribution for
+opposite signs. However, the heterointerface contribution
+increase a bit more rapidly. So 712 increase slowly with X.
+We can see from Eq. (2) that 3 and B; are related to
+the confined energy level, the band gap, and V, both of
+which depend on the Al composition of the barrier. How-
+ever, their effects on the variation of the SO parameters
+as a function of 2 are not obvious, which indicates the
+decrease of the expansion region of the envelope functions
+and the increase of the electric field in the well are the
+two main factors contributing to the increase of the SO
+parameters.
+In all, the Rashba SO parameters for the first two sub-
+bands and the intersubband SO parameter increase with
+Z as a whole. However, compared with the Rashba SO pa-
+rameters, the intersubband SO parameter is basically of
+the same order, but relatively small and increases much
+more slowly with x.
+Compared with the effect of the well thickness and the
+gate voltage on the SO parameters in Refs. [27] and [28],
+respectively, the Rashba SO parameters can be more
+greatly modulated by the Al content of the barrier, while
+the intersubband SO parameter is also relatively small and
+varies slowly with z. Moreover, the SO parameters in the
+AlGaN/GaN QW are at least one order smaller than that
+of AllnAs/GalnAs Qws calculated in Ref. [19], since the
+band gap of GaN is much larger.
+4 Conclusions
+In summary, we obtain considerable SO parameters in
+N; = 120x1011/cm2. The Rashba parameters for the first
+two subbands and the intersubband SO parameter in Al;
+Ctal_rx N/GaN QWs increase with 2 as a whole. We find
+that the decrease of the expansion region of the envelope
+functions and the increase of the polarized electric field in
+the well are the two major contributions. However, com-
+pared with the Rashba parameters, the intersubband SO
+parameter is basically of the same order, but a bit smaller
+and increases more slowly with x. These results show the
+SO parameters, especially the Rashba parameters can be
+modulated by the Al mole fraction of the barrier, which
+may be helpful to the spin manipulation of III-nitride low-
+dimensional heterostructures.

@@ -1,0 +1,354 @@
+基于优化模型的中国民用运输机场人口覆盖评价
+随着中国机场建设速度加快,机场布局评价及优化已成为交通地理学重要的研究议题。针对县级需求点,对中国2005年和2010年机场布局进行基于优化覆盖模型的模拟,进而从覆盖率、重叠率和冗余度三个指标对机场布局进行全国和分区的评价。结果表明:”十一五”期间,中国机场布局在人口覆盖率方面有明显提升,但与最优覆盖率相比还存在一定的优化空间,在中部布局机场能更大地提高机场人口覆盖率。人口重叠率虽有所上升,但与最优重叠率的差异缩小了,故整体重叠率实际得到了较好的优化,分区有一定差异:东部实际重叠率高于最优重叠率,而中部还需提高约10%才能达到最优重叠率。有效服务半径这一地理概念在机场规划中的引入对重叠率改善起到了一定作用,但也是造成2010年机场冗余度上升的原因之一。
+
+民用运输机场 空间优化 覆盖率 门槛距离 MCLP LSCP  
+
+撷,何霖,茵.AMXXS技术及其在肉速飞行命气助研究中的应用.实
+0 Introduction
+Complex flow field occurs around and inside an
+aircraft, such as compressible boundary layer, shock/
+boundary layer interaction, complex engine flows
+and so on as shown in Fig. 1, when it speeds up to
+supersonic Or hypersonict’, To improve the per-
+formance of high speed flight,endeavors have been
+made in the past several decades. However, for the
+complexity and instability of the supersonic turbu-
+lence,studying its fine structures and flow mecha-
+nism is very difficult. The existing experimental
+methods have their own shortages for supersonic
+turbulence study, such as Schlieren, filtered Ray-
+leigh scattering (FRS), and planar laser induced
+fluorescence (PLIF) 3 and the main reasons are their
+low resolution and signal noise ratio (SNR),
+NPLS, as a newly developed flow visualization tech-
+nique by the authors’ group, can visualize tempo-
+ral-resolved flow structures in a cross-section of in-
+stantaneous 3D supersonic flow at high spatiotem-
+poral resolution’?. In recent years, Yi’ s many
+studies have demonstrated that NPLS is a powerful
+tool to study supersonic flow, especially for super-
+sonic turbulence ?, In 2007, Zhao et al visualized
+the flow structure of pressure unmatched supersonic
+mixing layer using NPLS, and discussed the influ-
+ence of shock wave and expand wave on structures
+of mixing layer and the influence of pressure un-
+mat(二l`【(…(二l〔7〕' Based on NPLS, Zhao Y uxin et al stud-
+ied the shocklet in supersonic turbulent mixing lay-
+er, and in NPLS images the shocklets could be easi-
+1y distinguished" . Zhao et al studied the interaction
+between shock wave and turbulent mixing layer
+based on NPLS! 【 and observed the interaction be-
+tween oblique shock wave and boundary layer and
+the influence of large vortex in mixing layer on ob-
+lique shock wave. In 2008, based on NPLS images
+of supersonic turbulent mixing layer, Yi et al stud-
+ied the fractal dimension of transition region and
+turbulence region of supersonic mixing layer. And
+they found that in the transition region, the fractal
+dimension increases with turbulence, and in the tur-
+bulence region, the fractal dimension doesn’t vary
+flow around a concave optical spheric conic model by
+NPLS, and the NPLS images revealed shock wave,
+expansion wave, turbulent boundary layer and wake
+in the flow. In 2009, Yi et al studied the supersonic
+mixing layer with the convective Mach number ot
+0.5. From the NPLS image of supersonic mixing
+layer, readers can easily distinguish the fine struc-
+tures, and estimate its transitional region. Based on
+the NPLS images, the control effect could be esti-
+mated easily[IrI!:1,、 And as shown in the NPLS ima-
+ges, Yi et al analyzed geometrical character and
+temporal evolution of large-scale structure of turbu-
+lent boundary layer. In 2009, Yi et al introduced
+NPLS technique in detail[13151,。 Nanoparticles are
+used as NPLS tracer, and pulse planar laser is used
+as its light source. By recording location of the trac-
+er particles with CCD, the flow structure with high
+spatiotemporal resolution can be imaged in NPLS
+image. In literature, the flow-following ability and
+the scattering characteristics of nanoparticles were
+studied, and the results showed that the dynamic be-
+havior and light scattering characteristics of nanoparti-
+cles make NPLS be able to image the supersonic flow
+structure at high spatiotemporal resolution and SNR.
+have been developed by the authors. In 2009, Tian
+et al developed a density measurement method
+named NPLS-based density technique (NPLS-DT).
+This technique can measure planar instantaneous
+density field in 3D supersonic flow by calibrating the
+relationship between density field and gray of NPLS
+In 2010, YI S H et al proposed an aero-optical aber-
+ration measuring method, NPLS-based wavefront
+technique (NPLS-WT). This method has three sig-
+nificant innovations; (1) high spatiotemporal reso-
+lution; (2) it can avoid the integral effects and stud-
+y the wavefront aberration induced by the flow field
+of interest locally; (3) it can avoid the influence
+from the test section wall boundary layers and envi-
+ronmental disturbances[i*21,Based on the density-
+velocity simultaneous measurement method, Reyn-
+olds stress of supersonic turbulence can be obtained
+through special experimental arrangement.
+1 NPLS techniques
+The authors have studied on measuring the
+structures of supersonic turbulence by non-intrusive
+method in recent years, including the traditional in-
+terferometry and the optical scattering. The results
+indicate that because of the influences of compressi-
+bility, shock wave, instability and other factors,
+the traditional visualization and measurement meth-
+ods encounter some difficulties. For supersonic
+flow, the flow visualization technique based on Mie
+scattering cannot satisfy the requirement of follow-
+ing the flow faithfully, especially when there are
+shock waves. On the other hand, for the techniques
+based on molecule tracer, more expensive intensi-
+fied CCD is necessary because of its weak signal.
+Thus, it is difficult to achieve high spatiotemporal
+resolution for these techniques,
+Rapid developments and extensive applications
+of modern laser technology, imaging, image process
+technologies, and nanotechnology offer the opportu-
+nity for measuring the fine structures of supersonic
+flow. And in this condition, the authors developed
+NPLS technique several years ago, which can image
+fine structures of supersonic flow at high spatiotem-
+poral resolution.
+As shown in Fig. 2, the NPLS system is com-
+posed of light source system, nanoparticle genera-
+tor, recording system, synchronization system, and
+a computer. The light source is a dual-cavity Nd:
+Yag laser, whose wavelength is 532nm laser pulse
+500m]. A laser sheet with thickness of about
+0. 5mm is formed by the sheet optics system ,and
+then illuminates the flow region of interest. The
+nanoparticle generator is driven by high pressure,
+and the concentration of the output particles can be
+adjusted. The recording system is an interline
+transfer CCD whose resolution is 2048 X 2048 and
+the shortest time interval of double-exposure is
+0.2us. The synchronizer receive signals sent from
+the computer, and control the time sequences of la-
+ser and the CCD to make sure that the two laser
+beams are exposed in the frames of dual-exposure
+respectively. The computer not only sends synchro-
+nization signals to the synchronizer, but also stores
+and processes NPLS images. With the dual-expo-
+sure technique, NPLS can measure the instantane-
+ous flow structure, and the temporal evolution of
+the flow between the two pulses can also be yielded.
+The flow-following ability of the NPLS tracer
+particle in supersonic flow was studied from particle
+dynamics by Zhao Y X, et al’, and the particle di-
+ameter was measured with oblique shock wave cali-
+bration experiment, as shown in Fig. 3. The effec-
+tive diameter of nanoparticle of NPLS is 42. 5nm ,
+and its relaxation time is 66. 3ns. As a flow visualization
+technique, NPLS focuses on holistic scattering character
+of a cluster of particles, whose scattering character can
+be calculated from Mie scattering theory, and the
+results revealed that its scattering character is rela-
+tive to scattering angle, wavelength of incident la-
+ser, its diameter and refractive index.
+Based on NPLS, a density measurement meth-
+od (NPLS-DT, NPLS-based Density Technique)
+is that in the working range of CCD, the variation of
+gray scale of the images represents the variation of
+local density in the flow. The relationship between
+gray scale and local density can be qualified after re-
+moving the effects from background, dark signal
+and non-uniform distribution of laser sheet, To be
+brief, it can be divided into 3 steps. First, NPLS is
+affirmatively used to get high SNR images of testing
+flow field. Second, these NPLS images should be
+calibrated to eliminate impacts from background,dark
+signal and laser non-uniformity. Third, perform a den-
+sity field calibration to work out the relationship:
+丨()二〉/`〈′)=(z1]_纂_乙′】/一__(Z′乙/2__}一(z:〈】I二餐′{_-.'(l)
+2,3 火 is needed. Mount a wedge in the testing
+chamber and get NPLS images of oblique shock,
+then work out the density of sampling region down-
+stream of the oblique shock based on the oblique
+shock equation, and get a first pair of sample data
+process 10 obtain a series of pi =f) 兄 二 一 2 , 3 v
+as shown in Fig. 4(￠). Owning to this method, Reyn-
+olds stress distribution can be obtained by performing
+UCTLHDILYT VOIULILY DLIIIULLALICUUD 1HITAad UL THICEHIL,
+For the advantages of NPLS in measuring fine
+structures of supersonic turbulence, several typical
+supersonic flows were studied, including supersonic
+boundary layer, shock/boundary layer interaction,
+mixing layer and so on,
+2.1 Supersonic boundary layer
+Supersonic boundary layer, a typical flow, has
+been studied using NPLS in the past several years.
+The flow structures of the supersonic boundary lay-
+er in vertical plane and spanwise plane were cap-
+tured by NPLS. As shown in Fig. 5, it is a NPLS
+image of flat plate boundary layer in vertical plane
+二 1 AVE 一 “ 伟 一 E e LUT HUW IGRKIULL IY VW 7 Ling
+from the leading edge of plate, Fig, 5 displays the
+whole transition process of the boundary layer. Un-
+til 180mm distance from the leading edge, the flow
+is still laminar, Then the flow transits into turbu-
+lence and becomes fully developed from X =
+250mm. Fig. 6 and Fig. 7 are the flow regions with-
+in 170~250mm and 190~220mm from the leading
+edge of the plate, respectively. From these images,
+it is easy to find the development of instability and
+the emergence of hairpin vortexes. Fig. 8 is the
+NPLS image of fully developed turbulent boundary
+layer, which is at the location of 250~320mm from
+the leading edge, Compared with the cases in Fig. 6
+and Fig. 7, the flow structures in Fig. 8 are different
+absolutely and much more complex, However, the
+fine structures in the turbulent boundary layer are
+revealed clearly in Fig, 8 all the same. Fig. 9 (a)
+shows the spanwise NPLS image of supersonic
+boundary layer corresponding to Fig. 8. And in ad-
+dition, the fully developed turbulent boundary layer
+of wind tunnel is different from that on a {lat plate,
+as shown in Fig, 9 (b), By performing PIV tech-
+nique, time-averaged streamwise velocity profiles at
+different locations and Reynolds stress distributions
+of turbulent boundary layer are present as shown in
+Fig. 10 to Fig. 12 by velocity-density measurements.
+洱充分发展的湍流边界层的NPLS图像(b)
+Fig. 11 Time-averaged velocity of fully developed supersonic
+turbulent boundary layer corresponding to Fig. 8
+图 11 与图8对应的充分发展的超声速湍流边界层的时间平均速度剔面
+4110王Y。团水此E木玑坂四J主H王玑Elc5l\′【】U口一
+personic boundary layer in different spanwise planes
+are shown in Fig. 13 which reveals the hairpin vor-
+tex. While that of fully developed turbulent bound-
+ary layer is shown in Fig. 14 revealing the self-simi-
+lar feature of turbulent boundary layer.
+Fig. 13 “Spanwise structures in the transition region of
+supersonic boundary layer
+图 13 “超声速边界层转换区的展向结构
+Based on NPLS, the structure of shock/bound-
+ary layer interaction (SWBLI) was studied. As
+shown in Fig, 15, it is the NPLS image of SWBLI in
+Ma=3 flow, and its spatial resolution is 43. 5um/
+pixel. The image revealed shock wave, expansion
+wave, turbulent boundary layer, and separation
+bubble. From the NPLS image, we can find that
+the vortex moves downstream, and its transfigura-
+tion is not obvious. Using NPLS_DT, the density
+field of the flow field shown in Fig. 15 was measured
+at high spatial resolution, Density variation and
+temporal evolution of the SWBLI can be distin-
+guished easily, Fig. 16 is the velocity field and the
+stream lines of the SWBLI flow field.
+2.3 Supersonic flow over a compression ramp
+NPLS images of supersonic laminar/turbulent
+flow over a compression ramp are shown in Fig. 17,
+it can be seen distinctly from the images that there
+are obvious differences between the laminar flow
+and the turbulent flow in compression ramp, even
+though the ramp angle is the same. For laminar
+flow, the development of the supersonic flow and
+its transition to turbulence are rapid. Flow separa-
+tion oceurs due to the influence of adverse pressure
+gradient. Some typical flow structures such as K-H
+vortices, shear layer, separation shock and reat-
+tachment shock are visible clearly. However the
+thickness of turbulent boundary layer does not in-
+crease obviously and there is not evident separation
+in the flow field, as shown in Fig. 17 (b). The
+boundary layer adlieres to the wall in the whole flow
+field, These experimental results of flow visualiza-
+tion have revealed that, compared with laminar
+flow, the performance of turbulent flow is more
+stable when suffering the effects of adverse pressure
+gradient, and is more difficult to separate.
+4.4 1ransiion of tne nypersonic pounaary ayer
+The following ability, scattering characteristic
+and reuniting of nano particles are the key points
+under the consideration of NPLS. The distribution
+of nano particles can reveal the exact flow field
+structures as long as its following ability meets the
+flows. However, when tested flow accelerates to
+hypersonic, the following ability of nano particles
+would be challenged again. NPLS was applied in the
+KD-01 shock wind tunnel to study hypersonic flow
+as shown in Fig 18. In Fig, 19, it is the hypersonic
+flow structure of boundary layer transition meas-
+ured by NPLS. The boundary layer changed from
+laminar to turbulent. By now, investigations on
+separating and scattering nano particles have to be
+kept going on, in order to improve NPLS technique
+and make it more applicable in hypersonic flow
+measurements.
+2.5 Supersonic mixing layer
+In the past several years, spatiotemporal char-
+acteristic of supersonic mixing layers with convec-
+tive Mach number 0. 12, 0. 21, 0. 24, 0, 32, 0. 50
+and 0, 60 were studied by the authors. The super-
+sonic mixing layer wind tunnel is designed using
+double supersonic laminar nozzle and optical acces-
+ses for non-intrusive measurement, which can gen-
+erate uniform flow filed with low noise, as shown in
+Fig. 20. Changing the Mach number of the double
+nozzle, various convective Mach number can be
+gained for experimental study. The results revealed
+Kelvin-Helmholtz instable vortexes in the flow
+field. Its spatial features and temporalevolution can
+be yielded trom NPLS images,which are shown in
+Fig. 21. Zhao et al also studied its spanwise struc-
+ture, and found the intriguing vortexes due to the
+secondary instability. Fig, 22 shows Reynolds stress
+图 20 超声速混合层风洞晓管段和试验世
+The flow field around a spheric conic model in
+Ma 一 3. 8 flow was studied using NPLS, and its
+flow structure, density field"”, , aero-optical
+effeet[il and velocity field?!, were studied. The
+structure of the flow around a spheric conic model is
+rather complex, which includes shock wave, expan-
+sion wave, boundary layer and wake. Fig. 23 is
+NPLS image of the flow field and the corresponding
+density field measured by NPLS_DT. Compared
+with the results obtained by schlieren, the shock
+waves in NPLS image is much thinner. The reason
+is that the spatial resolution of the NPLS is much
+higher than that of schlieren. The density field in
+Fig. 23 shows clearly the existence of flow struc-
+tures mentioned above, and the transition of bound-
+ary layer.
+of supersonic mixing layer in this plane, which is
+quite valuable for constructing compressible turbu-
+lent models.
+The NPLS technique has been widely used to
+study other important problems of supetsonic mixing
+layer, including the velocity field of the transition
+process, the turbulent structure with unmatched
+pressure, the fractal characteristics of the mixing
+interface, and the multi-resolution analysis of the
+density field!!!" 118,
+图 21 超声速混合层K-H涡的NPLS图像
+(图像闭的时间间隔为108)
+3 Conclusions
+From the results mentioned above, we can find
+that NPLS is a powerful tool to visualize the fine
+structures of supersonic turbulence and measure the
+corresponding instantaneous density and velocity
+field. A great number of experiments have been
+performed, and several important flow structures
+have been revealed by NPLS images. As a newly
+developed technique, however, NPLS and its appli-
+cation are still under development.
+Currently, the measurement region of NPLS is
+only the scattering plane of laser pulse,and the
+temporal-resolved images are restricted to the pair
+obtained by frame, which prevents it from giving a
+more complete description of the flow structure.
+We are now updating the crucial components of the
+system to overcome these limitations, including em-
+ploying multi-cavity laser to achieve high repetition
+frequency (hundreds of millions per second), em-
+ploying proper CCD with very high recording speed
+and the synchronizer with accuracy of picosecond.
+Our ultimate goal is to synchronously measure sev-
+eral parameters (including density, velocity) of su-
+per flow with temporal correlation across many
+frames.

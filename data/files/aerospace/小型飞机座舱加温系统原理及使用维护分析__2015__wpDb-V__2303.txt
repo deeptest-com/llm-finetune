@@ -1,0 +1,316 @@
+小型飞机座舱加温系统原理及使用维护分析
+以小型飞行培训教练机PA44-180双发四座飞机为例,针对其座舱加温系统从构造、工作原理以及组成等方面进行论述,重点针对近三年该系统发生的各类故障进行统计分析,并提出了该系统在日常使用维护过程中的重点注意事项。
+
+座舱加温机 燃烧风扇 点火组件  
+
+934 EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH
+complexity of the relationship between exercise and SWB is that the type and extent of the psychological benefits
+(and decrements) of exercise may differ for specific groups of participants. Participants may vary in age from
+pre-schoolers to the elderly and include normal and psychiatric populations. Despite such complex issues, there is
+a strong consensus that many types of exercise are associated with enhanced SWB, vigour or vitality, and a sense
+of “feeling better” (Netz et al., 2005; Osei-Tutu & Campagna, 2005; Berger et al., 2002). In France, there are few
+studies of SWB in sport and exercise psychology, partly because of the lack of valid and reliable scales to
+measure this construct. So, a validation of a French version of SWB scales would be important for studying in
+order to evaluate this construct for French speakers.
+The long-standing “clinical tradition” operationalizes
+well-being through measures of depression, distress,
+anxiety, or substance abuse, whereas the “psychological tradition” operationalizes well-being in terms of one’s
+subjective evaluation of life satisfaction. The latter
+tradition is reflected in the considerable breadth of
+literature in psychology, yet, as Ryff and Keyes (1995) noted that “the absence of theory-based formulations of
+well-being is puzzling” (p. 719). These authors further noted the need for developing theoretical models
+for testing the fit of such models with empirical data
+and for conducting theory-guided structural analyses.
+The development of comprehensive theoretical models requires a working elaboration of the concept of
+well-being.
+SWB reflects the multidimensional evaluation of a person’s life and includes cognitive judgments of life
+satisfaction and affective evaluations of moods and emotions. It is a major contributor to quality of life and can
+be conceptualized as a momentary state or as a relatively stable trait, depending on the time frame of the
+assessment period (Diener, 1994). SWB must include
+at least three components: (1) It should be subjective,
+reflecting a concern for how the individual views himself/herself; (2) It should include positive indices of an
+individual’s sentiments toward life as opposed to negative ones; and (3) It should be global to encompass
+all areas of an individual’s life (Hattie, Myers, & Sweeney, 2004). In sum, SWB should be composed of
+three major constructs: (1) the presence of positive effects; (2) the absence of negative effects; and (3) high
+levels of life satisfaction (Diener, 1994 ; Diener & Suh, 2000). Happiness is considered synonymous with
+SWB.
+Many studies of hedonic well-being have shown that it consists of two main dimensions, the first being how
+satisfied you are with your life overall, and the second being the emotions that one experiences in a typical month
+(e.g., how frequently one experiences happiness, joy, or contentment). The domain of functioning well in life
+consists of psychological and social well-being. Psychological well-being consists of dimensions, such as
+self-acceptance, purpose in life, personal growth, positive relations with others, autonomy, and environmental
+mastery. Social well-being consists of acceptance of
+others, a sense of social contribution, feeling socially
+integrated, an interest in society and “what is going on”,
+and a sense of social growth (Keyes, 1998). Thus, when
+the six dimensions of psychological well-being are combined with the five dimensions of social well-being, there
+are at least 11 different signs of positive functioning in life. With the two dimensions of hedonic well-being,
+which represent whether and how much one feels good
+about life, the set of 13 dimensions of SWB provides a
+comprehensive assessment of the overall quality of life.
+Mental Illness and Mental Well-Being Form Two Continua in the Population
+Mental health can be seen as a continuum, where
+an individual’s mental health may have many different
+EXPLORATION ON KEYES’
+S MODEL OF MENTAL HEALTH 935
+possible values (Keyes, 2002). The theory that the measures of mental health and mental illness belong to latent
+continua was tested using data from a representative sample of American adults between 25 and 74 years old.
+Three scales served as indicators of mental health: (1) the summed scale of emotional well-being (i.e., single item
+of satisfaction + single item of happiness + scale of positive effect); (2) the summed scale of psychological
+well-being (i.e., six scales summed together); and (3) the summed scale of social well-being (i.e., the fives scales
+summed together). Four summary measures served as
+indicators of mental illness, based on the number of
+symptoms of four mental disorders: generalized anxiety, panic disorder, major depressive episode, and alcohol
+dependence (Keyes, 2007; Keyes, Wissing, Potgieter, Temane, Kruger, & Van Rooy, 2008). Another study is
+based on three mental disorders symptoms: anxiety and depression, social dysfunction, and loss of confidence
+(Salama-Younes, Montazeri, Ismail, & Roncin, 2009).
+Two competing theories were tested. The single factor model hypothesizes that the measures of mental
+health and mental illness reflect a single latent factor, support for which would indicate that the absence of mental
+illness implies the presence of mental health. The two-factor model hypothesizes that the measures of mental
+illness represent the latent factor of mental health that
+is distinct from, but correlated with the latent factor of
+mental illness that is represented by the measures of mental illness. The data strongly supported the two-factor
+model, which was a nearly perfect fitting model to the MIDUS (Midlife Development in the United States) data
+(Keyes, 2005).
+As predicted, there is a modest association between mental health and mental illness; level of mental health
+tends to increase as level of mental illness decreases. However, the modest correlation suggests that the latent
+constructs of mental health and mental illness are distinctive. This distinctiveness raises the empirical question of
+the risk of an episode of mental illness as levels of mental health decrease. Languishing adults report the highest
+prevalence of any of the four mental disorders as well as the highest prevalence of reporting two or more mental
+disorders during the past year. In contrast, flourishing individuals report the lowest prevalence of any of the four
+12-month mental disorders or their comorbidity. Compared with languishing or flourishing, moderately mentally
+healthy adults were at intermediate risk of any of the mental disorders or two or more mental disorders during the
+past year. Thus, the 12-month risk of major depressive illness, for example, is over five times greater for
+languishing than flourishing adults.
+Support for the two-factor model provides the strongest scientific evidence to date in support of the
+complete health approach to mental health. The evidence indicates that the absence of mental illness does not
+imply the presence of mental health, and the absence of mental health does not imply the presence of mental
+illness. Thus, neither the pathogenic nor the salutogenic approaches alone accurately describe the mental health
+of a population. Rather, mental health is a complete state
+that is best studied through the combined assessments of
+mental health with mental illness. Complete mental health is a state, in which individuals are free of mental
+illness and they are flourishing. Of course, flourishing may sometimes occur with an episode of mental illness,
+and moderate mental health and languishing can occur both with and without a mental illness.
+Flourishing Mental Health is Even Better Than Moderate Mental Health
+To have “complete mental health”, one must be flourishing and free of most common mental disorders over
+the past years. Research has supported the hypothesis that anything less than complete mental health results in
+increased impairment and disability. For example, adults diagnosed as completely mentally healthy functioned
+superior to all others in terms of reporting the fewest workdays missed, fewest workdays cutback by one-half, the
+936 EXPLORATION ON KEYES’
+S MODEL OF MENTAL HEALTH
+lowest rate of cardiovascular disease, the lowest level of health limitations of activities of daily living, the fewest
+chronic physical diseases and conditions, the lowest
+self-reported resilience (e.g., they try to learn from adversities), and the highest level of intimacy (e.g., they have
+were languishing (Keyes, 2007).
+Just over 20% of adults in the MIDUS study had
+an episode of at least one of the four mental disorders.
+However, and very importantly, levels of mental health differentiate levels of impairment and disability even
+among adults who have had a mental illness in the past year. Adults with a mental illness who had either
+moderate level of mental health or were flourishing reported fewer workdays missed, fewer workdays cutback,
+and fewer health limitations of daily living than those
+who were languishing and had a mental illness. Thus,
+languishing individuals who also had one or more mental disorders functioned worse than all others on every
+criterion. Adults with a mental illness who also had either moderate mental health or flourishing function no
+worse than adults who were languishing and did not have a mental disorder. Thus, mental illness that is combined
+with languishing is more dysfunctional than the situation when a mental illness occurs in the context of moderate
+mental health or flourishing.
+Another published paper investigated the association of the complete mental health diagnoses with chronic
+physical conditions associated with age (Keyes, 2005). The complete mental health diagnosis was associated
+with 85% of the chronic physical conditions measured in the MIDUS study. The prevalence of chronic physical
+conditions was the highest among adults who are languishing and had an episode of major depression, and the
+lowest among completely mentally healthy adults. The
+prevalence of chronic physical conditions was slightly
+higher among moderately mentally healthy adults than completely mentally healthy adults, whereas languishing
+adults reported even more chronic conditions than adults with moderate mental health.
+Overall, adults with major depression and languishing had an average of 4.5 chronic conditions. Adults with
+depression but who also had moderate mental health or flourishing had an average of 3.1 chronic conditions,
+which was the same as adults who were languishing but without any mental illness. Moderately mentally healthy
+adults without any mental illness had an average of 2.1 chronic conditions, compared with adults with complete
+mental health who had on average of 1.5 chronic conditions. When compared against completely mentally
+healthy adults, chronic physical conditions increased as the level of mental health decreased. It is noteworthy that
+mental health status was a significant predictor of chronic physical conditions, even after adjustment for the usual
+sociodemographic variables, as well as body mass index, diabetes status, smoking status, and level of physical
+exercise.
+In sum, in psychology and physical activities, there are a few studies that have tested the factorial structure
+and the internal consistency for different aspects of well-being scales. In addition, knowledge about relation
+among mental, psychological, and physical well-being aspects is rare, especially for physically old adults. So, our
+main purposes of this study were: (1) the development and psychometric testing of a number of SWB scales (i.e.,
+emotional, physical, psychological, and social aspects) with French physically active old adults; and (2) testing
+the relationships among these different aspects.
+EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH 937
+Methods
+Participants and Procedure
+Using “forward and backward” translation by four bilingual individuals, experimental French versions
+equivalents to the original following scales were created.
+More precisely, the original scales were translated from
+English into French by two bilingual persons. The two translated versions were then back translated into English
+by two independent translators. Translators were not
+affiliated with the study to ensure comparability and
+meaning equivalence (Vallerand & Halliwell, 1983; Vallerand & Hess, 2000). Using the different versions,
+authors have created the French version for each scale. An independent professional has revised the created
+French versions. In general, minor differences were corrected at this stage by agreement between the different
+translations. The participants of this study were aged French physically active people between 57 and 77 years
+old (M = 62.28, SD = 4.78). There were 401 women and 262 men (n = 663) from Rennes city (i.e., Villejean,
+Centre-ville, Beaulieu, Maurepas, Zip Sud, and Cleunay). They practiced a range of team and individual physical
+activities. Currently, they were practicing their activities at least three times per week. We used in these two
+studies with four scales: (1) the MHC-SF (Mental Health Continuum-Short Form); (2) the GHQ-12 (General
+Health Questionnaire-12); (3) the SVS (Subjective Vitality Scale); and (4) the SWLS (Satisfaction With Life
+Scale). We used the French versions which have been established in previous studies (Salama-Younes et al., 2009;
+Ismail & Salama-Younes, 2011) and the short versions of the MHC-SF, the GHQ-12, and the SVS.
+Authors informed samples about the objective of the study, their participation was voluntary and they could
+withdraw at any time. Both oral and written instructions were given regarding items understanding (i.e., There
+was no right or wrong answer to the questions and they should freely state what they think), and they were
+reassured about the confidentiality of their responses.
+Measures
+MHC-SF. The MHC-SF (Keyes, 2007) consists
+of 14 items. It measures the degree of: (1) emotional
+as described in Keyes’ (1998) model of social well-being (one item on each of the facets of social acceptance,
+social actualization, social contribution, social coherence, and social integration); and (3) psychological
+well-being (items 9-14) as described in Ryff’s (1989) model (including one item on each of the dimensions of
+autonomy, environmental mastery, personal growth,
+positive relations with others, purpose in life, and
+self-acceptance). Short versions have been used in many
+cultures, such as South Africa, USA, and Iran. In France,
+it has exploited by Salama-Younes, Ismail, Montazeri, and Roncin (2011).
+GHQ-12. Each item of the GHQ-12 (Goldberg & Williams, 1988) assesses the severity of a mental problem
+over the past few weeks using a 4-point Likert-type scale (from 0-3). The score was used to generate a total score
+ranging from 0-36. This questionnaire was validated in
+many countries and languages (e.g., Spanish, Japanese,
+Chinese, French, etc.). It has rarely been used with physical activity samples (Salama-Younes et al., 2009).
+SVS. According to Ryan and Frederick (1997), the concept of subjective vitality refers to the state of
+feeling alive and alert to having energy available to oneself. Vitality is considered then as an aspect of physical
+well-being. It is considered also as an aspect of eudaimonic well-being. The SVS is a short instrument to
+measure vitality. A 7-point Likert Scale was used ranging from “Strongly disagree“(1-point) to “Strongly
+agree” (7-point). The scale has two versions: (1) The Individual Difference Level Version that asks individuals
+to respond to each of the items by indicating the degree to which the item is true for them in general in their life;
+938 EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH
+and (2) The State Level Version that asks individuals to respond to each items in terms of how they are feeling
+right now. There is another version of the instrument that contains six items. Bostic, Rubio, and Hood (2000)
+have developed this new version. Since one item from seven items was negatively worded, they excluded this
+item to yield a better fitting model for their data. The questionnaire is a brief measure of vitality and it is simple
+and easy to complete. In this study, we used this short version that consists of six items and purposes to evaluate
+the individual difference level. It has rarely been used with physical activity sample (Salama-Younes et al.,
+2009).
+SWLS. Life satisfaction is a more general construct of SWB. Theory and research from outside of the
+rehabilitation fields have suggested that SWB has at
+least three components: positive affective appraisal,
+negative affective appraisal, and life satisfaction. Life satisfaction is distinguished from affective appraisal in that
+it is more cognitively than emotionally driven. Life satisfaction can be assessed specific to a particular domain of
+life (e.g., work and family) or globally. The SWLS is a global measure of life satisfaction. The SWLS composes
+of five items. A 7-point Likert Scale was used ranging
+from “Strongly disagree” (1-point) to “Strongly agree”
+(7-point). The SWLS is a measure of life satisfaction developed by Diener, Emmons, Larsen, and Griffin (1985).
+The SWLS is shown to have favourable psychometric properties for French speaking in Canada (Vallerand, Blais,
+Briére, & Pelletier, 1989). It is noted that the SWLS is translated and used in a very wide countries and suited for
+use with different age groups (Diener, 2009; Diener, Kahneman, & Helliwell, 2010).
+Results and Discussion
+The SPSS (Statistic Package for Social Sciences)
+18.00 was used to perform the EFA (exploratory factor
+analyses) and the internal consistency (Cronbach alpha a). The LISREL (Linear Structural Relations) 8.7
+computer program was used for testing the CFA (confirmatory factor analyses). Firstly, we tested the internal
+consistency (Cronbach alpha ?) by SPSS software. Secondly, using LISREL software, we tested the CFA and
+examined the correlation among different well-being aspects (see Table 1).
+Internal consistency that tests reliability was assessed by calculating the Cronbach’s coefficient. The
+values of 0.70 or greater were considered satisfactory. After being tested the factor structure by EFA, we
+performed CFA to assess the five instruments’ structure for each sample. The intention was to indicate if the
+model fits well the data. There are varying suggestions in the literature about the number, type, and cut-off
+values for goodness-of-fit required to be reported for
+CFA (Byrne, 2009). A popular recommendation is to
+present three of four indices from different areas. Accordingly, we report several goodness-of-fit indicators
+acceptable values are > 0.90 for GFI and NFI. The RMR and RMSEA test the fit of the model to the covariance
+matrix. As a guideline, values below 0.05 indicate a close fit and values below 0.11 are an acceptable fit. The
+value of 2 alone may be used as an index, but 2 divided by the degrees of freedom (2/df) reduces its sensitivity to
+sample size (cut-off values < 2-5).
+For physically old adults, the GFIs for SWLS, MHC-SF, GHQ-12, and SVS were acceptable in terms of
+XVqYratio, GFI, RMR, and RMSEA. The factor structure and internal consistency of the four scales have tested
+only for physical education students (Salama-Younes, 2011). For exemple, we present the CFA result of
+MHC-SF for French youth.
+EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH 939
+Table 1
+Bi-dimensionality of the Complete Mental Health Model
+Item Factor 1 Factor 2 M
+SD Skewness Kurtosis
+MHC-FS 1 0. 73 - 4.79 1.04 -0.97 1.09
+MHC-FS 2 0.62 - 4.84 1.26 -1.28 1.15
+MHC-FS 3 0.58 - 4.31 1.06 -0.84 0.59
+MHC-FS 4 0.43 - 2.90 1.37 0.48 -0.44
+MHC-FS 5 0.49 - 4.67 1.57 -0.87 -0.59
+MHC-FS 6 0.52 - 1.87 1.13 1.46 1.84
+MHC-FS 7 0.46 - 2.99 1.28 0.23 -0.63
+MHC-FS 8 0.44 - 2.5
+1 1.33 0.66 -0.37
+MHC-FS 9 0.42 - 4.2
+8 1.34 -0.71 -0.37
+MHC-FS 10 0.46 - 4.18 1.38 -0.69 -0.43
+MHC-FS 11 0.49 - 4.83 1.07 -1.26 1.51
+MHC-FS 12 0.52 - 3.45 1.42 0.11 -1.03
+MHC-FS 13 0.47 - 4.30 1.42 -0.70 -0.42
+MHC-FS 14 0.46 - 4.06 1.58 -0.28 -1.18
+GHQ 1 - 0.43 1.66 0.70 -0.93 3.02
+GHQ 2 - 0.49 0.66 0.78 0.80 -0.51
+GHQ 3 - 0.47 1.7
+1 0.66 -1.39 2.23
+GHQ 4 - 0.42 1.57 0.77 -1.37 0.09
+GHQ 5 - 0.44 1.12 0.82 -0.23 -1.47
+GHQ 6 - 0.41 1.2
+1 0.84 -0.42 -1.47
+GHQ 7 - 0.54 1.66 0.70 -1.43 1.55
+GHQ 8 - 0.48 1.56 0.67 -1.22 0.21
+GHQ 9 - 0.41 0.78 0.87 0.53 -1.26
+GHQ 10 - 0.51 0.94 0.88 0.12 -1.69
+GHQ 11 - 0.52 0.62 0.87 0.83 -1.16
+GHQ 12 - 0.40 1.59 0.64 -1.22 1.12
+Propre value 8.69 5.65 -
+% of variance 33.87 21.98 -
+Table 2
+Goodness-of-Fit of the CFA Models (n = 636)
+Scale 古 少 GFI NFI
+Notes: 卫 <0.01 and “*p < 0.001.
+We concluded that the four scales have an acceptable factor structure for physically old adults. In the
+exercise psychology domain, we have few studies concerning these variables. So that results presented here are
+940 EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH
+Table 3
+Correlations Among Different Variables for Physically Active Old Adults
+Notes. *"p < 0.01 and 心 <0.05.
+Relations Among the Different Variables
+Negative and significant correlation between the GHQ-12 and the MHC-SF sub-scale was obtained (see
+Table 3). It isranged between r= -0.13 and -0.56, p < 0.01. The negative correlation among GHQ-12, total scores
+of MHC-SF, and the sub-scales was confirmed in different countries, for exemple, in South of Africa (Keyes et
+respectively. This finding is similar to the results of Keyes et al. (2008). In other side, the correlation between
+the MHC-SF total and sub-scores with SV and SWLS is
+significantly positive (r= 0.28 to 0.88, p < 0.01). In our
+knowledge, for physically old adults samples, there is the first investigation to test the correlation among the
+and positive construct indicating that those who were more distressed showed lower levels of mental well-being,
+subjective vitality, and satisfaction with life.
+Diseussion
+Objectives of this study were: (1) the development and psychometric testing of a number of SWB scales (i.e.,
+emotional, physical, psychological, and social aspects) with physical education students in France; and (2) testing
+the relationships among these different aspects. The MHC-SF is actually known as a continuum for evaluating
+Salama-Younes et al, 2011; Salama-Younes et al,
+2009). The GHQ-12 is a well-known instrument for
+measuring minor psychological distress and has been translated into a variety of languages (Salama-Younes et al.,
+2009). However, it was not used for indicating a specific diagnosis for active people. This study reports data from
+a validation study of the MHC-SF and 12-item GHQ in France. This model has been investigated in different
+countries but not for physically active people (Salama-Younes, 2011). In general, the findings showed
+In addition, for the first time, we reported data on the SVS and the SWLS for physically active old adults from
+France lending support to its validity for using these instruments in French populations.
+The findings from present study showed that the French versions of the MHC-SF and the GHQ-12 are a
+valid measure for testing a mental well-being and mental illness from a complet mental health perspective
+(positive and negative aspects). Although this model shows valid in many countries, it has not yet been studied
+for physically active old adults. The findings from our study indicate that the SV and the SWLS are valid scales
+for this population.
+EXPLORATION ON KEYES’S MODEL OF MENTAL HEALTH 941
+Adults with a mental illness who had either moderate mental health or flourishing reported more work-days
+missed or more work cutbacks than languishing adults (Westerhof & Keyes, 2010). However, languishing adults
+reported the same level of health limitations of daily living and worse levels of psychosocial functioning than
+adults with a mental illness who also had moderate
+mental health or flourishing. Individuals who were
+completely mentally ill—that is, languishing and one or more of the mental disorders—functioned worse than all
+others on every criterion. In general, adults with a mental illness who also had either moderate mental health or
+flourishing functioned no worse than adults who were
+languishing and did not have a mental disorder. Thus,
+mental illness that combined with languishing is more dysfunctional than the situation in which a mental illness
+occurs in the context of moderate mental health or flourishing. In the next manuscript, we will test: (1) the effect
+of the three categories of complete mental health (flourishing, moderately, and languishing) on perceived
+physical health; and (2) the structural equation modelling among the three categories and these different
+variables.

@@ -1,0 +1,330 @@
+光纤陀螺光学器件的空间辐射效应及防护技术（英文）
+针对光纤陀螺用光学器件在空间辐射环境下受电离损伤和位移损伤影响性能下降的问题,分别分析了光纤、SLD光源、PIN-FET探测器的空间辐射效应。为保证光纤陀螺在空间的工作性能,从被动屏蔽和主动加固两方面讨论了光学器件的辐射防护技术。考虑到不同光学器件对不同类型辐射损伤的敏感性以及航天器载荷对重量的严格要求,从电离损伤屏蔽和位移损伤屏蔽两方面对屏蔽厚度进行了优化设计。通过对各光学器件辐射效应机理的分析,讨论了提高光学器件本身抗辐射能力的主动加固技术。
+
+光学器件 辐射效应 辐射防护 光纤陀螺  
+
+测控技术与方法.智能仪器与虚拟仪器技术等方面的研究。
+0 Introduction
+Since the optical fiber has the advantages of
+small size, light weight, flexible structure and anti-
+electromagnetic interference, the optical fiber system
+in the space environment application attracts an
+increasing attention. For instance, the spaceborne fiber
+optic gyroscopes (FOG), optical fiber communication
+systems,and optical fiber sensing networks have been
+a hot topic. However, the performance of the optical
+components will degrade in the space radiation
+environment. As a result, the performance of the
+optical fiber system dropped to some extent. The
+investigations of radiation effects on the optical
+components and the radiation protection technology
+are essential to ensure the system to work properly.
+The FOG is a typical optical fiber sensor with
+success application. It has the unique advantages in
+light weight, low consume, long life and high
+reliability which can work well in the space
+environment. Radiation effects on optical fiber, super
+luminescent diode (SLD) optical source, and PIN-FET
+detector module utilized in the FOG are analyzed in
+the paper. Furthermore, the anti-radiation hardening
+technology of the optical components is discussed.
+1 Radiation damage of the optical
+components
+The space radiation environment is a complicate
+and dynamic radiation environment, which includes
+many radiation components such as protons, electrons,
+heavy ions, and 友 -radiation and <y-radiation caused
+by the bremsstrahlung. Different particles interact with
+the substances in different physical mechanisms and
+lose energy. The radiation damage can be classified
+into two kinds by the energy losing effect: ionizing
+damage and displacement damage".
+1.1 Ionizing damage
+When the radiation particles pass through the
+optical substance, they interact with the electrons and
+the energy is imparted to the electrons of the material.
+If the gained energy of the electrons is larger than the
+binding energy,the electrons start the depart inside
+their track and become the free electrons. Then the
+atom becomes a charged ion, which is called the
+effect of ionizing radiation. The main product of the
+effect is the electron-hole pairs along the traveling
+path of the radiation particles.
+1.2 Displacement damage
+The displacement effect is caused by the collision
+of the incident particles with the nucleus of the atom
+of the radiation materials. The radiation particles make
+elastic collisions with the atom. When the energy of
+the radiation particles is high enough, the atom leaves
+the position of the crystal lattice and becomes an
+interstitial atom. The site of the crystal lattice
+becomes a vacancy and form a vacancy-interstitial
+pair, which is called displacement effect. These
+vacancy-interstitial pairs are called Frenkel defect,
+which damage the potential energy of the crystal
+lattice and form a new electron energy level in the
+forbidden band? The displacement damage will influence
+the lifetime of the minority-carrier and the mobility of
+the carrier.
+2 Radiation effect of the optical
+components
+2.1 Ionizing damage
+The radiation interacts with the optical fiber
+material and produces the ionizing damage and the
+displacement damage. The ionizing damage represents
+the ionization of the molecule of the material caused
+by the radiation and generates the electron-hole pairs.
+The electrons and the holes are captured by the
+eigendefect precursor or the displacement damage
+induced by the radiation of the material to form
+additional defects with specific structures. The defects
+result in the light absorption and called "color center”
+accordingly. The radiation interacts with the substance
+and yields the light absorption, namely radiation
+induced attenuation effect (RIA).
+The relationship between the RIA of polarization-
+maintaining fiber and the radiation doses is shown in
+Fig.1. The more radiation doses of the fiber, the more
+color center and the light absorption producing.
+Fig.1 Relationship between RIA and radiation dose of one kind
+PM fiber
+2.2 Optical source
+The SLD has the advantages of broad band, high
+output intensity,short coherent length,and is widely
+employed in the FOG. The main factors affecting the
+performance of SLD is the displacement damage
+caused by the protons and the heavy ions. The defect
+energy level induced by the displacement damage in
+the semiconductor energy band structure of SLD can
+be regarded as the non-radioactive recombination
+center. It results in the non-radiative recombination of
+the carrier, decreases the luminous efficiency and
+reduces the optical power of the source. The
+performance degradation of the SLD can be evaluated
+by the Rose-Barnes equation:
+‖贵〕″”l|-mke1)
+where po is the optical power of the source before the
+radiation, p, is the optical power of the source after
+the radiation, R is the number between 2/3 and 1, 7,
+is the lifetime of the minority-carrier before the
+radiation, K, is the lifetime damage constant, 不 is the
+proton flux. The optical power of the source reduced
+dramatically on the condition of proton radiationl31.
+Hence, we should utilize the anti-radiation hardening
+technology in the space application.
+2.3 Photo detector
+Since the performance of the FOG is restricted
+by the noise of the detector, the PIN ~FET detector
+module is used, the main influence induced by the
+effect of ionizing radiation is the increase of the dark
+current. The comparison of the noise characteristics of
+the PIN-FET before and after the radiation of y-ray
+with the dose of 200 Gy is illustrated in Fig.2.
+Although the dark current increases slightly, the noise
+characteristic is not significantly influenced as the dark
+current is much less than the photo current. The
+performance of the PIN is mainly affected by the
+displacement damage, which decreases the lifetime of
+the minority-carrier and reduces the diffusion length
+and the quantum efficiency of the PIN. Besides, the
+damage of depletion region increases the intermediate
+energy levels and the generated charge carriers lead to
+the increase of the dark current and the leakage
+current.
+optical components
+The radiation protection is indispensable for the
+optical components to guarantee the performance of
+the FOG in the space environment. The radiation
+protection can be considered in two aspects which are
+employing radiation shielding to decrease the radiation
+dose of the optical components and improving the
+workmanship of the optical components to raise the
+anti-radiation level of the components.
+3.1 Radiation shielding
+The radiation dose level can be reduced by
+shielding. The principle is demonstrated as follows:
+The charged particles passing through the shielding
+substance deposits as a result of loss of energy. When
+the thickness of the shielding material is larger than
+the range of the particles, the incident particle will
+settle in the material and the radiation dose of the
+fiber can be reduced.
+3.1.1 Ionizing radiation dose shielding
+The RIA is mainly influenced by the ionizing
+damage and the increase of the dark current of the
+detector is affected by the total dose of the ionizing
+radiation. So, the shielding of the ionizing radiation
+dose is an important problem that needs attention. The
+design of spacecraft makes great demands on the
+weight of the loads. Therefore, we must look for an
+optimal solution between the radiation shielding and
+the load weight. The shielding effect of total radiation
+dose for a five years mission at sun-synchronous orbit
+of 900km calculated by the space radiation environment
+model is shown in Fig.3. The total radiation dose is
+illustrated in Fig.3. Since the shielding effect of the
+material is considerate for the electrons,the ionizing
+radiation dose decreases rapidly with the increase in
+the thickness of the material. When the thickness
+increases to 4 mm, the total ionizing radiation dose
+decreases three orders. However, as the thickness
+continually increases, total ionizing radiation dose is
+constrained by the protons. The decrease of the total
+dose becomes very slow because of the weak
+preventing ability of the material to the high-energy
+protons. In summary, the shielding substance with an
+equivalent thickness of 4 mm Al material can shield
+most radiation dose without raising much weight,
+which is suited for the shielding of the components
+sensitive to ionizing radiation dose.
+3.1.2 Displacement damage dose shielding
+The reduction of the optical power of SLD and
+the responsibility of PIN -FET are mainly influenced
+by the displacement damage. Thus, the shielding of
+the displacement damage is an important problem that
+needs attention. The shielding effect of displacement
+damage dose for a five years mission at sun-synchronous
+orbit of 900 km is displayed in Fig.4. Like the total
+ionizing dose, the displacement damage dose decreases
+dramatically with the increase of the shielding
+thickness at relatively thin thickness. The displacement
+damage is reduced over one order by the Al shielding
+with 2 mm thickness and the shielding effect become
+gradually weaker with the increase of the thickness.
+The equivalent thickness of 2 mm Al material can be
+employed to shield the components sensitive to
+displacement damage due to the purpose of declining
+the influence of the displacement damage dose on
+optical components and minimizing the weight.
+mission at sun-synchronous orbit of 900 km
+3.2 Active hardening
+3.2.1 Optical fiber
+The active hardening technologies for the optical
+fiber are classified into seven kinds: (1) minimizing the
+doped core of the fiber to produce the fiber with pure
+silicon core and fluorine-doped cladding; (2) utilizing
+fluorine doped core and cladding to diminish the
+randomness and the stress of the Si—O bond; (3)
+Producing nitrogen-doped core by substituting nitrogen for
+germanium to enhance the ability of anti-radiation??; (4)
+hydrogen loading because hydrogen is much active at
+room temperature and easy to react with silicon or
+oxygen dangling bond of the atom network terminal to
+prevent the formation of the nonbridging oxygen hole
+center (NBOHC)?; (5) pre-irradiation; (6) photofading;
+(7) thermal discoloration. Among them, fluorine-doped
+method will reduce the refractive index of the fiber
+core that is to the disadvantage to form the high
+refractive index difference between the core and the
+cladding. It is unfavorable for the fiber loop of the
+FOG. The nitrogen-doped fiber has higher chloride
+concentration that slightly increases the loss of long
+wavelength, In addition, the craftsmanship of the
+nitrogen-doped fiber is not mass-produced and the
+commercial products are rare. Although hydrogen
+loading prevents the formation of the NBOHC and
+enhances the ability of the anti-radiation at optical
+wavelengths, the hydroxyl ion levels of the fiber are
+increased and cause the absorption peaks within
+infrared waveband that is inapplicable for the fiber
+loop of the FOG within infrared waveband. The pre-
+irradiation can reduce the variation of the optical loss
+of the fiber, but the initial loss is very high. The
+thermal discoloration technology is not easily
+enforceable. The photofading technology can enhance
+the ability of the anti-radiation and the experimental
+system for FOG based on photofading technology is
+developed at present'??!, The optical fiber with pure
+silicon core is considered as the fiber with best anti-
+radiation capability?. Hence, the fiber with pure silicon
+core is utilized as a means of anti-radiation hardening.
+In summary, the approaches including photofading
+technology and employing fiber with pure silicon core
+and fluorine-doped cladding to ensure the refractive
+index difference of the core and cladding is applicable to
+the anti-radiation hardening for the fiber loop of FOG.
+3.2.2 Optical source
+According to Eq. (1), the value of 7,K,? on the
+right of formula should be as small as possible so as
+to reduce the influence of the radiation on the optical
+power of the source. If the lifetime 7, of the minority-
+carrier before the radiation can be reduced, we can
+tealize the radiation hardening of SLD source. In the
+researches about the radiation hardening of light
+emitting diode(LED), reference[11] shows that heavily
+doped in the emission region makes LED operate
+under the condition of high current density and reduce
+7, which makes LED insensitive to the radiation,
+Considering the similarity between SLD and LED, the
+parameters of the SLD can be changed to decrease
+the lifetime of the minority-carriers to realize anti-
+radiation hardening of SLD.
+The SLD includes SLD of double-heterostructure
+and SLD of quantum well structure. Since the active
+region of SLD with quantum well is composed of
+many quantum wells, the confinement effect of the
+quantum well to the carriers rises substantially
+compared with the active region and the radiation
+recombination rate increases drastically. It makes the
+radiation induced non-radiation recombination unable
+to compete against radiation recombination. Therefore,
+SLD of quantum well structure has more anti-radiation
+ability than SLD of double-heterostructure, which is
+demonstrated in reference [9]. In conclusion, the
+anti-radiation ability can be enhanced by using SLD
+of quantum well, which is an effective anti-radiation
+hardening technology.
+3.2.3 Photo detector
+The effect of ionizing radiation yields the
+electron-hole pairs within the semiconductor material
+of the detector. In contrast, the optical signal
+generates the electron-hole pairs only in the active
+region of PN junction of the detector. So, the
+radiation sensitivity can be reduced by decreasing the
+volume of active region and passive region. As 巩 - V
+semiconductor has higher absorption coefficient, the
+active region can be thinner without degrading the
+responsibility of the detector and the PIN based on III
+-~ V semiconductor has better anti-radiation capability.
+The heterostructure can decrease the volume of the
+passive region and enhance the anti-radiation ability
+accordingltyL21. The noise characteristic of the PIN-~FET
+module in the FOG is illustrated in Fig.3. The
+detector utilizes Il -V semiconductor material and has
+the double-heterostructure. So it has better anti-
+ionizing radiation ability.
+As the displacement effect induces the defects in
+the semiconductor crystal lattices, the minority-carriers
+caused by the optical signal increase the risk of
+recombination before they are collected by the
+electrode and reduce the responsibility consequently 31.
+Thus, the thinner depletion region of the detector,the
+better anti-radiation performancet,
+4 Conclusion
+The optical fiber, SLD source and PIN -~-FET
+detector module of the FOG are influenced by the
+space radiation effect in the space radiation
+environment. The RIA is increased due to the
+formation of the radiation induced color center in the
+optical fiber. The performance of SLD is influenced
+by the displacement damage. The optical power of the
+source is decreased because of the displacement
+damage induced by the protons and heavy ions. The
+space radiation effect causes the increase of the dark
+current and reduction of the responsibility of the PIMN-
+FET. The above-mentioned space radiation effect of
+the optical components will affect the SNR of the
+signal received by the detector and degrade the
+measurement precision of the FOG accordingly.
+The technology of combining active anti-radiation
+hardening and the passive radiation shielding is
+proposed to diminish the space radiation effect of the
+optical components. Considering the strict requirements
+on the weight of the spacecraft load, the shielding
+thickness of the components sensitive to ionizing
+damage and displacement damage are optimized. Based
+on the analysis about the space radiation effect of the
+optical components, the anti-radiation hardening
+technique is presented. The combination of the active
+hardening and passive shielding is favorable for proper
+operation of the FOG in the space radiation environment.

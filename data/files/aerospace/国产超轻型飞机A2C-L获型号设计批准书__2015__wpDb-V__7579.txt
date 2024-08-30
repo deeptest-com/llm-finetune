@@ -1,0 +1,190 @@
+国产超轻型飞机A2C-L获型号设计批准书
+2015年1月l5日，中国民航中南地区管理局向中航通用飞机有限责任公司所属中国特种飞行器研究所／中航通飞研究院有限公司研制的A2C—L超轻型飞机颁发了型号设计批准书，标志着该型飞机正式取得进入市场的“通行证”。这也是中航工业特飞所／中航通飞研究院在A2C水上型飞机投放市场广受青睐后推出的新型号，使A2C飞机拥有了更为广阔的发展空间。
+
+超轻型飞机 型号设计 国产 中国民航 通用飞机 中南地区 研究院 研究所  
+
+外特性
+0 Introduction
+With the extension of the military combat range,
+the amount of spatial targets increases rapidly.
+Infrared detecting has become an effective method for
+detecting spatial targets? Thus analysis of infrared feature
+forspatial targets has greatyalueandsignificand?51 Taking
+a satellite as the research object, the present literatures
+have not analyzed the influence of satellite's physical
+parameters changing with the temperature on its
+infrared feature k3. So the theoretical calculation models
+are built up for a satellite’ s temperature field and
+further the calculation method of the temperature field
+is deduced with the use of FEM when physical
+parameters of its solar panels change with the
+temperature, as well as the influence of physical
+parameters of solar panels changing with the
+temperature on the surface temperature and the infrared
+radiation feature of the satellite is analyzed in detail.
+1 Heat balance equations and solving
+process with the use of FEM
+In Fig.1, the three~dimensional sectional view of
+the satellite is sketched. I and d, are the length of
+side and the thickness of the satellite’s body. I; and
+乙 are the length and the width of the solar panel. d,
+is the thickness of the solar panel. I} and I, are the
+outer interface and the inner interface of the satellite.
+The structural parameters are: =1 m, d,=0.01 m ,
+a=4 m, l,=1 m, 乙 =0.01 m.
+consists of heat conduction and thermal radiation. The
+three —dimensional heat conduction process of the
+satellite is got by Eq.(1), where p is the material density
+of the satellite, c is the specific heat, k is the thermal
+conductivity, 了 is the temperature and is the time.
+The boundary condition on outer interface I of
+the satellite is got by Eq.(2), where ny, m,, ny, are the
+X, ￥, z axial cosine components of the outward unit
+normal, the subscript 1 of n denotes I, a is solar
+radiation absorptivity, & is infrared emissivity, n is
+photoelectric transformation efficiency of solar battery.
+If outer interface of the satellite is not the solar
+battery, m equals 0. 了 is the temperature of the spatial
+background. Es, Eg and Ej; are solar heat flux, earth
+albedo heat flux and earth heat flux, which the
+satellite gets, and the calculation methods for them
+can be got in literatuiresL61,
+The boundary condition on inner interface F,of the
+satellite is got by Eq.(3), where G is the net radiation
+density which can be got by Gebhart method, gy, is
+radiation density of the inner heat source.
+Discretizing the solution domain into a number of
+finite elements and using the weighted residual
+method, one can obtain finite element matrix equation
+of heat conduction process with boundary conditons in
+the global solution domain. In the finnite element
+matrix equation of Eq.(4), [C] is heat capacity matrix,
+[K] is heat conductivity matrix, {P} is load vector,
+{T} is the nodal temperature vector, {T} is the vector
+of nodal temperature derivative with respect to time.
+Eq.(4) suppose the satellite’s physical parameters
+do not change with the temperature, such as the specific
+heat and the thermal conductivity k. In fact, these
+parameters always change with the temperature. So the
+finite element matrix equation should be Eq.(5), where
+the heat capacity matrix [C(D] and the heat conductivity
+matrix [K(7)] change with the temperature.
+[C(DUTH+IK(DUT}={P} (5)
+With the use of the interpolation method, one can
+obtain Eq.(6), where the subscript n and n+1 denote
+the time ￠, and 5hyl, N=(fru-~D/Afb, N,a=(t-t,)/At, N,=-
+1/At, N,u=-1/At, At=t,,,—t..
+[C(CD] 一 N[Cn]+Nna[Cnu]
+{T}=NAT.}4+Nuui{T,ui}
+(K(DUT} = NK HT +N [Kid { Toa })
+{P}=NA{P,}+Npa{ Pr} (6)
+With the use of Eq.(6) and the weighted residual
+method, one can get Eq.(7) from Eq.(5).
+With the use of the Galerkin method and the
+iterative method, the temperature field of the satellite
+can be got from Eq.(7). In the calculation process the
+value of 8 is 2/3.
+2 IR radiation feature calculation
+The infrared radiant emittance M,,; of the satellite「s
+surface differential area dA;, which consists of the self
+radiant emittance M,,,; and the reflected radiant emitt—
+ance My, ,, is got by Eq.(8). The calculation methods of
+My, and Mg, can be obtained from the literature!”
+Figure 2 shows the coordinate system in which
+IR radiant intensity of the satellite is calculated. The
+orthogonal axes respectively have the same directions
+with the corresponding axes in the geocentric
+equatorial inertial coordinate system.
+The satellite is assumed to be diffusing grey body.
+IR radiant intensity of the satellite in the direction
+indicated by Or and Py can be got by Eq.(9).
+where the subscript i denotes the index of partitioned
+surface elements of the satellite,R &,is the outward
+unit normal vector of the surface differential area dA,,
+ng eo, is the outward unit normal vector and ng o =
+(〔sinbncosCOr,sinbmsinQOm,cosbr}.
+In Fig.1,the satellite is three —axis stabilized
+which is in the sun—synchronous orbit. xy surfaces are
+radiating surfaces and the others are covered with the
+multi ~layer heat —barrier material. +x axis points to
+motion direction of the satellite and +z axis points to
+geocenter. The obverse side of solar panels which has
+cell battery is always oriented towards the sun in the
+sunshine and towards the space in the earth’ s
+shadow. The satellite orbit period is divided into 600
+intervals. The orbit parameters and the physical
+parameters of the satellite’ s body can be obtained
+from the literature [8]. The temperature distribution
+and infrared feature of the satellite’s body has been
+also calculated and analyzed in the same literature, so
+in this paper the influence of physical parameters of
+solar panels changing with the temperature on its
+surface temperature, infrared feature and the spatial
+distributions of infrared radiation intensities in 3—6 pum
+band and in 6-16 pm band of the satellite is mainly
+calculated and analyzed. The physical parameters of
+solar panels changing with the temperature are: k=
+吴吴河吴吴吴命浩吴吴吴唐技贺吴命吴吴颂贺吴吴唐技吴吴沥吴吴吴吴吴吴吴仪林技仪育日a
+(0.002 17+0.26)W/(m -K), ￠=(2.87 7+68)J/(kg 「K),
+1=(15.8-0.068)%, t is the Celsius temperature of
+solar panels’ cell battery. The other properties can be
+also got in the literature [8].
+In Fig.3, (a) is the surface temperature of solar
+panel of which the physical parameters change with the
+temperature. (b) is the temperature difference between
+the solar panel in this paper and the solar panel of
+which the physical parameters do not change with the
+temperature in the literature [8]. As shown in Fig.3,
+physical parameters which change with the temperature
+have influence on the temperature of solar panel. In the
+most time of satellite orbit period, the temperature of
+solar panel of which the physical parameters change is
+higher. The temperature difference of the inverse side is
+greater than the obverse side's.
+In Fig.4, (al) and (a2) are infrared radiant
+exitances of solar panel of which the physical
+parameters change with the temperature in 3-6 pm
+band and 6-16 um band, (bl) and (b2) are radiant
+exitance differences in two IR bands. As shown in
+(al) and (a2) of Fig.4, the radiant exitances of
+inverse side in two IR bands descend suddenly when
+the satellite leaves the earth’s shadow area and just
+comes into the sunshine area. This is because in the
+earth’ s shadow area the inverse side is always
+towards the earth and reflects much earth radiation, but
+in the sunshine area the inverse side isn’t towards the
+earth and reflects less earth radiation because of the
+obverse side which has cell b attery always orienting
+towards the sun at the moment. By the same token, the
+reason of the inverse side「 s infrared radiant exitances
+rising suddenly when the satellite leaves the sunshine
+inverse side reflecting more earth radiation in the earth「s
+shadow area than ones in the sunshine area. As shown in
+(bl) and (b2) of Fig.4, one can find radiant exitances in
+two IR bands are enhanced in the most time of satellite
+orbit period and the radiant exitance difference in 6-16 pm
+band is greater than the one in 3—6 pum band.
+In Fig.5, (al) is the spatial distribution of radiant
+intensity in 3-6 pm band of the satellite at the 435th
+interval of the satellite’s orbit period. At this moment
+the radiant intensity difference in 3—6 um band is the
+greatest. As shown in (bl), the greatest difference is
+6.348 3 W/sr. (a2) is the spatial distribution of radiant
+intensity in 6-16 pm band at the 448th interval. The
+radiant intensity difference in 6-16Lm band is the greatest
+at preasent and the greatest difference is 32.595 0 W/sr
+which is shown in (b2).
+According to the calculation results, one can find
+that physical patameters of solar panels changing with
+the tem perature have the influence on the surface
+temperature, infrared feature and the spatial distributions
+of infrared radiation intensities in 3—6 pum band and in
+6-16 pm band. The influence on the infrared feature of
+the satellite in 6~16 um band is more distinct than the
+one in 3-6 pm band. So in the calculation of spatial
+targets’ infrared feature the influence on their infrared
+feature which is caused by physical parameters changing
+with the temperature should be analyzed. The research
+results of this paper have referential value on the
+improving calculation precision of infrared feature and
+infrared detecting of spatial targets.

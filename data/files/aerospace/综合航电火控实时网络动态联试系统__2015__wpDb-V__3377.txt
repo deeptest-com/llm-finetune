@@ -1,0 +1,177 @@
+综合航电火控实时网络动态联试系统
+为了满足某型机修理建线需要、实现综合航电火控系统装机前的单系统复验和地面动态联试,特此搭建了某型机的综合航电火控地面动态联试平台。本文介绍了该平台如何通过实时网络系统将飞行环境仿真设备、测试设备、航电仿真器等设备进行互连,实现系统动态控制与性能分析。
+
+综合航电火控 实时网络 动态联试  
+
+复合才:才_牙署三_′_与金p寓且銮`巨茎-妾结才零^…′…I_兰f耆〕喜少'L〈弯^[芒芒]多一'彭Z应扭:豪二究..".'.'.'....'."'."'."′.'--...-.-EhREE,万小朋(170)
+带银窝紧固件孔边三维多裂纹扩展的计算分析…-.
+r才海,李一秀,李亚餐(175)
+基于遗传算法的复合材料泡沫夹层板铺层优化设计….-...-......-...,韩庆,王广博,钟小平,等(182)
+胶一螺混合连接结构强度分析及影响因素研究…
+ens雷毛毛,赵美苹,弩晓亮,等(186)
+多工况下复合材料层合板开口补强优化设计…张伟,甘健,王志瑾(193)
+运载火箭地面风载荷响应特性分析…c,李哲,安军,万小朋(199
+超燃冲压发动机流量匹配的临界流量法….........
+e标舫,陈王春,黄兴,等(204》
+大涨道比涡扇发动机分开式排气系统设计参数影响研究…...............环夏,杨青真,高翔,等(211)
+基于模块的飞机产品结构管理…许松林,龚文秀,王惠玲(219)
+带扰流片的升力风剧操纵特性数据采集系统设计
+e张冶蛭,詹浩,张恰着,等C274)
+基于浮点编码遗传算法的行星轮系折叠机构优化设计…............弥晓亮,赵美英,孟毛毛,等(280)
+基于CDM的开口复合材料层合板结构损伤研究….....................-..王文智,万小朋,姚辽军(285)
+复合材料加筋板结构优化设计的并行子空间法…程家林,冯王龙,姚卫星(292)
+声体动响应阻尼系数的ALE数值反演研究….-.
+飞机刹车系统方案设计及仿真分析…
+e图周亮,耿宇,魏小辉,等(306)
+基于Matiab/Simulink的前起落架搓振动力学模型分析…..............,于秀伟,常正,金秀芬(312)
+高压涡轮导叶非轴对称端壁优化设计…那振话,刘波,高丽敏(319)
+隔热背腔式柔性热膜探头的设计及其徽加工…...
+e圆炳和,郜日鸿,邓进军,等(327)
+变形飞机机兵折叠机构设计及折叙角度测量…...
+e二育,洁祥明,尹岫,等(333)
+′「眨_才萝L艾兰害马史舟仓子见觉舍予适′性研究.'..-.........-'.......-.-'.
+E河江江儿匕坂元仁圭一儿沥儿一沥八匕坂匕一江2李富_慧，妄′长火′卡，一′亡里〕署:言暹='(乙真亡__乙】:〉
+前缘吸波结构承载性能优化分析研究…...........
+[江一木水一林一大友孙孙江孕孕江孕一林王一孙孙袁′『'蔫，希互:′_」普-】亘)虽(4…22〉
+有效载荷基频降低对火箭动特性的影响…..........
+[李人林木一江儿一江一匕沥孙FNJREFELEE(426)
+基于双机身和斜拉杆的大展弦比无人机机翼弯矩减小措施…............姬金祖,刘飞亮,黄沛霖(431)
+基频降低对火箭点火起飞动响应的影响分析…...
+e挂,万小朋,赵美英,等(438)
+大弯角串列叶柑间隙效应数值研究…
+民用涡扇发动机结构与建模分析研究…............
+e雷杰,苏三乳,周顾庭,等(450)
+流量分配对涡轮叶片内通道压力分布特性影响的实验研究…...............梁卫颖,朱惠人,赵曙(458)
+短周期风洞叶栅气动状态调节与控制.李红才,朱惠人(463)
+EF CREAR EI EMER BGG eerie. 乔 大 勇 , 吴 蒙 , 李 昭 (469 )
+无人机地面站人机工效综合评价研究….......eccccccccccccsccccccccs郎圣眉,王婷,王锋(474)
+筒“报
+基于XML语言和代理模型的翼型通用气动数据库技术-................、潘启元,韩忠华,宋文萍(97)
+字蚩_【』_]二!秽〕官旨才、莫于以内蔓_荃蓄三声激′a_鼓′]丨叁]′〈`I〈童′_i-_算研究..'".'..'.〇.".′'-
+e BRE, HART, KF FE (106)
+扑翰非定常运动对平尾影响及俯仰力矩特性研究
+STR杨菡,孙栋C112)
+蜂窝结构吸波材料的斜人射电磁吸波特性研究--.
+e轨加峰,移租C119
+航空发动机排气喷管红外辐射特征数值研究…--.
+e牢翟,杨青真,陈立海,等C(126)
+飞机大部件数字化自动对接装配技术研究….......
+PPPS PPE XC EID)
+Gamma-Theta经验转换模型在DES中的应用-...
+e禾雪,自俊弼,华俊(226)
+不同声激励方式对多段翼型升力特性的影响…...
+e RFE, HARI, FEF (232)
+基于高度控制的航空拖靶定高飞行分析…......--.
+e张元明,谢辉,张剑锋,等(237)
+一种机翼弯剪载荷包线近似计算方法…...........
+e苏杨,陆满C241)
+小波去噪法在复合材料变形测量中的应用…......
+e张姬,郑锡涛(247)
+离散/堆积理论在大尺寸轻质模型设计中的应用…
+e英海峰,高旭,王健,等(252)
+过冷大水滴规章对结冰探测系统设计的影响…...
+e林家乐,李股C256)
+舰尾流影响下的舰载机着舰控制与仿真研究…....
+e硕胺满,詹渡,柳子栋(339)
+静音锥对超声速客机声爆水平的影响….............
+e REM BPR AAR (346)
+]和譬】孚_…`__彗`丨道…(亳累{苋i/′'二_言桨的『荀便-设【i_[一〕、j^法-.....′..'.'.".'-."'
+e高永卫,黄灿金,貂闻(352)
+折叟翼飞机的气动特性分析…
+.邹述臻,郑祥明,尹祺,等(358)
+航空活塞发动机高空台试验性能分析-.......-...-..
+.超阳旭,陈伟博,刘晓凌,等(364)
+双模态超燃冲压发动机隔离段性能的需求分析.-.
+e俊杰,陈王智,王晓东,等(369)
+S形进气道中心线方程构造及其影响的研究…...
+e胺秋野,胡伟瀚,陈勒(376)
+基于MBD的关联设计技术在飞机研制中的应用
+SPIN宣伟,曲目(381)
+微球型碳泡沫复合材料力学性能的研究….....-..
+.干斋,李贺军,张雨雷,等(386)
+翼型分离流动的等离子体控制数值分析方法研究
+e干美蔡,李栋C481)
+旋转机翼飞机旋翼飞行验证平台设计…............
+e标亮明,高正红,何澳,等(488)
+互_Z_^汐于盲^层一更′艇炭〔i`E丨王角气艺封二I特′丨〉二二_…釜二)〉才梦二】_′..'...'..'.'."...'-..
+e英龙末,张超,娆琼(493)
+BFLS-DYNAplHyperMeshMERKHERZSES林林一林诊_t…__薯，车麦皇′羞呈室〈Z1…)乏茎)
+含低速冲击损伤层合板的压缝砾坏研究…..........
+e林淡,张博平,江兴享(503)
+复合材料整体化结合界面失效模拟方法研究…张阿薹(509)
+小子样疲劳试验数据的特征寿命估算方法评估…
+e荣会F席,刑素C515
+通用飞机梯形机翼的富勤式襟翼滑轨轨迹研究…
+e萧丽婵,王征(522》
+Sum No. 13 一 No. 16
+Review
+Application and Research on Supersonic Inlet with Bleeding ′′..-.′---"′.-."..--"--_._."'-'.′.'".'..'.′'.′′′'′.---.___.-′"'--..'-.-'..,'-'...."'_.
+e Zhao Bin, Gong Zhigiang, Huang Shenggin, etal ( 1)
+Cutout Reinforcement Research Progress of Composite Laminates
+e一in筠《0》
+Analysis of Airworthiness Requirements for Powerplant Compartment Fire Protection of Transport Category Airplane
+e b Shidong, Bai Kangming, Liang Li ( 17)
+Evaluation of Technical Parameters and Developing Trends for Turboshaft Engines ?----cocrereresmrrmaiirecrnnneracrneriereens nna mone
+e Zhou Xinxin, Chen Yuchun, Fan Wei, et al (150)
+Progress in Research on Natural Laminar Wing for Civil Aircraft
+r Li Quan, Duan Zhuoyi, Zhang Yanjun, et al (399)
+Development of Aero-engine Combustor Cooling Structure and the Key Technologies of FloatingzCwWa 伟 e
+e Shang Tisong, Zhao Ming, Tu Bingyi (407)
+Paper
+Research on Engineering Method and Shock Position Prediction for Hypersonic Aerodynamics HARARE AA
+林林 札 y Cai Jinsheng, Tang Yongguang ( 28)
+Study on Electromagnetic Scattering Characteristics of Fuselage Section Based on Method of Moment ----rrrocoreeeraennininaanaanaenonnee
+e |i Jinzu, Wang Yan. Huang Peilin, et al ( 37
+Study on Low-speed Verification Test of Atmospheric Sensors of Civil Aircraft Wat res eee sss ane ne tues eee cen eva nee ssa RE ANS ser TTY VEY oes Fie aos bro buy
+e Zhou Xing, Yang Shipu, Jiang Xiaoli ( 43)
+Calculation of Stress Intensity Fac’ . tor Fuselage Opening’s Crack Based on General Finite Element Method srererermrmrennereinennens
+e Zhan Fuyu, Wang Shengnan, Zhang Zhixian ( 49 )
+Analysis on Fatigue Damage Accumulation of Lug Structure Based on Damage Mechanics-finite Element Full-couple Method 一
+招 7 半 177 孔 1 元 3 兰 1 孕 1 认 I Lt Guofeng, Huang Qiqing, Yin Zhiping, et al ( 54 )
+Welding Residual Stress Estimation Based on the Shape-changed Strength Ratio and Material Property Discretization 一 e
+e Lin Hongzhis Xue Caijun, Zhang Junmiao ( 60)
+Numerical Simulation of Rhomboid-arrangement Effusion Cooling 余
+Research on Bushing Swage Housing Process and Quality Control Technology in Airplane Assembly FR TLRS TEL EY
+D Minghui (810)
+Experimental Study on Unsteady Flow of Wing-in-ground Effect at
+High Angle E 吴 a
+e Yang Mei, Yang Wel, Jia Qing, et al (164)
+Research on the Secondary Bending of Composite-metal Adhesively Bonded Joints …....., Li Bo, Zhao Meiying, Wan Xiaopeng (170)
+Numerical Simulation of the Multiple 3D Crack Propagation from the Countersunk Fastener Holes e
+e Wang Hai, Shu Yixiu, Li Yazhi (175)
+Ply Optimization Design of Foam Sandwich Composite Panel Based
+on Genetic Algorithm ?eeeeeeerrire niin
+Analysis of the Bonded-bolted Hybrid Composite Joints’ Strength and e
+e Meng Maomao, Zhao Meiying, Mi Xiaoliang, et al (186)
+Optimization of Reinforcing Structure for Composite Laminates with Cutout Subject to Different Load Cases ?+errresereerersecirniinenn
+e ons Zhang Wel, Gan Jian, Wang Zhijin (193)
+Response of Launch Vehicle under Ground Wind Load ?svvercrrvenns
+e Li Zhe, An Jun, Wan Xiaopeng (199)
+Model Critical Mass Flow Method Based on Flow Matching of Scramjet ---. e Li Bo, Chen Yuchun, Huang Xing, et al (204)
+Numerical Investigation into the Effect of Design Parameters on High Bypass Ratio Separate Flow Exhaust System Performance
+e Huan Xia, Yang Qingzhen, Gao Xiang, et al (211)
+Product Structure Management of Aircraft Based on Modularity e Xu Songlin, Gong Wenxiu, Wang Huiling (219)
+Data Acquisition System Design for Manipulative Characteristics of
+the Lift-fan Power System with Spoilers ?cesrreeercarireiciacnnen
+Based on the Floating-point Coded Genetic Algorithm Planetary Gear Train Folding Mechanism Optimization Design ?+e ceveeceerseeceeens
+伟 )〈ia【()_`i′薹1【〉】g， Zhao Meiving, Meng Maomao,et al (280)
+Damage and Failure Study of Composite Laminates with Reinforced Cutout Based on CDM rreeeeerremiennimemeineiienaninncnnennininnnees
+Z Wang Wenzhi, Wan Xiaopeng, Yao Liaojun (285)
+Concurrent Subspace Optimum Design Method for Composite Stiffened Panel ….....。,Cheng Jialin, Feng Yulong, Yao Weixing (292)
+Scheme Design and Simulation Analysis of Aircraft Brake System . Tao Zhouliang, Nie Hong, Wei Xiachui, et al (306)
+Analysis of Aircraft Nose Landing Gear Shimmy Dynamic Model Based on Matlab/Simulink ?cece ceremonies
+e 0 Xiuwei, Chang Zheng, Jin Xiufen (312)
+Optimization Design of Non-axisymmetric End Wall in a High Pressure Turbine Guide Vane ?eeesesrreererrransrrnamrnnrnmme noone
+e Na Zhenzhe, Liu Bo, Gao Limin (319)
+Design and Micromachining of Flexible Hot Film Sensor with Insulating Cavity Underneath ?vreeesrrrreaerrmrirrcinenimie nnn
+Wing Folding Mechanism Design and Angle Measurement for Morphing Aircraft ---eeceoreressssssrmreimiin iano
+Study on Visual Comfort in Airplane Flight Deck e Lj Hui, Zhang Wei, Ma Zhi (414)
+Effects of Payload「s Base Frequency Reduction on Dynamic Characteristics of Rocket …、.,、 Lei Yu, Zhao Meiying, Yang Hujun (426)
+Bending Moment Reduction Based on Bi-fuselage and Stay Bar in High Aspect Ratio Unmanned Vehicle -orerveereorenrommnennn...
+e Ji [inzu, Liu Feiliang, Huang Peilin (431)
+Dynamic Response Analysis of Launch Vehicle with Reducing Payload’s Fundamental Frequency -?v-ereeermrciernmneinecceciiniin
+Numerical Study on the Clearance Effects of a High-turning Tandem Cascade e Wei Wei, Liu Bo, Li Jun (443)
+Investigation of Civil Turbofan Structure and Components Modeling c Lei Jie, Su Sanmai, Zhou Guting, et al (450)
+Experimental Investigation on Flow Rate Allocation Influence on Pressure Distribution Characteristic of Turbine Blade
+Internal Channel e 『 月 n 史 Weiying, Zhu Huiren, Zhao Shu (458)
+Aerodynamic State Regulation and Control of Cascade in Short Duration Wind Tunnel 一 e Li Hongcai,Zhu Huiren (463)

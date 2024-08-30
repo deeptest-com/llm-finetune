@@ -1,0 +1,209 @@
+航天法有望2020年前正式立法
+2014年11月17-20日，由联合国外空司与中国、亚太空间合作组织联合主办的2014年联合国空间法研讨会在北京召开。本次会议由中国国家航天局承办，主题为“推动国家航天立法、加强外空法治建设”。全国人大财经委主任委员李盛霖、工业和信息化部副部长兼国家航天局局长许达哲、联合国外空司司长迪皮蓬，以及来自32个国家及国际组织的航天机构代表和专家学者出席会议，围绕空间法律和政策发展、促进国家空间立法等热点问题进行了深入交流研讨。
+
+国家航天局 立法 空间法 合作组织 法治建设 专家学者 航天机构 国际组织  
+
+Spectral Studies of Oscillations Observed by the High-Latitude Radar and Magnetometers 245
+correspond to each other quite similarly to
+measurements in two different frames of reference,
+with one of these moving against other. An example
+of the Doppler shift in magnetic data can be found in
+published matters. Namely, the Fig. 4 of Ref. [10]
+clearly indicates a frequency shift between magnetic
+and Doppler radar data, although Ref. [10] does not
+consider such a possibility.
+Direct experimental measurements of the frequency
+shifts expected encounter serious difficulties, since we
+must detect the velocity of ions at the altitude of the
+high-latitude ionospheric current that is usually
+controlled by the precipitating electrons. Taking into
+account these difficulties, Ref. [11] has proposed to
+estimate the Doppler shift indirectly by formulating
+the spectral study of magnetic data as a search for
+hidden periodicities that is the Schuster problem of
+spectral analysis [12]. An approximate solution of the
+Schuster problem can be found by the Tukey method
+using the largest width of the spectral window that
+ensures all spectral powers to be strictly positive.
+Assuming for hidden periodicities a simple model of
+the Doppler-shifted harmonical (i.e., in fact
+equidistant) spectrum, the proposed technique
+provides its strongest whitening of the noise between
+the discrete frequencies searched for, thus finding its
+best approximation to the solution of the Schuster
+problem. So, the main objective of the present work is
+to implement a comparative spectral analysis of the
+magnetic and Doppler radar data using indirect
+estimates for the frequency shifts in magnetic
+observations.
+2. Spectral Studies of Magnetic Data
+The present work analyzes some high-latitude
+events related to the activity of the auroral electrojet.
+The general planetary magnetic activity determined by
+the index XK, remains weak. To reduce the effects of
+nonstationary regimes, the analysis first selects those
+events, which retain their auroras within fairly narrow
+latitudinal intervals over long periods of time. To
+reduce the nonlocality of magnetic measurements, the
+analysis uses the magneto-difference signals which are
+differences between the meridional magnetic fields
+detected by neighboring instruments of the meridional
+array of magnetometers. The data analyzed are those
+of the Scandinavian ground magnetometers IMAGE.
+The geographical and geomagnetic coordinates of the
+stations used are presented in the table.
+Fig. 1 presents the solutions of the Schuster
+problem finding discrete frequencies in the magnetic
+data for the event observed on 1st January, 2000 from
+12:00 to 16:00 UT. The interplanetary magnetic field
+(IMF) observed in this event was predominantly
+northward. The maximum absolute value of the
+magneto-difference signals in nanotesla (nT),
+international abbreviations for the magnetic stations
+used, and the frequency distance between successive
+spectral peaks in millihertz (mHz) are indicated above
+each spectrogram. For the magnetic stations with
+the event observed on 1st January, 2000.
+246 Spectral Studies of Oscillations Observed by
+higher latitudes (shown at the top of Fig. 1), the basic
+(fundamental) frequency of the spectrum is 2.5 (2.4)
+mHz and the spectra differ from harmonical by a
+moderate shift to higher frequencies (the frequency
+shift is below the frequency distance between
+successive spectral peaks). For the stations with lower
+latitudes (shown at the bottom of Fig. 1), the basic
+frequency of the spectrum is 2.8 mHz and the spectra
+are significantly shifted to higher frequencies (the
+shift is above the frequency distance between
+successive spectral peaks). The qualitative difference
+between the spectra found permits to expect a
+difference in their origins.
+Fig. 2 presents the spectrograms obtained for the
+event observed on 21st January, 2004. from 14:00 to
+18:00 UT. In this event, the IMF vector was
+predominantly southward. The notations in Fig. 2 are
+the same as those in Fig. 1. Each time series analyzed
+in magnetic data contains 1,440 measurements. The
+high-latitude stations reveal a basic spectral frequency
+of 0.9 (1.0) mHz and a moderate shift to higher
+frequencies.
+3. Spectral Studies of Doppler Radar Data
+This work analyzes the Doppler data obtained by
+the Norwegian STARE radar for the auroral events
+considered. For this purpose, the analysis selects a
+sequence of points reflecting the radar emission, and
+these points approximately follow the meridional
+array of the IMAGE stations. The points selected are
+indicated by the following notations: (2;41), (3;36),
+(4;31),(5;28),(6;26),and (7;25), where the first
+number indicates the radar beam and the second the
+distance range. The beam No. 1 is directed 13.6°
+eastward from meridian and each successive beam
+adds 3.6° equatorward. The distance no. 1 reaches 495
+km from the radar and each successive distance range
+adds 15 km. The spectral analysis processes the data
+with the Tukey-Hanning spectral window using the
+standard technique of window closing. Each time
+series analyzed in the radar data contains 720
+the High-Latitude Radar and Magnetometers
+measurements.
+Fig. 3 presents the spectrograms obtained at various
+points of radar reflections for the event observed Ist
+January, 2000. Latitudes of reflection points increase
+upward. The resolution of the spectral window (M) is
+the same for all points used. The analysis reveals the
+frequencies of 2.4 and 2.9 mHz, with the lower
+frequency being found at the higher latitude. These
+frequencies are very close to the basic frequencies 2.5
+and 2.8 mHz of equidistant spectra revealed in the
+corresponding magnetic data. At the same time, the
+particular frequencies of the spectral peaks found in
+the magnetic data are about 4 mHz and above.
+Fig. 4 presents the spectrograms obtained for the
+Doppler radar data of the event observed 21st January,
+2004. The spectral analysis of these data reveals the
+0 4 8 12 16 mHz
+Fig. 2 Hidden periodicities in magnetic data of 21st
+January, 2004.
+Table 1 Coordinates of IMAGE stations.
+Abbrev. Geogr. lat. Geogr. long. L CGM long.
+HOR 77.00 15.60 13.37 109.59
+BIN 74.50 19.20 9.88 108.07
+SOR 70.54 22.22 6.74 106.17
+MAS 69.46 23.70 6.13 106.42
+MUO 68.02 23.53 5.48 105.22
+PEL 66.90 24.08 5.04 104.92
+Spectral Studies of Oscillations Observed by
+Fig. 3 Spectrograms for Doppler radar data of 1st
+January, 2000.
+Fig. 4 Spectrograms for Doppler radar data of 21st
+January, 2004,
+frequency of 0.8 mHz, which is very close to the basic
+frequency 0.9 mHz of the equidistant spectrum found
+in the corresponding magnetic data. Note that the
+particular frequencies of the spectral peaks revealed in
+the magnetic data are above 1 mHz.
+4. Discussion
+The differences between the frequencies of
+the High-Latitude Radar and Magnetometers 247
+particular spectral peaks found in the high-latitude
+magnetic and Doppler radar data (compare Figs. 1 and
+3 or Figs. 2 and 4, respectively) indicate the frequency
+shifts between these two types of data. At the same
+time, a satisfactory agreement between the frequencies
+found in the radar data and the basic frequencies of the
+equidistant spectra revealed in the magnetic data
+permits to interpret these equidistant spectra as
+Doppler-shifted harmonical spectra with the same
+basic frequencies. Such an interpretation appeals to
+the fact that the electric fields determined by the
+electron drift velocities detected by radars are not
+dragged by moving media and, therefore, reveal the
+true frequencies in contrast to apparent frequencies
+found by magnetometers. In turn, the harmonical
+spectra revealed this way can be associated with the
+signals of harmonical sources, in particular, with those
+generated by vortices (rotators) of the magnetospheric
+convection.
+The discrepancies between the magnetic
+observations and the “magic” frequencies found by
+radars [3] can be explained by the Doppler effect
+associated with magnetic observations. On the other
+hand, the absence of frequency shifts between the
+magnetic data and those on the intensity of E-layer
+radar reflections [8] can be explained by the fact that
+the intensity of E-layer reflections is determined by
+the Buneman instability which is controlled by the
+difference between the velocities of ions and electrons
+that is by the electric current. In other words, both the
+magnetic measurements and those on the intensity of
+E-layer reflections are observations of ionospheric
+electric currents which reveal identical frequencies.
+The last but not the least question to be discussed is
+that on resonant and driven oscillations. For instance,
+can be considered as resonant (there is an indication of
+resonant absorption), and the resonance frequency is
+about 10 mHz. This comparatively high frequency
+At these circumstances, the lower frequencies, i.e.,
+248 Spectral Studies of Oscillations Observed by
+those of the “magic” range, can be considered as the
+frequencies of driven oscillations [6].
+3. Conclusions
+Discrepancies between the spectral frequencies
+found in high-latitude magnetic observations and the
+“magic” frequencies found in Doppler radar
+measurements can be explained by the Doppler effect
+associated with magnetic observations.
+The agreement between the frequencies found in the
+radar data and the basic frequencies of equidistant
+spectra revealed in the magnetic data permits to
+interpret these equidistant spectra as Doppler-shifted
+harmonical spectra of harmonical sources.
+Acknowledgments
+The author is grateful to M.G. Deminov for helpful
+discussions. The data are collected as a joint
+international collaboration under the leadership of the
+Finnish Meteorological Institute. This work was
+supported by the Russian Foundation for Basic
+Research (project code 11-05-00200) and by the RAS
+Presidium Program No. 22.

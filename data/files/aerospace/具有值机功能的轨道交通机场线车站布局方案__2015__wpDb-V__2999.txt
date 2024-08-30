@@ -1,0 +1,908 @@
+具有值机功能的轨道交通机场线车站布局方案
+近年来,随着国内机场客流量的高速增长及城市轨道交通建设步伐的加快,各大、中城市也开启了轨道交通机场线的建设.结合国内外机场提前值机的概念,以西安北客站至咸阳国际机场的轨道交通机场线为例,分析了值机客流的特征,研究了具备提前值机功能的轨道交通机场线车站布局的3个可行性方案,并指出了实现机场功能外移所存在的问题.
+
+轨道交通车站 机场功能外移 提前值机 布局方案  
+
+Mankind has been increasingly deepening its
+knowledge about the Moon though various exploration
+activities in the past 50 odd years. During the 18 years
+from 1958 to 1976, the United States and the former
+USSR were the first in the world to initiate lunar
+exploration projects, including the “Luna” and “Apollo”
+missions. People were sent to the Moon and gathered
+tremendous amounts of samples, data and information
+regarding the landform, geological setting, material
+composition, internal structure and surface environment of
+the Moon. A series of lunar landform, geological and
+tectonic maps were produced in succession (Ouyang,
+2005). The U. S. Geological Survey (USGS) completed a
+set of lunar geological maps of 44 quadrangles at a scale
+of 1:1 M, and on this basis completed a series of 1:5 M-
+scale geological maps, including Geologic Map of the
+Near Side of the Moon (Wilhelms and McCauley, 1971),
+Geologic Map of the West Side of the Moon (Scott et al.,
+1977), Geologic Map of the East Side of the Moon
+(Wilhelms and El-baz, 1977), Geologic Map of the Arctic
+Region of the Moon (Lucchitta, 1978), Geologic Map of
+the Antarctic Region of the Moon (Wilhelms, 1979),
+Geologic Map of the Central Far Side of the Moon
+(Stuart-Alexander, 1978), and finally the Geologic Atlas
+of the Moon. Among the lunar maps accomplished by the
+former USSR are mentioned mainly the sketch map of
+major tectonic units on lunar surface (1:30 M), tectonic
+map of the global Moon and lunar landform map.
+Moreover, during this period the USGS compiled a set of
+lunar geological maps of some typical regions or Apollo
+landing sites on 6 kind of large and medium scales----
+1:250000, 1:100000, 1:50000, 1:25000, 1:10000 and
+1:5000 (Ulrich,1969; Pohn, 1971; Howard, 1971; Howard,
+1975; Titley and Trask, 1969; Rowan, 1971; Cannon and
+Rowan, 1971). These maps manifest the progress of lunar
+exploration and related researches of mankind. The period
+from 1976 to 1994 is a stage for data processing and
+digestion, analysis and comprehensive study of acquired
+information and materials. Lunar geological mapping at
+this stage placed its emphasis on large-range integrated
+study and compilation of small-scale geological maps.
+Since 1994, the United States started a new program of
+returning back to the Moon and launched
+“Clementine“(1994) and “Lunar Prospector“ (1998)
+another around of 1:2.5 M-scale geological mapping
+project at the Annual Meeting on Planetary Geological
+Mapping in 2002 and planed to implement the mapping
+program based on unified scale, projection, mapping
+standard and nomenclature. In this program, the global
+Moon surface was divided into 30 quadrangles (Fig. 1).
+The program factually began in 2004 and geological
+mapping of four quadrangles is presently under way,
+including Marius Quadrangle (LQ-10), Copernicus
+Quadrangle (LQ-11), Arctic Region (LQ-29),Antarctic
+Region (LQ-30), and meanwhile the draft or preliminary
+results were obtained for some of the quadrangles (Gaddis
+et al., 2006).
+Based on the CCD image, Imaging Interferometer(IIM)
+data, DEM data, contents of minerals and elements
+2010), a study for 1:2.5M-scale digital geological mapping
+around Sinus Iridum and Mare Imbrium was conducted.
+geological mapping (1:2.5 M) of the Sinus Iridum
+procedure and method for lunar geological mapping
+chronology and lunar evolution history, so as to lay a
+foundation for digital geological mapping of the global
+Moon and future compilation of geological maps of other
+planets. This study will also provide data and materials for
+selecting the landing site of Chang E-III in the 3rd-phase
+lunar exploration project of China. This is of great
+significance for the future manned Moon mission, site-
+selection and construction of working bases on the Moon
+surface.
+2 Regional Geological Setting
+The area for the geological mapping ofthe Sinus Iridum
+rocky distribution, three types of regional geological
+landforms are defined: (1) Mare basalt plains, including
+mainly Sinus Iridum, Mare Imbrium, Oceanus
+Procellarum, Sinus Roris and Mare Frigoris; (2) Crater
+accumulative hills, including mainly the region from
+Montes Jura in the northwest of Sinus Iridum in the
+central part of the quadrangle to Montes Alpes in the east;
+(3) Terra plagioclase plateaus, which mainly refers to the
+terra region in the northern quadrangle. Besides, there are
+more large impact craters in the quadrangle, such as
+craters Plato, Harplus, Sharp, Mairan, Bianchini, South, J.
+Herschel and Fontenelle, which constitute the major
+circular geological structure of the study area. The image
+synthesized with the 2c-class data of Chang’E-I CCD
+image was used as the base map for the geological
+mapping (Fig. 2). The spatial resolution of the image is
+120m. Multi-stage geological events took place in the pre-
+Imbrian, Imbrian, Eratosthenian and Copernican periods in
+the study area. The division of strata or geological bodies
+reflects the topographical features (crater, et al), types of
+accumulative materials (ejecta, et al), relations of each
+other’s coverage and spectral features of different regions.
+The geological times of strata and geological bodies
+include the pre-Imbrian (PI), consisting of the pre-
+Nectarian(PN) and the Nectarian (N); the Imbrian (I),
+consisting of the Early Imbrian (I;) and Late Imbrian (I,);
+the Eratosthenian (E) and the Copernican(C). This
+typically summarizes the evolutional history of the lunar
+regional geology (Table 1).
+performed high-precision zircon SHRIMP dating for the
+samples of impact melting debris in front of the southern
+part of the study area obtained by Apollo 12, 14 and lunar
+meteorites SaU169, and accurately ascertained the ages of
+some early events on the Moon. For instance, the age of
+strong impact event of Imbrian Period is 3.92 Ga. This
+conclusion was commonly accepted at the 32nd Lunar and
+Planetary Science Conference in Huston in 2010, so as to
+change the traditional cognition among scientists in the
+world that this event occurred at 3.85 Ga, thus making a
+significant contribution to the study of the early lunar
+evolution history (Liu et al., 2011). In the same way, SIMS
+Pb-Pb dating was conducted on zircons in impact melt
+breccia and fine-grained matrix of the most K-rich KREEP
+of lunar meteorite SaU 169 by Lin et al. (2012), The
+comprehensive petrographic, mineral chemistry and SIMS
+study analyses consider the main age peak at 3921+3 Ma
+and the smaller one at 4016+6 Ma represent the latter
+crystallizing age of KREEP magma and the age of a
+catastrophic shock event in Nectarian. As a sequence, this
+age (39.2 Ma) was adopted as the lower limit of the
+Imbrian Period for the geological mapping in this study
+(Table 1).
+3 Lunar Impact Craters and its Structure
+3.1 Types of impact craters
+Impact craters are one of the major ring structures on
+the Moon, the study of the development, distribution, size,
+form and structure of the impact craters are of the
+important significance for the lunar original and
+evolutional history (Jin et al., 2009; Yue et al, 2006). The
+craters in this mapping quadrangle can be basically
+divided into 7 type and 11 subtypes according to their
+forms, quantity and preservation status of filling materials.
+(1) Bowl-shaped crater Small and very small bowl-
+shaped craters with a diameter ranging from 15 to 20 km,
+formed mainly from the Copernican to the present.
+(2) Central peak crater Craters with a small peak at
+the center, which have the following groups in
+consideration of the rocky types constituting the peaks.
+(a) Fallback accumulative central peak crater
+This kind of craters has their small peaks composed of
+accumulative ejecta and fallback. They are mostly small
+craters with rounded peaks and rough slopes.
+(b) Meteorite relict central peak crater
+This kind of craters has small peaks in the central part
+of them composed of meteorite relicts resulting from
+meteorite impact. They are mostly medium-sized or larger
+with acute peaks, smooth slopes and high albedo.
+(3) Multi-ring crater These craters are composed of
+two ring-like fault zones. They are mostly huge “ancient
+lunar craters” formed in the Imbrian or earlier with a
+diameter larger than 300 km. Mare Imbrium can be an
+example of such huge craters.
+(4) Radial crater Craters with evident radial ejecta
+outside. They were mostly “new lunar craters” formed in
+the Copernican or later.
+(5) Filled crater Craters intruded by or filled up with
+late-stage basalt or plagioclase magma. They are basically
+divided into the following groups according to the
+quantity of the fillings.
+(a) Full-filled crater
+The central part and some fault block accumulation
+belts of the crater are fully filled up with basalt or
+plagioclase magma, which can be clearly distinguished:
+the former is relatively dark while the latter light in color
+(Figs. 3, 4).
+(b) Nearly full-filled crater
+The crater is fully filled up with only dike-like
+accumulation belts being preserved.
+(c) Half-flled crater
+The centre of crater is partly filled up with basalt or
+plagioclase magma (Fig. 5).
+(d) No-filled crater
+No filling is clearly observed in the central part of the
+crater. Such craters are mostly late bowl-shaped and very
+small in size (Fig. 5).
+(6) Incomplete crater Crater partially altered or
+assimilated by basalt magma with incomplete shape (Fig.
+5).
+(7) Residual crater Craters largely altered or assimilated
+by basalt magma with features ofrelicts (Fig. 5).
+3.2 Structure, features and genesis of crater
+accumulation
+3.2.1 Classification of crater accumulation
+Analysis of accumulations in lunar craters shows that
+accumulative materials of impact craters can be divided
+into 6 types and 9 accumulative formations from the
+center outwards (Fig. 6). (1) cp 一 formation of central peak
+meteorite relict accumulation or central peak fallback
+accumulation (“central peak accumulative formation“for
+short); (2) ba—formation of fallback and slump
+accumulation at the center of a crater (“basin accumulative
+formation” for short); (3) fb—formation of step
+accumulation of arcuate fault blocks inside craters (“fault
+block accumulative formation” for short); (4)
+db—formation of dike-like coarse brecciated
+accumulation outside the crater (“dike-like accumulative
+formation” for short); (5) br—formation of dike-like fine
+brecciform accumulative outside the crater (“fine
+brecciated accumulation formation” for short); (6)
+ra—formation of radial accumulatione outside the crater
+(“radial accumulation formation” for short); (7)
+ci—formation of accumulation inside the crater (“inside
+accumulation formation” for short); (8) co—formation of
+accumulation outside the crater (“outside accumulation
+formation” for short); (9) cr—formation of crater
+accumulation, referring to small craters and undividable
+accumulations (“crater” for short); in addition to
+no-filled bowl-shaped crater; E, ,incomplete crater; F. residual
+crater.
+Fig. 6. Classification of lunar crater accumulations
+secondary craters and accumulation (sCc) and small crater
+chains and accumulation (cc).
+It should be explained that lunar craters tend to have
+more complex structure when their diameters are
+increased, and those formed in different times would have
+varying degrees of subsequent disruption. Therefore, it
+should be taken into account the particular form and
+preservation status of a crater for classifying its ejecta
+materials. During the geological mapping at a scale of
+detail, it is enough to outline craters and accumulative
+materials (cr); for craters with a diameter > 5 km or < 20
+km, it is needed to identify accumulative materials inside
+craters (ci) and materials outside craters (co); for craters
+with a diameter > 20 km or <100 km, it is the best to
+identify all accumulative formations from the center
+outwards: the central peak accumulative formation,the
+central accumulative formation, the fault block
+accumulative formation, the dike-like accumulative
+formation, the fine breccia accumulative formation and the
+radial accumulative formation.
+3.2.2 Features and genesis of crater accumulations
+Based on the features of accumulative materials formed
+during impact-ejection process and in consideration of the
+classification schemes proposed by previous researchers,
+we unitively named the accumulative materials of craters
+“crater accumulative group”, and the different types of
+crater accumulative materials are named different
+“formations”. The accumulative materials in the study area
+are divided into 9 accumulative formations from the center
+outwards, which is given below in detail.
+(1) Central peak accumulative formation (cp)
+For this accumulative formation, Cep, Ecp, Icp and
+ILCp are respectively used to denote the accumulations
+formed in the Copernican, Eratosthenian, Late Imbrian
+and Early Imbrian. Central peak accumulation composed
+of meteorites usually has one or several well-preserved
+blocks, which are very solid in quality. Each large rock
+block is conical in form with a sharp top, like a pyramid. It
+is fairly resemble the “horm peak” in glacial
+geomorphology. Besides, the upper part of a large conical
+block was consists of several isolated cones with their tips
+connected by “ridges” that are as sharp as blade, like
+“knife-edge crest” in glacial landforms. Each conic block
+generally has 3-4 smooth but steep planes, whose dip
+angles are generally larger than 45°. Obviously, the
+formation of such “horns” and “crests” is due to strong
+downward impact of meteorites, leading to conical
+fragments of the rocks around rock blocks, and nearly
+vertical impact from fallback blocks (Fig. 7).
+Central peaks made up of fallback materials are scarcely
+seen and they are generally hummocky rather than conical
+in form. The peak tops are rounded and somewhat soft,
+and were formed mainly by accumulation of fallback
+debris from meteorite impact. Such peaks appear mostly
+as single peaks that are dark in color and rather rough.
+They are evidently different from central peaks composed
+of meteorite accumulations in terms of forms and
+characteristics, and thus are easily distinguished.
+As for the genesis of central peaks, most of the
+researchers hold meteorite impact, which will generate
+intensive downward compression to bedrock in the central
+crater and make the bedrock respond back upwards.
+However, we consider that the central peaks might not be
+formed due to upward response of bedrock since such
+back response could cause only gentle upheavals instead
+of local high mountains,and this hypothesis is also
+supported by analysis of the texture, forms and
+characteristics of the rocks forming the central peaks.
+(2) Basin accumulative formation (ba)
+For this accumulative formation, Cha, Eba, I,ba and
+1,ba are respectively used to denote the fallback and slump
+accumulations at the center of a crater formed in the
+Copernican, Eratosthenian, Late Imbrian and Early
+Imbrian. This accumulative formation is distributed in
+areas of gentle relief, featuring small hummocks, low
+roughness and relatively dark dune.
+As for the genesis of the central accumulation of the
+basin, we think the accumulation here was mainly
+generated by the accumulate of ejecta debris and fallback
+materials at the time when craters were formed. Moreover,
+the study of the central accumulation of Crater Tycho
+shows that within craters there are accumulative materials
+formed due to collapse or slump along crater walls and in
+areas of accumulative blocks; whereas late-stage filling of
+basalt and plagioclase magma does not belong to
+accumulation any longer.
+(3) Fault block accumulative formation (fb)
+For this accumulative formation outside crater, Cfb, Efb,
+D 有 and Ib are respectively used to denote the
+accumulations formed in the Copernican, Eratosthenian,
+Late Imbrian and Early Imbrian. This block accumulative
+formation is distributed between the basin accumulation
+and ring faults, and it comprises a series of faulted
+bedrock arcs, which have step distribution towards the
+center of the crater because of meteorite impact.
+Frequently, there are small amounts of debris of slump
+blocks on the surface. Comparatively small craters
+generally do not have block accumulation. Block
+accumulation is sometimes called “wall accumulation”
+among Chinese researchers. However, this places
+emphasis merely on the position of accumulation instead
+of the genesis of accumulative materials. The name of
+“fault block accumulation” can clearly summarize the
+origin of accumulative materials, and hence this name is
+used throughout the geological mapping in this study.
+(4) Dike-like breccia accumulative formation (db)
+For this accumulative formation, Cdb, Edb, I,db and
+Iidb are respectively used to denote the accumulations
+formed in the Copernican, Eratosthenian, Late Imbrian
+and Early Imbrian. This accumulation is distributed in
+proximate regions outside ring faults, and composed
+primarily of huge rock blocks, which were ejected from
+craters when they were formed and accumulated as dike-
+like rock belts just outside the ring faults. Such dike-like
+accumulation always forms highs surrounding craters.
+Generally, its outside slope against the crater is gentle
+while the slope towards the center of the crater is steep.
+The accumulative materials are dark and rough with
+obvious hummocks. Study of relatively large craters, such
+as Crater Tycho, indicates that bedrock erosion and
+corrosion planes, wide or narrow, always appear between
+dike-like accumulation and ring faults. Such dike-like
+result, dike-like accumulation is observed most easily and
+is a perfectly preserved portion of a crater among all its
+components.
+(5) Fine breccia accumulative formation (br)
+For this accumulative formation outside crater, Cbr,
+Ebr, Libr and I;br are respectively used to denote
+accumulation formed in the Copernican, Eratosthenian,
+Late Imbrian and Early Imbrian. This accumulation is
+distributed between the dike-like accumulative formation
+and the radial accumulative formation, and actually serves
+as a transitional zone between the two. The ejecta
+materials of this accumulative formation are obviously
+finer compared with dike-like accumulative blocks, but
+numerous salient rays are visible. The accumulation
+becomes thinner from the crater’s center towards the edges
+and meanwhile some small and short radial valleys and
+gullies can be seen.
+(6) Radial accumulative formation (ra)
+For this accumulaivte formation, Cra, Era, Dra and [ira
+are respectively used to denote accumulation formed in the
+Copernican, Fratosthenian, Late Imbrian and Early
+Imbrian. This accumulation is distributed in the outmost
+zone of crater. It is made up of large amounts of fine
+ejecta and secondary craters et al. The most prominent
+feature of such accumulation lines in its clear rays, which
+are characteristic of accumulations formed in the
+Copernican in particular. The radial accumulation
+generally has small thickness and is not evenly distributed.
+The rays are varied greatly in length: dozens of kilometers,
+tens or hundreds of kilometers, and are even as long as
+thousands of kilometers, mainly depending upon the size
+of crates.
+(7) Crater inside accumulative formation(cD
+This accumulative formation refers to accumulation
+inside craters that can be subdivided because they are too
+small. For this accumulative formation, Cci, Eci, I,ci and
+Iici are respectively used to denote the accumulation
+formed in the Copernican, Eratosthenian, Late Imbrian
+and Early Imbrian.
+(8) Crater outside accumulative formation (co)
+This accumulative formation refers to accumulation
+outside craters that can be subdivided also because the
+craters are too small. For this accumulative formation,
+Cco, Eco, I,co and Ico are respectively used to denote
+accumulation formed in the Copernican, Eratosthenian,
+Late Imbrian and Early Imbrian.
+(9) Crater accumulative formation (cz)
+The crater accumulative formation refers to the crater is
+too small and the accumulation cannot be subdivided. For
+this accumulative formation, Ccr, Ecr, Ler and ILCr are
+respectively used to denote the accumulation formed in the
+Copernican, Eratosthenian, Late Imbrian and Early
+Imbrian.
+For accumulation formed during the impact-ejection
+process of the crater, “geological time+genesis“ is used to
+denote “accumulative formations” of different geneses on
+the geological map, and for each “accumulative
+formation”, a capital letter is used for “time” and italic
+lowercases thereafter are for the name of the accumulative
+formation or the explanations of genesis and tectonic
+position. The geological time of the formation is the
+relative age of impact crater and ejection.
+4 Stratigraphic Division
+Based on the analyzing results of the samples directly
+collected in the mapping area and neighboring regions,
+especially Montes Apenninus and Montes Carpatus, both
+attributed to the Imbrian Basin system, as well as at the
+landing site of Apollo 15, and from the Apollo 11, 12, 14,
+16 and 17 missions, in conjunction with the images directly
+taken on the Moon surface, and considering particular
+geological and geomorphologic features, we preliminarily
+divide the bedrock and crater accumulation of the study
+area into five accumulative series in stratigraphy: pre-
+Imbrian bedrock accumulative group (PI), Early Imbrian
+crater accumulative group, Late Imbrian crater
+accumulative group, Eratosthenian crater accumulative
+group and Copernican crater accumulative group.
+4.1 Pre-Imbrian bedrock accumulative group (PI)
+Images taken by Apollo 15 and 17 show clear
+depositional beddings and unconformities in bedrock hills
+nearby the landing sites. The rock is hard with well-
+developed joint fissures and strong resistance to
+weathering and erosion. In the high-resolution image of
+Crater Tycho, the bedrock outcropping around the crater
+also has clear depositional beddings, but the rock is not as
+hard and is poorly resistant to erosion. Although the
+bedrocks observed at the two places both show the
+depositional beddings, yet the former are solid in quality,
+had experienced intense tectonism and dip steeply;
+whereas the latter are comparatively soft with horizontal
+beddings or small dip angles. This perhaps proves that the
+exposed bedrocks around the landing sites of Apollo 15
+and 17 became so hard and steep just because they had
+witnessed fairly strong metamorphism. The bedrocks in
+these regions are then tentatively ascribed to the bedrock
+accumulative group. Since this group had existed before
+the formation of the Imbrian Basin, its age is then defined
+as the pre-Imbrian and this accumulative group is
+symbolized with “PI”. The overburden of the buried crater
+appearing in the northeastern part of this map quadrangle
+is ejecta of Mare Imbrium and the formation age of the
+buried craters should be the Nectarian or pre-Nectarian
+Periods. Such buried craters can be generally seen in terra
+plateaus on the Moon.
+In the southeastern and northeastern parts of the Imbrian
+Basin in the mapping area, the image features of the rocks
+constituting Montes Recti, Teneriffe, Pico, Piton and
+Spitzbergen indicate that such rocks can be well correlated
+with those from the Apollo 15 and 17 landing regions, that
+is, they are solid with relatively intact appearance and all
+situated in bedrock belts of the first ring structural zone
+surrounding the Imbrian Basin. Therefore, the rock
+formations possessing the above features are preliminarily
+ascribed to the pre-Imbrian bedrock accumulative group
+(Fig. 8).
+4.2 Early Imbrian crater accumulative group
+In view of the large size of Early Imbrian craters and
+extensive distribution of accumulative materials. this
+accumulative group is subdivided into three formations in
+the accumulative formation in Sinus Iridum at the middle
+stage of the Early Imbrian (I02) and the accumulative
+separately, and are generally divided into the Early
+Imbrian accumulative formation and the Late Imbrian
+accumulative formation respectively. The accumulations
+of small Eratosthenian and Copernican craters are not
+separately grouped since their accumulative materials have
+only limited distribution areas.
+(1) Accumulative formation outside Mare Imbrium
+Because Mare Imbrium crater was large in size in the
+early Imbrian,whose diameter was up to 1123 km,its
+ejecta and accumulative materials were distributed
+extensively and the accumulations in the basin were
+almost covered by Imbrian basalt or nearly exhausted due
+to intensive contamination and assimilation because the
+basin was formed so long a time ago, Nevertheless, the
+ejecta materials accumulated when the Imbrian Basin was
+formed have been largely preserved, which spread mainly
+around Montes Alpes between the first ring structure and
+the second ring structure in the north. Mountainous, hilly
+and gentler lands appear alternately and show radial
+distribution round the center of the Imbrium Basin. They
+are light in tune, rather rough and have high albedo.
+Because of its old age, the Imbrium Basin has so heavy
+overburden of subsequent impact ejecta materials, that it
+will be difficult to divide further. As a result, different
+ejecta materials of the Imbrian Basin, including dike-like
+breccia accumulation, fine breccia accumulation and radial
+accumulation” and notated by I;' co.
+(2) Accumulative formation in Sinus Iridum
+The diameter of the early Imbrian Sinus Iridum is about
+260 km, much smaller than that of Mare Imbrium crater,
+being only 1/4 of the latter. Since it is comparatively
+be defined: dike-like breccia accumulative formation
+(1,%db), fine breccia accumulative formation (L2D7) and
+radial accumulative formation ([“ra),
+(3) Accumulative formation in Crater Plato
+In the mapping area, Crater Plato is relatively young in
+the Early Imbrian craters, but it is fairly large with a
+diameter as large as 125 km+. It has widespread and well-
+partly preserved though most of the accumulative
+materials in the crater are subsequent basalt overburden.
+And the accumulation is well preserved outside the crater,
+which can be further divided into the dike-like breccia
+(I, °br).
+(4) Accumulative formation of Early Imbrian craters
+This accumulative formation includes basically the
+accumulative materials of small craters, which are not
+further divided and are notated by I,cr, or divided merely
+into inside accumulation and outside accumulation,
+denoted by Lci and Ico, respectively.
+4.3 Late Imbrian crater accumulative group
+Because craters of this group are small, they are not
+further divided and are notated by I,cr, or divided merely
+into inside accumulation and outside accumulation,
+denoted by Ici and Ico respectively, except some larger
+ones, which are divided into I,cp, Lba, Lfb and Libr et al..
+4.4 Eratosthenian and Copernican crater accumulative
+groups
+Further division of these accumulative groups depends
+on the size and quantity of accumulative materials of
+craters. For larger ones, the following groups can be
+identified: central peak accumulation, basin accumulation,
+fault block accumulation, dike-like breccia acumulation,
+fine breccia accumulation and radial accumulation,et al.,
+which are respectively denoted by Ccp, Cha, Cfb, Cdb,
+Cbr and Cra, and Ecp, Eba, Efb, Edb, Ebr and Era. And
+for the small ones, they are not further divided and are
+only notated by CCr, Ecr.
+5 Classification of Mare Basalt and Terra
+Basalt
+Researches revealed that the major basic eruptive rock
+on the Moon is basalt and the eruption of basalt magma is
+of the regional effusion type, resulting in board basalt
+plain areas in Mare Imbrium, Mare Frigoris and Oceanus
+Procellarum. And the different kind of basalts is correlated
+with the stages of the eruptivities(Xu, 2010; Zhou et al.,
+2010; Lin, 2010). Within the mapping area, preliminary
+analysis of the distribution of TiO, content obtained based
+on the JIM data. of Chang「E-I (Fig. 9) shows that there is
+an obvious positive relationship between the degree of
+magmatic emanation-assimilation and the content of TiO,
+(Wang et al., 2012). Accordingly, the basalt is divided into
+three primary types in light of its assimilation degree:
+strong assimilation basalt, medium assimilation basalt and
+weak assimilation basalt. If the content of TiO, and the
+formation age of basalt are taken into account, the
+following three cases can be summarized. (1) High-TiO,
+basalt (EAD formed in the Eratosthenian with strong
+assimilation, (2) Medium-TiO, basalt (I,m?) formed in the
+Late Imbrian with medium assimilation and (3) Low-TiO;
+basalt (I;/f) formed in the Early Imbriam with weak
+assimilation. These three types of basalt have different
+features on images and these features are in good
+agreement with the analytic results of samples obtained by
+the Apollo 11, 12, 14, 15, 16 and 17 missions, which can
+thus be considered as important evidence for the above
+division of the basalt (Fig. 9).
+5.1 Features of mare basalt and terra basalt
+5.1.1 High-TiO2 Eratosthenian basalt
+wt%, which is obviously characterized by dark tune, dark
+grey and grayish dark color, low albedo, small number of
+xenoliths, strong assimilation and contamination.
+Apparently, the areas of such basalt look quite“pure“with
+very few and small impact craters, attributed to the
+Eratosthenian and Copernican. Spatially, they are usually
+elongated in the N-S direction around the central part of the
+crater in lunar mare areas, while seen seldom in terra areas.
+5.2.2 Medium-TiO; Late Imbrian basalt
+Medium-TiO, basalt has the content between 4.5 wt%
+and 7.0wt%, characterized by relatively light tune, grey to
+dark grey color, comparatively more xenoliths, evidently
+weaker assimilation and contamination compared with
+Fig. 9. The TiO, distribution in Sinus Iridum and adjacent region
+hight-TiO2 basalt, more small-sized craters distributed that
+belong to the Eratosthenian and Copernican with a few to
+the Late Imbrian.
+5.1.3 Low-TiO; Early Imbrian basalt
+Low-TiO, basalt has the content between 1.0 wt% and
+4.5wt%,characterized by grey-light to grey color,the
+largest number of most xenoliths compared with the above
+two cases, well-preserved appearance of xenoliths, weak
+assimilation and contamination, more small-sized and
+occasional medium-sized craters distributed.
+5.2 Mixed basalt in filling materials of crates in lunar
+terra regions and their characteristics
+Apart from ejecta fallback, slump and collapse
+accumulations, the fillings of craters often include lava
+materials resulting from magmatic stoping. Such filling
+materials are sometimes called fillings of volcanic
+eruption, namely basalt lava fillings. Crater Plato can be
+the typical case, whose lava has dark tune and flat and
+smooth surface, which are easily indentified. Besides,
+there are some filling materials characterized by light tune
+and many “tortoise-shell-pattern” tensional fissures, which
+(after Wang et al., 2012).
+are often distributed on one side of basalt fillings or
+floated above them, or spread in isolation at the center of a
+crater. Regionally, such fillings are mostly found in the
+surrounding areas of maria and the features of their images
+are between those of basalt and those of accumulations
+and characterized by more “tortoise-shell-pattern” faults.
+Such fillings are preliminarily thought to be a sort of
+transitional basalt formed when central accumulation had
+intense contamination and assimilation. According to the
+research (Wang et al., 2011), such basalt has lower content
+of basic composition compared with mare basalt and is
+provisionally named mixed basalt. Filling materials of
+some craters in the northern part of the mapping area, such
+as La Condamine, is one of the examples (Fig. 5).
+Tectonics
+Many researchers developed detailedly the study about
+the lunar regional tectonic characteristics, main structural
+forms, genesis and evolution with Chang’E-I CCD image
+data(Zhang et al, 2010, Wang et al., 2011). Diverse
+structures are characteristic of the mapping area, including
+lineaments such as faults, rimae and montes, as well as
+some ring structures. Regionally, circular and arcuate
+faults are distributed on the bottom of craters, and
+moreover faulted structures are extensively developed in
+basalt and ejecta accumulative areas in lunar maria. These
+structures have approximately parallel lineaments, striking
+dominantly NE, NW and NS with limited extent, 2.5 km,
+in general. Their ages, however, are difficult to determine.
+Persistence and consistence of the regional lineaments
+suggest that they have had stable regional stress fields for
+quite a long period. Therefore, we think that the stresses
+responsible for the formation of the regional faulted
+structures are mainly related to a secular and stable
+longitudinal compression stress field resulting from the
+spinning of the Moon, that is, the lunar surface structural
+lines were formed due to long-range continual
+compression stresses from the poles towards the equator.
+6.1 Division and features of regional tectonics
+The fault structure in the mapping quadrangle can be
+divided into 4 basic types based on their distribution and
+features: (1) Regional effusive faults in maria (Fig. 10),
+(2) regional faults in crater accumulation,(3) regional
+faults in terrae,and (4) crater fault systems,which are
+further divided into 3 subtypes: crater ring faults, arcuate
+faults inside craters and “tortoise-shell-pattern” faults.
+6.1.1 Regional effusive fault in maria
+These faults are distributed in maria and can function as
+passages of regional effusion of mare basalt, thus being
+called “regional effusive fault” or “effusive fault”. They
+are characterized particularly by large scale and long
+extent, and elongated ridges (called middle ridges,
+sometimes) of basalt magma are typically seen along the
+faults. In other words, such faults belong to tensional
+faults. In Mare Imbrium, Sinus Iridum and Oceanus
+Procellarum, these faults have concentric or radial
+arrangement and are approximately parallel on the whole.
+6.1.2 Regional fault in crater accumulation
+Fig. 10. Regional ejecta faults distributed in mare basalt.
+Faults of this type are distributed in ejecta-covering
+areas due to meteorite impact, and can be called
+“accumulative regional fault” or “regional fault”.
+Formation of these faults is possibly related to strong and
+repeated meteorite impact events and secular N-S-trending
+regional compression stress field. Typically, they are
+relatively small with relatively short extent, and generally
+have concentrated distribution.
+6.1.3 Regional fault in terrae
+Terrae regions are seen only in the northern part of the
+study area. Owing to thick cover of subsequent crater
+ejecta, not very many faults are visible. The features of
+this type of faults are almost the same as those of the last
+case.
+6.1.4 Crater fault system
+(1) Crater ring faults
+The most visible and best preserved lunar craters are
+dike-like accumulation around crater rims and closed ring
+faults around craters. Ring faults belong to the normal
+faults inclining towards the centers of craters. They are the
+boundaries between the inside and the outside portions of
+a crater. Craters, no matter small or large, all have ring
+faults.
+(2) Arcuate faults inside craters
+The arcuate faults are distributed between ring faults
+and central accumulation areas. They are step normal
+faults, appearing generally as arcuate fault zones
+composed of a seties of short arcuate faults and inclining
+towards the centers of craters. The size of an arcuate fault
+or ring fault depends on the size of the relevant crater.
+Small craters usually have only ring faults and the arcuate
+faults undeveloped.
+(3) Tortoise-shell-pattern faults
+In a crater, contraction faults formed in a cooling
+process are frequently seen on the surface of craters that
+are filled up with basalt, mixed basalt and plagioclase
+magma. They are generally small in size and distributed in
+areas of central accumulation. The formation of such
+faults is perhaps primarily related to stoping of basalt
+magma or plagioclase magma, which might result in
+tensional fissures in frozen mixed basalt or mixed
+plagioclase, Since such faults usually show figures like the
+pattern on tortoise shell, this type of faults are called
+tortoise-shell-pattern faults (rimose faults).
+6.2 Features of other lineaments
+6.2.1 Rimae
+Rimae are negative landform structure with a certain
+width, which have linear arrangement and lie in basalt
+regions on the nearside of the Moon. Their forms are
+similar to those of passages of basalt lava flow: snake-
+shaped, meandering and flowing along slopes. Their
+source areas are irregular or elongated sags or impact sags,
+which tend to become narrower and shallower along the
+extension of rimae. Some rimae may terminate abruptly
+without clear ends, disappearing in peripheral mare
+sediments in most cases. On remote-sensing images, rimae
+correspond to long and narrow dark fissures. Rimae are
+well developed in the northern part of Oceanus
+Procellarum and vicinities of Crater Plato. Among the
+examples are Rima Plato in the northeast, Rima Sharp and
+Rima Mairan in the west (Figs. 11, 12). These rimae are
+probably passages of lava or collapsed lava pipes formed
+during the period of volcanism.
+6.2.2 Montes
+Montes are distributed principally around large crater
+basins on the Moon, appearing mainly as mountain rings,
+which are mostly in relation to meteorite impact and form
+continuous and precipitous mountain belts, up to 7-8 km
+high and as long as several hundreds of or a thousand
+kilometers. They are found in the surrounding areas of
+large impact basins and lunar craters, exhibiting linear or
+arcuate arrangement. Some of the mountains on the Moon
+Fig. 11. Rima Sharp (partial section).
+Fig. 12. Rima Plato (west section).
+are closed walls of impact craters after subsequent erosion,
+and some of them were caused by compression of the
+Moon’s surface, representing the early-stage tectoic
+movement. In remote-sensing images, the montes are
+showed as bright areas and they are gentier on the sides
+facing terras. In the mapping area, Montes Jura, Alpes,
+Recti, Teneriffe, Pico, Piton and Spitzbergen are
+developed around lunar mares in the Sinus Iridum - Mare
+Imbrium region.
+6.3 Division of tectonic units
+In view of fault feature and spatial distribution,
+landforms and rock types in the study area, the mapping
+quadrangle is divided into three structural zones (Fig. 13):
+(1) the regional effusive fault zone in mare plains, (2) the
+regional fault zone in monte-hill areas (in basalt-
+plagioclase accumulation) and (3) the regional fault zone
+in plagioclasite in plateaus.
+6.3.1 The regional effusive fault zone in mare plains
+This fault zone is distributed in Mare Imbrium in the
+south, Oceanus Procellarum in the west and Mare Frigoris
+in the north of the mapping quadrangle. Spatially, this is a
+U-shaped area, where the largest faults and most of the
+faults of the studv area are distributed. Mare Imbrium has
+larger and more faults. Oceanus Procellarum, Mare
+Frigoris and Sinus Roris have relatively few faults. These
+faults, appearing in groups, were major channels for the
+formation of mare basalt. They are distributed
+concentratedly with clear ring arrangement, which is very
+much like the circular faults when Mare Imbrium and
+Sinus Iridum were formed. The faults in this zone are
+roughly grouped into three sets: trending NE, NW and N-
+S respectively. The faults in every group have en echelon
+arrangement. The NE-trending faults are generally
+sinistral faults and the NW-trending faults are dextral
+tensional faults. The longest faults can be as long as 200
+km. There often appear elongate ridges of late-stage basalt
+along the faults.
+6.3.2 The regional fault zone in monte-hill areas
+This fault zone lies in the central part of the quadrangle
+and is a wide elongate area slightly bending
+northwestwards. In the fault zone there are mainly ejecta
+accumulations of craters of various ages, and mountainous
+and hilly landforms are typical in this zone. The ejecta
+accumulations are consist of not only basalt, but also
+plagioclasite. High montes might be viewed in coarse
+breccia dike-like accumulative areas around large craters,
+such as Montes Jura in the northwestern edge, Montes
+Alpes to the east of Mare Imbrium. The faults in this zone
+are comparatively small, thousands or tens of thousands of
+Fig. 13. Tectonic division in Sinus Iridum and adjacent regions.
+meters in length. The longest ones can be up to 50 km.
+The faults stretch primarily NE, NW and N-S with E-W-
+trending faults occasionally seen.
+6.3.3 The regional fault zone in plagioclase in plateaus
+This fault zone is relatively small and irregular in shape
+and lies in the north of the mapping area. Crater ejecta
+plagioclase accumulation is the major lunar rock and it is
+widely covered by Imbrian ejecta and large craters are
+usually of the buried type. Small Eratosthenian and
+Copernican craters are few in number. For instance, Crater
+J. Herschel is overlain by ejecta of Mare Imbrium and
+only much ring breccia accumulation has been preserved
+"and other accumulative materials are buried. In craters of
+the late Copernican, central peak accumulation, central
+accumulation, fault block accumulation, ring faults and
+circular accumulation are well developed (Fig. 14). The
+faulting degree and strikes of the faults are similar to those
+of the faults in terra areas, basically NE-, NW- and N-S-
+striking.
+6.4 Development and evolution of regional tectonics
+Four evolution stages can be defined for the regional
+tectonics in the mapping area according to the features and
+distribution of different faults, as well as the covering
+relationships of crater accumulative materials.
+6.4.1 Formation stage of pre-Imbrian ring faults
+Pre-Imbrian ring structures are distributed mainly in the
+northwestern part and are all covered by Nectarian ejacta
+accumulative materials, thus having become buried
+craters. The inside of dike-like accumulation is an area of
+ring faults, which are not exposed due to coverage of
+accumulation of Nectarian craters. Now, we are not certain
+whether regional faults are developed here. The ring faults
+can be very large, whose diameters are mostly larger than
+100 km, since the buried craters are fairly large.
+6.4.2 Formation stage of Imbrian regional effusive
+faults
+This is a stage that the regional faults wrer the most
+active. After the formation of Mare Imbrium, a
+considerable quantity of basalt magma surged upwards
+along ring faults and radial faults caused by meteorite
+impact, not only filled up Mare Imbrium and also
+violently eroded and contaminated surrounding rocks. As
+a result, the previously formed craters and secondary
+ejecta craters were subjected to serious disruption to form
+filling craters, incomplete craters and residual craters. At
+the late stage, high-Ti basalt magma of the Eratosthenian
+was erupted extensively along N-S-stretching tensional
+faults.
+6.4.3 Formation stage of Eratosthenian regional faults
+and crater ring faults
+Along with the formation and consolidation of a large
+amount of crater ejecta accumulations, NE- and NW-
+trending conjugate faults and nearly SW-trending
+tensional faults were formed by strong nearly SW-directed
+compression stress fields from the two poles to the equator
+due to the revolution and rotation of the Moon, In the
+Eratosthenian, meteorite impact was significantly
+weakening and ring faults were small, generally tens of
+kilometers in length, suggesting weaker and weaker
+faulting activity during this period.
+6.4.4 Formation stage of Copernican crater ring faults
+In the Copernican, regional basalt magmatism was
+basically terminated. Therefore, few filling process
+occurred in Copernican craters. Craters due to meteorite
+impact in this period usually have small sizes with
+diameters no larger than tens of kilometers in general.
+7 Conclusions
+(1) Based upon the CCD image data, interference
+imaging spectral data and DEM data of China’s lunar
+exploration project (Chang’E-I), as well as analytic results
+of mineral and element contents, comprehensive studies
+were conducted with the Sinus Iridum - Mare Imbrium
+region as the center, including the divisions of
+stratigraphic and tectonic units,rocky type division,
+chronological research and evolution history of the Moon.
+A geological map of the Sinus Iridum Quadrangle at a
+scale of 1: 2.5M was completed (Fig. 15).
+(2) Based on the morphological features of craters,
+quantity and preserving status of fillings of craters, the
+lunar impact craters can be divided into 7 types and 11
+sub-types, and accumulative materials of craters are
+divided into 6 types and 9 accumulative formations.
+(3) Based on the content, distribution of TiO2 and
+regional image characteristics, the mare and terra basalts
+are divided into high-TiO, basalt formed in the
+Eratosthenian,medium-TiO2basalt formed in the Late
+Imbrian and tow-TiOz basalt formed in the Early Imbrian.
+(4) The Early Imbrian bedrock accumulate groups in the
+northern terra plateau area consists of crater ejecta
+plagioclasite accumulative materials, which experienced
+violent reworking of subsequent impact of craters such as
+Mare Imbrium and are extensively covered. Such
+accumulation can also be found around the first ring
+structure in the southeastern, northeastern and western
+parts of the Imbrian Basin.
+(5) The Early Imbrian craters are generally large in size
+with extensively distributed accumulations, which can be
+accordingly further divided into three formations: the
+accumulative group in Mare Imbrium at the early stage of
+the Early Imbrian, the accumulative group in Sinus Iridum
+at the middle stage of the Early Imbrian and the
+accumulative group in Crater Plato at the late stage of the
+Early Imbrian. This implies the intense impact-magmatism
+taking place in the study area in the Early Imbrian.
+(6) Based on the features, spatial distribution, landform
+and rock type of the faults, the mapping quadrangle is
+divided into three structural zones: (1) the regional
+effusive fault zone in mare plains, (2) the regional fault
+zone in monte-hill areas (in basalt-plagioclase
+accumulation) and (3) the regional fault zone in
+plagioclasite in plateaus. This manifests the characteristics
+of the regional tectonic distribution and evolution of the
+study area.
+Acknowledgements
+This study is financially supported by the National
+“863” Project (Grant No.: 2010AA12220105) and the
+Standard Research of Lunar mapping of Geology and
+Tectonics (Grant No.: Y2ZZ031000-02) from Institute of
+Geochemistry, Chinese Academy of Sciences. Remote-
+sensing data of the Chang’E-I satellite and other data and
+research results available in China and abroad were used
+to the geological mapping of the Sinus Iridum quadrangle
+in this study. Gratitude is also due to the National
+Astronomical Observatories, Chinese Academy of
+Sciences, and China University of Geosciences (Beijing),
+as well as all researchers of this mapping project for their
+energetic assistance and support.
+Manuscript received Mar. 6, 2013
+accepted Sept. 13, 2013
+edited by Fei Hongcai

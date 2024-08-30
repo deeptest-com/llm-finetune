@@ -1,0 +1,302 @@
+数字闭环石英挠性加速度计信号检测技术
+数字闭环石英挠性加速度计可以有效地解决传统模拟式加速度计在模数转换中引起的精度损失问题，而数字式加速度计的精度主要取决于差动电容检测环节。阐述了数字式加速度计的工作原理，重点设计了差动电容检测方法，利用单载波调制与数字自相关解调技术构建完整的数字式加速度计信号检测方案。搭建数字式加速度计原理样机，对其进行0 g/±1 g稳定性测试，得到数字式加速度计0 g/±1 g零偏稳定性分别为17.5950μg、19.3637μg、20.7153μg。测试结果表明，当前的数字式加速度计精度达到了模拟式加速度计精度量级，有效验证了该方案的可行性及正确性。
+
+自相关检测 加速度计 数字闭环 差动电容 调制解调  
+
+差动电容;_调制解调
+0 Introduction
+As a kind of typical capacitive accelerometer, the
+limit precision of quartz flexible accelerometer is
+determined by the sensitivity of differential capacitance
+detection circuit. However, considering the limitation
+of the capacitive accelerometer, which includes the
+processing technology and the volume, the header
+static capacitance is about pF level(10-2F),moreover,
+the capacitance variation of the sensitive mass
+displacement produced by acceleration is more
+exiguous, generally is at the fF (10-5F) or aF (10~"F)
+level. As a result, the header output signal is so weak
+that it is easily affected by the various kinds of
+parasitic capacitance. How to detect the header tiny
+capacitance is one of the key problems of the capacitive
+accelerometer.
+Currently, several methods are used in the
+capacitance detection, including capacitance to
+frequency conversion [2,Capacitance Bridge'?!, switch
+capacitance method, modulation and demodulation 51,
+etc. Among which the modulation and demodulation
+method is also divided into single carrier dual-channel
+amplifier and double carrier single-channel amplifier!
+Compared with other methods, the single carrier and
+dual-channel modulation scheme has more notable
+advantages on low noise, high linearity, weak
+affection and simple design, so it is widely used in
+differential capacitance detection circuit of accelerometer.
+Such as LB309,single carrier modulation technology
+was used in current mirror differential capacitance
+detection circuit, which through two PNP current
+mirrors and a current inverter to realize the header
+capacitance detection.
+High precision inertial navigation system puts
+forward higher performance on the quartz flexible
+accelerometer. Due to the traditional analog quartz
+flexible accelerometer needs an external analog to
+digital conversion circuit to provide digital information
+for the navigation computer; the precision loss is
+inevitably produced in the conversion!”. Based on the
+digital closed-loop detecting technology, the digital
+quartz flexible accelerometer (DCLA) can effectively
+solve the above problem and output digital information
+directly. As a new kind detection scheme, how to
+realize the precise capacitance and signal detection of
+the DCLA are of great significance in improving the
+system precision.
+1 System scheme design
+1.1 System overall scheme
+As shown in Fig.l, the DCLA is mainly
+composed of mechanical header components and
+digital closed loop detection circuit[821,、,The latter is
+controlled by the FPGA, which includes differential
+capacitance detection circuit, A/D conversion circuit,
+digital signal processing circuit, D/A conversion
+circuit and feedback driver circuit. It is obvious that
+the differential capacitance detection circuit is in the
+front end of signal,which plays a vital role on the
+whole detection system.
+When the quartz flexible pendulum is sensitive to
+the external acceleration, it will produce a capacitance
+change, and then the change of capacitance will be
+converted into the amplitude proportional to the
+current or voltage signal through the differential
+capacitance detection circuit.
+1.2 Scheme of capacitance detection
+Quartz flex accelerometer is so easily affected by
+the parasitic capacitance that the output signal to noise
+ratio is rather low. Therefore, in order to improve the
+detection sensitivity,in this paper,the single carrier
+modulation and demodulation technique is used in the
+differential capacitance detection scheme.
+Figure 2 is the principle of the differential
+capacitance detection circuit Among which Fig.2 (a)
+is the common used scheme, instead, Fig.2 (b) is
+the scheme configured in the digital accelerometer.
+Through the differential function, the circuit can
+convert the weak capacitance signal into the amplitude
+of high frequency carrier signal.
+By all appearances, a differential operational
+amplifier is used in Fig.2 (b) to realize the same
+function in Fig.2 (a), which adopts three operational
+amplifiers. On one hand, the configuration of Fig.2(b)
+can effectively reduce the error which brought by the
+two dual signal parameters mismatch; on the other
+hand, it is conducive to realize the miniaturization of
+the system.
+2 Analysis of carrier wave
+As is shown in Fig.2(b), modulation waveform is
+produced by the FPGA, through the D/A converter,
+output the analog waveform on the movable plate of
+the header differential capacitance. Here carrier signal
+is determined by the waveform, frequency, amplitude
+and stability.
+2.1 Carrier waveform
+For the capacitive accelerometer,the commonly
+used carrier signals are sine wave, square wave and
+triangle wave. As shown in Tabl.1, there is a detailed
+comparison about the frequency, bandwidth and
+realization of each carrier signal, respectively. It can
+be seen that selecting the triangle as a modulation
+waveform has an advantage that the differential signal
+is a square wave, which facilitates the digital
+demodulation subsequently.
+Parameter Sin wave Square wave Triangle wave
+Frequency Singleness Complex Complex
+Bandwidth Low >10 times of signal High
+Realization Complex Easy Easy
+2.2 Carrier frequency
+Usually,for the fixed capacitance detection,the
+higher the frequency, the smaller the capacitive
+reactance, and for the quartz flex accelerometer
+system, the small capacitive reactance is beneficial to
+improve the system measurement sensitivity. Due to
+the high impedance of the header, high frequency
+signal should be used as an incentive in order to
+reduce the output impedance. Additionally, in terms of
+the noise, high frequency carrier signal is the best
+choice to reduce the noise influence021. However, with
+the increase of carrier frequency, it will put forward
+higher request on the operation amplifier, such as the
+SR(slew rate) and the GBW(gain bandwidth product).
+Therefore, the selection of carrier frequency should
+consider the following points.
+(1) Carrier frequency is associated with the
+output noise power spectrum. Theoretical analysis
+shows that higher carrier frequency can reduce the
+thermal noise of the capacitance detection circuit
+effectively. When the carrier frequency is set within
+the range of 1kHz to 1 MHz, the square root spectral
+density of voltage and current is the least.
+(2) AD sampling frequency is also influenced by
+the carrier frequency. Under the Shannon sampling
+theorem, we often choose sampling frequency as 10
+times of the signal frequency for the engineering
+practice. After the differential function of the carrier
+signal, the pulse along is useless, in other words, it is
+not the whole cycle sampling points are valid.
+Therefore, in order to ensure adequate signal to noise
+ratio, sampling points should be increased in
+appropriately. In return, the larger carrier frequency is
+bad for the increasing of A/D sampling frequency, so
+the carrier frequency should also not be large.
+Through the comprehensive consideration, the carrier
+frequency is set as 100 kHz.
+2.3 Carrier amplitude
+The charge electrostatic force exists in the space
+between a certain distances,opposites charges attract
+and like charges repel. While the movable plate of the
+quartz flex accelerometer is loaded with a high
+frequency carrier signal, the movable and fixed plate
+will store the same amount of opposite charges,
+respectively. Because of the potential difference
+between the two plates, there is an electrostatic force
+exists. When the carrier amplitude is greater than a
+certain value, the electrostatic force will exceed the
+scope of the stiffness of elastic beams, and then the
+movable plate will be close to the fixed plate.
+Consequently, in order to avoid the phenomenon of the
+electrostatic absorption, the voltage which applied on the
+movable plate must be controlled in a certain range.
+On the other hand, increasing the carrier amplitude
+can improve the output voltage in the case of other
+conditions unchanged,thus improving the sensitivity
+and the SNR of the whole system. Therefore, it should
+try to improve the carrier amplitude in the limited
+scope. Notice that the differential signal amplitude
+needs to meet the range of A/D converter, so the
+carrier amplitude is set as 3.38V.
+2.4 Carrier stability
+The carrier signal stability includes frequency
+stability and amplitude stability, and the former will
+directly affect the output amplitude due to the
+frequency characteristics of each circuit module. For a
+practical circuit, the carrier frequency fluctuation is
+small, and as long as the gain remains the same
+within the scope of carrier frequency change, the
+effects of carrier frequency can be ignored. In fact, in
+the differential capacitance detection circuit, the
+mismatch of two dual parameters,such as the initial
+capacitance values, will increase the noise influence.
+And the more serious mismatch of the carrier signal,
+the greater influence of the noise and the lower
+resolution of the system. Therefore, for the purpose of
+improving the accelerometer noise performance, the
+first method is increasing the cartier amplitude to
+improve the SNR of the capacitance detection carrier.
+The second method is that minimizing the initial
+differential capacity which caused by the machining
+error, the latter can be compensated by the method of
+paralleling a certain value capacitance with the
+corresponding pin in the external. The third method is
+that trying to improve the matching degree of charge
+amplifier, by choosing a high accuracy of the
+feedback resistor or capacitor. ′
+As is shown in Fig.3,the amplitude fluctuation
+of the triangle is basically in the range of 0.01 V.
+ee ee ee ee ee rere eee etre een Leet gon resentation rma)
+As shown in Fig.2 (b), modulated by the triangle
+wave, the differential capacitance circuit output is a
+square wave, whose phase and frequency are in
+consistent with the input triangle wave strictly. In
+order to obtain an accurate output voltage, a better
+linearity of the triangle wave is necessary. The output
+waveform of the differential circuit is as shown in
+Fig.4. |
+If the positive slope of the triangle wave is dUVdt
+and the absolute value of the decline slope is dUywdt,
+then the relationship between the output voltage
+amplitude and the header capacitance is given as
+formula (1):
+caused by the acceleration can be effectively detected
+through the differential capacitance detection circuit.
+When there is an input positive acceleration, the
+quartz flexible pendulum will deviate from the
+equilibrium position. Might as well C;>C,, the difference
+voltage amplitude of the square wave is as U,(#). On
+the contrary, when there is a reverse acceleration
+input, might as well C, <C, the difference output
+voltage amplitude is as Uz(#). Consequently, as long
+as the amplitude of the square voltage is detected, the
+value and the direction of the input acceleration can
+be distilled. :
+Based on the above analysis, through the triangle
+wave modulation function, the header capacitance
+variation can be modulated into the high frequency
+square wave, whose amplitude is a function of the
+capacitance variation. Here a method of the weak
+signal detection should be adopted to extract the output
+weak signal which is aliased in the complex noise.
+As a kind of effective means to extract the weak
+signal from strong noise, correlation detection is based
+on the characteristic that the signal is not related with
+. the noise. Through the auto correlation and cross
+correlation method to detect the weak signal. Might as
+well there are two continuous smooth and ergodic
+random processes, are x(t) and y(r), so the definition
+of the cross correlation function of random function is
+can be given as formula (2)001:
+It can be seen that when using a pure reference
+signal for cross correlation, the noise influence can be
+effectively reduced. So the output weak signal can be
+detected even if the input SNR is very low.
+For the output signal of differential capacitance
+circuit, the digital demodulation can be realized by
+extracting the difference value of the positive and
+negative cycle of the differential square?. The sampling
+process is as shown in Fig.5.
+In the process, the output signal is converted into
+digital quantity through the A/D circuit. that
+in each half cycle of the square wave, the number of
+sample data is n, the demodulation output can be
+obtained after subtraction, just set the output square
+amplitude is 1,thus in each time the demodulation
+output is AS:
+Compared the formula(2) with (3), it can be seen
+that the minus of the positive and negative square
+wave signal is equal to the product of this differential
+square wave and another square wave with the same
+frequency and phase. The digital demodulation process
+actually achieves the correlation detection of output
+and reference square wave.
+4 System design and implementation
+According to the above signal detection scheme,
+the prototype of the DCLA is built in our research,
+which is as shown in Fig.6. According to GJB1037 -
+2004 method, the scale factor of DCLA is acquired
+test, and the scale factor is 3 557 LSB/g, obviously, it
+can be seen that the system can effectively distinguish
+the value and the direction within the scope of the +1 g
+acceleration.
+Bias stability is as a general index to measure the
+accelerometer accuracy performance. Figure 7 shows
+the 0 g/+1 g stability test results. The results show that
+the bias stability of the 0 g position is 17.595 0 pg,
+the bias stability of the 1g position is 19.363 7 ug, and
+the bias stability of the ~1 g position is 20.7153 pg.
+Fig.7 Experimental results of 0 g/+1 g stability
+5 Conclusion
+In this paper, the signal processing scheme of the
+DCLA is investigated and validated. With the single
+carrier modulation and demodulation technology, the
+header meter differential capacitance was achieved by
+the triangle wave modulation, moreover, the common
+mode interference was restrained to some extent. The
+output weak signal of the header meter was
+successfully detected by adopting the digital correlative
+demodulation method. To build the system prototype,
+under the condition of 0 g/+1 g stability test, the
+experimental results are 17.595 0 g,19.363 7 pg,
+20.715 3 pg, respectively. The results show that the
+signal detection method can effectively achieve the
+acceleration detection, and currently, the precision of
+the DCLA is basically equal to the analog
+accelerometer, which verifies the correctness of the
+signal detection method.

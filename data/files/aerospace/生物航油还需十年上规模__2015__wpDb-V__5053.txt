@@ -1,0 +1,230 @@
+生物航油还需十年上规模
+3月21日,海南航空一架波音737机型飞机从上海虹桥飞抵北京——这次飞行由于使用新型能源生物航油而备受关注,这也是我国首次使用生物航油进行载客商业飞行。但这次成功的飞行,距离生物航油的大规模产业化利用还需十年左右的时间。该飞机的两台发动机均由50%航空生物燃料与50%传统石化航油混合的燃料驱动。＂生物航油是全球航空燃料发展的重要方向,商业载客飞行成功标志着中国在生物航油的研发生产和商业化方面取得了重大突破,中国航空业减排之路又迈出重要一步。＂
+
+航空燃料 中国民航局 海南航空 规模产业化 上海虹桥 国航 餐饮废油 两台 碳排放 自主研发生产  
+
+1 Introduction
+The high resolution bathymetry model is needed for re-
+searching on ocean geophysics, biology, and climate
+science, but ship soundings still cover the ocean
+sparsely even after decades of years of surveying. It will
+be very difficult to create a 1 minute bathymetry model
+just relying on ship soundings in the near future. The
+technological advance of satellite altimetry provides a
+new approach to high resolution bathymetry model con-
+struction. Dixon et allll showed that bathymetry of the
+ocean can be predicted from altimetry data. The follow-
+ing studies show that altimetric gravity anomalies can
+be used to predict bathymetry at the waveband 20-200
+km"**. Smith and Sandwell'?! developed a method to
+construct a high resolution bathymetry model from ship
+soundings and altimetric gravity anomalies. According
+Received:2013-09-03; Accepted:2014-02-14
+Corresponding author; Hu Minzhang, E-mail; huminzhang@ 126.com
+This work is supported by the Director Foundation of Institute of Seismolo-
+gy, China Earthquake Administration (18201326125) and the National
+Natural Science Foundation of China (41204019, 41304003).
+to S&S method, the long wavelengths ( >200 km) ba-
+thymetry models were constrained by ship soundings ,
+and bathymetry of shorter wavelengths (20-200 km)
+was predicted from gravity anomalies.
+At present, nearly all the high resolution global ba-
+thymetry models were constructed from ship soundings
+and satellite altimetry gravity anomalies. The bathyme-
+try model will depend on gravity anomalies at the wave-
+band 20-200 km ,and must be careful when analyzing
+the isostatic mechanism of sea floor with these models
+and gravity anomalies. Wang!" pointed out that this
+problem of depending can be avoided if the bathymetry
+model can be predicted from vertical gravity gradient a-
+nomalies《 VGGC) and derives equations used to finish
+the work in the space domain. The method of Wang was
+not implemented because of low signal-to-noise ratio of
+VGG. Wu et al'? constructed a 2 minute bathymetry
+model in the South China Sea with VGG and ship
+soundings, but its accuracy is lower than ETOPO2. Hu
+et al’ studied this issue using simulated data.
+In this paper,a 1 minute bathymetry model is con-
+structed using ship soundings and VGG in a 2X2 de-
+gree region in the northwest Pacific. The ship sound-
+ings are obtained from National Geophysics Data Center
+( NGDC ) ,and used to establish long wavelength
+(>200 km) bathymetry. The VGG is downloaded from
+SIO ( Scripps Institute of Oceanography ) , UCSD,
+V20.1, and used to predict bathymetry at the wave-
+band 20-200 km. The model accuracy is evaluated by
+comparing the result with ship soundings and the exist-
+ing models, and the result can show that a high resolu-
+tion and accuracy bathymetry model can be predicted
+from VGG and ship soundings.
+2 Method
+Parker!" derived an equation which can be used to
+calculate gravity anomalies from seafloor undulations.
+Based on the derivative theorem of Fourier Transform
+and formula (4) in Parker「s paper, we generate the e-
+quation for calculating VGG from seafloor undulations
+directly;
+AG(k)=
+where,〖=2m/A is the wave number, A is the wave-
+length, AG,(k) is the Fourier Transform of VGG, G is
+the gravitational constant, p, is the density of seafloor
+crust, p, is the density of sea water, d is the mean wa-
+ter depth, H(k) is the Fourier Transform of seafloor
+undulations, h(x) is the seafloor undulations in space
+domain, Fis the symbol of Fourier Transform. There is
+no isostatic effect in equation (1), which will be used
+at the waveband 20-200 km. If we take into account
+the upward continuation of ocean depth, the equation
+(1) can be simplified to:
+The admittance function between seafloor undula-
+tions and VGG is:
+We use VGG to predict bathymetry at the waveband
+20-200 km, therefore:
+According to equation (4), after downward continu-
+ation and divided by 〖 ,the relationship between
+AG_(k) and H(k) will be linear. Due to inhomogeneity
+of seafloor density, the linear coefficient will be com-
+puted from ship soundings and VGG.
+The predicted model will be the sum of the long
+wavelength model from ship soundings and residual ba-
+thymetry predicted from VGG. That means :
+where, h(x) is the predicted result, h,, (x) can
+be gotten by low-pass filter of grids from ship sound-
+ings, and hvcc( %)》 is predicted from VGG.
+The data processing procedure can be illustrated by
+figure 1. According to figure 1, firstly, ship soundings
+were processed to form grids and which are then fil-
+tered by 200 km low-pass Gaussian filter to establish
+Bios ( 5 ).、SecondIy,residual depths on ship tracks
+(Russidua《 「 ) should be prepared for calculating S
+(x'). The reference depths of ship points are interpolated
+from hy, (x), and then being subbed from the ob-
+served depth to get h(x"). VGG are filtered by 20
+-200 km band-pass Gaussian filter. The filtered VGG
+are then downward continued to mean depth and divi-
+sion by k for bathymetry prediction (VGG_BP). VGG
+on ship points are interpolated from VGG_BP and then
+are used to calculate. That is
+where, S(x") is the depth-to-VGG ratios on ship
+points, x’ is the location of ship soundings. Then we
+can calculate the bathymetry model by:
+where, S(x) is girding from residual depth-to-VGG ra-
+tios on ship points.
+3 Data and result
+3.1 Data
+The experimental area is 20? —-22°N, 156° - 158° EK
+from the northwest Pacific. Ship soundings are down-
+loaded from NGDC, including 9058 points of data
+(Fig.2). The ship soundings cover an area of 3x3 de-
+gree in order to eliminate the boundary effect. About
+95% of ship soundings were used to construct bathyme-
+try model and 5% were used to evaluate the model ac-
+curacy. The COE ( Cross Over Errors) of the ship
+tracks were assessed with x2svs in GMT. The mean and
+STD of COE are about -8. 9 m and 70. 5 respectively.
+The ship soundings cover sparsely in the 2X2 degree
+studied area, only about 16% of the grids can be deter-
+mined by ship soundings directly, and its resolution is
+very difficult to assess because of the unevenly cover of
+the tracks.
+Table 1 Statistics features of ship soundings (unit: m) and VGG (unit; 10” §7*)
+Model Min ’ Max
+Figure 2 Ship soundings in the experimental area
+Figure 3 Vertical gravity gradient from SIO,V20.1
+VGG are downloaded from SIO, V20.1, which in
+formed with satellite altimetric data (Fig.3).
+The statistics features of ship soundings and VGG
+are showed in table 1.
+The coherency between seafloor topography and VGG
+in the northwest Pacific is showed in figure 4.
+According to figure 4 the coherency is very high at
+the waveband 20-200 km. This means that bathymetry
+prediction from VGG is reasonable.
+3.2 Result and accuracy evaluate
+The data processing procedure is showed here;
+At first, ship soundings were interpolated on a regular
+Mean STD RMS
+-3 667.264 1 191.094 3 855.709
+0.694 51.110 51.113
+Figure 4 Coherency between seafloor topography and VGG
+grid with GMT! , which were filtered to determine
+hi (x) (Fig.5).
+Secondly, the VGG_BP for bathymetry prediction is
+prepared ( Fig.6).
+Thirdly, on ship points, the depth-to-VGG ratios
+with equation (6), then to form S(x) on the grid
+156° 157° 158°
+Figure 7 “Depth-to-VCC ratio grids
+At the waveband 20-200 km, by multiplying VGG_
+BP (Fig.6) S(x) (Fig.7), we get the bathymetry
+model Avcct(x ) as shown in figure 8.
+Figure 5 Long wavelength (>200 km) bathymetry
+Figure 6 VGC for bathymetry prediction ( VGG_BP)
+The accuracy of the result can be evaluated with ship
+soundings not used in the bathymetry construction pro-
+4 Discussion and conclusions
+cedure (Tab.2). The result will be compared with the
+existing models ( Tab.3). The SIO V15.1 model is
+A data processing procedure is proposed to predict a
+generally believed to have the highest accuracy. Table
+high-resolution bathymetry model from VGG and ship
+2 illustrates the differences between V13. 1 and other
+soundings. The accuracy of the result validates the the-
+models respectively.
+In both tables, prediction A is established based on e-
+crust isostasy and high-order terms in equation (1)
+quation (7) and prediction B is improved from prediction
+must be discussed here.
+GEBCO is a global topography model from International
+following two reasons. Firstly, the long wavelength ba-
+Hydrographic Organization ( IHO) from ship sound-
+thymetry can be constructed from ship soundings and
+ings and historical counter maps. DTU10 is established
+only bathymetry of wavelengths shorter than 200 km
+based on GEBCO and altimetric gravity anomalies by
+was predicted from VGG. Secondly, generally speak-
+Technical University of Denmark. ETOPO1 is a global
+ing, the isostatic mechanism of seafloor is unknown
+topography model released by NGDC, in connection to
+and the computing procedure will be complicated if we
+the SIO model predicted from ship soundings and alti-
+take into account isostatic parameters. The high order
+metric gravity anomalies by Smith and Sandwell",
+terms in equation (1) have short wavelength character-
+The mean model depth of the studied area is about
+istics. The signal-to-noise ratio of VGG is low at the
+4515m, and the relative accuracy is STD-to-mean
+short wavelength. Both the influence of high order term
+depth ratio. Tables 2 and 3 indicate that the accuracy
+and noise will be suppressed after band-pass filtering
+of our bathymetric models is better than ETOPO1, GE-
+by a 20-200 km Gaussian filter. In order to simplify
+BCO, and DTU10,and comparable with V15.1.
+the data calculating procedure, the high-order terms in
+Table 2 Statistics of the differences between model depths and ship soundings (unit; m)
+Model Min Max Mean STD RMS Relative accuracy
+Prediction A -316.586 269.100 -7.203 90.809 90.869 2.0%
+Prediction B -263.49%4 177.138 -6.199 69.418 69.522 1.5%
+GEBCO -810.341 840.269 83.921 303.837 314.469 6.7%
+DTU10 -644.498 711.406 131.004 296.961 323.861 6.6%
+ETOPO1 -588.378 585.779 10.199 235.961 235.597 5.2%
+V13.1 -193.685 328.464 -2.163 66.493 66.374 1.5%
+Table 3 Statistics of the differences between model depths ( reference to V15.1; unit: m)
+Model Min Max
+Prediction A -1 500.891 987.176
+-37.171 165.738 169.850
+Prediction B 1 489.891 1 014.176
+-32.269 150.699 154.110
+GEBCO -3 614.738 2 681.027
+65.487 422.298 427.331
+DTU10 -~1 950.240 1 732.119
+53.168 300.383 305.042
+ETOPO1 —1 440.891 1 217.188
+43.283 216.969 221.237
+equation (1) were ignored.
+In conclusion ,the procedure proposed here can be
+used to predict the high resolution bathymetry model
+from VGG and ship soundings. The accuracy of predic-
+ted models out performed the existing models ,such as
+GEBCO, DTU10 and ETOPO1, and are comparable
+with the SIO V15. 1 model.

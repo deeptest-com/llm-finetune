@@ -1,0 +1,591 @@
+ISO/TC20/SC1第28届会议在法国召开
+
+ISO/TC 地面电源 飞机供电特性 数字式测试 特性参数 用电设备 系统特性 电气系统 电磁兼容性 航空航天飞行器  
+
+Nowadays, the renewable energy sources constitute
+a fairly good portion of the total energy sources all over
+the world. This portion is growing rapidly due to many
+reasons. One of these reasons is the expected end of
+fossil energy sources in the near future. Environmental
+pollution, which reaches unacceptable levels, is
+another reason for the increasing global interest in
+renewable energy sources. Wind, solar, marine wave,
+tidal, geothermal energies are examples of the available
+renewable energy sources. Wind energy is the
+fastest-growing renewable energy source in the world.
+About five years ago, the global installed capacity
+exceeded 50,000 MW, with a growth of about 10,000
+MW/year [1]. Concerning the Middle East, there is a
+big potential for wind power-generation. The
+mountainous nature of many parts provides continuous
+airstreams with a suitable range of air speed for
+commercial purposes.
+Also, there are very long distances of coastal lines
+along the Mediterranean and Red seas that are suitable
+for wind power-generation. Even in other areas, where
+wind speeds are not enough to construct large-scale
+wind turbines, small-scale (home-scale) turbines may
+be used.
+There are few different techniques to maximize the
+power output and optimize turbine performance at all
+wind speeds. These techniques include blade
+pitch-control, camber control with flaps and generator
+torque control. Blade pitch-control is the system which
+monitors and adjusts the inclination angle of the blades
+and thus controls the rotational speed of the blades. At
+lower wind speeds, the pitching system leads to an
+acceleration of the hub rotational speed, while at higher
+speeds; blade pitch-control reduces the wind load on
+the blades and structure of the turbine and keeps the
+generator at the rated power. Such a method is
+currently used by turbines in the 500 kW to 1 MW
+range. Traditionally, there are different types of
+pitch-control systems including hydraulic, mechanical,
+electrical and electro-mechanical systems. About one
+third of the installed wind machines use pitch-control
+2238 New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines
+mechanisms [2].
+In the present investigation, the pitch control is
+carried out such that the rotor blades are rotated around
+their longitudinal axis while the rotor continues its
+normal rotation. The main objective is to develop a
+suitable simple, low-cost and robust control
+mechanism. The present mechanism is consistent with
+the current trend in shifting towards the
+electro-mechanical systems due to their known
+reliability and low maintenance needs. The mechanism
+is implemented to a three-blade model. The section of
+the blades that were molded from fiberglass resembles
+a standard airfoil section. The mechanism is powered
+by a suitable electric motor. The model tests were
+carried out in the open section of a delivery wind tunnel.
+An electronic circuit of a microcontroller was used to
+control the movement of the control mechanism. In the
+following sections, concentration is much paid to the
+control mechanism more than the control circuit.
+Many researchers concerned the problem of active
+control of wind turbines of all sizes and types. In the
+following section, some of these researches are
+illustrated to show a broader view of the control issue
+of the wind turbines.
+2. Previous Investigations
+2.1 General Control Problem
+The control subject in general was studied by many
+investigators. Johnson [3] developed, tested and
+analyzed an adaptive control strategy. He argued that
+the cost of changing the control strategy on an existing
+turbine is very small when compared with the cost of
+the turbine. Ragheb [2] carried out a survey of the
+different types of control that are applied in wind
+turbines. He stated that about one third of the installed
+wind machines use pitch-control mechanisms.
+As a more specific task, a review of the objectives
+and techniques used in the control of horizontal axis
+wind turbines at the individual turbine level was carried
+out in Ref. [4], where controls are applied to the turbine
+blade pitch and generator.
+2.2 Blade-Pitch Control
+The blade-pitch control problem was the main
+subject of many researchers. Muljadi et al. [5] analyzed
+and simulated the operation of variable-speed wind
+turbines with pitch control. They showed that the wind ,
+turbine can be operated at its optimum energy capture
+while minimizing the load on the wind turbine for a
+wide range of wind speeds. Bindner [6] presented a
+model for design and analysis of controllers for pitch
+controlled wind turbine to evaluate and improve pitch
+controllers for conventional three bladed pitch
+controlled wind turbines (Vestas Wind Systems WD34
+400 kW).
+The speed control of a modern pitch-regulated wind
+turbine was investigated [7]. A controller structure was
+derived and the significance of various parameters in
+the controller structure was investigated. Thus, the
+influence of the speed control bandwidth on the speed
+variations, torque stresses and energy production was
+analyzed. Hansen et al. [8] presented three different
+controller designs based on PI (proportional-integral)
+regulation of rotor speed and power through the
+collective blade pitch angle and generator moment.
+They illustrated that numerical optimization can be
+used to tune controller parameters. In Ref. [1], the
+author developed a method of achieving variable speed
+operation of wind turbines via a pitch
+servo-mechanism. She considered three types of pitch
+actuator dynamics and integrated them into control
+design. She concluded that since the actuator dynamics
+were considered in her design, the developed pitch
+control algorithms were less sensitive to operating
+points and more practical and suitable for real-time
+implementation.
+2.3 Blade-Pitch Control by Matlab Simulink Toolbox
+Matlab Simulink toolbox was used to simulate
+blade-pitch control. In Ref. [9], the researcher aimed to
+design a simple controller to maximize the extracted
+energy of wind turbines through pitch angle control of
+a variable speed wind turbine using Matlab Simulink
+New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines 2239
+toolbox. In the same direction, Ramakrishnan and
+Srivatsa [10] described the modeling of the various
+components in a pitch controlled wind energy system
+and the design ofthe pitch controller, and discussed the
+response of the pitch-controlled system to wind
+velocity variations. They found that the cost of their
+mechanism is low compared to a corresponding
+hydraulic actuator mechanism and can be used up to 30
+kW wind turbine.
+2.4 IPC (Individual Pitch Control)
+who discussed the possibility of using the individual
+pitch actuators for each blade by sending different pitch
+angle demands to each blade. He demonstrated that a
+very significant reduction in operational loading can be
+achieved by applying the considered individual pitch
+control. Afterwards, in Ref. [12], the investigator
+pointed out that the up-scaling of wind turbines, even
+towards 10 MW wind turbines, may be necessary to
+lower the costs of offshore wind energy and this
+requires considerable reductions of turbine loads. As a
+continuing effort, Selvam et al. [13] focused on the
+problem of wind turbine fatigue load reduction by
+means of IPC. Their results demonstrated very good
+load reduction at a wide range of frequencies, giving
+rise to fatigue load reduction of the non-rotating turbine
+components.
+2.5 Fuzzy-Logic Controller
+Some of the investigations were related to
+fuzzy-logic controllers of the blade-pitch. In Ref. [14],
+the authors developed a fuzzy-logic pitch-angle
+controller. They explained that the fuzzy-logic control
+technique has the potential over other techniques (e.g.,
+PI controller) when the system contains strong
+non-linearity. Recently, Musyafa et al. [15] built and
+demonstrated a wind turbine prototype with a
+pitch-angle control based on fuzzy logic to maximize
+the output power. They found out that, in the varying
+low-rated wind speed of 4-6 m/s, the use of fuzzy logic
+controller can maximize the average output power of
+14.5 W compared to 14.0 W at a fixed pitch angle of
+the blade for 1-m diameter, three-blade wind turbine.
+2.6 VAWT (Blade Pitch-Control of Vertical-Axis Wind
+Turbines)
+Although the present work concentrates on HAWT
+(horizontal-axis wind turbines), it is beneficial to show
+that investigators concerned the blade pitch-control
+technique for the VAWT (vertical-axis wind turbines)
+too. Lazauskas [16] compared the theoretical
+performance of three variable pitch mechanisms for
+VAWT. He stated that the examined pitch control
+systems can all be configured to produce better starting
+torque, a broader operating range, and greater
+efficiency than fixed pitch VAWT. In Ref. [17],
+investigators simulated a dynamical-system model and
+a control algorithm to enhance the efficiency of a small,
+VAWT. They stated that applying their pitch control
+model leads to large improvements in the amount of
+power extracted from the turbine, thus, highly
+increasing its overall efficiency. Paraschivoiu et al. [18]
+proposed a procedure for computing the optimal
+variation of the blades’ pitch angle of an H-Darrieus
+wind turbine that maximizes its torque at given
+operational conditions for a 7 kW prototype. They
+stated that a gain of almost 30% in the annual energy
+production was obtained with the polynomial optimal “
+pitch control.
+3. Home-Scale Wind Turbines
+There is an increasing interest in the development
+and construction of home-scale wind turbines. There
+are many advantages of this type of turbines that
+encourage the utilization of them. These advantages
+include low cost, easy manufacturing and maintenance
+as well as durability. Usually, they produce power from
+200 W to 1,000 W and work at low wind speeds;
+starting from 5 m/s. Their size ranges between 0.4 m to
+2.0 m. These turbines may be used individually or in
+groups either on top of buildings or in the backyards of
+2240 New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines
+residential or commercial complexes. The home-scale
+wind turbines are useful for both urban and suburban
+areas. Fig. | shows photos of some commercial
+home-scale HAWT. These turbines may have the
+traditional shape of wind turbines with simple wind
+direction guide, Fig. la. Other turbines may take
+unusual aerodynamic shapes to improve their
+aerodynamic performance and increase their output
+power, Figs. 1b and lc. As can be seen in Fig. Ic, the
+turbines may be installed using long towers on top of
+the houses or in the backvards. There is also a
+commercial utilization of home-scale VAWT. Fig. 2
+shows photos of a type of commercial home-scale
+vertical-axis wind turbines in different urban and
+suburban areas. As can be seen in Fig. 2, the turbine
+may be placed in various locations in spite of their
+architecture complexity.
+4. Blade-Pitch Control
+The importance of the blade-pitch control can be
+best understood when comparing with the stall control
+mechanism by considering the description of Ref. [22],
+as: (1) Stall control: It is characterized by fixed blade
+pitch, and passive power control by stall effect. Wind
+speed is the control parameter, Fig. 3; (2) Pitch control:
+Active power control is activated by wind turbine
+control unit. The control parameters are power output,
+wind speed and rotor speed, Fig. 4.
+5. Present Blade-Pitch Control Mechanism
+The main idea of the present pitch control
+mechanism is to change the blade-pitch angle during
+the operation of the turbine. A simple mechanism was
+developed to carry out this job and implemented on a
+turbine model. Fig. 5 shows the main components of
+the control mechanism, which is integrated with the
+turbine shaft and nacelle frame.
+The main components of the mechanism can be
+listed, as numbered in Fig. 5, as follows:
+1—Nose: It enhances the aerodynamic performance
+over the turbine body and prevents stagnation at the
+Fig. 1 Photos of some commercial home-scale HAWT.
+[21].
+turbine head. The nose has a parabolic profile and was
+fabricated from wood, Fig. 6. It is fixed to the hub
+through fixation groves in the rotating power disk (2).
+A guide hole presents in the nose for correct alignment
+of the main shaft (7).
+transfers the power from the hub to the main shaft (7).
+It is fixed to the hub by three small threaded bolts and
+fits into the prepared grooves in the rear of the nose (1),
+New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines 2241
+(e) Power limitation (stall) (f) Stall effect
+Fig. 3 Blade stall control [22].
+Fig. 6. The main shaft (7) fits tightly into the central
+hole of the rotating power disk.
+3- 一 Blade arms: There are three blade arms, one for
+each blade (4). The blade arms are used to adjust the
+integration with the turbine shaft and nacelle frame.
+Fig. 6 Turbine nose.
+Fig. 7 Rotating power disk (Dim. in mm).
+blade angle. The blade arm, Fig. 8, is an accessory
+piece that transforms the translational motion of the
+pulley to a rotational motion at the upper part of the
+piece by a torsional spring. The translational motion is
+applied to the pulley by the rotating control disk (8).
+The turbine blade is fixed at this upper part. Blade arms
+transfer the power from the blades to the hub (5).
+4 一 Blades: The turbine model is equipped with three
+tapered blades. The profile of the section of the blade is
+NREL S822 of National Renewable Energy Laboratory,
+Refs. [23, 24], Fig. 9. The blades were made of
+fiberglass to save weight. Each blade is tapered with
+the following dimensions: Blade length = 150 mm,
+2242 New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines
+Fig. 8 Blade arm.
+Fig. 9 Blade section and overall shape of blade.
+Blade chord at blade base (turbine hub) = 80 mm,
+Blade chord at blade tip = 38 mm.
+5—Hub: It contains the rotating power disk (2) and
+the blade arms (3), Fig. 10. It is made of steel. The hub
+is connected to the main shaft (7) through the rotating
+power disk (2). The hub has the following dimensions:
+Hub length = 70 mm; Hub inner diameter = 82 mm;
+Hub thickness = 4 mm.
+fix the rotating control disk (8) into place in the hub (5).
+They are made of steel and inserted firmly into their
+places. These two fixation pieces allow axial
+movement (sliding) of the rotating control disk (8).
+7—Main shaft: The main shaft is made of steel
+covered with chrome, Fig. 12. Thus, it is smooth with
+good surface finish. It connects the rotating power disk
+(2) to the generator through gear/pulley arrangement
+(12). It rotates inside the rack tube (9). The main shaft
+has the following dimensions:
+Shaft length = 272 mm; Shaft diameter = 12 mm.
+Fig. 10 Turbine hub.
+Fig. 11 Fixation piece (Dim. in mm).
+Fig. 12 Overall view of the main shaft (Dim. in mm).
+It pushes the three blade arms (3) simultaneously to
+change the pitch angle of the three turbine blades (4). It
+is connected to the rack tube (9) by a ball bearing that
+allows the rotating control disk to rotate with the hub (5)
+and moves axially in the same time. It is connected to
+the hub (5) through two fixation pieces (6) that allow
+the axial movement (sliding) of the rotating control
+disk.
+9—Rack tube: It is made of steel, Fig. 14a. It is a
+concentric tube that contains the main shaft (7) and is
+connected to the rotating control disk (8) through a ball
+bearing. The tube is equipped with linear gear teeth that
+engage with the teeth of a pinion. This pinion is fixed to
+the shaft of a DC motor (13), Fig. 14b. The calibrated
+rotation of the motor is transferred as a linear motion of
+the rack tube, which in turn, pushes the rotating control
+disk (8) against the blade arms (3). The torsional
+springs ofthe blade arms transforms the motion into a
+New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines 2243
+Fig. 13 Rotating control disk.
+Fig. 14 Rack tube and pinion.
+rotation of the blades (4) to be set at the required pitch
+angle. Fig. 15 shows a drawing (Fig. 15a) and a photo
+(Fig. 15b) of the assembly of rotating control disk (8)
+and rack tube (9).
+10—Connection part: It connects the hub (5) to the
+nacelle frame (11), Fig. 16. It consists of a bearing
+whose outer race is connected to the hub (5) and its
+inner race is fixed to a stationary steel sleeve that is
+connected to the nacelle frame (11).
+that were welded together to carry the nacelle cover,
+which was made of thin steel sheets. The nacelle
+contains the blade-bitch control mechanism. It also
+completes the aerodynamic shape of the turbine by
+direct connection to the hub (5) through the connection
+part (10). A ball bearing was fixed at a rear ring to hold
+the main shaft (7).
+12—Gear or pulley arrangement: A gear or pulley
+arrangement, Fig. 18, is to be fixed at the far end ofthe
+main shaft (7). Then, the power is transferred to the
+electrical generator via the gear arrangement or a
+pulley-belt arrangement.
+6. Assembly of Present Wind Turbine Model
+Fig. 19 shows two overall views of the wind turbine
+assembly with the control mechanism. All mentioned
+parts in the above section are assembled together in a
+rack tube (9).
+Fig. 16 Hub to nacelle frame connection part.
+(a) Drawing of nacelle frame “(b) Photo of turbine model
+with nacelle
+Fig. 17 Turbine nacelle and its frame.
+Fig. 18 Main shaft gear/pulley arrangement.
+Fig. 19 Overall views of the wind turbine assembly.
+2244 New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines
+sequence. Fig. 20 shows a photo of the wind turbine
+with tower. The wind turbine is equipped with the DC
+control motor (13), which moves the rack tube (9)
+through a pinion. The power is transferred from the
+main shaft pulley (12) to the electrical generator (14)
+through a pulley-belt arrangement. As the present
+investigation concentrates on the control mechanism, it
+was preferred to put the electrical generator outside the
+turbine nacelle. The generator was fixed on turbine
+tower as seen in Fig. 20.
+Fig. 20 Photo of the wind turbine with its tower.
+Fig. 21 DC motor (13) and pinion arrangement.
+Fig. 22 Assembly of the blade arms (3).
+Fig. 23 Assembly of the control mechanism.
+7. Operation of Pitch-Control Mechanism
+7.1 DC Motor
+To carry out the control process, firstly, a suitable
+DC motor was chosen (13). DC motor has many
+favorable features that are beneficial to control process,
+namely: self-engage, relatively high-torque, low
+rotational speed and start-up voltage (5-12 V).
+The rotational speed (rpm) of the motor is adjusted
+by changing the input voltage. Moreover, the rotating
+direction of the motor can be switched from CW
+(clockwise) to CCW (counter-clockwise) by changing
+the input current polarity. The motor is fixed directly
+under the nacelle on the turbine tower, Fig. 21. The
+rotational motion ofthe DC motor (13) is transferred to
+the rack tube (9) through a pinion, Fig. 21. The tube
+rack-pinion combination transfers the rotational
+motion of the pinion to a transitional (linear) motion by
+the rack tube (9). Then, the rack tube pushes the
+rotating control disk (8) forward or backward against
+the blade arms (3) that transforms the translational
+motion of the small pulley to a rotational motion at the
+upper part of the blade arm by a torsional spring, Fig.
+22. The translational motion is applied to the pulley by
+the rotating control disk (8). Thus, the turbine blade (4)
+that is fixed at the upper part of the blade arm rotates to
+the desired pitch angle. An overall view of the
+assembly of the control mechanism is shown in Fig. 23
+with all components in place.
+7.2 Microcontroller Circuit
+The DC motor (13), which is the main source of
+motion to the pitch control system, is adapted to be
+controlled by one oftwo methods, namely:
+Automatic control: The automatic control is applied
+to the DC motor (13) by a microcontroller circuit. The
+circuit decides the value of the input voltage to the DC
+motor (13) and the time of operation to control the
+amount of the rotational displacement of the DC motor
+(13). Thus, the amount of blade rotation (pitching) can
+be precisely adjusted. Also, the circuit controls the
+New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines 2245
+current polarity to change the rotational direction of the
+DC motor in CW and CCW directions. The
+microcontroller circuit consists of a microcontroller
+chipset, resistances, capacitors, etc..
+The microcontroller is programmed according to a
+series of experimental measurements using a suitable
+wind tunnel as will be illustrated in a coming section.
+The parameters that were recorded and used in the
+programming are the wind speed (U,), the turbine
+rotational speed (VN, rpm), and the output voltage of the
+generator ( 与 ).
+Manual control: A selector switch was used to
+control the input of the DC motor (13) manually in case
+of failure of the automatic control circuit. The manual
+control only moves the motor in the form of constant
+pulses. These pulses are calibrated to change the blade
+angle in steps of 1 degree for each pulsation. Also,
+change of current polarity is available.
+7.3 Sequence of Operation of the Present Blade-Pitch
+Control Mechanism
+The following steps summarize the sequence in
+which the present blade pitch-control mechanism
+works:
+e According to the output voltage (V,) of the
+generator, an electronic signal is fed to the DC motor
+(13) from the microcontroller of the automatic control
+circuit to rotate with a certain rotational angle.
+s The motor shaft begins to rotate (CW/CCW to
+decrease/increase the blade angle) according to the
+current polarity signal from the microcontroller.
+s Consequently, the motor pinion rotates with the
+same rotational angle.
+s The rack tube (9) receives the rotational motion of
+the pinion and responds by a translation motion that is
+transferred in turn to the rotating control disk (8).
+o To decrease the blade angle, the rotating control
+disc (8) moves forward and applies the necessary force
+on the blade arms (3) to twist their torsional springs to
+move the blades (4) by the required angle to adjust the
+blade angle.
+s To increase the blade-pitch angle, the rotating
+control disc (8) moves backward and reduces the
+applied force on the blade arms. Thus, the torsional
+springs return partially to their original state, rotating
+the blades and the blade angle is increased to the
+required value.
+8. Mechanical Design Analysis and Electrical
+Generator
+8.1 Mechanical Design Analysis
+Mechanical design analysis was carried out to make
+sure that the fabricated or selected mechanical
+parts/components of the turbine are capable of
+operation safely without failure under the design (rated)
+power of the turbine. As it is not the objective of this
+paper to concern mechanical design aspects of the
+turbine, there are no more illustrated details about this
+1SSUE.
+8.2 Electrical Generator
+A suitable permanent magnet DC generator (14) was
+used to carry out the experiments of the control
+mechanism. This type of generators has the advantage
+of being so sensitive that they generate power at any
+rotational speed (rpm). They are compact and have a
+wide operating range. So, they are suitable to work in
+many applications. The generator was connected to the
+turbine shaft (7) through a pulley-belt arrangement (12).
+The generator outlets were connected to a DC
+constant-current circuit as an operating load.
+9. Experimental Measurements
+9.1 Programming the Microcontroller
+A series of experiments was carried out using an
+open-section, delivery wind tunnel. The wind turbine
+was tested in the open section of the wind tunnel that
+has an exit section of 50 cm x 50 cm. The diameter of
+the wind turbine is 40 cm. These experiments were
+necessary to program the microcontroller of the pitch
+control circuit. The wind speed ranged between 5 m/s
+2246 New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines
+and 15 m/s with an increasing step of 1 m/s. Speed
+control was carried out using a moving gate at the
+entrance of the wind tunnel. Angle of attack (blade
+angle) ranged between 2° and 12° with an increasing
+step of 1°. Usually, the three control parameters are
+wind speed (U,), wind turbine rotational speed (XV,
+rpm), and the output power of the generator (Po). In our
+case, as the load current is constant, the output voltage
+(V,) is related directly to the rotational speed (NV) of the
+wind turbine. Consequently, the output voltage ( 尹 ) is
+directly proportional to the output power (P,) of the
+generator. Thus, the two control parameters of the
+present work are the wind speed (U,,) and the generator
+output voltage (V,). The rotational speed (N) was
+measured and recorded as a check parameter to the
+output voltage (V,). Appropriate software/hardware
+facility was used to record the signals and program the
+microcontroller. For manual observation, the air speed
+(U,) was measured using a Pitot-static tube. The
+rotational speed ( of the wind turbine was measured
+using a non-contact (optical) tachometer. A suitable
+electrical multimeter was used to record the values of
+the output voltage ( 之 ),
+9.2 Validation of the Present Control Mechanism and
+Circuit
+To make sure that the present blade-pitch control
+mechanism works well, a validation process was
+carried out. The validation was based on experimental
+measurements of the output voltage (V,) while making
+small changes of the wind speed. The signal of the
+output voltage (V,) was directly connected to the
+control circuit after adaptation. Control mechanism and
+circuit should maintain the rating value of the output
+voltage (V,). Experimental conditions were arranged
+such that the following operating conditions are set: (1)
+wind turbine output power (P,) = 200 W, (2) blade
+angle of attack (a) = 7°, (3) rotational speed (N) = 220
+rpm, (4) output rating voltage ( 一 ) = 12 V and 24 V.
+The wind speed was changed around the average
+wind speed (U,) of 8 m/s by closing and opening the
+gate of the wind tunnel by small amounts. The output
+voltage was recorded manually every 30 s during a
+period of 10 min. Figs. 24 and 25 show the results of
+the output voltage when applying the control circuit
+and mechanism.
+As can be seen in Figs. 24 and 25, the control
+mechanism succeeded in maintaining the average value
+of the output voltage at the rating value in spite of the
+unexpected and sudden changes in the flow speed. The
+fluctuations are in the range of 10% of the average
+value. Also, the response time of the control
+mechanism is acceptable. It is clear that the inertia of
+the mechanism is not big due to the light weight of the
+blades that were casted from fiberglass.
+the control circuit and mechanism for a rating output
+voltage (V,= 12 V).
+the control circuit and mechanism for a rating output
+voltage (V, = 24 V).
+New, Simple Blade-Pitch Control Mechanism for Small-Size, Horizontal-Axis Wind Turbines 2247
+10. Conclusions
+The present work concerns the blade-pitch control of
+a home-scale horizontal-axis wind turbine. The basic
+idea was to introduce a simple, low-cost and robust
+control mechanism that is suitable for this type of wind
+turbines. Based on the previous discussions, it is clear
+that the mechanism has a good performance. The
+mechanism is easy to manufacture and maintain. The
+response-time of the mechanism is generally
+acceptable for this application. The using of fiberglass
+as the blade material helps greatly in reducing the
+overall mechanism inertia. The inertia may be reduced
+further by using materials fabricated from plastics,
+plastic alloys or composites. Also, a simple electronic
+circuit with a microcontroller was used to control the
+mechanism. To properly program the microcontroller,
+a series of experiments were carried out to record the
+wind speed (U,) and corresponding shaft rotational
+speed (N) and generator output voltage (￥,). The two
+main control parameters of the present work is the wind
+speed (U,) and the generator output voltage (V,). The
+rotational speed (NV) was measured and recorded as a
+check parameter to the output voltage ( 厅 ). The output
+power may be used as the control parameter with
+appropriate measuring instrumentation. The control
+process may be further developed by using appropriate
+probes, transducers, data acquisition arrangements and
+software (e.g., fuzzy-logic) to be fully monitored and
+adjusted by a laptop or a personal computer, This
+process helps in re-programming/re-adjusting the
+control circuit for new/unexpected operating
+conditions. However, this may lead to a higher-cost
+mechanism. Finally, it is obvious that the proposed
+control mechanism is feasible for commercial
+large-scale production.
+Acknowledgments
+The author would like to acknowledge Mr. M.IL.
+Ibrahim, Mr. M.A. Soliman, Mr. A.l. Ewida and Mr.
+A.A. Mohamed for their help in manufacturing the
+wind turbine and the control mechanism, Mr. SAA. |
+Sallam, Mr. M.A. Mohamed for helping in the
+experiments, and Mr. M.R. Said and Mr. E.S. Hasan
+for their help in the assembly, programming and testing
+of the control circuit.
