@@ -34,6 +34,7 @@ inputs = tokenizer(
 ], return_tensors = "pt").to("cuda")
 
 outputs = model.generate(**inputs, max_new_tokens = 64, use_cache = True)
+print("\n======\n")
 print(tokenizer.batch_decode(outputs))
 
 
@@ -41,4 +42,5 @@ print(tokenizer.batch_decode(outputs))
 # so you can see the generation token by token, instead of waiting the whole time!
 text_streamer = TextStreamer(tokenizer)
 outputs = model.generate(**inputs, streamer = text_streamer, max_new_tokens = 128)
+print("\n======\n")
 print(tokenizer.batch_decode(outputs))
