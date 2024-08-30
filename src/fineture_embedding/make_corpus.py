@@ -44,12 +44,12 @@ llm = OpenAI(
 train_dataset = generate_qa_embedding_pairs(
     llm=llm, nodes=train_nodes
 )
-# val_dataset = generate_qa_embedding_pairs(
-#     llm=llm, nodes=val_nodes
-# )
+val_dataset = generate_qa_embedding_pairs(
+    llm=llm, nodes=val_nodes
+)
 
 train_dataset.save_json(EmbeddingTrainDataset)
-# val_dataset.save_json(EmbeddingValDataset)
+val_dataset.save_json(EmbeddingValDataset)
 
 # train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
 # val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
