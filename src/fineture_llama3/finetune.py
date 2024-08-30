@@ -1,5 +1,6 @@
 from unsloth import FastLanguageModel
 
+from src.config import Llama3TrainData
 from src.fineture_llama3.helper import get_alpaca_prompt
 from src.lib.file import get_llama3_model_path
 from src.lib.tool import show_memory_status, show_final_memory_and_time_stats
@@ -49,7 +50,7 @@ def formatting_prompts_func(examples):
 pass
 
 from datasets import load_dataset
-dataset = load_dataset("yahma/alpaca-cleaned", split = "train")
+dataset = load_dataset(Llama3TrainData, split = "train")
 dataset = dataset.map(formatting_prompts_func, batched = True,)
 
 

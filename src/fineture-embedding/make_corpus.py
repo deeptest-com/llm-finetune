@@ -1,14 +1,14 @@
 from llama_index.core import SimpleDirectoryReader
 from llama_index.core.node_parser import SentenceSplitter
 
-from src.config import TrainDataset, ValDataset, ValFile, TrainFile
+from src.config import EmbeddingTrainDataset, EmbeddingValDataset, EmbeddingValFile, EmbeddingTrainFile
 from src.lib.tool import get_openai_key, get_openai_url
 
-TRAIN_FILES = [TrainFile]
-VAL_FILES = [ValFile]
+TRAIN_FILES = [EmbeddingTrainFile]
+VAL_FILES = [EmbeddingValFile]
 
-TRAIN_CORPUS_FPATH = TrainDataset
-VAL_CORPUS_FPATH = ValDataset
+TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
+VAL_CORPUS_FPATH = EmbeddingValDataset
 
 def load_corpus(files, verbose=False):
     if verbose:
@@ -47,8 +47,8 @@ val_dataset = generate_qa_embedding_pairs(
     llm=llm, nodes=val_nodes
 )
 
-train_dataset.save_json(TrainDataset)
-val_dataset.save_json(ValDataset)
+train_dataset.save_json(EmbeddingTrainDataset)
+val_dataset.save_json(EmbeddingValDataset)
 
 # train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
 # val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
