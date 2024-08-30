@@ -6,6 +6,7 @@ authors = ["chenqi"]
 
 [tool.poetry.dependencies]
 python = "3.11.9"
+python-dotenv = "^1.0.1"
 tqdm = "^4.66.5"
 llama-index = "^0.11.2"
 llama-index-finetuning = "^0.2.0"
@@ -13,7 +14,8 @@ llama-index-embeddings-huggingface = "^0.3.1"
 ipywidgets = "^8.1.5"
 pandas = "^2.2.2"
 modelscope = "^1.17.1"
-python-dotenv = "^1.0.1"
+unsloth = "^2024.8"
+bitsandbytes = "^0.43.3"
 
 [[tool.poetry.source]]
 name = "tsinghua"
