@@ -4,9 +4,6 @@ from llama_index.core.schema import TextNode
 from tqdm.notebook import tqdm
 import pandas as pd
 
-from src.lib.file import get_embedding_model_path
-
-
 def evaluate(
     dataset,
     embed_model,
