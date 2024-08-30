@@ -1,3 +1,8 @@
+import os
+import sys
+work_dir = os.getcwd()
+sys.path.append(work_dir)
+
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 from llama_index.core import VectorStoreIndex
 from llama_index.core.schema import TextNode
@@ -5,7 +10,6 @@ from tqdm.notebook import tqdm
 import pandas as pd
 
 from src.config import EmbeddingValDataset, EmbeddingFinetunedModelOutput
-
 
 def evaluate(
     dataset,
