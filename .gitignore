@@ -1,3 +1,4 @@
 .idea
 .env
 /out/bge-base-zh-v1.5-finetuned/
+/qa_finetune_dataset.json
