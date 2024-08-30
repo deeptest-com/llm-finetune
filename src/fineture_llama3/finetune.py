@@ -1,9 +1,15 @@
+import os
+import sys
+
 from unsloth import FastLanguageModel
 
 from src.config import Llama3TrainData
 from src.fineture_llama3.helper import get_alpaca_prompt
 from src.lib.file import get_llama3_model_path
 from src.lib.tool import show_memory_status, show_final_memory_and_time_stats
+
+work_dir = os.getcwd()
+sys.path.append(work_dir)
 
 max_seq_length = 2048 # Choose any! We auto support RoPE Scaling internally!
 dtype = None # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
