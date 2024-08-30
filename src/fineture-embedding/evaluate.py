@@ -4,6 +4,9 @@ from llama_index.core.schema import TextNode
 from tqdm.notebook import tqdm
 import pandas as pd
 
+from src.config import ValDataset, FinetunedEmbeddingModelOutput
+
+
 def evaluate(
     dataset,
     embed_model,
@@ -39,10 +42,8 @@ def evaluate(
 # 原始模型
 
 # 微调后模型
-finetuned_embedding_model = 'out/bge-base-zh-v1.5-finetuned'
-
-val_dataset = EmbeddingQAFinetuneDataset.from_json("out/val_dataset.json")
-val_results_finetuned = evaluate(val_dataset, f"local:{finetuned_embedding_model}")
+val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
+val_results_finetuned = evaluate(val_dataset, f"local:{FinetunedEmbeddingModelOutput}")
 
 df_finetuned = pd.DataFrame(val_results_finetuned)
 

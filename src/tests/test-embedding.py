@@ -4,7 +4,7 @@ from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTTextContainer
 from sentence_transformers import SentenceTransformer
 
-from config import EmbeddingModulePath
+from src.config import EmbeddingModulePath
 
 class MyVectorDB:
     def __init__(self, collection_name):

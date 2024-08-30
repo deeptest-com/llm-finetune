@@ -4,13 +4,15 @@ import sys
 from llama_index.finetuning import SentenceTransformersFinetuneEngine
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 
+from src.config import ValDataset, TrainDataset
+
 work_dir = os.getcwd()
 sys.path.append(work_dir)
 
 from src.lib.file import get_embedding_model_path
 
-train_dataset = EmbeddingQAFinetuneDataset.from_json("out/train_dataset.json")
-val_dataset = EmbeddingQAFinetuneDataset.from_json("out/val_dataset.json")
+train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
+val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
 
 embedding_model_path = get_embedding_model_path()
 
