@@ -43,8 +43,8 @@ alpaca_prompt = get_alpaca_prompt()
 inputs = tokenizer(
 [
     alpaca_prompt.format(
-        "Continue the fibonnaci sequence.", # instruction
-        "1, 1, 2, 3, 5, 8", # input
+        "朱利叶斯·凯撒是怎么死的?", # instruction
+        "", # input
         "", # output - leave this blank for generation!
     )
 ], return_tensors = "pt").to("cuda")
