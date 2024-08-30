@@ -4,15 +4,14 @@ import torch
 from dotenv import load_dotenv, find_dotenv
 
 def get_openai_key():
-    _ = load_dotenv(find_dotenv())
-
-    return os.environ['OPENAI_API_KEY_PROXY']
-
+    return get_dotenv_var('OPENAI_API_KEY_PROXY')
 
 def get_openai_url():
-    _ = load_dotenv(find_dotenv())
+    return get_dotenv_var('OPENAI_API_URL_PROXY')
 
-    return os.environ['OPENAI_API_URL_PROXY']
+def get_dotenv_var(name):
+    _ = load_dotenv(find_dotenv())
+    return os.environ[name]
 
 def show_memory_status():
     #@title Show current memory stats
@@ -22,7 +21,9 @@ def show_memory_status():
     print(f"GPU = {gpu_stats.name}. Max memory = {max_memory} GB.")
     print(f"{start_gpu_memory} GB of memory reserved.")
 
-def show_final_memory_and_time_stats(trainer_stats):
+    return start_gpu_memory, max_memory
+
+def show_final_memory_and_time_stats(trainer_stats, start_gpu_memory, max_memory):
     #@title Show final memory and time stats
     used_memory = round(torch.cuda.max_memory_reserved() / 1024 / 1024 / 1024, 3)
     used_memory_for_lora = round(used_memory - start_gpu_memory, 3)
