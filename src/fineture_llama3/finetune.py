@@ -56,7 +56,6 @@ pass
 
 from datasets import load_dataset
 
-dataset = load_dataset("yahma/alpaca-cleaned", split = "train") # dataset on huggingface
 # dataset = load_dataset(Llama3TrainDataZh, split = "train")
 dataset = load_dataset(Llama3TrainDataEn, split = "train")
 
