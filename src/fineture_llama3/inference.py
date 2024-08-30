@@ -27,7 +27,7 @@ alpaca_prompt = get_alpaca_prompt()
 inputs = tokenizer(
 [
     alpaca_prompt.format(
-        "朱利叶斯·凯撒是怎么死的?", # instruction
+        "生成一个人露营旅行可能需要的十个项目的列表", # instruction
         "", # input
         "", # output - leave this blank for generation!
     )
