@@ -58,6 +58,7 @@ from datasets import load_dataset
 
 # dataset = load_dataset(Llama3TrainDataZh, split = "train")
 dataset = load_dataset(Llama3TrainDataEn, split = "train")
+dataset = dataset.map(formatting_prompts_func, batched = True,)
 
 from trl import SFTTrainer
 from transformers import TrainingArguments
