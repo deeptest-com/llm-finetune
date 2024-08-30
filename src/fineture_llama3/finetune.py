@@ -55,7 +55,9 @@ def formatting_prompts_func(examples):
 pass
 
 from datasets import load_dataset
-dataset = load_dataset(Llama3TrainData, split = "train")
+
+dataset = load_dataset("yahma/alpaca-cleaned", split = "train") # dataset on huggingface
+# dataset = load_dataset(Llama3TrainData, split = "train")
 dataset = dataset.map(formatting_prompts_func, batched = True,)
 
 

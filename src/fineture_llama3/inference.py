@@ -27,8 +27,8 @@ alpaca_prompt = get_alpaca_prompt()
 inputs = tokenizer(
 [
     alpaca_prompt.format(
-        "生成一个人露营旅行可能需要的十个项目的列表", # instruction
-        "", # input
+        "Generate a story with the given keywords", # instruction
+        "princess, dragon, knight", # input
         "", # output - leave this blank for generation!
     )
 ], return_tensors = "pt").to("cuda")
