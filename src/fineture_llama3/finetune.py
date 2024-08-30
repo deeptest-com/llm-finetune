@@ -95,3 +95,7 @@ start_gpu_memory, max_memory = show_memory_status()
 trainer_stats = trainer.train()
 
 show_final_memory_and_time_stats(trainer_stats, start_gpu_memory, max_memory)
+
+# save local
+model.save_pretrained("lora_model")
+tokenizer.save_pretrained("lora_model")
