@@ -1,3 +1,8 @@
+import os
+import sys
+work_dir = os.getcwd()
+sys.path.append(work_dir)
+
 from unsloth import FastLanguageModel
 from src.fineture_llama3.helper import get_alpaca_prompt
 from src.lib.file import get_llama3_model_path
