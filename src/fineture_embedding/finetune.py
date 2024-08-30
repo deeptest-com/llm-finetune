@@ -1,14 +1,12 @@
 import os
 import sys
+work_dir = os.getcwd()
+sys.path.append(work_dir)
 
 from llama_index.finetuning import SentenceTransformersFinetuneEngine
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 
 from src.config import EmbeddingValDataset, EmbeddingTrainDataset, EmbeddingFinetunedModelOutput
-
-work_dir = os.getcwd()
-sys.path.append(work_dir)
-
 from src.lib.file import get_embedding_model_path
 
 train_dataset = EmbeddingQAFinetuneDataset.from_json(EmbeddingTrainDataset)
