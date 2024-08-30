@@ -6,4 +6,5 @@ EmbeddingValDataset = "out/val_dataset.json"
 
 EmbeddingFinetunedModelOutput = 'out/bge-base-zh-v1.5-finetuned'
 
-Llama3TrainData = "data/files/alpaca_data_cleaned"
+Llama3TrainDataZh = "data/files/alpaca_data_cleaned"
+Llama3TrainDataEn = "data/files/alpaca_data_cleaned_en"
