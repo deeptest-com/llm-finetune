@@ -34,11 +34,16 @@ val_nodes = load_corpus(VAL_FILES, verbose=True)
 from llama_index.finetuning import generate_qa_embedding_pairs
 from llama_index.llms.openai import OpenAI
 
-model = "gpt-4o"
+# model = "gpt-4o"
+# openai_url=get_openai_url(),
+# api_key=get_openai_key()
+model = "llama3_cn"
+openai_url='http://localhost:11434/v1/'
+api_key = 'ollama' # required but ignored
 llm = OpenAI(
         model=model,
-        api_key=get_openai_key(),
-        api_base=get_openai_url(),
+        api_base=openai_url,
+        api_key=api_key,
     )
 
 train_dataset = generate_qa_embedding_pairs(
