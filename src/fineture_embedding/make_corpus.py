@@ -58,12 +58,8 @@ llm = Ollama(
         base_url=base_url,
     )
 
-train_dataset = generate_qa_embedding_pairs(
-    llm=llm, nodes=train_nodes
-)
-val_dataset = generate_qa_embedding_pairs(
-    llm=llm, nodes=val_nodes
-)
+train_dataset = generate_qa_embedding_pairs(llm=llm, nodes=train_nodes)
+val_dataset = generate_qa_embedding_pairs(llm=llm, nodes=val_nodes)
 
 train_dataset.save_json(EmbeddingTrainDataset)
 val_dataset.save_json(EmbeddingValDataset)
