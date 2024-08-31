@@ -1,3 +1,8 @@
+import os
+import sys
+work_dir = os.getcwd()
+sys.path.append(work_dir)
+
 from llama_index.core import SimpleDirectoryReader
 from llama_index.core.node_parser import SentenceSplitter
 
