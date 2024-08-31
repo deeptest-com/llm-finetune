@@ -6,14 +6,14 @@ client = OpenAI(
 )
 
 stream = client.chat.completions.create(
+    model='llama3_cn',
+    stream=True,
     messages=[
         {
             'role': 'user',
             'content': '介绍下你自己',
         }
     ],
-    model='llama3_cn',
-    stream=True
 )
 
 for chunk in stream:
