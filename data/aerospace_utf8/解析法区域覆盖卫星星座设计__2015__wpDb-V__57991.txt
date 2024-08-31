@@ -1,0 +1,275 @@
+解析法区域覆盖卫星星座设计
+对典型卫星星座进行了分析。使用解析方法，以卫星载荷的工作高度范围为约束条件，以有效利用卫星覆盖区域为原则，给出设计区域覆盖卫星星座的详细步骤，得出卫星轨道根数和星座轨道参数。利用卫星工具包（STK）生成卫星星座图。
+
+卫星 星座 区域覆盖 解析法  
+
+介质阻挡放电等离子体对翼型流动分离控制的实验研究…..............。王劣年,王一波,黄勇,等(V-9)
+坝腔河大桥桥位深切峡谷风剖面实测研究…朱乐东,任鹏杰,陈H,F (IV-15)
+等离子体气动激励诱导空气流动的PIV研究…梨“华,李应红,宋慧敏,等(IV-22)
+舅伞戛J′-[身二]孚予五j汤中登叠bj[言蟹置〔才:目液孚商'了青_-瑟三′研究阮沥′_上菩j_Jz古，董守」`.__鼻，弓壬′《多′圭，-包「迂售(IV-26)
+超声速高温冲击射流注水流场实验研究.￡0殿,周-帆,张学文(IV-32)
+非共面近距耦合鸭式布局鸭翼展向脉冲吹气增升特性…........................刘“杰,刘沛清,曹硕(TW-37》
+可压缩混合层密度梯度场特性的实验研究一…甘才俊,李_烯,毛_淅,等 (V-42)
+中心穷扩燃烧室PIV实验研究cececeeccceccrcecssecccsscecssw李晚,林明,张王山,等(TW--45)
+防风网对煤堆避风效果的风洞实验研究…
+e 技 “ 宁 , 陈 廷 国 Sang-joon Lee (IV-50)
+基于上游渐扩管安装条件的内锥流量计性能预测…..............c....,李彦梅,徐“荚,张朝龙,等 (IV-55)
+利用极值分布概型预测海峡地区风环境期望风速…刘-会,张亮亮,杨转运,等(V-60)
+坡面浅层朋流流态界定方法之商橄.张宽地,王光谦,吐宏兴,等(TW-67)
+脉冲周期介质阻挡放电作用的PIV实验研究…郑博睿,高“超,李一滨,等CV-1)
+来流边界层拟序结构对超声速混合层流场结构的影响研究….........张红朝,赵玉新,易仕和,等(V-6)
+_亘…I才薯」:】…_平才【J〕乏角区素『_u【_官【流孚亓畜′乏_立〕控信耆言_][叁_'兰】风孚丨司_董五薹亡菖萱`乙芩研究TNEF,刘〉蓁二】_下'，苏延廷,备=〈(_-(V-10)
+正弦波激励下刚性开孔结构内压响应特性实验…余世策,李庆祥,俞海峰,等(V-16)
+超疑水表面减阻水洞实验及减阻机理研究oor.黄桥高,潘光,X明,等(V“
+水平井变质量流动压降规律实验研究…汪志明,肖京男,王小秋,等(V-26)
+旋流静态混合器内脉动壁压符号时间序列复杂度分析
+.雯辉波,高艳丽,STH,XE(V-30)
+横流中多孔射流的稀释特性实验研究…
+eee肖“洋,唐洪武,阿衣丁别克。居马拜(V-35)
+非平稳脉动压力数据的SPWVD时频分析技术研究….............r.。郭洪涛,徐来武,吴继飞,等(V-40)
+不同密度梯度的多层流体界面上的Richtmyer-Meshkov不稳定性研究…施红辉,杜“凯,王_超,等(V-45)
+泄爆面积对连通容器预混气体泄爆影响的实验研究….................,无明伟,蒋军成,喻“源,等(V-51)
+ke(RNG)LES模拟建筑物周围气流特征及渝流扩散的风洞试验验证(英文)…..。郭栋鹤,乔清党,姚仁太(〈V-55)
+汽转机低压排气缸内流场的PIV实验研究…rcccc,谢伟亮,王红涛,圣晓程,等《〔《V-64)
+水力脉冲射流特性室内实验和数值模拉…马东军,李根生,史怀忠,等《V-70)
+单个柔性旗帜在均匀流中搓动的测力实验.孙传宝,贾来兵,李发尧,等(兄-1)
+80“/65“双三角翼模型大迎角气动特性风洞实验研究(英文)…........。孙海生,姜裕标,刘志涛,等〈人-6)
+坚直平板间湍流自然对流中螺旋羽流结构的实验研究
+e标“标,牢浅涛(财-13
+大迎角耦合运动非定常空气动力特性rererrrninossss杨-动,黄达〔豆-19)
+等离子体对翼型流动分离控制历程的PIV试验研究….................。黄“勇,王万波,黄宗波,等(人-23)
+带凑阻杆高超声速飞行器外形气动特性研究….........
+e Ef HEE, BEE ( 豇 -28)
+汽车风洞试验段流场的试验研究…
+e需“青,杨志刚,李启良(V-33)
+5000m特大跨度悬索桥空气动力稳定性风洞试验研究
+e BREA, ERE, AEE, 等 ( 矿 -38 )
+翼身′乡且合1′Z丨又才慢言广…幸衮牛彗J二^′]`生高′…'墓i`…薹亡(彗金研妻「_耆亡李
+e限洋,趣忠良,杨海浣(矿-45)
+施放深度对气泡水体携带能力影响的实验研究….......
+e王涌,金良安,徐上,等(V-49)
+非离子表面活性剂在水流中的瑛阻机理….....…
+e薇书鸭,铭木洋,莪田悦之(仪-54)
+脉动作用下波壁管内非牛顿流体流动特性的研究…
+e张亮,卞永宁,白数丽,等(V[-59)
+汽车/[…机静【]-丨^椴1薹]-变7[誓:】角′丨生苜`旨的实马l金莅:_二究林万
+e王祥铮,颠基刚,黄洪雁,等《认-66)
+*实验技术。
+高超声…[吏风】萦同舟′_芒」，面浈瑾力亘【重乙豪迂玉薯_Z_技7丨更丕乏应用江IF=刘展，熊琳(1-76)
+薄膜电阻温度计原理性误差分析及数据处理方法研究
+.萧霁,石友安,孔荣宗,等(179
+利用M1.4喷管和开孔壁试验段实现低超声速流场实验研究…...-...刘OF,BREE,申“江,等(1-80
+“高压放电”又寸空气作用的i式验研究eesvonsetsesnesevessve
+e张銮,黄勇,黄宗波,等(T-88)
+《氏(变)湍孚亓-董_变′风字同-设_叠-丨一再__荃乡__"…】叠T丨_BETTTTTp
+e侯志勇,王连泽,周建和,等(T-92)
+基于有丨蜇艮j-_′口法【兰丨〈_`】风洞结才零/′z…]古j〔丨蚤章i′多\茵羞,亓`eretesasterseossesseean
+e陈万华,王元兴,王超琪,等([-63)
+槽道壁湍流的展向震荧电磁力减阻控制的PIV研究….......................。陈耀慧,范宝春,梅株杰(I-68)
+基于ADAMS风洞言耆<髻′壁|]贲管乏_三j′-I力学仿真登叠~才藿1_′达林达聂芽恒_步寺-，享T蜇]《_…皇-岙丨患，〉蓁‖′f})叁]炅})}立(止-73》
+压敏漆图像数据处理技术…膑红亮,向星居,郎卫东(I-77)
+运用激光全息术和PDPA测量喷射燃料粒子场….....
+e张龙,张力虎,曹娜,等([[-83)
+四分量片式铰链力矩天平技术及风洞实验应用研究-.
+e刘善贺,王天明,邱俊文,等(I-88)
+利用micro-PIV测量矩形微管道内流量…..............
+e张浩胜,王金华([[-92)
+沙粒蠕移运动速度测量及其统计分析一cccececcccccccemcs张洋,王_元,王丽(厂-96)
+战斗机推进系统模拟低速风洞试验技术研究…........
+e王动年,巫朝眉,陈洪,等〔匝-46》
+?3.2m风洞战斗机大迎角试验关键技术研究…
+e孕海牟,祝明红,黄勇,等(I-50
+振动环境中相机位置坐标与姿态角解算的实验研究…
+e张征字,罗“川,秉“卵,等〔匝-56》
+超声流量计探头对流场及其测量性能影响研究….....
+e张朋勇,郑丹丹,徐天室,等(匝-60)
+多功能大气边界层风洞的设计与建设…ss刘庆霄([[-66)
+测量叶轮机振动叶片表面非定常气动响应的实验技术一一影响系数法…...........,杨“慧,郑“赢〈匝-71)
+8mX6m风洞特大迎角机构控制系统研制….........-.
+e BOR, BEEK, 王 _帆 , 等 ( 亿 -78)
+航空声学风洞的声学设计研窑.
+e李-鹏,汤更生,余永生,等(历-82)
+亚声速气流中五孔探针的校准及应用…
+eOB,彭“强,李先锋,等(画-87》
+纹影系统中物平面的选择与刀口的设置eee
+e根华,杨献健,吴数,等(厂-91)
+二耆奎续〕岩〈二跨声三_吏风洞i袅-董′_丨-_兰叁′吾′建技7【叟朱沥沥李沥
+r廖达雄,陈呆明,彭%,% (IV-74)
+2.4m跨声速风洞的模型位移视频测量精度研究….....
+e张征宇,喻波,罗川,等(IV-79)
+高超声速飞行器相关的摩擦阻力直接测量技术…马洪强,高“贺,毕志献(IV-83)
+G3.2m风洞活动地板系统研制.
+e李征初,杨“点,梨“鉴,等(IV-89)
+纹景′=多擅支术中光源的选茎圣_[盲′^-董拳`乏_窦_丨_贪j^法林
+e订缘人,金“蕊,吴文基,等(IV-94)
+连续变迎角测力试验技术在大型暂冲式跨声速风洞中的应用….........魏_志,谢艳,吴军强,等(V-9D
+水平风洞模型自由飞试验技术研究现状及展望….....
+e孕海生,屹“飞,爬博文,等(V-103)
+湍沼宁盲^轿育J1场′双向全J宦、干泛[三_警预!‖量^_PEAARS
+r ERM, 张 _ 龙 , 陈 勇 , 等 (CV-74)
+飞刁官′一暑善风字同才`莫彗旦白〈〕′丨雯壬二〕`吏'苜萧_丨造技术2林年
+e朱伟军,李涤尘,张征字,等(V-79)
+底层隔板法流体壁面剪切力的测量研究…
+e自亚霁,朋晓,黄凤兵(V-85)
+高层建筑二维风致响应实测中测点的优化布置方法…
+e茹万林,李正农,吴红华(-89)
+立式风洞尾旋技术改进及试验验证(英文)…
+e视朋红,杨洪森,王劣年,等(V-94)
+高超声速飞行器气动力/热参数辨识研究综述eee
+e何开锋,汪清,钱炖祺,等(-99)
+风孚同亘罡宁旦{一更′子二`__′试验才【莫主旦{〕、j_法研穸1_^吏、′`EE
+e张渡,赵忠良,范叶林〔页-72》
+粒子拖尾长度对高频DPIV测量误差的影响…陈启刚,李丹勋,钟“强,等(史-77》
+栅格舵气动与操纵特性高速风洞试验技术研究….........…。陈建中,赵忠良,涂正光,等《叶-82》
+FL-8风洞三点支撑系统研制一.
+e BALE , 懋 仁 山 (V][-88)
+双截面聪焦纹影技术应用研窕…
+e黄思源,谢爱民,白荣尘(V-92)
+2011
+CONTENTS
+Experimental Research
+The investigation on heat transfer characteristic tests and thermal evaluation of fuel-cooled panels
+Experimental and statistical analysis of water jet discharged from an annular nozzle
+Experimental investigation of flow friction characteristic in atttuli 一 e FAN Jia, FENG Dian-yi 《 工 -13 》
+Experimental investigation on the performance of two-phase pulse detonation rocket engine
+Exploring experimentally effect of tail wing on shape and dynamics characteristics on super-cavitation vehicle
+Experimental study on flow behavior of SiQ;-water nanofluids in a wavy-walled tube
+e XT Mio, CUI Wen-zheng , 吊 A Min-li, etal (1-29)
+A wind tunnel research of flexible wings with different reinforcements s LT Zhan-ke, NIU Wen, WANG Jin ( T -35)
+Experimental investigation of vortical motions in a 2D scaled experimental motor
+M Xiao-long s HE Guo-giang , LIU Pei-jin , et al ( 1 -37)
+A simple but robust method for automatic kinematics analysis of
+insect flight video sequences
+Experimental investigation of jet influence on the gas-solid two-phase crossflow in a confined domain
+e FUT Yao, WANG Tong, CHEN Jin-cheng, etal (1-48)
+Experimental analysis of stream-wise surface velocity variation features in water flow through the seabuckthorn flexible dam
+based on PIV technique AN Fang-she, LI Huai-en, CAO Ming-ming, etal ( 工 -59 )
+Water-flow simulation and CFD research on supersonic flow phenomenon
+Force measurement of hovering dragonfly via an electromechanical model
+r 园 7- (8 Da-peng y SHEN Gong-xin y ZHU Bai-liu , et al ( I -69)
+Study on the effect of different nose tip on the yaw characteristics of aircraft at high angles of attack
+e YU Kun-long, JIN Ling, HU Han-dong, etal 《 于 - 1 )
+Research on vehicle static control performance evaluation approach
+e 行 丞 NCG Yan-ging ? WANG Wen-zheng ? QIAN Wei-ai,et al ( 止 -13)
+Experimental study for the effect of induction systems on valveless pulse detonation engine
+e WANG Zhi-wu , YAN Chuan-jun, ZHENG Long-zis etal 《 二 -17)
+Study on the unsteady cavitating flow dynamic characteristics around a 0O-caliber ogive revolution body
+Experimental investigation of liquid jets atomization in supersonic cold crossflow
+Research of measurement method of two dimensional configuration drag test in wind tunnel in case of high lift
+Experimental study of flow field in mid-calorific syngas diffusion flame
+剑 Pei-ging y ZANG Shu-sheng y GE Bing ( [i] -41)
+Experimental study of the thermal characteristic of submarine wake in the temperature stratified flow
+e vee. ZHANG Xiu- feng ? YANG Li, WU Meng-meng , etal 《 于 -45
+、Experimental research on the aerodynamic characteristics of a new concept wheel-wing
+e nee. HAO Jiangnan, CAI Jin-sheng, LIU Zheng-zhou (][ -49)
+Investigation of vibration on an airfoil aerodynamics at larger incidence e XJE Ya-jun, YE Zheng-yin (11-54)
+Investigation on reducing drag of the bus-like body using tail clapboards … WANG Xun-nian, LI Shi-wei, CHN Li 《 正 -58》
+Study on the support interference of wire-assistant sting support at high angle of attack in low speed wind tunnel
+Experimental study of the leading edge vortex-flap of double-delta wing
+Investigations of grid fins geometric feature influence on drag reduction s DENG Fan, CHEN Shao-song 《 匣 -10》
+Method to eliminate the interference of model support in automotive wind tunnel
+e nee. ZHANG Ying-chao, ZHANG Zhe, LI Jie ([1-16)
+Experimental research of wide-angle diffuser performance for the intermittent wind tunnel
+e see nee. HUANG Zhi-long ? ZHANG Gxuo-Biao, LIU Xiao-bo, etal 《 匝 -20》
+Experimental investigation on pressure field and surface flow field characteristics of large enthalpy drop aft-loading curved
+turbine cascade e SHIT Yu-wen , WANG Zhen- feng,? HAN Wan-jin 〔 巩 -24)
+Hybrid laminar flow control experiment on swept wing model ….....。 DENG Shuang-guo, ERIQITAI, NIE Jun-jie 《 匝 -30》
+Experimental study on aerodynamic characteristics of a hypersonic waverider configuration
+Flutter test of rudder in sub-tran-supersonic wind tunnel using subcritical response methods
+丁 一 应 6 , RAN Jin-hong, LIU Zi-giang 《 匝 -37》
+Similarity criterion of the wind tunnel test for the post-stall maneuver e GENG Xi, SHI Zhi-wei ([[[-41)
+Measurement of phase difference for eddy viscosity model equation of turbulence
+e 月 Ai~dong s JIANG Nan, JIA Yong-zia (N-1)
+Investigation of flow separation control on an airfoil using DBD plasma actuators
+e WANG Xun-nian , WANG Wan-bo , HUANG Yong etal (IV-9)
+Investigation on wind profiles in the deep gorge at the Balinghe bridge site via field measurement
+PIV investigation on flow induced by plasma aerodynamic actuation
+Investigation on dispersed droplets behavior in a shear flow
+Experimental study on flow field of high temperature supersonic
+impinging jet injected by water
+Lift-enhancement of canard-spanwise pulsed blowing of non-coplanar close-coupled canard configuration
+Experimental research on characteristic of density gradient in a compressible mixing layer
+Study on centeral-dump combustor by PIV 一 en IT Hao, LIN Ming ,ZHANG Yu-shan,et al (IV-45)
+Wind tunnel observation on the effect of a porous fence on shelter of a triangular coal pile
+e ZHANG Ning ,CHEN Ting-guo ?Sang-joon LEE (WW-50)
+Prediction of the performance of cone flowmeters installed with an upstream expander
+Estimates value of the expected wind speed in straits area wind environment using extreme value distribution scheme
+e LIU Hui ZHANG Liang-liang ,YVANG Zhuan-yun set al (IV -60)
+Discussion on flow pattern determination method of shallow flow
+on slope surface
+PIV experimental study on flow characteristics of periodic-pulsed
+dielectric-barrier-discharge
+Experimental study of influence of the coherent structures of inflow boundary layer on supersonic mixing layer flow field
+Experimental study on control of the cylinder-flat-plate turbulent
+junction flow
+Experiment of internal pressure response characteristics excited by sinusoidal external pressure for rigid structure with
+OPENING e [ Shi-ce, LI Qing-ziang ? YU Hai-feng ,et al (V-16)
+Investigation about drag reduction water tunnel experiment and mechanism of superhydrophobic surface
+Experimental study for pressure drop of variable mass flow in horizontal well
+Complexity analysis of instantaneous tube-wall pressure fluctuation symbolic series in static mixer with twisted-leaves
+e N Hui-bo, GAO Yan-li, YU Yan- fang , etal (V-30)
+Experiments on the scalar concentration field of a multiple jet group in cross-flow
+e X TAO Yang? TANG Hong-wu, AYIDEN (V-35)
+Investigation on SPWVD time-frequency analysis technique for unstationary fluctuating pressure data
+e one GUO Hong-tao, XU Lai-wu, WU Ji-fei, etal (V-40)
+Experimental research on Richtmyer-Meshkov instability at the multi-layered fluids interfaces with different density
+&radients e SH Hong-hui , DU Kai, WANG Chao, etal (V-45)
+Experimental study on effect of venting area on premixed flammable
+gas explosion venting in linked vessels
+YOU Ming-Wei, JIANG Jun-Cheng, YU Yuan, etal 《 V -51》
+Examining the Ke(RNG)〉 model and large-eddy simulation of flow feature and turbulence dispersion around a building by means
+of wind tunnel tests es 506 ans 0c mah See uss ue Bee NOU ss HOO CN SOV ONE S00 088 BEL
+… GUO Dong- peng ? QIAO Qing-dang, YAO Ren-tai (V-55)
+PIV experimental investigation of the flow field in a low-pressure exhaust hood of a stream turbine
+e 丁 Wei-liang ? WANG Hong-tao, ZHU Xiao-cheng , etal (V-64)
+Study on hydraulic pulsed jet characteristic by in-house experiment and numerical simulation
+Aerodynamic force measurements on a flexible flag flapping in uniform flow
+e SUN Chuan-bao, JIA Lai-bing , 工 Fa-yao, etal 《 财 - 1 )
+Experimental research on the high angle of attack aerodynamic characteristics of an 80°/65° double-delta wing
+e SUN Hai-sheng ? JIANG Yu-biao, LIU Zhi-tao, etal 《 歼 - 6 )
+Experimental study on large-scale spiral structures in turbulent natural convection between two vertical plates by PIV
+AN Bigo, NIU Hong-tao (VI-13)
+The unsteady aerodynamic characteristics of coupled motion at high angle of attack ….。 YANG Meng , HUANG Da (V[-19)
+PIV measurement on airfoil flow separation control course by plasma actuation
+Investigations on aerodynamics of the spike-tipped hypersonic vehicles ….., JIANG Wei, YANG Yun-jun, CHEN He-wu (V]-28)
+Test research of the flow field inside the test section of the automotive wind tunnel
+Wind tunnel test on the aerodynamic stability of super-long span suspension bridge with a main span of 5000m
+Investigation on wing rock of wing-body configuration at high speed wind tunnel
+Experimental research for influence of injecting depth on water volume carried by bubbles
+Study of drag-reducing mechanism of nonionic surfactant in a water flow
+Characteristics of flow of non-Newtonian fluid in a wavy-walled tube for pulsatile flow
+Experimental investigation of aerodynamic performance of a turbine static cascade at different incidence
+Experimental Technique
+Double balance technology and its application on control surface
+force test in hypersonic wind tunnel
+Study on principle error analysis and data processing method of thin film resistance thermometer 「
+e ZENG Lei, SHI You-an, KONG Rong-zong . etal (1-79)
+Experimental research of low supersonic flow field for M1. 4 nozzle and perforated wall test section
+Test research about the high-voltage discharge effect on the air
+e ZHANG Xin, HUANG Yong , HUANG Zong-bo, etal (]-88)
+The further research on the design of low (varying) turbulence wind tunnel
+Fault diagnosis of the wind tunnel structure based on finite element method
+PIV study of drag reduction in the near-wall turbulent channel flow under the control of spanwise oscillating Lorentz force
+亿 Yao-hui, FAN Bao-chuns MEI Dong-jie 〔 五 -68》
+Dynamics simulation and analysis of flexible nozzle in wind tunnel based on ADAMS
+e NIE Xy-tao, GUO Long-de, LIU Bo-lin ([[-73)
+Image data processing techniques for pressure sensitive paint
+e XIONG Hong-liang ? XIANG Xing-ju, LANG Wei-dong 《 二 -77》
+Spray fuel particle field measurement by using laser holography
+and PDPA technology
+Hinge moment balance technique with axial force measurement and its application in wind tunnel test
+e | JU Xi-he , WANG Tian-hao, QIU Jun-wen, etal (1-88)
+The flowrate measurement in a rectangular microchannel by micro-PIV …-..--, ZHANG Yong-sheng , WANG Jin-hua (1-92)
+Statistical study on the velocity of aeolian creeping sands using high-speed digital photography
+e ZHANG Yang , WANG Yuan, WANG L5 《 于 -96)
+Investigation on test technique of fighters with propulsion simulation in a low speed wind tunnel
+Key technique for high angle of attack test of fighter aircraft in
+863. 2m low speed wind tunnel
+Experimental investigation on exterior orientation in vibration environment
+e ZHANG Zheng-yu ? LUO Chuan, SUN Yan, etal 《 匝 -56》
+Study on the influence of ultrasonic probes on flow field and measurement performance of ultrasonic flowmeter
+e ZHANG Peng-yong , ZHENG Dan-dan, XU Tian-shi, etal 《 匹 -60》
+Aerodynamic and structure desigh of multifunction boundary-layer wind tunnel = eecseeeeerrrerrniecinnnnee LIU Qing-kuan (I-66)
+Experimental technique for measuring unsteady aerodynamics of vibrating blade in turbomachinery—— influence coefficient
+method (ICM) 44s can eae s6e BOs Gee 40L S00 200 00s LP S08 $00 E08 S00 CEs Bee SIL SEP BN
+* etu se err 000 can une 40s tee san sus Be YANG Hui , ZHENG Yun ( m-71>

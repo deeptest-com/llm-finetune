@@ -1,0 +1,279 @@
+美国开发激光器用于防御敌军导弹
+美国加利福尼亚州诺斯罗普-格鲁曼公司航空系统分部激光武器专家正在启动一个军事研究项目，利用激光器防御载人和无人机免受热寻的导弹的袭击。位于弗吉尼亚州的美国国防先期研究计划局（DARPA）与诺格公司签署了一项2020万美元的合同，任务是在DARPA耐力项目第二阶段研制激光武器，保护飞机防御光电和红外（EO／IR）制导地对空导弹的袭击。去年晚些时候DARPA为“耐力”项目第一阶段向诺格公司授予了价值1460万美元的合同。同时得到项目第一阶段合同的是洛克希德。马丁公司任务系统和训练部。
+
+寻的导弹 激光器 防御 美国 DARPA 开发 加利福尼亚州 激光武器  
+
+To protect turbine components from overheating ,
+the highly efficient film cooling technique has found
+wide application in the marine gas turbines. It has
+proved that the accuracy of the predicted turbine vane
+thermal load is rather essential for the cooling system
+design in the advanced marine gas turbine. Along with
+the development of gas turbine,the coolant flow has
+gradually increased, which reaches about 20% of the
+main stream flow in the advanced aero-engines[11.
+Thus the influences of the so-called coolant mixing
+process on the flow and blade thermal loads predic-
+tions, which are strongly affected by the coolant flow,
+have to be detailed investigated.
+Because of the complicated physical phenomena
+and the rather complex turbine cooling system, there
+are mainly two kinds of researches in the air-cooled
+turbines; the flow and heat transfer in the cooling air
+channels and the influences of the cooling air injection
+on the flow in the passage. Such as the studies of
+Hou ,Liu 31 , Kampe'*! and Goodrori1, It is noted
+that these investigation, for the sake of reducing com-
+putational load,assume the solid walls are adiabatic
+ones, or specify thermal boundary conditions calculated
+by experimental formula. In addition these investiga-
+tions also assume the work substance to be pure gas,
+neglecting the gas component variation caused by cool-
+ant mixing. Thus such studies failed to present accu-
+rate thermal loads of the turbines.
+The development of computational mechanics and
+the computer technology makes it become possible that
+to carry out CHT simulations in the film-cooled gas tur-
+bines. Kusterer and Bohn'?), Heidmann[71 applied
+CHT technique in the gas turbine simulations ,obtai-
+ning detailed flow field in the passage and cooling air
+channels and blade thermal loads of turbines. With
+such technique Dong!??! studied the flow and heat
+transfer of a high-pressure vane with film cooling sys-
+tem at the leading edge, and Chen! obtained the
+thermal load of a turbine vane with full film cooling
+technique. Unfortunately these articles also assumed
+that the components of gas were same as those of the
+cooling air,and they neglected the effect of gas compo-
+nent vanation.
+The researches on component variation of work
+substance induced by mass diffusion are mainly found
+in the combustion or multi-phase flow fields". Our
+preliminary 碱udyU5〕 has proved that the coolant mixing
+would bring considerable effects on the flow field pre-
+diction by the simulations of a two-stage turbine ,but
+further researches are still needed.
+This article aims to study the influences of gas
+component variation on the blade thermal load predic-
+tion in the air-cooled turbine. The solver is the couple
+one, HIT-3D. The test case is a turbine vane in a gas
+turbine, which contains dual cooling air channels and a
+slot in the blade trailing edge. And there are two kinds
+of CHT simulations,one assuming the same working
+substance in the passage and the cooling channels ,and
+the other taking account of the gas component varia-
+tion.
+1 Computation Scheme
+1.1 Governing equation and discrete methods
+The dimensionless conservative governing equa-
+tions for multi-component fluid flow in body-fitted coor-
+dinates are as follows.
+where U = J[p pu pv pw e pY, 1" 1s conservative
+variable, J the Jacobin determinant, p gas density, ,e
+the internal energy per unit mass, u, v, w are the ve-
+locity components in axial, radial and circumferential
+directions ; 一 the concentration of cooling air in gas-air
+mixture, the vectorsf,, f,, E, F, G, Q, Rand § are
+referred in Wang’ s dissertation!"
+The eq. (1) is consisted of the N-S equations
+and a coolant diffusion equation. Thus it is able to
+model the gas component variation induced by coolant
+mixing, and to predict flows of gas-air mixture in the
+passage. It is noted that the thermal properties of the
+mixture are functions of both fluid components and
+temperature, and the expressions for specific heat at
+constant pressure and gas constant are as follows ;
+where C_ is gas constant-pressure specific heat of gas,
+C,. air constant-pressure specific heat, f oil gas ratio, 6
+a function of temperature.
+And gas constant is affected by oil gas ratio also.
+r河o
+where R is gas constant, and M (f) mole mass
+which is a function of f.
+The semi-implicit method is employed to solve
+above equation, and the difference schemes selected
+are a third-order TVD ( total variation diminishing)
+scheme for convective terms!!! and the second-order
+central scheme for the diffusive terms.
+The B-L algebraic turbulence model is em-
+ployed to close the conservative equations, and the
+Crawford-Kays formula" is utilized to calculate the
+turbulence Prandtl number. The molecular viscosity
+and thermal conductivity coefficients are provided by
+the Sutherland formula.
+The dimensionless governing equation for the heat
+transfer in the vane solid regions is the Fourier equa-
+tion, which can be reduced by the energy equation of
+the eq. (1). And it is solved by Douglas-Rachford al-
+ternating direction implicit method”. The direct cou-
+pling method" is used to couple the flow field in the
+passage and the thermal field in the solid blade. It has
+been proved that such method is with more stability
+than the indirect coupling method, and that it is able to
+accelerate the CHT simulations’?! .
+1.2 Vane profile & computational grids
+The vane profile and the cooling air channels are
+presented in fig. 1. Such vane, which is a low-pressure
+one in the marine gas turbine, has got two channels in
+26期王强,等:考虑组分扩散的气冷涡轮气热耦合计算7705
+the vane, and there is a slot between the second chan-
+nel and the passage.
+(a) Turbine vane (b) cooling air channels
+Fig.1 Vane profile and cooling system
+The computational domain is discretized by the
+structured grids. To guarantee the grids orthogonality,
+the multi-block grids technique is employed, thus the
+turbine passage, cooling channels and slot are dis-
+cretized by H-O-H type, H-O type and H-C type grids
+respectively. The computational grids are shown in fig. 2
+as follows.
+(a) Grids at S1 stream surface (b) Grids of slots at vane trailing edge
+Fig.2 Computational grids
+There are 809 760 computational cells in the fluid
+domain, and the computational grids are refined near
+the solid wall to model the boundary layer exactly. The
+dimensionless distance from the adjacent cell centers to
+the solid wall y* is controlled less than 5, and numeri-
+cal simulations have proved that y* =5. 0 could lead to
+grid-independent results.
+The solid vane is discretized by uniform 0-C-type
+grids. The number of the computational cells is
+40 640.
+1.3 Boundary conditions and initial conditions
+There are five kinds of boundary conditions,in-
+let, outlet, periodic in the circumferential direction,
+adiabatic wall and fluid-solid interface. The free stream
+flows in the axial direction at inlet, exposed to inlet to-
+tal pressure and temperature. The free stream at outlet
+is subject to the static pressure. The no-slipping condi-
+tion is posed on the solid wall. And at the fluid-solid
+interfaces continuous temperature and heat flux exist.
+Flows in the cooling channels are under the same
+boundary conditions as in the passage. For the cooling
+air diffusion equation, the concentration of cooling air
+is 0 at free stream inlet, and it is with zero-gradient at
+outlet. And the concentration of cooling air is 1.0 in
+the cooling air holes separately.
+Converged flow fields in the passage and cooling
+channels are served as the initial conditions. The
+measured conditions are listed in tables 1 and 2. The
+angles in table 1 are defined as follows:
+The operating conditions of the passage and the
+cooling air channels are presented in tables 1 and 2 ,
+where the pressure and the temperature are dimension-
+less ones calculated by following formula;
+The p,, and a,, are critical density and sound speed,
+calculated by the inlet total temperature of the gas''?! ,
+separately, 口 = 287. 3 [J/(kg - K)], the gas con-
+stant for pure gas,and the superscript-denotes dimen-
+sionless parameters, which is cancelled in the following
+part for the sake of simplification.
+Table 1 Operating conditions of vane
+0. 88 1. 40 0. 88 0 23.15
+Table 2 Operating conditions of cooling channels
+1 0. 39 1.51 0.94
+2 0. 39 1.51 一
+(a) 25% span (Labels:0.05-1.15, AMa = 0.055) (b) 50% span (Labels: 0.05-0.95, AMa = 0.05) (c) 75% span (Labels: 0.05-0.85, AMa = 0.05)
+Fig.3 Mach number distributions
+2 Results & Discussion
+As mentioned above two kinds of CHT simulations
+are carried out, and the numerical results are discussed
+below. It is noted that the constant-pressure specific
+heat (cp), the pressure and the temperature in the fol-
+lowing figures and contours are dimensionless ones.
+The dimensionless cp is obtained by dividing the gas
+constant for the pure gas. The dimensionless formula
+for pressure and temperature are as equation 6.
+The Mach number distributions at 25% , 50%
+Fig.4(a) Cooling air distribution at 25% span
+and 75% spans, predicted by these two kinds of CHT
+simulations, are illustrated in fig. 3. Since the Mach
+number distributions predicted by the CHT simulation
+of pure gas are similar to those of gas-air mixture, only
+the results taking account of gas component variation
+are presented. It indicates that the gas flow is acceler-
+ated along the negative radial direction, which could
+attribute to radial centrifugal force of gas in the annular
+cascade. Transonic flow occurs at 25% span, with the
+maximum Mach number about 1. 17 hence such span
+is selected as the characteristic span.
+Fig.4(b) Cooling air distribution near the
+trailing edge at 25% span
+26期王强,等:考虐组分扩散的气冷涡轮气热耦合计算7707
+Fig.5(a) Gas constant distribution at 25% span
+(c) Near the trailing edge at 25% (gas-air mixture)
+Fig. 6 Specific heat distribution at constant pressure
+Fig.5(b) Gas constant distribution near the
+trailing edge at 25% span
+(d) Near the trailing edge at 25% span (pure gas)
+presented in fig. 4 and fig. 5. The cooling air, injected
+through the slot at the blade trailing edge, mainly mi-
+xes with the gas in the wake, and homogenous gas-air
+mixture are obtained finally. It is also shown in fig. 4
+that there is almost no cooling air at the fore part of the
+vane. The gas constant, function of the gas compo-
+nent, is affected by the cooling air concentration, and
+it has got the opposite trend of cooling air concentration
+distribution in the passage, which attributes to the lar-
+ger mole mass of cooling air than that of gas. Otherwise
+the gas constant in the whole passage changes rather
+slightly, as is shown in fig. 5, with the maximum
+(kg + K) ].
+The predicted specific heat (cp) of gas-air mix-
+ture and pure gas at 25% span are illustrated in fig.
+6. There are scarcely any differences at the vane fore
+part, but evident differences near the slot, in the wake
+and at the passage downstream, where the predicted cp
+of gas-air mixture is lower than that of pure gas. Com-
+paring fg.6(e) with fig. 6(d) the largest difference
+between the predicted cp is about 0. 1, locating at the
+regions where there is more cooling air. Then the
+effects of gas component variation on the aerodynamic
+force and vane thermal load prediction by CHT simula-
+tions are discussed below.
+As is shown in fig. 7, where the parameters P
+and Po are the static pressure at the vane surface and
+the total pressure at vane inlet respectively, the predic-
+ted profile pressure of gas-air mixture at 25% span is
+almost the same as that of pure gas, which reveals sim-
+ilar flow, hence similar aerodynamic force, near the
+vane. It seems that the gas component variation influ-
+ences slightly on the flow in the passage, otherwise the
+same assertion could not be applied to the vane thermal
+load prediction. Fig. 8 and fig. 9 proved the profile
+temperature distributions at 25% span and the vane
+thermal loads, respectively. The parameters T and T,"
+are the static temperature at the vane surface and the
+total temperature at vane inlet separately. It indicates
+that the predicted profile temperature of gas-air mixture
+has got slight difference to that of pure gas on the whole
+vane surface ( caused by different working substance in
+the cooling channels,air and gas assumed in different
+CHT simulations) except at the fore part of vane at the
+pressure side, where the cooling air concentration is
+rather large. The predicted profile temperature of gas-
+air mixture, at such regions, is higher than that of pure
+gas with the maximum difference about 0. 02 ( about 40
+K) ,which seems rather lager for the cooling system
+design in the advanced gas turbines. Hence the gas
+component variation caused by coolant mixing has to be
+taken account of in the CHT simulations to obtain ac-
+curate vane thermal loads of air-cooled turbines.
+3 Conclusions
+Compare the numerical results predicted by the
+CHT simulation of gas-air mixture flow with that of the
+pure gas flow, following conclusions are obtained.
+(1) Coolant mixing in the air-cooled turbines
+changes thermal properties of working substance. The
+gas constant varies slightly, but specific heat at con-
+stant pressure considerably, decreasing about 0. 1.
+(2) The gas component variation slightly affects
+the flow in the vane passage, and there is similar pro-
+file pressure on the vane.
+(3) The gas component variation significantly in-
+fluences the thermal load prediction ,and the predicted
+profile temperature near the slot increases about 0. 02.
+(4) To accurately predict the vane thermal load,
+the gas component variation must be taken account of
+in the CHT simulations of flows in the air-cooled tur-
+bines.

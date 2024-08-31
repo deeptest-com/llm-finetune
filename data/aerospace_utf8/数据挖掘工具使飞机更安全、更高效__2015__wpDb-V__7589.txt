@@ -1,0 +1,208 @@
+数据挖掘工具使飞机更安全、更高效
+当飞机发生事故时，我们很容易联想到，有些零部件出现了损坏情况或者操作程序出现了问题。但事实上，即使飞机最终安全地到达丁目的地，其可能也曾经偏离过正常的状态或者超出了飞行安全的边界。找出航空飞行安全的边界，恰当描述正常的运行状态，并研究出有效追踪边界参数的方法是一一项非常艰巨的任务。通常，研究人员通过数学建模，并在飞机上安装一系列传感器进行实际测试，记录和分析飞行数据来完成对飞行状态的识别。
+
+航空飞行安全 数据挖掘工具 飞机 运行状态 操作程序 损坏情况 数学建模 研究人员  
+
+中图分类号:TH16;V261.92文献标识码:A文章编号:1001-3997(2013)10-0187-04
+Rapid Design and Experiment Analysis of Resonant Behavior of Exponential Horn
+LIU Fang-fang, LV Ming, QIN Hui-bin, WANG Shi-ying
+(College of Mechanical Engineering, Taiyuan University of Technology, Shanxi Taiyuan 030024, China)
+Abstract: It is very complicated and tedious to design these parameters of ultrasonic amplitude horn in ultrasonic machining.
+The software calculates parameters of exponential horn developed by means of combining VB and MATLAB. The rapid design
+of exponential ultrasonic horn, based on the platform of SolidWorks, is achieved by utilizing VB to call the API function of
+SolidWorks which can generate a three—dimensional model of horn automatically in SolidWorks by parameter—driven. Three
+circular cross—section exponential horn including big, medium and small sizes were designed and machined, It compared and
+analyzed the finite element modal analysis results and hammer method modal experimental results, to verify the accuracy of
+the design method, and provided a reference for the rapid series design of ultrasonic amplitude horn.
+Key Words: Ultrasonic Amplitude Horn; Parametrization Design; Resonant Frequency; Modal Analysis
+1引言
+在超声加工中,超声振动系统一般由超声波发生器、换能器、
+横截面为圆截面的指数形变幅杆,如图1所示。
+变幅杆以及加工工具或工件组成;是超声加工工艺系统的核心,其
+性能直接影响整个工艺系统性能的优劣。超声变幅杆是超声振动系
+统的一个重要组成部分,为了准确地设计出一-个超声振动系统,必须
+在设计过程中确定好变幅杆的各种参数。但是,由于变幅杆的种类很
+多,如圆锥形变幅杆.指数形变幅杆.悬链形变幅杆以及阶梯形等各种
+复合式变幅杆,且每一种类的各项参数计算较复杂繁琐0。日三维
+CAD已经在企业中广泛应用,三维造型设计取代一维平面设计是工
+程设计的必然趋势。因此,研究和开发一个基于计算机辅助设计工
+具的变幅杆设计计算软件,可以较快地计算出各种类型的变幅杆的
+指数形变幅杆大.小端半径为R,.R,,面积为5,=mR2,S,=mR,
+VB与MATLAB两种软件工具相结合的手段,开发一个超声变幅杆
+以大端圆心为坐标原点,轴向为x轴正向,则半径和面积变化凶
+参数计算软件;并以SolidWorks为平台,利用VB调用SolidWorks
+数 分 别 为 Pa:R=R & ,S=S, e 古 (1)
+的API丽数通过参数驱动实现了超声变幅杆的快速化设计。按照
+式中:′〔薯=责ln昙=音ln/\/;
+有限元分析来获得固有频率和振型,并与实验测试结果进行对比
+一变幅杆的长度;
+分析,从而验证变幅杆设计方法的准确性。
+其共振频率方程为:sinkI-0(2)
+基于VisualBasic与MATLAB结合对SolidWorks进行快速
+开发的过程,如图2所示。
+该方法的设计思想是利用VB创建参数输人交一界面,将零
+件复杂的设计计算过程交由MATLAB来完成。对于变幅杆的谐
+振长度,放大系数,位移节点等参数,用VB计算比较困难,因此
+选用MATLAB来完成。将VB和MATLAB相结合,充分发挥了两
+种语言工具的特长,大大提高了计算精确度和设计效率。实现VB
+和MATLAB混合编程实现的方法有多种,此处采用的是ActiveX
+自动化协议和DDE技术。
+3.1.1VB和MATLAB混合编程的实现
+(1)MATLAB 的 DDE 技 术
+DDE(动态数据交换)是在Windows环境下支持客户/服务
+器计算模式的重要技术,两个Windows应用程序之间可以通过
+交换数据来实现彼此的通信。由于VB支持DDE客户服务功能,
+而MATLAB提供DDE服务功能,因而VB应用程序首先通过确
+定服务器名和主题建立与MATLAB的DDE会话44,服务器名和
+主题唯一地确定了这次会话,在会话期间VB应用程序作为客户
+端,MATLAB作为服务器端,客户端与服务端可以就确定的项目
+(Cftem)交换数据。在VB应用程序中必须指明MATLAB的服务器
+名为MATLAB,会话主题为Engine。这样使用MATLAB的
+Engine主题支持的三种操作,VB应用程序史以启MATLAB传
+送可执行的命令,从MATLAB工作空间读取.传送数据。需要注
+意的是:单独使用DDE技术时,MATLAB的命令窗口必须首先
+运行。
+(2)MATLAB的ActiveX自动化协议
+ActiveX自动化(OLE自动化)协议是一种允许一个应用程
+序(控制端)去控制另一个应用程序(服务器端)的协议。由于VB
+支持ActiveX自动化控制端协议,MATLAB支持ActiveX自动化
+服务器端协议,因此如果已经建立了一个VB应用程序和
+MATLAB之间的ActiveX自动化连接,那么在一个VB应用程序
+中就史以调用MATLAB的命令.向MATLAB传送或从MATLAB
+接受矩阵数组。
+当使用MATLAB作为自动化服务器时,用户必须首先获得
+MATLAB的ActiveX对象在Windows注册表中的名称,即
+Matlab.Application。这样就可以在VB源程序中开启MATLAB的
+自动化服务器功能。
+3.1.2软件的设计
+用以上两种方法结合开发了一个指数形变幅杆参数计算软
+件 , 首 先 在 VB 中 应 用 CreateObject (“Matlab.Application“ ) 命 令
+来自动打开MATLAB环境,然后再应用DDE技术实现VB与
+MATLAB间的数据交换,而且在程序执行完后自动关闭
+MATLAB环境,节省了时间,提高了运算效率。
+利用VB创建的参数输人交互界面,如图3所示。输人变幅
+杆的大小端直径、材料、频率等参数,单击“计算“按钮,通过后台
+程序的运行,则可得到指数形变幅杆的谐振长度,放大系数、位移
+节点等各项参数。
+据交换,
+‘Rem创建一个ActiveX对象
+Dim matlab As Object
+Dim szCommand1 As String
+Set matlab = CreateObject(“Matlab.Application“)
+‘Rem断开Text1与其他所有DDE服务器的连接
+Textl.LinkMode = vbLinkNone
+‘Rem将控件Textl的DDE连接对象和主题设置为MATLAB!
+Engine
+Text1.LinkTopic =-“MATLABlengine“
+‘Rem将控件Textt的DDF连接使用的项设置为EngEvalString
+Textl.LinkItem = “engevalstring”
+‘Rem建立连接
+Text 1 .LinkMode=vbLinkManual
+‘Rem将Texts的DDE迷接使用的项设罪为EngStringResult
+Text5.LinkItem = "EngStiingResult”
+‘Rem执行控件Yext5中包告的咤令
+szCommandli = 《liext3yext / (2 * Textd.Text)) * ((1 + (Log(Textl.
+Text/ Text2 Text) A3:1416j 2) 0.5)
+Text5.Text = natlabExecute( szCommand1 )
+“Rem获取数据
+Text5 LinkRequest
+‘Rem断开控件Text5与MATLAB服务器的连接
+Text5.LinkMode = vbLinkNone
+3.2指数形系列变幅杆的快速生成
+SolidWorksAPI是SolidWorks提供的OLE应用程序开发接
+口,用户可以利用它并通过支持OLE编程的开发工具,如Visual
+Basic、VisualC++等对SolidWorks进行二次开发,建立用户自已
+的应用系统&8a.利用VisualBasic6.0对SolidWorks2011进行了二
+次开发。建立VB与SolidWorks的连接,创建一个SolidWorks应
+用对象,格式为:
+DimswApp As Object
+Set swApp=CreateObject( "SldWorks. Application")
+在模板模型的建模过程中,由于指数形变幅杆的直径留数
+分别为,其外形曲线是特殊曲线,虽然可以用SolidWorks2011中
+的“方程式驱动的曲线“工具来建立此曲线,但SolidWorks方程式
+驱动的曲线暂不支持变量的定义,即只能以t做变量,不能进行
+参数化驱动。因此采用“样条曲线“的方法通过一系列的点进行平
+滑过渡形成曲线。
+其主要程序代码如下,
+Dim Part As Object, swApp As Object
+Dim strFileName As String,
+Dim D1 As Double, D2 As Double, a As Double, k As Double, j As
+Integer
+Dimx(13) As Double, y(13) As Double
+a=Log(D1/D2)/L
+k=L/14
+Forj=0To 13
+x(j)=j*k
+, yGJ=DL x Exp(-at (j*k))
+Next
+strFileName = App.Path + “\” + “zhishubfg.aldprt”
+Set swApp = CreateObject( “SldWorks.Application? )
+swApp. Visible = True
+Set Part =swApp.OpenDoc4(strFileName, 1, 0,““, longstatus)
+Set Part = swApp.ActivateDoc( "zhishubfg")
+strFileName = “@zhishubfgsldprt“
+Part.Parameter( “D1@ 草 图 1“ & suFileName).
+SystemValue = Val(Textl.Text) / 2000
+Part.Parameter( “D2@ 营 图 1“ & strFileName).
+SystemValue = Val(Text2.Text) / 2000
+Part.Parameter (“L@ 草 图 1“ & stFileName). SystemValue = Val
+(TextS.Text) / 1000
+Part. Parameter( “x1@ 草 图 1“ & strFileName). SystemValue = x(1) /
+1000
+1000
+PartEditRebuild ,
+Part. ViewZoomtofit2
+Set Part = Nothing
+Set swApp = Nothing
+End Sub
+根据图3所示参数输人界面提示,改变变帽杆的参数D,、
+,则参数Mp、xov6也相应发生改变,单击“模型更新“按钮,则
+系统自动生成不同形状的三维模型,如图4所示。
+为了验证变幅杆横向截面大小对纵向振动的影响,利用上面
+的方法快速设计了材料为45 钢,面积系数29,长度13727mm的
+三组截面不同的变幅杆。其大端直径D分别为58mm87mm,
+116mmy; 小 堤 直 佐 02 分 别 % 20mm 30mm 40mm, SKA] MasterCAM9.0
+软件自动生成加工代码,并在FTC-20数控车床上加工出三个指
+数形变幅杆,如图5所示。为了使加速度传感器的磁座与变幅杆
+充分吸合,在变幅杆的两周分别铣出四个小平面。
+把上面快速设计小截面(D:=S8mm、Ds<20mm)指数形变幅杆
+模型导人到ANSYS里,设定分析粤魁为模态,定义单元类型为
+SolidBrick20node95,43 销材料特性参数为;弼性模量-210CPa、
+泊松比为03、密度为-7800kgmyy选用4缎管能网格划分。选择
+BlockLanczos法进行模态分析,模态扩展诱置撮索频率阶数为30
+阶.搜索频率范围为(0-30光Hz:通过求解得剂的振型图如图6所
+示。从ANSYS模态仿真振型来澈,在频率19749kHz处变幅杆做
+纵向振动。与设计理沙值相羟0251kHz,相对僚差126%。ANSYS
+的分析结果蛛然孪在--峻酒佐球,「岫还意与诱计理论值比较吻合
+的,偏差值也比较小。保持其他条件不变,用同样的方法对中.大截
+面指数形变幅杆进行模态分析,所求得的固有频率,如表1所示。
+从以土模态分析的结果来看,发现仿真分析与理论设计要求
+的固有频率和振型基本接近,因此,采用一点激励多点响应的锤击测
+试方法对大,中、小指数型变幅杆的纵向自由振动回有频率和振型进
+行验证。设计了实验系统,如图7所示。在实验中,将待测变幅杆的两
+周贴8个加速度传感器,分别将脉冰锤和传感器通过电线连到DASP
+数据采集分析系统上,实验时,限制采样频率的范围为(1-22光Hz,频
+率分辨率为1Hlz。加速度传感器(型叶DYTRAN3263M8)的贴合方
+式,如图8所示.数据采集仪(INV3020D)的接线图,如图9所示。测
+得的谐振频率,如表1所示。表中:D,.D:一指数形变幅杆大.小端直
+径计一为丁作频率;一ANSYS求得的频率;/r一糠态实验所测得的
+频率。从表|的比较可以看出有限元方法计算结果和实验测试结果
+与变幅杆的万作频率的一致性很好,表明实验数据可靠。但随着指
+数形变幅杆截面增大,指数形变幅杆的工作频率与有限元方法计
+算结果和实验测试结果的误差越来越大。当截面尺寸接近12波
+长时,相对偏差超过59;出此从计算角度分析,大截面变幅杆不
+能用一维纵振理论计算。
+表 1 大中小截面指数形变帽杆谐振频率数据对比
+Tab.1 The Data Comparison of Resonance Frequencies of
+Exponential Horns with Different Circular Cross-~Sections
+指数形“尺寸/mm谐振频率/Hz相对偏差%
+变幅杆DyDfi力丁WSF
+小 截 面 58 20 20000 19749 20113 1.26 0.57
+中 截 面 87 30 20000 19456 19822 2.7 0.89
+大 截 面 116 40 20000 18949 18698 5.26 6.51
+5结论
+(1)将VB5MATLAB两种软件工具相结合,基于SolidWorks
+对指数形变幅杆进行快速设计,提高了变幅杆的设计效率,为超声变
+幅杆系列化设计提供了参考。该方法同样适用于其它复杂产品的设
+计开发过程.(2)通过对比分析可以看出,对于截面尺寸接近12波长
+的大截面变幅杆,不能用一维纵振理论来计算变幅杆的主要参数。

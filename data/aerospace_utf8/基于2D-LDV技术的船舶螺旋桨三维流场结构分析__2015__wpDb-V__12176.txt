@@ -1,0 +1,227 @@
+基于2D-LDV技术的船舶螺旋桨三维流场结构分析
+利用2D-LDV设备,通过优化布置测试点,获得了均匀来流下螺旋桨尾流场三维流动数据。展示了宏观的流场动态以及微观的流动信息,如尾涡和梢涡在流场中的分布情况、尾涡部流动的剪切效应、梢涡部的绕流及流动分离状态。计算了水动力螺距角以及螺旋桨附着涡的总环量。试验显示了LDV技术在流动细节测试方面的优势,获得的定量信息可以为相关研究人员提供技术支持。
+
+螺旋桨尾流 流动分离 水动力螺距角 环量 LDV  
+
+中图分类号;V211.7文献标识码:Adoi:
+0 Introduction
+When design the propeller, it is essential to get ac-
+curate information about the structure of marine propel-
+ler“「s trailing vortex. Since the efficiency is an important
+measurement for the propeller and largely depended on
+the distribution of the circular rector of each blade ,the
+optimization of the distribution becomes a very sinificant
+part in the design of marine [)l'()薹)(事ll(羞l′〔】_3〕. In 1919,
+Betz firstly used the lifting line theory to deduce the con-
+dition of the optimal distribution of circular rector for the
+propellers working in uniform flow. Since then, many
+scholars did plenty of researches in this field[451 In
+1992, Li Zhiheng'”’ measured the velocity field of pro-
+_ peller by using the LDV system and investigated the cir-
+cular rector by integration of velocity between blades ,
+10 years later, Su Yumin‘?! dispersed the vortex system
+10. 7638/kqdlxxb-2013. 0055
+by the propeller’s lift-line vortex model, and then made
+use of the variation principle to establish a basic equa-
+tion that is content to the given load factor or power fac-
+tor of a propeller to calculate the best distribution of cir-
+cular rector. In addition, he used the numerical calcu-
+lating method to solute the equation and finally got the
+optimal solution. In 2006, Dong Zhengqing'?' used the
+LDV facility to measure the inner flow field of the ducted
+propeller by opening a window on the pipe walls and an-
+alyze the result. Then he also got the blades’ radial dis-
+tribution of the circular rector by integration by parts of
+tangential velocity in lower reaches and compare it with
+that of open water propeller in the circumstance of the e-
+qual thrust force. In 2007, Li Guangnian'""’ analyzed
+the result of the propeller trailing vortex sheet「s LDV test .
+in detail. He also compared the flow「s information of the
+two cross section in the propeller tailing vortex under the
+condition of uniform flow, as well as the circumferential
+distributions of axial velocity and radial velocity in
+different radius of the same cross section. However,
+because of the limited technologies at that time, Li can
+only get the information of the axial direction and radial
+direction in his test, without the distribution of the
+velocity in circumferential direction,
+In the recent 20 years, despite of the rapid devel-
+opment of the CFD technology and many satisfying
+results about the hydrodynamic performance of propeller
+we got through the CFD method" | it is still elusive
+to monitor the micro-structures of complex flow, so the
+technique of flow field measurement and experiment is
+indispensable. Furthermore, we can hardly establish
+any theoretical model and confirm the result without the
+certification form the experiments. Fortunately, with the
+development of science and technology ,the laboratory
+apparatus and the experiment methods have been
+enhanced a lot and many complicated problems that used
+to haunting the researchers is promising to be solved. By
+. the means of relative experiments, it is possible to
+connect the detailed information about the generation
+process of propeller trailing vortex and flow of propeller
+tip to optimize the design of propeller as well as verify the
+CFD result systematically. This essay will describe the
+experiment that takes advantage of 2D-LDV technology to
+test the 3-D velocity field on one of the cross section in
+propeller trailing vortex sheet in large cavitation tunnel
+by arranging the test pots optimally, and analyze the
+experimental data in a detailed way.
+1 Experiment method
+The experiment object is DTMBP4119 paddle and
+the equipments and propeller model will be introduced
+in the reference{ 5]. In this experiment, the propeller is
+designed when J = 0. 833. The positive direction of
+x-axis is flow direction; that of the z-axis is vertically
+upward through the propeller disk center; y-axis is
+determined by the right-hand rule. The aim of this
+experiment is to measure the axial and radial velocities
+of the propeller「 s wake field. The 0° of the motion
+, coordinate system represents the reference line of the
+propeller blade, and the 0° of static coordinate system
+stands for the horizontal meridional plane. The cross- “
+section of slip stream which the x/R =0. 3281 is set as
+the test surface. The test point in radial coordinate are
+r/R=0.3875, r/R=0.4, r/R=0.5, r/R=0.575, r/R=
+0. 7625, r/R=0.8988, r/R=0.95, r/R=1.0. The speed
+range of 2D laser speedometer produced by the TSI is (0 ~
+100) m/s, with error of 0.2% , and the location of the speed
+testing point can be controlled by the 3D mobile coordi-
+nates rack. Since the experiment instrument can only
+record the 2D speed, namely the axial and vertical
+speed, in this experiment we measured two points that
+were in the same radius to get the 3D velocity field ,as
+shown in figure 1. First we measured the point A of
+which the axial speed is that of the propeller wake, and
+the vertical speed is the tangential velocity of the propeller
+wake, then the point B measurements, it is the same as
+that of the point A. When it comes to the rotating flow
+field, the LDV measure process can be divided to 2
+steps. First, according to the time information of the
+rotating phase form the propeller shaft power meter
+phase encoder, we recorded different information into
+the different circumferential position of the space unit.
+Then in the last space unit,we calculated the average
+speed of different times. So the LDV velocity measure-
+ments given in the final value is actually a average
+circumferential speed of each unit of space time. In this
+experiment, the space angle resolution of LDV measure-
+ment system is set to 0. 92 every 0.9°as a spatial unit,
+thus there are 400 space units in a circle of 360° . From
+the result, we are confident that the resolution can meet
+the required test resolution accuracy. Because the phase
+point around is different, in the test coordinate system,
+the speed data of points B had 270° phase shift contrasted
+to points A. In order to point out the phase relationship
+between the test data and that of the real propeller blades,
+power meter phase encoder is used in this experiment. As
+the phase of the encoder and between the propeller shaft is
+fixed, the propeller blades in the test phase of the specific
+coordinate system can be tested by the laser beam
+alignment and positioning of the propeller blade reference
+line method. The result showed that when encoder
+instructions pointed to 0°, the reference line of propeller
+leaf 1 is at the 20° phase in test coordinate system.
+2 Data analysis
+In this essay, U,, V,, V, and V, stands for the
+stream velocity, axial velocity in fluid field, radial
+velocity and circumferential velocity respectively.
+2.1 Circumferential velocity field
+Figure 2 shows the distribution curves of the
+跋2呆白速度分布
+Figure 3 reveal the circumferential velocity on
+transversal surface by x/R=0.3281. From Figure 3 we
+can find that, corresponding to three blades, three tip
+vortices distribute on the transversal surface by equal
+space and the vortex center locates around the place
+where r/R =0. 95. It is apparent in. the Figure 3 that
+there ave three strip obvious high speed tapes in the
+corves of the circumferential velocity, corresponding to
+three blades. These high speed tapes extend from
+prapeller hub. to blade tip and conneet with tip vortex.
+Three strip vortex sheets which orhit along with
+the propeller penetrate the transversal surface, leading to
+above three strip mutational speed area. Figure 4 provide
+flow information 叱 trailing vortex on transversal surface.
+Vector diagram shows that the flow around tip vortex and
+trailing vortex is: chaos and velocity gradient is large.
+Moreover, one step appears when flow line passes trailing
+vortex, which indicates the flow around trailing vortex has
+obvious deformation effect and the flow around tip vortex
+has circumfluence. The flow separation also appears.
+2.2 Hydrodynamic pitch angle
+Using axial and tangential velocity field from the
+experiment, we can get hydrodynamic pitch angle by
+calculation.
+circumferential velocities in different radiusof the cross
+section. It indicates that the distribution of the circum-
+ferential velocity changes periodically and three snap
+backs appear in one circle, namely one snap back per
+one paddle period, which are real velocity values and
+vortex and viscosity wake surface),
+Bi=t君矗【】_l(尖〉,
+2mrR + V,
+where V, and V, are the average of two peaks ( point A
+and point B shown in Figure 5 aroused by the trailing
+vortex, which are the average value of up and low level
+velocity of trailing vortex sheet. The results of hydrody-
+namic pitch angle of tail vortex are shown in the Figure
+6. At the interval between 0. 2D and 0. 3D,the hydrody-
+namic pitch angle gets larger when it far away from the
+propeller at outside radius. The distribution law of hy-
+drodynamic pitch angle can’t be discussed because of
+the sparsity of text points at inside radius.
+According to the tangential velocity of propeller
+trailing vortex measured from the experiment,we can
+obtaintotal attachment vortex circulation of propeller
+bound vortex from the Stokes integration and make the
+circulation dimensionless by 2mrRU0。。Then we can get
+dimensionless circulation ,
+where Ab is the configured angular solution in the LDV
+test, and the calculated results are shown in figure 7.
+The Figure 7 reveal that, in the circumstance of uniform
+flow, the distribution of the circulation in propeller trai-
+ling wake along radial direction is one of our acquainted
+forms and the circulation of measurement plane along the
+propeller direction is a process that increasing gradually ,
+which is maximum when r/R=0.7. With the distance
+from propeller quotation increasing, the circulation is on
+a declining curve as a whole, which reaches to zero
+when it goes to tip.
+This paper analyzes the three-dimensional flow field
+informationof propeller wake under uniform flow. Exper-
+iment results show the macroscopic flow field trends and
+microcosmic dynamic information. The following conclu-
+sions can be drawn:
+1) The LDV technology has huge advantages in the
+flow details of the test. It can capture the subtle flow
+structure, such as the speed mutation near the up ot
+propeller blade.
+| 2 ) The hydrodynamic pitch test results show the
+coanda effect in circulation control airfoil[ J]. Journal of Engineer-
+law of the spatial distribution. In order to obtain the
+ing Thermophysics, 2010, 31(9 ) ; 123-130. (in Chinese)
+accurate information, the next step should be encrypting
+宋彦萍,杨晓光,李亚超,等.环量控制翼型中柯恩达效应的数
+EER]. 工 程 热 物 理 , 2010, 31(9):123-130.
+the arrangement of radial test points,
+3) The calculation results of the total circulation of
+[D]. China Ship Scientific Research Center, 1992, 05: 2-5. (in
+the propeller attach to vortex consistent with the theory ,
+Chinese)
+李志恒.螺旋桨流场及环量LDV测量方法[D1.上海交通大
+but because of the structure of the tip of the flow field is
+学,中国船舶科学研究中心,1992,05:2-5.
+complex and the velocity gradient is large ,this part of
+[8] SU Y M, HUANG S. Numerical optimization of circulation distribu-
+the circulation distribution remains to be further
+tion on marine propellers[ J]. Journal of Harbin Engineering Univer-
+sity, 2002, 23(1) :14,(in Chinese) .
+explored. To increase test points along the radial
+苏玉民,黄胜.船舶螺旋桨叶片环量的数值优化[J].哈尔滨工
+direction, in series section and in a number of
+程 大 学 学 报 , 2002 , 23(1):14.
+conditions, the flow field is considered for further work.
+[9] DONG Z Q, LU LZ, ZHOU W X. LDV measurements of inner ve-
+locity field of ducted propeller [ J]. Journal of Ship Mechanics,

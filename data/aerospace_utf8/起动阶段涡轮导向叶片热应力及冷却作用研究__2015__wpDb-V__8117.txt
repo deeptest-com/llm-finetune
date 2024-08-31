@@ -1,0 +1,180 @@
+起动阶段涡轮导向叶片热应力及冷却作用研究
+建立了涡轮导向叶片有限元分析模型,参照相关的试验数据和文献资料确定热边界条件,计算了发动机起动阶段涡轮导向叶片各瞬时的温度及热应力.分析所得高温、高应力区域与相似条件下某型发动机地面试车过程中出现裂纹的区域基本一致,验证了数值模拟过程的正确性.在此基础上,对比分析施加对流冷却与无冷却措施两种条件下的计算结果,发现对流冷却使叶片各点温度下降而应力升高,推断出温度与应力的变化趋势反向,因而在叶片冷却系统的设计中需要权衡温度与应力的关系.其结果与结论对叶片瞬态热应力计算和热疲劳分析有一定的借鉴意义.
+
+涡轮导向叶片 有限元分析 瞬态温度场 瞬态热应力场 热疲劳  
+
+中图分类号:TH16;V235.11文献标识码:A文章编号:1001-3997(2015)01-0097-04
+Research of Thermal Stress and Cooling Effect on a Turbine
+Guide Vane During
+the Start-Up Period
+| AI Yan-ting', LIU Zhong-yao'2, WANG Zhi!
+. (1Liaoning Key Laboratory of Advanced Test Technology for Aero-Engine Propulsion System, Shenyang Aerospace University,
+Liaoning Shenyang 110136, China;2.Engineering Maintenance
+Squadron, Group 1, Unit 95906, Beijing 102200, China)
+Abstract: A finite element analysis model for a turbine guide vane was developed. The thermal boundary conditions was set up
+in terms of the data measured and recorded in previous tests and literature, based on which a transient temperature and
+thermal stress simulation was carried out for start-up period. The obtained areas of high temperature and stress were consistent
+with the areas cracked in the ground testing of an aero—engine under similar conditions, thus, the correctness of numerical
+simulation was validated. By comparison of the calculation
+results under convection cooling condition and no —cooling
+condition, it was founded that the temperature of the vane would decrease while the stress on it increased under convection
+cooling condition, the changing tendency of temperature and
+stress was contrary, so the tradeoff between temperature and
+stress is indispensable when designing the cooling system. It has certain reference for transient thermal stress simulation and
+thermal fatigue analysis of a turbine guide vane.
+Key Words: Turbine Guide Vane; Finite Element Analysis; Transient Temperature Field; Transient Thermal Stress
+Field; Thermal Fatigue
+1引言
+燃气涡轮发动机起动过程中,涡轮导向叶片周围流场各参
+场,将得到的温度场结果导人ANSYS中进行了稳态热应力计算,
+数急剧变化,在热载荷冲击作用下,叶片内部温度剧烈变化,从而
+两者都未研究温度瞬态变化的情况。
+产生较大东不断变化的热应力。起动-停车过程产生的交变应力
+为研究瞬变热载荷对叶片热应力的影响,对涡轮导向叶片在
+循环的长期作用最终导致热疮劳现象发生0。近几十年来,国内外
+发动机起动后S0s内各时间点的瞬态遂度场及应力场进行了有限
+对涡轮叶片热应力及疲劳寿命问题的研究日益深人。文献B3先后
+元仿真计算,其结果与某型发动机地面试车过程中出现的裂纹情况
+开发了不同的分析模型用于涡轮叶片的传热、应力及疲劳寿命分
+相符;对施加对流冷却和未施加冷却两种条件下的仿真计算结果进
+析;国内在该方向上的研究也不断向前推进:文献8根据实测的温
+行对比分析,得到了对流冷却对叶片瞬态温度场和应力场的影响规
+度边界条件设定涡轮导向器表面温度分布,在此基础上对涡轮导
+律。计算中还考虑了材料属性随温度变化的情况。其研究过程及
+结果可作为叶片热应力及热疲劳有限元分析之借鉴与参考。所作
+的计算分析通过有限元分析软件ANSYSWorkbench完成。
+2计算模型
+2.1结构及建模
+为提高有限元计算效率,对叶片的结构进行了适当简化,包
+括:叶片简化为无扭转(导向叶片的扭转角较小);内外叶冠部分
+简化为直六面体;内部冷却气流通道简化为整体环扶通道等。
+选用六面体主导法(HexDominant)对叶片整体进行建模。其
+中,叶尖,叶根、前缘及后缘部分温度梯度随坐标变化大,网格划
+分较密,便于更好地施加温度载荷;叶盆和叶背中心部分温度梯
+度小,网格划分较疏,可减少不必要的计算量,如图1所示。
+在一些研究资料中,往往对叶片模型表面施加较真接的位
+移约束,这些约束不可能完全模拟真实情况,容易出现应力集中
+现象,造成热应力计算结果的不准确。文中叶片的约束边界条件
+设定为两端自由支撑,此种约束方式可保证叶片白由膨胀收缩,
+能有效避免因位移约束而造成的计算误差。
+2.3材料及属性
+以沉淀硬化型镇基铸造高湿合金k409(k9)为研究材料,该材
+料适合于制作950KC以下长期工作的航空发动机叶片及其他高渥
+用零件,环境渥度的变化对其热膨胀系数.弹性模量.泊松比,热导
+率及比热容等热性能参数有较大的影响8,在计算中必须加以考虑。
+3叶片瞬态温度场\应力场计算及验证
+3.1计算载荷的施加
+在叶片外表面.内外叶冠内表面施加模拟发动机起动过程热
+边界条件的瞬变湿度载荷,叶片内表面施加了模拟冷却气流热效应
+的瞬变温度载荷,以此为热边界条件进行叶片瞬态温度场计算,其
+第Ss,45s叶片表面温度载荷的施加情况,如图2.图3所示。
+(a)叶背表面温度分布(b)叶盆表面温度分布
+图 2 Ss时叶片表面温度分布(施加对流冷却)
+Fig.2 Temperature Distribution of Vane Surface
+(5s,Convection Cooling Condition)
+(a)叶背表面游度分布(b)叶盆表面温度分布
+图 3 45s时叶片表面温度分布(施加对流冷卵)
+Fig.3 Temperature Distribution of Vane Surface
+(45s, Convection Cooling Condition)
+叶片表面瞬态温度载荷随位置变化的基本规律为:叶片前
+缘和后缘部分升温最快、温度最高,中间部分升温较慢\温度较
+低,叶尖叶根及叶冠部分升温最慢温度最低;温度载荷随时间变
+化的基本规律为:表面各点(0~5)s期间升温相对较快,随后升温
+变慢,逐渐趋于稳定。叶片瞬态温度场求解完成后,将求解得到的
+温度场数据作为输人载荷,分若干载荷步载人到结构分析中,进
+而对叶片进行瞬态热应力计算。
+3.2温度场计算结果
+叶片第在5s,15s,45s不同截面的温度分布情况,如图4所
+示。指定了叶片内部6个点作为研究对象(由于叶片表面温度主
+要由所施加的温度载荷决定,故在叶片内部取点),其温度随时间
+变化的曲线,如图5所示。
+(a)5s时的温度分布〔(b)15s时的温度分布(e)45s时的温度分布
+图 4 5s,15s,45s时叶片不同截面的温度分布(施加对流冷却)
+Fig4 Temperature Distribution on Different Cross Sections
+of the Vane(Ss,1Sa,45Ss;Conyvection Cooling Condition)
+旦颜径向中烈面前维点壁内U2厚度处目随芒向中裁面i育表面塔内V2厚庭处
+春兼苑向中截肉厂纯点壁内I2厚度处命国苑向中截面叶盆考面鞭内I2振度处
+身圆旨根截机if-胡表命茵向中点堂内12厚度处四国叶根截面叶哈表面弦向中心骑内U2厚度处
+图 5 叶片内部指定位置点的温度变化(施加对流冷却)
+Fig.5 Temperature Variation of the Specified Points
+Inside the Vane(Convection Cooling Condition)
+从时间历程上看,(0~5)s期间,叶片各点温度均急刷上升;
+(5~20)s期间,温升速率逛渐下降;(20-~50)s期间各点温度及不
+EEE EEE EE a a a EE a a a ea aaa —
+吟他量的洁苔热于牒宗。关不同坂标位临盼;助命不:古片前后缘
+元其是后缘郎刘升源铧.活度特高,叶片中怀部分并温横-澳度较
+低;柏肥上;叶片中心部分温度较高,沿叶夷和叶槟存以趣淅降
+柱,叶冠游庞最余;叶背与叶盛温度分布无明显莲鹄;早八问一部
+位内奶壁间的温差最初增大随后逞淼趋于稳定,
+33:国园
+-蝶各图6吴固7史以看出,t0.5为期间;片硕点应力迅速
+上升y颖肠上:前名缘部分底力较大,叶片中心郁往庭力较小,程
+命上:和片中心郜税座力统十队尘丁叶根郯分庭为统犬,寺短鄂
+劣的应加渤递禹和斧生怀方胡途游变才;叶盆与如脾咤力分布无
+明盔差别;(5.20兄排阁,叶肉害点廊加在短督泽助后继绩水升,
+叶片前后绍尤其是命獠邹分峡力最夫,旷炎与叶根较乍叶片中部
+应力大;(20-S0)s期间,各部分应力逐淀趋于穗定。:
+34
+结构嘘庞的规维怡保持一数,炜采用裂各上逊忍休吟试腺窒料可
+移阡合息移移跋以验证计算结梁的正确性.菪型发动机混轮寻唐
+琪较大的循环应骆,可矫告缘中邻寺热疙劫础评的危险区基,即
+正确彼出此棣到了夔证。
+满轻导咎叶开滩度场和胥乙来芋评算结椎基本特吊粗关袜
+线,如图i0所示、_
+(a)5s时的温度分布(b)15s时的温度分布(c)45s时的温度分布
+图 9 Ss,15s,45s时叶片不同截面的温度分布(未施加冷却)
+Fig.9 Temperature Distribution on Different Cross Sections
+of the Vane 〔(Ss,15s,45s,No-~Cooling Condition)
+目国英向中裂山前缘点坂的V2璇度处盯征内中敲面卜背表面培内2厚度处
+司国花向丨松耐后江点基内1/2厚度处目国苞向中敏面叶益表面壁内12原度处
+wi叶根收面叶背表面弧向中点壁内I2邹度处ml叶恩戬面叶盆表面弦问中点鬟内L/2厚度处
+图 10 叶片内部指定位置点的温度变化(未施加冷却)
+Fig.10 Temperature Variation of the Specified Points
+Inside the Vane (No—Cooling Condition)
+从时间历程和坐标位置上的分布看,都与施加对流冷却时
+相似。不同之处代于,去除对流冷却后,叶片同一部位内外壁温荣
+始终较小,叶片内部各点温度较施加对流冷却时有所升高。
+4.3应力场计算结果
+叶片第在Ss,15s,45s的等效应力分布情况,如图11所示。
+指定了叶片表商6个点作为研究对象,其等效应力随时间变化的
+曲线,如图12所示。从时间历程和坐标位置上的分布看,与施加
+对流冷却时相似.不同之处在于,在未施加对流冷却的条件下,5s
+后各点应力迅速下降,20s后逛渐趋于稳定;整体上看,叶片内部
+各点趋于稳定后的应力较施加对流冷却时明显下降。
+(a)5s时等效应力分布(b)15s时等效应力分布(e)45s时等效应力分布
+图 11 Ss,1Ss,45s时叶片表面等效应力分布(未施加冷卯)
+Fig.11 Equivalent Stress Distribution of Vane Surface
+(Ss,15s,45s,No-Cooling Condition)
+口吴往向中截面前绍点wR径向中朱面叶背表面弦向中点
+史躏径向中梅面口练点际径向前戢面叶盆表面弦向中灯
+一国叶根戳面叶背表面弦向中点目园叶根截面叶盆表面弧向中点
+图 12 叶片表面指定位置点的等效应力变化(未施加冷却)
+on Vane Surface(No~Cooling Condition)
+4.4两种冷却条件下的计算结果对比分析
+在施加对流冷却和未施加冷却两种条件下,对叶片内部选
+取的6个点各瞬时的温度进行比较可知,后者叶片内各点的瞬态
+温度均较前者有一定升高;同样的,对叶片表面选取的6个点的
+应力进行对比可知,后者应力在迅速上升后旋即迅速下降,最终
+稳定在较低的应力值,而前者的应力则在波动后继续缨慢上升,
+趋于稳定后的应力值明显高于后者。由此可以推断,施加对流冷
+却边界条件会使叶片总体温度下降而应力上升,若冷却气流温度
+降低,则叶片温度降低而应力升高,若冷却气流温度提高,则叶片
+温度升高而应力降低。温度和应力都对叶片的热疮劳寿命有着重
+要影响,因而在涡轮导向叶片冷却系统的设计与优化中,应根据
+实际问题的具体情况协调叶片温度与应力之间的关系[10],控制
+最大应力值而尽可能降低最高温度,或者控制最高渥度而尽可能
+降低应力值。
+5结论
+运用有限元方法计算了涡轮导向叶片在发动机起动后50s
+内的瞬态温度场及应力场,结果显示,叶片不同点的温度和应力
+随时间变化的规律不同,其中后缘中间部位温度和应力变化最为
+刷烈,多次起动-停车过程后容易出现疲劳现象,认定该部位为热
+疲劳破坏的危险区域。此分析结果与相似条件下某型发动机地面
+试车过程中出现的裂纹情况基本相符,文中进行瞬态分析所用的
+有限元仿真计算方法的可行性与正确性得到了验证。
+对比分析两种冷却条件下叶片的温度场和应力场发现,施
+加对流冷却会使叶片各点的瞬态温度有所下降,而应力有所上
+升,可推断温度与应力的变化趋势是反向的。由于温度与应力都
+是影响叶片热疲劳寿命的重要因素,因此得出,在涡轮导向叶片
+冷却温度,冷却结构等的设计研究中,考虑其他热疲劳影响因素
+的同时,需要在叶片温度与应力之间作出权衡。

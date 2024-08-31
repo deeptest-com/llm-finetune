@@ -1,0 +1,235 @@
+基于参数化有限元方法的机翼重量预测
+为飞机总体设计阶段提供一种快速而较精确的机翼重量预测方法。该方法是将参数化几何建模和参数化有限元建模方法相结合,快速地建立机翼结构有限元模型。通过应用CATIA二次开发技术,实现机翼结构布置模型的自动生成;通过运用PATRAN的PCL语言,实现结构有限元模型的自动生成;通过应用优化方法,确定出结构尺寸,进而计算出机翼重量。算例表明,本方法可快速地分析不同结构布置方案和不同材料方案的机翼重量,适用于飞机总体方案设计阶段机翼重量计算。
+
+飞机总体设计 机翼重量 参数化建模 有限元方法 结构优化  
+
+Having one of the largest aerial power lines
+structures of the world with length as much as 95,000
+km long, there is a large demand for aerial inspection of
+these structures in Brazil. The work is related to the
+Autonomous Robots area, in this case aerial robotics,
+applied to electrical engineering and aiming to develop
+a new method of long range aerial inspection of power
+lines.
+TheR & D project in development at ITA (Instituto
+Tecnolégico de Aeronautica) is sponsored by a
+Brazilian Electrical Company located in northeast of
+the country. CHESF (Companhia Hidro Elétrica do Sao
+Francisco) belongs to Eletrobras which is the
+government electrical company. CHESF is responsible
+for power lines structures with total length above
+20,000 km [1].
+PL (power line) inspection is the beginning activity
+of the maintenance cycle and its effectiveness is
+important for determining system reliability and the
+maintenance costs of the electrical svstem.
+Means for inspection of the technical process of
+verification of the PL, its components and around,
+taking in account the established standards with the
+objective of detect defects and anomalies that
+prejudice the PL performance, its life time and people
+safety.
+In the context of PL Inspection there are several
+types of performing related actions, but in this work
+there is a special interest in aerial inspection which is
+performed by manned helicopters in the conventional
+way. This traditional method is effective, but is prone
+to accidents and is a high cost method for inspecting
+power lines.
+The main objective of the project is to provide a low
+cost solution for aerial power line inspection based on
+unmanned vehicles which have to be able to perform
+long range flights in a relatively short time. Special
+efforts are applied in order to keep the pilot on the
+ground linked to the plane all the time during the
+inspection.
+Long Range Unmanned Aircraft System for Power Line Inspection of Brazilian Electrical System 395
+2. Unmanned Aircraft System
+Nowadays, the international nomenclature for the
+system based on a unmanned aircraft is RPAS
+(remotely piloted aircraft system) which is comprised
+of three fundamental segments: aerial, communication
+and ground [2], as illustrated in Fig. 1.
+2.1 Aerial Segment
+Consist of the plane including: arframe,
+aerodynamic surfaces, propulsion, autonomous flight
+control and payload, which in this application is
+comprised of an imaging system and a video
+transmitter for sending the captured images to the
+ground segment.
+The flight control system comprises autopilot,
+actuators and transceiver. The autopilot can read data
+available from inertial and pressure sensors, and from
+the GNSS receiver. The data are processed by the
+autopilot that sends control signals to the actuators and
+performs the control and navigation of the aerial
+platform. The flight plan is uploaded on the ground just
+before the take-off of the RPAS and the actuators act
+directly in the control surfaces and in the throttle ofthe
+propulsion system. Although the plane is able to fly
+autonomously, the RPAS concept has a piloting
+requirement that consists in a human pilot monitoring
+the flight all the time who is able to change the flight
+plan and finish the mission if necessary for safety
+reasons.
+2.2 Communication Segment
+It comprises the interface between the aerial segment
+and the ground segment, basically by means of a data
+link and a video link.
+The data link is responsible for sending commands
+from the ground station to the plane and receiving
+telemetry on the ground station from the plane. In this
+way the human pilot has the necessary situational
+awareness for deciding about commands that would be
+necessary to send to the plane.
+Fig. 1 RPAS segments.
+The video link is necessary for transmitting live
+video the Data Application Station which is managed
+by the PL inspector.
+2.3 Ground Segment
+It is comprised of the GCS (ground control station)
+and the DAS (data application station). It is always
+necessary that GCS is the position where the human
+pilot work, getting telemetry signals from the plane and
+sends commands for controlling the plane. DAS is the
+position of the PL inspector who can watch the live
+video,control the camera gimbal and identify the
+defects.
+3. Inspection Platforms
+The project is defined in a very pragmatic approach
+based on development prototypes [3].
+The Delta II platform is shown in Fig. 2 and is a
+model that was useful for integrating the avionics and
+imaging systems. Fig. 3 shows the image on the display
+of the GCS, highlighting the flight plan defined by
+waypoints and the on line telemetry indicating the
+position of the plane and other primary data.
+For getting and additional experience with a typical
+UAV platforms, it was used in a purchased platform
+and the systems that were integrated in it. Fig. 4 shows
+the Delta III platform.
+In addition, aiming to comply with the high level
+requirements of the project, it has been developed an
+own platform named Delta IV whose development
+prototype is shown in Fig. 5. This platform has to
+comply with constraints related to low flight speed and
+enough payload capability.
+396 Long Range Unmanned Aircraft System for Power Line Inspection of Brazilian Electrical System
+Fig.2 Delta II inspection platform.
+Fig. 3 GCS computer display.
+Fig, 4 Delta UHLinspection platform,
+4. Imaging System
+The studies related to the imaging system were
+developed considering the specific application and
+three regions were defined: safety zone, IR zone and
+visible zone [4].
+The safety zone was defined considering the risks of
+crashes of the plane to the PL and towers. The safety
+distance is referred as D, as shown in Fig. 6.
+The IR Zone refers to the maximum distance for
+getting images in the infra red spectrum which is
+important to detect hot spots. The respective distance is
+referred as D; as shown in Fig. 7.
+The visible zone refers to the maximum distance
+between the plane and the LT in order to capture
+images with necessary quality. This distance is referred
+as Ds as shown in Fig. 8.
+The three zones can be superimposed highlighting
+the intersection between IR zone and visible zone
+where the plane has to fly in order to satisfy both
+criteria, respecting the safety zone. Fig. 9 shows the
+zones intersection.
+Fig. 5 Delta IV inspection platform.
+Fig. 6 Safety zone.
+Long Range Unmanned Aircraft System for Power Line Inspection of Brazilian Electrical System 397
+Fig. 7 IR zone ( D: > Dy).
+Fig. 8 Visible zone ( D; > D,).
+Fig. 9 Final composition.
+5. Communication System
+The high level requirement oflong endurance RPAS
+defines a very severe constraint that is a challenge for
+the project. In fact, the electrical system has PL
+sections (between two substations) up to 350 km and it
+is important to cover the maximum length by means of
+one mission (take-off/landing cycle).
+In this case the complete solution delivered by the
+project team has to comprise the long range
+communication requirement.
+The concept illustrated in Fig. | is appropriate just
+for LOS (line of sight) communication which is not the
+case in this application.
+The proposed solution for BLOS (beyond line of
+sight) communication is illustrated in Fig. 10,
+considering the usage of a tethered balloon working as
+a communication relay [5].
+This low cost solution extends the communication
+range of the RPAS several times the LOS conception
+depending on the altitude ofthe balloon, the terrain and
+the performance ofcommunication equipments.
+In addition to the communication relay functionality,
+the tethered balloon can be used as a Pseudo UAV for
+communication test purposes [6].
+The idea is to replace the plane by one tethered
+balloon equipped with the communication system
+designed for being integrated in the plane. Together
+with the communication equipments of the GCS it is
+possible to validate the communication link for
+especially remote positions in order to ensure that the
+RPAS concept will be complied for the specific
+mission [7, 8].
+Fig. 11 illustrates the usage of the balloon as a
+Pseudo UAV.
+Fig. 10 Long range communication solution.
+辩簪 …言 LOS — Tx/Baloon / Rx/Car
+Fig. 11 Ballon as a pseudo UAV.
+398 Long Range Unmanned Aircraft System for Power Line Inspection of Brazilian Electrical System
+6. Conclusions
+The intended application presents high complexity
+considering several aspects of the project.
+6.1 Positioning System
+The application requires flights with low altitude and
+proximity to the power lines leading to an additional
+requirement regarding GNSS accuracy.
+In addition, the topography is quite relevant for the
+flight plan because if it is not appropriately considered
+the plane can be guided to a crash to the terrain.
+6.2 Imaging System
+Considering a low cost approach for the camera
+gimbal, it is necessary to fly inside a very limited zone
+in order to capture ant transmit images in both visible
+and IR spectrum. The corresponding distance is very
+short and leads to sub-item A where the positioning
+system requirements were discussed.
+Another requirement related to the imaging system
+is the maximum speed of the plane which has to be less
+than 60-70 km/h. This requirement is controversial
+considering that the low cost inspection would be more
+cost effective with high speed of flight. It is necessary
+to balance and optimize flight speed and images’
+quality.
+6.3 Communication System
+It is necessary to pay special attention to the
+requirements related to RPAS concept and inspection
+live video regarding long range communication
+necessarily BLOS.
+The immediate solution based on satellite
+communication implies in expensive communication
+bandwidth for live video leading to a low cost solution
+based on tethered balloon which is not outstanding
+because the altitude is not so high that can be
+compatible to dimensions of Fresnel zones. Anyway
+the proposed solution is a very interesting trade-off
+aiming the effectiveness and costs as drivers of the
+analysis.
+6.4 Balloon Based Test Methodology
+The solution based on balloon working as a Pseudo
+UAV has been used for validating the communication
+equipments and links obtaining a method for
+measuring the communication capability of the system
+for long range communication without risks normally
+associated to high distances between the plane and the
+GCS.
+Acknowledgments
+The author would like to thank to Companhia Hidro
+Elétrica do Sso Francisco and Agéncia Nacional
+Energia Elétrica for the sponsoring of the R&D project.

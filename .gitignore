@@ -3,8 +3,5 @@
 /out/bge-base-zh-v1.5-finetuned/
 /qa_finetune_dataset.json
 /data/files/alpaca_data_cleaned_en/
-/data/aerospace_utf8/
-/data/aerospace_utf8_ten/
-/data/aerospace_utf8_mini/
 /out/train_dataset.json
 /out/val_dataset.json

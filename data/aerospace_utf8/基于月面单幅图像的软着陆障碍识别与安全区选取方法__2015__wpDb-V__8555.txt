@@ -1,0 +1,246 @@
+基于月面单幅图像的软着陆障碍识别与安全区选取方法
+针对月球软着陆自主避障的需求,提出了一种适合月球灰尘表面的改进优化Hapke模型,给出了相对高程的求解、障碍识别与安全区选取方法,解决了已有纹理法无法识别坡度的问题,实现了利用单幅图像的月面着陆障碍识别与安全区域选取.利用月球软着陆下降段仿真图像,进行了模型解算和三维高程恢复并计算安全区域,结果表明,利用月面单幅图像能够实现障碍的识别与安全区的选取.
+
+障碍识别 灰度重构形状 朗伯体模型 Hapke模型  
+
+of the flow potential on void volume fraction. The region
+modeled is a small portion of a larger body under vari-
+ous stress conditions. Both plane strain and axisymmet-
+ric deformations are considered with imposed periodic
+boundary conditions. It was found that interactions be-
+tween regions with higher void fractions promote plastic
+flow localization into a band. and that local failure occurs
+via void growth and coalescence within the band. The re-
+sults of this study suggested a failure criterion based on
+a critical void volume fraction that is only weakly depen-
+dent on stress history. The critical void fraction depends
+effect of strain hardening and rate sensitivity on the dy-
+namic growth of a void in a plastic material and pointed
+out that the inertial effect, hardening effect, loading rate
+effect can significantly influence the void growth. The
+damage models, the Rice-Tracey model and the Gurson-
+Leblond-Perrin model, were analyzed. Four coalescence
+simulation, were comparatively studied. Ellipsoidal void
+growth and void interaction were accounted for. As far as
+extending the Gurson model to void shape effects and the
+Thomason scheme for the onset of void coalescence. Each
+of these was extended heuristically to account for strain
+the flow properties of the material and the dimensional
+ratios of the void-cell representative volume element. It
+schemes to obtain a detailed understanding of the in-
+terrelated physical mechanisms which can result in duc-
+tile material failure in rate-dependent porous crystalline
+materials subjected to finite inelastic deformations. Re-
+sults of this study are consistent with experimental ob-
+servations that ductile failure can occur either due to
+void growth parallel to the stress axis, which results in
+void coalescence normal to the stress axis. or void inter-
+action along bands, which are characterized by intense
+shear-strain localization and that intersect the free sur-
+multiple void interaction, Zohdi et al. [12] discussed the
+plastic flow in porous material.
+Currently, most of the studies on cavity/void growth
+are focused on their relevance on macroscopic behaviors
+damage is generally modeled by an internal variable. The
+internal variable is defined by the variation of some me-
+chanical behavior and is not dynamically relevant to the
+help understand some mechanisms from the atomic scale,
+but the temporal and spatial scales it can access are too
+mechanics. In this method. the continuum bodies are dis-
+cretized with N material particles. Each material parti-
+cle carries the information of position, velocity, temper-
+ature, mass, density, Cauchy stress, strain tensor and all
+other internal state variables necessary for the constitu-
+tive model. At each time step, calculations consist of two
+parts: a Lagrangian part and an Eulerian one. Firstly,
+the material particles flow with the body, and is used to
+determine the strain increment, and the stresses in the
+sequel. Then, the velocity field is mapped from the par-
+ticles to the Eulerian mesh nodes. The spatial derivatives
+are calculated and the momentum equation is integrated.
+not only takes advantages of both the Lagrangian and
+Eulerian algorithms but avoids their drawbacks as well.
+Since using Eulerian background grid, it is more stable
+less smooth particle hydrodynamics (SPH) [29].
+continuum medium description and designing of contact
+force. It has been extensively used to simulate the com-
+and evolution of defect structures such as cavities and
+cracks in the scales of micron and larger. Such investiga-
+tions may present indicative results for improving phys-
+ical modeling of fracture in larger scales. From the sim-
+ulation side, in the MP method the continuous portion
+and the cavities are considered separately. So, it is con-
+venient to set the particular structures according to our
+need and convenient to obtain the concrete information
+on the shapes, sizes, connectivity of relevant structures
+and their influences on surrounding materials. In other
+words, it is convenient to recover with more fidelity the
+physical processes of damage and failure. Simulation re-
+sults may work as theoretical bases for the physical mod-
+eling of damnification. Different from the phenomenolog-
+ical quasistatic analysis, the MP simulation results con-
+tain intrinsically the inertial effects.
+2 Theoretical model of the material
+We assume that the material follows an associative
+von Mises plasticity model with linear kinematic and
+e is generally decomposed as e = e? + eP, where e? and
+ep are the traceless elastic and plastic components, re-
+spectively. The material shows a linear elastic response
+until the von Mises yield criterion is reached. The yield
+where oy is the initial yield stress and Harden the hard-
+ening coeflicient. The deviatoric stress s is related to the
+where Py, Via and Ey are pressure, specific volume and
+energy on the Rankine-Hugoniot curve, respectively. The
+relation between Py and Vi can be written as
+sion and the plastic work contribute to the increasing
+of temperature. The temperature increment from shock
+compression is calculated by
+is 300 K.
+interpretation
+3.1 Global scenario
+In our simulations the body of aluminum material with
+cavity is connected with a rigid wall fixed at the bot-
+with cavity starts to move upward at the velocity Ux0.
+工 hus, the rarefaction wave or tensile wave occurs at the
+plane with 2 = 0. The rarefaction wave propagates up-
+wards within the material body. In our MP simulations,
+the mesh size is 1 um and the diameter of the material
+particle is 0.5 pm. Periodic boundary conditions are used
+in the horizontal directions and free boundary condition
+is used in the upper surface of the material body. The
+of contact surfaces is needed in the MP simulations.
+Figure 1 shows the snapshots of configurations with v,
+to the times = 0.8 ns, 1.2 ns, 2.0 ns and 3.0 ns, respec-
+should be commented that if decrease the mesh unit, the
+body size can be simulated becomes smaller. We have
+ulated one.
+With increasing of upward stress on the top of the cav-
+ity, the accelerations and velocities of particles within
+tinues to move toward the upper free surface. The third
+is that the maximum velocity between the valley and the
+cavity continues to increase. At the same time, the re-
+gion with maximum downward particle velocity moves
+sults for the case with single cavity are also indicative
+for interaction of neighboring cavities. From the pressure
+field, it is clear that the negative pressures within regions
+cavity, the deformation of the cavity is still controlled by
+the tensile loading. Below, we discuss the pressure dis-
+tributions within the material at two times, 9 ns and 11
+—500 MPa and 一 550 MPa, respectively. Figure 3 shows
+that the contours around the cavities for pressure lower
+than 一 300 MPa are connected. The neighboring cavities
+get interaction via the connection of pressure contours.
+At the time 9 ns, there is still no positive pressure occur
+among the neighboring cavities. Figure 4 shows various
+pressure contours at the time 11 ns. The contours in
+the pressure, the corresponding contour moves away
+from the cavity and its surface area becomes larger.
+MPa, —100 MPa, —150 MPa, —200 MPa, and --250 MPa, respectively.
+the pressure, the contour area becomes smaller. Pressure
+distribution between the cavity and rigid wall is as below.
+There are four regions around the cavity show positive
+pressure. The pressure contours for —100 MPa between
+the nearest cavities are connected. The contours for
+—150 MPa have a higher connectivity. All contours for
+—200 MPa, —250 MPa, etc. are connected. The pressure
+distribution on the top of the cavity is as below. The re-
+gion with the highest pressure does not locate above the
+The pressure contours in (a)—(f) correspond to 0 MPa, 一 50
+cavity but above the middle of neighboring cavities. Since
+the rarefaction wave propagates more quickly within the
+solid region, the wave firstly arrives at the upper free sur-
+face and get reflected. The weaker the negative pressure,
+the closer to the upper free surface the corresponding
+contour, and the more planar the corresponding contour.
+3.2 Morphology versus tensile strength
+310 K, 320 K, 330 K and 340 K, respectively. Com-
+pared with the dynamical process, the thermal process is
+much slower. The temperature and distribution of hot-
+spots are mainly determined by the corresponding plastic
+work.
+Since the rarefaction wave propagates in the sound
+speed, all rarefaction waves reach the upper free surface
+at the same time. With increasing the tensile strength,
+results and the lines are plotted to guide the eyes. The
+sizes of the initial tensile velocity 2:0, 100, 200, 400 and
+1000, are shown in the legend. The unit is m/s. An en-
+larged portion of the curve for yxo0 = 100 m/s is shown
+ear growth stage which ends when the global rarefaction
+wave arrives at the upper free surface, (iii) slower growth
+stage which ends when the reflected compression wave
+directions. The points are simulation results and the lines
+are plotted to guide the eyes. It is interesting to observe
+that the growth in horizontal direction is quicker than
+that in vertical direction. Such a mechanism is equiva-
+lent to the “necking effect” in macroscale. There exists
+also a linear stage in the growths of cavity dimensions.
+The growth rates increase with increasing the strength
+of tensile loading. Figure 6(c) shows the initial linear
+growth rate of cavity volume versus initial strength of
+tensile loading ux0. The points are for the slopes of fit-
+within the checked range the volume growth rate linearly
+increases with the initial tensile velocity vq.
+lines in (a) for the first linear growth stage, and the line is for the linear fitting result of the points.
+show the corresponding pressure felds. The lower bound-
+ary of the cavity gradually becomes planar and parallel
+to the rigid wall.
+3.3 Energy transformation versus tensile strength
+For the case with uniform material, during the tensile
+loading, kinetic energy of the material transforms grad-
+ually to elastic potential energy and plastic work. Those
+energies distribute uniformly in planes parallel to the
+rigid wall. Although the material is three-dimensional,
+the dynamical and thermodynamical process is in fact
+one-dimensional. But for the case with cavities. the sit-
+the same two times as in Fig. 7, from which, besides
+the cavity morphology, we can understand better the en-
+ergy transformation from kinetic to thermal. There is
+a high temperature layer surrounding the deformed cav-
+ity. That is because the plastic work by the stresses is
+pronounced in that region. Figures 8(c) and (d) show
+the configurations with v, field at the same two times.
+With the reflecting back of compression wave from the
+upper free surface, the distribution range of high particle
+velocity becomes narrower.
+Figure 9 shows the maximum upward particle veloc-
+ity,Uzmax,above the cavity and maximum downward
+particle velocity, Usmin, below the cavity versus the ini-
+tial tensile velocity 2s0. The points are simulation re-
+sults and the lines are fitting results. It is interesting
+to observe that both s max and |v, min| logarithmically
+increase with the initial tensile velocity vg.
+4 Conclusions
+A three-dimensional material point simulation study on
+cavity growth in metal materials subjected to dynamic
+loading is conducted. Interactions of rarefaction wave
+with an existing cavity and the ultimate interactions
+of the cavity with its periodic images are carefully in-
+vestigated. During the tensile loading procedure, some
+material particles below the cavity show high speeds in
+the opposite direction. Within the region subjected to
+the global rarefaction wave some local regions may show
+positive pressures. Neighboring cavities get interaction
+via the coalescence of isobaric contours. The deforma-
+tion of cavity under tensile loading shows staged behav-
+iors. After the initial slow growth stage, the volume and
+the dimensions in both the tensile and transverse direc-
+tions show linear growth rate with time until the global
+tensile wave reaches the upper free surface. The growth
+rate in the tensile direction is slower than that in the
+transverse direction. The volume growth rate linearly in-
+creases with the initial tensile velocity. After the global
+tensile wave passed the cavity, the maximum particle ve-
+locity in the tensile direction and the maximum particle
+velocity in the opposite direction increase logarithmically
+with the initial tensile speed. The shock wave reflected
+back from the cavity and compression wave from the free
+surface induce the initial behavior of interfacial instabil-
+ities such as the Richtmyer-Meshkov instability, which
+is mainly responsible for the irregularity of the cavity
+morphology. Temperature and distribution of hot spots
+are determined by the plastic work. Compared with the
+dynamical process, the heat conduction is much slower.
+and configurations with v, field [(c) and (d)] at two times,
+are simulation results and the lines are logarithmic fitting results.
+tion of State Key Laboratory of Explosive Science and Tech-
+China (Grant Nos. 11075021 and 11171038).

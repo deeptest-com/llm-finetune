@@ -1,0 +1,378 @@
+深化知识管理 支撑技术攀登
+2014年12月7日，“长征”系列运载火箭成功完成了第200次发射，彰显了中国作为航天大国的实力。中国实现第一个100次发射用了37年，实现第二个100次发射仅用了7年，这也反映出中国航天已经步入“高密度”发射的新常态。面对新形势，中国运载火箭技术研究院坚持实施知识管理战略，促进支撑研究院技术攀登与创新发展，为研究院的改革转型和能力提升创造有利环境。
+
+支撑技术 知识管理 中国运载火箭技术研究院 “长征”系列运载火箭 中国航天 发射 高密度  
+
+3D (three dimensional) CMM (coordinate
+measuring machines) are widely used to take
+measurements directly in the manufacturing
+environment. For some applications, AACMM offers
+some advantages compared with orthogonal CMMs,
+some as measuring of larger measuring volume, ease of
+use, more measurement freedom and to be less
+expensive. However, the measurement error of
+AACMM (articulated arm coordinate measuring
+machines) exceeds that of orthogonal CMMs because
+its configuration brings to easy error accumulation. If
+the measuring equipment is installed in a measuring
+laboratory where measuring conditions are controlled
+and measurement equipments are suitably fixed and
+properly treated, performance characteristics keep
+under its requirements. Nevertheless, the common use
+ofAACMM is at shop floor level conditions where it is
+usually manipulated by different operators. Under
+these conditions, AACMM’s performance
+characteristics get worse and it is hard to determine
+when it fails to fulfill with its performance specific
+requirements.
+The growing use of articulated arm coordinate
+measuring machines at Spanish industry has been
+accompanied by an absence of authorized laboratories
+to provide calibration certificates for AACMM’s
+performance. In this scenario, IK4 Tekniker has set up
+a performance calibration service of this measuring
+equipment filling this metrological gap at Spanish
+industry [1-3]. IK4 Tekniker offers ENAC accredited
+performance calibration service for different types and
+volumes of AACMM.
+Firstly, a search about standards applicable to these
+machines has been carried out. As a result, two
+standards have been found. ASME B89.4.22 Standard
+[4] and VDI 2617-9 Standard [5]. IK4 Tekniker has
+compared both of them in order to develop internal test
+procedures to yield reliable performance calibration
+results. Moreover, ENAC certificated reference test
+Performance Calibration of Articulated Arm Coordinate Measuring Machine 603
+equipments have been acquired and uncertainty
+evaluation analysis has been developed in order to
+achieve accreditation by the Spanish Accreditation
+Body.
+describes the measurement equipment needed for the
+whole calibration process; Section 3 discusses the
+calibration procedure; Section 4 explains uncertainty
+assignment and evaluation of the measuring process;
+Section 5 presents results and Section 6 gives
+conclusions.
+2. Test Equipment
+According to ASME B89.4.22 Standard, the whole
+calibration performance test of an AACMM is
+subdivided into three different tests: effective diameter
+test, SPAT (single-point articulation test) and
+volumetric test. For this reason, multiple reference test
+equipments are needed to carry out the whole
+calibration test. As general rule, reference test
+equipments must be ENAC certificated and its
+uncertainty must be within one tenth of the working
+tolerance for each of the three performance tests.
+Precision reference ball is used for effective
+diameter test and single-point articulation test for
+switching probes. The sphere is made up of ceramic
+and the combined surface finish and sphericity does not
+exceed one fifth of the working tolerance. A reference
+ball of 30 mm diameter has been fixed to a table to
+carry out performance tests.
+Trihedral seat comprises three hardened spheres
+placed in a flat bottom or “cup”. In this way, a very
+stable and high repeatable mount is obtained for
+locating AACMM“s tip through three point contacts. It
+is used for the single-point articulation test with hard
+probes. It has been ENAC calibrated using a CMM
+machine available at IK4 Tekniker.
+A ball bar of 2,400 mm maximum calibrated length
+has been purchased for the volumetric performance test.
+It is made up of carbon fiber composite and it
+comprises 13 balls, the distance between two
+consecutive balls is 200 mm and every distance is
+ENAC calibrated. Therefore, the ball bar has a
+minimum calibrated length of 200 mm and a maximum
+calibrated length of 2,400 mm, which allows IK4
+Tekniker to carry out performance calibration of
+AACMM as long as 4 m of sphere diameter. The ball
+bar has been mounted in precise rotatory table to
+position it in horizontal, vertical and 45° orientations. It
+is shown in Fig. 1.
+RA 7320SE romer absolute arm has been used to
+check the reliability of the calibration process prepared
+at IK4 Tekniker, as can be seen in Section 5. Its
+measuring range is 2 m (sphere diameter) and it is
+made up of carbon fiber. Probing is done manually by
+the operator since it includes a hard contact probe of 6
+mm (diameter). It has been mounted in a portable plate
+to be located in each of the 20 positions of the
+volumetric performance test.
+3. Calibration Procedure
+As mentioned above, the whole calibration
+performance test of an AACMM is subdivided into
+three different tests: effective diameter test, SPAT and
+volumetric performance test [4]. The intent of the
+calibration process is to evaluate the performance of an
+AACMM, enabling to the final users to determine if it
+is appropriate for their specific requirements or not.
+Prior to conducting performance calibration test, the
+machine must be mounted in accordance with final user
+specifications and ensuring suitable mounting stiffness
+and orientation. Moreover, appropriate environmental,
+electrical and vibration conditions must be provided
+during the entire process.
+Effective diameter test: Rigidly mounted precision
+reference ball is measured using nine probing points,
+with this information a sphere is determined through
+test.
+604 Performance Calibration of Articulated Arm Coordinate Measuring Machine
+the AACMM software and its diameter is calculated.
+The measuring process must be carried out minimizing
+the articulation of the AACMM. The difference
+between the measured and calibrated diameters of the
+sphere is reported as diameter deviation. The effective
+diameter performance test value is reported as the
+maximum deviation regardless of sign. Obtained
+results may reveal different problems as machine or
+probe hysteresis or improper probe calibration [4].
+SPAT: It seeks to assess the ability of the AACMM
+to provide similar values of a point coordinate when the
+equipment is articulated through the maximum
+possible range of motion for that single point. This test
+incorporates aspects of both repeatability and
+reproducibility. If the AACMM incorporates a hard
+probe, trihedral seat is used as reference equipment.
+Nevertheless, when using switching probe precision
+reference ball is mounted as reference equipment. The
+single-point performance articulation test is performed
+placing the trihedral seat or precision reference ball at
+three different locations within the working volume.
+For each of three positions, 10 points are taken by the
+Table 1 Volumetric performance test based on 20 measuring
+Position No. Artifact length “ Octants Inclination Distance Direction
+1 Short 8
+2 Short 5
+3 Short 1&2
+4 Short 4&7
+5 Short 7&3
+6 Short 1&5
+了 Short 2
+8 Long 2&8
+9 Short 3
+10 Long 1& 7
+11 Short 1&6
+12 Short 6&3
+13 Short 5&4
+14 Short 3&8
+15 Short 5&2
+16 Short 1&8
+17 Short 2&7
+18 Long 3&4
+19 Long 2&6
+20 Long 4&8
+AACMM. The statistics used to represent the single
+point articulation performance are the maximum
+deviation of the points from a mean value and twice
+standard deviation of the point location [4].
+Volumetric performance test: It will assess aspects
+of the linear displacement accuracy and volumetric
+performance of the AACMM. The measuring process
+measuring positions for the ball bar: ball bar length,
+working octants, ball bar inclination, distance from
+AACMM to reference ball bar and measuring direction.
+The general approach is to position the ball bar in two
+vertical orientations, 10 horizontal orientations and
+eight 45° orientations with respect to the AACMM to a
+given distance (near/far) and measure five points per
+sphere, working out center-to-center calibrated value.
+Since ball bar is fixed in a rotatory plate to get
+performance orientation, AACMM is placed around
+the ball bar to carry out each length measurement. As a
+result, 20 distance values are obtained according to the
+20 measuring positions defined in Table 1.
+The results of this test will be reported as three
+positions.
+Horizontal Near Radial
+Horizontal Near Radial
+Horizontal = Far Tangential
+45 deg Far Tangential
+Vertical Far Tangential
+Vertical Far Tangential
+Horizontal Near Radial
+45 deg Near Tangential
+45 deg Near Radial
+45 deg Near Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+45 deg Far Tangential
+Horizontal ~~ Near Tangential
+Vertical Far Tangential
+Vertical Near Tangential
+Performance Calibration of Articulated Arm Coordinate Measuring Machine 605
+quantities: the maximum deviation from the calibrated
+ball bar value, the range of the deviations and two times
+the root-mean-square of the deviations [4].
+4. Uncertainty Evaluation
+Uncertainty evaluation analysis has been developed
+to evaluate all error sources associated with the testing
+equipment under the conditions that prevail at the time
+of testing. Since the whole calibration process involves
+three different test measurements, an individual
+uncertainty is addressed to each of three individual
+calibration tests.
+Effective diameter test: Uncertainty sources that
+contribute to this test uncertainty are calibrated
+diameter of the precision reference ball, temperature at
+the time of testing and the uncertainty associated with
+the lack of rigidity of the reference ball mount. In this
+case, mount does seem to be rigid enough to disregard
+this error source.
+SPAT: Uncertainty sources to be considered are the
+rigidity of the trihedral seat and its geometrical
+perfection. The contribution of the trihedral seat has
+been analyzed and calibrated in CMM and uncertainty
+associated with the rigidity of the seat has also been
+considered to be zero.
+Volumetric performance test: Uncertainty sources
+include ball bar’s uncertainty stated on the calibration
+certificate, uncertainty due to dimensional drift of the
+ball bar, uncertainty contribution of the temperature at
+the time of testing and uncertainty because of the
+fixturing. For the ball bar, expanded uncertainty is
+explained in Eq. (1):
+U stanparp = 1 + 0.0015 x 工 sranparp qY)
+Due to the lack of information to calculate the
+dimensional drift of the ball bar based on different
+observations, it has been considered that dimensional
+drift is equal to the calibration uncertainty of the ball
+bar and it follows a rectangular distribution. Eq. (2)
+shows expanded uncertainty for the dimensional drift
+of the ball bar.
+乙/D/蓁/'=z`= 2 x (1 +0.0015 x L stanpARD) [6 (2)
+In temperature contribution case, law of propagation
+of uncertainty has been applied in order to analyze the
+effect of the variables uncertainties on the uncertainty
+of the temperature function based on this variables
+[6-8]. These variables are ball bar calibrated length,
+thermal expansion coefficient and temperature
+variation from 20 °C. Eq. (3) explains length correction
+to be done.
+AL = [ x a x 工 (3)
+In this case, variables are uncorrelated between them,
+so the combined standard uncertainty is give by law of
+propagation of uncertainty given by Eq. (4) [6-8].
+In Eqs. (5) and (6), law of propagation of uncertainty
+is applied to the length correction to be done.
+And
+Considering that calibration is done at laboratory
+conditions, length difference between AACMM and
+measuring equipment is considered to be zero.
+Therefore, length variation uncertainty (uL) is
+disregarded as shown in Eq. (7):
+Since length variable is different for AACMM and ball
+bar, both lengths are introduced in Eq. (8):
+where,
+Ls= standard「s length used in the calibration, which
+depends on AACCM length;
+Ldacnd = AACMM’s length to be calibrated; (Sent
+by the client);
+AT = temperature variation. Laboratory conditions
+are 20 + 0.5 °C at IK4 Tekniker;
+a = coefficient of thermal expansion. Both AACMM
+and ball bar standard are made up of the same material
+606 Performance Calibration of Articulated Arm Coordinate Measuring Machine
+(carbon fiber);
+pa = 10% of the thermal expansion coefficient;
+ur = thermometer’s uncertainty stated on its
+calibration certificate.
+Expanded uncertainty for the temperature
+contribution is shown in Eq. (9), it is obtained by
+multiplying the combined standard uncertainty
+achieved in Eq. (8) by a coverage factor k, which can be
+assumed that taking k = 2 produces an interval having a
+level of confidence of approximately 95% [6-8].
+〔/艾'鹫'…〗\//魉〕′=2xXHemp?
+Uncertainty associated with the fixture has been
+considered to be zero.
+Therefore, expanded uncertainty for the volumetric
+performance test is as Eq. (10). Introducing
+information related to the standard’s length,
+AACMM「s length, temperature variation, expanded
+uncertainty for the volumetric performance test is
+achieved.
+口=VUS阑″D麒尺D___Z/Z〕/藿^′′=7`_+_丕/艾'/…【`///】〈(10)
+In order to set up acalibration service of AACMM at
+IK4 Tekniker, a CMC (calibration and measurement
+Eq. (11) describes the realizable measurement
+29.996 29.986 29.991 29.988 29.988 0.01 0.0006 pum
+Table 3 SPAT results.
+capability of IK4 Tekniker at AACMM performance
+calibration.
+the diameter length of AACCM introduced in
+millimeters (mm).
+5. Results
+According to ASME B89.4.22 Standard each of
+three individual calibration tests has its own data
+analysis and its own uncertainty evaluation. After
+developing calibration procedure and uncertainty
+evaluation, RA 7320SE romer absolute arm has been
+used to check the reliability of both developments
+prepared at IK4 Tekniker and to design the format for
+reporting performance evaluation results.
+Effective diameter test: As mentioned above, the
+effective diameter performance test value is reported as
+the maximum deviation regardless of sign. Table 2
+shows these results in millimeters (mm).
+SPAT: The statistics used to represent the single
+point articulation performance are the maximum
+deviation of the points from a mean value and twice
+standard deviation ofthe point location. Table 3 and
+11.251 0.0296 0.0009
+11.211 0.0290 0.0008
+11.251 0.0186 0.0003
+11.201 0.0435 0.0019
+11.234 0.0392 0.0015
+11.255 0.0527 0.0028
+11.229 0.0456 0.0021
+11.244 0.0163 0.0003
+11.239 0.0157 0.0002
+Performance Calibration of Articulated Arm Coordinate Measuring Machine 607
+X;= X measured coordinate touch by the AACMM;
+Y;= Y measured coordinate touch by the AACMM;
+Z;= Z measured coordinate touch by the AACMM,;
+= Three dimensional deviation from the average coordinates to each of the corresponding 10 points.
+80 ~
+菖 2S SPAT
+Position
+Fig. 2 SPAT results depicted.
+Fig. 2 show results obtained at SPAT.
+center-to-center length is calculated as depicted in
+Table 4. The results of this test are reported as three
+quantities: the maximum deviation from the calibrated
+ball bar value, the range of the deviations and two times
+the root-mean-square of the deviations. Fig. 3 shows
+test results depicted.
+6. Conclusions
+A reliable calibration test procedure has been
+developed to describe and break down AACMM’s
+performance. Furthermore,uncertainty evaluation of
+all error sources involved in the calibration process has
+also been analyzed; results in Section 5 show that
+uncertainty values achieved are small enough to ensure
+a reasonable performance evaluation of an AACMM.
+As aresult of the job presented, a calibration service for
+this class of measurement equipment has been created
+at metrology unit of IK4 Tekniker research centre and
+it has been certified by achieving ENAC accreditation
+by the Spanish Accreditation Body. By the way, the
+lack of this service at the Spanish industry is satisfied
+successfully.
+Table 4 Volumetric performance test results.
+Measuring “ 口 巧 。 6 6; x J;
+Range 0.073
+2RMS 0.440
+Exp. uncertainty 0.0036 pm
+乙 = Measured length by the AACMM;
+Le=Calibrated length of the ball bar standard;
+6= Length deviation from the ball bar value.
+30 i Max. deviation
+1 2 3 4 5 6 7 8 9 ￥ Il 12 13 14 35 18 17 18 19 20
+Correction
+Fig.3 Volumetric performance test results depicted.

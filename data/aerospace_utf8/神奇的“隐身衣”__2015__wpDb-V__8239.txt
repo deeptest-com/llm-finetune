@@ -1,0 +1,272 @@
+神奇的“隐身衣”
+一日中午,在日本东京大学校园里,一名研究生身穿着一件带帽子的灰色衣服走动,老师和同学们惊奇地发现：他的身体居然是透明的!人们可以透过他的身躯,看到在他背后来往走动的人群。大家都不敢相信自己的眼睛,还以为是撞见＂鬼＂了。后来人们才明白,原来是那件灰色衣服使这位研究生成了透明的＂隐身人＂。
+
+隐身衣 隐身人 相信自己 日本东京大学 摄像技术 定向反射 章教授 奇异的 能将  
+
+The laser gyroscope, as an important inertial sensor,
+is a decisive factor that affects the accuracy of the inertial
+navigation 叮Stem〔]〕 . The work center frequency is the
+measurement benchmark of laser gyroscope, whose stabil-
+ity has a direct impact on the measuring accuracy of laser
+gyroscope[21、Due to the influence of such factors as tem-
+perature and mechanical ditherr341 , laser gyroscope work
+center frequency changes within a certain range. The
+analysis of the principle of the laser gyroscope work fre-
+quency drift indicates that laser gyroscope work center
+frequency changes mainly with the laser refractive index
+of laser gyroscope resonator cavity and the resonator cavi-
+ty length. For now, in order to stabilize the work frequen-
+cy of laser gyroscope, the method of active control of cav-
+ity length compensation is usually adopted, that is, the
+cavity length control system. However, existing cavity
+length control systems use only the DC component of the
+light intensity modulated signal as a feedback signal of the
+control system, so there are some problems in control pre-
+cision, system noise, and adjustment time. Besides, with
+those systems, little improvement will be made in the ac-
+curacy of cavity length controlling. Aiming at this, this
+paper puts forward a new control scheme of cavity length,
+designs an active cavity length compensation control sys-
+tem, optimizes the existing cavity length control circuits,
+and improves the measuring accuracy of laser gyroscope.
+1 The control principle and method of laser
+gyroscope cavity length
+1. 1 The control principle of cavity length
+According to the classic theory of the laser,the lon-
+gitudinal mode frequency in the ring laser optical resona-
+tor can be expressed as
+where n is the refractive index of medium inside the re-
+sonator cavity; L is resonator cavity length; 4 is integer,
+each value of 6 respectively corresponding to a longitudi-
+nal mode; and c is the speed of light in vacuum.
+From Eq. (1), it can be seen that the major factors
+which affect the longitudinal mode frequency are the cavi-
+ty length L and the refractive index n. Obviously, the key
+to stabilizing the working point of laser gyroscope is to
+stabilize the refractive index and the cavity length.
+1.2 The control method of cavity length
+The refractive index can be controlled by controlling
+the temperature of the medium in the laser, but it is hard
+to stabilize. Generally, the laser frequency is stabilized
+by stabilizing the cavity length , i. e. ,selecting the mate-
+rial with a small coefficient of linear expansion as the re-
+sonator cavity, and then the change in refractive index
+can be greatly reduced. In addition, the devices for initi-
+atively controlling the cavity length are necessary. Initia-
+tive feedback compensation is generally used to adjust the
+cavity length. This paper adopts the way of controlling
+cavity length to achieve frequency stabilization.
+Due to the difficulty in measuring laser frequency,
+from analysis we know that the laser gyroscope at a longi-
+tudinal mode frequency meets the standing wave condi-
+tions and the light intensity is the strongest. As shown in
+Fig. 1 each of the light intensity maximum points ( longi-
+tudinal mode) corresponds to a cavity length 〈 frequen-
+cy). Therefore, in practical applications, by detecting
+the laser gyroscope output light intensity signal as the
+feedback control signal, cavity length is stabilized at the
+desired value, though laser frequency is stable in a longi-
+tudinal mode.
+Fig. 1 Relationship between laser gyroscope light
+output signal and cavity length
+For the cavity length control system of laser gyro-
+scope, most of them use classic dither control method,
+which is to superimpose smaller sinusoidal modulation
+voltage on the PZT driving voltage, so that the resonant
+cavity length will change periodically. Meanwhile, the
+longitudinal mode frequency of the resonator will change
+accordingly, thus causing the modulation of output light
+intensity 甄gnal… , which is the basic method of control-
+ling dither. Fig. 2 intuitively shows its working process
+and the relationship between the laser gyroscope working
+point and the light intensity modulated signal.
+Fig.2 The process of dither stabilizing frequency
+The horizontal axis in Fig. 2 represents the driving
+voltage on the PZT. The upper part of Fig. 2 shows the
+relationship between the laser gyroscope working point
+and the light intensity modulated signal, and the lower
+part shows the relationship between the laser gyroscope
+working point and the driving voltage signal after demodu-
+lation, which is also called frequency discrimination
+curve. When the initial laser frequency is located on the
+left side of the center frequency (V, < ) the light in-
+tensity modulated signal is in phase with the voltage mod-
+ulation signal ,the coherent demodulation is positive , and
+the average value of light intensity output is /;. When loca-
+ted on the right (V, >V,), the light intensity modulated
+signal is in reversed phase with the voltage modulation
+signal,the coherent demodulation is negative , and the
+average value of light intensity output is Iz. The process
+of controlling dither is to real-time determine the side of
+the center point on which the gyroscope feedback light in-
+tensity signal I is. If it is located on the left side, then
+the maximum T and the minimum I; of light intensity
+appear in the process of applying the dither signal , and
+the relationship that I, > I, must be satisfied; if it is
+nal is used as the feedback signal of the control system ,
+the error signal will be coupled on the DC component,
+and due to the influence of mechanical dither control
+module, the coupled AC signal will reduce the precision
+of the control 鲆Stem〔问〕. Therefore, the accuracy of con-
+trolling cavity length will be effectively improved by inde-
+pendently controlling the AC/DC components of laser gy-
+roscope light output signal, increasing the control of the
+AC component, and thus reducing the source of error.
+located on the right side, then the relationship that 7, <
+T must be satisfied; if it is located on the center, then
+the relationship that I = I, must be satisfied. There-
+fore, the realization of controlling dither is to make the
+differential values (I, —1I_ ) of the light intensity modu-
+lated signal close to zero.
+2 The system hardware design
+The schematic diagram of overall design scheme of
+cavity length control circuit is shown in Fig. 3,which is
+mainly composed of power AC/DC component operation
+circuit, RMS, low-pass filter, A/D converter, MCU
+( MSP430F149 ) , D/A converter and the PZT driving
+circuit.
+tem software design
+In this paper, the software design of cavity length
+control system is mainly to implement the DC component
+and AC component control, and the controlling of DC
+component is the emphasis.
+3.1 The design of controlling DC component
+The resonator cavity length control of the laser gyro-
+scope is to make the longitudinal mode frequency stable at
+the work center frequency, which means to make the DC
+component of light intensity modulated signal stable to the
+maximum extent. Therefore, to realize the control of laser
+gyroscope cavity length, the maximum value of the DC
+component of the light intensity modulated signal must be
+obtained first, that is, Mode-sweep needs to be comple-
+ted. The so called Mode-sweep is to increase the PZT
+driving voltage first by a certain step size and then reduce
+it. The maximum value of the DC component of the light
+intensity modulated signals is collected in this process ,
+and the value of the PZT driving voltage is recorded sim-
+ultaneously. The program flow chart of MCU Mode-sweep
+process is shown in Fig. 4. In general, in the process of
+increasing the driving voltage, the DC component maxi-
+mum value 7 of light intensity modulated signal can be
+obtained,and the value of driving voltage is recorded at
+this time. When the driving voltage increases to the maxi-
+mum value of 250 V it gradually decreases to the value
+when the value of DC component is .
+Fig.4 The program flow chart of Mode-sweep
+Through Mode-sweep program, the PZT driving volt-
+age value is obtained when the DC component of the light
+intensity modulated signals is the maximum. According to
+the principle of controlling dither cavity length , Positive
+dither voltage + AV is superimposed on the f .,: and the
+mean value is obtained by collecting more positive dith-
+er voltages; at the same time, negative dither voltage
+~ AV is superimposed on the V,,,, and the mean value J,
+is collected by collecting more negative dither voltages,
+By calculating the deviation 万 = I, - 卫 ,whether or not
+to meet the control requirements is determined. Then the
+current control parameter is maintained, or the PZT
+driving voltage value is re-adjusted until the deviation E
+is within the required range. The program flow chart of
+controlling DC component is shown in Fig. 5.
+Fig.5 The program flow chart of controlling DC component
+3. 2 The design of controlling AC component
+The AC component of the light intensity signal is
+mainly generated by the dither frequency of the mechani-
+cal dither applied to the control module. Therefore, the
+impact of the AC component should be minimized in the
+process of controlling the cavity length, which requires
+the AC component to be always controlled at the mini-
+mum. Through the RMS circuit on the hardware, the AC
+component is converted into DC component and then into
+a digital value by using an AD converter, and the DC
+component of the light intensity signal is used as the input
+of the MCU to adjust the system. Fig. 6 is the control pro-
+gram flow chart of the AC component. As to the AC com-
+ponent, the dither control method is also adopted. Once
+the laser gyroscope works in a stable state, the mechani-
+cal dither frequency exerted on it will be certain,so the
+control method of successive approximation is adopted.
+Fig.6 The program flow chart of controlling AC component
+4 Performance test and analysis
+4.1 The light intensity Mode-sweep curve
+Light intensity Mode-sweep curve is not only an im-
+portant benchmark of controlling laser gyroscope cavity
+length,but also one of the bases to decide whether laser
+gyroscope performance is good or not. Fig.7 is the Mode-
+sweep curve of a laser gyroscope under the working cur-
+rent of 0. 7 mA, and Mode-sweep driving voltage range is
+0—250 V.
+Fig.7 The light intensity Mode-sweep curve
+As can be seen from Fig. 7,within the driving volt-
+age range of 0 一 250 V, there are five longitudinal
+modes. The symmetry of light intensity curve is good,
+and the repeatability is consistent. This light intensity
+curve can be used as the benchmark of controlling cavity
+length.
+4.2 Cavity length control system performance test
+In the laser gyroscope cavity length control process ,
+the maximum value of light intensity is first obtained by
+made-sweep,and then the light intensity value is stabi-
+lized to the maximum extent by controlling the DC compo-
+nent. Fig.8 is the cavity length control process of a laser
+gyroscope.
+Wl Th et ee Se TG 技
+Fig.8 The control process of cavity length
+As can be seen from Fig. 8, the selection process of
+the maximum point is about 1 s. When the cavity length
+is stable, the value of the light intensity is 5.143 2 V ,
+and the driving voltage is 125.5 V. The dither voltage
+amplitude value superimposed on the driving voltage is 2
+V, and the dither frequency is 114 Hz, as shown in Fig.
+9.
+Fig.9 The dither signal superimposed on the driving
+voltage
+In the actual test, the dither voltage amplitude value
+is increased from 1 V to 5 V. and it is found that 2 V is
+the most appropriate and the light intensity value reaches
+the maximum. It is also found from the actual test that
+different frequencies have a significant impact on the con-
+trol accuracy, and the test results are shown in Tab. 1.
+From the actual test result, it can be seen that when
+the dither amplitude is 2 V and the dither frequency is
+114 Hz, the control of cavity length can achieve the best
+Tab.1 The test records of different dither frequencies
+effect. Because the control system is a hysteretic system,
+the rapid change of dither frequency making piezoelectric
+ceramic does not fully respond to the change of dither
+voltage, leading to the minimum light intensity in control
+and regulation process, that is, by applying dither, a
+fluctuated frequency will be superimposed on the light in-
+tensity signal, which is the same as dither frequency. So
+if the dither frequency of the jitter is too small, it is diffi-
+cult to filter when the laser gyroscope signal is processed.
+Generally, when the laser gyroscope is processing signal,
+the cut-off frequency of a low-pass filter is about 45 Hz—
+100 Hz, so the selected 114 Hz dither frequency will nei-
+ther affect the accuracy of controlling cavity length, nor
+bring trouble to laser gyroscope signal processing or affect
+the measurement accuracy of laser gyroscope.
+4.3 Laser gyroscope system test
+The dither amplitude is set as 2 V and the frequency as
+114 Hz. The designed cavity length control system is com-
+bined with the dither control module and the signal process-
+ing module,and the real-time data acquisition is executed
+by the host computer. According to the laser gyroscope ac-
+curacy measurement standards'? | the accuracy is calculated
+after the laser gyroscope has worked for 0. 5 h. The calcula-
+tion results are shown in Tab.2. No.1, No.2, and No.3 re-
+present the data measured in three different periods, respec-
+tively. It can be seen that, the designed cavity length con-
+trol system of laser gyroscope has good stability, and the
+precision is superior to the requirement of 1°<h?".
+Tab.2 The drift mean value and mean square value
+5 Conclusion
+A frequency stabilization control scheme was put for-
+ward. In the hardware design, the AC/DC components of
+laser gyroscope light output was independently controlled,
+obtaining a higher control accuracy. In the software de-
+sign, the AC and DC components control program were
+designed. The performance test on each key part and the
+whole system shows that the accuracy can reach 0.4°-
+h?', and the designed cavity length control system can
+meet the requirement of controlling steady frequency.

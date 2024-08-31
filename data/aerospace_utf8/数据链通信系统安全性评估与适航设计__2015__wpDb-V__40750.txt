@@ -1,0 +1,498 @@
+数据链通信系统安全性评估与适航设计
+空中交通服务由通信、导航、监视和空中交通管制等4个子系统组成。数据链通信用于空中交通服务，可以维护空中交通秩序和促进空中交通安全。数据链通信系统是通信、导航、监视（CNS）和空中交通管制系统的基础和关键，不仅能对雷达无法覆盖地区的飞机进行通信、导航，而且在高密度飞行区域也有广泛的应用前景，
+
+通信系统 数据链 安全性评估 空中交通管制系统 空中交通服务 设计 适航 空中交通安全  
+
+Nomenclature
+Cy-skin friction coefficient, f-mass flow coeffi-
+cient, H-model height and width, M-Mach number,
+工 .-distance from the forward edge cowl up to the
+forward edge of lateral walls, p..-free stream static
+pressure, p= p/p. -relative static pressure, p.-free
+stream flow total pressure, p,-Pitot pressure, p,=
+po/ p.relative total pressure, Re-unit Reynolds
+number, T,-total temperature, U..-free stream flow
+velocity, x-longitudinal coordinate, y-transversal
+coordinate, 司 boundary layer thickness, 6* -dis-
+placement thickness, 6" * -momentum thickness, ?-
+total pressure recovery coefficient.
+0 Introduction
+In recent years the increasing attention is focused
+on study of opportunities of three-dimensional inlets
+in connection with development of highly effective
+hypersonic vehicles for various purposes. Applica-
+tion of a three-dimensional inlet can be more effec-
+tive from the point of view of reduction of wave drag
+at non-design speeds of flight and thermal protection
+of compression surfaces of inlets. However, start of
+the three-dimensional inlets at non-design modes
+and an opportunity of its adjustment are inconven-
+ient owing to a spatial configuration of compression
+front at development of a three-dimensional inlets, consist
+in a large non-uniformity of the flow at a combustion
+chamber entrance and strong influence of a thick bound-
+ary layer at installation of an engine under a fuselage,
+A special attention is given to three-dimensional in-
+l6:tS〔1_2亡_ 9 which are constructed on the basis of a combi-
+nation of an axisymmetric flows so that those cross-sec-
+tions of capture flow are compressed in converging di-
+rections. Inlets of such type have been named conver-
+gent inlets”), They allow obtaining compact sections of
+an entrance in a channel and inlet throat. Construction
+of a convergent inlets was carried out with gas-dynamic
+designing methods by means of sector cuttings from in-
+ternal supersonic flow converging to an axis of symme-
+tryt*!. In the paperr5] designing of an convergent inlets
+was carried out by a spatial combination of flat flow
+with an oblique shock wave of a general spatial location,
+Other configuration of an three-dimensional inlets,
+which also can be related to a class of an convergent in-
+lets, is presented in the paperrt1.、 The surfaces, forming
+walls of the channel and cowl,had swept leading edges
+(45%), and angles of an inclination of the compression
+surfaces were insignificant (3°~ 6°). The part of air
+flow of the inlet is divided into several areas by means ot
+the three struts,which also have swept-forward and
+swept-back leading edges of the walls. Process of com-
+pression is completed in the inter-strut channels. The
+struts could be used for a fuel injection. It is necessary
+to note that such configuration differs by smaller com-
+pactness of an entrance, than an axisymmetric conver-
+gent inlet,but thus such inlets permit the big flexibility
+in formation of the area of a throat and its adjustment,
+Researches of an three-dimensional air inlets of such
+type were also carried out in CIAM'",
+Experimental data for inlets in a range of hyperson-
+ic speeds of a flow is of particular interest since such re-
+searches are extremely limited and obtained on the mod-
+els of small sizes, Last circumstance strongly reduces
+possibilities of simulation of viscous flow at an entrance
+in an inlet model.
+The purpose of the present work has consisted in
+obtaining of systematically experimental data about
+characteristics and a flow field in the channel of model of
+an adjustable inlet, definition of its mass flow rate coef-
+ficients from the pressure measurement at the exit of the
+flowmeter, and total pressure recovery at the exit of the
+ence of a flow control on realization of design inflowing
+in the channel of inlet (inlet start).
+In the process of the tests, main attention has been
+given to measurement of parameters of a flow in the
+model throat by means of the total pressure rake, and
+also investigation of structure and characteristics of a
+boundary layer before model on the wall of wind-tunnel
+and on the base of model before the model entrance.
+1 Experimental model and technique
+Model. In the work, the three-dimensional inlet
+constructed on the basis of the spatial combination of
+plane flows is considered, The geometrical configuration
+of such inlet was calculated in accordance with the
+work!? . The internal channel and the throat of inlet
+model were formed by the profiled walls, which consis-
+ted of the three spatially situated wedges. The ramp on
+the base of model had constant angle 1. 5°. The lateral
+walls of the inlet model were changeable and had both
+swept-forward and swept-back leading edges with angle
+45°. The model height H was 120mm. For leveling
+flow and measurement of mass flow ratio, the measur-
+ing section and the total pressure rake was installed be-
+hind the inlet channel. Adjustment of the inlet was car-
+ried out with the help of longitudinal moving of the cowl
+with double swept (Fig. 1).
+The model of inlet was tested in a core of flow so
+that before entrance in the channel the thickness of the
+boundary layer equaled to zero (6 二 0),and on the
+wind-tunnel wall that allowed to simulate a thick
+boundary layer, which is being formed on forebody of
+vehicle before inlet entrance, using boundary layer on
+the wall of wind-tunnel. Measurements were carried out
+at two positions of the cowl when the distance from the
+forward cowl edge up to the forward edge of the lateral
+walls equaled to 319mm and 369mm (see Fig. 1). At
+the test of the inlet, measurements of distribution of
+static pressure on the cowl, on the central body and on
+the lateral walls were performed. Besides, the Pitot
+pressure across height of the model throat was meas-
+ured. Measurement of total and static pressure at exit of
+the constant section has allowed obtaining the mass flow
+rate of the inlet. Schlieren and soot-oil visualization
+were carried out. These measurements and flow visual-
+ization have allowed determining start of the inlet and
+realization of design flow in the throat and the channel
+tunnel, the model was below border of the optical win-
+dow and the inlet entrance was invisible. Achievement
+of start or non-start of the inlet can be determined only
+on approximation of the head shock waves, in visible re-
+gion above the model.
+tested in the blow down wind-tunnel T-313 at Mach
+numbers from 1. 74 to 6.06 and unit Reynolds numbers
+Re=38.6X10°~20.1X10° 1/m. The wind-tunnel has
+the size of working section 600mm X 600mm X 2000mm
+and duration of operation mode from 3 to 6min, Param-
+eters of the flow in the wind-tunnel are presented in Ta-
+ble 1.
+Table 1 Parameters of flow in the wind-tunnel
+表 1 风洞流场参数
+M 1.74 2.00 2.51 3.01 4,02 5.05 6,06
+AMPa 0.19 0.21 0.24 0.42 1.04 0.81 0.82
+T./K 280 275 284 290 280 420 460
+ReX 105/mt! 20,1 25.6 27.8 35.7 56,1 14.3 8.6
+A numerous methodological researches conducted
+within the all range of Mach numbers showed good
+quality of the flow in the operation section of the wind-
+tunnel. The degree of non-homogeneousness of Mach
+numbers does not exceed 0. 08 %. The root-mean-
+square’s non-uniformity of total pressure and total tem-
+perature amounts to about 0.4% and 1%, correspond-
+ingly. Level of flow turbulence does not exceed 0. 86%.
+The model tests on the wall of wind-tunnel under
+conditions of the thick boundary layer have in mind ne-
+cessity of definition of boundary layer characteristics be-
+fore the inlet. The Pitot pressure rake and measurement
+of static pressure on the wall were used for this pur-
+pose. The rake was installed so that the coordinate
+(from the model base) of measuring tube could be
+measured with accuracy not worse than 0. 05mm. Inte-
+gral parameters of the boundary layer were calculated
+basing on these data. At the processing and analysis of
+the boundary layer characteristics, well-known and
+verified relations for a compressible streamst'?' based
+Wii applitalivil CULIIPLTDSIULIT 1ILULLIPI TOD VIC AELD LCLLLL
+density) transformations have been usedL12] .
+Uncertainties, Many interdependent factors affect-
+ing measurements of flow parameters in channel and in-
+let characteristics, and it is difficult to quantify the over-
+all measurement accuracy. However, the sources of un-
+certainty due to the model geometry, free stream pa-
+rameter, pressure and temperature measurement were
+identified and analyzed,and their influence on the over-
+all data fidelity was assessed on the basis of large num-
+ber of measurements in different runs. The interdepend-
+ent nature of the various sources of uncertainty, both
+systematic and random, makes any estimate of the over-
+all error difficult to ascertain, Simply to evaluate a max-
+imum error for the measurements, such as occurs at the
+measurement in the large range of flow parameters (dif-
+ferent Mach number or the positional error along the in-
+let channel) would be quite misrepresentative of the ma-
+jority of the flow field. Therefore, the estimated major
+uncertainties at two measuring positions (“best” case
+and “worst” case) within the flow field have to be de-
+termined. By simple summing the individual uncertainty
+components, it could be concluded that the peak overall
+uncertainties are of the order of 0. 5 % in the free stream
+and less than 3% ~4% in the external regions and at
+the calculation of the mass flow ratio,
+The overall uncertainty in the flow parameters were
+estimated by root-sum-square《95 % confidence interval)
+for the systematic bias and precision uncertainties, The
+uncertainty in the Mach number was evaluated at each
+point in the flow field. This Mach number uncertainty
+includes only the propagation of pressure measurement
+uncertainty and not errors attributable to probe interfer-
+ence, misalignment or interpolation, The results indica-
+ted that the uncertainty can becomes excessive for low
+local parameters of the flow. Results of these calcula-
+tions are presented in Table 2.
+Table 2 Uncertainty of measured parameters
+表 2 测量参数不确定度
+Parameter p pp Tt M Re x U my f 【
+Uncertainty/ % 0.44 0,28 1.12 0.83 2.6 0.09 1.3 2.88 4.23 1.55
+The most probable maximum error of mass flow
+ratio f can be estimated approximately 4. 23%. This er-
+ror could be attributed to a) flow non-uniformity in
+measured section of the nozzle; b) the error in the
+measurement of total temperatures in the same cross
+section; ￠) the accuracy of the measured free stream dy-
+the walls during test; e) the error in the data recording
+systems. But the above mentioned error is a fixed error
+that occurs in all the tests, and hence comparison of
+mass flow ratio is free of this error because it is the
+difference of two f values.
+2 Results and discussion
+2. 1 Characteristics of the boundary layer
+Measurements of the boundary layer have been car-
+ried out on the base of model and on distance of 25mm
+downstream from the leading edge of model. In this
+case, the leading edge of model without a gap was atta-
+ched to the bottom wall of working section of wind-tun-
+nel, however the leading edge of the basis of the model
+formed the forward facing step with height about 1mm
+due to its bluntness.
+Results of Pitot pressure measurement in the
+boundary layer have shown that in all range of Mach
+numbers, the boundary layer was turbulent. Velocity
+profiles of the boundary layer (Fig. 2) have been ob-
+tained by means of these data. The analysis of the ve-
+locity profiles has shown that they are well described by
+the power law U=U/U.. 一 ( v/ MY" with an exponent
+1/n 二 1/7 一 1/19《Fig. 3(a)) and the logarithmic law of
+“wall-wake” (Fig. 3(b)). One can see that value of ex-
+ponent n corresponds or exceeds typical magnitude for
+turbulent boundary layers.
+fullness of the velocity profile of the boundary layer, It
+can be seen that the velocity profiles has distinctive two-
+layer character at M==3. 01. In this case, the parameter
+n of external and internal (near-surface) part of the
+boundary layer essentially differs (Mier <7Zexiernat ). It 18
+also necessary to note that the increase in Mach number
+appreciably reduces the specified distinction that is typi-
+curred. Fig. 3(b) demonstrates that velocity profiles
+can be described in scope of universal logarithmic law
+“wall-wake”"**] with lengthy logarithmic part which
+well correlates with theoretical calculation. These data
+confirm the conclusion about turbulent character of flow
+in the boundary layer and they also show that the bound-
+ary layer remained non-separated in front of the inlet.
+Integral thickness of the boundary layer and its rel-
+ative thickness in front of the model channel (8/ H)
+have been determined. Characteristics of the boundary
+layer on the wall of wind-tunnel before the inlet model
+are presented in Table 3. An estimation of influence of
+weak nose shock wave and bluntness of the leading ed-
+ges on state of boundary layer was obtained on the mod-
+el base in front of entrance in the channel, shown in Ta-
+ble 4.
+Table 3 Characteristics of the boundary layer
+on the wall of the wind-tunnel
+表 3 风涂洞壁边界层特性
+lable 4 araniererSs oI the boundary layer
+at the inlet entrance
+表 4 进气道入口处边界层参数
+6* /mm 11.78 17.7 12. 36 18.7
+B* * /mm 2. 05 2, 12 1. 48 2.1
+G* 16 5.75 8.35 8,35 8.91
+6* / 下 0. 098 0. 148 0. 103 0. 156
+&/H 0. 337 0. 383 0. 356 0. 359
+Cr X108 0.746 0.614 1.10 1.42
+Comparison of data of Table 3 and 4 has revealed
+that an influence of the blunt leading edge and the nose
+shock wave on change of the integral characteristics of
+the boundary layer on the model base was not large and
+their growth does not exceed 20%. Such changes de-
+pend on formation of local separation,which is caused
+by the blunt leading edge,as it has been shown in the
+paper[i, First of all, it leads to reduction of fullness of
+the velocity profile of the boundary layer (Fig. 3),
+where velocity profiles are presented in the form of pow-
+er law. This results in increase of displacement thick-
+ness and momentum thickness. These data show that rel-
+ative thickness of the boundary layer can reach 40% of
+height of the inlet channel entrance and relative displace-
+ment thickness can amount to 8% ~15 %. It is obvious
+that influence of such boundary layer can be essential.
+2.2 Characteristics of the inlet
+As a result of the tests performed, distribution of
+pressure in channel has been obtained at the different in-
+let position in the wind-tunnel and for two positions of
+the cowl.
+Character of the pressure distribution in the inlet
+channel depends on the cowl position. Example of pres-
+sure distribution is presented in Fig. 4 at M=3. The
+pressure distribution along model (central line) at rare
+cowl position (L, = 369mm) has a saw-tooth kind,
+which is typical for supersonic flow in channel. Such
+distribution was realized only if the model has been in-
+stalled in a core of the flow and only at the rare cowl po-
+sition. At the front cowl position ( 止 . 一 319mm) pres-
+sure distribution was typical of subsonic flows with
+smooth pressure growth. Increase of pressure at the in-
+let entrance ( 又 一 200mm) is associated with the inlet
+un-start and with intensive shock waves in the channel.
+This pressure is considerably higher than that at rare
+cowl position when inlet was started. Inlet un-start oc-
+curs in consequence of the fact that supersonic spilling of
+the tlow in tront of swept leading edges ot the cowl 1s
+not provided at the front cowl position. Pressure reduc-
+tion behind the inlet throat (X>400mm) occurs due to
+change of channel configuration which must simulate a
+supersonic combustor.
+entrance in the model channel also confirms realization
+of start of the inlet at rear position of the cowl since the
+flow in all area in front of entrance remains supersonic
+with oblique shock waves (Fig. 5(a)). As a result of
+moving of the cowl upstream, in front of position ( 止 一
+319mm), character of the flow around model changed
+due to non-start of inlet, Spatial shock wave which is
+close to the normal shock wave appears before the inlet
+(Fig. 5(b)). This picture also demonstrates that the in-
+tensive shock wave was detached and its influence ex-
+tended on region of flow before the inlet. Furthermore,
+presence of intensive shock waves indicates appearance
+separation zones before the inlet entrance in channel.
+This preliminary finding was confirmed by oil visualiza-
+tion of surface stream line.
+图 5 模型入口流场纹影显示(M一3)
+(a) 工 一 3698mmt,(b) L.=319mm
+nel, supersonic inflowing in the inlet was not realized at
+any positions of cowl (Fig. 6). Distributions of static
+pressure along the model for these cases had practically
+identical kind and corresponded to subsonic flow. Influ-
+ence of the thick boundary layer manifests itself, first of
+all, in appreciable decrease of static pressure in the
+channel of model. Influence of the cowl position was
+weak and appeared in small increase of pressure in the
+throat of the inlet at rare position of the cowl.
+fore the inlet entrance was different at installation of the
+model in the flow core or on the wind-tunnel wall, In
+last case, flow in front of the inlet was subsonic without
+supersonic zones. The spilling area increased significant-
+ly in comparison with installation of the model in flow
+core and weakly depended on the cowl position. Soot-oil
+visualization of a stream line on lower wall of model has
+demonstrated formation of the global boundary layer
+separation, which specified conditions of the flow at the
+inlet entrance and conditions of the spilling.
+with swept-back and with swept-forward leading edges
+of the sidewalls shows that at 仁 一 3 the inlet was star-
+ted both at installation of the model in a core of flow and
+position, Level of static pressure in the model with
+swept-back leading edges was approximately by 20%
+higher, than at the model with sidewalls with swept-
+forward leading edges (Fig. 8). This advantage of the
+model with swept-forward leading edges is reached in
+consequence of more intensive lateral spilling of the
+thick boundary layer on the basis of the inlet model.
+图 8 模型安装于核心流时沿程静压分布(M一3,L:一369mm)
+If the model was installed on the wind-tunnel wall,
+the inlet was started only in case of the sidewalls with
+swept-forward leading edges. Level of pressure in such
+model with swept-back leading edges of the sidewalls
+was significantly higher than in the inlet with swept-for-
+ward leading edges (Fig. 9). If the model with front po-
+sition of the cowl were tested on the wind-tunnel wall,
+the model of the inlet was not started at application of
+any type of the sidewalls because the boundary layer
+separation was not possible to prevent.
+Increase of free stream Mach number improves
+start conditions of the inlet, At M =4, the model of the
+inlet tested in core of flow was started at both cowl DO-
+sitions. Values of static pressure were very close at the
+front and rear cowl positions. Characters of static pres-
+sure distributions on the base of model correspond to
+supersonic flow in the channel (Fig, 10). Supersonic
+character of inflowing is confirmed by schlieren visual-
+ization of the flow at the inlet entrance (Fig. 11). Pres-
+ence of oblique shock waves confirms supersonic spilling
+before the entrance, It can be seen that character of flow
+of the cowl is identical at both its positions, i, e,with-
+out a head (normal) shock wave at the inlet entrance,
+At the same time, structure of flow in these two cases is
+a little bit different, Declination of shock wave was dif-
+ferent since it allows guaranteeing necessary supersonic
+spilling,
+图 11 模垒入口流场纹影暨示(M一4
+(a) L.=369mm, (b) 此 二 319mua
+At installation of the model with the front cowl po-
+sition (L, =319mm) on the wall of the wind-tunnel, the
+presence of thick boundary layer leads to pressure distri-
+bution, which is close to distribution for non-started in-
+let (Fig. 12). However, break-up of inflowing in the
+channel has not occurred (Fig. 13a). As a result, for-
+mation of close-to-normal shock wave before entrance in
+the channel occurs and more intensive spilling takes
+place before leading edges of the cowl. Evidently, tran-
+国13(6b}模壁入口上方纹影昱示(MM一4,L.一369mm)
+ing edges is compared only at rear cowl position on the
+model (L.=369mm). Results of comparison of static
+pressure distribution in model with swept-back and
+swept-forward leading edges of sidewalls at M=4 are
+presented in Fig. 14 and 15. Influence of swept was dif-
+ferent at the test of model in flow core and on wall of
+wind-tunnel. It is possible to note that in the channel of
+model with swept-back leading edges, the more high
+pressure on the base is reached but qualitative character
+of distribution of pressure is kept, as well as at M=3,
+It was revealed that the inlet with swept-back leading
+edges allows obtaining more high level of pressure in
+channel (Fig. 14). Such result is due to more intensive
+spilling through lower part of sidewalls (near model
+base) before channel. However, pressure distribution
+corresponds to supersonic flow in both cases.
+图 14 模型安装于核心流时沿程静压分布(M二4,L.一369mrm)
+At the installation of model on wall of the wind-
+tunnel, the influence of boundary layer on the pressure
+distributions in channel at enlarged Mach number differs
+in fact that they weakly depends on the cowl position,
+Pressure in the channel is decreasing but flow remains
+supersonic and pressure distribution reflects presence of
+shock waves and expansion fan in channel. This is effect
+of essential increase (more than two times) of relative
+thickness of the boundary layer at the entrance in the
+model channel.
+Increase of Mach number leads to the raise of static
+pressure in channel of the inlet. Results of measurement
+of static pressure distribution at Mach number 6 on sur-
+faces of the inlet model at installation of model in core of
+flow and on wall of wind-tunnel are presented in Fig.
+16. Comparison of these data shows that pressure level
+and pressure distribution weakly depend on the model
+position at the tests in wind-tunnel. It is necessary to
+note rather weak influence of thick boundary layer on
+that indicates non-separation of flow. These data also
+show that pressure distribution on the base of model is
+characterized by essential non-uniformity, which is typi-
+cal for supersonic flow in the channel. The large change
+of compression ratio is realized in channel. This is con-
+sequence of alternation of shock waves and expansion
+fan in channel, Mach numbers in inlet throat under
+these conditions amount to 2. 1~2. 5, and its value was
+approximately the same in the tests with and without
+boundary layer at the inlet entrance.
+图 15 模型安装于洞壁时诟程静压分布(M二4,L。二369mm)
+ured with the help of the coordinate device with 4 Pitot
+tubes, This pressure was used for definition of total
+pressure recovery coefficient and structure of flow (non-
+uniformity) in the throat. As an example, Fig. 17 and
+18 demonstrate distribution of relative pressure across
+height of the throat at Mach numbers 4 and 6. First of
+all, it is necessary to attend to high non-uniformity of
+total pressure and its dependence on position of the
+model in the flow core or on the wall of the wind-tun-
+nel. Such non-uniformity is characteristic for supersonic
+flow in the channel. Influence of the boundary layer
+shows in pressure decrease in the throat at installation of
+the model on the wall 01 wind-tunnel,
+Comparison of the data at Mach numbers 4 and 6
+demonstrates that the increase of Mach number results
+in intensification of non-uniformity of pressure across
+height of the channel and amplification of influence of
+the boundary layer. Non-uniformity of flow in the inlet
+throat is essentially lower at the subsonic flow velocity,
+and influence of the boundary layer in front of the en-
+trance in the inlet channel is simultaneously decreasing.
+exit section of the channel, mass flow rate and total
+pressure recovery coefficients for two positions of cowl
+have been determined (Fig. 19). First of all, it is neces-
+sary to note strong influence of the boundary layer on
+the achievable level of mass flow rate and total pressure
+recovery for two positions of the cowl. For example,
+mass flow rate at installation of the model on the wall of
+wind-tunnel can decrease by a factor of 1. 5~2. Ap-
+proximately the same reduction is observed in value of
+total pressure recovery coefficient, The above mentioned
+features were kept at change of the cowl position. Mo-
+reover, at position of the cowl L. 二 319mm reduction
+can be even more significant (Fig. 19, M=4). It is ex-
+plained by appearance of the boundary layer separation
+OIl Tne pase OI Une model. 止 SUPEISDIHC LLU WLL 时 111 tc
+channel is not realized, influence of change of the cowl
+position and of the boundary layer was strongly weak-
+ened.
+图 19 模型安装于核心流和洞壁时质量流量
+系数和总压恢复系数
+3 Conclusions
+Performed experimental researches of model of the
+spatial adjustable inlet with swept-forward and swept-
+back leading edges in range of Mach numbers from 1. 75
+up to 6 in blow down wind-tunnel have allowed drawing
+the following conclusions.
+(1) As a result of strong influence of thick bounda-
+ry layer, mass flow rate coefficient significantly decrea-
+ses (under some conditions by a factor of 2).
+(2) Supersonic inflowing in the channel of inlet
+model at presence of a thick boundary layer can be real-
+ized only at Mach number more than 3.
+(3) The type of swept of leading edges of sidewalls
+of the model weakly influences on the pressure distribu-
+tion in the channel of the inlet model.

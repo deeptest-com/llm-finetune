@@ -1,0 +1,226 @@
+论述环氧树脂基复合材料直升机部件的性能
+社会在不断发展。科技在不断进步，新的材料也不断在科技中创新出来，先进的树脂基复合材料的物质特性，在我国航空材料中占据重要位置，代替了较重的金属材料，用在直升机很多的承受力的结构部件上。本文就是对环氧树脂基复合材料直升机部件的性能进行分析。
+
+复合材料 直升机部件 性能  
+
+0 Introduction
+Study on optical fiber sensor has taken the center
+stage due to its well-know resistance to electromagnetic in-
+terference , small size, temperature tolerance, reusability,
+and long transmission distance. Application of high-tem-
+@ Received date:2013-03-22 ; Revised date:2013-04-16.
+Foundation Item : National Natural Science Foundation of China
+Biography : MENG Song-he (1969 一 ) ,male ,professor,speciality : thermal protection systems simulation and evaluation. E-mail: meng-
+sh@ hit. edu. cn
+Corresponding author: XIE Wei-hua( 1978 一 ) ,male,associate
+perature optical fiber sensors has demonstrated its great
+potential in the area of aerospace. The thermal structural
+components , especially used in solid rocket motor and the
+hypersonic aircraft nose cone, require high temperature
+tolerance , smaller weight and size of the sensors due to
+(No. 10902030,91016029,11272107).
+professor, speciality : thermal protection systems simulation and evalua-
+—701—
+Sensor (FGS) under high-temperature environment re-
+mains a technical problem. NASA and the U. S,Depart-
+ment of Defense have carried out a series of programs ( in-
+cluding Airframe Health Monitoring and Materials and
+Structures Program) to support the development of high-
+temperature optical fiber measurement technology. The
+most-know institutions are Dayton Research Center, NASA
+$ Langley Research Center , United States Air Force Base,
+Fiber & Electro-Optics Research Center, Fiber and Sensor
+Technologies Inc. ,and Lambda Instruments Inc. Sweden,
+Canada and Morocco also joined the United States to carry
+out research on high-temperature optical fiber technolo-
+g}′〔l，:缪，5〕_
+DUnder the guidance of test principle for high-temper-
+ature fiber sensor, the studies of high temperature fiber
+sensor fall into two major categories. One is intrinsic opti-
+cal fiber grating sensor, which is usually made of quartz
+optical fiber material with test range below 1 000 匕 16-71.
+Another is extrinsic optical fiber Fabry-Pérot sensor, which
+is generally made of sapphire fiber materials with test tem-
+perature above 1 000 化 and 1 650 °C at its highest'? -101 ,
+Despite its high test temperature , the raw material of sap-
+phire fiber optic sensor is considerably expensive.
+The advantage of the quartz FCS is to test the tem-
+perature and strain simultaneously. Although quartz mate-
+rial itself can tolerate temperature of 1 000 °C, the con-
+nection technology with the actual hot structure has been
+plaguing its practical applications. From the practical
+point, with the quartz optical fiber sensor,550 °C is the
+maximum temperature for simultaneous test of structural
+temperature and strain[il1 ,
+The study uses a chemical composition FCS to exam-
+ine the problems arising during sensor 「s application in
+ogy for high temperature fiber grating. It also determines
+the best choice of adhesive agent and adhesive technique
+through comparison, as well as completed the temperature
+and strain monitoring tests under 700 °C environment.
+—702一
+1 High-temperature connecting method
+In 2008 ,NASA 5 Defense Report had classified sen-
+sors according to the difficulty of installation, difficulty of
+application, and the operating temperature, pointing out
+that the operating temperature of quartz optical fber and
+sapphire optical fiber sensor is relatively high while the
+application difficulty rests at middle. However, they are
+both difficult to be installed due to the brittleness of the
+optical fiber material.
+In applications, fiber grating is divided into two
+types. One type shall be firstly armored to form sealed
+protection, and then the armored item will be bonded with
+the to-be-tested structure. Another type would be directly
+bonded with the structure surface through gluing or plasma
+thermal spray. Among these methods, gluing is the most
+simple and practical.
+The high-temperature treatment makes fiber grating
+brittle, therefore its necessary to adopt simple bonding
+technique when using high-temperature adhesive on fiber
+gratings to reduce potential damage. Ideal high-tempera-
+ture adhesive is characterized by good liquidity before cu-
+ring and no crack or other defects under high temperature
+environment after curing. Before experiment on bonded fi-
+ber grating,the grating shall be heated to 800 °C and sub-
+adhesive HS-176. However, because of the poor perform-
+ance of the adhesive agent at higher temperature , cracks
+appear in the adhesive surface which combine by the com-
+plex curing way, may easily cause damage to fiber grating.
+Therefore more adhesives come under scrutiny to meet the
+needs.
+1.1 Choosing high-temperature grating adhesive a-
+gent
+The excellent high temperature resistance at about
+2 000 °C, the resistance to oxidation and the non-ablative
+characteristics of ultra-high temperature ceramics( UHTC)
+make it a preferred choice for making engine and hot end
+components of hypersonic aircraft. The present study
+places high requirement on adhesive agent to form ideal
+adhesion with the UHTC ,in order to ensure the grating not
+to be damaged by the cured adhesive and make good paste
+on the surface of the structure for generation of accurate
+strain response. To verify the applicability of various high-
+temperature adhesive agent, and to ensure the efficacy of
+fiber-specimen bonding formed through the agent, the
+study firstly experiments on the property of different agents
+with bonding simulation.
+Put prepared four kinds of high-temperature adhesive
+respectively in four syringes, and select the same UHTC
+surface. Squeeze the adhesive out on the structural sur-
+face,forming 1.5 cm to 2.0 cm-long bar enough to cover
+Table 1 Evaluation of adhesive agent after 800 °C treatment
+茎e一辜彗菖】亘三重二言工茎菩l三亡音】亡亡寡二茎上二三t薹亘l】薹董菖置薹豆I…言I艺lh亡言l皇T董`二亘ur嫡c二亘菅亘量o二二=
+The test results indicate that the last two types of ad-
+hesive demonstrate better performance,However , because
+of the poor fluidity of Ultra Temp 904 zirconium oxide ad-
+hesive ,before curing and the operation, trouble hence may
+come ,the study chooses Respond 989 ,the high purity alu-
+mina ceramic bonding agent of COTRONICS. The main
+component of this adhesive is a high purity alumina ce-
+ramic which only needs curing at room temperature, not
+only greatly reducing the difficulty of fiber grating curing,
+but also avoiding the damage caused by high-temperature
+curing process. Its highest working temperature can reach
+1. 2 High-temperature optical fiber connecting
+method
+Discussion will be made on the bonding technique
+for the selected adhesive agent Respond 989FS in order
+to determine the appropriate way of bonding and curing.
+Bonding methods shall observe the following standards.
+(1) As the intermediate between specimens and fi-
+ber grating, adhesive agent shall be in good contact with
+the specimen to ensure bonding strength and avoid de-
+gumming.
+(2) Adhesive shall have full contact with fiber grat-
+ing to avoid unsynchronized deformation, the likelihood of
+which is caused by fiber grating “「s smooth surface and
+small size. The full contact is also important for protec-
+the length and width of the fiber. Put the cured agents in-
+to the muffle furnace and heat them from room tempera-
+ture to 800 TC. Maintain the bars at 800 LY for 30 mi-
+nutes and then cool them to room temperature. Observe
+the bonding state after high-temperature treatment as
+shown in Table 1.
+ting the fber grating from being damaged by the outside
+force.
+(3) Adhesive agent needs to be smeared uniformly,
+so as to avoid fracture of the bar under high temperature ,
+which will damage fiber grating.
+(4) Adhesion process shall be simple to minimize
+possibility of potential damage.
+We need sandblasting process (3* type of sand) for
+UHTC thermal parts before adhesion ,which will increase
+the contact area and improve the bonding effect. Clear
+on the surface. Smear the adhesive on the specimen and
+dry it in the air for about 4 hours to reach the ideal bond-
+ing strength.
+2 Evaluation of high-temperature hot struc-
+ture
+2.1 High-temperature test device
+The specimen for hot structure test is L-shape UHTC
+part. Three fiber gratings and three thermocouples are
+placed on the horizontal part of the specimen, one thermo-
+couple monitoring one fber grating correspondingly , with
+the purpose of decoupling the wavelength signal. The ex-
+periment starts with the bonding of fiber grating and the
+specimen. After curing,bond one thermocouple to one fi-
+—703—
+ceramic, which is thin and a good heat conductor, the
+temperature measured by each thermocouple can accu-
+rately represent the temperature load at that specific loca-
+tion of the fiber grating. The sensor connection and layout
+are shown in Fig. 1.
+laser for heating the bottom area of the vertical section of
+the test pieces in Fig. 1 with heat spot of 420 mm and
+lens-specimen distance of 1 500 mm. Due to high thermal
+conductivity of the UHTC ,the heat will reach the bottom
+rapidly. The test adopts fiber grating demodulator for
+three-way fiber-coupled signal acquisition, and uses multi-
+ple temperature signal acquisition instrument recording
+thermocouple temperature response.
+2.2 High-temperature test
+Connect thermocouple and fiber optic sensor to data
+acquisition equipment respectively. Before heating, the
+structural surface temperature of the three thermocouples
+are 24 °C. The reflection wavelengths of three optical fi-
+bers are 1 540. 177,1 539. 982 and 1 539. 882 nm re-
+spectively. During the heating, adjust the power of laser
+heating equipment, and strengthen the power by 20 W
+each time. Through step-by-step heating ,record the tem-
+perature acquired by each thermocouple and the wave-
+length signals by fiber grating under different laser power.
+after reaching 417 °C, and the other two disappeared
+when temperature were above 700 °C. The wavelengths
+corresponding to the each temperature point are shown in
+Fig. 2.
+Fig.2 Wavelength versus temperature for
+fiber Bragg grating sensors
+3 Result analysis
+Grating reflection wavelength change is mainly af-
+fected by two factors ,temperature and the deformation of
+the structure. The measured signal in this experiment is
+the superposition of both, which can be expressed in for-
+mula (1).
+AAs = AA; + AA, (1)
+Where AA; is the variation measured by grating signal ;
+AAr,AA。 are respectively the wavelength variations
+caused by the temperature and strain.
+Temperatures influence on the reflected wavelength
+can be expressed as temperature sensitivity coefficient, as
+shown in formula (2). Temperature change caused by
+thermal expansion will change the grating period, and at
+the same time thermo-optical effect leads to the change of
+the effective refractive index of the fiber.
+Where ?,{ represent respectively thermal expansion co-
+efficient and thermo-optical coefficient of the fiber Bragg
+grating.
+The pre-test measurement on the temperature sensi-
+tivity coefficient of the bare grating shows that the temper-
+ature has a good linear relationship with the reflection
+wavelength of bare grating, with temperature sensitive co-
+efficient being 0.009 6 nm/C.
+The expansion and elastic-optic effect conduced by
+strain can lead to the change of grating period and effec-
+tive refractive index,as shown in formula(3).
+Ary = K:As = (1 - P.)AsAe (3)

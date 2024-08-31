@@ -1,0 +1,281 @@
+机场终端区障碍物对DME导航台信号覆盖影响分析
+针对机场终端区障碍物对DME导航台辐射分布的影响,本文利用可视性分析理论与电磁波传播理论,考虑机场终端区实际地形影响,针对单个DME地面导航台进行信号覆盖范围的研究,提出研究单个DME导航台信号覆盖范围的一种方法。分析机场终端区障碍物对DME导航台电磁波的遮蔽效应,并利用可视化的方法结合数字地形予以呈现,这一研究可以为机场建设导航台的布置,障碍物评估等方面提供理论依据,对于民航机场的安全运营有重要意义。
+
+DME导航台 数字地形 视域分析 绕射算法 辐射分布  
+
+Introduction
+. Glide Reentry Vehicle (GRV) is a kind of unique
+vehicle which can glide in reentry phase,and it has dis-
+tinguishing characteristics of high dynamic and fast re-
+sponse. It flies in wide complex aerospace environment,
+and the flight is affected by many constraint factors such
+as close coupling and strong jamming, etc.
+Therefore, a lot of difficulties are caused to GRV ’ S
+attitude control system design: 1. Precise mathematical
+model is difficult to establish. 2. Stable control is hard to
+realize and the stability margin is rather low. 3. It usual-
+ly uses the fast maneuver bank—to—turn control,and
+needs to progress channel coordinated control in terms
+of high dynamic. Due to the above points,the attitude
+control system design of GRV is a complex control
+problem. Mujti~variable,nonlinearity,strong coupling
+and uncertainties must be taken into account. The clas—
+sical approach for coupled problems,which is the
+three—channel independent design method based on
+small perturbation linearization theory and hypothesis of
+parameter freezing! 11 is hard to solve the high dynamic
+maneuver control problem and satisfy the attitude con-
+trol accuracy. It is desired to develop an integrated de—
+sign method for the multivariable,nonlinear,coupled
+and uncertain control system.
+In order to solve the multi~channel coupling,
+strong jamming, uncertainties and nonlinear control dif-
+ficulties of GRV ,a robust adaptive decoupling control
+method which has active disturbance rejection ability, is
+presented in this paper by using differential geometry
+and Active Disturbance Rejection Control (ADRC)
+theory based on the research of references [> In the
+proposed method in this paper,an Extended State Ob-
+server (EOS) computes and compensates the uncer-
+tainties and disturbances to improve the feedback lin—
+earization method. A major breakthrough of the im-
+proved feedback linearization method is to effectively
+overcome many constraints of the traditional feedback
+linearization method, which is unusable when there’re
+modeling errors and unknown varieties of dynamic sys-
+tem. Attributed to the improved method, multivariable
+nonlinear coupled and uncertain system changes into an
+active disturbance rejection system where the relation-
+ship between output and input has been linearly decou-
+pled. It helps to provide an effective engineering~ori-
+ented approach to solve the control problem of multi-
+variable nonlinear coupled and uncertain system by us—
+ing mature linear design method. Through designing ac-
+tive disturbance rejection attitude stabilization loop, the
+robust stability and good control qualities of decoupled
+system are guaranteed under strong jamming and uncer-
+tain conditions. Thus a robust adaptive decoupling atti—
+tude control is achieved for the complex GRV.
+1 Attitude dynamics model and state
+While GRV usually has a lifting body configura-
+tion, the attitude motion of the GRV can be described by
+the following equations of motion:
+For the definition of A~Ae,a~d refer to the litera—
+ture [ m〕. Moreover, the states variable is defined as:
+Then the state space description of attitude model
+is obtained:
+Where
+namic model
+Here it is assumed that there is no uncertainty and
+disturbance,and the attitude dynamic model (3) is
+nominal model. Based on the differential geometry theo-
+ry,the nominal model is accurately linearized which im-
+plies feedback linearization. Therefore,the relationship
+between input and output of the nonlinear model (3) is
+Then, the state feedback is given by
+Where
+Taking the state transformation as
+?79 -
+Using feedb ack linearization to achieve precise
+P =x, (Ax, sinx, 十 元 COS 儿 +
+The state and output equations transformed from
+From the above equations, it is clear that it’s a se-
+ries integral linear system,where the original model
+changes to a generalized system with linear relationship
+between input and output by using feedback lineariza—
+tion,and it has been the decoupling of the input and the
+output. The three—channel independent dynamics can
+be written as
+、 80 ,
+The feedback linearization schematic block dia~-
+gram of System (3) is represented by the following
+drawing:
+Figure 1 Feedback linearization schematic block diagram 。
+3 Improved precise linearization based
+on ESO
+The linearization above is based on nominal
+model, not considering the uncertainty of the vehicle’s
+mathematical model. Therefore,because of the unknown
+disturbances,nonmodeled dynamics and uncertainties ,
+the deviation is inevitably engendered between matrixes
+P or 0 given by the nominal model and the feedback
+matrix required by the actual system,which results in
+the fact that the actual system is on longer a single
+channel decoupled system like equation (13). In stead,
+it becomes an uncertain coupling system as follows:
+Among them, f; (2;,z;) and By are uncertainties,
+and w refers to disturhances. Here, the real-time
+acceleration of the actual system affected by
+disturbances and uncertainties is extended into new
+states, which is named the extended system. Through
+designing the ESO, the actual system’s accelerations a
+made up of modeled dynamics,uncertain dynamics and
+unknown disturbance are estimated in real time.
+Equation (13) is always approximately established by
+compensating z with a in real ti me,which keeps the
+nice adaptability of the decoupling system with the
+changing flight state and the good decoupling relation
+between the input and the output through the whole
+flight envelope:
+The following formula can be gained by choosing
+So, the control function of the system (15) can be
+rewritten as follows.
+to the desired decoupling system (13),just as the
+Thus,the input and output decoupled relation of
+actual system affected by disturbances and uncertainties
+, is always established.
+The block diagram of precise linearization and
+decoupled system with ESO are as follows:
+Figure 2 The schematic diagram of improved linearization system
+Base on the improved linearization model above,
+the attitude controller can be designed easily through
+single channel design method which is used to design ,
+linear control system “ traditionally ,and attitude
+stabilization and servo control are achieved easily.
+4 The design of attitude stabilization
+loop based on ADRC
+Even though the input and output of attitude model
+which has been linearized through feedback
+linearization are linear,the model can be regarded as a
+decoupled linear system which let us be able to design
+the control loop by every single channel individually,
+but its dynamic characteristics can not be insured. By
+formula (13),we can easily find out that the system
+itself is series integral and critical stable. Its robust
+stability and dynamic characteristics can not satisfy the
+need of attitude control of GRV. In order to improve
+decoupling attitude control system’s dynamic control
+qualities and stability margin,we need to use control
+method such as pole configuration, state feedback and
+robust control to improve robust stability and control
+qualities of this decoupled generalized attitude system.
+Because we have already designed ESO in
+decoupling system, in this part, we use ADRC which has
+strong adaptability and robustness to uncertainty and
+disturbance to design the decoupling system’ s stability.
+steps: design of command transient process,design of
+ESO,design of state discrepancy feedback control law
+and design of disturbances compensation. Because the
+decoupling system shown in Fig. 2 had already regarded
+uncertainties and disturbances as residual couple and
+compensated them with summational disturbances, there
+is no need to add disturbance compensation loop into
+attitude stabilization loop,and at the same time,we can
+get attitude angle and angular velocity from the values
+measured by the inertia platform, so there is no need to
+use observed value either. All of the above have simpli
+fied the design process of ADRC attitude stabilization
+loop.
+Design of command transient process
+The command transient process is achieved by
+differential tracker. Considering that most of the existing
+control systems are digital control systems, here we use
+steepest discrete tracking differentiator to arrange the
+command transient process.
+Note the command of channel i (i=p N yr) 8S Yi rss
+its differential coefficient as y,_., the command transient
+function would be like the following:
+Where wk) is the transition of command Yer k ),
+vik) is its differential coefficient, e; ,(k }=,(k )~ y 兄 )
+is transition error,r, is the limit of command accelera—
+tion, is step size, Jh( +) is as below:
+Arranging the command transient process can
+compromise the difference between the system’s
+rapidity and overshoot,solve the control saturation
+which happens when the dynamic inverse decoupling
+control system encounters abrupt command change and
+improve the system 「s dynamic response characteristics.
+^ ? Design of state error feedback control law
+Define channel i s state error as:
+(三言="…_守′'(20)
+6i二设一2=V23
+Compared with the linear error feedback,the
+efficiency of nonlinear error feedback is higher. In this
+article we use segmented power function polynomial ei
+and e「 to compose error feedback law, at the same time,
+to replace 2a in control law shown in formula (18),
+namely:
+The definition of fal (- ) is the same as it is in .
+formula (16),meanwhile,0 一 a 一 1 一 az
+Reference [9] has demonstrated the theory that
+error feedback law shown in formula (21) is invariable
+to series—integral system’s uncertainties and distur-
+bances, and there is no need for us to discus it in this
+article.
+The error feedback law shown in formula (21)
+uses the method of small error with small feedback value
+and large error with large feedback value to complete the
+dynamic “contiguration ,accomplish attitude stability
+augmentation and improve dynamic characteristics. The
+guarantees the system's good servo tracking by
+balancing rapidity and overshoot. The block diagram of
+attitude decoupling system with stabilization loop is as
+below:
+Figure 3 The integrate diagram of decoupling control system
+5 Simulation results
+First-order actuator model with gust disturbance
+has been used in the mathematical simulation for GRV.
+Flight Mach number:M=5,flight altitude H=40 km,
+simulation step time was 1tms,parameters of the ESO
++ 8D
+were BuzBz= 10 ，′〔`翼lz=浮2z=2l ?Bi=Bx1=15.6 ,Bal=5 Bn=12,
+ys=7 ,6=0.01. The parameters of feedback control law
+for pitch,yaw and roll channel were the same,i.e. B
+=10,B2=18.6,ai=0.25,au=1.34. The Decoupling and
+dynamic performance was shown in Fig. 4,which has
+been studied through tracking the square signal.
+Figure 4 Attitude response curves of three channels
+The simulation in Fig. 4 has been repeated under
+circumstances shown in table 1 to validate the
+adaptability for uncertainties and disturbances. The
+maximum error and cross coupling level of roll channel
+was given in table 2 comparing with that of the standard
+circumstance.
+Table 1 Combination of uncertainty and disturbance
+〈r【l〕【】【】【亳簪】t〈i】】_…【1i^l〈_】f,1t【【】i(丨(】】′l薹【】)PamWinds
+State 1 +30 % +10 % (《+15,+5 ,+5 ) +15 % 20 m/s
+State2 -30% -10% (-15,-5,-5) -15% T=0.1s
+Table 2 The maximum error and cross coupling level relative to
+standard circumstance
+A? Ang Any Cross coupling
+State 1 0.311° 0.258° 0.510° 0.786°
+State 2 0.526° 0.632° 0.815° 1.231°
+The simulation results in Fig. 4 showed that our:
+method obtained high rapidity , stability ,and decoupling.
+The maximum response error with bias combination
+showed in Table 1 was 0.815° relative to that in Fig. 4.
+The response curve with bias combination was quite
+close to the result without that,and the cross coupling
+level was very low (<1.231° ),which showed the
+control qualities and decoupling in this paper performed
+good adaptability and robustness to the uncertainties
+and disturbances of the system,which could fulfill the
+requirement of engineering design.
+6 Conclusions
+Based on differential geometry and ADRC, this
+paper advanced a strong robust and adaptive attitude
+decoupling control method with active disturbance
+rejecting capability?for the glide reentry vehicle,and
+"studied the robustness,decoupling and control qualities
+under uncertainties and disturbances through
+simulation. The following is the study conclusions:
+@ The improved precise linearization method
+based on ESO obtained strong robustness and
+adaptability against the uncertainties and disturbances
+of system,with which the system could maintain good
+Input-Output decoupling relation under the complex
+control “circumstance,and further,it improved the
+engineering application of feedback linearization.
+@ The attitude stabilization control method based
+on ADRC improved the robustness of decoupling control
+system against uncertainties and disturbances,and
+advanced the control performance through reasonably
+arranging the command transient process and optimally
+designing error non-linear feedback law.
+@ This paper added new method for the linear
+design of complex coupling non-linear system,and
+lowered the strict boundary between linear and
+non-linear system in engineering design process.
+@ The method of this paper could be widely
+(上棉第77页)
+具体情况进一步修改完善。

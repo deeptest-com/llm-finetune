@@ -1,0 +1,271 @@
+无人机折叠翼展开动力学分析
+折叠翼的展开性能关系着箱式发射无人机在发射后能否正常的飞行。以箱式发射无人机折叠翼为研究对象,根据其结构及工作原理,建立展开机构运动的微分方程;利用LMS Virtual.Lab建立展开动力学模型,分析机翼在不同扭簧刚度下的展开过程,得到机翼展开角度、角速度、角加速度和冲击载荷曲线;利用橡胶进行减振并探讨阻尼系数对减振效果的影响。结果表明：机翼能够在设计要求的时间内展开到位并锁定,加入橡胶后的冲击载荷降低了46.7%,随着橡胶阻尼系数的增加,振动逐渐减弱。
+
+折叠翼 展开 LMS 动力学仿真 减振  
+
+doi: 10.1016/S1672-6529(13)60243-7
+1 Introduction
+The increasing takeoff and landing frequency of
+airplanes has generated significant noise pollution that
+disturbs people’s lives, so noise reduction has become a
+major issue in the design of aircrafts. A significant re-
+duction in jet noise was achieved by the introduction of
+high-bypass ratio engines around 1970. As a result, air-
+frame noise becomes relevant in the approach phase,
+where engines are throttled down. Past studies identified
+high-lift devices as dominant airframe noise sources[31
+Furthermore, the high-lift device noise source is domi-
+nated by a slat cove. Many researchers achieved slat
+noise reduction by using a cover, filler or liner to avoid a
+slat cove"), but the technologies were sensitive to
+high-lift performance and needed the support of new
+materials due to making the slat stowed in cruise. Clearly,
+it is very difficult that how to transfer these technologies
+to the design of conventional slats. It is well known that
+birds increase lift performance by alulae, and owls can
+even achieve silent l〔]igh′[[乏弓_】]]】 as shown in Fig. 1. Es-
+pecially, the owl flies at a high angle of attack like a
+landing aircraft, so the study of the owl is important in
+spite of the bird’s small size, mass and low flight speed
+compared with the airplane. Thus, from the point of view
+of the bionics, the paper attempts to build a new slat on
+the basis of owl wings in order to obtain the desired
+high-lift effect ensuring that a slat cove is avoided.
+Fig. 1 Picture (a) and sketch (b) of wings with the deployed
+alulae.
+Model tests were used to measure the lift per-
+formance of the natural wings with deflected alulae!'”.
+Nachtigall and Kempf!’! measured the lift and drag
+polars on the house sparrow wing. Meseguer ef aL[11did
+similar measurements on the pigeon wings. However,
+these three-ditmensional test models used were almost
+the same as the natural wings with deflected alulae, and
+thereby did not look like the real wings of aircrafts
+geometrically. This means that the high-lift effect of the
+alulae reported in the literature can not be directly ap-
+plied to the design of slats.
+geometry of the owl wing differs from those of other
+birds or technical airfoils. Liu et al. researched bionic
+airfoils extracted from non-contact surface measure-
+ments using a three-dimensional laser scanner including
+the camber line and thickness distribution of the airfoils,
+camber and the maximum thickness between adjacent
+profiles at the several spanwise positions of one scan
+was very high due to feathers sticking out ofthe wing or
+damaged feathers. Thus, the three-dimensional scanning
+model did not resemble the natural wing, and thereby the
+resulting airfoil did not embody the characteristic of the
+owl airfoil. Klan et al. made a further work with a least
+square fit for geometrical quantities in spanwise direc-
+tion yielding asmooth wing surface,and the geometry of
+mum camber and the averaged maximum thickness were
+used to build a bionic airfoil. However, the validity of
+the airfoil determined by the averaged quantities was
+limited, and hence the Root Mean Square (RMS) of the
+maximum camber and the maximum thickness should be
+introduced for mathematical formulation of the camber
+line and thickness distribution.
+The current paper makes efforts towards gaining a
+preliminary understanding of high-lift effect associated
+with a bionic slat without a cove. First, a bionic airfoil is
+extracted from a smoothed three-dimensional scanning
+model ofa long-eared owl wing. Then, a multi-element
+airfoil with a bionic slat is built by splitting the bionic
+airfoil. Third, the lift of the three-dimensional models
+with the stowed slat and the deployed slat are measured
+in a low-speed wind tunnel to characterize the high-lift
+effect of the slat, and the flow fields around the two
+models are visualized. Finally, two-dimensional simu-
+lation is used to complement the experiment.
+2 Material and method
+2.1 Construction of digital natural wing
+First of all, a long-eared owl wing was used for
+to photographs of owls in approach phase, the natural
+wing was fixed by a plastic frame, which will be re-
+moved from the three-dimensional scanning model of
+the wing.
+Fig. 2 Picture of a living long-eared owl wing.
+The scan was performed by a three-dimensional
+laser scanner (Fig. 3). The resulting model consisted of
+polygon meshes. Since the outboard part is very thin, it
+is not suitable for the technical wing, the part from the
+tip to alulae was deleted. Furthermore, the surfaces,
+which were resulted in by damaged natural feathers at
+the trailing edge or feathers sticking out of the wing,
+were smoothed by fitting so that the resulting distribu-
+tions ofthe camber and the thickness resembled those of
+the technical airfoil much better.
+2.2 Extraction of bionic airfoil
+After scanning, the model was divided into 21 cross
+sections along the spanwise direction with equal interval.
+The cross sections were decomposed into a camber line
+ULIYVSE 1EIQLHB a SIHOUULUL QLSUIDULULUILL AS JCC 111 UIC
+picture, “the camber of the wing considered here was
+increased compared with the camber of flying owls. For
+this reason, the results of Biesel ef al. were used to cor-
+RMS of the maximum camber was used for the poly-
+nomials describing the following camber line distribu-
+tion. Similarly, the RMS of the thickness was addressed
+by the same process.
+The mathematical formulation for the camber line
+camber line is used
+where #=x/c is the normalized chordwise coordinate,
+2zetmagy 18 the maximum camber coordinate, and C is
+the local wing chord. The thickness distribution is given
+by
+where z,max) 1s the maximum thickness coordinate, S,
+1 2 3 4
+Sn 1.503e 71 -2.841e 》 1.188 一
+An -1.912 4.005 3.451 1.091
+The upper and lower surfaces of an airfoil are ex-
+pressed as addition and subtraction of the camber line
+and thickness distribution, zupper=zte+z( and
+zlower-z(c-zt, respectively. The resulting bionic airfoil is
+depicted like a normal airfoil in Fig. 5. The characteris-
+tics of the airfoil and three-dimensional model are given
+in Table 2.
+(a)
+′/ J E E
+Me限咤咤c吴cP
+Table 2 Characteristics of the bionic airfoil and related
+three-dimensional model
+Description
+Chord 0.15 m
+Span 0.15m
+Wing area 0.0225 m*
+Max. thickness 13.89%
+Location of Zymax) 13.60%
+Max. camber 3.80%
+Location of z (max) 50.40%
+2.3 Extraction of bionic multi-element airfoil
+Because alulae consist of a few feathers, a profile of
+a bionic slat can not be determined by the above means.
+curve by the leading and trailing edges of the profile.
+Then, the lower curve was smoothed by a least square fit
+as an inner profile of a bionic slat. Moreover, the inves-
+tigation assumed that the leading edge of the bionic
+multi-element airfoil, the starting point of the inner pro-
+file of the bionic slat, and the starting point of the lead-
+ing-edge profile of the main wing were at the same lo-
+cation. The bionic airfoil was divided into the bionic slat
+and main wing by the inner profile (Fig. 6a). Thus, the
+end point of the inner profile of the bionic slat, the outer
+profile of the bionic slat, the end point of the lead-
+ing-edge profile of a main wing, and the leading-edge
+profile of the main wing were obtained, and these end
+points also were located on the same position with the
+trailing edge of the bionic slat. Therefore, the bionic slat
+without a cove and the bionic multi-element airfoil were
+determined.
+(a)
+three-dimensional multi-element model are 0.15 m
+slat and the deployed slat were manufactured by rapid
+manufacturing and prototyping system from Stratasy
+Inc.
+Table 3 Geometrical settings of bionic slat
+Angle Gap Overhang
+1 0.9% 20%
+2.4 Measurement
+mm, as shown in Fig. 7. Lift force was measured by a
+three component load cell. Because the sting jointed to
+the three component load cell was covered by the model
+configuration, there was hardly any aerodynamic force
+of the sting in the measurement. It was ensured that the
+relative error of the three component cell was less 1%.
+The wind tunnel was also used as a smoke wind tunnel
+by installing laser sheet generator. The smoke lines were
+generated by engine oil dropping on an electrically
+heated 0.1 mm nichrome wire moving downstream with
+smoke lines can be clearly displayed. The measurement
+林东用规沥东东沥技东WAALRLLIVERL规野仁野许伟东一7沥东My
+flow. The computational domain of the airfoils extends
+to 20c in the upstream direction, 24c in the downstream
+direction and 30c in the crosswise direction (Fig. 8). The
+fect in the incompressible flow regime. The no-slip wall
+boundary condition was applied to the airfoils. Quadri-
+lateral grids with C-type were employed for the simula-
+tion because they generate less numerical diffusion than
+triangular grids. The grid size is small enough to capture
+the interesting flow structures. Further node savings
+were achieved by specifical clustering nodes near the
+wall. For instance, the node distribution at the wall
+yields non-dimensional wall distances y「 <0.4 every-
+where.
+In this paper only the models and airfoils with
+constant geometry parameters were considered, since it
+is the purpose of this investigation to reveal the high-lift
+effect of the bionic slat. The variable parameters of the
+bionic slat will be analyzed in the future.
+where L is the lift, p is the density of the air, U is the
+freestream velocity, S is the wing area. Fig. 9 shows the
+distribution of the lift coefficient CL over angle of attack
+a. The graphs clearly depict that the higher the Re, the
+larger is the maximum lift coefficient. In addition, the
+lift coefficient for the stowed slat is larger than that for
+the deployed slat at as4 . In nature, real alulae can dy-
+model used here are fixed in the experiment. Thus, the
+slat works more like a spoiler at low angles of attack.
+However, the model with the deployed slat generates the
+with alulae deflected.
+The gradient of the lift coefficient for the stowed
+slat starts to drop obviously around a = 4°. It implies that
+the leading-edge boundary layer is separated due to the
+adverse pressure gradient downstream of the suction
+peak. “It is characteristic for this kind of separation that
+its chordwise extent on formation is very small at low
+angles of attack, approximately 2%—3% chord length,
+and that it grows rapidly at increasing angles such that at
+cient for the deployed slat also decreases around a = 14°,
+It indicates that the leading-edge separation still occurs.
+3.2 Flow visualization
+To further verify the findings of the lift coefficient,
+the smoke wire technique was applied. The visualized
+flow field evidenced that the boundary layer around the
+leading edge of both models was separated, as depicted
+in Fig. 10. Then, the separated shear layer rolls up
+forming a vortex due to Kelvin-Helmholtz (K-H) insta-
+bility. It re-energizes the low-velocity flow on the near
+wall, and thereby reattachment occurs. However, the
+related two-dimensional steady simulation around the
+airfoils was not able to capture separated flow (Fig. 11),
+since the separation was a highly unsteady and spatially
+oscillating process. Thus, the related two-dimensional
+unsteady simulation around the airfoils can clearly show
+the leading-edge separation (Fig. 12). This instantaneous
+velocity vectors colored by static pressure suggests an
+end of separation in both cases where the bubble is
+closed. Interestingly, the similar evolution was found on
+the lower surface indicating a separated flow. This
+separation was caused by the high thickness close to the
+leading edge resulting in a high curvature of the lower
+surfaces of the airfoils.
+For the airfoil with the stowed slat, a large-scale
+vortex detached from the downstream end of the bubble
+and drifted downstream. Later, moving further down-
+E春B国命命命命吴吴命命咤
+on the upper surface of the slat (Fig. 14). This seems
+responsible for the decrease in the gradient of lift coef-
+ficient with the deployed slat in Fig. 9.
+4 Conclusion
+The high-lift effect of a bionic slat was investigated
+before extending the current study to include noise
+mechanism. The two-dimensional airfoils with the
+stowed bionic slat and the deployed bionic slat were
+extracted from the three-dimensional scanning model
+of a long-eared owl wing. Then, the related
+, three-dimensional models were measured to character-
+ize the lift performance in wind tunnel. The lift coeffi-
+cient evidences high-lift effect of the bionic slat at high
+angles of attack. Furthermore, the deployed slat can
+contribute to increasing the maximum lift coefficient
+and stall angle, and postponing the decrease in the gra-
+dient of the lift coefficient. The smoke lines around both
+The investigation of the bionic slat without a cove
+is important for the design of slats. Moreover, it is nec-
+essary how to transfer the high-lift effect to the designs
+and even come up with the silent flight. Therefore, we
+will consider the model with the variable geometrical
+settings and the related noise reduction in future.
+Acknowledgment
+This research is supported by the National Natural
+Science Fund of China (No. 31071928).

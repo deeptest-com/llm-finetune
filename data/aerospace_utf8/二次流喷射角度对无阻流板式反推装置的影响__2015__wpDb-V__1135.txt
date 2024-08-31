@@ -1,0 +1,238 @@
+二次流喷射角度对无阻流板式反推装置的影响
+对一无阻流门叶栅式反推装置的流场进行了数值与实验研究,详细分析了不同二次流喷射角度对反推性能参数的影响。结果表明二次流喷射喷射角度影响进入反推窗口的气流方向和气流质量,会对反推性能产生影响。存在一个最佳的二次流喷射角度,能使得反推效果最好。当射流顺着风扇气流的偏转方向进行喷射时会产生最大的射入深度,进而使得更多的风扇气流通过反推窗口偏转出去,表现出最优的反推力性能。
+
+无阻流门叶栅式反推装置 二次流喷射 喷射角度 反推力性能  
+
+0“引言
+新一代航空发动机要求具有更高推重比.更高可
+靠性和更长寿命。而发动机推力的增大在很大程度
+-依赖于涡轮前清度的提高2。推重比为15~20的发
+动机的涡轮前进口温度最高达2250~2350K4。镇
+基高温合金作为航空发动机涡轮导叶的常用材料,其
+最高工作温度为1100“心,已经达到其使用温度的极
+限(初熔点的8595)6。能耐1100一以上高涵的只有
+碳/碳复合材料(C/C)和陶瓷基复合材料(CMC)。但
+,是C/C在高温燃气环境下容易被氯化0,而CMC具有
+,耐高温.耐腐蚀密度小8的优点,是研制高混涡轮导
+,叶的理想材料。目前,很多机构研发了陶瓷基复合材
+,料涡轮导叶,并进行了试验:NASAGlenn研制的
+,SICHSIC涡轮叶片可使冷却气流量减少15%~25%,
+,并通过了燃烧室出口气流速度为60m/s.6.06x10°
+,MPa和1200“下的环境试验考核";MATECHGSM
+,公司研制的全CMC涡轮导向器的最高使用温度为
+,1400CM,{AECMC韧性很差,其断裂韧性很难超
+,过25MPa「ml2ltl。而金属骨架陶瓷基复合材料涡弟
+导叶的设计思想不仅继承了CMC的优点,还克服了
+其韧性差的缺点。金属骨架陶瓷导叶由陶瓷叶型、隔
+热层和金属骨架组成,叶型和内.外侧壁(上、下缘板)
+均由陶瓷制成“9。德国的Krger等人早在1989年就
+提出了混合式导叶(就是现在所说的金属骨架陶瓷基
+复合材料涡轮导叶)的思想吊;美国PW和UTRC公
+司以FT8导叶为基础,设计了带内部冷却的金属骨
+架陶瓷基复合材料涡轮导叶,其表面最高温度达到
+1316K0口,可满足涡轮前温度1649“化的要求,同时
+使冷却气流量减少了159~25%.
+本文综述了国内外对金属骨架陶瓷基复合材料
+涡轮导叶的研究进展。
+1“金属骨架陶贼导叶的热变形协调
+金属骨架的热膨胀系数要比陶瓷叶型的大10%
+以上山,因此在高温燃气的冲击下,二者热变形不华
+调,在陶瓷叶型上产生附加热应力。按位置的不同,热
+变形协调问题可以分为周向和径向2种。
+1.1“周向热变形协调问题
+通过改变陶瓷叶型与金属骨架沿周向的接触方
+式(柔性接触和点/线接触)即可缓解二者的周向热
+变形协调问题。
+1种带柔性接触的金属骨架陶瓷基复合材料渺
+轮导叶08如图1所示。该导叶主要由高温涂层陶瓷
+叶型.金属骨架和金属尾缘组成。陶瓷外壳主要承受
+外界高温,金属骨架主要承受机械负荷,一者热变形
+的不匹配可以通过波形弹簧(如图2所示)的变形来
+缓解。当金属骨架的变形量大于陶瓷叶型的时,波形
+弹簧就会通过变形来吸收能量,减小作用于陶瓷叶型
+的附加热应力.另外,在金属骨架里还通有冷却通道,
+通过降低金属骨架的工作温度来减少其热膨胀量。该
+导叶的分解装配如图3所示。
+图 1 带柔性接触的金属骨架陶瓷基复合材料涡轮导叶64,囹5带点/线接触的金属骨架陶瓷基复合材料涡轮导叶I
+,变形不协调而产生的能“图2带冷却孔的波形弹簧口
+,属骨架进行冷却,减小
+,金属骨架的热膨胀。图3带柔性接触的金属骨架
+:陶瓷导叶的装配[9
+'图4带金属网套的金属骨架陶瓷导叶川
+1.2“径向热变形协调问题:
+减少了陶瓷叶型与内外支撑板的刚性接触,在一定程“
+度上缓解了金属骨架陶瓷导叶沿径向的热变形不协调,
+材料的变形不协调通过
+问题。:
+弹性垫圈来调节。
+通过结构方式的设计也可以减少陶瓷叶型与金属“固相扩散焊法2主要利用活性金属(如ZrTi)
+的刚性接触。文献[22]中的陶瓷导叶中的陶瓷叶型贯,在固态下与SiC反应,形成Ze和Ti的碳化物与硅化
+穿内外陶瓷支撑板(如图7所示)。这种结构不存在径,物,从而实现连接;李树杰等台用Z/Nb复合中间层
+向变形协调问题,在陶瓷叶型与支撑板的连接处也不,连接SiC陶贼与Ni基高温合金的试验表明,在焊接
+会产生周向变形协调问题,但是陶瓷与陶瓷的连接问,压力为11.2MPa、焊接温度为1070C、保温时间为
+题还有待解决。,20min时,接头部分的最高抗弯强度达到了SiC母材
+图 7 陶瓷叶型贯穿内外陶瓷支撑板的导叶凶
+|VenkatVedula等L4利用试验测定材料属性,由数
+2“金属与陶瓷基复合材料连接问题
+金属与陶瓷基复合材料的理化性质差异很大,如
+,构导叶外壳的宏观应力分布,如图10所示。
+何将二者连接起来并且形成具有一定强度的接头一
+直是个难题出。为此,必须解失化学相容性与物理匹
+配性的问题。前者是指在接头处能形成较强的化学
+键;后者是指连接材料的热膨胀系数、弹性模量等能
+在连接界面附近区域形成良好地匹配B4。
+金属与陶瓷基复合材料的连接机理主要有物理、
+机械和化学反应逊接机理;主要方法有机械连接法、
+,“图9陶贼外壳温度分布14国10陶贼外壳高层间
+固相扩散焊法.液相法.先驱体法和反应成形法等Pal。
+_局部应力口
+其中,机械连接法主要通过在陶瓷和金属上开孔,再
+,DavidN.Brewer萼隼[3{)]才【艮据文葡亡[4〔)]中发动机环境
+用螺栓或销钉等来进行连接,会出现局部应力集中,
+,状态下的分析结果,给出了陶瓷外壳的宏观应力分
+在高温下陶瓷很容易失效等问题,为此需要增加一定
+,布,如图11所示。最大应力值出现在内腔后倒角处,
+过试验测定任意结构的宏观力学性能参数明显不合
+实际。复合材料细观力学分析方法的应用,使其组观
+结构与宏观性能参数直接关联,通过数值计算复合材
+料细观结构模型,就可以获得宏观等效力学性能参
+数.另外,当宏观结构应力分布确定后,根据宏细观参
+数间的关系,可以获得复合材料细观结构应力场分
+布,才能从细观角度确定结构的强度和奂命。
+雷友锋等根据能量等效原理,利用细观力学有
+限元法从细观结构获得复合材料宏观力学性能参数。
+该方法要求求解单胞模型的边界条件为均匀力或位
+移边界。孙杰等58在复合材料导向叶片的结构与材料
+一体化优化设计中,也利用上述方法从细观结构获得
+宏观复合材料等效力学性能参数。然而,仅从细观结
+构获得宏观等效参数,不能满足复合材料强度和寿命
+分析的要求。
+B.Hassanif48先后发表了3篇关于均匀化理论
+的文章,系统介绍了宏绍观不同尺度建立参数关系的
+理论,冯淼淋2刹用均匀化理论,从复合材料细观结
+构确定其宏观等效材料伯能参数,得到了与试验结果
+较为昆合的预测结果。孙志刚史发展了1种对复合材
+料结构进行宏细观一体化分析的多尺度有限元法,并
+将通用单胞模型融人通用有限元程序系统,实现了复
+合材料结构的宏观-细观一体化分析。该方法既考忠
+了细观结构特征对宏观性能的影响,又可在结构分析
+中获得宏观应力和应变场的同时,获得组观应力和应
+验装置如图12所示。先“图12热冲击试验装置口
+,用电炉加热(T=1773K),孝通过气动传输装罡把叶
+,片放到准备好的冷却装置(7=293K,pu=1MPa)中冷
+,却。陶瓷叶片表面温度的变化通过红外辐射热像仪来
+,记录。
+,NASA格林研究中心作了关于SiC/SiC导旨与高
+,温合金导叶的恒温对比和热冲击疲劳对比试验史,均
+,采用水冷,如图13所示。
+,图13“SiC/SiC导叶试验装量口
+「在恒温试验中,压力为6.06x10°MPa,REN
+,1200必,燃气流量为0.5kga,燕气流速为60nys。经
+,过50h,高温合金导叶出现了明显损坏,CMC导叶未
+,见可视的损坏。经过计算机断层扫描,发现CMC导叶
+,表面有部分材料崩落,如图14所示。
+,(a)试验航(b)试验后
+:图14“恺涨试验计算机断屋扫描i
+1在热冲击疮劳试验中,最低温保持45s,然后在
+,15s内加热到最高温(燃气温度为1420;C,叶片表面
+,温度为1320“),在最高温下保持45s后,再在15s
+,内冷却到最低温。经过如此102个循环后,高温合金
+,导叶发生了严重损坏,而CMC导叶只是表面有沉积
+,物出现,如图15所示。通过计算机断层扫描分析发现
+CMC导叶损伤不大,如图16所示。|
+35-37. (in Chinese)
+4“结束语二1300“K湿氧环境中的疲劳行为J].复合材料学报,2009,8
+二二熹熹量菖膏藿茎苎戛i茎槽亡j丕叠茎薯l〕萱'不曹呈〕_鼻量j′皇叠壹T彗蛋二茎盲亘萱兽禾言量,鼻彗fe—LL
+陶资叶型与金属骨架的连接.埔小导叶尾缘的应力集,[s]李爱兰,曾取榕.航空发动机高温材料的研究现状[材料
+中,以及用于挡导工程应用的强度分析和寿命预测等,
+导 报 ,2003,2(2):26-28.
+关键技术。|
+LI Ailan,ZENG Bi anrong. Current research status of high
+4 n
+[1] 董 晓 琳 , 刘 华 伟 . 推 重 比 15 ~ 20 发 动 机 总 体 结 构 关 键 技 术 , [9] Verrilli M J, Robinson R C. Ceramic Matrix Composite vane
+探索[CV/中国航空学会第七届动力年会论文集.北京:中国,
+subelements tested in a gas turbine environment[R] America:
+DONG Xiaolin, LIU Huawei. Exploration in key technology of ,
+[10] Yun H M. Advanced preform approaches for complex—shaped
+engine overall structure which thrust-weight ratio is 15-20[C]// .
+CMC turbine components[R]. NAVAIR Public~N05-096.
+and Astronautics. Beijing:Chinese Society of Aeronautics and ,
+稀 有 金 属 , 2008,2(1):101-105.
+Astronautics .2010:4-6.(in Chinese) : XIONG Kun,XU Guangliang,LI Dongmei. Strengthening
+[2]王云.航空发动机原理M).北京,北京航空航天大学出版1tougheningtrendofSiCceramiccompoundphase[J].Chinese
+社 ,2009:3. 】
+Journal of Rare Metals, 2008,2(1):101-105. (in Chinese)
+WANGYun.Principleofaeroengine[M],Beijing:Beihang,[12]陈炳贻.国外陶瓷静子叶片的设计和实验[航空制造技
+University Press,2009:3. (in Chinese) A ,2001(1):38-40.
+[3]沙江波.Nb-Si基超高温合金研究进展[JI航空制造技术,
+1 CHEN Bingyi. International design and test of ceramic stator
+(14):58-61. (in Chinese) , and reliability evaluation of a hybrid ceramic stator vane for
+[4]江和甫.对涡轮盘材料的需求及展望[燃气涡轮试验与研,industrialgasturbine[J].JournalofEngineeringforGas
+究 ,2002 ,15(4):1-6. , Turbines and Power,1995,117(2):245-250.
+JIANG Hepu. Requirements and forecast of turhine disk , [14] Vedula V, Shi Jun, Jarmon D, et al. Ceramic Matrix
+materials [J]. Gas Turbine Test and Research,2002,15(4).
+, Composite turbine vanes for gas turbine engines [CMASME
+1-6. (in Chinese)
+[5]周永军,王瑞丹.镇基超合金的发展和研究现状[沈阳航
+「 2005:6-9.
+空丁业学院学报,2006,2(1):35-37.
+ZHOU Yongjun, WANG Ruidan. The development and
+1 Matrix Composite gas turbine vane:US,6709230 [P].
+research status of Nickel-based super alloy [J]. Journal of
+1 2004-3-23.
+vane assembly apparatus and method: US,2010/00608034
+, Journal of Silicate, 2002,6(3):305-310. (in Chinese)
+Al [P] 2010-3-18.
+[17] Uskert R C, Freeman T J, Thomas D J. Turbine vane for gas
+turbine engine: US,2010/0166565 A1{P]. 2001-7-1.
+' GT-90833.
+[18] Morrison J A, Merrill G B, Lane ] E, et al. Ceramic
+,[31]雷友锐.纤维增强金属基复合材料宏一细观统一本构模型
+composite vane with metallic substructure: US, 6,514,046 B1
+董及应用研究[D]南京:南京航空航天大学,2002.
+(P]. 2003-2-4.
+[19] Prill L A,Schaff J R,Shi Jun. Ceramic Matrix Composite
+, constitutive model and its applications for fiber reinforced
+turbine engine vane: US,2009/0003993 Al[P]. 2009~1-1.
+1 metal matrix composites [D].Nanjing:Nanjing University of
+[20] Prill L A, Schaff J R, Shi Jun. Ceramic matrix composite
+, Aeronautics and Astronautics , 2002.(《in Chinese)
+turbine engine vane: US,8206098 B2 [P]. 2012-1-26.
+,2]孙杰,宋迎东,孙志刚.复合材料导向叶片的结构与材料一
+[21] Schaff J R, Shi Jun. Ceramic Matrix Composite turbine
+,体化优化设计[固体力学学报,2011,12:595-602.
+engine vane: US ,8210803 B2[P]. 2012-7-3.
+[22] Widrig S M, Morrison J, Albecht H A,et al. Ceramic Matrix
+, optimization design of stucture and material of composite
+Composite turbine vane: US,6648597 B1{P]. 2003-11-11.
+[23]张勇,何志强,冯涤.金属与陶瓷连接用中间层材料[钢
+, 595-602. (in Chinese)
+铁 研 究 学 报 ,2007,2(2): 1-4.
+ZHANG Yong,HE Zhiqiang,FENG Di. Recent progress of
+, ogy optimization, I -homogenization theory for media with pe-
+interlayer used to join metals and ceramies[J]. Journal of Iron
+and Steel Research ,2007 ,2(2):1-4. (in Chinese)
+「 707-7117.
+[24]杨宏宝,李京龙,熊江涛,等.陶瓷基复合材料与金属连接
+, [34] Hassani B,Hinton E. A review of homogenization and
+的 研 究 进 展 [J 焊 接 ,2007,11(12):19-23.
+YANG Hongbao, LI Jinglong, XIONG Jiangtao, et al. Re-
+( homogenization equations [J]. Computers and Structures,
+, 1998,69:719-738.
+nections[J]. Welding,2007,11(12):19~23. (in Chinese)
+, [35] Hassani B,Hinton E. A review of homogenization and topolo-
+, gy optimization, III-topology optimization using optimality
+a metal structure:US,4438626[P].1984-~3-27.
+[26]张建军,李树杰,段辉平,等.用Zr/Ta复合中间层热压扩散
+,[36]冯淼林,吴长春,孙慧玉.二维均匀化方法预测编织复合材
+二料等教弹性模量[J材料科学与工程,2001(3):34-37.
+2002,31( 增 刊 1):393-396,
+Physics B, 2003,17(8-9):177-178. China, 2000. (in Chinese)
+thermonuclear fusion application [J]. Journal of Nuclear ,
+研究[D].南京:南京航空航天大学,2005.
+Materials, 1996,233-237:949-953.
+SUN Zhigang. Research on a high-fidelity unified macro—
+[29]贵小强,李树杰,马天宇,等.用ZoNb复合中间层连接SiC|
+and micro—mechanics constitutive model and its applications
+陶瓷与Ni基高温合金[小硅酸盐学报,2002,6(3):,
+JI Xiaogiang,LI Shujie,MA Tianyu,et al. Joining of SiC to 「

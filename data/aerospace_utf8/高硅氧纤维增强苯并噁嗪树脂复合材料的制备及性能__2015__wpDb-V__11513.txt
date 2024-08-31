@@ -1,0 +1,200 @@
+高硅氧纤维增强苯并噁嗪树脂复合材料的制备及性能
+以苯并噁嗪为基体树脂,短切高硅氧纤维为增强材料,制备了一种模压用复合材料。研究了该树脂的热性能、固化动力学性能及力学性能。结果表明,苯并噁嗪增强高硅氧纤维混合物随固化温度升高工艺窗口未发生显著变化,利用Kissinger、Crane法得到固化反应活化能为69.619 kJ/mol,反应级数为0.95。复合材料拉伸强度为35.5 MPa,,压缩强度为196 MPa,线烧蚀率为0.14 mm /s.
+
+苯并噁嗪 高硅氧纤维 热性能 动力学 力学性能  
+
+0 Introduction
+Polybenzoxazines (PBzs) is a relatively new class of
+thermosetting addition-cure phenolic resins developed in
+the recent 〉′(…霍直IrS[l_5]. These newly developed resins pos-
+sess special features, such as near-zero shrinkage upon
+curing, low water absorption, high char yield, no strong
+acid catalysts required for curing,and release of no by-
+products during curing'? . Benzoxazines( Bzs can be pre-
+pared by the Mannich-like condensation of different types
+of phenol, formaldehyde and an amine,either by emplo-
+ying solution or solventless methods, so the molecular
+structure of polybenzoxazines offers enormous design flexi-
+bility, which allows the properties of the cured materials
+to be tailored for a wide range of applications. They have
+gained great interest because they have the capability to
+exhibit the thermal and flame retardance properties with
+mechanical performance and molecular design flexibility.
+PBzs resins are widely used in various applications to the
+needs of the high technology aerospace industry.
+High silica glass fiber ( HSGF ) reinforced plastic
+composite has comprehensively excellent properties, which
+has been broadly used in aerospace, astronautic and
+transportation fields in the past few years.As structure ma-
+terial ,high silica glass fiber are commonly combined with
+epoxy resin by molding process, the fibers impregnating
+with resin and molding on the tools deviate greatly from
+—699一
+tems. amines catalyst or epoxy-amines catalyst decreased
+significantly benzoxazine thermal curing temperature. The
+flexural strength and flexural modulus of molding com-
+pound of the system is 565 MPa and 22.7 GPa respective-
+ly, and the glass transition temperature is 195.31 匕 ,
+higher than that of common phenolic.
+In the present works, the properties and processing
+of high silica glass fiber reinforced PBzs resin composite
+are studied, using differential scanning calorimetry
+(DSC).
+1 Materials and methods
+1.1 Materials
+High silica glass fiber is provided by Shaanxi HuaTe
+glass fiber co., LTD, China; B,; is purchased from Si-
+chuan University, the structure of the Bx。and PB, is
+shown in Fig.1.All chemicals are used without further pur-
+ification.
+Fig.1 Preparation of polybenzoxazine from
+typical benzoxazine monomer
+1.2 Preparations of samples
+for 2 h to reduce the moisture and cut into equal length of
+30 mm. Certain amount of high silica glass fiber is added
+into the system composed of Bz:. High silica glass fibers
+are homogeneously blended with the B to the weight ratio
+of 60/40. In order to achieve homogeneous dispersion of
+the high silica glass fiber into Bg, the resulting mixtures
+of HSGF and By are stirred for 24 h at room temperature
+and dried for 1 h at 80 °C. In molding process, the mold,
+measured 165 tmmx165 mm, is first coated with silicone.
+High silica glass fiber weighing 60% of the composite are
+filled in the mold and then cured at a higher temperature
+between 200~220 °C for a fixed time.
+一700—
+min in nitrogen atmosphere and a sample mass of 5~6 mg
+in aluminum pans is used. The blends are dried under
+vacuum at 323 K for 1 h before DSC analysis.
+1.4 Strength characterization
+The mechanical properties of the composites are eval-
+uated by using the state standard of the People’s Republic
+of China ( GB) test procedure. The standard test speci-
+mens are machined from the composite. Tensile strength
+and compressive strength test are carried out on INSTRON
+Testing Machine Model No.4505.
+1.5 Microstructure analysis
+The microstructures of the tensile specimens are ex-
+amined by using scanning electron microscope ( SEM),
+Japan model JSM 6460LV.
+1.6 Ablation characterization
+Ablation properties( GJB-323A-96) are tested by the
+oxygen-acetylene ablation test, the test specimen size is
+$30 mmx30 mm, ablative time is 20 s.
+2 Results and discussions
+2.1 Cure profile by DSC
+2.1.1 B,, monomer and B_/ HSGF mixture
+Thermal curing of the benzoxazine monomers forms
+the corresponding polymer PB, with ring-opening of the
+oxazine of the two monomers. The curing behavior of B,,
+monomer in the present of HSGF is monitored by DSC.
+The DSC curves of B,, and B,,/HSCF mixture. The DSC
+thermogram of B,, monomer shows a typical sharp curing
+exotherm with a peak (T,) located at 205 °C attributed to
+the benzoxazine ring-opening polymerization, and with a
+final cure temperature( 口 ) located at 250 °C. On the
+other hand, the B,/ HSGF mixture show a curing exo-
+therm with a peak (T,) located at 204 °C, and with a fi-
+nal temperature ( T;) located at 250 °C. This could attrib-
+ute to the non-catalytic effect of HSGF surface group on
+the B,, monomer ring-opening reaction.
+The enthalpy of reaction of B,, monomer and B /
+HSGF mixture are 134.4 J/g and 110.7 J/g, respectively.
+The cure behavior of B,,/HSGF mixture investigated
+by DSC at different heating rate is shown in Fig.3. The
+endotherm that corresponds to melting is observed at 98
+°C. The initial curing temperature ( T;) , peak curing tem-
+perature (T,) and final temperature ( 7 rise with the
+increase of heating rate. The initial curing temperature at
+154.9 史 , 161.9 化 , 167.7 C, 168.7 C indicates a con-
+trollable curing window (CCW) of 77.9 “ 80.7 °C, ,81.
+4 °C, 84.7 °C, respectively. The CCW implies the control
+over processing. As the heating rate increases, the window
+dont change significantly. This could be attributed to the
+HSGF conductivity limiting the thermal effective transmis-
+sion. From the results, the development tendency of the
+CCW are different from other reported works'?). The cu-
+ring characteristics of B ,/HSCF mixture are summarized
+in Table 1.
+The nonisothermal kinetics for the B,,/HSGF mixture
+are investigated by the Kissinger and Crane method ,
+Crane method!” *
+Where J is heating rate; T, is peak curing temperature;
+E is the activation energy ;n is reaction order; 尸 is the uni-
+versal gas constant.
+Table 1 DSC observations of B,,/HSGF mixture
+10 161.9 212.5 242.6 80.7
+15 167.7 216.8 249.1 814
+As the multiple heating rate methods for non-isother-
+mal analysis proposed by Kissinger and Crane can be used
+as an alternative way of calculating the activation energy
+without assuming any model of kinetic parameters, the
+logarithm plots of heating rate versus the reciprocal of the
+absolute peak temperature of B,,/HSCF mixture are given
+in Fig.4 and Fig.5. Results show that a good linear rela-
+tionship between the heating rate and the reversal of the
+exothermic peak temperature can be obtained. The aver-
+age activation energy values of B,,/ HSGF mixture are
+calculated from the slopes of the plots. B,,/HSGF mixture
+shows only one dominant curing kinetic process with the
+average activation energy of 69.619 kJ/mol, reaction or-
+der is 0.95, which mean fhat the reaction is complex. This
+mechanism is the heterocyclic ring opening polymerization
+of benzoxazine monomer since the oxazine ring is the reac-
+tive site for curing of the benzoxazine.
+The mechanical strength of B,,/HSGF composite
+specimens are shown in Table 2. If the mechanical proper-
+ties of B,./ HSGF composite are compared with a kind of
+structural phenolic resin/HSGF system commonly used,
+the compressive strength and ablation rate are in the same
+level, tensile strength of B_/HSGF composite is better
+than that of the phenolic resin/ HSGF composite.
+Table 2 Mechanical and ablation properties of B,,/HSGF
+and phenolic resin/HSGF composites
+resin/ HSGF
+B,/HSCF 35.5 196 0.14
+The strength and mode of failure of a composite are
+not only dependent on the properties of the fibers and ma-
+trix, interfacial bond, and fiber volume, but also on the
+fiber orientation". The prepreg of phenolic resin/HSGF
+and B,,/HSGF employ same preparation technology, HS-
+GF present disorder state,which mean fhat fiber show ran-
+dom orientation in the matrix. The appearance of the
+prepreg of B_/ HSGF is given in Fig.6. In the same pre-
+paring condition, the different resin properties become the
+key factor influencing composite mechanical properties.
+fibers together and transmit load and stress, the interface
+between matrix and fibers is the key factor influencing the
+property of composite.The fracture surface of the B ,/HS-
+GF composite and phenolic resin HSGF composite is ob-
+served by SEM to analyze stress states from the SEM pic-
+tures( Fig.7 , the fibers are evenly dispersed in the ma-
+trix,the fibers and matrix break uniformly and the fracture
+surface of the specimens are well arranged, which show
+that the fibers and resin matrix can bear load together.
+Compared to the existing phenolic resin HSGF, tensile
+strength of the B,/HSGF is generally increased by
+51.1%, compressive strength of the B,/HSGF is reduced
+by 4.8%. As the toughness of phenolic resin/HSGF is not
+very good, the stress loaded on the composite specimens
+would induce cracks in the matrix as well as the interface
+between fibers and resin. Cracks in the composite occur
+primarily by interfacial failure with little crack-tip deform-
+ation. The microstructure in Fig. 7 shows that the fibre
+bundl, entangle or curl in the matrix, HSGF fibers are
+pulled out on the fracture surface binding with very few
+resin ,which show that the interface condition between HS-
+GF fiber and phenolic resin is not very good.
+(a) B,/HSCF (b) Phenolic resin/HSGF
+Fig.7 SEM morphology of B,,/ HSGF and
+phenolic resin/ HSGF composite
+The ablation results of two kinds of composites are
+listed in Table 2. the data in Table 2 shows that the abla-
+tion rate of phenolic resin/HSGF and B,,/HSCF compos-
+ites is 0.15 mm/s, 0.14 mm/s, respectively. anti-ablative
+performances of B,,/HSCF composites are slightly better
+than that of phenolic resin/ HSGF, the ablation morpholo-
+gies of composites are plotted in Fig. 8. The ablation
+process includes two stages, the first stage presents de-
+composing the primary products such as benzene deriva-
+tives, amines, phenolic comounds and Mannich base

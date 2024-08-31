@@ -1,0 +1,244 @@
+踏平坎坷  不辍探索——美将再次发射火星车
+由于运行位置的原因,人类发射火星探测器要“相机行事”。适时发射可以使探测器在飞往火星时既省时,又省力。这样的机会一般每两年多才出现一次。为了加紧探索火星,美国几年前设立了火星勘测
+
+火星表面 火星探测器 轨道器 着陆器 火箭发射 勘测 火星探路者 漫游 探索 科学家  
+
+INTRODUCTION
+Micro-electro mechanical system based iner-
+tial system (MEMS INS) using MEMS inertial
+sensors inherits the outstanding features of the
+conventional INS, i.e. ,small size, light weight,
+low power, long life cycle, high reliability, and
+affordable cost. Unfortunately, due to the imma-
+turity of current manufacturing techniques of sen-
+sor, the unexpected fast error propagation pre-
+vents MEMS INS from being one of comfortably
+autonomous navigation systems with long term
+accuracy’. The coupling of global navigation
+satellite system (GNSS) and INS overcomes each
+of their limitations[ 。 Wireless fidelity 《 WiFi)
+has been gradually employed by vehicle positio-
+ning technologies’. Far beyond an auxiliary po-
+sitioning source, WiFi is herein used to improve
+the integrity of MEMS INS/GNSS integrated sys-
+tem when the vehicle travels in urban canyon en-
+vironment with severe multipath.
+Foundation item: Supported by the National Natural Science Foundation of China (61173076).
+Received date: 2012-12-19; revision received date; 2013-02-23
+Corresponding author: Liu Hua, Lecturer, -mail;sogoliu(G@8163. com,
+1 FEDERATED KALMAN FILTER
+IN WIFI/MEMS INS/GNSS IN-
+TEGRATED SYSTEM
+1.1 Overview
+A WiFi pair consists of an access point(AP)
+and a signal receiver, neither of which is exclusive
+to the other. WiFi presents positioning capability
+indirectly by means of its AP media access control
+(MAC) address information rather than the time
+of arrival (TOA) technique which is typically
+used in the cell phone positioning, Its receiver
+module is able to distinguish the signal quality
+based on the received signal strength indicator
+(RSSI), a measurement of the power present.
+The geodetic coordinates of AP and RSSI of wire-
+less signal are generally broadcasted by its radio
+signal. The accuracy of WiFi positioning is a-
+round 30 m in circular error probability (CEP),
+The WiFi signal centers at 2. 4 GHz without in-
+terference with GNSS signals and its strength
+ranges from — 50 dBm to 一 90 dBm which is
+much stronger than GNSS signals. Although the
+WiFi signal is discontinuously available, approxi-
+mately 30% in an urban with well established in-
+frastructure[la it can be used in the integrity mo-
+nitoring and improvement for the GNSS and INS
+coupled system thanks to its stronger signal com-
+pared with that of GNSS,
+1.2 Federated Kalman filter in integrated system
+Kalman filter is one of the most effective es-
+timation techniques to INS/GNSS integration.
+The extended Kalman filter (EKF) is a sequential
+recursive algorithm which can be divided into two
+loops, prediction loop and update loop. Federated
+tainty P,(k) of whole system can be written as
+where 真 , (K) and 熏2〈晟) are the estimates of sub-
+systems at the kth epoch, respectively, P (k) and
+P,(%k) the uncertainty of 炳 (K)〉 and X, (Rk), re-
+spectively. For the local filter 2, its fusion error
+from EKF is determined by both INS error and
+observed WiFi signal quality which is associated
+to RSSIL
+1.3 System dynamic equation
+The error of navigation system X is selected
+as the state to be estimated and its dynamic equa-
+tion can be written as
+where @,,,,; refers to the INS transition matrix
+Kalman filter (FKF) is typically considered as a
+mathematical transformation of EKFST,
+FKF allocates measurements from different
+sources into different local filters. The local fil-
+ters run independently to isolate any subsystem
+failure, whose scheme enhances the system relia-
+bility. Local filters work in parallel and the mas-
+ter filter finally combines the outputs.
+As far INS/GNSS with WiFi aiding as con-
+cerned, the system scheme based on FKF is dia-
+grammed in Fig. 1. The EKF algorithm is used in
+each local filter.
+determined by the INS basic mechanization equa-
+tion[J ,Wy: the system response to the driving
+white noise during the interval from R to 2 +1
+with an assumption of zero-mean and Gaussian
+distribution. Either local filter described in Fig. 1
+uses a 15-state vector consisting of errors as fol-
+lows
+X,=X,=[0Py 8Ps Pu dV: _6Vs 6GVu
+SA, SA, 0A. gb. gb, gb. ab, ab, ab.]"
+4)
+where [Pr _8Pvu “_8Pu J" refers to the posi-
+tioning error in the east-north-up (ENU) frame,
+the east definition coincides with the direction of
+the Earth auto-rotation; [SVg 6Vu 6Vu | refers
+to velocity error in ENU frame; [SA,。6A. 8A.]T
+refers to the pitch, roll and heading angle errors,
+respectively, via a definition of positive heading
+from north to east; (gb. gb, gb.]" refers to the
+stochastic part biases of gyros along three axes of
+the body frame defined as right-forward-vertical,
+and each axis bias is described by a first-order
+Gauss-Markov model; [a5: ab, ab, ] is similar
+to that of gyros and refers to stochastic part bias
+of accelerometers in the body.
+1.4 Measurement equation
+The system measurement equation is de-
+scribed as follows
+where Z,., is the system measurement with a
+measurement noise of Ru+yl , 玟 the design matrix
+connecting 乙 and X,
+For the local filter 1, the position and veloci-
+ty differences between INS and GNSS are consid-
+ered as the subsystem measurements. Therefore,
+Z,.,.1 can be given as
+Zi i+ = [Zp.enu Zy env 1° =
+Hn, [S8Ps 8Ps Py 8Ve“8Va 8Vu 17
+(6)
+The design matrix H is given as
+For the local filter 2, horizontal position er-
+rors between WiFi and INS are considered as the
+subsystem measurements. Suppose that total of
+m WiFi APs are received at the (C& 十 1)th epoch,
+so Z,.,+1 can be given as the following vector
+Zyoin 二 【二z] ere z, 1" =H; 11 [(0Pe SPx 11
+(8)
+1s given as
+2 INTEGRITY OF INTEGRATION
+SYSTEM
+2.1 Integrity of system
+Integrity of a navigation system includes the
+ability to provide warnings when its result pro-
+vides misleading data that can potentially create
+}`laz…[]`′(二lS〔蓦蔓〕. In an obstructed environment, such as
+the dense urban canyon, the GNSS navigation ac-
+curacy degrades dramatically due to severe mul-
+tipath,which results in the risk of misleading po-
+sition and velocity information from the integrat-
+ed system. Furthermore, the error of inertial
+sensors presented in Eq. (3) as part of estimates
+is scheduled to be feed backed and compensated.
+Meanwhile, the sensor outputs would be over ad-
+justed once the system loses its integrity, which
+would eventually navigate in misleading attitude
+information as well.
+2.2 Criterion of integrity monitoring by WiFi
+It is normal that there exist large changes of
+position error, velocity error and attitude error at
+any two adjacent epochs. However, theoretical-
+ly, the sensor error is supposed to change slowly.
+As long as the system satisfies the requirement of
+integrity,the difference of estimated inertial sen-
+sor errors between two local filters shown in Fig.
+1 should be close to each other, The criterion of
+integrity monitoring can be thence set up as
+where ￡ is any given positive real number, m the
+mth column elements in X; or 友 , and m=10,11,
+,15 corresponding to the gyro bias errors and
+accelerometer errors in the state,respectively,7
+can be determined by the Gaussian Function er f
+in mathematics,Cov( 益 ,,, ) coming from the local
+filter 2 is actually the sensor error deviation apart
+from the estimate to the true value. Meanwhile,
+X... from the local filter 1 should be infinitely
+close to 真 ,,,from the local filter 2 if both GNSS
+and WiFi are error-free. Taking X,., as an ap-
+proximate reference value, the probability of Xi.
+locating outside the confidence interval of
+[光,一_叠7〔二O\/〈{黄(′2,r,`)77】玄2`′′`-哥-′7′〔二O〉、′〈夕【2.′′')]isdeno-
+ted by (1—erf(y)). Here 7 is selected as 6 to
+cover a typical value of mean time between failure
+(MTBF) about 5 000 h for the whole life of sys-
+tem. 1 —erf(p=6) approximately: gives a proba-
+bility of 150 million which indicates that an in-
+tegrity alarm will never happen as long as the lo-
+cal filter 1 operates without deficiencies, always
+with reasonable measurement updates.
+Finally, Eq. (10) can be re-written and normal-
+ized to define an integrity coefficient 8 as follows
+where E( * ) is the operator of mathematical ex-
+pectation. Obviously, the system integrity will
+be broken when p> 1. In the scenario of severe
+multipath, the integrity coefficient Bis introduced
+to trigger rejections of the estimates from the
+MEMS INS/GNSS filter.
+3 RESULTS AND ANALYSIS
+The integrated system of MEMS INS/GNSS
+with WiFi aiding is conducted for a field test, The
+calibrated gyroscope and accelerometer bias insta-
+bilities are about 70 (“)/h and 25 mg, respective-
+ly. To evaluate the system performance with the
+difference between filters indicates the misleading
+navigation data in the local filter 1. That is to
+say, the MEMS INS/GNSS integrated system
+probably does not possess integrity over some pe-
+riods. To further detect the system integrity, the
+coefficient 8 should be calculated. Fig. 3 shows
+proposed algorithm, a high grade INS built with
+laser optical gyros is operated at the same time as
+a reference system.
+In order to verity the effectiveness of the in-
+tegrity algorithm, a GNSS heavy degradation
+over 30 s is simulated offline to enlarge the actual
+multipath scenario from an average level to a se-
+vere level. The GNSS navigation data are added
+noise with a distribution of 30 m 3-30 m(les) and
+0.5 mys 土 2 m/s(ls) on the positioning and ve-
+locity, respectively.
+Fig. 2 compares the sensor error estimates
+from two local filters. It is obvious that the cor-
+responding values have a big difference when
+GNSS navigation becomes worse dramatically due
+to the severe multipath.
+43 min 42 s 十 100 s, 6 h 43 min 42 s 十 125 s ]
+Therefore, the feedback of navigation error esti-
+mates and sensor error estimates should be rejec-
+ted at the corresponding periods to keep the sys-
+tem integrity,
+Fig. 4 shows horizontal positioning results
+with a comparison of with/without WiFi aiding
+rithms with/without WiFi
+integrity algorithm. The results show that the
+performance of MEMS INS/GNSS system is im-
+proved by use of the proposed integrity algo-
+rithm , in terms of maximum error reduction from
+26.25 m to 8.64 m, i.e、,67 % improvement,
+4 CONCLUSION
+For land vehicle navigation in the urban can-
+yon with severe multipath environment, an integ-
+rity improvement algorithm for MEMS INS/
+GNSS integrated system with WiFi aiding is pro-
+posed. The FKF based system is designed and
+implemented following the creation of integrity
+detection criterion. The field test shows that the
+system integrity can be improved through rejec-
+ting unreliable inertial sensor compensations.
+The maximum positioning error is reduced by
+67%.

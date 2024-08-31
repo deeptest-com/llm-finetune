@@ -1,0 +1,219 @@
+全球空管大会聚焦中国空管发展
+随着中国空中交通流量的持续快速增长，中国已跃升为世界第二大航空运输市场。在这一背景下，国际空中交通管制展览暨研讨会（ATCGLOBAL）首次移师中国。展览汇聚了国际供应商最新的空管产品和服务项目，为中国与国际空管行业提供了一个充分交流的平台。
+
+中国 空管 聚焦 空中交通流量 航空运输市场 空中交通管制 服务项目 国际  
+
+1 Introduction
+The navigation system for small unmanned aerial vehi-
+cles (UAVs) is typically composed of low-cost inertial sen-
+sors and a global positioning system (GPS) receiver due to
+the limited onboard computational capability and payload
+capacity). The GPS can bound the accumulated error of
+the inertial sensors by estimating the absolute velocity and
+position of the vehicle. However, in many aerial applica-
+tions, the UAV is required to perform a task within the
+GPS-defned environment, such as indoors, urban canyons.
+GPS is also easy to be disturbed by the weather during the
+flight. For the autonomy of small UAVs in GPS-denied en-
+vironments, other sensors are required to be fused with the
+inertial measurement unit (IMU) for determination of the
+vehicle state without any priori information of the flight en-
+vironment. This is known as the simultaneous localization
+and mapping (SLAM) system, with which the vehicle can
+build an online map and estimate its location in 6 degrees
+of freedom in that map.
+Vision seems a good alternative to the GPS for the au-
+tonomous navigation of small UAVs in terms of weight, cost
+and information. Visual sensors have been used in surveil-
+lance tasks of UAVs for 〉′e嚣攫」TE琴j[2]. They have also played
+an important role in autonomous navigation and control of
+small UAVs!?l, Performing the SLAM with the visual mea-
+surement has received a lot of attention over the past few
+the vehicle is modeled as a rigid body with uniform mo-
+tion and the acceleration is considered as the system noise.
+Another proposed visual SLAM system takes only natural
+landmarks as observations[71. In this system, a homography
+Manuscript received March 4, 2013; revised July 4,2013
+This work was supported by National High Technology Re-
+search and Development Program of China (863 Program)
+(No.2011AA040202) and National Science Foundation of China
+(No. 51005008).
+based approach is used to estimate the motion of the UAV
+and a novel landmark initialization method is developed.
+The fusion of IMU and visual sensors is usually used in
+autonomous robots!? 1%, In these implementations, the in-
+ertial measurement is usually used as the input of the pro-
+cess model in the filter. A robust inertial SLAM algorithm
+using bearing-only observations was developed!!**?. This
+extended Kalman filter (EKF) based SLAM is able to esti-
+mate the location of the vehicle in 6 degrees of freedom and
+3-D positions of the features in the environment. Monocu-
+lar vision is usually taken as the visual sensor for the SLAM
+of small UAVs. For these bearing-only sensors, the initial-
+ization of features in 3 dimensions is considered as a di 口 cult
+problem. Davison et al.l'?! showed a delayed initialization
+method for bearing-only SLAM. It waits until the observa-
+tions have enough parallax to determine the 3-D position of
+a feature and include it into the filter. An undelayed initial-
+ization method using the inverse depth of features relative
+to the camera locations from which they are first viewed was
+proposed. In this algorithm, once the depth estimation
+of a feature is sufficiently accurate, the inverse depth form
+can be converted into the Euclidean form safely. The abso-
+lute scale of the monocular SLAM can also be estimated by
+fusion of inertial and visual I__:](…曼a′Sll]′_'el'薹l(…]:]'t〕S[15] . Besides, the
+observability and consistency of the EKF based SLAM were
+analyzedI[I6~1g、The research of the airborne visual SLAM
+also involves the multi-UAV SLAMII9] and visual SLAM for
+indoor aerial `′el′li(:1e[2[)].
+In this paper, we will provide a monocular visual SLAM
+for a small UAV in GPS-denied environments. A hierar-
+chical structure is employed in this system. A homography
+based method is adopted to estimate the motion of the ve-
+hicle by a single onboard camera. Then, the velocity and
+the attitude are estimated by the fusion of the inertial and
+visual measurements. Another EKF takes the velocity as
+the input and estimates the positions of the UAV and land-
+marks. Since the monocular vision is a bearing-only sensor,
+388 International Journal of Automation and Computing 10(5), October 2013
+[21].
+2 Feature detection and match
+The features are used to calculate the motion of the vehi-
+the whole process is shown in Fig. 2.
+(b) Landmark candidates in the SLAM
+Fig.1 SIFT features
+Fig.2 The flowchart of the motion estimation
+3.1 State description and propagation
+tions is defined as
+又 。 二 (0n,G,baDu)7 Mm
+C. L. Wang et al. / Bearing-only Visual SLAM for Small Unmanned Aerial Vehicles in GPS-denied Environments 389
+as
+where
+quaternion is written as
+where
+The error state vector is applied in this filter. The state
+model is linearized and discretized as
+5二一酝二kg_18XK8_i十WR伟
+equivalent white noise sequence Wy is derived as
+os~(+<I)亘萝<I>「上「)乙蓖′土5)
+where Q = GWGT. Then, the state propagation is written
+as
+3.2 Homography based motion estimation
+where d is the Euclidean distance between position 1 and
+where A is the camera intrinsic matrix which can be cali-
+390 International Journal of Automation and Computing 10(5), October 2013
+Fig.3 Two views of the same fixed point in a plane
+3.3 Measurement update
+where
+Hy, = [O4axs Isxa _Oax3 Oaxs]
+Zl 二 G
+Vi ~ N(0, Ry).
+Then, the attitude measurement update is derived as
+Since the velocity in the flter state is the instantaneous ve-
+Fig.4 Relationship between the average velocity and the in-
+stantaneous velocity
+Hj = [Iaxs _Osx4 Osxs Osxs]
+Zy =o"
+Va ~ N(0, Rs).
+The velocity measurement update is derived as
+4.1 Process model
+defned as
+】〈(，=〈29r】，蔓'′1】`)'，〕"，「。〉′l「(22)
+C. L. Wang et al. / Bearing-only Visual SLAM for Small Unmanned Aerial Vehicles in GPS-denied Environments 391
+the position is given as
+REE。网
+complexity and stability of the filter.
+4.2 Observation model
+to the vehicle has been compensated, then p“ can be written
+where C2 is calculated from the attitude estimation in Sec-
+respectively.
+4.3 Estimation process
+where
+392 International Journal of Automation and Computing 10(5), October 2013
+4.5 Data association
+tion.
+In our SLAM framework, observation z; is considered as
+the correspondence to the j-th landmark in the map if the
+following equation is satisfied:
+where dsrFT is the Euclidean distance between the SIFT de-
+eliminated remarkably.
+5 Simulations
+5.1 Simulation environment setup
+An image-in-loop simulation system is set up to verify
+The sensor data of the gyroscopes and accelerometers are
+simulated with white noises and bias. The intrinsic matrix
+Feature labels are also shown together with the “real-time”
+aerial images.
+5.2 3D feature initialization
+The feature initialization method is analyzed in this sec-
+C. L. Wang et al. / Bearing-only Visual SLAM for Small Unmanned Aerial Vehicles in GPS-denied Environments 393
+velocity error. The error might drift unboundedly in a few
+seconds without the observation of the features. But in the
+SLAM system, it is approximately bounded within the 1-C
+uncertainties. Only the error in the 2 direction from 40s
+to 60s is outside the bound. The loop closure takes place
+at about 60s. It can be seen that both the errors in the
+2 and y directions decrease sharply. From this time, the
+UAV is in the second lap and a lot of features which are
+the boundaries. The uncertainty is also convergent.
+Fig.9 The velocity errors in the simulation
+6 Experiments
+6.1 System description
+The experimental testbed is a radio-controlled model he-
+licopter, as shown in Fig. 11. It carries a set of sensors, in-
+cluding an Rt 20 differential GPS receiver, an MS5540 baro-
+metric altimeter, an ADIS16355 IMU, a three-axis magne-
+tometer composed of HMC1052 and HMC1041, and a color
+the measurement of GPS and inertial sensors to build a
+signals to the helicopter, as well as communicate with the
+to the vision computer. The vision computer receives the
+above data and records the aerial images simultaneously.
+The ground station is used to send the high-level control
+in Fig. 12.
+6.2 Real flight experiment
+An experiment is carried out to test the performance of
+the proposed SLAM system. During the experiment, the
+inertial sensor data is acquired at a rate of 50 Hz and the
+visual calculation is about 3-4 Hz.The improvement of the
+394 International Journal of Automation and Computing 10(5), October 2013
+frequency of the visual system is limited by the computa-
+tional load of the visual algorithm. The SLAM system runs
+in an offline mode in this paper. The performance of the
+paring with the referential GPS/INS navigation.
+iment. The visual measurement does not work during the
+takeoff and landing, in which the visual estimation is not
+accurate enough due to the rapid change of the aerial im-
+in our SLAM system and the output of the barometric sen-
+sor is used to provide a relative height for the visual motion
+estimation. Fig.13 shows that there is a strong agreement
+of the attitude estimations between the proposed SLAM
+system and the referential GPS/INS navigation. Fig. 14 is
+about the comparison of the velocity estimations. It shows
+that our system also has a high accuracy in the velocity
+estimation compared with the referential.
+the accurate velocity estimation shown in Fig. 14, errors
+accumulate in the position estimation through direct inte-
+gration. After the landing, deviations between the VO es-
+timation and the GPS/INS system are quite obvious. The
+correction of the SLAM on the position estimation can be
+seen in the comparison. Taking the velocity estimation as
+the input, the proposed system is able to correct the posi-
+tion estimation by consecutive observations of the features
+in the map. The position estimated by the SLAM has a
+higher accuracy than the VO, and the deviations are elim-
+inated remarkablv.
+This paper describes a bearing-only visual SLAM for
+small UAVs in GPS-denied environments. An indirect EKF
+hicle, which is calculated by a homography based method.
+Mahalanobis distance and the descriptor match of the SIFT
+C. L.. Wang et al. / Bearing-only Visual SLAM for Small Unmanned Aerial Vehicles in GPS-denied Environments 395
+features is used to improve the robustness of the data as-
+UAVs while building a 3D feature map in GPS-denied en-
+vironments.
+Future work will focus on the further improvement of the
+SLAM on computational complexity. In the EKF based al-
+tions of new features in the map. The computational com-
+This is an unavoidable problem for the implementation of
+the real-time SLAM for small UAVs. In the future, a Rao-
+this research for a real-time SLAM that can reduce the com-
+putation to a linear complexity.

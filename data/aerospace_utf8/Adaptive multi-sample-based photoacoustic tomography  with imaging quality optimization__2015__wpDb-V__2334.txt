@@ -1,0 +1,316 @@
+Adaptive multi-sample-based photoacoustic tomography  with imaging quality optimization
+The&nbsp;energy&nbsp;of&nbsp;light&nbsp;exposed&nbsp;on&nbsp;human&nbsp;skin&nbsp;is&nbsp;compulsively&nbsp;limited&nbsp;for&nbsp;safety&nbsp;reasons&nbsp;which&nbsp;affects&nbsp;the&nbsp;power&nbsp;of&nbsp;photoacoustic&nbsp;（PA）&nbsp;signal&nbsp;and&nbsp;its&nbsp;signal-to-noise&nbsp;ratio&nbsp;（SNR）&nbsp;level.&nbsp;Thus,&nbsp;the&nbsp;final&nbsp;reconstructed&nbsp;PA&nbsp;image&nbsp;quality&nbsp;is&nbsp;degraded.&nbsp;This&nbsp;Letter&nbsp;proposes&nbsp;an&nbsp;adaptive&nbsp;multi-sample-based&nbsp;approach&nbsp;to&nbsp;enhance&nbsp;the&nbsp;SNR&nbsp;of&nbsp;PA&nbsp;signals&nbsp;and&nbsp;in&nbsp;addition,&nbsp;detailed&nbsp;information&nbsp;in&nbsp;rebuilt&nbsp;PA&nbsp;images&nbsp;that&nbsp;used&nbsp;to&nbsp;be&nbsp;buried&nbsp;in&nbsp;the&nbsp;noise&nbsp;can&nbsp;be&nbsp;distinguished.&nbsp;Both&nbsp;ex&nbsp;vivo&nbsp;and&nbsp;in&nbsp;vivo&nbsp;experiments&nbsp;are&nbsp;conducted&nbsp;to&nbsp;validate&nbsp;the&nbsp;effectiveness&nbsp;of&nbsp;our&nbsp;proposed&nbsp;method&nbsp;which&nbsp;provides&nbsp;its&nbsp;potential&nbsp;value&nbsp;in&nbsp;clinical&nbsp;trials.
+
+光声层析成像 质量优化 自适应 样本 人体皮肤 质量劣化 体内实验 潜在价值  
+
+Thermal design of stereopsis
+camera with double baseline
+camera with double baseline
+Zhang Yue, Hu Bin, Ruan Ningjuan
+(Beijing Institute of Space Mechanics
+& Electricity, Beijing 100094, China)
+Abstract: Strabismus of wide baseline mapping camera is benefit for ground elevation measurements.
+Front view of small baseline mapping camera is
+benefit for location with high precision, reducing
+distortion and decreasing shelter. Double baseline is a novel mapping means, combining the advantages of
+wide baseline mapping and small baseline mapping. But it requires efficient cooling for high power
+equipment and high precision temperature gradient
+for large —scale mirror, which put forwards harsh
+requirements for thermal control system. In this paper, some measurements were adopted to design
+thermal control system for double baseline mapping camera, such as coupling the radiating surfaces,
+designing aluminum heat shield in the back of large~scale mirrors, disposing many thermal control loops,
+and using high —performance heat pipe enhanced
+thermal conductivity. Based on the analysis about
+cameta「s external heat flux, two extreme working conditions were determined. Hot working condition is
+B=17° ,and focal plane assembly, electronics devices and controllers were all working. Cold working
+condition is B=27“,and the camera was in standby model. Considering with the interior heat fluxs and
+interface conditions, detailed thermal control schemes were established, and simulation results revealed the
+correctness of the thermal control schemes,and the
+requirements. Our work can offer some thermal technique supports to study about mapping camera with
+double baseline.
+0引言
+由于城市建筑物密集、高低起伏变化大,传统航
+天大基高比立体测绘对城市等复杂地物测绘时,存
+在遮拦畸变和辐射差异等问题。采用小角度交会
+摄影技术的小基高比立体测绘避挡小、相关性好,
+可减小匹配围难,提高匹配精度,但是小基高比立
+体测绘不适于景物不丰富、起伏变化小的平缓地形
+测绘吊。所以,同时采用大、小基高比的双基高比立
+体测绘相机可以实现大基高比交会成像和小基高比
+近同时成像的综合成像模式,可兼顾平缓地形测绘
+和地表目标三维测绘要求,在城市大比例尺立体测
+绘中有更多优势。
+双基高比立体测绘相机内热源散热量较大,大
+基高比相机可达150W,小基高比相机可达250W。
+相机镜面尺寸较大,直径可达1.5mASL,BEER
+径向温度梯度要求较高。这种大功耗高效散热、大尺
+寸小温度梯度的要求对相机的热设计提出了较大挑
+战。因此,为保证相机在轨期间安全可靠地工作,并
+具有较高的成像质量,需对双基高比立体测绘相机
+主体进行详细的热控设计。
+文中根据国内外研究情况提出了双基高比立体
+测绘相机的热设计方案,以及在该方案下相机内部
+的温度分布,通过仿真分析验证了热设计的正确性。
+1国内外研究情况
+1.1测绘相机高精度热控技术
+￥HEPleiades—1A上的高分辨率全色多光谱相机
+HiRI的主镜尺寸为0.65m,CCD间的温度梯度小于
+1九,积分时间内探测器峰值温度差小于4九。焦平面
+组件结构折反镜,CCD框架广泛采用了导热性能好、
+热膨胀系数小、机械性能好的SiC材料,可形成紧凑高
+效的结构,利于抵挡外部热环境的影响以及热接口的
+限制条会。HIRT利用与面向深空的辐冷器相连的热管
+为焦平面组件散热,同时在焦平面组件和光学镜头间
+设置隔热材料,以减小两者间的热传导口。
+temperature of various components met the design
+资源三号卫星上的三线阵相机主镜尺寸为02m,
+热控功耗小于200W,径向镜面温度差小于0.2KK4。=
+线阵相机采用了将镜头前组镜头后组、成像单元组件
+等分区,在分区外表面设置独立的主动加热区,利用电
+加热片进行闭环控制的热控措施。同时采用了在焦面
+箱外贴热管.CCD安装散热小热管、自适应支架外包
+覆多层隔热组件等热控措施,以达到热设计要求口。
+1.2大口径光学遥感器热控技术
+在大口径光学遥感器中,热控技术较为先进的有
+哈勃太空望远镜HST)和詹姆斯.韦伯太空望远镜
+(JWST)。HST主反射镜直径为2.4m,次镜直径为
+0.31m,光学系统工作温度为21.1+0.5匕@。HST的热
+控系统多采用常规热控措施:多层隔热材料、表面涂
+层、主动控温加热片等。在遮光罩.热门等部件为相机
+主体提供良好湿度环境的基础上,对相机主体在结构
+连接处进行隔热,同时采用大量加热片使相机主体温
+度精确控制在21.1丁附近。其先进热控技术如下0。
+(1)间接控湿与多回路控温组合,以确保控温精度
+HST主镜与次镜的温度控制均采用在辅助热晔
+上布置加热回路的方式,以对镜头温度进行间接控
+制,提高控湿精度。图1为主镜的热控设计示意图。
+主镜组件的热设计方案是将主镜组件的非通光
+面全部用多层包覆,主镜光学表面的红外发射率仅为
+0.01~0.03,太阳平均吸收率为0.08。主镜与中心消光
+简之间采用金键或多层,以保护加热器隔离辐射。主
+镜背面与作动圆盘的前面形成一个高发射率的空腔,
+在作动圆盘上分区布置36路加热器,控温阎值为
+21.1:0.5心,各回路功率1.2~2W不等,如图2所示。
+由于主镜前为极低发射率材料,主镜后为高发
+射率材料,所以冷黑空间、前镜筒内壁对主镜的温度
+影响较小,主要由作动圆盘决定。经过36回路加热
+器的优化设计,可有效减小镜面湿度梯度,达到主镜
+温度的精确控制。
+(2)热光学设计
+HST的热光学指标为:24h周期内光轴指向稳
+定度为0.003“,并保持光学波前误差优于A/20。国外
+大口径望远镜热设计一般都采用热光学指标,利用
+均方根波相差(RMS)进行总体误差分配,一般情况
+下,分配给热控系统的误差在数值上占总误差的
+50%左右。对于大口径、达到光学街射极限的光学系
+统,微小的温度梯度都会对成像质量产生较大影响,
+所以需采用热光学设计。
+文中借鉴法国Pleiades~1A上HiRI相机、资源
+三号三线阵相机、哈勃太空望远镜所采用的先进热
+设计思想,针对双基高比立体测绘相机的特点,进行
+了热分析和热控方案设计。
+2外热流分析
+根据双基高比立体测绘相机的工作环境可知,
+相机在轨道上必定受到来自太阳、地球表面以及4K
+深空的外热流影响,为了准确了解双基高比立体测
+绘相机所处的热环境,此节采用了I-DEAS软件有
+限元仿真模块下TMG热分析中轨道/高度模型
+(OrbityAttitudeModel)对相机在轨道上所受外热流做
+了详细的分析计算。该模型通过设定卫星轨道参数
+和卫星妍态,来确定太阳对相机的照射情况。
+B角定义为轨道面上的太阳高度角,是通用的表
+征轨道光照条件(阳光人射条件)的物理量。在摄动因
+素的共同作用下,相机在寿命期内的光照条件较为复
+杂,2年内B角的变化情况如图3所示。
+太阳随季节不断运动,B角在17“~27“之闻呈一定规
+律变化。每年6月1日左右时,8B角为17“;每年2月
+10日左右时,8角为27“。B=17“、B=22“和B=27“时
+太阳直射外热流计算情况如图4~图6所示。
+直射外热流为0,而到达-面的太阳直射外热流随
+着B角的增大而增大。散热面应该布置在+X面上。
+(2)单个周期内,午夜前后会有最长约34min(午
+夜前后各17min)的地球阴影区,相机全部外表面均
+不会受到太阳直射。
+(3)单个周期内,在进地影区前4min和出地影
+后4min内,+Z面受太阳照射,此时相机入光口的外
+热流最大。
+(4)单个周期内,卫星出地影前29min内+X面
+受太阳直射,-X面不受太阳照射,在此段时间可考
+虑-X面作为发热热源的散热面;卫星进人地影前
+29min内,-X面受太阳直射+X面不受太阳照射,
+在此段时间可考虑+X面作为发热热源的散热面。所
+以白天可以耦合使用正负X板散热面。
+结合外热流分析结果、相机内热源状况,热分析
+工诉选择如下(见表1)。
+(1)低温工况:除热控组件外,相机上其他设备
+均处于关机状态。B角为27“时,相机+X散热面接收
+到的外热流为最小,且相机在地影区时间较长,整机
+所需补偿功率最大,此时为相机低温工况。
+(2)高温工况:焦面组件、电子学器件,控制器在
+表 1 热分析工况
+Tab.1 Working conditions of thermal analysis
+肥mI暮亘葛ture 27° 20 No work
+temperature 15 min per orbit
+开机成像时工作。B角为17“时,相机+X散热面接收
+到的外热流为最大,且相机在光照区时间较长,此时
+为相机高温工况。
+3相机热设计
+3.1林机概述
+双基高比测绘相机由相机主体、视频处理器.管
+理器和控制器等组成,其中相机主体通过主承力板
+与卫星隔热安装,管理器和控制器放置于卫星舱内,
+各单机之间通过电缆进行通讯。相机主体要完成成
+像光路和光电转换的功能,主要结构为主镜组件、次
+镜组件、三镜组件、主承力板、后承力板次镜承力板
+等功能模块。相机主体构型如图7所示。
+3.2.1热设计要求
+相机的热设计要求如表2所示。
+表 2 热设计指标
+Tab.2 Thermal design requirements
+Parameters Requirements/C
+Temperature level 20+3
+Radial temperature gradient of PM and TM 与 1
+Radial temperature gradient of SM and FM <0.5
+Axial temperature gradient <2
+Focal plane working temperature 20%5
+Note: PM, primary mir ror; SM, secondary mirror; TM, tertiary
+mirror; FM, folding mirror.
+3.2.2任务分析
+双基高比测绘相机热控难点分析:
+(1)地夜转换时,阳光照射+Z面,人光口外热流
+最大。而大尺寸、低导热系数的主镜、次镜、三镜、
+折转镜组件对温度稳定性\温度梯度要求高,给相机
+热设计带来很大困难;
+(2)三台相机几组焦面布置分散.热功耗较大,
+给焦面元器件的散热带来很大困难。
+3.2.3各部分热控措施挂述
+(1)遮阳晓
+遮光罩直接面对外空间,周期性地受到太阳目
+射、地球反照太阳光辐射和地球红外辐射,外热流变
+化相对比较大。遮光罩温度环境对相机内部器件的
+影响至关重要,尤其影响次镜和主镜组件的温度水
+平,为准小外热流对相机的影响,使相机内部有一个
+相对好的环境,对遮光罩采取如下热控措施:
+D遮光暑的内表面喷涂黑漆(E51-~M),e之
+0.85 ;
+2)遮光罩外表面包覆20单元多层隔热组件以
+减少外热流的影响;
+3)通过隔热安装减少遮阳罩对相机主体温度
+的影响;
+4)遮阳置光栏正对太空一侧外表面包覆5单
+元多层,最外层为黑色渗碱膜,削弱阳光照射遮阳晓
+内壁产生的高温现象;
+5)在遮阳罩端部(靠近外太空一侧)外表面段喷
+涂KS-Z无机白漆,为次镜组件及主镜组件散热。
+(2)光学结构
+主镜、次镜、三镜、折转镜作为相机光学系统的
+核心部件,其温度水平对成像质量影响较大,相机主
+体对其提出了较高的温控要求。对光学组件进行如
+下热控设计口,
+ID)主镜次镜尺寸大、导热系数低、且受外热流
+影响严重。在主镜及次镜背面设计铝合金热罩EX
+主镜一侧发黑处理,热罩上布置数路控温回路,外表
+面包覆5单元多层,最外层为黑色渗碳膜。由此通过
+调节热罩温度来达到间接精确控制主镜、次镜温度
+的目的;
+2)次镜框外表面包覆多层削弱外热流影响,并
+布置数路控湿回路保证其温度水平;
+3)三镜六杆上布置数路控温回路,外表面包覆
+5单元多层,最外层为黑色渗碳膜;
+4)折转镜框外表面包覆多层,并布置数路控湿
+回路保证其湿度水平。
+(3)内热源
+相机后部的主要热源有焦面组件、电子学器件
+和控制器等。综合考虑上述外热流分析结果及热源
+工作状况,各个内热源散热方案如下;
+1)焦面组件焦面组件仅在当地白天成像时工
+作,而卫星在当地白天+Z画完全背阴,由此选择散
+热面在+面。通过4根(其中2根备用)30x9工字
+型热管将焦面组件热量引至+Z散热面,散热面与
+相机本体隔热安装,正面粘帖OSR散热片,背面
+布置补偿加热回路并包覆多层隔热组件。
+2)电子学器件电子学器件仅在白天成像时工
+作,需在+X面为其开设散热面,而考虑卫星出地影
+前29min内,+X面受太阳直射,卫星进人地影前
+29min内,-X面受太阳直射,因此需耦司+X散热
+面。电子学器件表面布置8根(其中4根备用)30x9
+工字型热管.8跟热管一端引至-X散热面,另一端引
+至+X散热面。散热面与卫星隔热安装,正面粘帖
+OSR散热片,背面布置补偿加热回路并包覆多层隔
+热组件。
+3)控制器控制器仅在白天成像时工作,其散热
+方案类似于电子学器件。表面布置4根(其中2根备
+用)30x9工字型热管,4根热管一端引至-X散热面,
+另一端引至+X散热面。散热面与卫星进行隔热安
+装,正面粘帖OSR散热片,背面布置补偿加热回路
+并包覆多层隔热组件。
+3.3仿真分析
+由于双基高比立体测绘相机的实际结构十分复
+杂,计算中如果采用实际模型将会使得计算相当复
+杂。考虑到计算机的计算能力以及I-DEAS中TMG
+热分析模型与真实情况的符合程度,在计算前需要
+对相机结构作出合理的简化:
+(1)忽略相机内部细小结构件对模型导热,辐射
+遮挡的影响,将零部件中的安装孔、凸台.螺钉等小
+的局部特征简化处理;
+(2)对于减轻孔、部分加强筋等作简化处理。下
+一段在仿真分析中,根据第2节确定的2种典型工
+况及3.2.3节确定的热控方案,利用[-DEAS软件中的
+TMG热分析模块设定相机的辐射边界条件组件间
+的热耦合等,选定瞬态积分控制方法及计算时间,对
+双基高比测绘相机进行详细的仿真分析。图8和图9
+baseline mapping camera
+baseline mapping camera
+分别给出了高温工况(B角为172)时大基高比相机1
+和小基高比相机主镜、次镜温度云图,表3列出了高
+温、低温工况下相机主要光学镜头及焦平面温度水
+平。
+表 3 相机各极端工况计算结果(单位:C)
+Tab.3 Temperature results of camera parts in
+extreme working conditions (Unit: °C )
+Low High
+No components contin. conden mens
+(B=27°) (B=17°)
+1 W1-PM 17.25-18.17 18.52-18.55 17-23
+2 WI1-RTGof PM 0.61-0.85 0.42-0.79 与 1
+3 W1-SM 17.63-17.88 18.01-18.16 17-23
+小 WI1-RTGof SM 0.25-0.44 0.13-0.37 不 0.5
+5 W1-TM 18.54-19.27 20.38-20.40 17-23
+6 WI-RTGof TM  0.50-0.82 0.63-0.97 不 1
+7 W1-FM 17.91-18.63 19.30-19.12 17-23
+8 WI1-RTGof FM  0.12-0.45 0.24-0.46 <0.5
+9 W1-FP 15.8-16.7 23.51-23.95 15-25
+10 S-PM 18.65-19.01 18.22-19.86 17-23
+11 S-RTG of PM 0.64-0.89 0.28-0.63 不 ]
+12 S-SM 19.24-20.30 17.98-18.02 17-23
+13 S-RTG of SM 0.15-0.36 0.28-0.45 <0.5
+14 S-TM 17.89-18.25 18.86-19.98 17-23
+15 S-RTG of TM 0.45-0.68 0.28-0.77 万 ]
+16 S-FM 19.45-19.98 19.24-21.25 17-23
+17 S-RTG of FM 0.23-0.38 0.18-0.36 <0.5
+18 S-FP 16.25-17.16 17.78-18.35 15-25
+Note: FP, focal plane. W1, wide baseline mapping camera 1. S,
+small baseline mapping camera. RTG, radial temperature gradient.
+ATG,axial temperature gradient.
+由图8和图9可知,由于受到太阳直射热流的
+影响,大基高比相机1主镜的最高温度为18.55T,K
+镜的最高温度为18.16七,主镜径向梯度为0.792心,次
+镜径向梯度为0.37乜。在所采取的热控措施作用
+下,主镜和次镜的温度水平都达到了设计要求。
+对于其他工况,计算结果表明,在上述热控措施
+的作用下可以确保该相机全部光学镜头和结构组件
+均保持很好的温度水平和均匀性,能满足相机光学
+成像的要求。
+4结论
+双基高比立体测绘相机综合了大、小基高比测绘
+的优势,解决了平缓地形和陡峭地物的平面测量和
+高程测量问题。针对双基高比相机内热源散热量
+大、大尺寸镜面径向温度梯度要求较高的特点,
+以及外热流分析结果,文中采用耦司+X散热面、设
+计铝合金热升减小大尺寸镜面温度梯度、使用高
+教导热热管等热控措施,对相机热控系统进行详
+细热设计及仿真分析,仿真结果验证了热控设计
+结果的正确性。
+大口径光学遥感器精密热控技术是我国未来空
+间相机热控研究的一个重要方向,它对大型空间望
+远镜和立体测绘相机的发展尤为重要。

@@ -1,0 +1,318 @@
+宇航元器件长期贮存及寿命评价方法研究
+现代武器装备及卫星单机对元器件提出了长期贮存要求。本文结合宇航元器件贮存概念及相关规定，提出了影响元器件装机后贮存寿命的关键要素为元器件属性（结构、材料、工艺等）、贮存环境（温度、湿度、振动、电场、化学腐蚀等）和原有缺陷的增殖程度，并对元器件长期贮存寿命给出了基于单一机理的恒定应力加速寿命试验评价方法流程。
+
+宇航元器件 贮存寿命 评价方法  
+
+1 Introduction
+Vehicle speed control is an important topic for both
+conventional cruise control systems and recently developed
+adaptive cruise control(ACC) systems! 2. With aid of an
+on board road slope database in combination with a GPS
+unit, information about the road geometry ahead can be
+extracted. The velocity trajectory that weights trip time and
+fuel consumption can be optimized by using this
+look-ahead road information. A dynamic programming
+approach is taken to obtain minimizing fuel consumption
+solutions for a number of driving scenarios on shorter road
+sections in Ref. [3]. Optimal speed profiles for heavy trucks
+driving important test road profiles are presented in Ref. [4].
+The method is based on an analytic solution for linear road
+segments, and the continuous connection of such solutions.
+This reduces the dimension of the problem significantly
+compared with other methods. Predictive cruise control is
+investigated through computer simulations’, but
+constructing an optimizing controller that works on board
+in a real environment puts additional demands on the
+system in terms of robustness and complexity. A predictive
+cruise controller is developed where discrete DP is used to
+numerically solve the optimal control problem in Ref. [6].
+An improved dynamic programming algorithm!” where the
+search space is reduced by a preprocessing algorithm is
+realized and evaluated in actual experiments.
+The speed control in the acceleration process is the key
+part of the cruise control. The application of Pontryagin’s
+maximum principle and dynamic programming for vehicle
+acceleration control with minimum fuel consumption are
+described in Ref. [8]. With the maximum principle, the
+consumption model yields optimal accelerations with a
+linearly decreasing acceleration as a function of the
+velocity. Dynamic programming is implemented with a
+backward recursion on a specially chosen distance grid.
+This grid enables the calculation of realistic gear shifting
+behavior during vehicle accelerations. These two
+algorithms used to solve the optimal acceleration problem
+arc complicated.
+The acceleration control with minimum energy
+consumption for battery electric vehicle(EV) has not been
+reported. In this paper, a torque-based acceleration control
+with minimum energy consumption for electric vehicle(EV)
+is presented. In EV, the accurate torque control for traction
+motor can be achieved by field oriented control(FOC)
+method. The permanent magnet synchronous motor
+(PMSM) drive system is modeled to favor over a detailed
+consumption map. The optimal torque versus speed curve
+in the acceleration process is obtained by analytical
+algorithm, which is much simpler than maximum principle
+and DP algorithms. In the time limitation case, the electric
+motor torque demanded is set up by adding a penalty
+function to fast track the target vehicle speed.
+To assess the performance of the above analytical
+algorithm, the dynamic programming(DP) solutions for
+different acceleration time are used as benchmarks for
+comparisons.
+the vehicle, the motor, the inverter and the battery model
+are described. In section 3, the analytical model is proposed
+to solve the optimal acceleration problem. The optimal
+acceleration control solved by DP in different acceleration
+time is described in section 4. The simulation and
+experiment results are shown in section 5, and the
+conclusions of this research are in section 6.
+2 Dynamic Modeling
+2.1 Vehicle model
+The force needed when driving on a sloped road in an
+EV can be expressed as
+coefficient; a is the slope angle; Cp is the dimensionless
+conversion factor; dy/dt is the vehicle acceleration; and p is
+the air density.
+2.2 Efficiency model of PMSM
+The flux equation can be torque expressed as
+The electromagnetic torque equation is
+research methods of this paper are also adapted to study the
+interior PMSM(IPMSM) and induction motor(IM). In the
+with the d-axis current.
+expressed as
+electromagnetic power P.. The electromagnetic power,
+which is the sum of the mechanical loss Pm,stray loss Pq
+and output power P,, can be expressed as
+realized by controlling the d-axis current i;=0 which is
+relations of power loss, electromagnetic torque and the
+electric angular velocity can be expressed as
+The input power can be deduced as
+The maximum torque of the PMSM in drive mode needs
+to satisfy the following conditions:
+where Temax is maximum electromagnetic torque, and Py, is
+the rated power of the PMSM.
+2.3 Efficiency model of inverter
+To accurately evaluate the inverter efficiency, one must
+have well-developed component models and an inverter
+switching algorithm. Otherwise, an accurate evaluation can
+only be obtained by actual tests. However, by making some
+assumptions and simplifying the device models, the
+simplified device models is employed: a pure resistor for
+power MOSFETs and a voltage source in series with a
+resistor for Insulated Gate Bipolar Transistors(IGBTs) and
+diodes. In this paper, the loss of a three-phase
+MOSFET-based full-bridge inverter is discussed, and the
+space vector pulse width modulation(SVPWM) is adopted
+by this inverter.
+(1) Conduction loss. The simplified models for the power
+MOSFET and diode are expressed as
+where Vy, and Vy represent the on-state voltage drops of
+a MOSFET and diode, respectively; 从 is the diode voltage
+drops at the zero-current condition; Rg and Ry are the
+resistive elements of MOSFET and diode; and T is the
+device current.
+Eq. (12) expresses the conduction losses for the
+MOSFET and the anti-parallel diode, respectively:
+where m; is the per unit fundamental stator voltage, ￠ is the
+load power factor angle, and Tm is the peak value of the
+sinusoidal wave.
+diode. Because the SVPWM is adopted and the MOSFET
+conducts current bidirectionally, the diodes conduct only in
+the dead time. Considering the dead time effect, the
+conduction loss of the MOSFETs and the anti-parallel
+diodes in the three-phase inverter can be simplified as
+where t is the dead time, and ￠, is the period time of the
+SVPWM.
+The conduction loss of the inverter is
+F, = F mosFETs + F ps: (14)
+loss of hard switch circuit is
+where P:v,.onand P:w.otr are the turn on loss and the turn off
+expressed as
+where the relationship between I, and i,, Te is as
+The loss of the inverter can be expressed by the
+electromagnetic torque and electrical angular speed of the
+PMSM as
+up is defined as the battery terminal voltage and i, is the
+outflow current.
+Fig. 3. Generalized ECM for lithium batteries
+Uy=Uo,一兮口—uc,@n
+where u, is defined as the voltage across the RC network,
+can be expressed as
+where Pin and Pi,are functions of the electromagnetic
+torque and electrical angular velocity of the PMSM
+respectively, as shown in Eqs. (9) and (19)
+by Analytical Algorithm
+speed to a higher speed. The target function is as follows:
+When the electric vehicle accelerate from v, to v;, the
+increasing kinetic energy is
+= 皇'′′(Vf2 一 M02). (27)
+The increasing energy Ey is only related to the initial
+speed vo and the final speed vy, and equals to the work of
+the acceleration force. If the two speeds are certain, the
+increasing energy is constant. The above optimal problem
+can also be described as
+The discretion of Eq. (28) is
+respectively.
+The total battery output energy can be expressed as
+From Eq. (30), if the maximum efficiency of output
+energy in every step is achieved, the minimum battery
+output energy in every increasing kinetic energy can be
+obtained, the sum of which is the optimal battery output
+energy. Thus, the global optimal problem can be turned into
+one which to seek the maximum kinetic energy efficiency.
+According to the vehicle resistance equation, the kinetic
+energy output efficiency can be expressed as
+achieve the maximum kinetic energy output efficiency. The
+optimum electromagnetic torque curve changes with the
+change of road condition. With the assumption that the
+rolling resistance coefficient and the drag coefficient are
+constant, the optimal electromagnetic torques at different
+slope angles are shown in Fig. 4. It can be seen from Fig. 4,
+the larger the slope angle is, the closer the optimum torque
+curve is to the maximum motor electromagnetic torque.
+一史一MaxX7,
+In section 3.1, the optimum acceleration control with
+minimum battery energy to accelerate to the target speed is
+discussed. However, the acceleration time is not considered,
+without which the driver’s demand may not be met in some
+situation. This section will study the optimal acceleration
+control with the acceleration time. As the given target speed
+is v{?), the problem can be described to solve the
+electromagnetic torque to make the following objective
+function minimum:
+where k, is the weighting factor of penalty function, and
+larger k, can shorten the acceleration time and track the
+target vehicle speed more fast.
+In accordance with section 3.1, the discretion equation
+can be expressed as
+From the above equation, the electromagnetic torques in
+different k, can be obtained on the level road, as shown in
+Fig. 5. The motor speed curves corresponding to the time
+are shown in Fig. 6.
+The acceleration control at different acceleration time
+can be achieved by controlling 户 and a good acceleration
+control can be achieved. The weighting factor k, only
+reflects the case to follow the reference speed and it cannot
+control acceleration time accurately.
+under no constraint 「
+The analytical nature enables one to get a physical
+insight in the control problem. Dynamic programming(DP)
+is very easy to implement and can easily handle all sorts of
+constraints and dynamics. The optimal energy acceleration
+control is solved by the analytical model in section 3.1. The
+problem will be solved by dynamic programming in this
+section, and, indirectly, to prove the conclusions of section
+3.1.
+The increasing kinetic energy in every step is AE, and
+Ex=NAE,, the speed in every step can be expressed as
+where R is the vehicle kinetic energy in step J.
+The cost function is defined as
+where Ebay is the j-step output energy of the battery, and can
+be expressed as
+output power.
+The system constraint is
+where T,; is the system control variable, and Ty is the
+maximum regenerative braking torque.
+The discretion state transition model is as
+where a; is the vehicle acceleration and is expressed as
+The optimum electromagnetic torque on the level road
+solved by DP is shown in Fig. 7, which is similar to that
+solve by analytical model(AM).
+一 一 Max. Te
+seek the optimum value. However, if the vehicle’s load
+conditions change, the global optimum value cannot be
+solved. The DP algorithm is used to solve optimum
+problem in dynamic system. The drawback is that the
+computation consumption is large and hard to use in
+real-time computation.
+4.2 Optimal energy acceleration control
+under time constraint
+Acceleration control under no constraint consumes large
+time to the target speed. In this section, the optimal energy
+acceleration control under time constraint is discussed.
+The acceleration time is divided into N steps with the
+step size At, and t,=NAt.
+The cost function is defined as follows:
+f一1
+The system constraint is
+The discretion state transition model is
+~ 日 一 Max.Te
+corresponding to the time is shown in Fig. 9.
+The optimal acceleration control algorithms of the
+PMSM are studied in simulation and experiment. The
+experiment are carried out by a four-wheel hub motor
+driven electric vehicle.
+in Table 1. The vehicle and battery parameters are shown in
+Table 2. Parameters of electric vehicle and battery
+Frontal area 4/m’ 14
+Dimensionless coefficient Cp 0.4
+section 4.
+shown in Table 3.
+and the battery output energy are shown in Table 4.
+Table 3. Acceleration properties in different acceleration
+pedal opening
+Accelerator pedal Acceleration Acceleration Battery output
+opening a/% time #,/s distance s,/m energy EhstykJ
+20 252.05 2115.8 462.28
+40 42.47 375.60 146.44
+60 20.72 169.05 108.77
+80 13.94 110.69 101.78
+100 10.39 81.06 99.20
+Table 4. Acceleration properties in different &,
+Weighting Acceleration Acceleration Battery output
+factor 无 time fa/s distance s,/m energy Eoaty/ KJ
+0 (Optimum) 19.27 101.79 93.87
+0.5 15.46 96.83 94.23
+2 12.89 90.52 95.54
+5 11.17 84.91 97.83
+parts: the rolling resistance loss, the wind drag loss and the
+power loss of the electric drive system. A longer traveling
+distance, higher speed and the low efficiency of the electric
+drive system will increase the loss respectively. Therefore,
+the vehicle speed, traveling distance and the efficiency of
+the drive system should be taken into consideration in the
+optimal acceleration control.
+Acceleration time Acceleration distance Battery output energy
+Ls Sam Eon/k]
+11 82.73 97.72
+13 89.09 95.50
+15 94.74 94.63
+17 93.95 94.33
+19.3 (Optimum) 101.79 93.87
+The energy consumptions in the above three acceleration
+control strategies are compared in Fig. 18. In the same
+acceleration time, the battery output energy in the constant
+accelerator pedal opening control is significantly greater
+than that in the acceleration control calculated by analytical
+model and DP algorithm. Although there are some
+differences in the torques calculated by analytical algorithm
+and DP solution, as shown in Fig. 11 and Fig. 12, the
+energy consumptions in both algorithms are almost the
+electromagnetic torque of PMSM under field oriented
+same due to the high efficiency of PMSM. The acceleration
+torque can be easily calculated by the analytical model, and
+it can be used for real-time control. However, it is difficult
+to control the acceleration time accurately in analytical
+algorithm. The global optimal acceleration control can be
+achieved by DP algorithm with precise acceleration time
+constraint, but the DP algorithm consumes a large amount
+of computation time.
+incorporates torque control has been proposed. The optimal
+acceleration control solved by analytical model can be
+implemented to minimize the battery energy consumption
+in unit kinetic energy increment, which is simple and
+effective. For the case of time-bound, in order to achieve a
+robust, less computationally expensive, a penalty function
+is introduced to change the vehicle speed tracking
+performance.
+achieved by dynamic programming (DP) algorithm with
+precise acceleration time constraint, but the DP algorithm
+needs to consume a large amount of computation time. The
+DP solutions for different acceleration time are presented to
+assess the performance of the above analytical algorithm.
+(4) Experiment results show that the energy
+consumptions in analytical algorithm and DP solution are
+almost the same and the required battery energy with
+optimal acceleration control strategy is greatly reduced
+compared with that in the constant pedal opening condition.

@@ -1,0 +1,460 @@
+直升机模拟自转下滑试飞技术研究
+国外对于直升机自转下滑性能的研究已经较为成熟,并已经形成了系统的操作规程。我国国内虽然对于直升机自转下滑性能的研究并不是很多,但是也取得了一定的成果。该文对直升机自转下滑性能进行了理论分析,给出了自转下滑性能指标理论计算方法,并利用平飞试飞数据对自转下滑指标进行了理论计算,最后设计了模拟自转下滑试飞方法,对试验机进行了模拟自转下滑试飞,给出了模拟自转下滑试飞结果,符合理论计算结果。
+
+直升机 飞行试验 自转下滑 技术研究  
+
+0引言
+深空探测是指对太阳系内除地球以外的行星及
+其卫星、小行星、彗星等天体或空间环境的探测,以及
+太阳系以外的银河系乃至整个宇宙的探测。国际宇.
+航界公认的“深空“定义为距离地球200万km外的
+空间。深空导航就是确定深空航天器当前位置,颈测
+并修正其飞行路径,使其处在所期望轨迹的一个可接
+受误差范围内的过程。这一复杂过程包括航天器位
+置和速度信息的采集.处理并得到作为时间函数的航
+天器位置和速度的估计值。深空导航的手段一般有
+地基导航和自主导航2种方式“1。深空导航就是要
+确定深空航天器的位置、速度和姿态等信息,一般有
+地基导航和自主导航2种方式。迄今为止,绝大部分
+深空航天器都是依靠地基导航手段,主要采用无线电
+跟踪测量。传统的无线电跟踪测量方法一一测距和
+多普勒测速存在三大缺陷:13航天器赤纬接近0“时,
+赤纬测量灵敏度显著下降“1;2)对航天器运动的横向
+参数不敏感“1;3)系统模型误差多,需要通过较长时
+间的观测来修正。同时随着航天器与地面站距离越
+来越远,以下几个问题变得尤为突出:1)空间信号传
+输时延增大,要求定轨时间进一步缩短,以满足航天
+器机动后状态的快速确定;2)信号链路衰减急剧增
+加,地面站接收信号的信噪比下降;3)距离增加使得
+同等测角精度下的航天器定位误差增大。另外,深空
+探测任务越来越复杂,从最初简单的目标天体飞越,
+到入轨环绕,再到精确表面着陆,对导航精度的要求
+也越来越高。同时,地球定向,站址坐标、行星星历、
+参考源位置等基础参数的精度也需要改进。
+为了解决上述问题,一种新的测量体制-一一无
+线电干涉测量技术被引人到深空导航中。该技术最
+早是在天文学领域用于研究射电源结构。为了提高
+分辨率,20世纪60年代中期,苏联科学家提出了独
+立本振长基线干涉的概念“1,之后NASA(美国国
+家航空航天局)通过射电源观测试验成功验证了该
+技术用于深空导航的可行性。所谓干涉测量技术,
+就是利用2个或多个地面站准同时接收目标航天器
+信号,经过相关处理可获得目标航天器信号到达不
+同地面站的时间差,从而获得目标相对2个地面站
+基线的角位置信息,图1是该技术的几何测量原理。
+相比传统方法、该技术具有以下优点:1)不存在航天
+器零赤纬测量灵敏度低的问题;2)对横向参数敏感,
+只需要2条不平行(尽量互相垂直)基线就可以解算
+出航天器天平面位置,基线越长角精度越高;3)通过
+观测邻近射电源可以与航天器信号进行差分,减小
+系统公共误差,提高测量精度,而且这是一种几何测
+量方法,不受航天器动力模型误差的影响“1;4)定轨
+周期短,只需要利用航天器下行信号,短时间的观测
+就可以获得高精度定轨结果;5)可以用来精确测定
+行星星历、地球定向、参考源位置等参数““。无线电
+干涉测量技术的上述特点使其成为传统测距和多普
+勒测速方法的重要补充,在现代深空导航中具有不
+可取代的地位。
+1无线电干涉测量技术的发展历程
+1.1“起步阶段
+1967年美国和加拿大成功进行了VI.BI(甚长
+基线干涉测量)试验“1。NASA认识到这种技术在
+深空导航中具有良好的应用前景,开展了一系列射
+电源观测试验,但当时测量精度仅200一500nsl7。
+19704XHA.E.Rogers提出了带宽综合技
+术“,群时延测量精度取得了突破性提高,VI.BI技
+术得到质的发展。NASADSN(深空网)一方面肢
+动了全球VLBI地球物理联测,提高了世界时、极
+移、板块运动等参数和天球参考架的精度““;另一方
+面开展了VLBI航天任务定位试验,使“阿波罗“
+(Apollo)16号、17号月球车的月面定位精度达到了
+20m“,还开展了“阿波罗“月面试验站的同波柬相
+对定位和射电源差分干涉测量试验。差分干涉测量
+就是利用邻近射电源标校作用,将航天器信号时延
+测量值与射电源信号时延测量值作差分,减小信号
+传播路径,设备延迟、站址等误差因紫的影响,可以
+大幅提高测量精度,观测示意图如图2所示。1972
+年NASA利用“水手“(Mariner)9号下行S频段信
+号开展了窄带AVI.BI(差分VLBI)试验“0,由于各
+种因素考虑不周,数据处理算法不完善,结果较差。
+1979年利用“旅行者“(Voyager)1号、2号飞越木星
+的机会,进行了22次窄带AVLBI试验,但结果误差
+比预期大10倍,达到了500nrad,主要原因是参考
+源离航天器角距太远,设备延迟误差较大,观测规划
+有鲍陷1021。
+术的起步阶段,理论的发展和验证试验奠定了干涉
+测量技术在深空导航中的应用基础。以美国为主
+导,开展了多次VLBI深空导航试验,确定了干涉测
+量技术参与深空导航的方式。同时通过射电源观
+测,极大地提高了地球定向参数和天球参考架的精
+度。由于当时试验条件有限,第一代数据采集系统
+MkI的记录速率仅为720kbit/ys,信号带宽只有数
+百千赫,只适合窄带VLBI观测,设备延迟误差和站
+址误差也较大,所以无线电干涉测量无法提供精确
+定辐所需的高精度测量数据,并没有使其成为
+NASA的一种常规导航手段。
+1.2“改进阶段
+20世纪80年代初,“旅行者“号与土星交会时
+碰到了零赤纬问题,成为开展无线电干涉测量的绝
+佳机会。NASA对“旅行者“1、2号进行了窄带
+AVLBI和ADOR(双差分单向测BE))测 2,
+ADOR技术源于DSN提出的序列侧音信号测距系
+统,利用航天器发射的几个DOR(差分单向测跚2音
+解算距离整周模糊,从而获得精确的群时延。
+蚀然“旅行者“号并没有DOR音,但是利用其
+遥测副载波的谐波进行了3.6一6.48MHz的有限
+带宽测量,精度达到了100nradr「1,同时在“海盗“
+(Viking)号航天器上也开展了类似工作。1982年
+为了验证将在“伽利略“(Galileo)号航天器上使用的
+ADOR技术的可行性,NASA利用“旅行者“2号开
+展了一项X频段试验,带宽扩晚到14MHz,测角精
+度提高了4M50,。1985年深空网建立了窄通带
+VLBI系统,采用数模混合组件r,数据可以通过通
+信链路在儿小时内传到处理中心,能保证接时把
+ADOR测量结果交付给JPL(喷气推进实验室)导航
+小组。ADOR逐渐成为深空网的一种常规导航技
+术,并相继在“旅行者“!5.2号飞越天王星和海王
+星时得到应用。前苏联也在20世纪80年代建成了
+深空测控网,对“金星“(Venus)15号、“维加“(Vega)
+号等进行了AVLBI试验,并在“维加“号任务中成功
+测量了金星的大气风速“1。日本也利用地球同步
+卫星进行了AVLBL测轨试验,精度达到100mM",
+20世纪80年代的10年间,无线电干涉测量技
+术得到了充分发展,在继承原有AVLBL测量的基
+础上,又提出了ADOR测量新体制,测量精宣上了
+一个台阶。尽管航天器还不具备宽带信号或DOR
+音,但是利用有限带宽的远边带信号获得的高精度
+结果却是令人振奋的。无线电干涉测量技术也得到
+了很多国家的重视,相继开发了用于深空导航的干
+涉测量系统并进行了试验。
+1.3“发展阶段
+1990年“麦哲伦“(Magellan)号航天器前往金
+星途中,利用其宽达30MHz的X频段遥测信号进
+行了ADOR试验,精度达到了30nradr“1。之后4
+年,在“麦哲伦“号环绕金星飞行期间又进行了多次
+观测,精度提高到20nrad;并建立了更好的金星参
+考架返接“1。同一时期还利用“伽利略“号S频段
+7.65MHz带宽信号开展了ADOR测量,受限于带
+宽影响,精度只有50nradr2。“火星观察者“(Mars
+Observer)号是第一个具备X频段38.25MHz带宽
+DOR音的航天器,1992一1993年,其巡航段测角精
+度达到23nrad[2「“2,相当于在火星距离上(约1AU)
+定位精度为3km,ADOR测量成为NASADSN的
+标准配置。遗嬗的是,虽然无线电干涉测量技术已
+绅发展到性能如此优越的地步,却没有在任务中获
+得重要的地位,这主要是由于费用削减和干涉测量
+观测成功率较低造成的。这也导致了1999年的“火
+星气象轨道器“(MCO)因为没有采用无线电干涉测
+量技术,而未能发现微小动力模型误差积累,致使其
+人轨失败[2“。
+20世纪90年代,NASA在无线电干涉测量技
+术领域还进行了2次重要的试验。一次是1991年,
+利用“麦哲伦“号和“先驱者“(Pioneer)12号同时环
+绕金星飞行的机会开展了SBI(同波果干涉测量)。
+这是利用了2个航天器角距小,可以在一副天线的
+同一波束内同时观测的特点,从而可以更好地消除
+路径、设备延迟等公共误差(如图3所示),获得了
+4nrad的高精度相对角位置““1。另一次是1992年
+开展的CEI(连线干涉测量)试验,该实验使用了位
+于戈尔德斯顿深空站内相跑21km的2副天线。
+CEI虽然基线短,但天线间共用1个氢钟,时频一致
+性高,观测灵活,对目标观测时间长,信号到达2个
+基站的路径相近,如图4所示,测量精度可达50一
+100 nrad[24 。
+无线电干涉测量技术在20世纪90年代得到了
+极大发展,导航精度提高的同时还明显改进了行星
+星历和参考架连接。测量体制习得到进一步扩展,
+SBI和CEI试验成功开辟了该技术更广阔的应用范
+围,弥补了ADOR的不足。“火星气象轨道器“任务
+的失败则促进了无线电干涉测量技术在深空导航中
+地位的提升。
+二一人一
+NASA在1999年经历2次火星任务失败后,很
+快又重启了火星探测计划,无线电干涉测量技术毫
+无疑问地成为导航的重要选择。ADOKR测量顺利
+帮助2001年发射的“奥德赛“(Odyssey)号航天器
+进人火星环绕轨道,测角误差优于5nradr“1。后续
+2003年发射的“火星探测漫游者“(MER)和2004年
+发射前往水星的“信使“(Messenger)号,2005年发
+射的“火星勘察轨道器“(MRO)、2007年发射的“凤
+EB”(Phoenix)号及2011年发射的“火星科学实验
+室“(MSL)任务都采用了ADOR技术,测角精度逐
+渐提高到接近1nradr2“s%“1。在此期间,相关系统建
+设也取得重大进展,相继开发出RSR(无线电科学
+接收机)VSR(VLBI科学接收机)和WVSR(宽带
+VSR)等设备““1,记录速率达到80Mbit/s;RAT
+GPS(全球定位系统)校正系统,改进了大气修正模
+型;地球定向参数和参考源历表精度也都得到了提
+高,金星参考架连接精度达到了5nrad,而火星则达
+到了1nrad水平[。
+同一时期,JAXA(日本宇航探索局),ESA(欧
+洲空间局)和我国都开展了大量深空探索活动。
+2003年JAXA的“希望“(NOZOMI)号和“隼鸟“
+(HAYABUSA)号任务也都采用了无线电干涉测量
+HARPS,特别是2007年对“月亮女神“(SEIJENE)
+号航天器成功进行了SBI测量,2个子航天器相对
+定位精度达到10m左右[“1。2010年的“伊卡洛
+斯“(IKAROS)号任务采用了15个天线进行国际
+VLBI跟踪,事后时延处理精度达到了50ps水
+平““5“1ESA则在2005年“卡西尼-惠更斯“(Cassi-
+ni-Huygens) 5, 2006 年 “ 金 星 快 车 “( Venus Ex-
+press)上开展了ADOR测量““1,“惠更斯“探测器在
+土卫六的着陆精度在1km左右“!1。我国射电天文
+观测网在2007年联合ESA对“火垂快车“(Mars
+Express)进行了干涉测量试验,验证了我国天文观
+测VLBI技术支持深空导航的可行性““1,并顺利支
+持了当年的“嫦娥一号“和2010年的“嫦娥二号“月
+球探测任务。
+BEA21世纪的10多年来,无线电干涉测量技
+术已经趋于成熟。各国为支持自己的深空探测任
+务,都建立了相对完备的地面系统,增强了国际间的
+合作,并正逐步形成道布全球的干涉测量网络。
+图 5 总结了无线电干涉测量技术发展40多年
+来在各国主要深空探测任务中的测量精度。从图中
+可以看出测量精度在不断提高,新技术的出现加速
+了这一进程。表1是几种无线电干涉测量技术的对
+比,从表中可以看出各种技术的不同特点,对我国未
+来无线电干涉测量技术的发展有很大的参考价值。
+2“未来深空任务中无线电干涉测量技
+术的应用
+NASA、ESA、JAXA和我国等都已确定了未来
+表 1 几种课空导航无线电干涉测量技术对比
+Tab.1 Comparison of radio interferometry technologies in deep space navigation
+技术乙&〔)亘亘l墓!菖I`I)SBICEI相位参考(VLBA〉“空间VLBIam
+现 有 精 度 1~2 nrad ~0, 05 nrad ~40 nrad <1 nrad 一 一 1 nrad
+测量条件具备DOR音2个航天器短基
+线,共多基站,长需要空间具备Ka频段
+位于天线同一“用一个氡钟短基线配合VLBI卫星设备和DOR肉
+波柬内
+优点群时延测量可以高精度时频一致性.高精度,系统BAEK宽带宽,高精
+鲁棒性强,所“确定航天器相“好,观测
+灵活,鲁棒性强,不需度
+需观测时间短“对位置可观测时间长“要DOR音
+缺点需要DOR音2个航天器基线
+短,精需要多个基基线误差需要Ka频段
+角距要小度较低
+站大,空间卫星“设备和DOR音,
+应用场合深空导航航天器相对近地卫星定深空导航,深空导航深空导航
+定位位
+参考源定位
+儿年的探测任务。为满足无线电干涉测量,航天器
+历的经验,在“朱诺“号进入木星轨道后开展木星星
+都配置了特殊的信标,导航精度也将进一步提高。
+历改进工作51。
+下面介绍无线电干涉测量技术在未来几个主要深空
+ESA和JAXA合作的“贝皮-哥伦布“(BepiCo-
+探测任务中的应用。
+NASA在2011年发射了“朱谌“(Juno)号航天
+天器包含2.个部分,分别是水星行星轨道器(MPO)
+器,预计于2016年到达木星。该航天器配备了Ka
+和水星磁层轨道器(MMO)。因为水星与太阳距离
+频县应答机,DSN已经对其进行了ADpOR测量,用
+很近,太阳的强大引力使得航天器很难被水星俘获,
+于轨道校验“7。“朱诺“号将完成一系列木星极地
+所以对入轨精度要求比较高,期望优于11kmr1。
+探测任务,对定轨和木星星历精度要求很高。
+另外“贝皮-哥伦布“号的辐道设计比较复杂,采用低
+NASA计划借鉴之前观测“卡西尼“号改进土星星
+推力离子发动机,有多次行星飞越[“1,考虑到水星
+附近光压是地球附近的11倍,加之多次太阳交会引
+人的严重观测误差,需要在航天器飞行途中进行多
+次无线电干涉测量,以便进行轨道修正,确保导航正
+确性。航天器进人水星轨道后,这2家合作机构还
+将开展SBI测量,确定2个航天器的相对位置。2
+个航天器均配置了X/Ka频段应答机,下行双频信
+号可以很好地消除路径中太阳风和电离层影响引起
+的传播误差,从而提高定位精度。
+我国计划于2013年年底发射的“嫦娥三号“也
+将采用ADOR技术,还将利用着陆器和巡视器处于
+地面站同一波束范围内的时机开展SBI试验,确定
+两者在月面的相对位置,预计时延测量精度能达到
+皮秒量级[01。
+“木星冰卫星据测器任务“(JUICE)号作为欧洲
+宇宙全景计划(CosmicVisionProgram)的第一个
+大型任务,计划于2022年发射前往木星系统,将拜
+访木星的3颗卫星「史。该航天器也是JIVE(欧洲
+VLLBI联合机构)开展PRIDE(行星无线电干涉与多
+普勒试验)项目的一个载体。PRIDE项目基于无线
+电干涉测量技术,需要高精度的航天器位置和速度
+信息,以开展重力场测量、行星系统动力学等基础问
+题研究。这个探测器颂计2030年到达木星,所以在
+此期间无线电干涉测量精度的提高将直接影响
+PRIDE的结果。
+从上述几个在进行或规划中的任务可以看出,
+在今后的深空探测中,无线电干涉测量的作用至关
+重要,不仅要为深空航天器提供导航定轨服务,还要
+为科学探测提供支持。未来深空探测的任务复杂度
+更高,环境更恶劣,对测量精度的要求也越来越高。
+各国都在着力改进无线电测量系统,研究新的测量
+技术体制。
+3“无线电干涉测量技术未来发展方向
+结合未来深空探测任务的需求,深空导航无线
+电干涉测量技术今后主要的发展方向可以概括为以
+下几个方面。
+3.1“提高测量精度
+深空导航精度越高对任务的支持就越有效,同
+时可以获得更多的科学探测成果。现在各国尝试在
+无线电干涉测量领域提高精度的主要方法有:采用
+Ka频段,采用空间干涉测量,求解相时延等。
+提高观测频段有以下好处“:1)可以增加观测
+带宽,提高群时延测量精度;2)减小空间等离子体的
+影响;3)高频段的射电参考源更致密;4)信息传输速
+率更高。NASA已经在“火星勋察轨道器“上试验了
+Ka频段的ADOR测量,定位精度优于1nrad2。
+空间十涉测量的主要目的是进一步扩展基线长
+度,因为测角精度和基线长度成正比,该方法的简单
+原理见图6。日本在1997年开尺了“VILBI空间天
+文台项日“(VSOP)试验,俄多斯和美国也分别启动
+了“射电天文“(RadioAstron)项目和“天地先进无线
+电十涉测量“(ARISE)项目,日的都是把基线扩展
+到太空。干涉测量系统未来甚至可以考虑在月球建
+站,进一步增大基线长度。此外,由于月球没有大气
+层,壳体运动较小,没有杂波十扰等,所以也非常适
+合干涉测量。
+相时延精度比群时延更高,如果能够解出X或Ka
+频段相时延就能显著提高测量精度。日本“月亮女
+神“号任务利用多频点综合技术尝试解X频段相位
+整周模糊,时延测量精度叮达亚皮秒量级。
+3.2提高参考源位置和行星星历精度
+干涉测量技术大部分采用差分观测,利用射电
+源标校作用削弱路径、设备延迟等公共误差,最终得
+到航天器相对于射电源的位置。航天器在天球参考
+架内的绝对位置误差必须考虑射电源的位置误差。
+现有的ICRF-2(第二代国际天球参考架)在S/X频
+BA3000多颗源,对南半球的覆盖尚不完善,如图
+7所示,精度约为0.5一0.7nradil。同时对于行星
+人轩任务,目标星体的星历精度也非常重要,它将直
+接影响航天器入轨的安全性。
+无线电干涉测量在确定这些参数方面具有独特
+个基站的布局参见图8。NASA分别佑2004年“机
+“凤盛“号上开展了根位参考战图试验,测角精度优
+于DSNADOR现有水平[“丨。诙方法还具有以下
+优点:1)航天器不篡要邗置特殊的信标,利用下行迷|
+测信号就可以精确定位;22可拟利用赞聘的参考源;
+33阵刻结构允许单个天线故障,而不会对整体性
+造成较大影患,增强了系统鲁棒性;43司以用来敦进[
+参考源精度和目标天体星历。虱然该方法实时性方
+酮尚客在问题,但JPL已经和NRAO(美国国家射
+虑大文合)着手建立台站间光纤通信网络,以保证测
+量结梁接时交付。
+姗果台站数量不够,世可以尝试利羽地球自[4]Morn]M,ThirtyyearsofVLBI:earlyday,successes,snd
+转绍合的方法获得目标成图:该方法在夫文招领
+域口经比较成热,织志深空导航方咎嵩木开艇相
+关研究白
+1888ECJ]L/31r Annual AAS Guidance and Contral Confer-
+ence. Breckenridge, Colorado. 2008.
+2] Border J S. lunovation in delta differential one-way range;
+from Viking to Mars Stieace-Laboratory[LC] 劝 Procesdings of
+the 21* fmternational Symposium on Space Flight Dynamics,
+Toulouse, France, 2009.
+3]郭万盅,芬光亮,李海海.无线电干沈浏量在淆空烈无咤导艄
+中皙庭帛[门、飞行器测控学报*2009,28(43:1-15,
+Hao Wanhong, Dong Guangliang, Li Haitso, An introdue-
+tion to application of radio interferometry in deep space navi-
+gationfM1, Journal of Spacecraft TT&C Technology, 2609,
+28(4)1 1-15(In Chinese),
+future[ C] // Astronomical Society of the Pacific Conference
+Series, International Astronomical Union Colloquium 164:
+Radio Emission from Galactic and Eirtragqiactic Compact
+Source. 1998, 144: 1-10,
+{571 LilJinling, Guo Li, Qian Zhihan, et al. The application of the
+instantaneous states reduction to the orbital monitoring of
+pivotal arcs of the Chang’ E-1 satellite[ J]. Science in China
+Series G: Physics, Mechanics and Astronomy, 2009, 52
+(12). 1833-1841,
+[ 6 ] Newhall X X, Preston R A, Esposito F B. Relating the JPL
+VLBI reference frame and the planetary ephemerides[C] /
+Proceedings of the 109t TAU Symposium, Astrometric Tech-
+niques. Gainesville, Florida, 1986. 789-794.
+[7] Cohen M H, Shaffer D B. Positions of radio sources from
+long-baseline interferometry[ J]. The Astronomical Journal,
+1971,76(2): 91-100,
+[ 8] Rogers A E. Very long baseline interferometry with large ef-
+fective bandwidth for phase-delay measurements[J]. Radio
+Science, 1970, 5(10): 1239-1247.
+[ 9 ] Fanselow J L., MacDoran P F, Thomas J B, et al, The Gold-
+stone interferometer for earth physics, DSN Progress Report
+32-1526[R]. Pasadena: Jet Propulsion Laboratory, 1971.
+[10] Salzberg I M. Tracking the Apollo lunar rover with interfer-
+ometry techniques[ J]. Proceedings of the IEEE, 1973, 61
+(9): 1233-1236.
+(117 Slade M A,MacDoran P F, Shapiro I I,et al, The Mariner 9
+quasar experiment; part I, DSN Progress Report 32-1526
+[R]. Pasadena: Jet Propulsion Laboratory, 1974.
+[12] Christensen C S, Moultrie B, Callahan P S,et al. AVLBI
+spacecraft tracking system demonstration part II; Data acqui-
+sition and processing, TDA Progress Report 42-60[R]. Pasa-
+dena: Jet Propulsion Laboratory, 1980.
+[13] Brunn DL, Preston R A, Wu S C, et al. AVLBI spacecraft
+tracking system demonstration part I; design and planning,
+DSN Progress Report 42-45 R]. Pasadena: Jet Propulsion
+Laboratory, 1978.
+[14] Border J S, Donivan F F, Finley S G,et al. Determining
+spacecraft angular position with delta VLBI: the voyager
+demonstration[ CJ] // AIAA/AAS Astrodynamics Conference.
+San Diego, California, 1982,
+[15] Brown D S, Hildebrand C E, Skjerve L J. Wideband delta
+VLBI for deep space navigation] C] // PLANS’ 80-Position Lo-
+cation and Navigation Symposium, Atlantic City, New
+Jersey,1980: 389-396.
+[16] Liewer K M. DSN very long baseline interferometry system
+Mark IV-88,TDA Progress Report 42-33[R]. Pasadena: Jet
+Propulsion Laboratory, 1988,
+[17] Sagdeyev R Z, Kerzhanovitch V V, Kogan L. R, et al, Dif-
+ferential VLBI measurements of the Venus atmosphere dy-
+namics by balloons-VEGA Project[ J]. Astronomy and Astro-
+physics, 1992, 254(1》 ; 387-392.
+[18] Shiomi T, Kozono S, Arimoto Y, et al. Precise orbit deter-
+mination of a geosynchronous satellite by Delta VI.BI method
+[ 刀 . Journal of the Radio Research Laboratory, 1984, 31:
+111-132.
+[19] Graat EJ, Ryne M S,Border J S, et al. Contribution of
+Doppler and interferometric tracking during the Magellan ap-
+proach to Venus[CJ 介 Proceedings of the AAS/AIAA Astro-
+dynamics Conference. Durango, Colorado, 1992: 919-939.
+[20] Jacobson R A, Haw R J, McElrath T P, et al. A compre-
+hensive orbit reconstruction for the Galileo prime mission in
+the J2000 system[ CJ 介 Proceedings of the AAS/ AIAA As-
+trodynamics Conference, Girdwood, Alaska, 1999.
+[21] Cangahuala L A, Graat ET, Roth DC, et al. Mars Observ-
+er interplanetary cruise orbit determination[CJ // Proceedings
+of the AAS/ AIAA Spaceflight Mechanics Meeting, Advances
+in the Astronautical Sciences. Cocoa Beach, Florida, 1994.
+1049-10868.
+[22]李金岭,张津维,刘鹏,等,应用于深空探测的VLBI技术
+{I]. 航 天 器 工 程 ,2012, 21(2), 62-67.
+Li Jinling, Zhang Jinwei, Liu Li, et al. VLBI technique ap-
+plied in deep space exploration[ J]. Spacecraft Engineering,
+2012,21(2) : 62-67(In Chinese). 「
+[23] Border J S, Folkner W M, Kahn R D,et al. Precise tracking
+of the Magellan and Pioneer Venus orbiters by Same-Beam
+Interferometry part I; Data accuracy analysis, TDA Progress
+Report 42-110 R]. Pasadena: Jet Propulsion Laboratory,
+1992.
+[24]唐歌实.深空测控无线电测量技术[M].北京;国防工业出版
+社 ,2012: 124-126,
+Tang Geshi. Radiometric measuring techniques for deep space
+navigation[ MJ], Beijing: National Defense Industry Press,
+2012: 124-126(In Chinese).
+[25] Antreasian P G, Baird D T, Border J S: et al. 2001 Mars
+Odyssey orbit determination during interplanetary cruise[]].
+Journal of Spacecraft and Rockets,2005,《2(3) 394-405.
+[26] McElrath T P, Watkins M M, Portock BM, et al. Mars Ex-
+ploration Rovers orbit determination filter strategy [CJ //
+AIAA/AAS Astrodynamics Conference. Providence, Rhode
+Island, 2004.
+[27] Border J S. A global approach to delta differential one-way
+rangeLCJ 介 Proceedings of 25% International Symposium on
+Space Technology and Science. Kanazawa, Japan, 2006:
+581-586.
+[28] Martin-Mur T J, Kruizinga G L, Wong M C. Mars science
+laboratory interplanetary navigation analysis[ C] 人 22n4 Inter-
+national Symposium on Space Flight Dynamics. Sao Jose dos
+Campos, Brazil, 2011.
+[29] Martin-Mur TJ, Kruizingas G 1., Burkhart DP, et al. Mars
+Science Laboratory navigation results[ C] // 23 International
+Symposium on Space Flight Dynamics. Pasadena, California,
+2012.
+[30] Ryne M S, Graat E, Haw R, et al. Orbit determination for
+the 2007 Mars Phoenix Lander [ CJ // Proceedings of the
+AIAA Guidance, Navigation, and Control Conference. Hon-

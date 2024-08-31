@@ -1,0 +1,469 @@
+抛物化 Navier-Stokes 方程（PNS）和高氏 PNS 理论及其应用的评述
+抛物化 NS 方程得到广泛应用，已经成为工业标准气动计算的基础。现有的八种抛物化 NS 方程有不同的名称，方程中粘性项的形式略有不同，其中的 PNS 和薄层（TL）NS 方程应用最多。但是这些方程都具有类似的数学性质，例如，当流向方向上马赫数大于1时，他们都是抛物型方程，可以采用空间推进算法（SMA）进行求解。与采用时间推进算法求解的 NS 方程或雷诺平均（RA）NS 方程相比，PNS-SMA 计算降低了空间的维数，节省了大量的存储空间和 CPU 计算时间。PNS-SMA 算法也获得了巨大的进展。但是，早期 PNS 研究在理论上是相当模糊的，高智在1990年提出的粘性／无粘干扰剪切流理论（ISF）弥补了这一不足。ISF 理论概括了 PNS 方程所能描述的基本流动，提出了其流动的运动规律及数学定义式，所导出的 ISF 方程组也属于 PNS 方程的一种。为了不增加新的名称，我们将 ISF 方程组也称为高氏 PNS 理论和方程组。这一理论在 NS 方程和RANS 方程的计算中均有重要的应用。例如，计算最优坐标系的选择以减少伪扩散，网格尺度选择及局部网格加密设计以捕捉高超声速流动中物体表面热流等的急剧变化，壁面压力边界条件的选择以及由高 PNS 导出的壁面判据来进行 NS 和 RANS 近壁数值解可信度评估。本文评述了一些初步的应用，进一步的应用和综合 PNS-SMA，RANS-SMA 以及 PSE-SMA 计算值得深入研究，这里 PSE指抛物化稳定性方程。
+
+抛物化NS方程 空间推进算法 粘性/无粘干扰剪切流动 高氏PNS理论  
+
+0 Introduction
+The NS equations proposed in 1845 are very diffi-
+cult to solve in their complete form. It’s always the goal
+of viscous fluid dynamics to search a simplified and
+accuracy enough solution for NS equations. In 1904,
+Prandtl proposed boundary layer theory which provided
+such a decisive simplification of the NS equations and
+opened up a new area of fluid dynamics!’ From 1930’
+s to the 1960’ s various special second-order correc-
+tions[231 , interacting boundary layers"! and higher-
+order boundary-layer 出e盯y… was developed in order to
+take viscous/inviscid interacting into consideration.
+From 1960 s, numerous authors from America!?? ,
+Russiar“ China"! nearly contemporaneously inde-
+pendently developed and used some other approximate
+equations for solving viscous flow problems which are
+nearly boundary-layer type, but due to the physics of the
+problem being considered, include some additional
+effects either in the boundary conditions or the equations
+themselves. These different approximate equations with
+different slightly viscous terms have often been called
+“parabolized“,“thin layer”, “reduced” NS equations
+or “ISF” equations for obvious reasons. In the paper we
+simply call these classes of equations as PNS equations
+although it is somewhat a misnomer,since the equations
+are actually a mixed set of hyperbolic parabolic elliptical
+equations, provided that certain conditions are met.
+Amounts of numerical simulation shown that solu-
+tion of PNS equations were closed to solution of full NS
+equation for flows without large separation. Also, for
+high Re number flows, if the solution of full NS equation
+were taken based on a set of coarse mesh, because of
+real physical viscous being covered by numerical vis-
+cous, the final solution are not numerical result of full
+NS equation but numerical result of another set of
+reduced NS equations, such as PNS equations’. On
+the other hand, because strong viscous region only is
+existing in shear layer and region near the wall surface
+and most of the rest region were dominated by non-viscid
+flows, simple PNS equations will be enough to describe
+high Re viscous flows instead of full NS equations 21.
+A set of PNS equations is of theoretical value in es-
+tablishing Prandtl’ s approximation as the basis of an
+asympototic solution of the NS equations for large Re
+number. It may also be of practical value. “The PNS
+method is in very wider spread use; indeed, it forms the
+basis of an industry-standard computer program ,which
+is used by virtually all major aerodynamic laboratories
+and companies.” as Anderson pointed in his mono-
+graph!!. Furthermore, the development of such a tech-
+nique requires the examination of the fundamental ( as-
+ymptotic) structure of the flowfield which leads not only
+to the determination of the correct approximate equations
+to use but also to the scale laws which set the mesh sizes
+for accurate numerical computations. This information is
+necessary even if one wishes to efficiently solve the full
+NS equations.
+For a significant class of asymptotic approximations
+to the complete NS equations, PNS equations would
+have correctly accounted for viscous-inviscid flow inter-
+acting mechanism and opened a new approach for simu-
+tion 1. A kind of PNS equations, ISF theory, proposed
+independentiy by Chinese author is presented in section
+2. Section 3 will show that some inferences of ISF theory
+such as wall-surface criteria formulas and new pressure
+boundary conditions derived from ISF equations also
+have important value to CFD application. Some conclu-
+sions are finallv drawn in section 4,
+1 A brief review of PNS equations
+1.1 Different form and mathematical properties of
+PNS equations
+The derivation of PNS equations from the complete
+Navier-Stokes equations is, in general, not as rigorous
+as the derivation of the boundary-layer equations. Because
+of this, slightly different versions of the PNS equations
+have appeared in the literature. These versions differ in
+some cases because of the type of flow problem being
+considered. However, in all cases the normal pressure
+gradient term is retained, and the second derivative
+terms with respect to the streamwise direction are omit-
+ted.
+As Pletcher classified!" , there are several sets of
+equations that fall within this class, such as parabolized
+Navier-Stokes ( PNS) equations'?'*’ , reduced Navier-
+Stokes ( RNS ) equations ,partially parabolized Navier-
+Stokes (PPNS) equations, viscous shock-layer ( VSL)
+equations, conical Navier-Stokes (CNS) equations, and
+thin-layer Navier-Stokes (TLNS) equations.
+The most common form of PNS equations" is
+obtained by assuming that the streamwise viscous deriva-
+tive terms are of 0(1 ) while the normal and transverse
+viscous derivative terms are of ()(/…(署羞′/2〉. Hence these
+PNS equations are derived by simply dropping all vis-
+Note that in these equations a parameter w has
+been inserted in front of the streamwise pressure gradient
+term in the x momentum equation. Thus if w is set equal
+to zero, the streamwise pressure gradient term is omit-
+ted. On the other hand, if w is set equal to 1 the term
+is retained completely.
+The mathematical property of PNS equations had
+been studied by many authors. Detail characteristic
+the streamwise pressure gradient is retained completely
+(i.e. , @w =1), only when local streamwise Mach num-
+ber Mx>1 an initial-boundary value hypothesis of PNS
+equations is well-posed, i. e. PNS equations can be
+solved numerically by space marching algorithm ( SMA)
+along the x-direction, while when Mx <1, an initial-
+boundary value hypothesis is ill-posed. But if only a
+fraction of the streamwise pressure gradient is retained
+called the RNS (…(Il】融1ti0【lS)〔2_]. The RNS equations are
+derived from the complete unsteady Navier-Stokes equa-
+tions by dropping the streamwise viscous terms ,omitting
+the viscous terms in the normal momentum equation ,
+derivative terms are also omitted.
+张oP+趴-张2)
+ax dx dy dy
+components of the pressure gradient term.
+For supersonic flows with embedded “ elliptic “
+regions, the global pressure relaxation procedure can be
+used to solve the RNS equations. For subsonic flows, if
+PNS equations are solved without making simplifying
+approximations regarding the pressure, the equations are
+only partially parabolized, leading to the terminology
+PPNS.
+The PPNS system remains elliptic overall because
+of the influence of the pressure field. In developing the
+PPNS model from the Navier Stokes equations, only cer-
+tain diffusion processes are neglected, and no assump-
+tions are made about the pressure. The PPNS model has
+| also been referred to as the semi-elliptic or RNS formu-
+lation in the literature. PPNS may be regarded as a
+specified name of PNS for subsonic flows. The solution
+and skin friction could be obtained by solving the
+unsteady NS equations on the unit sphere with all deriv-
+atives in the radial direction set equal to zero byAnder-
+s()【l〔1…,].
+The thin-layer Navier-Stokes equations were
+obtained upon simplifying the complete NS equations
+using the thin-layer approximation which was arisen from
+a detailed examination of typical high Re number compu-
+tations involving the full NS equation by Baldwin and
+Lomax'*!. Thin-layer approximation can also be used
+into PNS equations. The typical resulting TNLS equa-
+tions can be seen in many literatures[2.“1、The TLNS
+equations are a mixed set of hyperbolic-parabolic PDEs
+in time.
+All kinds of PNS equations can extend to turbulent
+flows using similar approximation to obtain simplified
+parabolized Reynolds Averages Naiver-Stokes ( PRANS )
+equations.
+1.2 Numerical solution of PNS equations
+PNS computational techniques are the most key of
+PNS and also basic reason of PNS becomes the basis of
+industry-standard aerodynamic computations. For the
+PNS system, streamwise 6 diffusion terms are neglected ,
+or with other higher order diffusion terms are treated as
+an explicit deferred corrector. This formulation reduces
+to a single sweep or initial value PNS method ,whenever
+the negative flux contributions due to acoustic and con-
+vective upstream influence can be uniformly neglected.
+This proceduce is very computer efficient. If the nega-
+tive flux terms are important and retained ,an alternative
+formulation to conventional characteristic-based flux
+differencing results. This procedure is applicable for in-
+compressible to hypersonic flows and allows for upstream
+in literatures" 18, 20] *
+In recent years ,PNS algorithms were focus on how
+to increase convergence speed and how to deal with large
+reverse-flow regions or subsonic-flow regions, and their
+extending to non/structure grids. One method is using a
+space-marching scheme solving the PNS equations until
+an elliptic/reverse-flow region is encountered, then
+switching to a global iteration method for the length of
+the elliptic region, iterating until convergence is
+reached, and pursuing with the marching PNS scheme.
+However, such a strategy forces the solution of the PNS
+equations in certain regions of the flow field, for which
+the PNS assumption might induce appreciable errors.
+The accuracy of the final solution is hence strongly
+dependent on the ability of the method to predict cor-
+rectly different flow regions. Another approach, named
+“active domain,” to solving inviscid supersonic flow
+with embedded subsonic regions has been proposed. The
+method consists of performing pseudo-time iterations on
+a small bandlike computational domain that advances in
+the streamwise direction every time the residual of the
+active domain near the upstream boundary falls below a
+user-defined threshold. Using sensors based on the stre-
+amwise components of the Mach number, the active-
+domain boundaries automatically surround any locally
+subsonic region on which sufficient iterations are per-
+formed to reach steady state. When the residual inside
+the subsonic region decreases below the user-defined
+threshold, the active domain advances past the subsonic
+region further downstream. By marching in the stream-
+wise direction, the active domain results in up to a 10-
+fold decrease in work compared to standard pseudo-time-
+marching methods for several inviscid problems. However,
+streamwise separated flows was developed. The mare-
+hing window performs localized pseudo-time stepping on
+a sub-domain composed of a sequence of cross-stream
+planes of nodes. The width of the marching window
+decreases to only a few planes in regions of quasihyper-
+bolic flow and increases to the size. of the streamwise-
+elliptic region when encountered. However, the marc-
+hing window is strictly a convergence acceleration tech-
+nique, as it guarantees that the residual of all nodes will
+be below the user-defined threshold when convergence is
+attained. This is accomplished by keeping the residual
+upstream of the marching-window sub-domain updated at
+all times, and by positioning the upstream boundary
+such that the residual of all nodes upstream is below the
+user-defined threshold. This results in an algorithm that
+captures all upstream propagating waves affecting the re-
+sidual significantly. The upstream propagating waves
+can originate from (but are not necessarily limited to)
+large subsonic pockets, streamwise separation, ,stream-
+wise viscous fluxes, or flux limiters in the streamwise
+.convection flux derivative, for instance.
+1.3 Applications of PNS and its’ fluid theory
+The PNS method has been widely utilized in virtu-
+ally all major aerodynamic laboratories and companies
+for many cases including perfect gas flows,chemically
+reaction flows[2“1 and magneto-hydrodynamic ( MHD)
+flow [201 , etc. There are several ( more than ten) space
+PNSI1 NASA UPS", IMPNS"*', TORPEDO"
+and SSPNSIC51! | codes by He'?!. Many research about
+PNS method are focus on the instability, speed, effi-
+ciency, application scope of space marching algorithm
+but few literatures talk about fluid basic theory of PNS.
+several typical flows, such as (a) Leading edge of a flat
+plate in a hypersonic rarefied flow. 《 b Mixing layer
+with a strong transverse pressure gradient. 《c) Blunt body
+in a supersonic flow at high altitude. (d) Flow along a
+streamwise corner (e) Flow in rectangular channals、Stag-
+nation point flow or oblique incidence stagnation point flow
+and multi-layer ( Triple-deck) flow with its outside invis-
+cid flow have also been proved applicable to PNS theory.
+A PNS’ s basic fluid theory, viscous/inviscid inter-
+acting shear flow 《 ISF theory, was suggested by
+Gao!” and it may furnishes complete answer to the sub-
+ject in last paragraph. ISF consists of viscous shear flow
+and its neighboring outer inviscid flow ,which interact
+on each other.. The equations governing ISF are just
+kind of PNS equations. ISF theory forms basic fluid
+theory for PNS equations and it also makes a break-
+through the beyond the classical boundary layer theory.
+Furthermore, some novel inferences were derived based
+on ISF theory and they have some important applications
+to CFD, such as application of ISF s optimal coordi-
+nates to grid design, application of length scaling laws of
+ISF’ s viscous layer to grid design, using small scale
+structure given by the scaling-laws to explain and cap-
+ture sudden changes of physical quantities like pressure
+of heat flux on body surface which are called “unknown-
+unknown” for hypersonic flow by Bertin and Cum-
+ming「38] | application of wall-surface-criteria for laminar
+flow, perturbed flow and turbulent flow to verify credita-
+bilities of NS and RANS numerical solutions and to opti-
+mize turbulent models ete.
+2 ISF theory and its inferences
+The motion-law, maybe the core hypothesis, of
+mula (3) and (4) does not hold. There is always a di-
+viding-flow-surface in ISF’ s viscous layer [so] , especial-
+ly, the wall surface is a dividing-flow-surface of viscous
+flow close neighbour wall surface. f=(u,v,T), u and ?
+are velocity components in the x- and y- directions, re-
+spectively. T is the temperature, A=v if f=u and v, A
+=k if f=T, v is the kinematics viscous coefficient, , is
+the thermal conductivity.
+Using the definition (3) and (4) to simplify com-
+plete NS equations, we can deduce the ISF equations,
+that is for two-dimension compressible flow
+If we compare ISF equations with PNS equations in-
+troduced before,we「 山 find that they are in the same
+forms. It implied that ISF equations are one type of PNS
+equations. But different from PNS equations, ISF equa-
+tions go further more in theory analysis and deduced
+many useful inferences,just like boundary layer theory
+generate much more excellent theory results.
+2.1 Inference 1: The evolution physical scales of
+ISF’ s viscous layer
+Scaling-laws of velocity and length of ISF s viscous
+layer were examined by Gao'*!. The physical scales of
+3-D incompressible flow can be expresses generally as:
+can be compared with u, when g = 0 ISF expresses the
+stagnation flow or the classical boundary-layer flow and
+its neighbouring outer in-viscid flow, between which
+there is no interaction; when g = 1/4 the ISF’s viscous
+layer is just the lower deck of the well-known triple-deck
+theory'*'! ,in this case ISF express flow in neighbour-
+hood of separation point or reattachment point or tail-
+edge point or leading edge point or small step, hump,
+dents and chinks on wall surface etc. when g = 1/2 the
+length scales and velocity scales of ISF’ s viscous layer
+are the same in all directions, i. e. an isotropic viscous
+flow. Therefore, the interacting parameter Q is essentially a
+measure of strength of viscous/inviscid interaction. In
+addition, if the effects of the Mach number or say com-
+pressibility are not neglected, we can deduce further the
+scaling-laws of the density and temperature, adding
+which to know scaling-laws. It should be pointed out
+that the evolution laws of physical scales (10) also suit-
+able to free ISF, for which there is less study.
+ISF can express some typical flows mentioned
+above. The whole viscous/inviscid interacting flow in
+the neighbourhood of wall surface is obviously a complex
+ISF, whose governing equations are diffusion parabolized
+equations written in a fitted body orthogonal coordinates,
+which is just a fitted dividing flow surface orthogonal
+coordinates or say the complex ISF’s optimal coordinates.
+2.2 Inference 2 Dividing flow surface criteria
+In ISF s viscous shear layer there is always a di-
+Two important special cases of dividing flow surface
+criteria (12) and (13) are wall-surface criteria ( WSC)
+for viscous flow and inviscid flow near the wall. This two
+WSC are respectively
+And
+where WMC and WEC are wall momentum criteria and
+wall energy criteria, respectively. They can be used to
+verify creditability of numerical simulations for viscous
+flow or inviscid flow near wall surface.
+It should be pointed that ISF theory and its infer-
+ences can also be extended into perturbed flow and tur-
+bulent flow. Both interacting shear perturbed flow
+( ISPE ) theory and interacting shear turbulent flow
+(ISTF) theory were also suggested by Gao’. As space
+is limited, ISPE, ISTF and their inferences can be ref-
+erenced in literatures (asl In order to uniform the
+name, ISPE can also be called parobolized stability
+equation (PSE). ISTF can be called parabolized Reyn-
+olds average NS ( PRANS). Both PSE, PRANS equa-
+tions and their theories,that are closely related PNS and
+its theory, will be review in future.
+direction and 31. 6 times in flow direction than before
+interaction(g=0) if ￠=1/4.
+It is known that to date there no very convincing
+numerical results of using ISF’ s scaling laws to compute
+sudden increase of local heating rates etc. However, we
+ought to pay highly attention to thus computations for
+sudden change phenomena. This is because that some
+flight accidents, such as the damage of the rocket-
+powered X-15 when its flight velocity reached Mach 6.7
+in 1967 and the demise of the space shuttle Columbia
+during its re-entry from orbit in 2003. These accidents
+show that how severe the aero-thermodynamic environ-
+ment is for a vehicle which is travelling at hypersonic
+speeds and that how fragile the vehicles that fly through
+these environments can be. Analysis about mentioned
+above flight accidents making Bertin and (〕llmmi【】gs〔二攫霉薯]
+giving the following conclusions: “These locally severe,
+critical heating rates or unexpected deviations to the
+force and moments acting on the vehicle often occur due
+to viscous/inviscid interactions. These critical environ-
+ments are the result of “unknown-unknown “ or “ got-
+chas’”.
+In fact, the scaling-laws of ISF s viscous layer
+have illustrated the mechanism of the sudden change
+phenomena of heating rates etc. and offered a way to
+compute locally sudden change or at least a roughly
+order of magnitude estimate of them.
+3.2 Application of optimal ISF s coordinates to
+guide grid design
+For computations of ISF and flow near wall surface ,
+an optimal grid should be an orthogonal grid with grid-
+line paralleling with the coordinate axes of ISF’ s optimal
+coordinates. One example is to compute two-dimensional
+occurring in flow field computed, we ought to use ISF’s
+optimal grid each individual,such as a base free ISF
+between base circulatory flow and outer inviscid flow and
+turbulent flows, Kolmogorov scale is an important refer-
+ence scale to choosing grid size. For boundary layer
+flow ,thickness of boundary layer maybe a reference
+length. However, for an ordinary computation of Navier-
+Stokes equations, there was no definite method or stand-
+ard to choosing grid size in the past. Obviously, the
+length scaling-laws given by ISF’ s theory would be a
+definite method to determine an appropriate mesh size,
+that have been proved tentatively by two sets of computa-
+tion solving NS 〔妻(]u辜】lti0nS〔4薹蕙].
+An analysis for the numerical results of hypersonic
+flows over both an asymptotic hollows cylinder extended
+flare( HCEF ) and a sharp double cone ( SDC) shows
+that in this two examples the better numerical solutions
+can be obtained( refer to Fig. 5-11 ) when the grid sizes
+in both streamwise and normal directions are directly
+chosen as 1/10 of the length scale with g=1/4 (see for-
+mula(《10)and(《11) ) that can avoid refining repeated-
+ly grid for seeking the best grid size. It should be em-
+phasize on the importance of both ISF’ s optimal coordi-
+nates and the length scaling-law of ISF’ s viscous layer
+to grid design. Just as Schlichting and Gerstin pointed
+out in their m0【l0g薹"毛l薹)l′l[′`(〕] : “Numerical methods in com-
+puting flows at high Reynolds numbers only become effi-
+cient if the particular layered structure of the flow, as
+given by the asymptotic theory, is taken into account, as
+occurs if a suitable grid is used for computation. ”
+Obviously ,ISF theory shows further that numerical
+computations of high Re number flow only become effi-
+cient if the thin-layered structure in all directions, given
+by ISF theory, is taken into account, as occur if a suit-
+able grid with grid-lines paralleling the coordinate axes
+Fig.6 Pressure coefficient for HCEF,Run 8
+Fig.7 Stanton number for HCEF, Run 8
+Fig.8 Detail of Fig. 6 around separation point
+FHig. 10 Pressure coefficient for Run 28 over SDC
+FHig. 11 Stanton number for Run 28 over SDC
+of ISF「 s optimal coordinates and with grid-refined local-
+ly according to the length scale of the small-scale struc-
+ture in ISF’ s viscous layer is used for computations.
+3.4 Application of the wall-surface criteria to veri-
+fy creditability of NS numerical solutions
+The existence and uniqueness of the solution of NS
+equations have not been proved. So we have to face to
+an always confused problem--is it worth to trust the
+results from computer codes? If it does,how much can
+we trust it? Verification and validation of computing
+results become a very important work. The dividing flow
+surface criteria and wall surface criteria ( WSC) are
+undoubtedly theoretical methods of verifying creditability
+of NS numerical solution. Except for WEC, Gao"! had
+confirmed that eleven well-known NS exact solutions for
+incompressible flow satisfy exactly WSC and that both
+the solution of the classical boundary layer and its outer
+inviscid flow and the solutions of similar boundary layer
+Fig.12 WMC in shock laminar boundary
+layer interacting flow
+Fig.13 WEC in shock laminar boundary
+layer interacting flow
+Fig.14 WMC in laminar hypersonic flow over ramp
+In a word,we can obtain NS grid independent
+solution by operation of NS numerical calculations satis-
+fying progressively the wall surface criteria ( WSC ).
+Especially, this criteria can evaluate the departure of NS
+numerical solutions from NS true solution by just one
+time NS calculation on set of grid,which is an outstand-
+ing advantage of the WSC method compared with the
+grid convergence analysis method in common use, based
+method may be used as an ingenious substitute for the
+grid convergence analysis method and that the WSC
+method and ISF theory would be called Gao’ s criteria
+and Gao’ s ISF theory, respectively.
+Fig.15 WEC in laminar hypersonic flow over ramp
+4 Conclusions
+As a class of equations to describe fluid flows ,PNS
+D subsonic supersonic/hypersonic viscous flow over a
+variety of body shapes or internal viscous flows. Solving
+PNS equations forms industry-standard aerodynamic and
+aero- thermodynamic computations. The PNS method is
+in very widespread use. For PNS methods, attention
+should be paid not only on developing space marching
+algorithm but also on developing basic PNS theory.
+The ISF theory offer a basic fluid theories corre-
+sponding to PNS. The ISF equations are one kind of
+PNS equations. Some inferences from ISF theory and
+their application to CFD are fruitful and creativeness.
+Scientific computation of aerodynamic and aerothermody-
+namic phenomena does need to integrate well computa-
+tion with fluid theory, especially for hypersonic flow
+computation.
+Acknowledgements: I am very thankful to Prof. Z. Gao for helpful
+discussion. Acknowledgement is also made to the support of China Scholar-
+ship Council and host of Professor Khellil Sefiane in School of Engineering,
+University of Edinburgh.

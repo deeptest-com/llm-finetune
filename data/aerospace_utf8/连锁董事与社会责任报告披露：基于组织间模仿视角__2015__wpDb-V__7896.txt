@@ -1,0 +1,246 @@
+连锁董事与社会责任报告披露：基于组织间模仿视角
+基于连锁董事的信息传递作用，从组织间模仿视角研究企业间的连锁董事关系时企业社会责任报告自愿披露决策的影响，并进一步研究连锁董事在目标公司的董事类型以及目标公司与连锁公司之间的地域特征对连锁董事与企业社会责任报告自愿披露关系的调节作用。利用2009年至2013年中国沪、深两市A股上市公司存在连锁董事关系的企业7522对年度样本数据，通过Probit回归方法进行实证分析。研究结果表明，企业社会责任报告的自愿披露决策存在组织间模仿行为，即连锁公司之前的社会责任报告披露行为对目标公司之后的社会责任报告披露行为有显著的正向影响，当连锁董事在目标公司任职执行董事时或当目标公司和连锁公司属于同一地域时．这种正向影响更为显著，连锁董事对于企业社会责任报告的自愿披露决策有重要影响。
+
+连锁董事 社会责任报告披露 组织间模仿 环境不确定 信息传递  
+
+1 Introduction
+Future solar system exploration is filled with
+missions that require landing spacecraft on planets,
+moons, comets, and asteroids. Consider the scenario
+where an unmanned aerial vehicle (UAV) is arranged to
+build an internal representation of the location of features
+in an environment. In this scenario, however, the UAV is
+not equipped with its own self-localisation aid such as a
+global position system (GPS) receiver and does not have
+any priori terrain data information to localize. The
+problem is compounded by the requirement for the UAV
+to have information regarding its velocity and attitude in
+order to stabilize its motion. In many applications, the
+vehicle uses an inertial navigation system (INS).
+However, the eventual growth of localization errors due
+to the dead-reckoning nature of the INS limits the time
+that the vehicle can operate. So, the paradigm known as
+simultaneous localization and mapping (SLAM) is put
+forward [1], in which the vehicle pose and feature map
+are estimated simultaneously using only relative
+observations of the locations of features with respect to
+the vehicle.
+In practice, a filter for recursive state estimation is
+employed to correct the system errors using sensor
+aiding information. In designing the filter, the
+observability analysis is necessary because observability
+Foundation item: Project(2020203) supported by the Weapon Research Foundation, China
+Received date: 2012--09~02; Accepted date: 2013-05-20
+Corresponding author: FANG Qiang, PhD; Tel: +86—15116265267; E-mail: kobefang2010@163.com
+determines the existence of solutions and sets a lower
+limit on the estimation error.
+In control system, the study of the observability of
+such estimation processes is relevant for predicting the
+convergence or for taking a decision where to go in order
+to guarantee the localization of the platform.
+Observability analysis has had a long history in
+studying aid-INS. In Ref. [2], a new method of
+observability analysis for piece-wise constant linear
+systems (PWCS) was introduced and applied to analyzing
+the observability of an aided-INS system during in-flight
+alignment. The PWCS method was recently used to
+study the observability of GPS-aided INS system [3-5]
+during sensor platform maneuvers, and under special
+maneuvers, some system states become observable. In
+Ref. [6], the global observability definition was first
+introduced and used to investigate the specific problem
+of the INS/GPS integration system, in which the
+relationship between the system observability and the
+vehicle movements were comprehensively and profoundly
+revealed in a simple and intuitive manner, and in addition,
+a sufficient condition for the global observability was
+presented. Based on the idea of nonlinear global
+observability analysis in Refs. [7-10], the observability
+of strapdown INS alignment was investigated. A clearer
+picture of the observability problem was provided from a
+global perspective, and shedding light on previous
+theoretical results on strapdown INS alignment that were
+J. Cent. South Univ. (2013) 20: 2432-2439
+not comprehensive or consistent. In Ref. [11], for the
+first time, the observability of the nonlinear system
+Lie derivatives. To estimate the IMU-camera
+the closed-form solutions for the modes were proposed.
+unobservable state and how the unobservability was
+related to the vehicle motions,and used information
+SLAM system when the dimension and variables are
+changed with new features, which is the fact in most
+dimension and variables of SLAM system keep steady,
+then the PWCS theory can be used to analyze the local or
+total observability, and the properties of system
+observability under maneuver can also be analyzed.
+2 Error model
+The INS error equation and the SLAM observation
+model in continuous time can be found in Ref. [17].
+2.1 INS error equation
+where
+2433
+vector in the n-frame.
+2.2 SLAM observation model
+Pp, =HX +v(0) )
+where
+navigation frame.
+3 Continuous PWCS observability
+The continuous PWCS observability method was
+introduced in Ref. [2], and it is briefly shown here for
+clarity.
+Consider the PWCS model:
+Then, the total observability matrix (TOM) is
+If Q(￥) has rank x,the system defined above is
+totally observable.
+4 SLAM observability
+In this section, the observability of SLAM system
+was investigated. Note that in the continuous PWCS
+model, the dimensions of process and measurement
+models are fixed and the variables are the same all the
+time. However, in the SLAM system, different features
+may be detected during different segments. Moreover,
+the former features may not be detected in the next
+segment, which is the fact in most SLAM system. So, the
+dimension and the variables of the system would change
+during the segments. If just concerning the local
+observability of SLAM, PWCS method can be used
+directly, while if considering the total observability of
+SLAM, directly using the PWCS method might be wrong
+and some changes of the SLAM system should be made.
+Consider the next two systems:
+It is obvious that the two systems are equivalent,
+that is
+页台加
+So, the observabilities of the two systems are
+equivalent, that is
+Assume that N; features were detected inside the
+segment j, and times of the repeated features is M. The
+time-line of the measurements is shown in Fig. 1.
+Segment 1 “Segment 2 Segment 3
+广1
+can be augmented as follows:
+where
+and if feature c is detected in the segment i, a.=1;
+otherwise, Qc0.
+Now, the system model of SLAM has been
+reorganized, and the system’s dimension and variables
+keep steady during the total time [fo, #]. Then, it is able
+to use the PWCS observability method to analyze the
+Similar with Ref. [2], the TOM of SLAM system
+18
+Q(k)=
+Substituting Eqs. (9)~(10) to Eq. (12) yields
+Q(k)=
+002)
+Further, simplify the observation problem by
+assuming the detected features L=2. Then, there might be
+four cases, as listed in Table 1.
+Case No. Segment 1 Segment 2
+1 Feature 1 Feature 2
+2 Feature 1 Features 1, 2
+3 Features 1, 2 Feature 2
+4 Features 1, 2 Features 1, 2
+during Segment 1 is
+Given that f" #0, the LOM in Eq. (15) has a rank
+of eight where the total number of estimated states is
+twelve. Only the velocity y“is observable, and the other
+states, such as positions p”, m" and attitude y” are not
+observable.
+After two segments, the TOM of the system is
+has a rank of twelve, where the total number of estimated
+states is fifteen, so the system is not observable during
+the time interval [f, b],and the observable modes are
+M ,yy7,P 一 〉and m —m;.
+Similarly, the observability of other three cases can
+be analyzed, and the results of cases 1 and 4 are the same
+as in Ref. [16].
+In general, observability of any case can be
+analyzed using Eq. (13), if considering one segment, then
+the TOM in Eq. (13) is reduced to the LOM case.
+However, regardless of the number of features added to
+the map or any extra time segment, the number of
+unobservable states is never less than three.
+6 Covariance simulation results
+Some simulations were implemented on a computer
+with Pentium? Dual-Core CPU and 2 GB memory. The
+code was programmed using MATLAB 2009.
+A low-cost IMU was simulated with a vision as the
+range, bearing and elevation sensor. The simulation
+parameters are listed in Table 2.
+Table 2 Parameters used in simulation
+Sensor Specification Value
+Sampling rate/Hz 100
+IMU Acceleration noise/(m-s 2) 0.01
+Gyro noise/((°)s ) 0.1
+Frame rate/Hz 25
+Elevation noise/(°) 0.1
+The major motivation for the observability analysis
+is the correspondence between this analysis and the
+estimability of the system. The estimability of the UAV
+system is checked using a covariance simulation, as it
+predicts the performance of a Kalman filter designed for
+the system.
+Assuming that all the errors in the process and
+sensor were Gaussian white noises, numerical simulation
+results on the standard deviation (STD) of errors were
+provided using extended Kalman filter (EKF). In the
+simulation, the covariance simulation was carried out in
+a piece-wise constant acceleration trajectory, as listed in
+Table 3.
+The trajectory consisted of segements 1, 2 of Table
+3 and in this order. Each segment was run for 50 s.
+The assumed initial navigation errors are
+summarized in Table 4.
+Table 3 Segments of accelerations
+1 0 0 8 (9.8)
+2 0 0.1 E (9.8)
+Table 4 Initial navigation errors
+Parameter Specification Value
+p/m Position (10) [1, 1, 1]
+vist) Velocity (10) [1,1,1]
+W(o) Attitude (10) [5, 5, 5]
+covariance of the features for convenience:
+The covariance of the expected feature positions
+trajectory than the INS alone trajectory.
+Fig. 2 True, INS-alone and INS aided vision estimated vehicle
+trajectories
+shown in Fig. 3, while the STDs of velocity error
+decreased significantly at the beginning in Fig. 4, because
+2437
+(c) Along z axis
+(c) Along z axis
+during the whole segments, the vehicle position is not
+observable, while its velocity is observable. The STDs of
+roll and pitch estimation errors in Fig. 5 decreased
+significantly at the beginning. This is because the
+horizontal components of unobservable attitude error can
+be approximated to the accelerometer bias divided by
+gravity. The yaw estimation error during the first 50 s
+given in Fig. 6 can be misleading, and decreased during
+the second 50 s, because the attitude is observable during
+Segment 2.
+In Figs. 6 and 7, the two features estimated errors
+do not converge to zero, because the two features are
+(c) Along z axis
+(b) Along y axis; (C) Along z axis
+not observable in the system.
+Figures 8 and 9 show that the relative position of
+the feature to the vehicle and the relative position
+between estimated errors of the features converge to zero,
+because they are observable in the system.
+(b) Along y axis; (C} Along z axis
+50-100 s: (a) Along x axis; (b) Along y axis; (c) Along z axis
+100 s: (a) Along x axis; (b) Along y axis; (C) Along z axis
+7 Conclusions
+1) A unified approach for analyzing the
+observability of SLAM system is provided. This method
+can adapt to find out the observability of any case in the
+SLAM system. Regardless of the number of features
+added to the map or any extra time segment, the number
+of unobservable states is never less than three.
+2) Under special maneuver, e.g., changing the
+accelerations during the flight, some of the system states
+become observable, such as the yaw angle and the
+relative position, which is very useful for the SLAM
+system design, especial for the determination of the
+vehicle action selection.

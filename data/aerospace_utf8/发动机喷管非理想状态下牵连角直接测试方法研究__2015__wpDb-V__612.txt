@@ -1,0 +1,438 @@
+发动机喷管非理想状态下牵连角直接测试方法研究
+目前我院发动机使用的全轴摆动喷管摆动装置一般设计成非理想状态，导致摆角控制上由于牵连干扰而存在一定的误差．影响发动机试验中喷管的控制精度。只有通过测量发动机喷管牵连角，对另一个作动器进行牵连角补偿，才能消除发动机喷管牵连干扰。小组运用创新的技术及合理的软硬件设计。建立了发动机喷管非理想状态下牵连角直接测试方法，完成了牵连角测试。
+
+全轴摆动喷管 非理想状态 牵连角 直接测试方法  
+
+carrying out road way test, so they are comprehensively
+referred as additional steer angle in this paper. As a part of
+wheel’s sideslip angle, the additional steer angle can
+increase the trend of under-steering or over-steering,
+consequently has a significant influence on vehicle
+dynamic steering characteristics'.
+The current research on ESC mainly focused on the
+vehicle state observationB 4) the control algorithm?? and
+its test methods”. However, few of them investigated the
+testing and modeling of additional steer angle. In general,
+only vehicle lateral acceleration was taken into
+consideration for observation of additional steer anglel
+The K&C properties of different vehicles may vary largely.
+As a result, the characteristics of additional steer angle also
+vary to different extent. The observation accuracy resorting
+to this method cannot meet the requirements of vehicle real
+time stability control, especially under the extreme driving
+conditions.
+This paper will firstly analyze the influencing factors on
+the additional steer angle based on the simulation
+experiments, then establishes an observation model of
+additional steer angle using support vector machine(SVM)
+method, whose input vector elements are limited as the
+ESC configuration sensor information. The established
+observation model should take both the real-time and the
+accuracy of evaluation into consideration, so as to meet the
+AYC control requirements under complex driving
+conditions.
+2 Vehicle Model and Verification
+The multi-body dynamics simulation model of a
+passenger vehicle was built with ADAMS/Car platform,
+which includes front & rear suspension system, steering
+system, brake system, front & rear wheel models and
+chassis systems. In the model, the ISO coordinate system
+was used, and its origin point was located at the
+intersection of vehicle left & right symmetry plane and
+front wheel rotation axis when the vehicle was driven
+straight. As shown in Fig. 1, X-axis and Y-axis point to the
+rear and right side of the vehicle respectively, and both axes
+are parallel with the ground when vehicle is still, while
+Z-axis points upwards, i.e., perpendicular to the ground.
+The main parameters of the model are shown in Table 1.
+Table 1. Main parameters of vehicle model
+Parameter Value
+Vehicle body mass m, /kg 1462.5
+Tire mass m,/kg 20
+Front/rear axle load Fi, F:2/kg 900, 605
+Wheel base L/mm 2790
+Track width of front & rear axle , B,/mm 1 565, 1 560
+Stiffness of rear suspension KK /(N - m ) 20 300
+Steering angle ratio w 20
+Tire type 195/65 R15
+Type of front/rear suspension Double wishbone
+2.1 Extraction of steering angle of front wheel
+The test vehicle employs the independent front
+suspension with double wishbone, and the rack & pinion
+steering system. Thus the steering system has the
+characteristics of simple structure, flexible layout and
+reliable transmission. The left-front suspension structure is
+shown in Fig. 2(a).
+During the simulation test, the steering angle of front
+An extraction example of the operation of left-front wheel
+turning to the right is shown in Fig. 2(b). Because the front
+wheel is rotated around the outer half axle 6, they can be
+regarded as a whole in other directions. Two sequential
+points pl and p, along the outer half axle are taken from the
+outside of vehicle body to the inner side, which are marked
+(x1, ￥1, z1)》 and (xa, ya, z2),fespectively in the coordinate
+system of vehicle body. Therefore, the left-front wheel steer
+angle can be expressed as
+5. Steering tie-rod; 6. Outer half axle; 7. Knuckle.
+Similarly, the right-front wheel steer angle can be
+extracted by establishing the same request command based
+on the right-front suspension.
+2.2 Establishment of road model
+In order to simulate compliance steer motion induced by
+uneven road, a three-dimensional model of the sinusoidal
+road (road _3d_sine_example.rdf) was built. Fig. 3 shows a
+side view of the 3D road.
+The simulation driver files were obtained by modifying
+the templates of typical driver conditions in ADAMS
+software. In this paper, the driver files of steady static
+circular tests with fixed hand-wheel angle were created to
+verify the accuracy of vehicle simulation model established
+above, and some other driver files for tests, such as step
+steering, constant velocity, acceleration and deceleration,
+and so on, were also created to analyze the influencing
+factors of additional steer angle. Besides, the driver files of
+slalom and FMVSS 126 tests were created to build the
+SVM model and to test its generalization ability. All the file
+types were *.xml or *.dcf.
+2.4 Verification of vehicle simulation model
+The accuracy of vehicle simulation model was verified
+by comparing the simulation test data with its roadway test
+data under the same driving conditions. As shown in Fig. 4,
+the steady static circular test was adopted, in which the
+steering angle of hand wheel was fixed at a constant value
+and the vehicle was driven in uniform acceleration until the
+sideslip of any axle happened. The extracted parameters
+used to make comparison include velocity, lateral
+acceleration, yaw rate, steering radius and roll angle of
+vehicle body, etc.
+—————Simulationdata
+in which the steering robot was employed to control the
+simulation tests were the same as the roadway tests. The
+steering angle of hand-wheel was controlled to 210°, while the
+All the test data were processed according to China
+National Standard, steady static circular test method,
+GB/T6323.6-1994. For example, the steering radius r of
+whole vehicle can be calculated as
+where u_ is velocity, km/h, and 4 is yaw rate, (°)/s.
+As can be seen from Fig. 4(c), the consistency of
+simulation and test results is more than 90%. Taking the
+test error of sensors(about 5%) into consideration, the
+vehicle simulation model established with ADAMS can
+meet the accuracy requirements of analysis in this paper.
+Simulation Model
+The established ADAMS vehicle model was used here to
+make the simulation tests to analyze the influencing factors
+on additional steer angle, such as vehicle velocity, road
+wave amplitude, step steering(lateral acceleration), vertical
+load(longitudinal acceleration-deceleration), and so on.
+3.1 Effect of velocity
+During the simulation test, the vehicle was driven on the
+flat road at the constant speed of 30 km/h, 60 km/h and 90
+km/h, respectively, and the relationship curves of velocity
+with front wheel steering angle are shown in Fig. 5.
+0 1 2 3 4 5
+Time 《 /s
+In this paper, we define steering angle of turning left as
+positive, while turning right negative. On the horizontal
+road, the additional steer angle can only be regarded as
+compliance steer angle, and the input force was mainly the
+longitudinal force acting on the driving wheel and the
+effects on the additional steer angle, whose magnitude is
+only 0.001°. The main reason would be that the
+suspension「ss longitudinal stiffness was very large.
+Therefore, we neglect the factor of velocity or regard it as
+constant in the following simulation.
+3.2 Effect of road wave amplitude
+Supposing the vertical stiffness of suspensions and tires
+on both sides were the same, the suspension compliance of
+both sides were also the same when the vehicle was driven
+in straight line on the same road. The additional steer angle
+under this condition is regarded as the compliance steer
+angle. During the simulation tests, the vehicle was driven
+straight at the constant velocity of 60 km/h. The sinusoidal
+road was adopted and its wavelength was set as 8000 mm
+and the road amplitude 10 mm, 20 mm, 30 mm and 40 mm
+respectively. The first wave started from 1 s after vehicle
+was driven uniformly.
+As shown in Fig. 6, the compliance steer angle increases
+with the increasing of the road amplitude. When the road
+amplitude is 40 mm, equivalent to Grade D road, the
+compliance steer angle is up to 0.3°, bigger than the toe
+angle of the vehicle. The compliance steer angle has the
+characteristic of oscillation, and tends to be the steady state
+after two sinusoidal cycles input. In addition, the wheels on
+both sides are attached by a steering tie rod, and there exists
+the interference between left & right wheel「s steering
+motion. When the road wave amplitude becomes greater,
+the interference degree will be more obvious.
+Supposing that the vehicle was driven on a flat road and
+steered at the same time, both the roll steer and compliance
+steer would happen. The step steering simulation tests were
+conducted and step steering was input at 1 s after the
+beginning of simulation. When at 2 s, the steering angle of
+hand wheel reached the maximum of 90°, 180°, —90° and
+—180°, respectively, then was fixed up. During the
+simulation tests, the velocity was kept at 60 km/h. The
+simulation results are shown in Fig. 7.
+0 1 2 3 4 5
+Time ￠/s
+The front wheel steer angle ￠ obtained from the
+simulation consists of the steering angle b induced by the
+steering of hand-wheel, and the additional steer angle 6
+(…′二(/)_孳，(3)
+z`^′
+where i, is the transmission ratio of the vehicle’s steering
+system.
+As shown in Fig. 7, the scope of additional steer angles
+is ￡1.2° It is clear that both the roll steer angle and the
+compliance steer angle do exist, and their absolute values
+grow greatly with the increasing of step steering angle. Due
+to the positive camber for both side wheels, the additional
+steer angles when turning left are greater than the values
+when turning right.
+3.4 Effect of longitudinal acceleration
+and deceleration
+When the vehicle accelerates or decelerates on a flat road,
+the whole mass of the vehicle will shift between front and
+rear axles, then the additional steer will be regarded as the
+compliance steer. The simulation tests were conducted
+under straight-line acceleration and braking conditions.
+When the simulating was under the acceleration
+accelerating driving started. The simulation tests were
+conducted under different acceleration of 0.2g, 0.3g, 0.4￠g
+and 0.5g, respectively, and all the results are shown in Fig.
+8(a). We can sec that with the increase of acceleration, the
+additional steer angle grows greatly, and at the acceleration
+of 0.5g, the compliance steer angle will be up to
+0.3°(absolute value).
+When the simulating was under the braking condition,
+the initial velocity was set as 120 km/h, and the gear at
+shift 5. The simulation tests were conducted on high
+adhesion coefficient road and the straight-line braking
+operation was employed. The braking started at 1s after the
+beginning of simulation. The simulations were conducted
+under different deceleration of 0.3g, 0.4g, 0.5g and 0.6g,
+respectively, and all the results are shown in Fig. 8(b). We
+can see that the additional steer angle is within the range of
++0.12°, and the greater the deceleration is, the larger the
+compliance steer angle will be.
+一 一 一 Acceleration 0.2g
+wheel additional steer angle under deceleration is smaller
+than the angle under acceleration, which is related to
+suspension movement characteristics. Besides, while the
+value of left-front wheel additional steer angle is negative
+under the acceleration condition, the vehicle tends to turn
+right. However, under the braking condition, the vehicle tends
+to turn left. Thus. the influence of deceleration on vehicle's
+steering characteristics is contrary to the acceleration「s.
+Using Support Vector Machine
+As analyzed above, the influence of lateral acceleration
+on the additional steer angle is maximal, which mainly
+depends on the steering angle of hand wheel and vehicle
+velocity, followed by the longitudinal acceleration-
+deceleration and the road wave amplitude, which are on the
+same magnitude. Other factor such as the longitudinal
+velocity has little effects on the additional steer angle and
+could be neglected. In general, vehicle dynamics control
+system only consider the relationship of additional steer
+angle with lateral acceleration, and neglects other factors,
+because the dynamic vehicle model can hardly be
+established accurately,especially under extreme driving
+conditions. Fortunately, the support vector machine (SVM)
+nonlinear mapping relationship. However, it is difficult to
+collect the samples and to select the algorithm to building
+control accuracy!!! 2,
+4.1 Determination of samples
+In order to concretely quantify the additional steer angle
+under complex driving conditions, the input vector of the
+samples include vehicle longitudinal acceleration, lateral
+acceleration, yaw rate of body, displacement of
+suspension’s lower swing arm and steering angle of
+hand-wheel, while the output vector include only the
+additional steer angle. The displacement of suspension’s
+lower swing arm can indirectly reflect the changes of the
+road wave amplitude, so it is suggested that an acceleration
+sensor which is sensitive to the upward direction could be
+installed, and its output signals could be processed to obtain
+the displacement of sensitive direction. The method of
+FFT-DDI(fast Fourier transfer-digital double integration) is
+supposed to process the measurement data of acceleration
+sensor, in which the filtering of frequency domain and the
+integration of time domain are conducted alternatively.
+While conducting the filtering of frequency domain, the
+data of acceleration signal were firstly made FFT(fast
+Fourier transfer), then several front data and the last data of
+other 4 input vector elements can be acquired from
+standard ESC configuration sensors.
+Both learning samples and test samples were obtained
+from the slalom tests. These test data have covered the
+large steering angle of turning left and right, the big
+variation of vehicle lateral acceleration, yaw rate and
+suspension compliance, so they can reflect the additional
+steer angle responding to the input variation more
+effectively. The slalom tests are usually conducted on
+horizontal road, and the road wave amplitude is almost zero,
+but it will not affect the algorithm completion mentioned
+below.
+The simulation driver files of slalom tests were created
+based on the ADAMS/Car simulation model built above.
+The slalom input steering was trigged from 1 s after the
+beginning of simulation. The maximal distance of the
+deviation from the center line in the slalom tests was 2 m.
+One of the driving curves of slalom tests is shown in Fig. 9.
+The samples were obtained by changing the deviation
+distance from the center line (such as 0.5 Im, 1 m, 1.5 m, 2
+m) and velocity (such as 60 km/h, 70 km/h, 80 km/h, 90
+data were selected randomly and processed as follows. The
+first lines of each data file were picked up and combined in
+order as the starting of a new learning sample. Then, the
+rest odd rows of each date file were picked up and
+appended sequentially in order as before. The test samples
+were determined using the even rows of any test file of
+slalom tests. Finally, the FMVSS 126 tests were supposed
+to conduct and create generalization test samples. All the
+samples should be normalized, because it could avoid the
+inconsistent contribution of different range of input
+elements to output accuracy, and improve the calculating
+speed simultaneously.
+【.30 -
+We use the SVM toolbox LibSVM (Matlab version) to
+build the model to estimate the vehicle’s additional steer
+angle. LibSVM, developed by Professor Chih-Jen Lin, is a
+general software package of SVM, which provides five
+common kernel function of linear, polynomial, radical basis
+function, sigmoid and precomputed kemel. LibSVM is
+widely used in classification (including C-SVC and
+estimation of distribution (one-class-SVM) "4.
+The LibSVM toolbox was firstly installed on Matlab
+platform, and the function svmtrain was used to train the
+samples to obtain the regression model of additional steer
+angle. Then the function svmpredict was recommended to
+get the estimated value by inputting the test samples to the
+regression model. Finally, the comparison between the
+estimated value and output element of test samples was
+made to determine the accuracy of regression model and
+whether the model parameters need to be adjusted again. In
+this paper, the E-stupport vector regression(￠-SVR)
+algorithm was employed, and its kernel function was
+determined as RBF (Gaussian radial basis function), i.e.,
+where X is the input vector of samples; 心 is the center
+vector of kernel function; o is the width parameter of
+kernel function, which controls the function radial scope,
+and the greater the value is, the wider the Gauss filter
+frequency scope will be.
+In the s-SVR algorithm, 5 reflects the deviation between
+estimated values and sample values. The more the value 5
+is, the less the number of support vectors is required. As a
+result, the higher real-time model could be achieved. In
+addition, the penalty coefficient C and Gaussian radial
+basis function parameter o also have a great effect on
+learning speed and estimation accuracy. The determination
+of value & depends on actual application goals, while C
+and o can be optimized using grid-search and cross-
+validation method.
+Table 2 shows the performance indexes of s-SVR
+algorithm obtained from simulation tests. For a given 5, the
+optimal parameter group(C,C ) was obtained as follows.
+Firstly, a two-dimensional grid plane was determined based
+on the scope of parameters C and o . For each cross point
+of the grid plane, the learning error of the additional steer
+angle was calculated using least squares support vector
+machine (LS-SVM). Finally, the parameter group with the
+minimal learning error was optimal. The PC’s timer method
+was employed to determine the SVM model prediction
+time-consuming on MCU, where the difference of these
+two CPU’s main frequency was considered. The MCU’s
+main frequency was 200 MHz, but the PC’s 1.6 GHz. The
+timing error of Windows operating system used on PC was
+more than 5 ms. In order to reduce the impact of timer error,
+the average value of 10 tests was resorted to determine the
+prediction time-consuming and each test was composed of
+2 000 times continuous prediction for the same input vector.
+As shown in Fig. 10, the curves were fit very well when ￠ is
+0.15.
+Table 2. Regression results for different 5
+0.001 487 0.0021 0.946 5 (32, 0.25) 2.363
+0.005 367 0.0020 0.9552 (32, 0.25) 1.905
+0.010 254 0.0017 0.967 0 (32, 0.25) 1.238
+0.020 102 0.0013 0.965 1 (16, 0.25) 0.724
+0.050 26 0.001 2 0.976 6 (16, 0.25) 0.492
+0.100 14 0.0009 0.9899 (32, 0.125) 0.444
+0.150 13 0.001 0 0.972 5 (4, 0.25) 0.362
+0.250 9 0.001 3 0.915 1 (4, 0.25) 0.328
+一一一一Sampledata
+As shown in Table 2, with the decrease of 5, the squared
+correlation coefficient of estimated curve with sample
+curve firstly increases and then decreases, but square errors
+firstly decreases and then increases. When s equals to 0.1°,
+both of them achieve the peak value, and the regression
+effect is the best. However, the smaller the ￠ is, the more
+the support vectors will be required, so the estimation
+algorithm will consume longer time. When & was bigger
+than 0.005°, the calculation time of MCU with 200 MHz
+main frequency will be less than 2 ms, which has met the
+real-time control requirements.
+4.3 “Model test of generalization ability
+In order to verify the model generalization ability, the
+FMVSS 126 simulation tests were conducted using
+ADAMS/Car simulation model built above. The FMVSS
+reflect effectively the variations of each influencing factor
+on additional steer angle. The input vectors to the model
+were determined as section 4.2, and the prediction results
+were compared with the sample data to analyze the model
+generalization ability.
+During the simulation tests, the vehicle was driven
+straight on the high adhesion road at the initial velocity of
+80 km/h. The vehicle was subjected to use a steering
+pattern of a sine wave at 0.7 Hz frequency with a 500 ms
+delay beginning at the second peak amplitude. The peak of
+sine wave was determined as 1.58, 28, 36, 46 56 and 64,
+respectively. 6 was determined by the slowly increasing
+steer test, in which the simulation model was run at the
+velocity of 80 km/h and the steering angle was increased
+by 13.5(°)/s until the lateral acceleration of approximately
+0.5g was obtained. 6 was the steer angle of hand wheel for
+this moment. and was about 30° for the simulation
+vehicle!” Fig. 11 shows the histories of the steering angle
+of hand wheel and the yaw rate of vehicle at the peak of
+sine wave 26, 46and 66 respectively.
+The samples for generalization ability testing employed
+the same normalization coefficients of the model learning
+samples. Table 3 shows the generalization results of the
+FMVSS 126 tests when & equals to 0.1°, and (C,a ) (32,
+0.125). When the peak value of steering angle of hand
+coefficient 1s maximal. In terms of MSE, the more the peak
+nonlinear driving condition, the better prediction effect
+is highly adapted to the FMVSS 126 tests in prediction of
+the additional steer angle. Fig. 12 shows the additional steer
+angle prediction curve of lef front wheel in FMVSS 126
+test when Op is 150°,
+Table 3. Results of generalization test
+￡= 0.1%, (C, 6) = (32, 0.125)
+Peak value of steering angle ~~ Mean square Squared correlation
+of hand wheel error coefficient
+Gn/(0) MSE R
+45 0.256 3 0.969 6
+60 0.267 6 0.968 6
+90 0.146 8 0.9750
+120 0.1221 0.974 4
+150 0.075 7 0.9758
+180 0.071 6 0.965 5
+(1) An experimental observation method for the
+additional steer angle is brought forward and verified based
+on the simulation tests and the SVM model. It has
+expanded the accurate observation methods of the
+additional steer angle under extreme driving conditions.
+(2) The quantitative analysis shows that the influence of
+lateral acceleration on the additional steer angle is maximal
+(the magnitude up to 1°), followed by the longitudinal
+acceleration-deceleration and the road wave amplitude (the
+magnitude up to 0.3°). Other factor such as the single
+longitudinal velocity has little effects on the additional steer
+angle and can be neglected.
+(3) The input parameters of the SVM model are mainly
+composed of the standard configuration sensors signals of
+ESC. The results of both the slalom tests and the FMVSS
+126 tests show that the prediction accuracy and the
+calculation time-consuming of the model can meet the
+requirements of ESC real-time control.

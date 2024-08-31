@@ -1,0 +1,294 @@
+基于Pulse系统的飞机噪声测试与评估
+飞机噪声测试与评估在民航领域是一个重要的研究课题。基于高精度的信号采集设备和传感器来进行试验测试一直是进行飞机噪声分析的有效方法，基于Pulse测试系统以及CCAR36部，以实际工程问题为例．开发了一套用于飞机噪声适航取证的测量系统和评估软件，对于发展国家大飞机工程，进行飞机噪声适航取证具有重要的现实意义。
+
+PULSE 飞机噪声 适航 CCAR36  
+
+INTRODUCTION
+The accurate simulation of vortex-dominated
+flow problems is a challenging task in computa-
+tional fluid dynamics (CFD) field, like the com-
+putation of the wakes of aircraft or rotorcraft.
+The vortex-dominated flow problems are always
+governed by the unsteady vortex and the interac-
+tion of vortical structures, which requires an ac-
+curate and efficient numerical method to capture
+and preserve vortices,
+Several methods have been developed to sim-
+ulate the vortex-dominated flows. One approach
+often considered to reduce the numerical dissipa-
+tion of vortices is to use the higher-order scheme
+to compute the fluxes across the cell interfaces,
+such as WENO scheme!!’ or discontinuous Galer-
+kin (DG) method. Another approach proposed
+by Morton and Roe[s1 is the vorticity-preserving
+scheme in pure acoustics. The third choice is de-
+veloped by Harris,et alr4. They developed an Eu-
+lerian vorticity transport solver with adaptive
+mesh refinement method for rotorcraft flow field
+Foundation item: Supported by the National Natural Science Foundation of China(11102179).
+Received date: 2013-04-15; revision received date. 2013-07-07 「
+Corresponding author: Zhao Ning, Professor, E-mail: Zhacam@nuaa. edu. cn.
+analysis.
+An efficient compressible Euler equation sol-
+ver for vortex-dominated flows is described based
+on the adaptive hybrid Cartesian mesh and vortex
+identifying method. The framework of the solver
+allows the dynamic adaptive mesh refinement
+(DAMR) coupled with vortex identifying method
+to capture and preserve vortices. The use of finer
+mesh with the improved resolution in vorticity re-
+gion can efficiently reduce the numerical dissipa-
+tion.
+1 FINITE VOLUME FORMULA-
+TION ON ADAPTIVE HYBRID
+CARTESIAN GRID
+1.1 Adaptive hybrid Cartesian grid
+For CFD simulation, the method of mesh
+generation is a critical technique. There are three
+main ways to generate the computational mesh:
+Structured grid, unstructured grid and adaptive
+Cartesian grid. The ultimate objective of each
+method for mesh generation is to apply the gener-
+ated mesh for the numerical simulation which can
+effectively reveal the flow field characteristics and
+accurately simulate the flow phenomena. For the
+unsteady flows, it will be much better if the mesh
+can dynamically be generated and adaptively cap-
+ture flow characteristics. Therefore, the adaptive
+Cartesian grid method is the suitable choice.
+When using Cartesian grid method, however, it
+is difficult to treat the immersed boundary, espe-
+cially for complex geometry and high Reynold
+number turbulence flow problems. To overcome
+this difficulty, an adaptive hybrid Cartesian grid
+m(三tl′】0(〕!〔……′(…〕 is used for vortex dominated flows.
+As shown in Fig, 1, the hybrid Cartesian grid
+consists of a body-titted structured mesh in near-
+body region and an adaptive Cartesian mesh which
+matches the outer boundary of body-fitted grid.
+od, the immersed boundary problem is in a single
+Cartesian grid and can be avoided by using the
+body-fitted mesh in near-body region. Thus
+boundary layer can be resolved much better for
+′ viscous problem. Meanwhile, the adaptive Carte-
+sian mesh can also be used in other computational
+domain with the advantages like automatic mesh
+generation, and dynamically capturing flow char-
+acteristics. Therefore, combining these two me-
+shes will be a good choice for simulating flow
+problems, especially for vortex-dominated flow
+problems like wing-tip vortex problem. Moreo-
+ver, the off-body vortex can be more accurately
+resolved by dynamic adaptive mesh refinement
+method as shown bellow.
+For CFD simulations, the accuracy of flow
+field can generally be improved by using either
+high-order scheme to compute the fluxes across
+the cell interfaces (p-refinement) or mesh refine-
+ment in the concern part of flow field (h-refine-
+ment), In this paper, the latter approach is used
+to improve the accuracy of vortex-dominated
+flow-fields.
+For adaptive Cartesian grids, a quadtree-
+based St二l']，l(:′〔l-]I`e[二′"〕 is used to store the mesh infor-
+mation of adaptive Cartesian grid. The appealing
+advantage of tree-based data structure is easy im-
+plementing refinement or coarsening cells,which
+leads to facile solution adaptations. For vortex-
+dominated flows, the vorticity is a remarkable
+flow feature, represented by the curl of velocity.
+Therefore, calculating the cur] of velocity in each
+cell can identify the vortex in the flow field. To
+capture and identify the dynamic vortex in the
+flow field, it is essential to perform solution-
+based grid adaptations. As mentioned above, the
+curl of velocity is used as the adaptation criteria
+which is described as
+where i=1, 2,00, N, N is the total number of
+cells and %; the length scale of cell, V XU is the
+curl of velocity and + a constant set as + 一 2. The
+standard deviation of the parameter is computed
+as
+Then the following conditions are used for
+grid adaptation.
+(1) If vz. 一 q:,cell1 i is flagged for refine-
+ment;
+(2) Y r。 一 0. 3r.。,cell i is flagged for coarse-
+ning,
+1.2 Numerical method
+Consider the 2-D unsteady compressible
+flows governed by Euler equations
+where W is the state vector and 异 . the convective
+flux. If an arbitrary control volume (2; is consid-
+ered, the equation can be spatially discretized as
+where m is the interface between cell I and J 3 盂"/["
+the number of control volume faces and AS,, the
+area of face m, The solution is updated using a
+Runge-Kutta explicit time integration procedure.
+In the present work, a cell-centered finite
+volume solver is developed to solve compressible
+Euler equations. The AUSM+? upwind scheme
+is used for computing inviscid fluxes. To achieve
+a second-order accuracy, a reconstruction of the
+assumed solution variation becomes necessary.
+Green-Gauss theorem based linear reconstruction
+procedure'? is employed to compute gradient in-
+formation at the cell centroids and Venkatakrish-
+nan’s limitert? is used as a limiter function in order
+to prevent the generation of oscillations and spurious
+solutions in the regions of high gradients.
+The adaptive hybrid Cartesian grid consists
+of near body region body-fitted grids and Carte-
+. sian meshes. To keep data structure unique, two
+issues should be settled. First, a stencil for a hi-
+erarchical cell-based quadtree data structure is
+shown in Fig. 2. When computing cell I, if we
+treat the left edge j as one edge, it may cause
+problem of conservation. Therefore, a cell finite
+volume method is used to treat the edge j as two
+edges. While there are first interface j; between
+cell I and its lower level neighboring cell J; and
+the second interface j, between cell I and its low-
+er level neighboring cell J,. By using this ap-
+proach the "hanging node” problem is avoided and
+the conservation problem is secured. Secondly, as
+shown in Fig. 3, the required connectivity infor-
+mation between two meshes should be estab-
+lished. An approach similar to that in Ref. [5] is
+used to treat the overset region, rather than using
+In Fig. 3, interface j and cell I belong to the Car-
+tesian grid and cell J belongs to body-fitted grid,
+n is the unit normal vector of interface j . To com-
+Fig. 2 Stencil of cells in adaptive Cartesian grid
+cells I and J as the left and the right side cells,
+respectively. For interface j, cell I is given in ad-
+vance. However, cell Js defined as a “ donor
+cell”, should be obtained by using some search
+method. When we use the traditional search
+method, which tests every cell to find one cell re-
+quired, it will be time-consuming, especially for
+3-D problems. Therefore, a "donor cell” search
+method based on alternating digital tree (ADT)
+technique’? is used, which greatly shortened the
+search time,
+2 RESULTS
+2.1 Accuracy and efficiency study with vortex
+propagation problem
+To verify the vorticity preserving capability
+of the DAMR process, we consider the problem
+of vortex convection by a uniform flow. The vor-
+tex was proposed by Jiang,et alt’), The computa-
+tional domain is taken as [0, 2]]X [0,1], and a
+vortex is superposed to the uniform flow and cen-
+ters at (x.,y.) =(0.25,0.5). The vortex is de-
+scribed as a perturbation to the velocity (u,v), ,
+the temperature (T= p/p) and the entropy (S=
+IntP/p「 33 of the mean flow and we denote it by
+the tilde values
+(2,7) =ere?" (sing, 一 cos0)
+(′′_麦'′`，莒)=〔_鱼′二__二罢量亘′兰(二′三董三，O)(…′))
+where x 一 r/r。: and r= /(x— x.) + {(y—y)?, ￠
+indicates the strength of the vortex, a controls the
+decay rate of the vortex, andr. is the critical radi-
+us of the vortex, p and p refer to the pressure and
+the density, respectively, 7 is the ratio of specific
+heats, and set as y=1.4. We chose g 二 0. 5, r.=
+0.05, a=0. 204 and Ma=1.1 (supersonic flow).
+Three different regular Cartesian meshes are
+chosen: 100 X 50 《 二 0. 02 ) 200 X 100 ( 卫 二
+0.01), 400 X 200 (Ah =0.005), where h is the
+length scale of the mesh, and three different
+mesh refine times based regular Cartesian mesh
+100 X50. Fig. 4(a) shows the total absolute value
+of circulation changing with non-dimensional time
+(t). Fig. 4(b) refers to the pressure distributions
+(Pre) at different time on the centre line y 二 0. 5,
+X is the non-dimensional coordinate along x di-
+rection. Table 1 presents the loss of total abso-
+lute value of circulation at different mesh scale
+and mesh refining times. The given results show
+that finer mesh scale will be more accurate to cap-
+ture the vorticity and the diffusion of vortex will
+be decreased. At the same time, if we use the dy-
+namic adaptive mesh refinement method by in-
+creasing refining times, the diffusion of the vor-
+tex can also be decreased.
+Table 1 Circulation loss and grid number
+h Circulation loss/ % Grid number
+0. 02 10. 83 5 000
+0. 01 2.19 20 000
+0. 005 0. 16 80 000
+Refine Time Circulation loss/ % Grid number
+1 4. 70 6 300
+2 1.51 11 500
+3 0. 47 32 000
+2.2 Flow over half cylinder
+Now, consider a subsonic flow at Mach num-
+ber Ma=0. 3 through a half cylinder with non-di-
+mensional radius ?r=0.5. Two singular points
+will cause unsteady vortex shedding. We use the
+test case to verify the capability of the dynamic a-
+daptive hybrid Cartesian grid mesh to capture and
+track the unsteady vortex shedding. The initial
+mesh contains 18 149 cells, and three levels of
+mesh refinement are conducted based on the ini-
+tial mesh. Fig. 5 (a) shows the instantaneous a
+daptive computational mesh, which contains a-
+sponding vorticity distribution( Vor). Comparison
+of the variation of drag coefficients CD in non-di-
+mensional time T between adaptive mesh refine-
+ment ( AMR) and regular mesh are shown in
+Fig. 5(c). The results show that if we use the
+mesh refinement, the drag coefficient is smaller
+than that without it.
+2.3 Shock vortex interaction Ie
+Finally, a shock and vortex interaction prob-
+lem is considered, which is adapted from
+Ret. [1]. It contains an interaction between a
+moving isentropic vortex and a stationary Mach
+1.1 shock, which positioned at Z 一 0. 5 and nor-
+mal to the z-axis. The initial condition is set fol-
+lowing the exact Rankine-Hugoniot condition and
+a vortex is superposed to the main flow with its
+x ?)
+Fig. 6 Local views of pressure contours and adaptive
+center at (0. 25,0. 5). The left state of the shock
+is specified as Cp,x,0,) 一 (1,y7,0,1). The vot-
+tex and computational domain are described as
+that in section 2. 1. During the vortex convection,
+two levels of mesh refinement are carried out
+based on a uniform grid of 100 X 50, The reflective
+boundary conditions are used at the top and the
+bottom boundaries. For this special case, the di-
+vergence and the curl of velocity are taken as the
+solution adaptive sensors. Local views
+《 [0.0y,1.0] X [0. 0,1. 0] of adaptive Cartesian
+grids and pressure contours at time f 一 0. 05 , =
+0.20 and ￠t = 0. 35 are shown in Fig. 6. From
+Fig. 6Cb) ,when the vortex is moving through the
+shock wave; even though its core is contaminated
+by the shock, the curved shock is still clear, and
+t=0.05 x
+1 一 0.35 x
+Cartesian grids at time f 一 0. 05, f 一 0. 20 and t 一 0. 35
+the restoration of the vortex is perfect. Fig. 7
+shows the comparison between the results ob-
+tained by the present method and the WENO-LF-5
+finite difference method), This figure reveals the
+Fig. 7 Ninety pressure contour levels from 1.19 to 1. 37
+3 CONCLUSION
+An efficient cell-centered finite volume solver
+with dynamic adaptive hybrid Cartesian grid
+method is implemented and demonstrated for so-
+lutions of Euler equations for 2-D vortex-domina-
+ted flow problems. A study of vortex propaga-
+tion problem is carried out and the results suc-
+cessfully show the capability of the present meth-
+od in vortex preserving and tracking. The shock
+vortex interaction problem reveals the method can
+deal with complicated flow problems. In addi-
+tion,the simulation of flow over a half cylinder is
+carried out and results are presented to show the
+capability and efficiency of the dynamic adaptive
+hybrid Cartesian grid method in vortex-dominated
+flow problems.

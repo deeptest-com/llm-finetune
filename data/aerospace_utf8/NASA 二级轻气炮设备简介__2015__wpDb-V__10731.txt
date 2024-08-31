@@ -1,0 +1,298 @@
+NASA 二级轻气炮设备简介
+随着人类航天活动日益频繁，地球轨道上空间碎片总数逐年增长。航天器表面空间碎片防护工作受到各航天大国的高度重视。航天器针对毫米级空间碎片主要采用被动防护方式。超高速撞击实验是防护方案设计工作的基础。NASA 在毫米级弹丸超高速撞击实验中采用的主要发射装置为二级轻气炮。本文对美国 NASA 和相关单位二级轻气炮设备及其未来发展趋势进行简要介绍，同时对我国相关单位超高速撞击实验设备进行分析，并对发展趋势进行讨论。
+
+超高速撞击 空间碎片 二级轻气炮 毫米级弹丸 航天器防护  
+
+A brief introduction on NASA’s two stage light gas guns
+Wang Dongfang, Xiao Weike, Pang Baojun
+(Harbin Institute of Technology, Harbin 150080, China)
+Abstract; With the increasing frequency of human spaceflight activities, space debris popula-
+tion is increasing year after year. Nowadays space debris impacts are more and more dangerous to
+astronauts doing extravehicular maneuvers and to high-pressure vessels and toxic aerospace mate-
+rials carried aboard spacecraft. The protection
+strategy against the impact of millimeter space
+debris is mainly by shielding. In order to design
+effective shielding for spacecraft and to evaluate
+the risk posed by debris and meteoroids, we must be able to perform tests in the laboratory.
+Hypervelocity impact testing has some extreme requirements. The core of the problem is to find
+a way to launch projectiles at speeds more than seven times faster than the fastest bullet, to
+measure how fast the projectile is traveling before impact, and to take pictures of impact event
+that lasts only a few microseconds. Launching projectiles at velocities high enough to simulate or-
+bital debris impacts requires some remarkable equipment called “two stage light gas gun”. The
+technology is one of the most important factors
+in the improvement of experimental ability, and
+therefore it is considered as a significant indicator to evaluate the experimental level of a laboratory,
+or even a country. National Aeronautics and Space Administration (NASA), the leading agency in
+the aerospace area in America as well as in the world, is supported by several laboratories with
+the ability of performing hypervelocity impact tests, where the two stage light gas guns play a
+critical role. The White Sands Test Facility (WSTF), located at remote desert foothills of New
+Mexico, works in close partnership with NASA Johnson Space Center Hypervelocity Impact
+Technology Facility (HITF). HITF determines
+the risk of spacecraft posed by space debris, and
+then designs spacecraft shields based on probability of impact and spacecraft geometry, HITF
+also builds and sends target shields to WSTF for ballistic-limit, verification testing and accordingly
+analyzes the results, Other spacecraft materials and components are targeted too, as well as toxic
+and explosive cargo, including fuel. The WSTF
+Hypervelocity Impact Testing Program assesses
+candidate shield materials with the help of two stage light gas guns. These guns shoot projectiles
+at hypervelocities up to roughly six times faster than the fastest rifle bullet, and mimic the impact
+of real space debris traveling at even higher speeds.
+Some other laboratories in America also present
+mes Research Center, McDonnell-Douglas Corporation, General Motor Corporation, Naval Ord-
+tile; spacecraft shielding
+051“言
+自1957年10月4日前苏联发射第一颗人造地
+球卫星Sputnik-1以来,人类的航天活动日益频繁.
+50多年来,世界各国共进行了近5000次的航天活
+动,儿乎每次活动都会或多或少的产生一定数量的空
+间硼片。NASA近期发布的数据显示,目前近地轨
+道直径小于1cm的空间碎片总数已过干万。
+由于毫米级空间碎片尺寸小、数量多,难以逐个定
+轨,航天器无法实施机动策略躲避其碰撞,只能采取被
+动防护掀施进行防护。航天器采取防护措施是需要付
+出代价的,增加厚度和增设屏蔽都会增加航天器的质
+量,提高建造和发射成本。航天器防护设计的任务是;
+在满足航天任务可靠性需求的前提下,提出经济、安全
+的防护方案。防护结构设计是被动防护任务的核心
+技术,是航天器空间碎片防护领域的研究重点[。
+航天器空间碎片防护设计主要流程为:通过一系
+列超高速撞击地面模拟实验,收集分析实验数据;基
+于实验数据,建立弹道极限方程;研发航天器风险评
+估软件;以航天器撞击参数为输人,利用风险评估软
+件,评估微流星体、空间碎片对航天器造成的风险,即
+计算航天器在微流星体、空间碎片影响下的撞击概率
+与失效率[。
+其中超高速撞击实验在空间碎片防护技术中占
+有重要位置,其主要研究内容有:
+(1)获取航天器表面材料及结构的超高速撞击
+特性和损伤模式,建立相应损伤方程和防护结构的弹
+道极限方程;
+(2)实验验证航天器防护方案设计的有效性,以
+达到改进防护方案筛选高性能防护材料和防护结构
+的目的;
+(3)研究物体在超高速撞击下破硼、解体模型,
+为空间碎片源模型的建立提供实验数据;
+(4)研究超高速碰撞理论和材料的损伤破坏特
+性并建立材料模型。
+为支持航天事业的发展,各航天大国先后展开超
+高速撞击地面模拟实验技术研究,其中美国NASA
+的实验能力处于世界领先水平。美国进行毫米级弹
+丸超高速撞击的主要实验设备为二级轻气炮。本文
+对NASA及相关单位一级轻气炮设备及其未来发展
+趋势进行简要介绍,对我国毫米级弹丸超高速撞击实
+验水平进行分析,并对未来发展趋势进行讨论。
+1NASA二级轻气炮发射装置
+美国NASA负责超高速撞击地面模拟实验的单
+位 主 要 有 : HVIT(Hypervelocity Impact Technolo-
+gy) 实 验 室 、 白 沙 实 验 场 ( White Sands Test Facility,
+WSTF)和Ames研究中心等。其中,HVIT负货分
+析空间碎片,微流星体对航天器的碰撞风险,进而开
+发新的防护方案及航天器构型设计,并研制先进的防
+护结构样本。HVIT实验室也具有独立进行小规模
+超高速撞击实验技术的能力。白沙实验场对防护样
+本进行弹道极限测试,并分析实验结果。其研究成果
+在国际空间站等航天器的防护措施设计及评估中起
+到不可忽视的作用。Ames研究中心在NASABIT
+的行星地质与地球物理计划、阿波罗登月计划双子
+星探测器设计等方面做出突出贡献。下面分别对这
+些实验室的二级轻气炮发射装置进行介绍。
+图 1 为HVIT实验室给出的典型二级轻气炮示
+意图。能体底端为火药室,另一端为锥形泵管。泵管
+内为尼龙活塞。当火药被点燃后,产生的气体膨胀,
+推动活塞向前运动,压缩活塞前部泵管中的轻质气
+体,产生极高的气压。当轻质气体气压达到一定程度
+后,冲破泵管与发射管之间的膜片,这时弹丸进人发
+射管。发射管原本接近真空,弹丸在高压气体的推动
+下进一步加速,撞击靶板申。
+Fig. 1 Diagram of a typical two stage light gas gun
+由以上分析可知,二级轻气炮在发射过程中要承
+受巨大压力。研究表明,二级轻气炮关键结构最小屈
+服强度应为965.52MPa,而JSC空间中心二级轻气
+炮相应结构屈服强度为1965.52MPa,为最小屈服强
+叙的2俏口。
+HVIT实验室可进行较小规模的超高速撞击地
+面模拟实验,其加速装置可将毫米级弹丸加速至
+7.2km/ys,如图2所示。
+TestLaboratory)服务于NASA约翰逊空间中心。
+该实验室拥有4台二级轻气炮,每年进行几百次超高
+速撞击实验,可将60.05一22.2mm的弹丸加速至7.
+5km/s以上。弹丸形状可为球形、圆柱体、圆盘形、
+立方体或其它复杂形状。由于地处偏远,该实验室可
+对有毒或易爆的材料(如电池\航空航天流体和高压
+容器等)进行超高速撞击地面模拟实验,其密封靶舶
+可承受2.3kgTNT爆炸时释放的能量““,图3为白
+沙实验场25,4mm口径轻气炮。
+大,因此实验设备置于偏远位置,东远离地下燃料室,
+如图4所示。
+白沙实验场此类二级轻气炮相关信息如下:
+KB914.4cmy弹丸直径:0.4一25.4mm;弹丸速度,
+1.5一7.0km/s;弹丸完整性检验设备:X射线闪光设
+备(6个)、超高速数字成像设备;测速设备:激光时间
+间隔计(4组)、光电二级管闪烁测试器(3个)超高速
+数字成像设备。
+(2)口径:12.7mm;靶舱尺寸:直径152.4cm,长
+度243.84cm;弹丸直径:0.4一11mmy弹丸速度:1.5一
+7.0km/s;弹丸完整性检验设备:X射线闪光设备(3
+个),超高速数字成像设备、.Cordin超高速阴影摄像机;
+测速设备:激光时间间隔计、光电二级管闪烁测试器(3
+个)、超高速数字成像设备\Cordin摄像机。
+(3)口径:4.32mmy靶舱尺寸:直径106.68cm,
+长度213.36cm;弹丸尺寸:0.05一3.6mm;弹丸速
+度:1.5一8.5km/s;弹丸完整性检验设备:超高速数
+字成像设备;测速设备:激光时间间隔计(3组)、光电
+二级管闪烁测试器(3个),超高途数字成像设备。
+白沙实验场另有口径1.778和4.32mm的二级
+轻气炮,因相对安全,可在实验室内操作。
+美国Ames研究中心早在1968年就可将0.17g
+的镁锂弹丸发射到12.2km/ys。该中心具有多座二级
+轻气炮发射设备,其发射管口径、发射弹丸质量及最
+高弹道速度如表1所示。
+￡1Ames研究中心二级轻气炮弹速指标
+Table 1 Two stage light gas gun indicators of Ames
+d{(mm) m(g) v(km/s)
+5.6 0.045 11.30
+5.6 0.076 9,84
+7.1 0.163 9.24
+12.7 0. 941 9.46
+25.4 7.418 8.44
+38. 1 15. 205 9. 07
+美国拥有二级轻气炮设备的单位另有Douglas
+道格拉斯公司、GM通用汽车公司、NOL海军军械研
+究室和NRL国立研究实验室等。其二级轻气炮设
+备发射口径、弹丸质量、最高速度及设备所在单位如
+军事及民用方商的发晚做出了不可怨视的贡献。
+裤2美国群他单位二毅轻气炮设备门
+Table 2 Two light gas guns in other agencies
+d(mm)mg) vlkm/s)设备所在单俘
+7.6 0.21 8.84
+12.7 1.00 9,14
+19.1 10.0 7.62 Douglas 道 格 拉 斯 公 司
+31.8 10.0 7.92
+31.8 25.0 7.31
+5.6 0.0533 10. 80
+20.03.739.90GM通用汽车公司
+60.0 87.0 8.90
+12.7 1.30 8.17
+32.073.05.55NOL海军军梁研究室
+50.8 82,0 6. 89
+7.6 0.41 9.20
+21.05.208.00NRL国立研究实验室
+63. 5 253.0 6.16
+2NASA二级轻气炮测速方法
+在超高速撞击实验中,为分析靳板材料防护能
+力,需要测量弹丸撞击靶板速度口。NASA毫米级
+弹丸测速装置有:激光测速装置、X射线测速设备和
+超高速摄像设备等。
+2.1“激光测速方法
+即激光时间间隔计。在发射管处设置两处激光
+光幕(见图55。实验中测量弹丸通过两个激光幕的
+时间间隔At,已知两激光幕间距离为4,则可计算出
+弹丸速度c二d/Art。这种测速方法对氢气驱动的二
+级轻气炮不适用,因为由弹丸间隙飞到弹丸前端的氢
+气持续长时间发光,光电管受到发光氢气的照射,难
+以产生截止信号。
+当弹丸进人第一个X光射线成相区时,X光管
+闪光,计时器记录弹丸投影到底片上时的闪光时间。
+当弹丸到达第二个成相区时,计时器再次记录闪光时
+离,即可计算出弹丸飞行速度。
+2.3超高速撞像机测速方法
+在撞击处附近设置超高速摄像机。通过测量相
+邻两帧相片之间弹丸位移,结合相机拍摄速度,可求
+得弹丸飞行速度。关于超高速摄像机下文有详细介
+绍。
+2.4其它常用测逐方法
+除以上介绍方法外,美国及其它国家超高速撞击
+地面实验设备中常札用的测速方法还有电探针法和
+磁感应法等。
+电探针法:以速度飞行的弹丸前端与接地探针
+接触,然后依次通过间距为4的两根探针。在弹丸碰
+撞板接触每根探针时,会有信号输出。通过时间间隔
+Ac即可计算出弹丸速度。该方法在一级轻气炮上有
+较好的应用,采用特制探针也可应用于二级轻气炮。
+磁感应法““:在弹丸飞行路径上设置磁环,磁环
+平面垂直于弹丸飞行方向。导体(弹丸)飞行时,穿迈
+导体的磁通量发生变化,内部激发感生电流,感生电
+流方向与磁通量变化方向垂直。由电磁相互作用原
+理和场的嘉加性,由感生电流产生的磁场改变原有的
+磁场强度,使磁环中磁通量发生变化。该变化发生的
+时刻即为导体通过磁环的时刻。通过在弹丸飞行路
+径上设置多个磁环,记录各感应信号,可计算出弹丸
+的飞行时间。该测量方法要求弹丸必须为导体材料,
+否则无法测速。这种测量方法适用于小口径二级轻
+气炮,此时磁环在发射过程中不易损坏,可多次重复
+使用。
+对于大口径轻气炮,常常采用磁飞行体方法进行
+测速,即在弹丸内安装小磁体,同时利用普通线图代
+替磁环。当弹丸通过线图时,同样会在线圈中产生感
+应电信号。这种方法节约了实验成本,但这样便破坏
+了弹丸的整体性。
+3NASA二级轻气炮碎片云记录
+3.1友光闪光照相
+超高速撞击实验中,有时会发生弹丸在发射过程
+中破裂的现挂。爻光闪光照粉用于检验弹丸的完整
+性,同时用于记录碎片云的演化过程。图6为HVIT
+实验室二级轻气炮上安装的X光闪光相机。该二级
+轻气炮安装了3个X射线发射装置,一个工作电压
+为100kV,与弹丸飞行方向垂直,用于测量弹丸撞击
+前是否完整;古外2个工作电压为300kV发射装置
+探人撞击腔内,用于记录撞击过程00。
+直径6mm弹丸撞击瞬间图像“。该装置成像速度
+为1亿帧/s。
+超高速摄相机成像速度可达数百万帧/s。由于
+胶卷数量或存储空间的限制,超高速摄像机往往只能
+进续拍照几十张。但超高速撞击过程往往发生在几
+毫秒内,因此这样的拍摄时间是足够的。白沙实验场
+超高速摄像机共有3种:Cinema相机,拍摄速度可达
+一万恼/s;红外相机,拍摄速度可达二百万帧/s;数字
+相机,拍摄速度可达2亿帧/s。
+基于以上实验设备,NASAJSC空间中心进行
+了大量的超高速撞击地面模拟实验,在美国ISS、航
+天 飞 机 、EMU(Extravehicular Mobility Unit) 和 长 期
+在 轨 暴 需 设 备 (Long Duration Exposure Facility) 等
+的防护方案设计中起到了重要作用。
+NASA目前正在对载人飞船登陆火星的可行性
+进行评估,此项任务中需要对速度未知的微流星体对
+航大嚣构或的厥肥远行分矿。珉住什央阮札丨假况
+星体速度可达70km/s,而来自宇宙深空的微流星体
+速度可达240km/s。其研究人员希望能对这样的超
+高速撞击情况进行分析。因此在未来的研究中,
+NASA将继续发展超高速撞击地面模拟实验能力,
+从而为其航天任务的发展奠定基础。
+4“我国毫米级弹丸超高速撞击实验技
+术发展
+随着我国航天事业的飞速发展,航天器安全防护
+工作的重要性日益凸现[3。航天器防护层设计及防
+护能力的评估需要依靠深人的超高速撞击现象基础
+研究提供支持,提高超高途撞击实验水平成为不可回
+避的问题。
+轻气炮是目前国内外最为常用的超高速发射设
+备。与其他发射技术相比,该技术对所发射的弹丸质
+、尺寸、形状和材料的限制较弱,并且弹丸能够在较
+低的加速度和较小的应力下获得较高的速度。因此,
+二级轻气炮成为非常有效和实用的超高速实验设备。
+近年来,我国超高速撞击地面模拟实验能力不断
+加强,中国空气动力研究与发展中心、北京中科院力
+学所、中国工程物理研究院、四川大学、西北核技术研
+究所、哈尔滨工业大学以及中国空间技术研究院等多
+家单位陆续拥有二级轻气炮等超高速撞击地面模拟实
+验设备。我国二级轻气炮发射口径大多在7.6一
+50mm之间,发射速度一般在8km/s以下01。然而目
+前我国超高速撞击实验设备与国外有较大差距,尚需
+进一步完善。超高速撞击实验能力有待提高。
+根据当前的工程需求,cm/mm尺寸空间碎片的
+航天器防护工作是今后空间碎片防护技术的中心任
+务U。近年来,我国毫米级弹丸发射技术和测速技
+术稳步提升,测速手段也取得了较大进步。在未来发
+展中,我国应对现有的二级轻气炮进行改进,通过优
+化设计提高轻气炮的发射性能,旨在将其稳定发射速
+度提高至8.5km/s;开展大尺寸、速度10km/s以上
+弹丸发射技术研究;研制三级炮加载技术。配合超高
+速发射,同步发展诊断测试技术。研究对超高速弹丸
+形状、姻态和速度等的测量技术“。
+5 & it
+随着人类航天活动日益频繁,空间碎片总数持续
+增长,航天器防护方案设计受到进一步重视。其中,
+二级轻气炮实验技术的研究对提高地面超高速撞击
+实验能力有着重要作用。作为国际航天事业前沿单
+NASA二级轻气炮设备进行调研分析,可为我国相
+关单位的发展提供重要参考价值。

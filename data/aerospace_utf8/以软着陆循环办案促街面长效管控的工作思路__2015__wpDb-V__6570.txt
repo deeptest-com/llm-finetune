@@ -1,0 +1,286 @@
+以软着陆循环办案促街面长效管控的工作思路
+随着元旦春节临近，机动车贩卖水果的摊贩渐渐多了起来。这些机动车冬天卖桔子、胡柚，夏天卖西瓜、葡萄，四季做着生意，年底回原籍，于每年农历新年以后开始回潮，夏季高温天时达到顶峰。
+
+软着陆 管控 循环 夏季高温 机动车 天时达  
+
+1 Introduction
+Flow around two circular cylinders in a tandem configuration can be found in numerous
+engineering applications, such as chimney stacks, tube bundies in heat exchangers, overhead
+power-line bundles, bridge piers and chemical-reaction towers, adjacent skyscrapers, and
+offshore oil and gas engineering structures. A tandem arrangement of two circular cylinders is
+a basic example of an array of multiple structures. Therefore, it is of important, fundamental,
+and pragmatic significance to study flow around two tandem cylinders.
+Most of the studies on two-cylinder configurations have been concerned with two
+cylinders of an identical diameter (Ishigai
+et al. 1972; Bearman and Wadcock 1973;
+Zdravkovich 1977, 1987; Igarashi 1981, 1984; Williamson 1985; Mittal et al. 1997; Sumner et al.
+1999, 2000; Meneghini et al. 2001; Lin et al.
+2002; Alam et al. 2003; Sharman et al. 2005).
+Zdravkovich (1977, 1987) identified three flow regimes for two cylinders of an identical
+diameter in a tandem arrangement based on the center-to-center spacing ratio L/D (where L is
+the distance between the centers of the cylinders and D is the cylinder diameter): (1) the
+extended-body regime, where 1.0< L/D<1.8,
+two cylinders are so close that the free shear
+layers separated from the upstream cylinder overshoot the downstream one, and the cylinders
+behave as a single bluff body; (2) the reattachment regime, where 1.8< L/D <3.8, the shear
+layers shed from the upstream cylinder reattach to the face of the downstream cylinder, and
+vortex shedding is observed only in the wake of the downstream cylinder; (3) the co-shedding
+regime, where L/D>3.8 and vortex shedding from both the downstream and upstream
+cylinders are observed.
+A small amount of studies have been carried out to investigate the flow characteristics
+behind two tandem circular cylinders of different diameters. For the ratio of the upstream
+cylinder diameter (d) to the downstream cylinder diameter (D) greater than 1, Igarashi (1982)
+observed four distinct flow regimes: complete separation, reattachment flow, bistable flow, and
+jumped flow. Dalton et al. (2001) investigated the suppression of vortex shedding or hft force
+on a circular cylinder when a smaller circular cylinder was placed next to it. Alam and Zhou
+(2008) showed that a decreasing d/D would
+narrow the width of the wake between the
+cylinders and increase the time-averaged drag
+force on the downstream cylinder. Zhao et al.
+cylinder diameter. Both simulation results revealed that the relative position of the small
+cylinder had a significant effect on hydrodynamic forces and vortex-shedding characteristics
+of the cylinders.
+In this study, the flow past two circular cylinders of different diameters was investigated
+numerically. The aim of this study was to investigate the effects of the two cylinders of
+different diameters in the tandem arrangement on the vortex shedding behind the two-cylinder
+system. The two-dimensional Navier-Stokes equations were solved using the finite volume
+method. While the downstream main cylinder
+diameter (D) was fixed, the upstream control
+cylinder diameter (d) varied from 0.1D to D.
+The studied Reynolds numbers based on the
+downstream cylinder diameter were 100 and 150. In this study, flow in the range of
+40< Re<200 was assumed to be two-dimensional and laminar. At a higher Reynolds
+number of about Re > 200, the flow became three-dimensional and turbulent. From the
+perspective of the main concern of this study, the two-dimensionality assumption is acceptable
+for numerically understanding the wake behind two tandem circular cylinders at low Reynolds
+numbers. The gap between the two cylinders (G) ranged from 0.1D to 4D. The effects of the
+gap-to-diameter ratio (G/D) and the diameter
+ratio between the two cylinders (d/D) on drag
+and lift coefficients, pressure distributions around the cylinders, vortex shedding frequencies
+from the two cylinders, and flow characteristics were studied.
+2 Governing equations and numerical method
+The two tandem cylinders considered in this study are shown in Fig. 1. The position of
+the upstream cylinder can be uniquely determined by the gap-to-diameter ratio (G/D) and the
+434 Yong-tao WANG et al. Water Science and Engineering, Oct. 2013, Vol. 6, No. 4, 433-445
+diameter ratio between the two cylinders (a/D). The flow is in the positive direction of the
+x-axis, and 6 is an angle measured from
+the positive direction of the x-axis in the
+counterclockwise direction, as shown in Fig. 1, where C, and CL are the drag coefficient
+and lift coefficient of the downstream cylinder,
+respectively.
+solved using the finite volume method. The
+temporal integration used in this study is of
+second-order accuracy. The drag coefficient ( C,) and lift coefficient (CL ) of the downstream
+cylinder are calculated as follows:
+where 历 and F; are the total drag and lift forces, respectively, is the density of the
+fluid, p is the fluid pressure, U is the free-stream velocity, and x and v are the velocity
+components in the x and y directions, respectively. The first term on the right-hand side of
+Eq. (1) and Eq. (2) represents the contribution
+of the pressure, and the second term represents
+the contribution of the shear stress.
+3 Validation of numerical model
+To validate the numerical model, a uniform How past a single cylinder with a diameter of
+D for Reynolds numbers ranging from 10 to 300 was simulated. A rectangular computational
+domain with a length of 100D and a width of 90D was used, as shown in Fig. 2. The cylinder
+was located at the mid-width of the computational domain, and the distance between the
+cylinder center and the inlet was 30D. The rectangular computational domain was divided into
+173374 unstructured grid cells. The total number of nodes was 87 587. Fig. 3 shows a typical
+mesh near the single cylinder. Structured four-node quadrilateral elements were used near the
+cylinder circumference. In the rest of the calculation domain, three-node triangular elements
+were used. A non-dimensional time step of 0.01
+was used in all the computations.
+In Fig. 4, the computed time-averaged drag coefficients for Reynolds numbers ranging
+from 20 to 300 are compared with experimental data from Sucker and Brauer (1975) and
+numerical results obtained by Sarkar and Sarkar (2010). The difference between the two
+numerical results in Fig. 4 is small, and both sets of the numerical results agree with the
+experimental data.
+Fig. 4 Comparison of time-averaged drag coefficients between present study and previous studies
+The Strouhal number (S9 is defined in terms of the cylinder diameter (D), the free-stream
+velocity (U), and the oscillation frequency ( ) of the lift coefficient as
+The Strouhal number predicted by the present model for Re = 100 is 0.167, which is also
+identical to the numerical result from Baranyi
+(2004) and the experimental result from Clift
+et al. (1978).
+4 Flow past two tandem cylinders of different diameters
+The numerical model was then used to
+study the flow past two tandem cylinders of
+different diameters, as shown in Fig. 5. The effects of the gap-to-diameter ratio and the
+diameter ratio between the two cylinders on
+the vortex shedding were studied. While the
+downstream cylinder diameter (D) was fixed, the ratios of the upstream cylinder diameter (d)
+to the downstream main cylinder diameter
+(D) were d/D = 0.1, 0.3, 0.5, 0.7, and 1.0,
+respectively. The studied Reynolds numbers based on the downstream cylinder diameter were
+100 and 150. Simulations were carried out for the gap-to-diameter ratio (G/D) ranging from
+0.1 to 4.0. In all computations, a rectangular
+computational domain was used, as shown in
+Fig. 5. The downstream cylinder was located at a distance of 30D away from the inflow
+boundary, and 70D away from the outflow boundary. Two lateral boundaries were located at
+45D away from the downstream cylinder center. The dimensions of the computational domain
+436 Yong-tao WANG et al. Water Science and Engineering, Oct. 2013, Vol. 6, No. 4, 433-445
+(Fig. 5) were considered to be sufficiently large to minimize the boundary effects.
+Fig. 6 shows a typical mesh near the cylinders for G/D = 0.4 and 4/D = 0.3. Structured
+four-node quadrilateral elements were employed near the circumferences of both cylinders.
+The rest of the computational domain was discretized using three-node triangular elements.
+The circumferences of the downstream and upstream cylinders were discretized using 120 and
+60 nodes, respectively. The total number of
+nodes was 133 117 and the total number of
+elements was 264316 for the case of G/D = 0.4 and d/D = 0.3. The mesh characteristics near
+the two cylinders for other cases investigated in
+this study were very similar to the case shown in
+Fig. 6. In all calculations, the non-dimensional computational time step was set to 0.01. The
+simulations were carried out up to sufficient non-dimensional time to acquire stable
+calculated values.
+4.1 Force coefficients
+Fig. 7 shows the time-averaged drag coefficients of the downstream main cylinder for
+Re = 100 and 150. For the purpose of comparison, the drag coefficients of a single cylinder are
+also plotted in Fig. 7. It can be seen from
+Fig. 7 that all the drag coefficients of the
+downstream cylinder with an upstream control cylinder are smalter than those of the single
+cylinder. Obviously, the time-averaged drag coefficients depend mainly on the G/D and d/D
+values. That is, they are relatively insensitive to Re. The larger the d/D value is, the smaller the
+Cp value is in the region of 0.1 < G/D < 2.5. In the region between G/D = 2.5 and 3.0, Cp is
+almost constant at 4D = 0.1 and 0.3, but it suddenly rapidly increases at Q/D =0.5, 0.7, and 1.0.
+Sakamoto et al. (1991) found that the reduction of the mean drag coefficient of the
+downstream main cylinder is caused by the displacement of the separation point along the
+upper surface of the main cylinder as the control cylinder is located in the front edge of the
+main cylinder. This is also a part of the reason for the considerable drag reduction observed in
+this study. Comparison of Fig. 7(a) and (b) shows that, when 2.5 < G/D < 4.0 and dD = 0.5,
+0.7, and 1.0, the variation trends of Cp for Re = 100 and 150 are different. This may be due to
+the fact that the drag force acting on a circular cylinder strongly depends on the Reynolds
+number and turbulent intensity.
+Yona-tao WANG et al. Water Science and Fnninaarinn Ort 2013 Mnl A Nn 4 422_445K AT
+(a) Re=100
+Fig. 7 Time-averaged drag coefficients of downstream cylinder for Re = 100 and 150
+The maximum amplitude (Cymax) and the root mean square (CLms) of lift coefficients of
+the downstream cylinder for Re = 100 and 150 are shown in Fig. 8 and Fig. 9, respectively.
+The variations of Cymax and CLms of the downstream cylinder with different gap-to-diameter
+ratios are similar at the same Reynolds number
+in the range of 0.1 <G/D <2.5 and at d/D = 0.1,
+0.3, 0.5, and 0.7, and the corresponding lift coefficients are relatively insensitive to Re. It is
+noted that the magnitudes of CLmax and CLms remain significantly small (smaller than those of
+a single cylinder) in the region of 0.1<G/D<2.5. However, in the region between G/D=2.5
+and 3.0, the magnitudes of CLmax and Cis experience sudden jumps (larger than those of a
+single cylinder) at d/D =0.5, 0.7, and 1.0, but they are almost constant at d/D =0.1 and 0.3. The
+shedding vortex street is the main source
+leading to the fluctuating lift force on the
+downstream cylinder. Furthermore, the magnitudes of the fluctuating surface pressure, induced
+by the shedding vortex street, strongly depend on the strength and formation length of the
+shedding vortex.
+- 一 -- Single cylinder ~~ —%-d/D=0.1 ~0-diD=03 _a—dD=05 —#-diD=07 ~o—d/D=10
+more or less similar to those「 observed on the time-averaged drag coefficient (Fig. 7). In
+general, in the range of G/D < 2.5, the existence of the upstream cylinder makes the mean drag
+and lift coefficients smaller than those of a single cylinder. For small diameter ratios between the
+438 Yong-tao WANG et al. Water Science and Engineering, Oct. 2013, Vol. 6, No. 4, 433-445
+- Single cylinder -x-dqD=01 -0-diD=03 -A- AD-05 a= dD=0.7 —o—diD=10
+diameter ratios between the two cylinders (4/D = 0.5, 0.7, and 1.0), they steeply increase in the
+range of 2.5 < G/D < 3.0. In any case, Cp is smaller than that of a single cylinder. However,
+CLmax and CLrms are much larger than those of a single cylinder at d/D = 0.5, 0.7, and 1.0, and
+3.0 < G/D < 4.0.
+4.2 Pressure coefficient distribution
+The pressure coefficient (C, ) along the surface of the cylinder can be defined as
+where p, is the pressure far away from the cylinder. Fig. 10 shows the distribution of the
+pressure coefficient (C;) along the surface of the downstream cylinder with various G/D
+values for d/D = 0.3 and Re = 100, including the results for a single cylinder. The magnitude
+of the pressure coefficient becomes zero at 6=1412。 and =2192? , reaches its maximum
+positive value at 6 =180° (the stagnation point), and reaches its maximum negative values at
+6=962 and 6=264“ for a single cylinder.
+One can notice that an upstream cylinder
+significantly decreases C, at the front stagnation point (9 =180? ), and increases C, at the base
+suction point (6 = 02 ). Therefore, effective drag reduction can be obtained if the upstream
+cylinder is placed at the optimum location. For G/D < 2.0, a peak on the front side of the
+downstream cylinder is apparent in each of the pressure coefficient distributions. It represents
+the reattachment of the shear layer that separates from the upstream cylinder. These features of
+pressure coefficient distributions are similar
+to those in previous studies of Prasad and
+Williamsion (1997) and Tsutsui and Igarashi (2002).
+Fig. 11 shows the distributions of the pressure coefficient C, along the surface of the
+upstream cylinder with various G/D values for d/D = 0.5 and Re = 100. One can notice that C,
+of the upstream cylinder stays nearly constant at the stagnation point (# =180°), and increases
+significantly above the Cp value of the single cylinder at the base suction point (8 =0°). The
+smaller the G/D value is, the larger the C, value is in the region behind the upstream cylinder.
+C, in the front of the upstream cylinder is almost unaffected by the downstream cylinder.
+4.3 Characteristics of vortex shedding
+The existence of the upstream cylinder induces significant variations of the mean drag
+coefficient, mean lift coefficient, and mean pressure coefficient distribution of the downstream
+cylinder. It is believed that these variations are the direct results of the interactions of vortex
+shedding fom the upstream and downstream
+cylinders. Therefore, an understanding of the
+vortex shedding characteristics from the two cylinders is of great interest to both practitioners
+and scientists.
+Fig. 12 shows vorticity contours behind the two cylinders with different G/D values for
+d/D = 0.3 and Re = 100. At this Reynolds number, the boundary layer around the cylinder is
+440 Yong-tao WANG et al. Water Science and Engineering, Oct. 2013, Vol. 6, No. 4, 433-445
+different modes, depending mainly on the gap-to-diameter ratio. Generally speaking, there are
+two separate shedding processes from the upstream and downstream cylinders, and the
+interactions between the two shedding processes will be weak when the gap-to-diameter ratio
+is large. When the gap-to-diameter ratio is small enough, it is possible that the two separate
+shedding processes will merge and the two cylinders will behave as a single object. Strong
+shedding interactions are expected at intermediate gap-to-diameter ratios.
+Fig. 13 shows instantaneous vorticity contours behind the two cylinders for roughly one
+about the centerline of the two cylinders.
+@G/D=10 (e) GID=12
+(D) G/D=2.5 ( C/D=2.7
+d/D=0.3 and Re = 100
+442 Yong-tao WANG et al. Water Science and Engineering, Oct. 2013, Val. 6, No. 4, 433-445
+(f)G/D=1.5 (8)C/D=2.0
+G)G/ID=30 (k) G/D=4.0
+of G/D for d/D = 0.3 and Re = 100. The spectra of the lift coefficient of the downstream
+cylinder have one dominant sharp peak frequency. For small values of G/D, since there is only
+one wake behind the cylinders, the power spectra have only one peak frequency. This confirms
+the single-wake shedding mode at small gap-to-diameter ratios. For large values of G/D, since
+there are two shedding processes behind the two cylinders and the interaction between the
+shedding from the downstream cylinder and the shedding from the upstream cylinder is weak,
+the lift is dominated by the shedding from the downstream cylinder and only one dominant
+sharp peak is detected in the power spectrum.
+Fig. 15 shows the Strouhal numbers of the downstream cylinder for 0.1<d/D<1.0 at
+Re = 100, which is based on the frequency corresponding to the maximum power. It is found
+that the vortex shedding frequency for the downstream cylinder is generally smaller than that
+of a single cylinder (except for &/D = 0.5 and
+0.7, and 2.5 < G/D < 4.0). For fixed values of
+This clearly indicates that the main role of the upstream cylinder is reducing the stagnation
+pressure on the front surface of the downstream cylinder by generation of friction between the
+flow and the upstream cylinder. Obviously, the larger the upstream cylinder is, the larger the
+magnitude of drag reduction is in the range of
+G/D < 2.5. However, a large upstream cylinder
+induces an excessively large momentum defcit in the How approaching the downstream
+cylinder, or it may trigger flow instability, leading to turbulence in the boundary layers
+developing on its surface.
+Fig. 15 Strouhal numbers of downstream cylinder with different values of d/D at Re = 100
+5 Conclusions
+MNumerical investigations into the effects
+of the gap-to-diameter ratio and the diameter
+were carried out. The instantaneous flow patterns and other quantitative information were
+obtained, providing a better understanding of the complex flow characteristics around the
+cylinders in the tandem arrangement. The major conclusions can be summarized as follows:
+(1) The shedding of vortices from two
+cylinders of different diameters in a tandem
+arrangement has different modes, depending mainly on the gap-to-diameter ratio and diameter
+ratio between the two cylinders. Generally speaking, there are two separate shedding processes
+from the upstream and downstream cylinders. The interactions between the shedding from the
+two cylinders will be weak when the gap-to-diameter ratio is large. When the gap-to-diameter
+ratio is small enough, it is possible that two separate shedding processes will merge and the
+two cylinders will behave as a single object.
+(2) The drag coefficient of the downstream main cylinder can be effectively reduced by
+the upstream control cylinder. In any case, the existence of the upstream control cylinder
+causes the mean drag coefficient to be smaller than that of a single cylinder. In the range of
+G/D < 2.5, the drag coefficient decreases with
+the increase of d/D. For small diameter ratios
+between the two cylinder (4/D = 0.1 and 0.3),
+the drag coefficient stays nearly constant. For
+large diameter ratios between the two cylinder (a/D = 0.5, 0.7, and 1.0), the drag coefficient
+steeply increases with the increase of G/D in the range of 2.5 < G/D < 3.0. The effects of the
+upstream cylinder on the lift coefficient of the downstream cylinder are more or less similar to
+those on the mean drag coefficient. The maximum amplitude and root mean square of lift
+coefficient of the downstream cylinder are much larger than those of a single cylinder for
+d/D=0.5,0.7,and 1.0,and 3.0 < G/D < 4.0.
+(3) The upstream cylinder significantly reduces the pressure coefficient of the
+downstream cylinder in the vicinity of the front of stagnation point with a secondary effect of
+increasing the pressure at the base suction point. The pressure coefficient of the upstream
+control cylinder stays nearly constant at the stagnation point and increases significantly at the
+base suction point.
+(4) The vortex shedding frequency of the
+downstream cylinder is generally smaller than
+that of a single cylinder (except for d/D = 0.5 and 0.7, and 2.5 < G/D < 4.0). St steeply
+increases with the increase of G/D for 2.5 < G/D < 3.0 and d/D =0.5, 0.7, and 1.0, where the
+drag and lift coefficients also rapidly increase.

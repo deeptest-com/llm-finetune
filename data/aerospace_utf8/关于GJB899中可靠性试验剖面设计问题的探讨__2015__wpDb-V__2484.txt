@@ -1,0 +1,236 @@
+关于GJB899中可靠性试验剖面设计问题的探讨
+结合设计可靠性试验剖面的有关经验 ,对GJB899附录B 3 .5“喷气式飞机设备”和B 3 .6“空中发射武器和组合式外挂及其设备”中关于振动、温度和湿度剖面设计的几个问题进行了探讨 ,并提出了建议改进的方法
+
+可靠性 试验剖面 振动 温度 湿度  
+
+表 1 盲降(CAT川)对GPS系统的完好性要求
+三种关键特性为:可用性(Availability)、可负担性
+( Affordability ) 和 精 度 ( Accuracy ) , 简 称 为 3A 特
+性。针对三种系统关键特性,Parkinson教授给美国政
+府提出了九项建议,在业界引起了强烈反响。
+2013年10月28日,美国《防务新闻》周刊网站发
+表 了 题为“美国寻求全球定位系统的替代方案“的文
+章,文章指出目前人们生活中离不开全球定位系统,但
+又不能信赖它,在全球定位系统的弱点变得越来越明显
+之际,美国军方在试图提高用户接收机和军方导航卫星
+的定位数据可靠性时所面临的问题。文章引用美国国防
+部防务研究和工程办公室主管谢弗的评论“利用现代电
+子技术做事变得越来越容易,例如干扰全球定位系统信
+号。军方依赖全球定位系统来精确导航和计时,我们的
+绝大多数的武器系统需要非常精确的计时。“
+结合Parkinson教授的文章,本讲详细解析了GPS
+系统关键特性的定义及其内消,这些关键特性主要包括
+完好性(Integrity)、可用性(Availability)、连续
+性 ( Continuity ) 、 可 负 担 性 ( Affordability ) 及 精 度
+( Accuracy ) ) 。
+2完好性
+GPS系统完好性是对标准定位服务(SPS)的空间
+信号(SIS)提供定位、导航和授时信息正确性的信任
+程度的一种度量,当空间信号不能用于定位和授时的时
+候,系统应及时向用户告警。及时告警是指当瞬时误差
+超过用户测距误差的NTE容差时(详见下文解释),
+8秒内系统告警信息应该到达GPS用户接收机天线端,
+附加的2秒为GPS用户接收机的响应时间,即接收、锁
+定、读取并解算导航信号告警信号的时间。
+034 | 坤
+当标准定位服务的空间信号导致“错误引导
+信 号 信 息 MSI ( misleading signal-in-space
+information)“事件发生时,卫星播发的信号应不可
+用。“错误引导“的门限值不超过标准定位服务空间
+信号用户测距误差(URE)的容差,简称为NTE容差
+(not—to—exceedtolerance))。′f歹‖女l亡]，民褒言灭′L^II_琏I机盲[蜇言辜二<
+(CATIII)对GPS系统的完好性要求为,当水平(垂
+直)定位误差超过15m而GPS系统未能在2s内告警的
+概率低于10-~9/每次进近(详见国际民航组织国际公约
+附件10卷1),如表1所示。
+(1)系统完好性标准
+根据GPS系统标准定位服务性能标准2008年
+9月第四版相关说明(GLOBALPOSITIONING
+SYSTEM, STANDARD POSITIONING SERVICE
+PERFORMANCE STANDARD, 4th Edition
+September2008),GPS标准定位服务(SPS)空间
+信号(SIS)瞬时用户测距误差(URE)的完好性要求
+如表2所示。
+对于广播星历中最多可能有32颖导航卫星信息,
+相应GPS标准定位服务(SPS)空间信号(SIS)的瞬
+时用户测距误差(URE)丧失完好性的次数为平均每年
+3次。假定这三次完好性丧失事件每次持续的时间不超
+过6小时,则等效发生“错误的空间导航信号信息MS1
+( Misleading Signal—in—Space Information) “ 事
+件的最坏情况概率为0002(18/8760)。
+目前尚未制定GPS标准定位服务(SPS)空间信
+号(SIS)的瞬时用户测距率(URRE)完好性要求,
+也没有制定瞬时用户测距加速度(URAE)完好性要
+求,用户测距率误差(URRE)的英文为UserRange
+表 2 GPS标准定位服务空间信号瞬时用户测距误差标准
+RateError,意思是卫星播发的空间信号造成的伪距速
+度误差,用户测距加速度误差(URAE)的英文为User
+RangeAccelerationError,意思是卫星播发的空间信
+号造成的伪距加速度误差。
+GPS标准定位服务(SPS)空间信号(SIS)瞬
+时协调世界时UTC(USNO)偏置误差(UTCOE)的完
+好性如表3所示,协调世界时UTC(USNO)的偏置误差
+( UTCOE ) 的 英 文 为 UTC(USNO) Offset Error, 意 思
+是卫星播发空间信号的协调世界时UTC(USNO)相对于
+GPS时的偏差。
+(2)系统完好性参数
+表 征 GPS系统完好性的参数有四个分量,主
+服 务 失 效 概 率 ( probability of a major service
+failure)、告警时间(TimetoAlert))、标准定位服
+务空间信号用户测距误差的NTE容差(theSISURE
+NTEtolerance)、告警(Alert)。详见GPS系统
+标准定位服务性能标准2008年9月第四版相关说明
+( GLOBAL POSITIONING SYSTEM, STANDARD
+POSITIONING SERVICE PERFORMANCE
+STANDARD, 4th Edition September 2008 ) 。
+1)主服务失效概率
+主服务失效概率指当标准定位服务空间信号的瞬
+时用户测距误差超过NTE容差时,即发生了“错误引
+导信号信息MSI“事件,系统没有及时发出告警的概
+率。告警(Alerts)一般包括警报(alarms)和警告
+( warnings ) PRFHASEY
+2)告警时间
+标准定位服务空间信号的告警时间TTA(timeto
+alert)定义为从发生“错误引导信号信息MSI“事件开
+始直到告警(警报或警告)指示(标识)到达用户接收
+机天线为止的时间。实时告警信息作为导航电文数据的
+一部分播发给用户。
+3)空间信号用户测距误差的NTE容差
+标准定位服务空间信号用户测距误差的NTE容差
+定义为用户测距精度URA(UserRangeAccuracy)值
+上限的4.42借(卫星播发健康信号情况下),用户测
+距精度UURA值与当前导航电文中的URA指标“MN“相对
+应,用户测距精度URA是导航电文重要参数之一。
+4)告譬
+A警报标示
+当GPS系统给出标准定位服务空间信号的警报
+标示(alarmsIndications)后,则标准定位服务的
+空间信号由健康(healthy)状态转变为不健康状态
+055 | tien
+Satelite classroonoaas
+表 3 GPS标准定位服务空间信号协调世界时UTC(USNO)的偏置误差(UTCOE)完好性标准
+(unhealthy))。如果出现下列6种警报标示信息,则
+说明标准定位服务空间信号提供的信息可能不准确。
+1)不法跟踪标准定位服务的空间信号,例如卫星
+播发信号功率下降多于20dQB,信号相关损失增加20
+9dB。无沱信号跟踪一般又分为以下四种情况:
+a)卫星停止播发标准定位服务的空间信号;
+b)信号中没有调制标准C/A测距码数据;
+c)信号中非标准的C/A码代替了标准C/A码;
+Gd) 第 37 号 伪 随 机 码 ( PRN C/A-code number
+37)代替了标准C/A码。
+2)导航电文数据的5个连续奇偶校验字失效(3
+秒》。
+3)播发的星历数据标志IODE(IndexofData
+Ephemeris ) 与 阡 钟 数 据 标 志 IODC (Index of Data
+Clock ) 不 匹 配 ( 8 LSBs/ Least Significant Bit) ) , 正
+常数据集合切换除外,详见IS8-~GPS-~200;一个IODE
+值对应一套星历校正参数,如果卫星信号播发了一个新
+的IODE值,则表明该卫星更新了星历校正参数。
+4)播发的导航电文子桢1、2或3的数据均被设置
+yo“0”ak41”。
+5)播发的导航电文子桢1、2或3的数据为默认的
+导航数据(详见IS~GPS-~200)。
+6)播发的导航电文子桢中遥测字的8位“帧头“
+不等于100010112(二进制)或139(十进制)或8B
+(十六进制);〈帧头用于帧同步,每个正确的同步头
+都标记了导航数据子帧的起始位置,主要作用是指明卫
+056 | 症
+星注人数据的状态,作为捕获导航电文的前导,其中所
+含的同步信号为各子帧提供了一个同步的起点,使用户
+便于解释电文数据)。
+B警告标示
+当标准定位服务空间信号的导航电文中给出“警告
+标识(warningsIndications)“时,表明导航卫星播
+发的空间信号由“健康(healthy)“状态变化为“不
+健康(unhealthy)“状态或者“临界(marginal)“
+状态。
+一般在可能发生“错误的空间导航信号信息MS1
+( Misleading Signal-in—Space Information) ”
+事件之前,系统给出标准定位服务空间信号的“警告
+标识“(〈导航电文子桢1中有“6位健康状态字(six-
+bithealthstatusword)“表征空间信号SIS的健康状
+态)。通常在实施卫星计划内维护之前,预先设置表征
+空间信号SIS的健康状态地“6位健康状态字“。“警告
+标识“一般出现在“警报标识“之后,或者在卫星寿命
+未期出现。
+(3)民航对GNSS系统完好性的要求
+民航对GPS系统完好性要求用告警门限(Alert
+Limit))、完好性风险(IntegrityRisk))、保护门
+限 ( Protection Level) LR: 25 EE BN [8] (Time to
+Alert)四个参数表征,详见国际民航组织国际公约
+_丕f盲丨′1乙薯:_亡[(〕卷:_.[…'′丑才:目萝茎i'萝名仨哥弓(Annex10(Aeronautical
+Telecommunications) To The Convention On
+International Civil Aviation, Volume I 一 Radio il, BEL GE NTE RS Efe, AYE ERE
+Navigation Aids, International Standards And “ 够 省 略 的 概 率 。
+Recommended Practices (SARPs). ICAO Doc.
+因此,完好性风险定义为存任何时刻,仡置误差超
+AN10-1,6thEdition,Jul2006。)过告警门限的概率。
+1)告警门限好性事件后,系统检测出失效前,留给系统的时间。在
+给定参数(P、N、丨)测量值的告警门限(Alert“这种情况下,超出告警限的定位误莓应该保持的时间要
+Limits)是特定的误差容限(容许量),在该误差“长于规定的告警时间,以便系统统计计数并用于完好性
+容限内可保证用户使用安全。水平告警门限HAL“风险计算。
+(VerticalAlertLimits)是最大允许的水平或垂真定
+位误差容限,超过该容限时,系统应当向用户发布“不
+保护门限是一种计算得到的统计边界误差,以保证
+可用“信息,绝对定位误差小于或等于导致发生完好性风险的误差概
+率滢足要求。
+2)告警时间
+当发生完好性事件(integrityevent)时,亥规“差,为了能够度量位置误差PE(PositionError)超
+定的时间范围内,系统应当发布告警信息或者说具备及“过告警门限AL(AlertLimit)的几险,所以我们需
+时发布告警的能力,规定的时间范围内即为告警时间“要计算一个位置误差的统计边雯,又称为保护门限PL
+TTA (time to alert) ) 。 (
+ProtectionLevel)。国际民航组织ICAO国际公约
+世格来说,既然发生完好性事件时,要么存告警“附件10卷1定义的系统保护门限PL为:水平保护门限
+时间TTA内被检测出来,同时系统发布告警信息;
+HPL ( Horizontal Protection Level) RBRETRAS
+好性指标要求导出的水平位置误差HPE(Horizontal
+PositionError)的边界范围;同样,垂直保护门限
+VPL ( Vertical Protection Level ) 是 基 于 系 统 完 好
+性指标要求(完好性风险)导出的垂直位置误差HPE
+( Vertical Position Error ) HII 5TH.
+对基于全球无线电导航系统的天基增强系统SBAS
+系统,美国航空无线电技术委员会RTCA(Radio
+Technical Commission for Aeronautics ) 对 保 护
+门限PL给出了类似的定义:水平保护门限HPL是一个
+在水平面上的圆的半径,该水平面与WGS-~84椭球相
+切,伦定国的圆心是飞机的真实位置,水平保护门限
+HPL确保了测量得到的水平位置在该半径范围内,详
+见 Minimum Operational Performance Standards
+for Global Positioning System/Wide Area
+Augmentation System Airborne Equipment. RTCA
+DO-229, Dec 2006。
+国际民航组织ICAO和美国航空无线电技术委员会
+RTCA给出的保护门限PL定义均未明确如何与系统完好
+性风险关联。由此也可以采用下面的定义,保护门限是
+一个计算得刹的位置误差的统计范围,可以保证绝对位
+置误差小于等于途成目标发生完好性风险事件时的位置
+误差。任何精密的定位系统都需兽给用户详细说明虚假
+警报FA(FalseAlarm)的概率要汪,由此设定如何放
+宽保护门限范围的限定条件。民航利用GNSS系统导航
+过程中,水平和垂直保护门限示意图如图2所示。
+与保护门限相关完好性事件(integrityevents)
+定义为:如果水平或垂真位置误差超出了水平或垂直保
+护门限,那尹就说发生了水平或垂直完好性事件。
+5) 完 好 性 失 效 ( Integrity Failure )
+如果发生完好性事件后,持续的时间超过了告警时
+间TTA,而在告警时间TTA内系统没有发布告警信息
+038 | 克
+一般用Stanford图用来解释和说明完好性事件,
+侄不能说明完好性失效,但是可以用来区分两种类
+型的完好性事件,一种是“错误引导信息事件MI
+(MisleadingInformation)“,吆一种是“危险的
+错 误 引 导 信 息 事 件 HMI ( Hazardously Misleading
+Information)“。Stanford图的布局如图3所示,横坐
+标是位置误差PE,纵坐标是保护门限PL,图中每一点
+的横坐标位置代表其绝对位置误差,图中每一点的纵坐
+标位置代表其所处的保护门限范围。
+通常可以分别绘出水平位置Stanford图和垂直位置
+Stanford图。Stanford图的对角线轴将采样点分成两个
+大的区域,对角线之上,位置误差PE在保护门限PL范
+围内;而对角线之下,位置误差PE在保护门限PL范围
+外。图中PB表示“位置误差(PositionError)”,PL
+表 示 “保护门限(ProtectionLevel)“,AL表示“告
+警门限(AlertLimits)“。
+当发生了“错误引导信息事件MI“时,系统仍宣
+布是可用的,说明此时位置误差PE超出保护门限PL,,

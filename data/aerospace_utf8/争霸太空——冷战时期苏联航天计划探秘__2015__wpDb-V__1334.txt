@@ -1,0 +1,249 @@
+争霸太空——冷战时期苏联航天计划探秘
+欲拔头筹:抢先登月建立太空军事基地在人类航天史上,苏联是第一个将人造地球卫星送人太空的国家,也是第一个将人送入太空的国家。然而,令人大惑不解的是,在随后的首航月球的竞赛中,遥遥领先的苏联人不知是什么原因竟然停滞不前,以至于被后来居上的美国人赶上并反超。甚至于在1968年和1969年美国”阿波罗”计划取得非凡成功后,苏联竟否认它与美国进行过载人登月的竞赛。难道说苏联人真的不曾进行过登月的尝试吗最近,自一组刚刚解秘的有关苏联登月计划的档案中得知,苏联人一刻也未曾放松过与美国对首航月球的争夺。自苏联人成功地将加加林送上太空后,随后就制定了一个更加雄伟的计划,那就是一定要抢在美国的前面将宇航员送上月球。甚至于可能的话,还要在月球上建立一个军事基地。为此,苏联的工程师们曾制造了一个实实在在的登月航天器。他们对用于地球轨道飞行的”联盟号”飞船进行了改进,以便能带两个人进入月球轨道,然后再返回地球。改进后的飞船称为”L-1”号飞船。为了实现在月
+
+苏联人 太空站 侦察卫星 战斗机 运载火箭 军事基地 反卫星 轨道飞行 美国人 航天器  
+
+Currently, about 20-40% of total electricity
+consumption is spent on artificial lighting [1, 2].
+Lighting is an important and costly liability of heads of
+cities. An inefficient lighting wastes financial
+resources and creates unsafe conditions. The
+technologies used in the pursuit of energy efficiency
+and design can reduce lighting costs and these energy
+savings can reduce the need for new power plants and
+encourage capital to alternative energy solutions for
+populations in remote areas [3].
+A significant improvement in the lighting efficiency
+can cause significant impacts on global energy
+consumption. Unfortunately, none of the conventional
+light sources (incandescent, halogen and fluorescent)
+had significant improvement in the last 40 years [4].
+The relatively recent developments of technologies
+based on LED lighting are showing improvements year
+after year, proving that they may have profound
+impacts in the area of lighting. It is estimated that by
+2020, the simple replacement of LED by traditional
+light sources will provide a 50% decrease of the total
+spend on electricity for lighting, and a decrease of 11%
+of total electricity consumption [4].
+LED-based lighting technologies, also known as
+solid state semiconductor technology, may produce the
+next generation of white light for illumination [1]. The
+luminous efficacy of white LED recently surpassed
+100 Im/W [5], achieving efficacy of 170 Im/W for a
+prototype LED lamp of 7.3 W , which emits 1,250 Im
+Due to the growing advances in research, the use of
+so-called high-power LED solutions, previously
+occupied by other light sources, is expanding [6].
+Several factors contribute to this change,including
+many advantages of LED light sources as compared to
+conventional light sources. Among these benefits, it is
+worth mentioning: long life, brightness, lower energy
+Secondary Lens Optimization for LED Lamps 47
+consumption, smaller size, faster response and
+reliability [1, 5, 7].
+When LED is being used for direct lighting, the
+radiation patterns are of circular symmetry with
+deformed irradiance intensity distribution, requiring
+the use auxiliary optical elements in order to
+redistribute the LED light and generate uniform
+illumination over the target plane [7, 8].
+Most studies focus on the design of integrated LED
+lenses, i.e., primaries lenses that are usually made of
+Epoxy and PMMA, implying in chip manufacturing
+changes [9, 10]. The integrated lenses project, with
+specifically designed formats (freeform lenses),has
+been widely used as they have shown the least loss of
+luminous efficacy [11, 12].
+Some efforts have been detached to optimize the
+LED primary lens. However, there is a need to study
+the behavior of secondary LEDs lenses. In Ref. [8], the
+authors propose a new design method for LED lens
+with spherical inner surface and freeform outer surface
+for imaging applications.
+The paper is organized as follows: Section 2 presents
+a methodology for optimizing the LED secondary lens,
+i.e.. the external lens of the LED know as LED
+secondary optic. The general proposal is to use a
+heuristic optimization method (genetic algorithm) to
+generate lens geometries, use a software to simulate the
+distribution of illuminance on a target plane, and
+develop an apparatus able to assist in validating the
+results found; Section 3 presents results and
+discussions; Section 4 gives conclusions.
+2. Methodology
+The methodology developed in this work is based on
+(1) Using the Snell-Descartes Law, ray tracing
+method;
+(2) Definition of lens geometric parameter;
+(3) Using software for simulation of light emission
+from LED on the target plane;
+(4) Using heuristic method to search optimized
+parameters;
+(5) Development of apparatus to assist in validating
+the results found.
+2.1 Ray Tracing
+For the simulation of the geometry of the lenses, a
+numerical technique based on Snell-Descartes Law
+was used, known as ray tracing method, which
+calculates individual propagation of light rays. The
+simulation routine uses the stochastic method to
+simulate light rays emitted by the LED all the way to
+the target plane (Fig. 1). From this simulation, the
+luminous flux distribution is extracted.
+2.2 Lens Geometric Parameters
+Fig. 2 illustrates the modelling of a spherical lens
+and the confinement. Rl is the radius of the surface S1,
+and 尸 is the radius of the surface S,, with eccentricity y
+as illustrated in Fig. 2. Z, is the curvature of S), and Z,
+is the curvature of S,. y is half diameter of the confinement,
+1 21
+Fig. 2 Lens and confinement geometry.
+48 Secondary Lens Optimization for LED Lamps
+and L is the distance between the source (LED) and the
+confinement opening.
+Also in Fig. 2, ￠ is the lens axial thickness and
+defined mathematicaliy by the expression
+where, Zl and Z, is given by
+In Eq. (1), is the lens edge thickness. Note that
+the value of t and #, grow uniformly if R, and R, are
+fixed and ￠, > 0.
+2.3 Simulation Software
+Many common commercial simulation programs
+such as CODE V, ZEMAX, LightTools, ASAP or
+OSLO can simulate LED and run ray tracing with
+millions of rays. The Zemax was chosen and used to
+simulate the light rays emitted by LED to reach the
+target plane. From this simulation, the illuminance is
+extracted on the illuminated plane.
+After setting the confinement parameters and the
+source model via LED manufacturer data sheet. the
+simulation starts generating randomly rays that
+represent the light emitted by the source as illustrated
+in Fig. 3.
+2.4 Optimization Method
+For the optimization process, a heuristic (genetic
+algorithm) was adopted that aims to optimize the
+secondary lens geometry in order to generate a uniform
+illuminance on the target plane. GA modifies the lens
+geometry and requests a new simulation from Zemax.
+Zemax performs the ray tracing and returns to GA a
+vector containing the illuminance distribution curve on
+the target plane. GA, via an evaluation function,
+compares the new results of the simulation [13]. This
+process occurs to achieve a optimized geometry of the
+LED lamp lens.
+A possible solution of the problem, i.e., a GA gene is
+defned as
+x=[R Ry L Gr l Pra]
+where, R; is the internal surface radius, R, is the
+external surface radius, L is the distance between the
+source (LED) and the confinement opening, and Gy,is
+the added value to the lens total thickness. For example,
+whenGr= 0,the lens edge thickness is 4.. When G;> 0,
+the lens edge thickness takes the value f + Gy. fr) and
+Pra refer to internal and external lens curvature that can
+be positive or negative, such that fz; = +1 and Sr = 土 1,
+i.e., if positive is convex curvature or if negative is
+concave curvature.
+Fig. 4 illustrates the distribution curve of the desired
+illuminance Di (red curve) and the distribution curve of
+the simulated illuminance Dg (blue curve), where
+deviation between two curves is the evaluation
+function fix).
+Thus, a metric can be developed to measure the
+fitness of each simulated individual (lens) of the GA,
+given by the expression:
+where, xis a value that prevents the division by zero. -
+Fig. 4 Evaluation function.
+Secondary Lens Optimization for LED Lamps 49
+2.5 Apparatus Development
+In order to validate the geometry of the lenses
+found, an apparatus was developed to test the different
+lenses and collect voltage, current and illuminance
+values of the LED studied.
+The apparatus comprises a confinement with radius r
+= 35 mm attached to a heatsink which is fixed to a
+cooler as shown in Fig. 5. A digital thermometer is
+fxed on the top of confinement in direct contact with
+LED base through a hole. Temperature monitoring is a
+factor of extreme importance, since high temperatures
+can damage LED and directly change the illuminance
+values. During all experiments, the LED temperature
+remains constant at 28.6 °C,
+3. Results and Discussion
+For initial studies, it is proposed an equation for
+measuring the illuminance value of a LED using only
+data-sheet, considering the confined LED.
+whereby, @,, is the maximum luminous flux, 4 is the
+surface area of the luxmeter semi-sphere to be
+illuminated, 4 = 27°, I, is the LED nominal current, i
+=1, 2, ..., n, where, n is the number of points of the
+curve, r is the radius of the sphere which forms the
+iuxmeter surface to be illuminated. Therefore, with the
+current values of D and voltage 仑 ] Eq. (4) in hands it
+becomes possible to estimate the value of the
+illuminance E(/) on the surface of the luxmeter
+semi-sphere.
+In order to validate Eq. (4), the apparatus was used to
+collect current, voltage and illuminance values. Fig. 6
+shows the relationship between the voltage and the
+illuminance by using the experimental apparatus and
+theoretical illuminance using Eq. (4).
+As for the proposed apparatus, the illuminance using
+any type of lens can be plotted experimentally. The
+idea of this study is to validate data obtained by
+simulation through the stochastic method routine.
+Fig. 5 Proposed apparatus.
+experimental and theoretical illuminance.
+Fig. 7 shows a lens fixed at confinement opening and
+the luxmeter on target plane. Thus, using a lens, data
+can be collected experimentally and compared with
+simulated values.
+Fig. 8 illustrates experimental and simulated
+illuminance curves for a given lens model.
+In the acquisition of the experimental curve, a target
+plane was used at a distance of 820 mm from the source,
+and a lens geometry with (1) flat inner surface (R; = co);
+(2) external radius R = 24.17 mm. For the simulation,
+a SW LED, YETDA W081F-5W model, , = 700 mA,
+Q = 250 Im, V,, = 7 V, with Lambertian radiation
+pattern, was used.
+In Fig. 9, the luminous flux distributions related to
+the studied lens are shown. Illustrations have been
+obtained by stochastic simulation and through
+photographs of the target plane.
+50 Secondary Lens Optimization for LED Lamps
+Fig. 7 Experimental data collection.
+一 .Simulated 。
+Fig. 8 Experimental and simulated illuminance curve.
+(stochastic) illuminance curve.
+By using a genetic algorithm, it is possible to find a
+lens geometry capable of improving the distribution of
+the illuminance on the target plane. Fig. 10 illustrates
+the result ofthe optimization process ofthe illuminance
+curve of a lens with optimized geometry.
+Fig. 1ia is illustrated optimized lens. Fig. 11b shows
+the distribution of the luminous flux on the target plane.
+It is observed that there was an uniformization of the
+luminous flux on the target plane.
+Fig. 10 fix) for convex S;/concave 52 lens.
+Fig. 11 Simulation data with fix) = 6.38: (a) Optimized
+lens geometry; (b) Distribution of the luminous flux.
+Parameters optimized values found for this other
+case were: Ri = 35, R = 110,7=20, Gr=6, 人 1 = -1,
+Pr: = -1 and evaluation function of fx) = 6.38. The
+material of the lens is quartz with refractive index of
+1.5442.
+4. Conclusions
+Practical tests using the proposed apparatus showed
+that a lens fixed at confinement opening can change
+luminous flux distribution on a target plane and this
+results was validated by simulation. The developed
+equation measures the value of illuminance, using only
+the values found in the data-sheet and the current
+applied to the LED. Finally, it was shown that the
+optimization process proposed is feasible for
+generating new secondary lenses geometries for LED
+lamps, bringing uniform distribution ofthe illuminance
+on the target plane.

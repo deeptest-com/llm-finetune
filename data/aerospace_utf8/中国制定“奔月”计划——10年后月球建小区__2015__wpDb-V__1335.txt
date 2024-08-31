@@ -1,0 +1,393 @@
+中国制定“奔月”计划——10年后月球建小区
+日前,在中国工业高科技论坛上,中国科学家透露了一个引人注目的人类重返月球时间表:中国国家航天局正和欧洲空间局合作,正式启动”空间探测双星计划”,2010年将在月球建立人类永久居住地。这意味着,10年后月球上将可能出现中国人的身影。
+
+月球探测计划 中国制 月球卫星 国家航天局 双星计划 科技论坛 奔月 重返月球 中国科学家 欧洲空间局  
+
+a, Speed of sound
+c Blade chord length
+Ly. Pressure fluctuation amplitude
+M, Freestream Mach number
+P Local air pressure
+R Rotor radius
+￥ Distance from vortex core
+兄 Vortex core radius
+t Time
+t Non-dimensional time
+V Freestream velocity
+Vo Vortex swirl velocity
+艺 Streamwise direction
+y Vertical direction
+X, , Vortex position
+Crpp Tip path plane angle of attack
+L Advance ratio
+r Vortex circulation
+D: Freestream air density
+此 5 Blade azimuth angle
+于 , Blade azimuth angle when vortex is released
+0 Rotor rotational speed
+1. Introduction
+Helicopters are currently put to practical use, for
+example, in emergency medical service, disaster relief
+and surveillance mission. However, the noise radiated
+from a helicopter rotor such as the BVI (blade-vortex
+interaction) is current problem to be improved. The
+BVI noise is dominant noise source of a rotorcraft
+especially during descent and landing operations. BVI
+noise is caused by interaction between the rotor blades
+and their trailed vortices. The blade leading edge and
+the blade tip vortices of preceding blades are almost
+parallel to the blade’s leading edge, generating
+64 Vortex Dissipation Due to Airfoil-Vortex Interaction
+impulsive pressure fluctuations as shown in Fig. 1. The
+high noise levels may prohibit rotorcrafts from
+achieving wide acceptance for civil applications.
+Several active blade control techniques to reduce the
+BVI noise are under research and development. The
+understanding of the BVI phenomena and accurate
+simulation should be fundamental for such
+technologies. In addition, the reduction of the
+time-consuming evaluation is also key issue.
+Many efforts for modeling BVI have been focused
+on using comprehensive rotorcraft analysis codes [1, 2].
+Comprehensive codes consist of engineering models
+with respect to the structural dynamics, the unsteady
+and compressible sectional aerodynamics, and the rotor
+wake. The advantage of these codes is a significant
+decrease in computational cost compared to the
+coupled analysis of CFD (computational fluid
+dynamics) and CSD (computational structural
+dynamics). The comprehensive codes have also
+demonstrated practical ability and precision in
+simulating the aeromechanics characteristics of
+helicopter rotors.
+JAXA has been developing comprehensive code to
+estimate the flow-field around a helicopter [3]. In the
+comprehensive code, a hybrid method of CFD and
+prescribed wake model has been developed [4]. The
+schematic illustration ofthe hybrid method is shown in
+Fig. 2. The hybrid method has the capability of
+accurately predicting the aerodynamics and
+aeroacoustics of BVI noise around a helicopter with
+low computational cost. The prescribed wake model is
+used for computation of the induced velocities, where
+the position of tip vortex (green line) shed from
+rotating blades is formulated simply based on
+momentum theory and actuator disc assumption, while
+the CFD method is incorporated for computation of the
+pressure distributions on the blades which can be
+sources of BVI noise.
+However, the hybrid method tends to overestimate
+pressure fluctuations on the blades and to represent
+Fig. 1 Blade-vortex interaction represented by
+pressure fluctuation with inviscid simulations.
+Fig. 2 Hybrid method of CFD and prescribed wake
+model.
+fluctuation phases with some discrepancies in
+comparison to experimental results as seen in Fig. 3.
+According to the preceding study [4], there exists a
+possibility that differences in the formulation of vortex
+position between CFD and the hybrid method impact
+the accuracy of noise prediction as illustrated in Fig. 4.
+Besides, though Fig. 5 reveals that several BVIs occur
+in the actual flow-field around a helicopter rotor, the
+influence due to such several BVIs and the variation
+with respect to vortex trajectory and wake structure
+have not been investigated in detail.
+In the current effort, two-dimensional CFD
+simulations make the effect of several BVIs clear with
+Vortex Dissipation Due to Airfoil-Vortex interaction 65
+the hybrid method and experiment.
+location and circulation. The paper is organized as interpolation method is incorporated to reconstruct
+follows: Section 2 introduces the computational physical quantities at the interfacing face.
+method applied in this study; Section 3 shows the The initial steady flow conditions around the
+improvement of the wake model; Section 4 gives are chosen as representative of a typical AVI event on a
+concluding remarks.
+the structure and strength of a vortex core for capturing
+AVI with CFD methods. In fact, the induced velocity
+of a vortex totally dominates the variation of vortex
+trajectory and the intensity of AVI and fundamentally
+AVI is a short-time transient phenomenon. Hence, the
+viscous effect less influences on the present
+simulations to assess the variations of vortex center
+location and circulation in terms of vortex structure
+preservation.
+Consequently,an unsteady two-dimensional flow
+solver for the compressible Euler equation is used to
+as it convects through the Cartesian grids. A modified
+version of the SLAU (simple low-dissipative advection
+upstream) splitting method [7] is implemented to
+helicopter rotor. The vortex is introduced ten chords
+66 Vortex Dissipation Due to Airfoil-Vortex Interaction
+upstream of the airfoil from the leading edge of the
+airfoil to check the effects of numerical diffusion
+during the advection phases of vortices over a long
+distance. The swirl velocity profile of the vortex is
+prescribed upstream of the airfoil as a perturbation to
+the steady flow-field. The swirl velocity distribution
+can be modeled by the Vatistas Law [8, 9]. In this effort,
+the Scully vortex model, which is the best vortex core
+model according to the experiment, is used as the
+convecting vortex, such as
+The above-mentioned parameters are determined
+from the experimental work of McAlister and
+Takahashi [10] and the approach of using the
+McAlister vortex data has been widely used before in
+similar simulations [5]. The individual value of
+parameters in the calculation conditions is summarized
+in Table 1.
+Simulations that lead to sequential AVI, which
+consists of single vortex and two airfoils, are
+performed to capture the features of flow-field and the
+influences associated with several AVIs. The
+simulations for a case where the single vortex passes
+and interacts with the single airfoil show good
+agreement with NASA’s experiments [5, 11]. In the
+present study, as shown in Fig. 6, the simulations for a
+case where the single vortex passes and interacts with
+the preceding airfoil and with the following airfoil are
+carried out by varying the parameter of miss-distance.
+The miss-distance y, as defined in Fig. 6, is the vertical
+distance between the airfoil leading edge and the vortex
+center. This parameter significantly dominates the
+noise intensity and thus, the variation of miss-distance
+is utmost important when computing BVI noise. Two
+different AVI cases (miss-distance y = 0.05 in strong
+AVIand y = 0.25 in weak AVI) are considered.
+The correlation between the vortex center location
+and the vortex circulation is investigated with regard to
+the variation of miss-distance. Spatial pressure
+fluctuations resulted from sequential AVI are presented
+Table 1 Calculation conditions for simulations.
+Freestream Mach number (-) M,, 0.626
+Angle of attack (°) a 0.0
+Non-dimensional vortex core radius (-) r/c 0.162
+Fig. 6 Configuration of sequential AVI comprised of
+single vortex and two airfoils.
+and discussed in order to assess the variations of vortex
+center location and vortex circulation.
+3. Computational Results
+3.1 Flow Visualization before 2nd AVI
+First, the flow-field before the 2nd AVI is focused on
+to comprehend the influence associated with the Ist
+AVI. The correlation between the vortex center
+location and the vortex circulation due to the variation
+of miss-distance is evaluated. Fig. 7 shows instantaneous
+vorticity fields and vortex geometries in the far wake
+(approximately 22 chords from the former airfoil). The
+original vortex center location, where upstream vortex
+is assumed to be convected without any AVIs, is
+marked by a “x” sign. The 1st AVI results in that the
+single clockwise vortex (contoured by blue) induces
+the several intense counter-clockwise vortices
+(contoured by red). In the present work, five vortices
+are totally captured. Simulations account for that large
+discrepancies between the original vortex center
+location and the actual vortex center location are found
+both in a streamwise direction and in a vertical
+direction. As illustrated in Fig. 7, since the complex
+vortex wake flow with several vortices induced is
+predicted, the distance difference between the original
+vortex center location and the actual vortex center
+location both in a streamwise direction and in a vertical
+direction is investigated to capture the behavior of each
+vortex. The clockwise vortices are odd-numbered,
+Vortex Dissipation Due to Airfoil-Vortex Interaction 67
+(approximately 22 chords from the former airfoil).
+while the counter-clockwise vortices are
+even-numbered. The original vortex, which is
+convected from upstream, is numbered as 3 in Fig. 7.
+Furthermore, the variation of vortex circulation is
+analyzed to evaluate the interference effect due to
+several vortices. Results are discussed below.
+The distance difference between for a case with and
+without AVIs both in a streamwise direction and in a
+vertical direction with regard to the individual vortices
+is plotted in Figs. 8 and 9, respectively. The reference
+vortex center location is a “x” sign given in Fig. 7. The
+original vortex center, which is described in a red line,
+is located backward in a streamwise direction and
+upward in a vertical direction compared to a “x” sign. It
+is seen that the convecting vortex decelerates due to its
+own induced velocity when passing the upper blade
+surface and moves upward by the effect of several
+vortices induced. In addition, Fig. 10 indicates that the
+direction (approximately 22 chords from the former airfoil).
+09 | ;
+人
+miss-distance vic
+Fig. 9 Distance difference of each vortex in vertical
+direction (approximately 22 chords from the former
+airfoil).
+miss-distance ye
+Fig. 10 Variation of each vortex circulation
+(approximately 22 chords from the former airfoil).
+strength oforiginal vortex circulation tends to dissipate
+and y = 0.10). Thus, it is predicted that there can be
+vortex dissipation associated with the influence of
+several AV] phenomena.
+Simulations result in that the several newly induced
+vortices lead to the complex vortex wake flow during
+the 1st AVL In short, it is necessary to modify the
+68 Vortex Dissipation Due to Airfoil-Vortex Interaction
+vortex center location and vortex circulation strength
+that the hybrid method represents in order to improve
+the capability of BVI noise prediction. However, the
+current hybrid method considers single vortex wake
+released from the blade tip. Thus, instead of reflecting
+the individual vortex behavior. the overall influence
+due to several vortices including the original vortex is
+considered. The variation of the intensity during
+sequential AVI is investigated and discussed focusing
+on spatial pressure fluctuation.
+3.2 Pressure Fluctuation Due to Sequential AVI
+In the present study, spatial pressure fluctuation is
+analyzed to capture the overall influence of several
+vortices during sequential AVI. Hence, two observation
+points are settled in order to obtain the pressure
+fluctuation due to each AVI as illustrated in Fig. 11.
+The non-dimensional pressure fluctuation amplitude of
+Ly,; is defined as follows:
+where, Ap is pressure fluctuation. The index of 1 and 2
+as shown in Fig. 12 means the Ist and the 2nd AVI,
+respectively.
+Using the parameter of Lj, the difference of
+pressure fluctuation amplitude during sequential AVI
+is investigated and presented in Fig. 13. Pressure
+fluctuation amplitude in the 2nd AVI is significantly
+low compared to the amplitude in the 1st AVI. This
+decrement in the 2nd AVI can result from the overall
+vortex dissipation. The entire pressure fluctuation field,
+which is given in Figs. 14-17, also indicates the
+possibility that vortices totally dissipate by sequential
+AVL
+To clarify the impact due to the variation of
+miss-distance or due to the dissipation of vortex
+circulation, the correlation between miss-distance and
+pressure fluctuation amplitude is identified. According
+to the preceding study {11], it is clear that the relation
+fundamentally shows the trend as presented by points
+in Fig. 18. Based on this trend, the current correlation
+Fig. 11 Microphone location to capture pressure
+fluctuation.
+3 rr SN essere 24RD C81 ht ee ARE SRRRARS SHS SRR Seren Fe eb |
+-10 0 10 20 30
+Vortex center location x
+Fig. 12 Definition of pressure fluctuation amplitude.
+respect to each miss-distance during sequential AVL
+Vortex Dissipation Due to Airfoil-Vortex Interaction 69
+Fig. 14 Pressure fluctuation field in the Ist AVI (y/c = 0.05).
+Fig. 15 Pressure fluctuation field in the 2nd AVI (y/c = 0.05).
+Fig. 16 Pressure fluctuation field in the 1st AVI (/c = 0.25).
+Fig. 17 Pressure fluctuation field in the 2nd AVI (/c = 0.25).
+00 bos
+~1.5 -10 -05 00 05 10 15
+miss-distance y/c
+Fig. 18 Identification of L,, with the calculated value,
+where y/c is the non-dimensional miss-distance and L,,/L,,,0
+is the pressure fluctuation ratio normalized by the
+maximum value obtained in the case of y/c = 0.0.
+between the non-dimensional miss-distance of y/c and
+the pressure fluctuation ratio of L./L.,0 is described
+in red line in Fig. 18 and the equation is expressed by
+The time difference between the initiation time of 1st
+and 2nd AVI is investigated using f, such as
+Based on Eq. (3), the pressure fluctuation amplitude
+both in the Ist AVI and in the 2nd AVI is calculated,
+respectively by estimating the miss-distance associated
+with the original vortex location. Next the each
+pressure fluctuation ratio of L,,,2/Ly,,1 due to present
+calculation and due to estimation in Eq. (3) is obtained
+in order to compare the difference of intensity in the
+2nd AVI. Here, L;,,1 is pressure fluctuation amplitude
+in the Ist AVI and L,,2 is pressure fluctuation “
+amplitude in the 2nd AVI. As seen in Fig. 19, it is
+identified that the calculated value is totally low
+compared to the estimated value. In some cases, the
+intensity in 2nd AVI is strengthened due to the
+influence of newly induced vortices in 1st AVI. Thus,
+there exists the effect of several vortices induced in 1st
+AVL. To comprehend the possibility of vortex
+dissipation in 2nd AVI, the entire variation of pressure
+fluctuation amplitude caused by several vortices is
+investigated using the calculated value to the estimated
+70 Vortex Dissipation Due to
+value ratio in 2nd AVI of L;,2 cal/L,,2 est. Here,
+AVI due to the computational result,,Lpvi2_estf is
+pressure fluctuation amplitude in the 2nd AVI
+estimated in Eq. (3). Overall, Fig. 20 also indicates the
+trend that the calculated value is low compared to the
+estimated value. Finally, as presented in Fig. 21, the
+time difference between the initiation time of 1st and
+2nd AVI results in that the 2nd AVI occurs early
+compared to the 1st AVI.
+To summarize the results of simulations, it is clear
+0.0 G3 0.6 0.9 1.2 1.3
+migs-distance vic
+Fig. 19 Ratio of pressure fluctuation amplitude in Ist and
+2nd AVI with the calculated value and the estimated value.
+0.0东河
+G 0.3 0.6 有 9 1.2 1.5
+HHss-distasce ve
+Fig. 20 Ratio of the calculated value and the estimated
+value with the pressure fluctuation amplitude in the 2nd
+AVL
+pi 6.1 ph rere sen eens
+乡【
+亡二芸_()′2了'..eeCeesECPET。。
+;:_…皇_(】4二覆2Y,E颂江江ee
+as|.…熹
+￡6e………….….…参
+0.0 0.3 0.6 0.9 1.2 1.5
+miss-distance We
+Fig. 21 Time difference between the initiation time of 1st
+and 2nd AVL
+Airfoil-Vortex Interaction
+that several vortices induced in the 1st AVI
+significantly affect the 2nd AVI event with the original
+vortex dissipated through the sequential AVI. Thus, it
+is plain to represent prescribed wake mode] if vortex
+center location and vortex circulation is expressed as a
+single vortex considering the influence of several
+vortices, since blade tip vortex is modeled as a single
+vortex in this hybrid method.
+3.3 Proposal of the Modified Hybrid Method of CFD
+and Prescribed Wake Model
+Modification of the hybrid method of CFD and the
+prescribed wake model is discussed here. The physical
+properties necessary to modify the hybrid method can
+be provided by the spatial pressure fluctuation
+amplitude and the initiation time of 2nd AVI. The
+vortex trajectory in the hybrid method, which is
+originally suggested by Beddoes [12], is assumed to be
+an epicycloid curve and written in the following
+equations:
+x, = Rcos￥, +u (￥,-V￥,) (5)
+力 =Rsin 九 , (6)
+Hy = Veosay,,, | RS @))
+According to the current work, it is necessary to
+modify the vortex center location both in the
+streamwise and in the vertical directions. The vortex
+center location only in the streamwise direction is
+focused and modified at the present step. Thus, an
+offset value of Ax, is introduced for the simple ,
+modification, such as
+x, = Reos￥, + u (￥, 一 纠 ) - Ax, (8)
+4. Conclusions
+It is necessary to modify the pressure fluctuation on
+blades and the fluctuation phase represented by the
+current hybrid method. Therefore, the simulations of
+sequential AVI, which is comprised of single vortex
+Vortex Dissipation Due to Airfoil-Vortex Interaction 71
+and two airfoils, are performed to consider and
+comprehend the effects of several AVI events. In the
+current effort, focusing on the influence associated
+with several AVIs, the variation of the vortex center
+location and vortex circulation, and the variation of
+wake structure, the following conclusions are drawn
+from the results presented:
+(1) Several vortices are induced in the 1st AVI and
+there exists the complicated vortex wake flow;
+(2) It is necessary to modify the formulation of
+vortex center location and vortex circulation with
+respect to the original vortex, considering several
+vortices as a single representative vortex.

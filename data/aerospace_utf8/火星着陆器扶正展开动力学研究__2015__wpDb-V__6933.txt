@@ -1,0 +1,393 @@
+火星着陆器扶正展开动力学研究
+火星着陆技术是实现对火星探测的关键技术。文章通过对四面体着陆器展开过程进行深入研究,提出了一种应用于四面体火星着陆器扶正展开的方法,并对该方法进行了详细的分析和计算;通过火星着陆器扶正展开动力学的分析,提出了扶正展开系统的动作策略,对实现扶正展开的姿态确认进行了分析和设计;基于Hamilton法建立了扶正展开着陆器的动力学模型,对多姿态下扶正展开执行器的动力学特性进行了分析,获得了扶正及展开过程中的力矩特性,从而可以对翻转动作进行定量的分析,实现翻转能量的最小化。该研究对于火星着陆器的设计具有参考意义。
+
+气囊缓冲 姿态扶正 着陆器展开 火星探测  
+
+1981年应用于美国的航天飞机上。SPAR公司的空
+间站遥操作机械臂系统(SpaceStationRemoteManip-
+ulatorSystem,SSRMS)Ia和日本实验舱遥控机械臂
+系 统 (Japanese Experiment Module Remote Manipula-
+tor System,JEMRMS)I 及 欧 洲 机 械 臂 ( European Ro-
+botic Arm, ERA)r[5 也 分 别 于 2001 年 、 2008 年 和
+2013年应用到“国际空间站“上。中国未来的空间站
+也将应用空间机械臂执行相关空间作业任务00。
+应用于载人航天器上的大型空间机械臂的质量
+小、负载质量大、活动范围大的设计需求决定了机械
+臂一般设计为细长结构,而细长结构和大质量的未
+端负载使得机械臂系统频率一般为零点几赫兹,柔
+性特征十分明显,因此带来的动力学与控制问题影
+响着空间机械臂在轨应用的效果。SRMS的应用结
+果表明“1:SRMS约有工作时间的30%被用于等待
+柔性机械臂振动的衰减,可见,空间柔性机械臂大柔
+性的特点严重影响了空间柔性机械臂的工作教率。
+针对上述问题,国内外相关研究部门展开了空
+间机械臂柔性多体动力学口和关节的动力学的研
+究,基于上述研究工作,本文结合未来中国空间柔性
+机械臂工程应用所面临的技术问题,对空间柔性机
+械臂多体动力学、关节的动力学建模方法进行分析,
+旨在建立更为准确的机械臂系统动力学模型,以期更
+准确地反眙空间柔性机械臂动态性能,由此设计和验
+证的控制系统可有效缩短柔性机械臂在轨运动过程
+中的振动衰殒时间,提高空间柔性机械臂的控制精
+SPAR公司从1974年起,耗时18个月建立了两套
+多体动力学仿真系统:实时仿真设备(Real-Time
+Simulation Facility, SIMFAC) 和 非 实 时 仿 真 设 备
+(ASAD)!。ASAD采用集中参数法将机械臂筒
+化为由7个集中质量体组成的开环链(openkine-
+maticchain)(如图2所示),每个关节被简化为一个
+杆和一个转动副,杆的两端各连接一个扭簧用来模
+拟关节壳体的扭转刚度。ASAD用几段具有集中
+度,促进空间柔性机械臂在航天器工程中的应用。
+2柔性机械臂多体动力学的建模方法
+多体动力学研究由多个柔性体或刚体所组成的
+复杂机械系统在经历大范围空间运动时的动力学行
+为0。空间柔性机械臂是典型的多体系统““““1,由
+机械臂臂杆、关节、控制器等组成,图1展示了加拿
+大SPAR公司的SRMS机械胡的组成“1。为了给
+关节提供准确的输出力矩命令、预测机械臂关节及
+末端的轼迹,须要建立并求解机械臂的多体动力学
+模型“1。常用的多体动力学建模理论主要有牛顿-
+欧拉法05“51、拉格朗日法“““171和kane法U21等,这几
+类方法各有所长,目前国外载人航天器机械臂广泛
+应用的动力学建模理论主要有牛顿-欧拉法和拉格
+朗日法;对柔性体进行离散化处理的方法主要有集
+中参数法(LMM)、有限元法(FEM)和假设模态法
+(AMM)080;刚柔糊合系统动力学建模方法主要
+有运动-弹性动力学法与混合坐标法06.1“201。
+及了臂杆的弯曲变形而忽略了臂杆的剪切变形。
+SPAR公司在机械臂的每个杆与前后杆的连接
+处固连两个坐标系(如图3所示),其中OXY,Zo
+是基座坐标系(与航天器本体相固连的坐标系);
+〔)爹一l乏〈…一lY{一]ZiFnOiXYZiZ=5Hi—1AH
+固连的两个坐标系;O;XiY:Z:和O:X:,V:Zi是与杆i
+相固连的两个坐标系。通过坐标系OaXinYiZe
+和O:X:;Y:Z:的坐标变换矩阵,建立杆;一1与杆;的
+相对运动关系。这样,由杆;一1的运动参数(含角位
+移、角速度和角加速度)可以递推得到杆;的运动参
+数,分析杆件间的作用力,利用牛顿-欧拉法得到机
+械臂动力学模型的一般形式:
+式中:FoMT,分别为杆}对杆;施加的合力与合
+力矩(j对应于图3中;一1和;十1,显然,F:,i=
+— Fi; 1; =—T.;5r7 MARI RO, X,Y, Z; 的 坐 标
+FRO到质心C:的矢量;厂Mom,分别为杆;的转
+动惯量和质量;vMal分别表示杆;质心C:的平动
+速度和加速度;0.和6;分别为杆;的角速度和角加
+速度。
+统各个部件的运动参数,采用运动-弹性动力学法把
+机械臂看作是运动的弹性系统,在描述机械臂大范
+围运动时,将臂杆视为刚体;描述机械臂变形时将臂
+杆视为柔性体。对应的,ASAD动力学模型由两部
+分组成,一部分用于描述柔性体的高频振动,另一部
+分用于描述刚体的低频运动。ASAD把外力和刚
+体惯性力施加到柔性臂杆上计算柔性体的变形,并
+将此变形与臂杆刚性运动叠加,在此基础上求出机
+械臂的运动学和动力学参数。这种算法简化了动力
+学求解的难度,但是忽略了柔性体变形与刚体运动
+的相互影响,这也是ASAD仿真结果与SRMS遥测
+数据之间总存在较大误差的原因之一[.220。
+20世纪90年代中期,为了辅助组装和维护“国
+际空间站“上的俄罗斯舱段,荷兰Fokker公司开始
+研制欧洲机械臂并开发了欧洲机械臂的多体动力学
+仿 真 系 统 (ERA Simulation Facility, ESF), , 该
+系统采用臂杆的前两阶弯曲模态与第一阶扭转模态
+来表征臂杆柔性特征;同时将关节简化为非线性扭
+簧来表征关节刚度特征,关节摩擦力矩模型则采用
+如图4所示的模型r“,为了方便计算,ESF将实验
+测量的动摩擦力矩作为常值处理。
+学法建立欧洲臂柔性多体动力学模型,也存在同样
+的问题,即忽略了柔性体变形与刚性运动的相互
+影响0。
+2001年应用于“国际空间站“的7自由度机械
+臂SSRMS,利用其冗余自由度灵巧避障、避奇异点,
+改善了各关节的力矩状况,这也是SSRMS优于
+SRMS,ERA,JEMRMS的地方[2““21。文献[29]采
+用拉格朗日法建立SSRMS多体动力学模型,采用
+神经网络法来优化轨迹及各个关节的输出。
+定义与各个关节相固连的坐标系(如图5所
+示),并将每个关节的转角定义为广义坐标,即可得
+到各个部件之间的坐标变换矩阵和各个部件间的运
+动关系。通过系统动能和系统势能可建立机械臂的
+动力学模型:
+工二@一土(3
+-葛荣。人
+式中:Q为机械臂的系统动能;Y为机械臂的系统势
+能;T为关节;的输出力矩;为拉格朗日丽数。
+前一杆的转动角度,b:和9:u则为对应的角速度.
+混合坐标法将空间机械臂臂杆假设为弹性连续
+体,在臂杆上建立浮动坐标系(坐标系与柔性臂杆固
+连,柔性臂杆的变形使坐标系的坐标原点位置及坐
+标轴方向都随之改变,故称为浮动坐标系3,则柔性
+臂杆上任意一点的位置坐标由浮动坐标系的刚体坐
+标与柔性体相对于浮动坐标系的模态坐标叠加得
+到。相比于SRMS的动力学模型,混合坐标法建立
+的动力学模型描述了空间机械臂系统大范围刚性运
+动与柔性振动的相互影响,更加接近实际情况。
+20世纪90年代中期,日本宇宙航空研究开发
+表 1 空间机械臂动力学建模方法比较
+Table 1 Comparison between different dynamic modeling methods of space manipulator
+注:表中的“一“措未见相关文献报道。
+文献[12J认为采用拉格朗日法建立的空间机械
+臂动力学模型比牛顿欧拉法建立的动力学模型规模
+小,计算效率更高。对于柔性多体系统,采用混合坐
+标法建模考虑了刚性运动与柔性振动的耦合,更符
+合实际情况。因此,推荐用拉格朗日法建立空间机
+械臂多体动力学模型,同时用混合坐标法描述臂杆
+柔性变形与刚性运动的耦合。
+机构(JAXA)也开展了空间机械臂JEMRMS的多
+体动力学研究,最初也是利用有限元法计算模态特
+EME,JEMRMS主要实现电池插拔等灵巧操
+作,最大操作载荷只有7000kg,JEMRMS臂杆设为
+刚性,只考虑关节柔性,这样与SRMS,ERA,
+SSRMS等有很大不同。
+2007年,文献L31]认为,简单将SSRMS臂杆假
+设为末端自由的悬臂梁来建立SSRMS动力学模型
+并不能反映实际情况,于是JSC采用拉格朗日法建
+立一套SSRMS模拟臂的动力学模型,在求解柔性
+臂杆模态方程时,将末端边界条件中加人了末端质
+量影响因子,以表征不同未端质量下臂杆的模态特
+性,经过实验验证,修正末端边界后的动力学模型更
+加接近实验结果。
+2009年,文献[32-33]利用牛颓-欧拉法建立了
+含空间站、机械臂及负载的多体系统动力学模型,其
+中栖性臂杆模型也是通过混合坐标法建立的;针对
+关节与机械臂末端振动抑制问题提出了一种控制策
+略,但其机械臂系统只考虑了一个关节,动力学模型
+比较简单。
+上述空间机械臂动力学建模方法的比较见
+3“柔性机械臂关节的动力学建模方法
+穹间机械臂关节是空间机械臂提供动力,感知位
+置和机械连接的重要部件,是保证机械臂运动范围、
+运动精度和运动平稳性的关键。空间机械臂关节主
+要由动力源、传动装置、传感器和控制器等组成。
+空间柔性机械臂关节的动力学建模是指建立关
+节输出力矩与关节输出运动参数的联系。关节动力
+学模型与关节传动装置有关,长寿命大型空间机械
+臂关节一般采用行星齿轮传动系统作为主要传动装
+置,图6为某空间机械臂关节齿轮传动系统。
+目前,针对空间柔性机械臂关节动力学建模研
+究主要有两种思路:
+(1)基于筒化模型的空间柔性机械臂动力学研
+究。此方法将柔性关节简化成扭簧,不考虑传动装
+置内部动力传动关系,只考虑关节输出力矩与关节
+输出运动参数的关系。
+(2)基于精细模圩的空间柔性机械臂动力学研
+究。此方法深人分析传动装置各个部件间的受力、
+运动关系,考察部件与部件之间的各种非线性影响
+因素,建立整个关节的动力学模型,由此得到关节输
+出力矩与关节输出运动参数的关系。
+3.1“基于简化模型的动力学建模方法
+关节动力学的早期研究是将关节假设为线性扭
+簧,此模型无法涵盖齿轮传动系统的摩擦及间隙等非
+线性因紫的影响。1982年,文献[2]在研究SRMS
+关节动力学时,将关节简化为一个非线性扭簧,该扭
+簧刚度曲线由一段直线与一段抛物线组成(如图7所
+示),其中直线段斜率为关节输出参数稳定时的关节
+刚度,直线段延长线与横轴的交点即为关节间隋角
+的一半,抛物线与直线交点($:,了)则通过实验数
+据拟合获得。此刚度模型综合考虑了刚度与间隋的
+影响,并通过实验数据拟合修正,可信程度较大。
+文献[34]在关节模型中引入摩擦力矩的影响,将
+电机自身的摩擦力矩与关节传动系统的摩擦力矩区
+别对待,关节摩擦力矩模型简化为图4所示的库仑摩
+擦模型,忽略非线性影响。文献[30]也将JEMRMS
+关节简化为此类弹簧-阻尼模型。
+学模型时也将关节简化为非线性扭簧,并在此基础
+上建立关节控制系统。
+关节简化模型忽略了实际关节中复杂的齿轮构
+形与受力关系,仅考虑关节宏观动力学特点。以此
+建立的关节控制系统结构简单。简化模型对关节的
+非线性刚度特别是齿轮喃合刚度的时变特性无法准
+确描述,也不能解释关节的高频振动等现象,模型的
+各个参数均需通过实验测量获得,代价较大,简化模
+型对关节零部件的机械系统设计、准重及优化指导
+意义不大,难以获得关节内部传动的动力学特性。
+然而,由于该模型简单且能反眨关节的宏观运动特
+点,所以在单关节控制系统的设计中应用较多。
+3.2“基于精细模型的动力学建模方法
+为了准确预测机械臂的动力学行为,要用更高
+精度的机械臂关节动力学模型来反映真实动力学特
+性,须要建立更加细化的、全面考虑关节非线性影响
+因素的关节模型。
+多级行星齿轮传动系统动力学建模一般参照齿
+轮的动力学建模方法“1。影响齿轮喘合的非线性
+因素主要包括时变喘合刚度、传动误差、齿侧间隙和
+喽合阻尼(图8)。
+(1)时变啃合刚度“。喽合刚度即轮齿抵抗沿
+喘合线方向变形的能力。由于轮齿喘合位置的变化
+及重合度的影响,齿轮唔合刚度呈周期性变化。
+(2)传动误差““。齿轮加工、装配过程中产生
+的儿何偏心及运动偏心等误差,造成的齿轮机构从
+动轮实际转角与理论转角之差即为传动误差,此误
+差属于随机误差。
+(3)齿侧间隆。齿轮加工时造成的轮齿变薄及
+装配中齿轮副中心跚的改变,使得喘合轮齿对之间
+存在间隐。齿侧间隆一般由分段函数表示。
+(4)啃合际尼。由于齿面摩擦等引起的阻碍齿
+轮副相对运动的能力。
+1993年,文献[40]在设计一个容错关节时,采
+用精细模型分析了齿轮传动系统各个齿轮间的喘合
+关系,计算了关节频域特性,计算结果与实验数据基
+本昕合。然而,为了简化计算,此模型只考虑了齿轮
+扭转刚度与惯性等线性因素,将唔合刚度当作常值
+处理,忽略了齿侧间陵等非线性因素的影响。
+2010年,文献[41-42J]将这种方法引人到多级
+行星齿轮传动系统动力学建模中,采用集中参数法
+分析了齿轮传动系统中每对齿轮的时变喘合刚度、
+齿侧间隙、传动误差及啃合阻尼的影响,建立了细化
+关节模型。
+组化关节模型中,轮齿单齿喘合刚度由国际标
+准ISO6336提供的经验公式计算得到,双齿或多齿
+喘合情况下的唔合刚度根据重合度的大小计算得
+到,双齿或多齿唰合刚度视为单齿喘合的并联系统,
+由此获得齿轮传动啃合刚度的周期性时变特性“““。
+在该模型中,传动误差视为齿轮转角的正弦函数,齿
+侧间隋用双曲正切函数来模拟。
+仿真结果表明,齿侧间隙是造成关节谐振的重
+要因素,在建立关节传动系统动力学模型时必须考
+虑。然而,关节精细模型的计算精度虽有了较大提
+高,但是求解计算量大(每个关节模型由11个2阶
+偏微分方程组成),不能直接应用,需要予以简化。
+2013年,文献[43J]基于关节精细模型对某多级
+行星齿轮传动的关节齿轮传动系统刚度进行了分
+析,分析结果表明,关节多级行星齿轮传动系统高速
+级与中速级刚度降低90%时,关节传动系统总刚度
+仅降低1.85%,关节传动系统的刚度主要受低速级
+影响,高速级则可当作刚性对待,这样筒化后每个关
+节模型的规模将降低60%以上。
+基于以上分析,采用精细模型来研究空间柔性
+机械臂关节动力学特性时,重点应放在传动系统的
+低速级上。同时,还须通过相关实验获得齿轮非线
+性喘合刚度、传动误差和间隙等参数来修正关节动
+力学模型。
+4“结束语
+基于对国内外载人航天器柔性机械臂动力学建
+模方法的综合分析,得出如下几点结论:
+(1)空间柔性机械臂多体动力学可采用拉格朗
+日法建模,以利用拉格朗日法建模程序化、规范化、
+模型规模小的优点;宜采用混合坐标法来描述臂杆
+刚性运动与柔性变形的耦合,更准确地描述机械臂
+的动力学行为。
+(2)应建立含时变唔合刚度、间阿及传动误差等
+非线性因素的关节精细动力学模型,使关节动力学
+行为的描述更准确。
+(3)建立关节精细动力学模型时,宜将重点放在
+齿轮传动系统的低速级上,可忽略高速级柔性,以简
+化关节精细模型。
+(4)关节动力学模型建立时需要辅以实验手段,
+用关节参数的测试结果修正关节动力学模型。
+(5)空间柔性机械臂多体动力学模型和关节动
+力学模型的准确建立,有利于有的放矢地设计控制
+系统,提高机械臂末端定位精度,降低末端振动衰减
+时间。
+参 考 文 献 (Reierences)
+[1] Hunter J A, Ussher T H, Gossain D M. Structural dy-
+namic design considerations of the shuttle remote ma-
+nipulator system, AIAA-0706[R]. Washington D. C. ,
+ATAA, 1986
+[2] Nguyen P K, Ravindran R, Carr R, et al. Structural
+flexibility of the shuttle remote manipulator system me-
+chanical arm,AIAA-1982-1536[CJ//Guidance and Control
+Conference. Washington D. C. : AIAA,1982: 246-256
+[3] Graham G, Savi S, Benoit M, et al. Canada and the In-
+ternational Space Station program overview and status
+[J]. Acta Astronautica, 2003, 51(1): 591-600
+[4] Shiraki K, Ozawa K,Matsueda T, et al. JEMRMS de-
+velopment status, Japanese experiment module used for
+International Space Station, IAF-93-502[C]// 44th In- (
+ternational Astronautical Congress. Paris; IAF, 1993. ,
+16-22
+[5] Amadieu PJ. European contribution to the International
+Space Station Alpha,IAF-94-434[CJ// 45th Interna-
+tional Astronautical Congress. Paris: IAF, 1994
+L6] Freund E, Rossmann J. Multimedia and virtual reality
+techniques for the control of ERA, the first free {lying
+robot in space, IEEE-01CH37164 [ C ]// Proceedings
+2001 ICRA IEEE International Conference, Washington
+D. C.: IEEE, 2001. 1921-1926
+[7] Kampen S, Mandersloot W Thirkettle A J, et al. The
+european robotic arm and its role as part of the russian
+segment of the International Space Station Alpha, IAF-
+95-T303 [CJ// 46th International Astronautical Con-
+gress. Paris; IAF, 1995
+[8] Lambooy P J, Mandersloot W M, Bentall R H. Some
+mechanical design aspects of the European robotic arm,
+NASA-95N27262 [ R]. Washington D. C.:. NASA,
+1995
+[9] Boumans R, Heemskerk C. The European robotic arm
+for the International Space Station[ J]. Robotics and
+Autonomous Systems, 1998. 23(1). 17-27
+[10]于登云,孙京,马兴瑞.空间机械臂技术及发展建议
+[J]. 航 天 器 工 程 ,2007, 16(4) : 1-8
+Yu Dengyun, Sun Jing, Ma Xingrui, Suggestion on
+development of Chinese space manipulator technology
+[J]. Spacecraft Engineering,2007,16 (4) ; 1-8 (in
+Chinese)
+L11]」陆佑方.柔性多体系统动力学[M].北京:高等教育出
+版社,1993
+Lu Youfang. Dynamics of flexible mutibody systems
+[M]. Beijing: Higher Education Press, 1993
+[12] Woerkom A K. Misra robotic manipulators in space a
+dynamics and control perspective[ J]. Acta Astronauti-
+ca, 1996,38(4):411-421
+[13]曲广吉.航天器动力学工程[M].北京:中国科学技术
+出版社,2000
+Qu Guangji. Spacecraft dynamics engneeringLM],Bei-
+jing:China Science and Technology Press, 2000
+[14] Ravindran R, Doetsch K H. Design aspects of the
+[C]//Guidance and Control Conference. Washington
+D. C. : ATAA, 1982; 456-465
+[15] Dubowsky S, Vafa Z. A virtual manipulator model for
+space robotic systems, NASA-89N26574 R]. Wash-
+ington D. C. : NASA, 1987
+[16]黄文虎,邵成勋.多柔体系统动力学[M].北京:中国
+科学出版社,1996
+Huang Wenhu, Shao Chengxun. Dynamics of flexible
+[17]洪嘉振.计算多体系统动力学LM].北京:高等教育出
+版社,1999
+Hong Jiazhen. Computational dynamics of multibody
+systems M]. Beijing: Higher Education Press, 1999
+L18]洪商振,尤超蓝.刚柔耦合系统动力学研究进展[JJ.动
+力学与控制学报,2004,2(2):1-6
+Hong Jiazhen, You Chaolan. Advances in dynamics of
+rigid-flexible coupling dynamics[ J]. Journal of Dynam-
+ics and Control, 2004,2(2):1-6 (in Chinese)
+[19]洪嘉振,刘铸永,刚柔耦合动力学的建模方法L[J].上
+海 交 通 大 学 学 报 , 2008, 42(11) : 1921-1926
+Hong Jiazhen, Liu Zhuyong., Modelling methods of rig-
+id-flexible coupling dynamics[ J]. Journal of Shanghai
+Jiaotong University, 2008, 42 (11): 1921-1926 (in
+Chinese)
+[20]宋轶民,余既庆.柔性机器人动力学分析与振动控制研
+FER]. 机 械 设 计 ,2003,20(4):1-5
+Song Yimin, Yu Yaoqing. Summary on the study of
+dynamics analysis and vibration control of flexible ro-
+(in Chinese)
+[21] Stovman 』 A, Wagner-Bartak C G, Doetsch K H. A
+real-time simulation facility for the development of ma-
+1604[CJ//10th Space Simulation Conference. Wash-
+ington D. C. : AIAA, 1978
+[22] Mccllough J R, Sharpe A, Doetsch K H. The role of
+the Real-time Simulation Facility, SIMFAC, in the de-
+sign, development and performance verification of the
+Shuttle Remote Manipulator System (SRMS) with
+man-in-the-loop, NASA-81N14147 [R]. Washington
+D., C.: NASA, 1981
+[23] Glenn J, Elizabeth B. SRMS history, evolution and
+lessons learned, NASA-JSC-CN-24512[ R]. Washing-
+ton D, C.,. NASA, 2011
+[24] Hoogstraten J] A, Mortensen U, EUROSIM — system
+and applications,IAF93-587[C]// 44th IAF Interna-
+tional Astronautical Congress. Paris:IAF, 1993
+[25] Couwenberg M J H, Blommestijn R J H, Schulten D
+J, et al. The ERA simulation facility for the European
+robotic arm programme, IAF-99-U301[C]// 50th In-
+ternational Astronautical Congress. Paris; IAF, 1999
+[26] Breedveld P,Diepenbroek A Y, Lunteren T. Real-
+time simulation of friction in a flexible space manipula-
+tor,IEL-0-7803-4160-0 [CJ// 8th International Ad-
+vanced Robotics Conference, Netherlands: IEL, 1997
+[27] Daniell R G, Beck J R. On the design and development
+of the Space Station Remote Manipulator System (SS-
+RMS), IAF91-074LCJ// 42nd International Astronau-
+tical Congress, Paris: IAF, 1991
+[28] Fayssai A, Buhariwala H, Macl.ean K, et al. Dynam-

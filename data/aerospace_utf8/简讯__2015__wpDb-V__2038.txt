@@ -1,0 +1,263 @@
+简讯
+和平号盼游客两名“飞天”73天的俄宇航员6月16日结束了首次由私人出资的太空飞行,乘联盟 TM30飞船离开和平号空间站,安全返回地面。这样,和平号再次处于无人值守状态。负责和平号商业经营的和平公司6月19日宣布,美国人丹尼斯·蒂托将成为和平号的第一位游客。蒂托是一投资公司的创始人,曾在美航字局喷推实验室工作,参与过行星际飞行任务的制订。他将于明年上半年飞到和平号,行期7～8天。据称他这次旅行的费用在2000万美元上下。和平公司还在与其它几位欧美和亚洲客人接触。
+
+和平号 发射失败 固定卫星业务 阿里安 火箭发射 空间站 重型运载火箭 通信卫星 发动机 无人值守  
+
+INTRODUCTION
+High density polyethylene (HDPE) is one of
+Table 1, it has very small dissociation energy
+the most widely used polymers in the industry on
+(153 kJ/mol) and a very high binding energy.
+account of desired properties, good processability
+and relatively low cost. However, it has some
+disadvantages such as poor barrier properties and
+low chemical resistance [rs], Direct fluorination,
+Binding energy/(kJ。molr1) 490 570 330
+which can be used to modify the surface proper-
+ties of polymer, is a heterogeneous reaction of el-
+When a mixture of fluorine reacts with the
+emental gaseous F, and its mixtures (fluorine and
+polymer surface (fluorine pressure and treatment
+nitrogen, argon or helium) *? react with polymer
+duration should not exceed certain level), the
+surface.
+Unique properties of direct fluorinated poly-
+more stable than carbon-hydrogen bonds by ap-
+mers are due to the characteristics of the fluorine
+proximately 75 kJ/mol. The strong bonds in flu-
+atom. Fluorine is the most reactive and electro-
+orocarbons, compared with hydrocarbons, are
+‘Website of on-line first: http://www. cnki. net/kems/detail/32. 1389. V. 20121226. 0934. 003. htm] (2012-12-26 09.34).
+Foundation items: Supported by the National Natural Science Foundation of China for Innovative Research Group
+(50921002) ; the Quartermaster Materials and Fuel Ministry of PLA Air Force Logistics Department (BKJ10C043);
+the Priority Academic Program Development of Jiangsu Higher Education Institutions.
+Received date; 2012-06-27; revision received date. 2013-02-07
+Corresponding author: Wei Xianyong,Protessor,Ph. D. ,
+E-mail; wei_ xianyong@ 163. com.
+largely responsible for the exceptional thermal
+and chemical stability. At the same time when
+the surface is modified by materials with low sur-
+face free energy, oil and water-retard surfaces
+have been produced!'?. These features of elemen-
+tal fluorine have initiated its wide utilization to
+enhance various application properties of HDPE;
+Barrier properties, chemical resistance, adhesion,
+printability and others!’?!, Owing to barrier
+surface layer, environment pollution at diffusion
+of jet fuel and other fuel through the walls of pol-
+ymer fuel tanks fall up to several tens of
+timest'?. Therefore, it has a broad amount of ap-
+plications, such as oil and gas pipes, barrier
+membranes, HDPE composites, barrier films and
+fuel tanks[17207,
+Most experiments on the direct fluorination
+have focused on the performances of the adhe-
+sion, gas separation, and chemical resistance
+properties[2L2],、 However, relatively less atten-
+tion, as well as experiments in detail, has been
+paid to oleophobic and hydrophobic properties,
+especially HDPE's. Oleophobic and hydrophobic
+properties can afford the self-cleaning ability of
+the surface of polymers, combination of oleopho-
+bic and hydrophobic coating materials and filter
+materials[2251、In order to research the oleopho-
+bic and hydrophobic properties of the surface per-
+formances of direct fluorinated HDPE, Fourier
+transform infrared (FT-IR), scanning electron
+microscopy (SEM) and contact angle (CA) are
+applied in the study. At the same time, a series
+of oil and water-retard experiments are per-
+formed.
+1 EXPERIMENT
+1.1 Materials and preparations
+The matrix material used in this experiment
+is HDPE with density of 0. 955 g/cmy and an melt
+flow index (MFI) of 0.35 g/10 min (190 °C/
+2.16 kg), obtained from Shanghai Golden Phil-
+lips Petrochemical Co. Ltd.
+Surface fluorination of HDPE sheets of
+50 mm X50 mm X 1 mm size is performed in our
+laboratory. Fluorination is carried out in closed
+vessels at a total mixture pressure of 95. 8 kPa by
+treating with mixture (F, + N;). Different fluori-
+nation time (1 and 2 h) and different fluorination
+concentration (1% and 2%) are applied to the
+HDPE sheets to investigate an effect of extent of
+fluorination on their surface properties. Fluorina-
+ted HDPE sheets are stored in a silicagel desicca-
+tor at room temperature.
+1.2 FT-IR study
+For structure analysis, FT-IR of the virgin
+and fluorinated HDPE are studied using a spec-
+trometer THERMO NICOLET 5700. The IR-
+spectrum is recorded by transmission in a dry air
+atmosphere between 4 000—400 cm?' with 64
+spectral accumulations.
+1.3 SEM observation and contact angle measure-
+ments
+The micro-structural characteristics are car-
+ried out with a Jeol JSM-5800LV SEM. Contact
+angels are measured with measuring system
+JC2000C1. Measurements are performed by a ses-
+sile drop method using the drop shape analyzer
+(°) at room temperature (20 土 °C) and aver-
+aged. Distilled water droplet is dropped to the
+sample surface from a distance of 5 mm by the vi-
+brating injector. The diameter of the droplet is
+about 1 ecm. The contact angles of water are
+measured to observe the ability of water-repellen-
+cy on the direct fluorinated HDPE surface.
+1.4 Mass varying measurements
+The mass measurement experiments are Op-
+erated in a thermostatic tank at 90 °C, where the
+temperature is controlled within 土 0. 5 °C throughout
+a run except for an initial fluctuation. Increment
+of mass and time are recorded over a period from
+1 d to 10 d. Fluorinated and un-fluorinated HDPE
+sheets with the same amount are each immersed
+in four cleaned and pre-weighed glass cups. The
+first and the second cups (referred to as Sample 1
+and Sample 2 are filled with distilled water,
+to as Sample 3 and Sample 4) are filled with jet
+fuel. Table 2 gives selected properties for the jet
+fuel.
+Table 2 Selected properties of tested jet fuel
+Property Jet fuel
+Initial density (20 °C)/(kg ?+ m?*) 796
+Original distillate temperature/°C 40
+10% distillate temperature/“C 80
+20% distillate temperature/°C 105
+50% distillate temperature/°C 145
+90% distillate temperature/“C 180
+End distillate temperature/“C 251
+Residualy/ (V/V, %) 2.5
+Loss/(V/V, %) 1.5
+Mass varying experiments are measured
+using an electronic balance (Shimadzu UX4200S)
+with an accuracy of 0. 1 mg. Temperatures at the
+experiment location are closed to 20 °C, and there
+are no velocities over the surface of jet fuel.
+2 RESULTS AND DISCUSSION
+2.1 Surface performance of direct fluorinated
+HDPE hollow sphere
+FT-IR spectra of the virgin and fluorinated
+HDPE films are shown in Figs. 1,2.
+Fig. 1 shows four typical bands of the virgin
+HDPE, where 2 916 cm?' is due to —CH, dis-
+symmetry stretching vibration, 2 850 cm?' is
+—CH, symmetry stretching vibration, 1 463
+cm”! is 一 CH, bending vibration, and the band at
+3 5003 000 2 500 2 000 1 500 1 000
+Wave number / cm’
+Fig. 1 FT-IR spectra of virgin HDPE film (thickness
+of film is equal to 20 ym)
+of film is equal to 20 pm)
+719 cm! is the —CH, rocking vibration.
+In the case of fluorinated HDPE, a broad
+peak appears at 1 200 ecm?' in Fig. 2, which is
+due to the absorption of C—F bond. According to
+the literature, the frequency at 1000—1 300 cm?"
+is a characteristic frequency of the C—F bond.
+Kharitonov, et allz?) observed that fluorina-
+ted polymer consisted of three-layer structure:
+Fluorinated layer, unmodified layer (virgin lay-
+er), and boundary layer (main chemical conver-
+sion processes proceed inside that reaction zone).
+Fig. 3 shows the SEM image of un-fluorinated and
+fluorinated HDPE. However, the boundary layer
+is very narrow, almost invisible, suggesting that
+HDPE has the high crystal capability.
+The SEM images show that the depth of
+fluorinated layers has remarkable change under
+the different fluorination time and the density of
+fluorinate mixtures. Figs. 4(a,b) have the same
+experiment conditions except that the fluorination
+time of former is half of that of the latter. As ex-
+pected, the longer the fluorination time is, the
+higher the fluorine level is. The depth of fluorina-
+ted layer in Fig. 4(a) is 5. 75 pm but in Fig. 4(b)
+is 7. 86 um. The density of fluorinate mixture of
+Fig. 5(a) is 1% more than that of Fig. 5(b). The
+depth of fluorinated layer of Fig. 5(a) 《5. 46 pm)
+is 0.39 pm thicker than that of Fig. 5(b) (5.07
+pum), and there is similar tendency showed in
+Fig. 4. However, their relationship is not linearity.
+As summarized in Table 3 and showed in
+Fig . 6 , the wetting behavior of the fluorinated
+Table 3 CA of water measured by sessile drop method
+Fluorination depth/pm 7.86 5.75 5.46 5.07 0.00
+CA/(C7) 104.5 98.5 93.5 90.0 78.5
+HDPE is observed by CA, and CA of water on
+the surface of HDPE is measured before and after
+the direct fluorination. The surface of HDPE be-
+comes significantly more hydrophobic, as a result
+of direct fluorination, as shown by the notable in-
+crease of CA of water from 78. 5° to 90. 0°. At the
+same time, CA increases from 90. 0° to 104. 5° as
+the fluorination depth increases from 5.07 pm to
+7.86 pm. This remarkable growth in the surface
+Table 4 Mass change measurements of four samples
+Sample Initial 1d 2d 3d
+Fig. 7 shows the relationship between the in-
+crement rate of fluorinated and un-fluorinated
+HDPE hollow spheres during 10 d. As previously
+mentioned, the main difference observed between
+the fluorinated and un-fluorinated HDPE is the
+barrier property. The direct fluorination enhances
+the surface barrier performance of HDPE. There-
+fore, the increasing rate of Sample 1 (fluorinated
+HDPE) is much lower than that of Sample 2 (un-
+fluorinated HDPE),
+un-fluorinated HDPE hollow spheres in water
+Similar trend is obtained in Fig. 8. Fluorina-
+ted HDPE hollow sphere forms a resistant surface
+to oil according to the fluorination performance.
+C—F bond has a higher barrier property of im-
+hydrophobicity is due to the increasing F/C ratio
+and the absence of hydrophilic ionic C—F bonds.
+From CAs, the surface tension of direct fluorina-
+ted HDPE sharply decreases from over 30 m 。
+(1`擎m)_1 to 19 In 。 〈Nm)_1 after fluorination due
+to the incorporation of fluorine. Fluorinated
+HDPE layer indeed becomes similar to PTFE
+which has a surface tension of 18.5 mm。 (Nm).
+2. 2 Oil and water-retard experiment
+Table 4 lists the initial mass and the mass
+change for four samples immersed in water and
+jet fuel during 10 d measurements, respectively.
+4d 5 t 6 d 7 d 8d 9d 10d
+8.2308 8.2326 8.2327 8.2338 8.2330 8.2364 8.2346
+8.5506 8.5523 8.5535 8.555 0 8.5549 8.5631 8.5651
+8.8224 8.8736 8.8970 8.9115 8.9268 8.9445 8.9666
+10. 256 7 10. 239 6 10. 248 6 10. 221 7 10.194 8 10.164 0 10.176 7
+penetrability in fuel, especially in jet fuel. The
+increasing rate of un-fluorinated HDPE is higher
+than that of the fluorinated one.
+un-fluorinated HDPE hollow spheres in jet fuel
+At the same time, Fig. 8 shows that the cure
+in the initial two days is sharper than that in the
+later days. The reason is that a multi-component
+mixture such as jet fuel is quite different from a
+pure liquid such as water. The evaporation of wa-
+ter is a constant with respect to time. However,
+the evaporation of jet fuel is not linear with time.
+The permeability of a liquid consisting of a mix-
+ture of hydrocarbons is very sensitive to incre-
+ment of mass. With the light compounds are de-
+creased, and the permeability of jet fuel is de-
+creased, too.
+3 CONCLUSION
+Compared with the modified treatment of
+surface property mentioned in the previous litera-
+tures, the direct fluorination method applied in
+HDPE is a more effective, simple and convenient
+modified technology. The different depths of
+fluorinated layers show that the fluorination level
+is affected by the fluorination time and the density
+of fluorinate mixtures. A higher CA obtained on
+the surface of HDPE indicates that the direct
+fluorination make it have lower surface energy
+and more hydrophobic feature. Therefore, direct
+fluorination decreases water and jet fuel permea-
+ting through the surface of HDPE hollow
+spheres.

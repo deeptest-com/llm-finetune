@@ -1,0 +1,472 @@
+软件配置管理的标准化问题探讨
+结合对国内外有关标准的研究和实践经验的总结 ,系统地阐述了软件配置管理的有关概念 ,详细地描述了软件配置管理的四大子过程 ,即配置标识、更改控制、状态纪实、配置鉴定各项活动 ,明确了这些活动应达到的目标。
+
+软件工程 配置管理 标准化  
+
+Heteroclinic and homoclinic connections are of
+special interest for space mission applications, such as
+low energy orbits to the Moon [1] and the Petit Grand
+Tour to the moons of Jupiter [2]. We know that in the
+Earth-Moon system [3] a spacecraft in orbit near the
+triangular points L4 and L5 can migrate back and
+forth between these points through the collinear point
+L3 without encountering the Moon. Similarly, a
+spacecraft in the Sun-Earth system can exhibit this
+motion, which has recently been observed in asteroids.
+The first Earth Trojan asteroid [4] (2010 TK7) was
+discovered in 2010 by the WISE (wide infrared survey
+Corresponding author: Pedro J. Llanos, Marie Curie senior
+spacecraft) spacecraft. This ECA (Earth co-orbital
+asteroid) is in a 1:1 mean motion resonance with the
+Earth, that is, it goes around the Sun in the same
+amount of time as the Earth. Asteroid 2010 TK7 has
+an approximately 390-year cycle. Currently, this
+asteroid orbits in tadpole-shaped loops around L4.
+These loops are large, reaching as close as 2,000,000
+km from Earth (about 50 times the distance from the
+Earth to the Moon) and nearly as far as the opposite
+side of the Sun from the Earth. Eventually, the motion
+of 2010 TK7 will reverse direction and come back to
+its current position. Irregular motion of this type of
+orbit will be analyzed in some examples in this paper.
+But there are many more asteroids following a
+horseshoe orbit motion, such as asteroids 2003 YN107
+and 2010 SO16. These asteroids are in 1:1 resonance
+with the Earth because they share Earth’s orbit. So,
+河 end Quasi Satelite Orbits for Setar Opsorvariame Triangular Points
+when they are in front of the Earth, they are slowed
+down and they are accelerated when they are behind
+the Earth.
+2. Motivation
+In previous papers [5, 6], we investigated possible
+transfer trajectories and orbits around the triangular
+points (Trojan orbits) that are coplanar with the
+ecliptic plane. We also analyzed [7] other orbits
+(above or below the ecliptic) that are displaced from
+L5,called“sub-L5 orbits” (Fig. 1h) that are more
+attractive from a science perspective because a
+spacecraft in any of these orbits could anticipate space
+(e) asymmetric Trojan orbit around LS; (f) Trojan orbit around LS spiraling in and out of LS vicinity; (g) three-dimensional
+differentially corrected Trojan orbit around LS; (h) integrated
+weather up to 7 days earlier than its arrival at Earth.
+day advance warning at the Earth. Some of these
+orbits are the planar Trojan orbits illustrated in Fig. la
+and the three-dimensional Trojan orbit displayed in
+Fig. 1g.
+Other planar elliptical Trojan orbits were found
+around L5 as shown in Fig. 1b. These orbits can be as
+large as 370,000 km and as small as 30,000 km in
+amplitude. Finally, asymmetric orbits [7] were
+differentially corrected with amplitudes of about
+120,000 km and 150,000 km (Figs. le and 1f),
+respectively.
+sub-LS5 Trojan orbits,
+Although some of these orbits are very promising in
+studying solar events, there are other orbits where the
+spacecraft does not need to be strictly off the ecliptic
+plane, requiring less AV and therefore yielding a lower
+mission cost. This paper will address some of these
+orbits in the ecliptic plane as shown in Fig. 2a,
+potential powered heteroclinic connections between
+the triangular points, and powered heteroclinic
+connections between the triangular points and the
+collinear point L3 in the Sun-Earth system.
+Besides the tadpole Trojan (Figs. 1c and 1d) and
+horseshoe motion [7], we could place a satellite into a
+retrograde QS (quasi-satellite) motion as shown by
+some of the orbits displayed in Fig. 2a.
+resonance of the planet and remains close to the planet
+during the quasi-satellite phase. The QS orbit (green)
+is a simulated differentially corrected [8] trajectory
+depicted in Fig. 2a with an amplitude of 4, = 2 4, =
+0.85 AU as seen in the rotating frame from the Earth.
+In Fig. 2b, we exhibit a schematic of a quasi-satellite
+orbit recommended by the scientists [9] as an
+attractive option for both an operational space weather
+Perspective and a research perspective. Similar to the
+sub-L5 orbits [7], which can anticipate space weather
+up to a week in advance of the Earth, which is sooner
+than reception in a Trojan orbit around L5,these
+quasi-satellite orbits (sub-L1 orbits) can also
+anticipate space weather earlier than other orbits
+around 工 1.
+Some of these orbits are placed closer to the Sun
+than other orbits located around the collinear point L1.
+These closer orbits will provide advance warning of
+solar events and CMEs (Coronal Mass Ejections)
+coming toward the Earth. In the rotating coordinate
+system, a spacecraft located in a quasi-satellite orbit
+appears to orbit (oval shape) the Earth (Fig. 2a), but it
+is actually orbiting in a heliocentric orbit around the
+Sun as seen in inertial coordinates. This quasi-satellite
+orbit (sometimes called a retrograde orbit) is relatively
+close to the Earth-Sun line. A constellation of satellites
+as seen in the corotating frame. The green orbit is a
+simulated quasi-satellite orbit; (b) artist’s conception of a
+QSO (quasi-satellite orbit) around the Earth.
+can be arranged so that at least one spacecraft will be
+closer to the Sun than the Earth while providing
+continuous transmission of solar conditions. This orbit
+geometry will help to anticipate space weather, which
+generates geomagnetic storms and other interplanetary
+disturbances that can disrupt communications in our
+infrastructures on Earth and endanger future human
+space flights.
+3. Model and Methodology
+We used the CRTBP (circular restricted three-body
+problem) in the trajectory analysis for this study [10].
+The Sun is the primary body, the Earth is the
+secondary body and the spacecraft is the third body or
+infinitesimal mass in this system. To simplify the
+河 nd Quasi Satelite Orbis for Sora Ohsoreatieme Triangular Points
+analysis, we used the normalized and
+non-dimensionalized convention so that the mass of
+the secondary body is 0 < x < 1 and the mass of the
+primary body is 1 - u. The distance between the
+primary and secondary bodies is normalized to 1 with
+the primary body located on the x-axis at -u and the
+secondary body at 1 - yu. The x-axis is directed from
+the primary body to the secondary body. The y-axis is
+90° from the x-axis in the primary plane of motion.
+Finally, the z-axis completes the right-handed system,
+defining the out-of-plane direction. For this work, x =
+3.040423389123456E-6 for the  Earth-Moon
+barycenter model based on the combined mass of the
+Earth and Moon, Mega. using JPL “_DE405
+constants. Finally, time corresponds to the angle
+between the x-axis of the rotating frame and the x-axis
+of the inertial frame so that the period of the rotating
+frame becomes 2a. Using this convention, the motion
+of the infinitesimal mass in the rotating frame can be
+described by the governing equations of motion:
+h叉
+and r; is the distance from the spacecraft to the Earth,
+and
+where M; denotes the mass of the Sun. The CRTBP is
+nondimensionalized so that the sum of the primary . and LS orbits are weakly unstable, their invariant
+and secondary masses, the mean motion of the
+rotating frame, the distance between the primary and
+secondary, and the gravitational constant are all unity.
+In the last section of this work, we will analyze other
+orbit geometries using low thrust. For this, we use
+similar two-body equations of motion in polar
+coordinates [11] described below:
+where r is the spacecraft’s distance from the central
+body (in this case Earth), 6 is the true anomaly
+(angular distance) of the spacecraft’s position in the
+orbit, yg, is the mass parameter of the Earth, m is the
+varying mass of the spacecraft due to the T (thrust),
+which is assumed to be in the tangential direction, 20
+is the gravity at Earth and I, is the specific impulse.
+The mass variation is governed by:
+历二-二(3)
+8ol,
+4. Results
+In this section, we provide the results for the
+powered heteroclinic and homoclinic connections
+between the triangular points and the collinear point
+L3 in the Sun-Earth system. Then, we will show the
+results for the quasi-satellite orbits as potential orbits
+for solar observations. Finally, some other orbit
+geometries are delivered. Fig. 3 illustrates the
+manifolds from the triangular points in the Sun-Earth
+system for a given Trojan orbit of amplitude 0.52 AU.
+When generating manifolds that depart from or arrive
+to the halo orbits around the unstable collinear points,
+an offset of 200 km from the orbit works very well to
+generate these manifolds. However, this offset does
+not yield any realistic manifolds around the stable
+triangular points due in part with the stability
+properties [10] associated with the Trojan orbits
+around LS. Therefore, we used different offsets
+yielding the manifolds depicted in Fig. 3. Because L4
+manifolds take thousands years to reach from L4 to
+L5. Our investigation of some of these manifolds
+suggests that we cannot use these invariant manifolds
+or ultra-low-energy trajectories for a space mission.
+Our analysis suggests that unlike halo orbits, the
+invariant manifolds of Earth Trojan orbits are
+Stable Manifolds (10 years) from Earth,d _=3E6 km
+with an offset of 1 x 10° km.
+unsuitable for transfers from the Earth. Therefore, the
+results shown in this paper provide an insight on how
+to transfer from one triangular point to the other using
+powered flight (47) as a way to speed up the transfer
+time,
+3. L5-L4 and L4-LS Heteroclinic Connections
+Fig. 4 exhibits a long powered heteroclinic
+connection between L4-L5 and Fig. 5a shows a L5-L4
+heteroclinic connection. The long L4-L5 transfer takes
+1,685.6 days and requires an injection 4V of 897.4 m/s
+to depart from the Trojan orbit (amplitude of 0.73
+AU) around L4 and a 4V of 867.8 m/s to insert into
+the Trojan orbit (0.73 AU amplitude) around L5. The
+tick marks in Figs. 4 and 5a are separated by 30 days
+and 60 days, respectively. In the heteroclinic
+connection shown in Fig. 5a, the departing 4V from
+LS is about 1.860 km/s while the insertion 4V required
+into L4 is about 1.697 km/s.
+Fig. 5b displays a short L4-L5 powered heteroclinic
+connection with a time of flight of 596.6 days. The
+spacecraft departs from the same Trojan orbit around
+L4 as in the previous case, but it requires a larger
+injection burn of 2,426.7 m/s and it arrives at a Trojan
+orbit around LS, where it needs an insertion burn of
+2,366.7 m/s. The tick marks depicted in Fig. 5b are
+separated by 30 days.
+Heteroclinic Connection L4-L5 Sun-Earth
+Fig. 4 Long powered heteroclinic connections between the
+triangular points L4 and LS in the Sun-Earth system. Every
+loop or bounce is one Earth year-long. The time of flight of
+this heteroclinic connection is 1,685.59 days. The spacecraft
+requires 897.4 m/s to depart from a Trojan orbit (0.72 AU)
+around L4 and arrives at a Trojan orbit (0.72 AU) around
+LS, requiring 867.8 m/s at insertion.
+This trajectory loops around the Earth,having the
+possibility of connecting to a quasi-satellite orbit at the
+intersection points of the heteroclinic transfer orbit and
+the quasi-satellite orbit (green oval orbit) from Fig. 2a.
+powered heteroclinic connections of 243.4 days and
+460.9 days, respectively.
+Although the transfer time of the trajectories as
+shown in Figs. 5 and 6 is very short, the total 4
+required for both heteroclinic transfers are about 12
+km/s and 13 km/s, respectively.
+6. LS-L3 Heteroclinic and Homoclinic
+Connections
+In Fig. 7a, we show a homoclinic connection where
+the satellite departs from an asymmetric orbit with a
+342 m/s injection burn and a time of flight of about 14
+years. Then it stays for about 2 years before returning
+counterclockwise towards the same vicinity of the
+asymmetric orbit. The time of flight of the return
+trajectory is 8 years. Although not shown here, the
+spacecraft would need an insertion burn at the return
+to the asymmetric orbit.
+Heteroclinic Connection L5-L4 Sun-Earth
+of 1,583.14 days. The transfer orbit is clockwise and outside
+the path of the Earth around the Sun; (b) short heteroclinic
+connection between the triangular points L4 and LS in the
+Sun-Earth system. The satellite loops around the Earth
+before heading towards the Trojan orbit around LS. The
+time of flight is 596.62 days. The spacecraft needs 2.426
+km/s when departing L4 and 2.367 km/s at insertion into
+the Trojan orbit around LS.
+the spacecraft can orbit the vicinity of L3 for about 28
+years and it does not need any deterministic
+maneuvers to be captured around L3. However, the
+satellite requires an injection burn at the sub-L5 orbit
+of about 730 m/s for the red trajectory and 536 m/s for
+the purple trajectory. After this time, the spacecraft
+moves away from the vicinity of L3 clockwise
+towards L4 for the trajectory in red and
+counterclockwise for the trajectory in purple as shown
+Short Heteroclinic Connection L4-L5 Sun-~Earth
+the triangular points L4 and LS in the Sun-Earth system.
+Every loop or bounce is one Earth year-long. (a) Shortest
+heteroclinic connection with a time of flight of 243.42 days.
+The spacecraft requires 6.083 km/s to depart from a Trojan
+orbit (0.72 AU) around L4 and arrives at a Trojan orbit
+(0.72 AU) around LS, requiring 6.088 km/s at insertion; (b)
+heteroclinic connection from L4 to LS of 460.93 days which
+requires 6.591 km/s and 6.424 km/s to depart L4 and insert
+into LS, respectively.
+in Fig. 8 (amplified section of Fig. 7b and Fig. 7c).
+Similarly, the powered heteroclinic connection
+displayed in Fig. 7c illustrates a satellite leaving L5
+with a required burn of only 299 m/s, arriving 11
+years later in the vicinity of L3 with a stay time of
+about 6 years. After this time, the satellite follows a
+counterclockwise motion around the Sun towards L4.
+Other quasi-periodic orbits were also analyzed
+around L3 with amplitudes large enough (0.1 AU or
+larger as seen in Fig. 7) so that a spacecraft will be
+able to communicate directly [12] with Earth and
+without being occulted by the Sun. An amplified
+section of the orbits around L3 is illustrated in Fig. 8.
+Although these orbits do not require an insertion burn
+into the L3 orbits in the CRTBP, the spacecraft may
+need minor station-keeping maneuvers when using a
+high fidelity ephemeris model.
+A spacecraft in one of these orbits will obtain
+observations of CMEs coming from behind the Sun
+(as seen from the Earth) that can not yet be seen by a
+spacecraft at L1 and therefore will have the advantage
+of earlier warnings when the CME or any other solar
+event travels along the Parker spiral (magnetic field
+sheet twisted when the Sun rotates) within the
+corotating zone.
+7. Quasi-Satellite Orbits
+Perhaps one of the most attractive orbits for solar
+observations is the quasi-satellite orbit depicted in Fig.
+9a. The satellite departs from a 200 km parking orbit
+around the Earth with an injection burn of 3.613 km/s.
+The transfer time to the insertion into the
+quasi-satellite orbit (4, = 0.425 canonical units or
+63,833,411 km and A, = 0.825 canonical units or
+127,666,828 km) is about 245.8 days, requiring an
+insertion AV of 3.07 km/s. Among all the trajectories
+that were explored by varying slightly the velocity at
+injection up to 1%, we found that our lowest AV
+solution (not optimized) of 3.07 km/s corresponds to X
+= 1.132231 AU and Y =-0.008929 AU as we illustrate
+in Fig. 9b. A red star indicates the insertion burn into
+the QSO. Other trajectories were also obtained for
+shorter times of flight but at the expense of very high
+insertion AVs, which may not be suitable for mission
+design purposes for current propulsion systems. The
+trajectories of the probe intersect the quasi-satellite
+orbit at different points so each trajectory will also
+have a different time of flight. In Fig. 9c, we display
+AV-insertion into the QSO for a given transfer time.
+The QSO was integrated over the time span of 20
+years. Fig. 9c displays the AV insertion, in km/s, of
+possible transfer integrated trajectories shown in
+magenta in Fig. 9a.
+LS and L3 in the Sun-Earth system of 6 years (red) and 7 years (purple); (c) long heteroclinic connection from LS to L3 of 11
+years. A spacecraft placed around any of these orbits around the collinear point L3 will provide continuous monitoring of
+solar conditions.
+Orbits around Sun—Earth L3 for Solar Observations
+Orbits around Sun—Earth L3 for Solar Observations
+020 - ￡
+Heteroclinic and Homoclinic Connections
+Transfer Trajectories from 200-km to QSO
+QSO; (b) transfer trajectory with a time of flight of 245.8
+(magenta) shown in Fig. 9a.
+The spacecraft is inserted into the quasi-satellite
+orbit that has been numerically integrated over 20
+years, showing very good stability properties for very
+long periods of time. We also analyzed the invariant
+manifolds from the quasi-satellite orbit. Given the
+stability properties of this QSO, the orbits departing
+(unstable manifolds) from the QSO or arriving (stable
+manifolds) to the QSO have small orbit drifts of less
+than 200,000 km when the perturbation from the QSO
+is 1,000 km (standard perturbations are of the order of
+200 km when computing the invariant manifolds
+around the collinear points in the Sun-Earth system).
+When considering very large perturbations of the
+order of an Earth-Moon distance, these trajectories
+obviously drift much more (Figs. 10a and 10b). The
+integration over 5 years included 50 trajectories for
+each manifold.
+Another possibility for transferring to a
+quasi-satellite orbit is via the powered heteroclinic
+connection between the triangular points in the
+Sun-Earth system as observed in Fig. 11. There are
+four locations (indicated by red dots) where
+deterministic maneuvers can be performed to transfer
+the spacecraft from this heteroclinic connection into
+the QSO.
+In this particular case, the heteroclinic transfer
+departs from the Trojan orbit around L4 towards L5 so
+the insertion into the QSO would be such that the
+spacecraft would have a direct motion. Another
+scenario (not shown) would be an heteroclinic
+connection departing from the Trojan orbit around L5
+(and their corresponding transfer orbits [7, 10] from
+Earth) so that the spacecraft would follow a retrograde
+motion after insertion into the QSO.
+is symmetric about the Sun-Earth direction. This
+quasi-satellite orbit (magenta) can also be found
+displaced (in the direction of L4) from the Sun-Earth
+direction as illustrated in Fig. 12. In this case, the
+spacecraft has a direct motion around the QSO. The
+transfer trajectory started from a 200 km orbit with an
+524 Heteroclinic and Homoclinic Connections
+QSO Drifts of Stable Manifolds
+perturbation; (b) unstable invariant manifolds. The black
+orbit represents the QSO (quasi-satellite orbit).
+Fig. 11 Locations (red dots) where possible maneuvers
+can be performed to transfer the spacecraft between the
+triangular points heteroclinic connection into a QSO in the
+Sun-Earth system.
+Fig. 12 Displaced QSO (purple) in the Sun-Earth system.
+initial mass of 10,600 kg. The thrust is performed
+during a time period of about 65 days consuming a
+total of about 2,054 kg. This leaves a spacecraft wet
+mass of 8,546 kg on arrival to the QSO, which
+corresponds to a similar mass of the first Chinese
+space station, Tiangong 1, of about 8,500 kg.
+Similarly, orbits (not shown) displaced towards L5
+can also be found with the spacecraft having a
+retrograde motion around the QSO.
+There seem to be other attractive orbits not only for
+weather observations but also for searching for new
+undiscovered asteroids that can be captured in some of
+these displaced QSO, which may be either displaced
+upstream or downstream the Sun-Earth line.
+8. Conclusions
+Trojan orbits and sub-L5 orbits were previously
+found as potential locations for space weather
+monitoring since they can anticipate weather up to one
+week in advance before solar events actually arrive at
+Earth. In this paper, we have investigated new orbit
+geometries, such as powered heteroclinic and
+homoclinic connections between the triangular points
+and the collinear points in the Sun-Earth system.
+Some of these trajectories are powered heteroclinic
+connections linking L4 and LS for a total AV
+(departure and arrival) of less than 1.8 km/s. This type
+of trajectory loops around the Earth so material could
+be transported not only between the triangular points
+and Quasi-Satellite Orbits for Solar Observations
+but also between these trajectories and the QSO
+(quasi-satellite orbits) described in this work. Other
+heteroclinic connections are also possible between the
+Ls and the collinear point L3 in the Sun-Earth system.
+The total AV required for some of these trajectories
+can be as low as 299 m/s and as high as 730 m/s,
+depending on the time of transfer and the size of the
+initial orbit around L5. These orbits are very attractive
+from the science perspective because a probe could
+monitor space weather without interruptions once it
+orbits the vicinity of L3 with amplitudes of about 0.01
+AU (1,500,000 km) to 0.18 AU (27,000,000 km) and
+therefore, could be used during the end of life of the
+spacecraft. The spacecraft would not need any
+deterministic maneuvers to be captured into the L3
+vicinity because it will be captured without a
+maneuver. The probe will stay in the vicinity of L3 for
+many years before being ejected out of this
+neighborhood either towards the L4 point (similar to
+the motion of asteroid 2010 TK7) or back to the L5
+vicinity again. These are examples of heteroclinic and
+homoclinic connections that can be used in future
+space missions for reconnaissance purposes where the
+spacecraft will tour different libration points.
+In this paper, we also investigated other orbit
+geometries (QSO) as promising orbits where to place
+a spacecraft for solar observations purposes. These
+orbits are in 1:1 resonance with the motion of Earth
+around the Sun from where several small spacecraft
+will be able to provide continuous solar observations
+from a sub-L1 perspective and be able to anticipate
+space weather many hours or even one to two days in
+advance of reception at a L1 position. Quasi-satellite
+orbits can also be displaced either upstream or
+downstream from the Sun-Earth line and therefore
+could be tailored accordingly to the mission
+requirements.
+We are constantly intrigued by the different
+families of orbits that we can find and we may be able
+to find in the future. Besides the Trojans orbits around
+LS, sub-L5 orbits, tadpole orbits, horseshoe orbits
+described in past work, this work describes very
+attractive powered heteroclinic and homoclinic
+connections between the triangular points and
+collinear points in the CRTBP of the Sun-Earth
+system and quasi-satellite orbits for solar
+observations.
+Acknowledgments
+The research was partially performed at the
+Astronautical Engineering Department, the Viterbi
+School of Engineering of the University of Southern
+California. Part of this work described in this paper
+was carried out during the Jet Propulsion Laboratory
+SURP (Strategic University Research Partnership)
+2010 Program, California Institute of Technology
+under a contract with the National Aeronautics and
+Space Administration. This work has been partially
+supported by the Marie Curie fellowship
+PITN-GA-2011-289240 Astronet-II.

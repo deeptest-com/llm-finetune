@@ -1,0 +1,256 @@
+基于改进粗糙集的机场智能电网报警处理方法
+针对机场智能电网复杂易变的拓扑结构以及起飞环境因素对信号传输稳定性的影响．在深入分析现有机场智能电网报警信息的基础上，为了提高智能电网报警系统的处理速度和准确性．提出了基于基因算法的改进粗糙集的约简算法．同时应用结构优化思想，实现了在较少信息的条件下迅速准确获得报警信息的处理结果。重点分析了如何构造适当的目标函数、惩罚因子以及惩罚函数形成适应值函数．对粗糙集约简算法进行了修正。经仿真检验，基于基因算法的改进粗糙集约简算法可以快速地完成属性约简，对机场智能电网完成迅速、准确地报警有很好的效果。
+
+机场智能电网 报警处理 粗糙集 基因算法 约简  
+
+INTRODUCTION
+During the early study of the numerical solu-
+tion methods for partial differential equations
+(PDE), Cartesian grid is utilized as a common
+tool to discretize the physical domain. This kind
+of grid is regular and it has no issues associated
+with grid skewness and distortion, therefore, it is
+very popular with many researchers!), However,
+when dealing with complex configurations, Carte-
+sian grid lines usually cross the physical boundary
+while do not fit the body, so it is difficult to im-
+plement the boundary condition in this kind of
+gird method directly. To simplify the treatment
+of the boundary condition, structured grid is then
+proposed. This kind of method transforms the
+physical body-fitted grid to regular grid in the
+Foundation items: Supported by the National Natural Science Foundation of China (11172134); the Funding of Jiangsu
+Innovation Program for Graduate Education (CXZZ11_0192); the Priority Academic Program Development of Jiangsu
+Higher Education Institutions.
+Received date; 2013-04-20; revision received date: 2013-07-10
+Corresponding author:Chen Hongquan, Professor, E-mail
+computational domain and then solves the gover-
+ning equations in the computational domain.
+However, the transformed equations in the com-
+putational domain are usually much more compli-
+cated than the original ones in the physical do-
+main.
+Recently, a new type of numerical method
+called gridless method has been proposed[,This
+method is capable of directly estimating the deriv-
+atives without transforming the problem from
+physical domain to computational domain. It is
+simple and flexible,because only a set of points
+are required to be distributed in the physical do-
+main without considering the connectives among
+these points. However, when this method is ap-
+plied to deal with different configurations, even if
+there is only a little change between the configu-
+:hgchenam@nuaa. edu. cn.
+rations, all of the points have to be redistributed
+once again, and this redundant work probably
+slows down the computational speed and results
+in low efficiency.
+To overcome the difficulty of Cartesian grid
+implementing the physical boundary condition and
+to avoid the redundant work of point redistribu-
+tion for gridless method, we proposed a hybrid
+ered by a base Cartesian grid and only a few of
+clouds are introduced into the adjacent region of
+the physical boundary. Because of Cartesian
+grid「s regularity and simplicity, the computing
+time for generating grid is almost negligible and
+numerical schemes are easy to be implemented on
+the grid, and the local gridless treatment tech-
+nique only requires a small amount of clouds to be
+introduced to represent the configuration. There-
+fore, the hybrid method not only reduces the re-
+dundant work, but also provides the flexibility to
+handle arbitrary configurations. The proposed
+hybrid method has been used to solve Euler equa-
+tions, and the inviscid flows over the bump, cyl-
+inder and airfoils are successfully simulated re-
+spectively,
+In this paper, the hybrid Cartesian grid/grid-
+less method is further developed to simulate vis-
+cous flows over multi-element airfoils, In order to
+simulate the thin boundary layer of the viscous
+flows, the cloud of anisotropic points is imple-
+mented in the local gridless region. A cloud over-
+lap-free procedure is proposed, which enables the
+hybrid method to handle close-coupled bodies in-
+cluding multi-element airfoils conciderded in this
+trol the quality of the clouds at the vicinity of the
+interface between the grid and the gridless re-
+gion. The resulting hybrid method is applied to
+solve two-dimensional compressible Navier-
+Stokes (NS) equations. The viscous flow over a
+RAE2822 airfoil is first simulated, and the nu-
+merical result obtained is compared with the a-
+vailable experimental data, then the viscous flow
+over a two-element airfoil is simulated, which
+demonstrates the ability of the present method for
+treating more complicated flows over multi
+bodies.
+1 GOVERNING EQUATIONS
+The governing equations of this study are the
+compressible NS equations in Cartesian coordi-
+nates,which can be written as
+where 体 is the vector of conservative variables, E
+and F are the convective flux terms, Ey and Fy
+the viscous flux terms
+邓 二 [p, pu, gv, gE"
+]…`=〔K〕'墟，ou’+p,puv,t云了
+Ey =[0, Tor 9 Tyg 3 e.]"
+Fy =[o, Tay? Tyy 9 e,]"
+where p, p, E, H are the density, the pressure,
+the total energy per unit mass, the total enthalpy
+per unit mass, respectively, x and v the cartesian
+components of the velocity vector, r is the viscous
+stress and @ the term describing the work of vis-
+cous stresses and the heat conduction in the fluid.
+The laminar viscosity coefficient pu requiring the
+calculation of Ey and Fy is computed with the
+Sutherland formular0 and the turbulence viscosity
+coefficient pr 1s obtained from the Spalart-Allma-
+ras turbulence model’, The NS equations are
+represent the Reynolds number and Mach number
+of the free stream.
+2 DECOMPOSITION OF COMPU-
+TATIONAL DOMAIN
+The entire flow domain is decomposed into
+two types of sub-domains, one is discretized by
+Cartesian grid and the other is filled with clouds
+of points, as shown in Fig. 1. First, the surfaces
+of the aerodynamic bodies are broken into edges
+for a full description. Then, the unit normal vec-
+tor of all the points on the surfaces are calculated,
+and new points are produced along the normal
+vectors layer to layer until a user specifies the
+number of layers. The neighbors of any point in
+the gridless zone can be easily defined since these
+points are generated in the above regular manner.
+When two or more bodies are closely coupled in
+the domain, for example, the main element and
+the flap of GA (W)-1 two-element airfoil in
+Fig. 1, their gridless zones overlap. The overlap
+region can be deleted by determing the distances
+between the point and each body. It can be easily
+noted that the point spacing normal to the wall
+can be controlled during the generation of the
+gridless zones by the user simulating the bounda-
+ry layer. The remaining part of the flow domain
+is discretized by an unstructured Cartesian grid u-
+sing the adaptive refinement technidquer1,
+Fig. 1 Points and Cartesian grid around GA(W)-1 airfoil
+As both Cartesian grid and gridless clouds
+are used to discretize the flow field, these two
+different regions need to exchange the flow infor-
+mation in order to obtain the physical solution. If
+the interpolation technique is adopted to exchange
+the flow information, truncation error may be
+caused especially in the vicinity of critical flow
+features such as the shock waves. In this paper,
+we follow our previous work! to use dual points
+method for exchanging flow information, which
+means the first two layers of the Cartesian points
+near the gridless region(the square points in Fig.
+2 are selected and considered for gridless zone
+computations, and the satellite points of these
+dual points can be found using point-selection
+strategiest? ,as shown in Fig. 2.
+OF GOVERNING EQUATIONS
+For gridless method, the spatial derivatives
+of any quantities are evaluated with linear combi-
+nations of certain coefficients and the quantities in
+the cloud of points. For example, in the cloud of
+points C(i》 shown in Fig. 2, the first spatial de-
+rivatives of function f at point ￠ are evaluated
+with the following linear combination forms!”
+where m is the number of satellite points in the
+cloud of C(i,and 丰 the value at the midpoint
+between points 5 and &、The coefficients ax and Ba
+can be obtained with a weighted least-squares
+curve fit to the following linear equation
+了二a十阡十cy(4)
+On the Cartesian grid, suppose h; is the
+space step along x and y axes at point i, then the
+first spatial derivatives of function f at point 〖 can
+be computed using the central difference scheme
+蓁.'魉=.f、[】…夏戛-爽`薯`翼′，言_董`丨芝=.〕Z`趸T`】',工-/、趸S(王翼)〉
+where fig, fiws fis? fan are the values at the
+midpoints between points ￠ and its neighboring pi-
+onts in the east, the west, the south and the
+north directions.
+If Eq. (3) is applied to the convective flux of
+the NS equations, the following expression can be
+obtained
+The numerical flux Ga at the midpoint be-
+tween points 5 and can be obtained by using
+Roe「s approximate Riemann solver
+where A are the flux Jacobian matrices of G. The
+conservative variables at the midpoint are recon-
+structed with
+where 口 秤 is the gradient of the conservative var-
+employed to prevent nonlinear instability].
+The viscous terms of the NS equations are e-
+valuated using Eq. (3) at each point
+The first derivative at the midpoint between
+points f and is obtained witht"
+略-晓-
+where Az, Ay, and As’ are given as
+Ar 二 Zk 一 Ziy, 人 y 二 Y8 一 Yi, As? = Ax’ + Ay?
+(11D)
+After the spatial discretization, the semi-dis-
+cretization form of the NS equations at point 5 can
+be expressed as
+彗亘`′叠/~痉十]蓁{=O(12)
+where R; represents the residual error at point i.
+In order to obtain the steady solution, an explicit
+five-stage Runge-Kutta time integration schems is
+used
+`/`/〈O) — w￠ 7)
+砂 口 =W?? — 4 AR?D
+12 一 一 vy5 (13
+础c+D一体(
+where the superscript n denotes the current time lev-
+el, m the internal step and n+ 1 the next new time
+level. The factor a, can be found in Ref. [4].
+4 NUMERICAL RESULTS
+To evaluate the accuracy of the presented hy-
+brid method, the transonic viscous flow over a
+RAE2822 airfoil is first considered. The points
+and the used Cartesian grid are shown in Fig. 3.
+The total number of points is 23 866 with 310
+points on the airfoil. The point spacing normal to
+the airfoil surface is 1. 0X10 7°. The density con-
+tours of the flow field obtained with Ma=0, 73,
+a=2.79°,Re=6, 5 10° are shown in Fig. 4. We
+can find that the contours change smoothly at the
+interface. The pressure coefficient ￠, and friction
+coefficient Ct distributions on the airfoil surface
+are compared with the experimental data in
+Ref. [8] in Fig. 5, which indicates good agree-
+ment between the numerical results and the ex-
+perimental data, From the residual history pres-
+ented in Fig. 6, the hybrid method has a reasona-
+ble convergence character. Then the viscous flow
+over a GA(W)-1 airfoil is simulated. The points
+and the used Cartesian grid has been shown in
+Fig. 1. The total number of points is 29 768 with
+250 points on the main element surface and 190
+points on the flap surface. The density contours
+Fig. 3 Points and Cartesian grid around RAE2822 air-
+foil
+Fig. 4 Density contours around RAE2822 airfoil
+of the flow field obtained with Ma=0. 21,a 一 10“ ,Re
+=2.3X10° are shown in Fig. 7. The ￠, distributions
+on the airfoil surface are compared with the experi-
+mental data in Fig. 8, which indicates a good agree-
+ment between the numerical result and the experi-
+mental data again.
+Fig.5 “ce and ￠ distributions around RAE2822 airfoil
+The hybrid Cartesian grid/gridless method is
+successfully developed to simulate viscous flows
+Fig. 8 ￠, distribution around GA(W)-1 airfoil
+over single and multi-element airfoils. The un-
+structured Cartesian grid can decompose the com-
+putational domain easily and efficiently,and the
+cloud of anisotropic points implemented in the ar-
+ea adjacent to the body can capture the boundary
+layer as accurately as the shock wave close.

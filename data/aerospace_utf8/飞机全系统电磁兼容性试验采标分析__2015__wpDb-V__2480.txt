@@ -1,0 +1,545 @@
+飞机全系统电磁兼容性试验采标分析
+简要阐述了飞机全系统电磁兼容性 (EMC)试验的内容和特点 ,分析了目前有关飞机EMC工程中常用的标准 ,结合型号任务中全系统EMC试验采标实践 ,总结归纳飞机全系统EMC试验的采标方法。
+
+电磁兼容性 试验 采标  
+
+Erosion occurring in equipment dealing with
+liquid-solid mixtures such as pipeline parts, slurry
+pumps, liquid-solid stirred reactors and slurry mixers in
+various industrial -applications results in operational
+failure and maintenance costs.
+Hydro-erosion occurs in practice in two ways, one is
+the erosion by a cavitating liquid and the other is the
+erosion by solid particles entrained in liquid flow
+known as slurry erosion.
+In slurries, the material removal from the
+equipment components is mainly caused by the solid
+particles and the material loss caused by corrosion is
+of relatively minor importance [1]. Stirrers in
+flotation cells, pumps in mining industry, pipes for
+crude oil recovery, turbines in hydropower
+engineering and instrumentation parts such as valves,
+bends, etc., are some examples of hydroabrasion
+occurrence.
+The machinery and equipment dealing with the
+liquid-solid flows can be damaged by erosion leading
+to low operational efficiency and short service life with
+frequent overhaul. In order to reduce the erosion of the
+machinery, the following approaches could be
+considered: (1) manufacturing technology; (2)
+selection of type and parameters of machines; (3)
+operational control; (4) erosion resistant design; (5)
+erosion resistant material; (6) predicting the erosion
+rates and locations.
+Erosion occurs due to plastic deformation and
+cutting. Deformation wear takes place when the
+particles hit the target material perpendicular. Cutting
+wear is associated with parallel component of the
+particle impact’s velocity to the specimen. Finnie [2]
+and Trustcott [3] have reported that erosion in slurry
+pipelines is mainly caused by the cutting impact of
+suspended solid particles, since the angle of particles
+impact in pipe flow is relatively small.
+The material removal is determined by the laws of
+fluid mechanics and properties of the liquid-solid
+mixture and the target material properties. The flow
+2274 Evaluation of Hydroabrasion in a Slurry Tank
+properties are dependent of the component geometry,
+surface topography and flow rate. Here the physical
+properties of the two-phase mixture are affected by the
+solid particles concentration, size distribution, type,
+shape, density, hardness and sand settling velocity.
+The erosion wear of a material in contact with a
+flowing suspension can be determined by the target
+material loss per unit area or loss in thickness namely
+as penetration rate under the dynamic and continuous
+action of solid particles. The unit of erosion wear is
+usually given per unit time or per unit solid particle
+throughput [4].
+The wear tests in pilot plant test loops are time
+consuming and quite expensive, therefore it is very
+useful to develop a method to predict the local erosion
+rate in slurry handling equipment based on the
+measurements in the test rigs.
+Altaweel [5] analyzed the phenomenon of wear
+using a single particle concept. Elkholy [6] has carried
+out a systematic study on the phenomenon of abrasion
+wear in slurry pumps and has shown that wear is
+dependent on velocity, concentration, particle diameter,
+conduct controlled experimental tests using equisized
+loss and an equation for erosion rate prediction in terms
+of the mentioned parameters was derived. Harvey et al.
+[8] developed a semi-empirical model for synergy of
+erosion-corrosion of carbon steel in a slurry pot.
+Some researchers have attached a mixer at the
+bottom of the stutry tank for better suspension of solid
+particles in the liquid phase [9, 10] in a homogeneous
+manner.
+Bree et al. [11] have rotated the mixer and erosion
+erosion samples.
+Investigations on the suspension of solid particles in
+a cylindrical tank test rig by Sharma and Shaikh [12]
+suggested that a propeller directing the liquid-solid
+mixture downwards towards the bottom of the
+cylindrical tank provides better uniform distribution of
+solid particles in comparison to upwards directing
+impellers.
+Biswas et al. [13] observed that application of a
+pitched turbine blade impeller provides better
+suspension of solids at lower speeds compared to that
+of the butterfly type impeller.
+Desale et al. [14] made some improvements in the
+design of pot tester to simulate erosion wear due to
+solid-liquid mixture and has found that the impeller
+rotational speed required for uniform distribution of
+solid particles in the tank varies with particle size,
+specific gravity and concentration of solid particles and
+have called this speed as the suspension speed.
+CFD simulation of erosion rate and its location,
+together with the validation of results with
+experimental findings of erosion in a slurry tank is not
+studied in details in literature.
+Moreau et al. [15] applied recently the CFDRANS
+simulations with the MRF technique to predict the flow
+behavior in a batch stirred tank reactor.
+The present work reports experimental
+investigations of erosion of two hard metals in
+water-sand mixture in a slurry tank in order to validate
+the CFD simulations applying the MRF technique, and
+also studying the dependence of erosion wear to the
+influencing impact parameters.
+2. Experimental Setup
+The test rig as depicted in Fig. 1 contains a
+are used to support the rotating shaft and a hardened
+seal is provided to prevent the leakage of water from
+the bottom ofthe tank. Another motor is located at the
+top of the test rig connected to a shaft to rotate the
+erosion plates fixed to a holding arm. Fig. 2 represents
+Evaluation of Hydroabrasion in a Slurry Tank 2275
+Fig. 1 3-D view of the slurry tank test rig.
+Fig. 2 3-D view of the holding arm, fixtures and an erosion
+plate sample.
+an erosion sample plate, the fixtures holding the plate
+and the arm which would be connected to the shaft. As
+it is depicted, there is the possibility to place the plates
+with various angles by fabricating different holding
+arms. The rotating direction of upper motor should be
+in opposite direction compared to the bottom motor. It
+provides effective distribution of solid phase in liquid
+phase and minimizes the relative velocity effect. The
+erosion plates were weighted with a precise labor scale
+(Sartorius Company, R300S model) which has the
+readability of 0.1 mg, before and after each test to
+quantify the mass loss of each plate.
+3. Multiphase Modeling Approach
+A multiphase flow containing dispersed particles
+may be modeled using either the particle transport
+model or the Eulerian-Eulerian multiphase model. In
+Eulerian-Eulerian multiphase, a momentum equation
+needs to be solved for each representative size which
+becomes very costly. The particle transport model is
+applied in the present study since it is more flexible
+when there is a significant size distribution leading to
+different particle velocities and provides more detailed
+information on behavior and residence time of
+individual particles. However, the turbulence model
+used in a particle tracking simulation only applies to
+the continuous phases. Turbulence can affect the
+particles through the particle dispersion force, but the
+particles can have no effect on the turbulence of the
+continuous phase, other than indirectly by affecting the
+velocity field [16].
+The typical sand particle size distribution is in the
+range of 0.1 mm to 0.8 mm in pipelines as it is depicted
+in Fig. 3 from experimental measurement by a
+HORIBA particle size analyzer which is based on laser
+scattering (Retsch Technology, LA950 model) at our
+laboratory. Pepple [17] applied the phase Doppler
+method for dilute, turbulent liquid-solid flow in a
+vertical pipe and demonstrated that in general, the
+particles in the range of 0.5 mm damp the fluid
+turbulence while the particles in the range of 1.0 mm
+and 1.5 mm are either neutral or enhance the
+turbulence.
+A Lagrangian-Eulerian model for liquid-solid
+particle flow contains an Eulerian formulation for the
+liquid phase and the Lagrangian formulation for the
+particle phase together with a stochastic dispersion
+model to calculate the influence of liquid phase turbulence
+i 0 200 400 600 800 熹
+Particle size (um) |
+Fig. 3 Measured size distribution of sand particles.
+2276 Evaluation of Hydroabrasion in a Slurry Tank
+on the solid particle phase. It is commonly known that
+detailed inlet conditions play an important role in
+accurate Lagrangian predictions [18], so that a large
+number of particle trajectories are required to gain a
+stochastically significant solution.
+In the Eulerian-Lagrangian model, the liquid phase
+is simulated by applying the Eulerian conservative
+equations of continuity and momentums. In the
+where U, =U, +u, is the instantaneous liquid
+velocity, F,, is the external force. The response time
+of particle, f , is defined as:
+diameter, respectively. The particle trajectories are
+computed by:
+Thetwo way coupling source between the liquid and
+solid particle phases is given by:
+where the summation is carried out over all particle
+trajectories crossing the control volume.
+4. Application of an Erosion Model
+A comparison of erosion models was performed by
+calculating the erosion (material weight loss) of a
+square shape 44 W carbon steel specimen, eroded by a
+vertical water/sand jet tester for some various operating
+parameters—here the flow velocity 一 with four erosion
+models from Refs. [2, 19-21]. The results are then
+compared with the experimental erosion results of
+Wang et al. [22] for a water/sand jet set-up to
+investigate the erosion of hard metals. By comparison
+of various erosion models with experimental results as
+depicted in Fig. 4, it was concluded that the
+Grant-Tabakoff erosion model fits very well with the
+experimental results and thereby was selected as the
+appropriate erosion model for further modeling and
+study of erosion of rotating plates in a slurry tank.
+4.1 Grant-Tabakoff Model
+Tabakoffet al. [20, 23] has experimentally indicated
+that the erosion of a specimen is mostly dependent on
+the particle impingement angle and its impact velocity.
+The uniqueness of this model compared to other
+erosion models of its kind is that it contains the particle
+impact restitution coefficient as an influencing
+parameter, and in particular the tangential restitution
+coefficient 叉 ,as one of the parameters affecting the
+erosion rate,
+The following equation was developed by Grant and
+Tabakoff [20] to predict the erosion of the ductile
+materials and alloys and is defined as the ratio of the
+eroded mass of target material to the mass of impinging
+solid particles.
+empirical function of particle impact angle, 几 , and
+Xuy are respectively the tangential component of
+incoming particle velocity and of rebounding particle
+velocity. f(V;,) is the component of erosion due to
+the normal component of velocity.
+The tangential restitution ratio is defined as follows:
+can be rewritten as:
+The effect of the particle approach angle is inserted
+into 乙 01) and a strictly empirical approach is used
+to predict its behavior. The result ofthis analysis yields
+the following expression:
+Evaluation of Hydroabrasion in a Siurry Tank 2277
+where, 力 is the angle of attack where the maximum
+erosion occurs, 无 is a material constant and 心 is
+defined as:
+The component of erosion resulting from normally
+impacting particles is expressed as:
+Overall erosion rate of the wall due to the solid
+particles interaction with the wall is finally computed
+from the following equation:
+where, N is the number rate of solid particle and 7,
+is the particle mean mass.
+4.2 Finnie and Bitter Combined Model
+Finnie [2] was one of the first researchers to
+develop an erosion model. The proposed model for
+erosion of ductile metals is based on an analysis of the
+kinetic energy exchange mechanisms during the
+impact of a single solid particle where the cutting
+wear was the predominant mechanism. This simple
+erosion model is able to accurately predict ductile
+material erosion at relatively low impact angles.
+However, at high impact angles, the predictions
+deviated significantly from experimental values. Due
+to high impact angles, Finnie has suggested that
+material “cutting” action ceases to exist and
+“deformation” wear predominates. This model
+was later modified by Bitter [24] who considered
+the both effects of deformation wear and cutting wear
+[25].
+A modified version of the Finnie-Bitter combined
+model equation is in the form of Eqs. (12) and (13):
+respectively, X is a numerical constant and has a value
+of 4.85, ￠ and s are the energy needed to remove a
+unit volume of material from a body due to
+deformation and cutting wear, respectively and are
+derived from experimental data. my/p is the
+experimental constant in the cutting term and m/e is
+the experimental constant in the deformation term in
+Eqs. (12) and (13).
+2278 Evaluation of Hydroabrasion in a Slurry Tank
+4.3 Ahlert-McLaury Model
+Wang and Shirazi [19, 22] predicted erosion rates on
+pipe bends using a CFD based approach and an erosion
+model was developed by their coworkers, Alhert and
+McLaury [19] for sand particle impacts in water which
+is given by Eq. (14):
+where, F, is the particle shape coefficient, V is the local
+impact velocity; 4 is an empirical constant and B is the
+Brinell’s hardness number of the test material. Alhert
+[26] used two functional forms of the angle dependence,
+with matching conditions applied at 15°. The
+dependence on impingement angle, 8) is given by
+Eqs.(15) and (16):
+4.4 Huang Model
+Huang et al. [21] developed a material oriented
+erosion model taking into account the two important
+cutting mechanisms, namely the line cutting and area
+cutting. This model is written as:
+where, K, and K, are the coefficients which depend
+on the materials and must be fitted from one set of
+stiffness ratio describing relative strength of eroded
+material and particle. ￡5, Op and E5 are the
+stiffness, hardness and elongation (ductility) of the target
+material, respectively. 友 , and U p are the particle
+mass and particle impingement velocity, respectively.
+5. CFD Simulation
+Geometry of the slurry tank together with the
+rotating arm, fixtures, mixer and sample plates as
+depicted in Fig. 5 were generated and finely meshed
+with the ANSYS-ICEM software. Grid study was
+performed carefully in order to obtain a fine mesh
+which the values of simulation results are independent
+of the number of mesh elements. The final mesh has
+totally 1,603,338 nodes and 1,525,700 elements and
+consists of three sub meshes. One for the rotating
+erosion plates, one containing the mixer and the third
+one for the slurry tank. The advantage is that when for
+instance, the orientation angle of the erosion plates is
+varied to investigate the angle effects on the erosion
+rate, the related mesh part for the erosion plates can be
+substituted in the final mesh, saving in time and
+computational efforts.
+Since the final mesh contains three sub meshes, it is
+possible to define three computational zones in
+ANSYS-CFX,namely by applying the MRF method as
+it is shown in Fig. 6. Here, one rotating reference zone
+is defined for the erosion plates, one rotating reference
+zong for mixer and one stationary reference zone for
+the slurry tank. In the MRF technique, the equations are
+expressed in a reference frame that rotates with the
+rotating part speed and will be solved in a stationary
+mesh. This method is used since it is less resource
+demanding than sliding mesh approach and give quite
+good results. The sliding mesh method is appropriate
+for strong baffle/impeller interactions since the
+information is exchanged through the sliding interface
+at each time step [15].
+Definition of interfaces is necessary between
+rotating zones and stationary zone. Since the surface
+mesh of rotating side and stationary side of each
+interface are not identical, the GGI (general grid
+interface) method is applied for transforming the data
+among the zones. We have also proved that changing
+the diameter and height of each of the two rotating
+zones containing the rotating parts have a negligible
+effect on simulation results.
+5.1 Simulation Parameters
+The physical properties of water and dry sand are
+listed in Table 1.
+Evaluation of Hydroabrasion in a Slurry Tank 2279
+Fig. 5 Geometry modeling of the test rig.
+Fig. 6 MRF technique for modeling.
+Table 1 Physical properties of dry sand and water.
+Water 18.02 997.0 4.181.7
+Sand (dry) 60.10 1,620.0 800.0
+However,the atomic packing factor for precise
+determination of the bulk sand density must be taken
+into account. The APF (atomic packing factor) or
+packing fraction is the fraction of volume in a bulk
+structure that is occupied by atoms. For one-component
+materials, the APF is represented mathematically by:
+By assuming the APF = 0.7 from literature for the
+sand bulk, the density ofmoist sand in the tank will be
+assumed as 2,300 kg/m’ for the CFD simulations.
+The CFD simulations are performed to predict how
+the erosion rate of rotating elements for a specified
+target material is changing with various influencing
+parameters. The important influencing parameters
+namely flow velocity, solid particle concentration and
+solid particles size were studied in the current work.
+The CFD results have been compared and validated
+with experimental results of erosion mass loss of
+stainless steel (with hardness of 235 HV30) and ST-50
+(with hardness of 122 HV30) with various rotational
+velocities, sand weight concentration values and solid
+particle size groups in the slurry tank. The
+experimental tests conditions for study the flow
+velocity and solid concentration effects are presented
+in Table 2 in detail.
+Table 2 Experimental tests to investigate the flow velocity
+and sand concentration effects.
+1 10 Stainless St. 200 -200
+2 10 Stainless St. 160 -160
+3 10 Stainless St. 120 -120
+4 10 Stainless St. 80 -80
+5 10 ST-50 200 -200
+6 10 ST-50 160 -160
+7 10 ST-50 120 -120
+8 10 ST-50 80 -80
+9 5 Stainless St. 120 -120
+10 8 Stainless St. 120 -120
+11 10 Stainless St. 120 -120
+12 5 ST-50 120 -120
+13 8 ST-50 120 -120
+14 10 ST-50 120 -120
+2280 Bvaliuption of Hydrosbrasien in. Shuey Tank
+6.
+6.1 Velocity & Concentration Effects
+Erosion weight loss of stainless sheel. 0 1.4301)
+and steed 50-(r. 1.0531) in waterssand imixttre in the
+$0 slurry tank measured at different
+rotational velocities and different. sand concentrations.
+The mass loss of stainless. steel and ST-50 have
+evaluated in. the tank fest rig with 10% sand {weight
+concentration) and at, four varios velocities
+of erosion plates and mixer plites fom 80 RPM 10.200
+RPM asd is depicted in Fig. 7. It has been observed that
+the erosion increases increase in rotational
+velocity and the of ST-50 is
+reasonably higher than stainless steel. This is sxpected
+since the hardness of ST-50 is Jower than the hardaess
+of stainless steel, It has also been observed that the
+difference of the material loss between the two niateiial
+samples increases 8 the rotational velocity increases.
+RPM, the mass losses. of both materials were reported
+RPM is lower than the suspension speed which is the
+minimum impeller rotational required for
+uniform distribution of the whole solid particles inside
+the tank.
+The material weight losses of stainless steel and
+graphically in Fig. 8. As depicted, the erosion mass loss
+logatithmic with increase in sand
+concentration and the mass loss of ST-50 is in average
+more than two timés higher than the mass loss of
+stainless steel for all three tested concentration values,
+CFD results of mass loss of stainless steel are
+compared with experimental values for different
+particle concenttsticns and rotational velocities and are
+shown in Figs. 9 and 10, respectively, In Fig. 9, both
+the steady state and transient simulation results are
+The variation between the simulations
+Evaluation of Hydroabrasion in a Slurry Tank 2281
+versus the rotational velocity.
+and experimental results for bigger values of
+concentration and rotational velocities would increase
+further. Thereby, for other comparisons only the
+transient results are validated with experimental
+values,
+The CFD results are qualitatively and quantitatively
+in good agreement with experimental results for both
+influencing parameters, however some small variations
+are observed. One reason could be the assumption of
+sand particles as solid transport particles which
+provides to set an injection source for the solid particles,
+here assumed at the center point between two rotating
+zones. In present study, the whole amount of sand was
+assumed to inject in to the domain from a central point
+source in the tank. Another important reason is due to
+complexity and variably of the flow patterns inside the
+tank compared to the conditions which the erosion
+models have been experimentally developed.
+Especially, the rotating sample plates and mixer are
+rotating in counter direction in respect to each other, as
+in our experimental tests. Generally, an erosion model
+which was generated for instance in accordance with
+the experimental results from a water jet test rig, might
+not precisely predict the erosion rate quantities in a
+slurry tank test rig.
+As it is observed in Fig. 11, the pressure distribution
+around the rotating erosion plates demonstrate that a
+local high pressure difference occur in the vicinity of
+plates causing a strong turbulent flow around the
+Fig. 11 Pressure distribution around the rotating elements.
+erosion plates. In Fig. 12, the progress of the erosion
+rate over the plate as the sand particles concentration in
+the tank increases is demonstrated for the case of
+rotational velocity of 120 RPM. The erosion is mainly
+occurs on both edges of the plate and progress slightly
+towards the center of the plate as the concentration
+increases from Fig. 12a: 5% to Fig. 12c: 10% mass
+concentration.
+CFD results of mass loss of ST-50 are compared
+with experimental values for different sand
+concentrations and rotational velocities and are
+presented in Figs. 13 and 14, respectively.
+The CFD results are qualitatively and quantitatively
+in good agreement with experimental results for both
+cases. However, for higher rotational velocities the
+deviation would slightly increase.
+6.2 Particle Size Effects
+Increase in particle size, increases the erosion wear.
+The increase in the particle size at a constant solid
+concentration decreases the number of particles
+suspended in the mixture and at the same time
+increases the kinetic energy per particle impact [27, 28].
+Thus, the increase in wear with an increase in particle
+size is generally attributed to the increase in energy
+available for erosion. Our experiments with three
+various particle size groups as are brought in Table 3,
+present a progressive increase in erosion rate density
+with increasing the particle size as depicted in Fig. 15.
+2282 Evaluation of Hydroabrasion in a Slurry Tank
+Fig. 12 Erosion values and locations with (a): 5%, (b): 8%
+and (c): 10% particle concentration.
+The highest deviation from the experimental results
+is at the third particle size group which is our standard
+particles used in other tests to study the velocity and
+concentration effects. The simulation value has a
+deviation of 9.621% or a difference of 0.222 mg with
+respect to the experimental value. According to our
+experimental tests, a better mixing ratio was achieved
+for finer particle Groups 1 and 2, hence the better
+correlation to the experimental results.
+ST-50 in various particle concentrations.
+Fig. 14 Validation of CFD and exp. erosion results of ST-50
+in various rotational velocities.
+熹0吴Sob
+熹123§
+Particle size group |
+Fig. 15 Validation of CFD and exp. erosion results of
+stainless steel versus various particle sizes.
+Table 3 Particle size groups.
+Parameter (ptm) Groupl  Group2 Group 3
+Minimum diameter 39.23 58.95 67.52
+Maximum diameter 344.21 394.24 678.50
+Mean diameter 141.98 174.75 263.93
+Standard deviation 43.48 51.27 105.35
+Evaluation of Hydroabrasion in a Siurry Tank 2283
+7. Conclusions
+A slurry tank tester has been designed and built to
+study the effects of erosion influencing parameters
+such as flow velocity, sand concentration, target
+material properties, target material orientation angle,
+etc..
+In the present work the effects of flow velocity, sand
+concentration and particle size on erosion mass loss of
+two different hard metals are studied.
+The method of multiple reference frames is applied
+to simulate the flow in slurry tank with ANSYS-CFX.
+The general grid interface is applied since the surface
+mesh of stationary and rotating side of each interface
+are not identical. It was observed that changing the
+height and diameter of each rotating zone has a
+negligible effect on the simulation results.
+It was observed that the erosion mass losses of both
+materials are increasing with increase in flow velocity
+and sand concentration. Both variations could be
+predicted with a logarithmic dependence of mass loss
+to rotational velocity and sand concentration.
+The particle size effect on the erosion rate also has
+been studied for three various particle size groups. The
+simulated results are in good agreement with
+experimental results for all the three influencing
+parameters which were studied in this work.
+It was also approved that the erosion mass loss of
+ST-50 is reasonably higher than that of stainless steel.
+It is due to lower hardness of ST-50 than stainless steel
+and thereby lower resistance to impact effects of solid
+particles. A new erosion model can be also developed
+for the accelerated erosion mass loss of materials in a
+slurry tank tester when effects of all influencing
+parameters are studied in detail.
+Acknowledgments
+The authors would like to thank “Stiftung
+Rheinland-Pfalz fiir Innovation” for financial support.

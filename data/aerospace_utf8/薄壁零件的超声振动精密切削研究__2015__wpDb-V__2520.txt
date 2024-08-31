@@ -1,0 +1,368 @@
+薄壁零件的超声振动精密切削研究
+为了解决薄壁零件的加工变形问题，引入了超声振动切削的新工艺，设计了其中的刀尖微调机构，通过大量的试验，给出了普通切削和超声切削的对比数据，证明了超声振动切削确实能有效提高薄壁零件的加工精度。
+
+薄壁零件 振动切削 刀尖微调  
+
+Sterilization is the complete destruction or
+elimination of all viable organisms in/on a food product
+being sterilized which destroys yeasts, molds,
+vegetative bacteria and spore formers, and extends the
+shelf life of food product. Physical nature of product
+(food size and shape, product composition and
+viscosity) and mode of heating (hot water or steam)
+decides the amount of heat delivered during
+sterilization process [1]. Sterilization of milk enables
+longer ambient temperature storage of sterile milk
+without spoilage. However, processing temperature
+and time should be controlled during thermal
+processing ofcanned milk, due to the heat sensitivity of
+the various nutrients (thiamine,o-lactoalbumin and
+B-lactoglobulin) present in milk [2]. Thermal
+processing time will depend upon the time required to
+achieve uniform temperature inside the can. Heat
+penetration during thermal process depends upon
+product type (liquid or solid) and its thermophysical
+properties, shape and size of container and temperature
+of retort [3].
+Temperature gradient within the liquid causes the
+density difference; due to which natural convection
+occurs, and it causes slowest heating zone (SHZ) to
+move towards the bottom of the can. Temperature in
+the energy equation is coupled with the velocity in the
+momentum equation as re-circulation of fluid is
+entirely due to the buoyancy force [3]. In thermal
+processing, it is important to provide adequate thermal
+treatment to the SHZ and determine its location with
+time in the food can. Computational fluid dynamics
+(CFD) can predict the temperature distribution inside
+the can along with the position of SHZ at various time
+CFD is a simulation tool, which uses powerful
+computers in combination with applied mathematics to
+model fluid flow situations and aid in optimal design of
+industrial processes. In recent years, a rapid
+development in the application of CFD in food
+processing operations has been witnessed [5, 6]. CFD
+is now extensively used to study the thermal processing
+of canned food, such as natural convective heating of
+canned food [4], effect of temperature on bacterial
+deactivation and vitamin destruction in 3D pouches [7],
+and technique to determine the sterilization time [8].
+Varma and Kannan [9] studied the effect of
+sterilization through wall inclinations and can
+geometry modifications,besides they also simulated
+natural convective heating of canned food in conical
+and cylindrical pouches [10]. Ghani and Farid [11]
+developed a CFD model for the thermal sterilization of
+solid-liquid mixture food in cans. Kannan and
+Gourisankar [12] simulated heat transfer analysis of
+canned food in a still retort. A CFD model for the
+pasteurization of solid-liquid mixture in cans was also
+studied for canned peas in water [13]. A CFD model
+for pasteurization of canned milk at high (85 “C) and
+low (74 “C) temperatures with can at stationary and
+rotation mode was studied by Anandpaul et al. [14].
+They concluded that 5 rpm rotation was ideal for
+thermal processing of milk which caused maximum
+inactivation of microbes in shorter processing time.
+Recently, Anandpaul et al. [15] developed a CFD
+model for thermization (heating at 65 °C) of milk in the
+can. However, no work has been reported on CFD
+simulation for sterilization of canned milk. Padmavathi
+and Anandharamakrishnan [16] developed a CFD
+model for thermal processing of canned pineapple
+products dipped in sugar solution. Temperature and
+velocity profile during the process were well predicted,
+using temperature dependent thermophysical
+properties of pineapple and sugar solution.
+Furthermore, reducing the size of product from slices
+to tidbits showed reduction in processing time [16].
+The present work was aimed at the development of a
+CFD model for the sterilization of canned milk and to
+investigate the effect of thermal processing time on
+temperature distribution inside the can. Further, study
+was extended to investigate the effect of can position
+on temperature distribution of milk as well as
+processing time. A thermal processing effect on
+inactivation of bacteria (based on F-value) was also
+investigated.
+2. Experimental Methods
+2.1 Sterilization of Milk
+Experimental setup for the sterilization of milk in a
+can is shown in Fig. 1. A smaller size aluminum can
+(8.5 cm height and 6.2 cm diameter) was selected due
+to its wide range of applicability. One small hole was
+drilled at the upper portion of the can and filled with
+skim milk (250 mL) having a fat content of less than
+0.5%. A pilot scale batch retort was used for
+sterilization of canned milk. The batch retort was
+allowed to stabilize at the processing temperature of
+121 °C, which was monitored through thermocouple T
+(Fig. 1). The milk can with a thermocouple was placed
+0.02 m from the center at a depth of 0.05 m from the
+top of the can. This setup was placed inside the batch
+retort for the sterilization process. Temperature was
+measured using T-type thermocouples,which were
+connected to the data logger (VR-18,Brainchild
+Electronics Co. Ltd., Taipei, Taiwan). When the batch
+retort attained set point temperature of 121 °C, the milk
+can along with the probe was kept into the batch retort
+and the timer was started. Time-temperature readings
+were recorded for every 60 s interval till it reached
+steady state temperature.
+2.2 Viscosity of Milk
+Milk is a Newtonian fluid and its viscosity is
+temperature dependent. There was lack of consistent
+data in the literature for the milk viscosity over the
+temperature range 10-100 °C; therefore, viscosity of
+milk was determined using Ostwald’s u-tube
+viscometer. The viscosity of milk as a function of
+temperature is given in Fig. 2. Viscosity of milk
+decreases with the increase in temperature in the range
+of0.002 Pa-s (10 °C) to 0.000407 Pas (100 °C) (Fig. 2).
+Fig. 2 Milk viscosity as a function of temperature.
+compared to constant viscosity for the entire process A three-dimensional cylindrical structure of the milk
+[3].
+Temperature (°C)
+can was created with fine and uniform mesh (73, 548
+nodes) in GAMBIT. The mesh size for the whole can
+geometry was optimized and finalized for the better
+accuracy and computational time. The meshed
+geometry was exported to Ansys Fluent 12 for further
+Processing. The finite volume method was employed to
+solve the partial differential forms of the continuity
+equations using the Semi-Implicit Pressure-Linked
+Equations (SIMPLE) method for pressure-velocity
+coupling and a first-order upwind scheme to interpolate
+the variables on the surface of the control volume due
+to its stability with respect to simulation time step size
+(set as 1 s). The convergence was taken to be attained at
+the root mean square value of less than 10“for pressure,
+density and velocity solution variables and 10“ for
+temperature. The natural convection heating in liquid
+and conduction in solid was simulated for 2,400 s. Dell
+workstation T5400 was used for running CFD
+simulation. The simulation results were validated with
+experimental measurement of temperature (extracting
+temperature data from a thermocouple probe point
+located at distance 0.05 m from the top of the can and
+0.02 m from the center of the can).
+3.2 Governing Equations
+The software Ansys Fluent 12 was used to solve the
+governing continuity, momentum and energy
+equations for the defined geometry and associated
+boundary conditions. The generalized transport
+eduations solved are following [17]:
+(1) conservation of mass equation
+Eq. (1) is the unsteady, three-dimensional and mass
+conservation or continuity equation for the simplified
+case of a fluid flow.
+where, p is pressure (Pa), L is molecular viscosity
+(kg/m-s) and boussinesq approximation is applied for
+the density in the body force term (Sm) and as
+follows:
+temperature at the initial condition, g is the
+gravitational force.
+(3) energy equation
+where, is the thermal conductivity, Cp is the specific
+heat capacity and T is the temperature.
+3.3 Boundary Conditions
+In this study, transient 3D CFD simulation was
+carried out with convective heating (steam temperature
+was 121 °C with can wall thickness 0.2 mm) with no
+slip conditions applied. The can external surface
+temperature (top, bottom and side) was assumed to rise
+rapidly from initial temperature (30 °C) to retort
+temperature (121 °C) and further, remain constant
+throughout the sterilization process. Initially the fluid
+was at rest with uniform temperature 30 °C.
+At the can wall, T = T,,; = 121 °C, h = 1,000
+W/m>K,v,=0,v,=0for0<z>Hatr=R;
+At the top and bottom wall, 7 = Tval = 121 °C, h =
+1,000 W/m*K, v,=0,v.=0for0<r>Ratz=0andz
+Initially fluid is at rest and at uniform initial
+temperature, 7 =30 “C, v,=0,v.=0for0 <r> Rand
+0<z>H.
+3.4 Thermo-Physical Properties of Milk
+Specific heat was given as constant (4,010 J/kg-K)
+expansion () value 0.0002 (1/K) [4]. Viscosity of milk
+was obtained by experimental measurements and given
+as piecewise linear function of temperature in the
+boundary condition of the model. Thermal
+conductivity was also given as a piecewise-linear
+function of temperature with the following Eq. (5)
+obtained from Riedel [19].
+k=(326.8 + 1.04127- 0.003377%)
+where, k is the thermal conductivity (W/mK), X,,” e
+is water concentration and 7 is temperature (K).
+3.5 Bacterial Deactivation Kinetics
+The effects ofheat treatment and time with respect to
+survival of microorganism can be quantified by the
+following F-value equation [20]:
+The Z-value is used to express the temperature
+dependency of the inactivation rate and in this
+simulation, Z-value was used as 10 [20]. The heating
+temperature of 121 °C was used as reference
+temperature (7).
+4. Results and Discussion
+4.1 Processing of Canned Milk in Vertical Position
+4.1.1. Experimental Validation
+CFD model predictions were validated with
+experimental measurement of canned milk temperature
+(Fig. 3). Fig. 3 clearly depicts that the simulation
+predictions were in good agreement with the
+experimental results. A linear increase in temperature
+was observed initially at 180 s and it reached a steady
+state temperature of 121 °C at 540 s. The heat transfer
+the experimental measured temperature profiles (Fig.
+3). A slight variation in the model predictions and
+experimental measurements was observed, this may be
+due to combined effects of experiment and simulation
+limitations. During experiment, location of
+temperature sensor may change the liquid flow pattern
+and hence it affects the temperature of milk. In the
+simulation, thermophysical properties used for milk
+and small-scale instabilities produced by buoyancy
+effect. The buoyancy-produced structures might have
+interacted directly with the existing local turbulence
+with the strong coupling where laminar modeling could
+not predict this well. In the choice of numerical
+coupling scheme for coupling between the momentum
+and energy equations, momentum equation may not
+have been fed back into the momentum equation
+directly and this may have also affected the
+temperature predictions [21].
+4.1.2 Velocity and Temperature Profiles
+Figs. 4a and 4b shows velocity profile of canned
+milk during sterilization (121 °C) at processing time of
+60 s and 300 s. A uniform velocity distribution was
+observed due to all side heating and low viscosity of
+milk. In Fig. 4, it can be observed that the upward
+movement of milk due to buoyancy effect. Due to
+natural convection, the temperature gradient creates a
+density difference and the hot milk begins to flow
+upwards. Eddy formation was also observed in Fig. 4b,
+in the mid region of can due to the presence of thermal
+gradient between top and bottom region of the can.
+Direction of the velocity vector arrow changed in this
+region with smaller eddies formation. In this simulation
+study, velocity magnitude was in the range from 0.0046
+m/s to 0.0091 m/s. Anandpaul et al. [15] also reported
+a gradual increase in velocity at the top central region
+of the can during thermization (65 °C) of milk due to
+re-circulation of milk inside the can.
+Tracking the SHZ was crucial to assess the
+effectiveness of the sterilization process. Figs. 5a-5d
+shows temperature contours of canned milk during
+sterilization (121 °C) at the time intervals of 60, 120,
+300 and 480 s. Initially, rapid heating of milk was
+observed due to high temperature gradient between
+milk (T=30°Cat￠t=0)and can wall (T=121°Cat￠=
+0). At the initial stage of heating (60 s, Fig. 5a), SHZ
+was formed at the bottom portion of the can due to the
+change in viscosity, density and also re-circulation of
+can for convection at 121 °C using different heat transfer coefficients.
+milk. SHZ was remained stationary at the bottom
+portion of can, due to the four sides heating (Fig. 5d).
+Moreover, temperature of milk at central plane was
+lower than the surrounding regions and this clearly
+indicates the SHZ. Similar profile was also obtained by
+Ghani et al. [4] which showed upward flow of liquid
+near the wall and uniform downward flow at core
+region during simulation of canned sodium carboxy
+methyl cellulose (CMC).
+4.2 Processing of Canned Milk in Horizontal Position
+4.2.1 Temperature Profiles
+Temperature profile of milk with horizontal can
+position is shown in Fig. 6 (a-d). Temperature distribution
+sand (4) 430s.
+was affected due to the different fluid velocity and thus
+formation of different temperature regions inside the
+can. SHZ was formed at the bottom of the can due to
+the four side heating and it disappeared at 300 s of
+processing time. Comparing Figs. 6a-6d with the Figs.
+5a-5d, it clearly depicts different temperature
+distribution due to the different position of the can
+processing. Uniform temperature distribution was
+obtained for horizontal can at 300 s, whereas vertical
+can needs 480 s of processing time. However,Farid
+and Ghani [8] reported that the heat transfer rate in
+vertical can was higher than that in horizontal can due
+to the stronger effect of natural convection currents in
+the former.
+4.3 Evaluation of Temperature across Canned Milk
+Three different radial positions at bottom (z = 0.01
+m), middle (z = 0.0425 m) and top (z = 0.07 m) were
+obtained for 60, 300 and 600 s of processing time to
+compare the temperature profiles of milk for horizontal
+and vertical positioning of can (Fig. 7). Figs.7a-7c
+clearly depicts the slight temperature difference along
+these positions (i.e., bottom, central and top line) for
+vertical orientation of can at 60 s. However, similar
+temperature difference was not observed for the
+horizontal orientation of can. This may be due to
+natural convection heating. Uniform radial temperature
+was observed for vertical position of can, whereas
+non-uniformity was observed for horizontal
+positioning for 60 s of sterilization process (Fig. 7).
+Further processing resulted in uniform radial heating of
+horizontal orientation of can. Figs. 7a-7c also confirms
+that 600 s of thermal processing provides uniform
+temperature throughout the can, irrespective of can
+orientation (i.e., horizontal and vertical).
+4.4 Evaluation of Grashof and Rayleigh Numbers
+Grashof and Rayleigh numbers were evaluated to
+study the natural convection heating effect on vertical
+and horizontal can position during sterilization of milk.
+Grashof number for the milk at initial period of thermal
+Grashof and Rayleigh numbers indicate that the natural
+convection flow in this simulation is laminar. Similarly,
+reduced to 1.5 x 10° at the end of the processing,
+reduced to 2.65 x 10°.
+Profiles of Grashof and Rayleigh numbers for
+vertical and horizontal were shown in Figs. 8 and 9,
+respectively. Grashof number is mainly depend on
+fluid viscosity and as in this process, milk viscosity
+was extremely low (0.0004 Pas and 0.000353 Pas at
+horizontal (2.8 x 108) one at 60 s of processing time.
+positioning of can, respectively. Therefore, it can be
+concluded that higher value of Grashof and Rayleigh
+numbers indicated the higher temperature difference
+during processing of vertical can positioning than the
+horizontal positioning.
+4.5 Evaluation of F-value
+The effectiveness of a heating process can be
+estimated by the F-values (Eq. (6)). The process value
+F (min) can be used for quantifying the survival of
+microorganism. An effect of time and processing
+conditions (vertical and horizontal) on F-value is
+shown in Fig. 10. Higher F-value was obtained for
+horizontal can processing as compared to the vertical
+processing (Fig. 10), which clearly depicts
+effectiveness of horizontal processing. Highest F-value,
+Vertical can radial position trm)
+Vertical can radial position (m)
+Vertical can radial position (m)
+Temperature profile during sterilization (121 °C) of milk can for vertical and horizontal positioning along three lines (a
+line, (b) central line and (c) top line.
+Horizontal can radial position (m)
+Horizontal can radial position {m)
+-0.04 0.02 0 0.02 0.04
+Horizontal can radial position (m)
+0^′痘)′′〉二二'戛′_熹eine
+标技|
+e口
+developed and validated with the experimental was found to be suitable for the sterilization process
+tassutetmhents, Further, this study was extended
+to with four sides heating of cap. SHZ was found at the
+Computational Fluid Dynamics Simulations
+requires less processing time as compared to the
+vertical position. Further, progress of sterilization was
+evaluated using F-values for both horizontal and
+vertical position processes which underlines
+superiority of horizontal can processing. Maximum
+F-value for horizontal and vertical position of can was
+obtained at 600 s and 660 s, respectively. Predicted
+were also higher for vertical positioning of can.
+Acknowledgments
+Authors wish to thank Prof. Ram Rajasekharan,
+Director, CSIR-CFTRYI, for his help and support.

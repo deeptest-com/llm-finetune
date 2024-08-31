@@ -1,0 +1,524 @@
+基于大数据的知识挖掘技术在航天领域应用展望
+近年来，中国运载火箭技术研究院开展了知识梳理、知识采集、知识分类等多项工作，形成了专业分类、型号产品等维度的知识库，不断积累、完善的知识库势必在航天产品研制过程中发挥重要作用。知识库的利用程度依赖于知识挖掘技术，尤其在航天产品研制过程中的知识挖掘，涉及多专业、多部门、多领域。
+
+知识挖掘技术 航天领域 中国运载火箭技术研究院 展望 应用 研制过程 航天产品 知识库  
+
+In pursuit of the latest Minidrones competition
+issued by the French Aerospace Lab ONERA “Office
+National d'Etudes et de Recherches Aérospatiales”, the
+ULBs (Université Libre de Bruxelle) decided to
+continue the development and optimization of the
+ducted fan MAV (micro air vehicle) (Fig. 1), that was
+built for this competition and for which VTOL (vertical
+take-off and landing) capabilities and autonomous flight
+were mandatory. To counter the torque on the fuselage
+due to the main rotor, several solutions have been
+developed. The classical solution, which has proven its
+effectiveness through good control yaw with low
+power, is installing a tail rotor on the helicopter (95%
+of the helicopters are equipped with this system [1]).
+Although the ULB MAV appears similar to other
+ducted-rotor concepts such as iStar [2], Cypher [3],
+Hovereye [4], T-Hawk [5], it fundamentally differs
+from these platforms in that it uses the downwash of a
+single rotor to compensate the motor torque and
+achieve control around the roll, pitch and yaw axes.
+In helicopter type MAVs, the rotor is driven by a
+motor that transmits the torque to the main rotor axis.
+The torque Cr (in Nm) is calculated as Eq. (1):
+where, Pg is the power transmitted to the rotor (in W )
+and ? is the rotation speed of the rotor (in radian per
+The main rotor applies a torque of the same intensity
+but opposite sign on the structure of the helicopter
+MAV. If you do not stop this effect, a yaw moment
+appears and the MAV begins to turn on itself in the
+opposite direction. 〈
+Several solutions are possible to stabilize the
+MAY in yaw. The choice of the anti-torque system
+depends strongly on the configuration of the MAV and
+Fig. 1 The ducted fan MAV of ULB.
+610 A Ducted Fan MAV Anti-torque Control System
+the application for which it is intended.
+The more common solution used is a rotor placed at
+the rear of the helicopter called a tail rotor. This rotor,
+placed at the end of a lever arm of length L, rotates in a
+plane perpendicular to the main rotor. It provides a
+pushing force Fy (perpendicular to the plane of
+symmetry of the helicopter) such that
+However, the presence of a tail rotor is often a source
+of accidents and uses extra power. Furthermore, in our
+case, the MAV is ducted. And in forward flight, the
+duct may provide some lift when the UAV (unmanned
+aerial vehicle) is tilted. What we call “airplane mode”
+is not at all compatible with a tail rotor. These
+disadvantages means that this solution is often
+excluded for ducted MAYV.
+The paper is organized as follows: Section 2 presents
+the most common configurations used on ducted fan
+UAVs; Section 3 presents the general layout; Section 4
+explains the control system; Section 5 presents the duct
+design; Section 6 presents the propeller; Section 7
+shows the anti-torque blades; Section 8 gives
+conclusions.
+2. State of the Art
+Different ducted fan UAVs have emerged since the
+late twentieth century until today. The technologies
+used on these vehicles are constantly changing from
+year to year. In the early 1980s, the second generation
+AROD (Airborne Remotely Operated Device) project
+was launched (the first being a ducted quadrirotor that
+are not presented here) as part of a monitoring program
+organized by the U.S. Navy, and was continued in the
+program demonstration of advanced technologies
+organized by the Gaters. The development of AROD
+was stopped due to lack of funding.
+Sykorsky Aircraft Corporation continued to work on
+shrouded rotary-wing UAV to finally get the Cypher
+UAV (Fig. 2), whose first flight took place in April 21,
+1992. The UAV took off and landed successfully on
+three occasions and made a first flight stationary
+T-Hawk
+Fig. 2 Different ducted fan UAVs which emerged over the
+last two decades.
+stabilized at a height of 1.2 m. The Cypher UAV is
+equipped with two counter-rotating coaxial rotors (Fig.
+3). This appears very interesting because it offers better
+performance in stationary flight and completely
+eliminates any problem of stabilization in yaw. This
+limits, however, the directional maneuverability of the
+aircraft and confers bad behavior in horizontal flight. In
+addition, a safety distance must be provided to prevent
+contact between the two rotors during flight operations.
+This obviously increases the height of the helicopter in
+no small way.
+After a couple of years, the iStar of Allied Aerospace
+(Fig. 2) made its first flight during the month of
+October in 2000. One month later, it already showed
+some flight performance at high speed through a large
+change in its pitch angle.
+The iStar was equipped with a fixed stator having
+eight blades and mounted inside the duct below the
+rotor (Fig. 4). The angle of incidence of the blades was
+fixed to produce the maximal force to counter the
+torque produced by the engine. All the control of the
+UAYV was assured by a quadrant of vanes placed just
+after the stator in the rotor flux.
+In July 2003, Aurora announced their first successful
+flight with the UAV-Goldeneye 100. Its successor
+A Ducted Fan MAV Anti-torque Control System 611
+Cypher UAV.
+T-Hawk UAV.
+versions 50 and 80 completed their first flights,
+respectively in July 2004 and June 2006. First
+autonomous transition from vertical to horizontal flight
+ofGoldeneye-50 was performed in April 2005 (Fig. 2).
+The Goldeneye was equipped with a fixed stator
+inside the duct below the rotor as the iStar. But the full
+control of the UAV is provided using fins located
+outside of the duct.
+In the beginning of the new millennium, engineers
+worldwide were very prolific in this area. In the U.S.,
+the Honeywell developed until June 2002, in
+collaboration with DARPA (Defense Advanced
+Research Projects Agency), their Kestrel UAV.
+In 2004, in the month of November, Bertin
+Technologies revealed the Hovereye UAV (Fig. 2) and
+BAE Systems developed their OAV (organic air
+vehicle). The Hovereye is equipped with two
+counter-rotating coaxial fixed pitch rotors. The two
+rotors were the same and eliminate the effect of the
+torque supplied by the motor on the supporting
+structure. There is therefore no longer a need for an
+anti-torque system and the internal flow should not be
+straightened.
+The same year, Honeywell developed a derivative of
+the iStar: the T-Hawk (Fig. 2) that demonstrated its
+capabilities during stabilized flight tests in Bourges,
+France in March 2005. Despite the elimination of their
+previous UAV program of DARPA OAV in 2004,
+BAE Systems put in place, one year later, a new UAV:
+the BAE60. The stator (Fig. 4) is used to straighten the
+swirling flow of air created by the propeller in the duct
+and to offset some of the torque transmitted by the
+engine to the UAV. This allows using a single rotor
+without having to make excessive control with control
+vanes of the UAV. It consists of 12 twisted blades
+whose angle of attack increases from the duct to the
+central fuselage.
+Companies are not the only ones in the race. In 2006,
+J.-L. Naudin, a French researcher and experimenter,
+showed some performance with the Schauberger flying
+disc in which operation is based on the Coanda effect.
+The Fantail Singapore Technology Aerospace Ltd.
+UAV (Fig. 2) made a first flight in July 2006. Already
+the same year in December, the first autonomous flight
+took place.
+To enable control during hover and low speed flight,
+all control airfoils used in the fantail are placed in the
+flow produced by the rotor (Fig. 5). The yaw control is
+done using six fins with variable angle of attack in the
+flow placed directly below the rotor. They are placed as
+close to the duct to maximize the lever arm and
+consequently the moment they produce. They counter
+the torque transmitted by the rotor to the rigid structure
+of the UAV. The roll and pitch are controlled through
+two pairs of housings, each consisting of five control
+surfaces, and located at the end of tail in order to
+maximize the authority of the control.
+In order to avoid coupling between the two control
+stages, the housings are located in the inner part of the
+flow (closest to the central axis of the UAV); while the
+yaw fins are located in the outer part of the flow (as far
+as possible from the central axis).
+After traveling all the history of ducted fan UAVs,
+we can conclude that there are different solutions to
+control the yaw:
+612 A Ducted Fan MAV Anti-torque Control System
+Fig. 5 The control vanes of the fantail UAV.
+e Two counter-rotating coaxial rotors with fixed
+pitch;
+Two counter-rotating coaxial rotors with variable
+pitch (cyclic and collective);
+A twisted stator placed in the flow produced by
+the rotor:
+A fixed pitch non-twisted stator placed in the flow
+produced by the rotor;
+e A non-twisted stator with variable angle of attack
+placed in the flow produced by the rotor.
+For comparison with each other and choosing the
+optimal anti-torque system for our configuration, it is
+interesting to establish criteria for comparisons. We
+chose as criteria:
+e Power consumption: Indeed, the rotating propeller
+in the duct is subjected to a drag force that contributes
+negatively to the power consumption of the UAV. It is
+necessary to take it into account and it is a disadvantage
+for the two coaxial rotors;
+s The general layout: In fact, if a mechanism is
+needed for the anti-torque system, it requires
+maintenance costs and adds complexity to the complete
+design of the UAV;
+The control: A judicious choice of the anti-torque
+system would decouple the yaw control from pitch and
+roll control. It significantly facilitates the UAV flight
+control.
+In light of this, we have chosen a non-twisted stator
+with variable camber. It will be detailed in the
+corresponding section.
+3. General Layout
+Fig. 6 shows a cutaway view of the MAV unveiling
+its major components. The rotor is mounted on a
+permanent magnet brushless motor fixed in a solid
+ABS (acrylonitrile butadiene styrene) housing made
+Fig. 6 A cutaway view of the ULB MAV.
+via rapid prototyping. On this block, the flight control
+systems and payload are mounted, as well as a
+protective shell forming the centre fuselage and duct
+suspension rods. Each rod is bolted in an ABS housing,
+clamped between two carbon fiber rings. These rings
+assure structural rigidity while offering sufficient space
+in between to install the LiPo (lithium-polymer)
+batteries. A carbon fiber skirt forms the duct and is
+fixed on plastic ribs having the requested duct
+aerodynamic profile. Note that most components are
+actually off-the-shelf components in order to reduce
+cost and development time.
+4. Control
+After the rotor, there are two stages to control the
+MAY (Fig. 7). To enable control during hover and low
+speed flight, all control vanes used on the MAV are
+placed in the flow produced by the rotor into the duct.
+Yaw control is achieved by the first stage. Named
+stator composed of four variable camber blades of
+which the primary function, is the compensation of
+motor torque. These “anti-torque” blades are installed
+in the duct at a predetermined angle with respect to the
+vertical axis of symmetry, producing a lift force and
+thus torque commensurate with rotor rotational speed
+￡,. This allows using a single rotor without having to
+make excessive control with control vanes of the UAV
+A Ducted Fan MAV Anti-torque Control System 613
+Fig. 7 The two-stage control of the ULB MAV.
+and definitively separates the yaw control from the rol
+and pitch control.
+Roll and pitch control (or lateral and longitudinal
+control) is provided by the second stage. A quadrant
+composed of two pairs of housings installed below the
+anti-torque blades. Each housing contains two blades.
+One pair ofhousings have a rotation axis in the vertical
+plane containing the longitudinal control axis of the
+MAV; and another pair have a rotation axe in the
+vertical plane through the platform’s lateral control
+axis. This configuration eases the flight control
+algorithms by avoiding cross-coupling effects between
+pitch and roll. The blades have variable angle of
+incidence and are directly positioned by servomotors
+installed in the centre fuselage.
+In this paper, we will shine the light on the first stage
+with anti-torque blades. For this, we need to study the
+aerodynamic interactions between the anti-torque
+blades, the duct and the rotor in wind tunnel tests and in
+CFD (computational fluid dynamics) with some simple
+program such as Xfoil, Xrotor and DFDC or a more
+powerful program such as FINE/TurboTM.
+5. Duct
+The duct design is inspired by two NACA (the
+forerunner to NASA) studies [6, 7] in the ducted fan
+domain. The duct is composed of three parts:
+e A toroidal part;
+￠ A cylindrical part;
+e A divergent part.
+Fig. 8 represents a section view of the duct where
+you can easily see the three parts. The maximum value
+Fig. 8 Cross section of the duct.
+for the rotor is fixed at 40 cm and the maximum height
+is fixed at 30 cm to have a UAV that is compact and
+with a great MTOW (maximum take-off weight).
+5.1 Toroidal Part
+The air intake is toroidal. This air inlet performs better
+than the classic airfoils leading edge at low angles
+between the plane of the disc rotor and wind speed,
+between 90° and 45°. In addition, the study of NACA
+has demonstrated its effectiveness and this geometry is
+easy to implement. The study of NACA showed that
+the ideal value of the torus radius (rzp) is given using
+the following relation:
+a stall appears on the surface of the air intake, causing a
+loss of the lift provided by the duct. In contrast, the
+coefficient of merit does not increase for higher values.
+5.2 Cylindrical Part
+The accelerated air in the air inlet area then passes
+through a constant section in which the rotor is placed
+and the first control stage (the stator). This section
+serves also to support the stator blades.
+In this way, the accelerated flow does not directly
+meet the adverse pressure gradient and is first
+straightened by the stator. Also, the space between the
+blade and the shroud is constant.
+The result of Eq. (3) and the UAV maximum size set
+the maximum allowable duct diameter. The maximum
+diameter ofthe duct, at the air inlet, is
+D, + 4 x (0.06 D,) = 49.6 cm 4)
+614 ' A Ducted Fan MAV Anti-torque Control System
+3.3 Divergent Part
+The flow then passes through a diverging part with a
+linear slope so as to maximize the air mass flow by
+slowing the flow. The opening degree of the cone can
+significantly increase the performance of the UAV
+until the adverse pressure gradient is too high and
+causes the stall. In reality, the parameter quantifying
+the performance of the UAV is the ratio between the
+section of the rotor and the lower section of the duct: z
+It depends on the total height of the diffuser and its
+opening angle.
+Studies have shown that a ratio around 1.2 was
+optimum.
+In our case, considering a diffuser height of about
+220 mm, this means a slope in the diffuser of 6° and
+therefore an opening angle of the cone of 12°.
+The outer face of the duct consists of a curve tangent
+to the torus and showing no discontinuity.
+5.4 Partial Conclusions
+The shroud protects the relative wind of the rotor to
+reduce the negative lift on it. The UAV is more robust
+and can eventually be caught with hands in hover
+without risk.
+The relationship between the output surface of the
+shroud and the area covered by the rotor is greater than
+one and therefore gives rise to a diverging duct. This
+divergence limits the contraction of the air tube at the
+exit of the rotor and thus increases the available thrust.
+Also, the proximity of the blade tip to the fairing
+eliminates edge effects and therefore reduces the
+losses.
+We clearly see in Fig. 9 (extracted from wind tunnel
+tests) that the duct behaves like an airplane wing.
+Indeed, the shape of the curve Cu(a) is the same as for a
+wing. Moreover, the stall zone of the duct that is to
+around 15° without rotor is shifted around 40° with the
+rotor.
+6. Propeller
+Actually, the propeller is a conventional model aircraft
+′。薯蠢兰蓦′〉32薹马噱摹鏖e.羹′5蠡H瞒FR“玟『〉、′′`-"}′一.`二蓦戛
+Angle of attack (*)
+Fig. 9 Influence of rotor on total duct lift coefficient.
+propeller built by the German company Menz in beech
+wood. It would have been better to optimize the
+propeller and build a specific one for this MAV.
+However, due to time constraints and to continue with
+the overall design, we currently use the most
+appropriate off-the-shelf propeller on the prototype and
+the numerical calculations.
+cm in diameter present on the market, the propeller
+chosen is the one which provided the biggest lift with
+the least power consumption, so the Menz Propeller
+16/8. This propeller gives a thrust of 45 N with the duct
+(and 35 N without the duct). To obtain an accurate 3D
+model of this propeller (Fig. 10), a 3D scan was
+performed and we clearly observe on the 3D model that
+the airfoil of the propeller is a Clarck Y and we can
+easily obtain the polar of this profile with Xfoil (Fig. 11).
+Xfoil is an MIT program created by Mark Drela that
+is used to design and to analyze subsonic isolated
+airfoils [8].
+The polar curves are used to determine the
+characteristics of a profile and are useful for comparing
+the profiles with each other rather than defining their
+accurate performance because they have not always
+been precisely established (e.g., in our case, the polar
+are numerically calculated).
+We can deduce from the polar curves the following
+points, seen in Fig. 12:
+A Ducted Fan MAV Anti-torque Control System 615
+propeller.
+1.5
+numbers (from Xfoil).
+Fig. 12 Characteristic points deduced from the polar curve
+for Re = 100,000.
+e Point A: point of zero lift at the intersection of the
+polar axis and the Cd This provided us the zero lift
+drag;
+sPoint B: point of minimum drag, determined with
+the vertical tangent to the curve;
+s Point C: point of maximum sharpness, determined
+with the tangent to the curve that passes through the
+origin, the point at which one has the greatest ratio
+CJC;
+e Point D: point of minimum falling speed
+determined by calculating the minimum of (CA/CP);
+s Point E: point of maximum lift, determined with
+the horizontal tangent to the curve;
+s Point F: stall point.
+All these characteristics of the propeller are used to
+perform the numerical calculations.
+Two curves are shown in Fig. 13 corresponding to
+two different configurations, distinguished by the tip
+gap. This tip gap represents the distance between the
+end of the propeller and the duct and greatly influences
+the performance of the rotor, both in terms of sound
+and energy. The calculations were performed for a
+distance of 8 mm and 1 mm. The presence of this gap
+between the rotor and the shroud is a source of energy
+loss. Recirculation is formed between the upper and
+lower surface, and causes the appearance of vortices.
+The losses caused by them decrease simultaneously
+with the tip gap decreases.
+Indeed, if this distance is reduced, the intensity of the
+blade tip vortex and losses associated with the vorticity
+are increased. According to Refs. [9-11], the ideal
+distance is less than 1% of the rotor radius, in our case
+less than 2 mm.
+7. Anti-torque Blades
+In order to properly size the anti-torque system, it is
+critical to know the direction of flow at the output of
+the rotor (Fig. 14).
+The graph shows that our propeller causes a large
+change in the angle of incidence of the airflow induced
+by the rotor (of about 15° between the tip of the blade
+and the hub), which would cause stall in some locations
+on the stator and would indicate that the flow of
+incoming air on the second stage is very disturbed. We
+have no aerodynamic knowledge on the quadrant of
+vanes and therefore no information about the possible
+impact of a disrupted airflow over it. Nevertheless, one
+can anticipate that the impact will be negative on the
+control of the UAV. Optimizing the rotor by providing
+an appropriate twist would be a solution for this
+problem.
+616 A Ducted Fan MAV Anti-torque Control System
+the anti-torque blades.
+The stator is provided with four blades with a
+symmetric profile NACA0012. Placed directly in the
+rotor flow, a lift is created on the fins, thus inducing a
+torque around the axis of rotation of the rotor, the yaw
+axis of the UAV. The role of the stator is to provide a
+control on this axis. The other use of the anti-torque
+blades is the connection between the central duct and
+the fuselage and the stiffening of the whole structure.
+So it is necessary to have a fixed part on the blades. The
+blades are provided with movable trailing edge flaps
+(Fig. 15). The flaps can change the camber of the wing
+in order to change the intensity of the moment created
+by the stator around the axis. It is set in motion by way
+of a servomotor, placed in a housing specially provided
+for this purpose in the engine block.
+Several parameters are to be discussed.
+flaps.
+First, the choice of the profile is a determining factor.
+On the prototype, after comparing different profiles,
+we chose a symmetric profile, the NACA0012. Even if
+they produce less lift than some non-symmetric
+profiles, they have no pitching moment. This is
+significant with regard to the difficult control in pitch
+and roll.
+The second parameter to take into account is the
+pitch angle. For different flight situations, stabilizing
+yaw must be guaranteed and we have determined the
+velocity distribution at the exit of the rotor by
+numerical simulations. The numerical results show that
+an angle of incidence between 5° and 10° seems the
+most appropriate. Due to movable trailing edge flaps,
+the blades can produce a lift force commensurate with
+rotor rotational speed ￡2, to exactly compensate the
+torque and allow the use of a single rotor without
+having to make excessive regulation with control vanes
+of the UAV and definitively separates the yaw control
+of the roll and pitch control.
+Finally, we must pay attention to the chord and the
+number of blades. We only know that the intensity
+provided by the anti-torque system increases with the
+chord and the number of blades. It is appropriate to
+limit the interference flow between the blades
+themselves, but also for the control blades situated
+downstream. The latter provide stability in pitch and
+roll. The number ofanti-torque blades will therefore be
+A Ducted Fan MAV Anti-torque Control System 617
+a compromise. It was set at four on the assembled
+model. Concerning the chord, the limiting factor is the
+total height of the duct that should not become too large.
+The blades must have the smallest chord possible while
+still being able to compensate for the torque. We have
+chosen a chord of 8 cm with a 2 cm trailing edge flap.
+Note moreover that the anti-torque blades also cancel
+the effect of vorticity due to rotation of the propeller.
+Thus, after the stator, the flow is no longer swirling.
+8. Conclusions
+After the first version of the ULB-designed MAY
+was built, the first flight tests took place. Many
+attempts were undertaken, leading to the first
+controlled flight of the MAV on May 8, 2010.
+Initially, a single off-the-shelf gyroscope for yaw
+control was used. Tests have shown that the control
+vanes were effective enough to allow the UAV to move
+in the horizontal plane. But it is impossible to control
+the UAV with high-level orders. However, the yaw
+control works perfectly, which validates the
+effectiveness of the stators with variable camber.
+Two identical off-the-shelf gyroscopes have been
+added in the center fuselage in order to stabilize the
+UAV on its three axes. Stabilized as well, the UAV
+could take off and reach an altitude of 3-4 m. It is very
+difficult to control the UAV in this configuration in
+flight because the gyroscopes operate in open loop. In
+order to improve the stability of the UAV and to be able
+to control it with the radio control, we should add a
+control loop on each gyroscope.
+From full-scale wind tunnel tests, one recorded the
+aerodynamic forces and moments of a ducted rotor
+MAV and this for several free stream wind speed
+magnitudes and angles of attack. Although the
+measurements were affected by varying systematic
+errors, post-treatment still allowed establishing
+reasonable speed, power and endurance envelopes.
+Nevertheless, future wind tunnel tests will be required
+using a more suited acquisition system, which will
+remove some doubtful results necessary to complete
+assessment of the flight envelope.
+Acknowledgments
+The authors would like to recognize and thank Frank
+Buysschaert, Jérome Sans, Frédérique Pomirski, Matthew
+Peavy and Greg Dimitriadis for their support and help.
+A part of this work was realized in the frame of the
+research project SARAH-LE that is funded by the
+DGO6. Our special thanks to this organization of
+Wallonia.

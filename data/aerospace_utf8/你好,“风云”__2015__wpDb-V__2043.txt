@@ -1,0 +1,422 @@
+你好,“风云”
+我国长征三号运载火箭6月25日成功发射了风云二号地球静止轨道气象卫星。你想对这颗高挂于地球赤道上空35800公里的气象卫星有更多了解吗?那就和我一起走近它。风云二号气象卫星的本领可不小。卫星载有三通道(可见光、红外和水气光谱特性通道)扫描辐射计,可以每半小时获取一幅覆盖三分之一地球的全景云图,也可根据气象观测的需要,由地面控制卫星,对指定区域进行机动观测。其中,利用风云二号卫星可见光通道,可以得到白天云和地表反射的太
+
+静止气象卫星 风云二号卫星 静止轨道气象卫星 运载火箭 光谱特性 扫描辐射计 三通道 气象观测 地球 地面控制  
+
+thermal analysis
+1 Introduction
+After fusion welding, two separate parts are joined by the
+melting and subsequent solidification of adjacent areas. Heat
+flow during welding not only controls the size of the fusion,
+but also affects the properties of the weldment. The tem-
+perature distribution within weldment plays an important
+called bead [3]. In order to utilize these principles, some
+means of controlling the power (voltage and current) is
+essential. However, the voltage is governed by the arc length
+which in turn depends on the electrode diameter. The
+selection of current and voltage is according to the size of the
+work piece and the position to be welded.
+The quality of weld is determined by weld bead geometry
+parameters which depend on the input process parameters.
+Therefore, choosing an appropriate set of welding parame-
+ters becomes one of the most important tasks in welding
+process. Tham et al. [4] investigated the correlation between
+welding parameters (arc voltage, welding current and
+welding speed) and bead geometry of 3F fillet joint welded in
+downhill position by GMAW. The consumable was ER70S-
+6 1.2 mm solid wire and shielded by carbon dioxide. Artic-
+ulated welding robot performed a welding of 6 mm carbon
+steel T-joint. Mathematical models and calculator were
+developed to display the values of weld bead geometry for
+J YQlUV vl willdllly pal alice diiu vice versa. 王 e ucvialion
+weld pool geometry and the dimensions calculated from a
+angle, and the output process parameters were weld bead
+width, reinforcement and depth of penetration. The material
+used for experiment was 316L (N) of 8 mm thickness, and
+the fller wire was in same grade of 1.2 mm diameter. The
+results were fed to the ANN algorithm for establishing a
+relationship between the input and the output parameters.
+The results were then embedded into the PSO algorithm
+which optimized the process parameters. Rao et al. [7] used
+Taguchi experimental design to develop the mathematical
+models that correlated welding process parameters to weld
+bead geometry with experimental investigation using
+regression analysis. Five process parameters such as wire
+the form of 60 mm wide bar. Ganjigatti et al. [9] employed
+base material. Three linear regression analysis approaches
+and one non-linear regression analysis approach were
+weldment of aluminum foam plates of 10 mm thickness.
+Eight selected control factors were: type of filler material,
+the welding strength predicted by the ANN model was better
+than that based on PSO used by MRA. Malviya and Pratihar
+[12] cartied out both forward and reverse mappings of MIG
+welding process by tuning in the neural networks. The chosen
+input parameters were welding speed, welding voltage, wire
+feed rate, gas flow rate, nozzle-to-plate distance, torch angle,
+and the responses were Hg, Wg and Pg. A mild steel plate of
+8 mm thickness was used. Four approaches were developed
+and their performances were compared. In addition, literatures
+review on the application of experiment design, evolutionary
+algorithm and computational networks had been made by
+It is observed from the literatures that previously
+reseatchers used different input process parameters like
+open circuit voltage, welding current, wire feed rate,
+welding speed, nozzle-to-plate distance, work piece thick-
+ness, pulse frequency, gas flow rate, torch angle, etc., and
+investigation on effects of welding process parameters on
+AISI321 steel is thus very essential. In order to obtain good
+weld bead, proper input welding process parameters should
+be selected to optimize the economics of the welding
+models for bead geometry parameters and investigates the
+effects of input process parameters of GMAW process on
+bead geometry, mechanical properties such as hardness and
+microstructures in various zones of the weldment. In
+堡 Springer
+EEHAQIDIVIIL。木E人东EE东林河ULI工野野一aL]
+weldments using ANSYS simulation software are carried
+out.
+2 Methodology
+2.1 GMAW machine
+The experiments are carried out on a 3-phase, 50 Hz fre-
+quency, 300 A, forced air cooling semiautomatic machine
+manufactured by ATE, Pune, India. The torch is fixed to the
+frame at 90° to the work piece. The work piece on trolley
+moves in perfect path and the gas flow rate, wire feed rate,
+welding voltage are adjusted on the machine. The variation in
+the voltage automatically changes the current. Hence, current
+is not considered as an input parameter in the experiments.
+Therefore, four input process parameters, viz: welding volt-
+age, wire feed rate, gas flow rate and welding speed have
+infuence on the weld bead geometry, hardness and micro-
+structure. Figure 1 shows the GMAW machine setup.
+2.2 AISI321 grade steel and sample preparation
+The AISI321 is a stabilized austenite stainless steel which
+is similar to AISI304, however the content of titanium is
+five times the carbon, which reduces or prevents carbide
+precipitation during welding. It has excellent resistance to
+oxidation and corrosion, at the same time possesses good
+Fig. 1 GMAW machine setup
+Table 1 Chemical composition of material
+Composition/%
+C Si Mn S P Cr Ni Mo Co Ti V Cu Nu Fe
+The AISI321 steel plate pieces of 150 mm x 120 mm x
+Figure 2 shows a pair of specimens ready to weld.
+2.3 Selection of process parameter and design matrix
+Process parameters play a very important role in deter-
+mining good weld bead geometry [14]. Therefore, proper
+selection of welding parameters is required. Different
+welding parameters to be selected are welding voltage,
+welding speed, wire feed rate, gas fow rate, and the output
+responses are Hg, Wg and Py. Moreover, the weld bead
+geometry will influence the mechanical properties of the
+weldment. Therefore, mechanical properties such as hard-
+ness are also considered as an output parameter. The input
+and output process parameters are given in Fig. 3.
+The four process parameters are at five levels. These
+controllable process parameters are identified based on
+their effects on weld bead geometry and good appearance
+of the weld bead. It is desirable to have five minimum
+levels of process parameters to refect the true behavior of
+response parameters. The working range of each process
+parameter is chosen by taking various trials for a smooth
+Fig. 2 Pair of specimens
+Fig. 3 Input and output process parameters of GMAW
+appearance of weld bead without any visible defect and
+not appear. The upper limits of parameters are coded as 十 2
+and the lower limits are coded as 一 2. The coded values for
+intermediate ranges are calculated using the following
+equation [15]:
+where x; the required coded value of a parameter x, x any
+eter. The levels of the individual process parameters are
+2.4 Experimental results
+Table 2 Process parameters and their values
+Process parameters Notation Limits
+-2 “ 1 0 +1 +2
+卫 祥 DIS “ _K-CIITaL COIQPOSIIC aesign matrix
+1一1一1一1一1
+2一1一1一11
+3一1一11一1
+4一1一111
+5一11一1一1
+6一11一11
+了一111一1
+8 一 1 1 1 1
+91一1一1一1!
+10 1 一 1 一 1 1
+11 1 一 1 1 一 1
+12 1 一 1 1 1
+13 1 1 一 1 一 1
+14 1 1 一 1 1
+15 1 1 1 一 1
+16 1 1 1 1
+17 一 2 0 0 0
+18 2 0 0 0
+19 0 一 2 0 0
+20 0 2 0 0
+21 0 0 一 2 0
+22 0 0 2 0
+23 0 0 0 一 2
+24 0 0 0 2
+25 0 0 0 0
+26 0 0 0 0
+27 0 0 0 0
+28 0 0 0 0
+material filled in minimum passes. Experiments are carried
+out under the shield of a mixture of argon and oxygen gas.
+2.5 Development of mathematical models
+Fig. 4 Samples after the experimental
+Table 4 Experimental results
+Expt. No. Hg/mm We/mm Pp/mm Hardness/HV
+1 3.05 10.41 8.41 172
+2 3.43 11.16 9.95 178
+3 3.31 11.81 8.96 175
+4 4.16 11.92 8.34 173
+5 1.86 11.07 7.21 174
+6 2.84 10.31 8.26 176
+7 2.10 10.13 8.60 177
+8 3.18 11.22 8.97 175
+9 3.65 12.91 8.95 174
+10 3.79 10.87 8.94 173
+11 4.76 11.96 8.75 175
+12 3.66 13.31 8.12 172
+13 2.84 12.55 7.06 175
+14 2.37 11.31 8.67 177
+15 4.81 11.85 8.63 174
+16 2.83 11.80 8.99 174
+17 2.73 10.88 7.85 176
+18 3.03 10.96 8.76 172
+19 4.34 12.69 8.54 176
+20 2.30 10.40 7.81 174
+21 1.92 10.16 7.76 177
+22 4.83 11.97 9.07 173
+23 2.51 12.11 8.71 175
+24 3.67 13.15 8.97 172
+25 2.41 11.10 8.26 178
+26 2.49 11.65 8.28 176
+27 2.56 11.48 8.87 177
+28 247 11.94 8.66 175
+4) Springer
+showing the relationships between the output responses
+y (Hg, Wp and Pp) and input parameters x (welding volt-
+age, wire feed rate, welding speed and gas flow rate).
+The second order response surface model for the four
+selected parameters is given by the equation [17]:
+For four parameters, the selected polynomial could be
+expressed as: -
++ by VG 十 054FG,
+where po the free term of regression equation, by, b2, “ ,btk
+the linear terms, pll, ba, - … ,bux the quadratic terms and
+渺l2，Z)】3， 江 制 ,b′(-l/【 the interaction terms.
+To test the goodness of fit of the developed models,
+adequacy is determined by the analysis of variance tech-
+nigue (ANOVA) to evaluate the statistical signifcance of
+the fitted models and variables involved therein for
+STAT12 statistical software [18] and given in from Table 5
+to Table 7.
+One more criterion that is commonly used to illustrate
+Fig. 5 Sectional views of welded samples
+Table 5 Significant and insignificant data for Hp
+Effects Coefficients Standard error P-value Remarks
+Constant 2.483 0.242 0.000 Significant
+F 0.224 0.198 0.041 Significant
+E —0.461 0.198 0.000 Significant
+Y 0.450 0.198 0.001 Significant
+G 0.092 0.198 0.071 Significant
+F 0.120 0.396 0247 Not significant
+E 0.230 0.396 0.037 Signifcant
+V 0.244 0.396 0.028 Significant
+G? 0.172 0.396 0.105 Not significant
+FS 0.060 0.485 0.629 Not significant
+sv 0.065 0.485 0.601 Not significant
+SG —0.041 0.485 0.739 Not significant
+FV 0.115 0.485 0.360 Not significant
+VG —0.136 0.485 0.281 Not significant
+FG 一 0.419 0.485 0.004 Significant
+Table 6 Significant and insignificant data for Wp
+Effects Coefficients Standard error P-value Remarks
+Constant 11.543 0.317 0.000 Significant
+F 0.362 0.259 0.015 Significant
+5 一 0.362 0.259 0.015 Significant
+Y 0.293 0.259 0.041 Significant
+G 0.054 0.259 0.085 Significant
+FP —0.156 0.518 0249 Not significant
+3 0.000 0.518 0.999 Not significant
+叹 -0.120 0.518 0.371 Not significant
+G? 0.271 0.518 0.056 Significant
+FS 0.064 0.634 0.691 Not significant
+Sv 一 0.243 0.634 0.149 Not significant
+SG 一 0.071 0.634 0.663 Not significant
+FV —0.053 0.634 0.743 Not significant
+VG 0.362 0.634 0.040 Significant
+FG 一 0.198 0.634 0.233 Not significant
+Table 7 Significant and insignificant data for Pg
+Effects Coefficients Standard error P-value Remarks
+Constant 8.517 0.185 0.000 Signifcant
+F 0.051 0.151 0.051 Significant
+S 一 0.229 0.151 0.010 Signifcant
+Y 0.189 0.151 0.027 Signifcant
+G 0.175 0.151 0.038 Significant
+FP —0.034 0.302 0.663 Not significant
+E —0.066 0.302 0.397 Not significant
+Vv ~0.006 0.302 0936 Not significant
+G 0.100 0.302 0.208 Not significant
+FS 0.076 0.370 0.428 Not significant
+NZ 0.379 0.370 0.001 Significant
+SG 0.194 0.370 0.056 Significant
+FV —0.011 0.370 0.910 Not significant
+VG 一 0.294 0.370 0.007 Significant
+FG 一 0.093 0.370 0.507 Not significant
+Pg= 8.517+0.051F — 0.2295+4-0.189V+0.175G
+Wp= 11.543+0.362F — 0.3625+0.293V+0.054G
+Pp = —51.174 + 0.205F 一 3.6825 十 2.832V + 7.351G
+Hg = 77.941 + 31.047F — 0.7155 — 10.294V + 4.279G
+Wg = 292.436 + 1.448F — 0.0915 — 6.221V — 21.865G
+十 0.317G2 + 0.362VG. (9)
+Bead geometry Sum of the square Degree 圩 ecdoum
+Keaidual Regression
+Py 7.199 7.854 7 14
+Wa 13.279 15.878 6 14
+Hp 15.628 17.154 7 14
+Tabulated values of F: Fogs(7,14 = 2.76, Foos(6,1 千 = 2.81
+and the verification is satisfactory.
+parameters, and microstructure
+quick analyses.
+3.1 Direct effects of input process parameters
+3.1.1 Effect of process parameters on Wy
+Table 9 Result of confrmation test
+上
+Expt. No. Measured values Predicted values Errot/%
+一“一一一一e
+Hp Ws Py Hp
+““无、
+-_—
+square Fatic P  R%  Adjested R1
+Regression
+9.561 1.028 4.102 0008 81 61
+1.134 2.213 281 0035 75 48
+1.225 2.233 5217 0003 84 68
+reduces.
+3.1.2 Effect of process parameters on Hy
+deposit less molten metal above the base metal and hence
+decreases the Hp.
+Ws Pp Hyg Wp Py
+3.1.3 Effect of process parameters on Py
+It is found from Fig. 8 that Pp is indirectly proportional to
+S and directly proportional to V, G and F. Pg decreases
+with the increase in welding speed because the time during
+which the arc force is allowed to penetrate into the mate-
+rial’s surface decreases. Pg increases with the increase in
+G which fills the material into the weld bead groove and
+gives more penetration inside the groove. Increase in V and
+F will deposit more molten metal inside the groove and
+will increase the Pg.
+3.1.4 Effect of process parameters on hardness
+Vickers hardness tests are conducted at different zones of
+the weldment as per ASTM E 384 standards. These include
+weld zone, heat affected zone (HAZ) and base metal. The
+average values are calculated and given in Table 4. The
+average values obtained using Vickers hardness test after
+experimental are in the range of standard values of the
+hardness of the AISI 321 steel.
+From Fig. 9 it is observed that with the increases in V, F,
+G and the value of hardness increases. Hardness decreases
+with the increasing of 3. The hardness in weld zone and
+HAZ is due to over precipitation and increased carbon
+hardness decreases at a distance away from HAZ.
+3.2 Joint effects of input process parameters
+3.2.1 Joint effect of wire feed rate and gas flow rate on Hg
+Figure 10 shows the joint effect of F and G on Hg. It is
+depicted in Fig. 10, which shows that Hy decreases with
+increase in F and decrease in G.
+3.2.2 Joint effect of welding speed and gas flow rate on Pg
+Figure 11 shows the joint effect of 5 and G on Pg. It is
+observed that Pg increases slightly with the increase in gas
+flow rate for all levels of welding speed but it is also evi-
+dent that Pp slightly decreases with the increase in welding
+speed for all levels of gas fow rate.
+3.2.3 Joint effect of welding speed and voltage on Py
+Figure 12 shows the joint effect of S and V on Pg. It is clear
+from Fig. 12 that Pg remains the same with the increase in
+Fig. 10 Interactive surface plot of Hy versus F and G
+乙 Springer
+Fig. 11 Interaction surface plot of Pg versus S and G
+Fig. 12 Interaction surface plot of Pg versus S and V
+of welding voltage.
+on Pg
+weight of metal deposited per unit bead length.
+Fig. 13 Interaction surface plot of Pg versus V and G
+?) Springer
+Fig. 14 Interaction surface plot of Wy versus V and G
+3.2.5 Joint effect of welding voltage and gas flow rate
+on Wp
+decrease in G for all levels of V.
+on microstructure
+The microstructures at the base metal, weld zone and HAZ
+successive depositions [20]. The structure is refined with a
+joints are filled with two passes and the multipass welded
+shown in Fig. 15. It is observed that base metal structure
+side due to the transient effects. The weld zone shows
+typical cast structure and directionally solidified columnar
+dendrites are observed.
+4 Transient thermal of AISI 321 weldment
+that are used for components design. Heat transfers are
+tlVided nto three basic modes viz: conaucuon, convecuon
+and radiation. Conduction refers to the transfer of heat
+where the fluid is moving. It can be forced when one fluid
+tities. Radiation is the transfer of heat either through a
+a non-linear formulation.
+The numerical study of thermally induced residual stres-
+Temperature/K
+373 473 573 673 773 873
+element is also to be analyzed structurally, the element
+Fig. 16b. The thermal boundary condition means the tem-
+perature difference at the two points viz: at the middle of the
+weldment and at the end of the weldment. The temperature at
+the middle part is assumed as 1,425 °C (i.e., melting point
+environment, i.e., SOLID70 element is converted into
+the y and z directions and allowed along the x direction when
+Therefore, temperature distribution at four different time
+steps viz: 10 s, 58 s, 202 s and 1,000 s due to conduction
+堕 Springer
+stresses along the z direction shown in Fig. 20c,the
+AQ Springer
+highest peak values of compressive stresses are located at
+the top surface of the weld bead of the weldment. The
+von-Mises equivalent stress values are higher at weld
+bead and there is a small reduction in the maximum value
+shown in Fig. 20d.
+5 Conclusions
+thickness using GMAW process.
+variables involved as the response parameters are tested
+by ANOVA. In addition, the lack-of-fit test is used and
+F-ratios are compared with the tabulated values. These
+show that the developed models are reasonably accurate.
+The effects of process parameters on bead geometry
+parameters and mechanical properties like hardness of
+the weldment show that proper selection of all the four
+input parameters gives good weld bead geometry.
+(ii) Microstructures at three different zones viz: i) at the
+base metal; ii) at the HAZ and iii) at the weld zone. The
+transverse sections of the weldment show no weld
+defects and the weld joint shows acceptable fusion.
+Metal flow in the weld zone and away from the weld
+zone is acceptable. Microstructure at the base metal
+shows uniform grain size distribution. Polygonal and
+equiaxed white grains of ferrite occupy about 99.5 %
+volume and the rest dark phases are resolved pearlite.
+rolling direction are also observed. The coarse grain
+structure on one side and cast structure on the other side
+with transient effect are observed in HAZ region. The
+weld zone shows a typical cast structure and the
+directionally solidified columnar dendrites.
+(ili) The FEAs are applied to find residual stresses and
+corresponding von-Mises stresses. Transient ther-
+mal analysis gives time evolutions of the temper-
+ature and residual stress distribution due to
+conduction and convection with time variation. It
+is observed that high temperature exits in the
+welded zone and temperature is distributed along
+the length of the weldment in conduction. The
+convection takes place in the middle part of the
+weldment.
+| Springer

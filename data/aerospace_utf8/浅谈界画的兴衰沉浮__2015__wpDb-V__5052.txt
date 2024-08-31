@@ -1,0 +1,397 @@
+浅谈界画的兴衰沉浮
+界画是随山水画发展而派生的一科，主要是画与山水画中有关的亭台楼阁、舟船车舆。其特点是，比例切实、工整细致、真真切切地再现所画对象。在中国画中，界画是最多保留当时生活原貌的画种，其意义突破了审美的范畴。研究界画不仅可以临习技法，而且可以探寻社会民情，领略文化习尚，陶冶审美情操。
+
+沉浮 山水画 中国画 审美  
+
+1 Introduction
+Landsat Data Continuity Mission ( LDCM) is one of the
+world’s most enduring earth-observation missions; it
+holds one of the largest collections of images used in
+remote-sensing applications. In the Landsat 7 satellite,
+there is a very large amount of data loss caused by de-
+fective hardware in acquiring images with the onboard
+ETM + sensor. This sensing instrument forms images
+with a small array of sensors that sweeps back and forth
+across its flight path, serving as a platform while flying
+over the earth’s surface. This whisk-broom style sensor
+has a functioning mechanism known as Scan-Line Cor-
+rector (SLC), which keeps the whisk-broom module a-
+ligned with the cross-track motion of the satellite’s
+ground track or 薹〕E!t}l〔】〕. The Landsat 7 SLC failed on
+May 31, 2003 and caused about 22% pixels un-
+scanned in these im吕lg【=土s〔2〕 . Additionally, the TM sen-
+sor onboard Landsat 5 has been suspended since No-
+vember 2011. The next generation of LDCM, namely
+Received:2014-01-08; Acceptd;2014-02-15
+Corresponding author; Aghamohamadnia M, E-mail; maghamohamadnia
+@ ut. ac. ir
+Landsat 8, was scheduled to be launched in 2013
+(USGS). Since a very long period of this continuing
+program has gaps and some ETM+ data has been lost
+(since 2003), seeking improvement of the acquired
+images is necessary. Several approaches to estimate the
+missing values have been proposed in the past; they
+may be categorized according to the use of the tech-
+niques and the way they approach the phenomena:
+Basic and computationally-cheap image processing
+methods; outsource auxiliary data-set utilization; com-
+bination of various methods and stochastic-related im-
+age processing techniques; and selective ,customized ,
+and precise approaches.
+Soon after Landsat 7 SLC failure, NASA and USGS
+published a report proposing some approaches to par-
+tially recover the un-scanned pixels. The proposed al-
+gorithms basically rely on filtering kernels, and thus
+the use of mean and variance of pixel values in the en-
+compassing window as estimated pixel values in various
+SLC-off and SLC-on cases. Scramuzza et al[i presen-
+ted these methods,which are called global linear histo-
+gram matching ( GLHM) and localized linear histogram
+matching ( LLHM ) respectively. In a similar effort,
+USGS?! declared an adaptive window linear histogram
+match method ( AWLHM ) which is essentially the
+same as the method of Scramuzza et alt! in its process-
+ing algorithms, but different in window size.
+Other researchers focused on the quality of the cho-
+sen auxiliary (fill) images, which may not be Landsat
+images, shortly before or after the master image of
+ETM+ was taken. For instance, Mobasheri and Sade-
+g}li〔5〕 used data from the Indian remote sensing satel-
+lites (IRS) as filling image, whereas Boloorani et alt?
+and Chen et al!” incorporated EO-1/ALI and CBERS
+products. Roy et al’ used some much lower-resolution
+information observed bv MODIS to calculate the reflec-
+tance of the missing pixels.
+By combining various methods and stochastically re-
+lated image-processing techniques, Maxwell et al'?!
+developed a Multi-scale segmentation approach and
+Zhang et al’! and Pringle et all’ estimated gap area
+using geo-statistical techniques, of which kriging or co-
+kriging are well known. There have been efforts
+through single-source ( such as Inpainting algorithm),
+multi-source, and hybrid methods. A single-source
+method uses same-image information to fill gaps; a
+multi-source method involves more than one image for
+reconstruction; and a hybrid method combines both of
+the above approaches. There is ongoing research in the
+field of Inpainting, also aimed at reconstruction of ima-
+ges in plausible ways. Inpainting methods may be clas-
+sified according to whether they are based on PDE, ex-
+emplar Inpainting, or blocks.
+By using available data and a customized algorithm,
+Chen et al L proposed a simple but effective method,
+in which information about the adjacent similar pixels
+are utilized for estimating the missing pixels over heter-
+ogeneous areas.
+All of the above-mentioned algorithms have pros and
+cons in various applications. LLHM is good in uniform
+and semi-uniform areas, but lacks precision in dispa-
+rate and complex regions. A simple algorithm is fast to
+process large volumes of images,but its global applica-
+tions are compromised. By using a moving window, the
+estimation can be slightly improved"! . The multi-scale
+segmentation approach focuses on segments but not pix-
+el-level details, thus it is poor in recovering small and
+narrow objects, such as streams and borders!?’. The
+studying objects of small-size「“03 、
+In Inpainting methods, the multi-source gap-filling
+process cannot cope well with sharp changes between
+two images, such as between conditions of sun glint,
+snow, and cloud. In a single-source Inpainting algo-
+rithm, it takes more computational time to reconstruct a
+large area. The Neighborhood Similar Pixel Interpolator
+(NSPI) approach does provide one or more reasonably
+clear auxiliary TM or ETM+ image( s) but has several
+potential limitations,such as cloud cover,when used
+in such areas as humid tropical forest ecosystems,
+which are covered by cloud about 90 percent of time".
+In this paper, we present an algorithm which uses a
+gap-filling method with severe striping effects. It uses a
+moving neighbor-selection kernel associated with a de-
+signed morphological and geometrical selection scheme,
+and applies it to the first and second outer shields of
+every stripe. The proposed algorithm has a better link-
+age with the surrounding pixels of a striped pixel, in-
+corporates geometrical and morphological characteris-
+tics of relatively small and narrow objects in an image,
+and has better precision and accuracy than NSPI. Al-
+so, it is simpler and more whole looking than the LL-
+HM and AWLHM methods,while avoiding the com-
+plexity and computational expensiveness of Maxwell
+et al'? | Zhang et al'? and Pringle et al! 史 . Tt does not
+contradict with auxiliary data-using methods, and thus
+can be used as the core process for the above-men-
+tioned algorithms of this category. Also, it is applica-
+ble to the output of other methods without a strict need
+of the original data set, and it may be used to “resur-
+rect” the large amount of processed images in the ETM
++ archive less expensively than some complex algo-
+rithms. .
+2 Algorithm
+Although some methods have been proposed to cover
+the gaps in the ETM+ images, they do not cover all the
+gaps. This is because images are used in different ap-
+plications by different users, who are focused only on
+certain aspects according to their needs. Also, there is
+a lack of interest in improving the weaknesses of the
+make use of the many processed images already in ex-
+1stence.
+In developing a new algorithm, a trade off between
+complexity and output quality should be considered. A
+simpler method would produce less homogeneous filling
+with lower level of adherence with the original image,
+and thus would introduce more obvious stripes in the
+output image. For instance, in the methods proposed
+by Scramuzza et all31 and USGS! | we may see im-
+provements from LLHM to AWLHM. Thus, in this
+study, we tried to improve the striped images by adop-
+ting a customized approach, with steps described be-
+low.
+2.1 LLHM and AWLHM algorithms
+As a first step ,gaps are located by the LLHM method.
+Then a linear transformation from one image to another
+is found. The pixel values of the SLC-Off image to be
+filled (the“ primary scene’) can be generated by ap-
+plying a corrective gain and bias to the pixel values of
+an SLC-On image (the ‘fill scene’ ). Rather than per-
+forming a computationally expensive linear fit, the cor-
+rective gain and bias can be found by using the mean
+and standard deviations of the data. This transformation
+can be applied to the entire fill scene, giving a global
+linear histogram match. For greater precision and bet-
+ter-looking products ,the corrective gains and biases
+may be calculated with a moving window around each
+pixel in the scene. This is the basis of the localized
+linear histogram match ( LLHM) or Phase 1, method
+for gap filling in a SLC off scene of a Landsat 7 im-
+萝】[ge〔_2]. The AWLHM or Phase 2, method is an en-
+hancement of the Phase 1 algorithm,which allows us-
+ers to choose multiple scenes and to combine SLC-off
+scenes. It gives a more accurate result, but needs more
+computation time. If computational speed is more im-
+portant than statistical error,then LLHM should be
+used! 12) 。
+2. 2 Gap-filling methods
+In the second step, LLHM and AWLHM are used to
+fill a gap scene. These methods use a moving window
+on the SLC-off and SLC-on images consecutively cen-
+tering on every gap pixels, and implement linear histo-
+gram matching to find a linear transformation from one
+image to another. This method is effective in smooth
+areas, DUl laCKs Precision 11 areas WIIn complex ICX-
+tures!*’. Thus, our main purpose is to restore small
+features.
+2.3 Stitching stripes to the background image
+In SLC-off images, gaps are almost parallel. To esti-
+mate substitute values, it is reasonable to place the
+parallel values in their corresponding gap areas, be-
+cause of the relative homogeneity and smoothness in the
+background and striped areas. However, the existence
+of the border lines between these areas in the image
+gives an unpleasant view for qualitative study and inac-
+curacy for quantitative analysis. In this paper, we pro-
+pose the idea of stitch lines 《 with different degree of
+sensibility depending on the surrounding pixels) going
+through pixels of the outer shell of a stripe, from neigh-
+boring background candidate pixels to the inner neigh-
+boring pixels of the stripe. By applying these lines ac-
+cording to a statistical-similarity mechanism, it is pos-
+sible to retrieve part of the texture on the border line a-
+long the stripes. By using the stitch lines, we may a-
+void the smoothing effect of some commonly used im-
+age-processing solutions, such as local-average filte-
+ring, and highlight the lost texture instead. Whether to
+apply a stitch line to a stripe「s border pixel depends on
+the surrounding pixels of the target pixel in both the fill
+and the striped images. Also, by using this method, it
+is possible to make small and narrow objects bold and
+clear. The length of a stitch line may make some
+difference in the performance of this method. A longer
+line may incorporate more distant and irrelevant data
+and may cause greater smoothness. In this study, the
+line length is 5 pixels, or 2 on each side of the target
+pixel. The application is made firstly to the closest
+neighbors and then for the second-level expansion of
+the stitch line.
+2.4 Extraction of stripe-border pixel values by u-
+sing morphology operators
+In this step, we use reliable and original adjacent val-
+ues in the background image to estimate the unreliable
+inner pixels along the stripes. The border is between
+these two groups of pixels and we want to pass a stitch
+line through the border pixels. So, we need to extract
+the values of these border pixels first with a simple and
+fast algorithm. By using the mask layer of the ETM +
+image and the input image, the morphology operators is
+implemented according to:
+where E is extracted border image of the stripes, M is
+mask image, [ is the image itself, X is dot product op-
+erator, and 8 is morphological erosion. The Mask im-
+age is a binary image, having values of 1 in gap areas
+and zero in no-gap areas. The morphological kernel is
+a 3x3 matrix as shown in figure 1(c).
+Figure 1 Schematic view of consecutive steps in this algorithm.
+Stripe induced by (a) gap filling image, (b) Stripe
+morphological border extraction 《 stripe「s outer shell
+pixels in blue squares) , ,(e) Neighbor pixels identifi-
+cation, (d) First stage similar pixel, (e) First stage
+stitch line, (f) Second stage similar pixel, (g) Second
+and First stages stitch line.
+2.5 Stitch-line length
+In this step,we select pixels adjacent to each border
+pixel with a process based on radiometric similarity.
+There are (n+1) pixels forming the stitch line with a
+border pixel at the center. Since this center value is
+fxed and the adjacent values are selected to be propor-
+tional to this value, it is reasonable to expand this line
+starting from this value outwardly. So our first values to
+use are the adjacent values. Selection is made among
+two groups of pixels as drawn in figure 1(c) (in or-
+ange and purple colors) without involving any border-
+line pixel. After detecting candidate pixels on each
+side of the border line, the next selection is based on
+the nearest value to the center value. By this selection
+we get two new pixels shown in figure 1(d) (in green
+color) on both sides of center pixel and a stitch-line
+length of 3 pixels as shown in figure 1(e). We then re-
+iterate the previous process with center at each of the
+two adjacent pixels. In detecting candidate values of
+neighbors, the previously selected pixel values should
+not be included. The result is the addition of two more
+pixels (in yellow, Fig. 1(f)) to the stitch line, which
+has now 5 pixels and passes through the background
+adjacent pixels (Fig. 1(g)).
+2.6 Estimation of borderline pixel values
+In this last step, we form a line with a length of (2n+
+1) pixels, where n is the longitude level of the stitch
+line. We can estimate the best values for the borderline
+pixels by using the following equation with incorporated
+weights for the pixels in the stitch line.
+where X is the estimated value of borderline pixel, p; is
+the value of the i" adjacent pixel, g is the old border-
+line pixel value, n is the total number of adjacent pix-
+els on each side of the borderline pixel, Di is the dis-
+tance of a pixel from the center pixel, and more weight
+is granted to a closer pixel( Fig. 2).
+3 Test results
+3.1 Algorithm implementation
+The test data used in this study was from a single-band
+(Band 4) of a Landsat ETM + SLC-Off image of north
+Tehran in Iran acquired in 2012 (Fig.3(a) and a SLC-
+on image of exactly the same area acquired by Landsat 5
+satellite「s sensor MSS in 2002 (Fig. 3(b) ). These images
+were spatially co-registered and then imported into LLHM
+and AWLHM algorithms for gap filling.
+The calculated results are shown in figures 3( c) and
+3(d). As mentioned before, the stripes are more visi-
+ble in the result of LLHM than AWLHM. Also, the
+complexity of texture may influence the clarity of
+stripes and make them bolder.
+Figure 2 Flowchart of the first-stage algorithm on a single
+band of image
+Figure 3 (a) A SLC-off image with gaps; (b) A SLC-on
+image for the same area as (a); (￠) LLHM-
+filled image ; (d) AWLHM-filled image
+Although the resultant AWLHM image ( Fig. 3(d))
+is quite different from the imported data ( Fig. 3(a) ) ,
+a significant quantitative improvement is observable
+through statistical analysis. After this modification, the
+border pixels with new values are counted as pixels in a
+new non-striped region. It is possible to repeat this al-
+gorithm on the new borderline between new striped and
+non-striped regions to seek additional but smaller im-
+provement.
+3.1 Validation and evaluation
+To evaluate the results qualitatively and quantitatively
+to see if they have made any improvement, we used an
+intact (no gap) part of the SLC-Off scene, which has
+both urban and homogenous rural areas,with its com-
+patible fill scenes as our validation data. We also used
+an artificially masked image ( Fig. 4) to introduce
+gaps arbitrarily. Following the above-mentioned steps,
+we first filled the gaps and then stitched the border val-
+ues to the background areas. Since we knew the exact
+original pixel values, it was possible to check if the re-
+sults got better or worse. Error estimates were made by
+calculating the mean absolute difference between the
+values of pixels that existed in both the matched fill
+scene and the SLC-Off image. The result of statistical
+error estimates is given in table 1, and the percentage
+improvement in table 2.
+We have applied this algorithm separately to every
+image band of Landsat, but chose to show the result of
+Band 4,since it had higher contrast and wider histo-
+gram, which made the effect of this method more ob-
+servable.
+Figure 4 A sample patch of mask image
+Table 1 Numerical error of stripe-stitched
+according to ground-fruth data (DN values) in
+three cases; Sole ( striped image of LLHM and
+AWLHM) First (implementation of method on
+first outer border of stripes), Second (imple-
+mentation of method on second outer border of
+stripes)
+Sole First Second
+AWLHM LLHM AWLHM LLHM AWLHM LLHM
+1 1.5740 2.3069 1.4181 2.0208 1.3812 1.7823
+2 1.8637 2.6708 1.6326 2.0271 1.5787 1.8081
+3 3.2262 4.3601 2.8132 3.3572 2.6950 3.0382
+4 5.6056 12.0519 4.7983 8.6532 4.5775 7.5888
+5 4.5332 14.6587 3.9756 10.2610 3.8245 8.9168
+7 4.1036 8.5817 3.6193 6.1530 3.4890 5.4207
+Table 2 Same as table 1, but for different bands in per-
+centage
+First stage Second stage
+AWLHM LLHM AWLHM LLHM
+9.9 22.4 2.6 11.8
+12.4 24.1 33 10.8
+12.8 23.0 4. 2 9. 5
+14.4 28. 2 4.6 12.3
+12.3 30.1 3.8 13.1
+11.8 28.3 3.6 11.9
+Figure 5 shows the effects of applying this algorithm
+to the border pixels. The added values have resulted in
+magnified intensity. By comparing it to the Band 4 im-
+age, it is obvious that this method affected the complex
+urban areas more than the homogeneous rural areas.
+The quantitative validation results are given in tables
+1 and 2 and shown in figure 6, in which the horizontal
+and vertical axes show the original and estimated val-
+ues, respectively, From this figure, it is clear that, by
+using of this method, data points became less scattered
+(or the precision was improved) and more aligned with
+the identity line (or the estimated pixel values became
+closer to the real values) in general.
+Various factors may cause different degrees of errors
+in gap-filled SLC Off images. To see how this method
+functions regardless of magnitude of error before or af-
+ter the gap-filling process, we calculated relative errors
+in percentage for the different bands (from the 1* to
+the 6?) of the same Landsat image. The results are
+given in table 2.
+In this paper, we addressed a striping problem caused
+by a previous effort to compensate for SLC-Off defect,
+and proposed a simple improvement method applicable
+to the output data of LLHM and AWLHM algorithms.
+This method deals with pixels at the border line be-
+tween the striped area and its adjacent area,and de-
+velops a stitch line between these areas by assuming
+similarity of neighboring pixels. Data from band 4 were
+selected for validation tests,because the image had a
+higher contrast. Such tests and error evaluations, using
+mean absolute difference, showed both quantitative and
+qualitative improvements by this method. we can see
+how the precision was improved through this algorithm
+and how the estimated pixel values became closer to
+the real values. However, this method also introduced
+a smoothing effect at the stripe borders, due to the fact
+that we used mean estimator. However, this effect is
+negligible, because there was a selection process before
+assured the reliability of this method.
+In the future, it may be of interest to apply this
+method to study data from all the bands,or to use ima-
+ges for the same area obtained by other ancillary sen-
+sors. Also, it may be worthwhile to look into some ap-
+propriate nonlinear central estimators, both for estima-
+ting the center values of the adjacent pixels, and for
+error estimation and comparison.

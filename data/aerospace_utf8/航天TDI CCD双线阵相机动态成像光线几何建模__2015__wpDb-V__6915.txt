@@ -1,0 +1,157 @@
+航天TDI CCD双线阵相机动态成像光线几何建模
+建立精确的光线几何模型，推导地物与影像间的正反算公式是航天TDI CCD（时间延迟积分电荷耦合器件）相机动态成像仿真的关键步骤。立体测绘卫星全链路仿真以光线追迹为主线，以高精度高分辨力地表物理模型为输入源，综合考虑了大气辐射传输、光学系统成像、探测器光谱响应和相机噪声等各个环节，完成了成像过程端到端的完整分析。以可见光光学遥感相机为例，在考虑轨道进动、地球在惯性系下的岁差章动和TDI CCD拼接的情况下，完成双线阵相机动态成像光线追迹几何建模，并对模型误差源进行分析。经实验验证与分析，正视相机几何物理模型定位精度达124 m，前视相机定位精度达193 m，满足立体测绘全链路仿真的几何建模要求。
+
+几何模型 动态成像 双线阵 误差分析  
+
+Space TDI CCD Double Array Camera Light
+Dynamic Imaging Geometry Modeling
+YANG Fei", QU Hongsong'?, JIN Guang’, XIE Jinhua*,QIU Zhen’ge’
+( 1. Changchun Institute of Optics, Fine Mechanics and Physics, CAS, Changchun 130033, China;
+2. National and Local United Engineering Research Center of Small Satellite Technology, Changchun 130033, China;
+3. University of Chinese Academy of Sciences, Beijing 100049, China ;
+4. Satellite Surveying and Mapping Application Center, NASG, Beijing 100830, China;
+5. Shanghai Ocean University, Shanghai 201306, China)
+Abstract: Establishing accurate light geometry model, feature and image between the positive and negative calculate
+formula is derived, which is the key steps of space TDI CCD (charge-coupled device) time delay integral camera dynamic
+imaging simulation. Stereo mapping satellite link simulation based on ray tracing all the main line, with high precision
+high resolution surface physical model for the input source, considering the atmospheric radiation transmission, optical
+system imaging spectral response,detectors and camera noise and so on each link,complete the imaging process
+end-to-end complete analysis. In visible light optical remote sensing camera, for example, considering the precession of
+orbit, the earth under the inertial system of precession and nutation TDI CCD stitching, under the condition of complete
+double array camera ray tracing dynamic imaging geometry
+modeling, and the model error sources are analyzed. Verified
+by experiment and analysis, physical model to face the camera geometry precision of 124 m, forward-looking camera
+positioning -accuracy of 193 m, double line array camera is high precision, which satisfies the requirement of the
+Py WULUY, BSULENEULIC LHUUCL, Uyllaliiv Llaglily, UDULE dilay, TI1UL allalydly
+0 51 言
+高分辨力立体测绘卫星成像仿真为卫星的技术指标论证、试验测试、在轨运行评价以及故障模拟分析
+等提供了坚实的技术基础。立体测绘卫星成像过程非常复杂,若采用数值模拟技术路线,则必须对整个成
+像过程中的每一环节进行精确建模。对于高精度立体测绘而言,重中之重是保证立体测图的几何精度。严
+密几何模型的建立是基于逆向光线追迹算法进行全链路成像仿真的关键步骤,其精度直接影响到测绘卫星
+的立体测图精度。'
+儿何模型从成像几何角度表征了成像瞬间地面目标与像面上像点间的数学对应关系,些对各项误差源
+建立与之相适应的数学模型。高分辨力卫星遥感影像的几何模型分为严密物理模型和经验模型两大类。
+Kratky!“提出了由经典摄影测量中严格定义的共线条件方程与影像外方位元素相结合的扩展共线方程模
+型。该模型假定卫星运行轨道漪足轨道摄动方程,将传感器位置表达成标准卫星轨道参数的函数,传感器
+的姿态角视具体情况采用多项式函数进行拉合.OkamotoP]针对窄视圭角和大主距所带来的卫星遥感影像定
+向参数之间的强相关性提出了仿射变换模型,该模型假定传感器运行在一条直线轨道上,卫星的速度和姿
+态在成像过程中保持不变。袁修孝[等从卫星遥感影像的成像机理出发,将侧视角作为变量对仿射变换模
+型进行了修正,使模型变得更为严格。考虑到星历和姿态数据的因素,经验模型的研究相对较成熟,但是
+经验模型并未考虑航天相机成像的物理意义,志略了
+成像过程中相机内部各项误差引入的几何失真,目前
+对严密物理几何模型的研究还很少。因此,本文对高分辨力立体测绘卫星成像过程进行详细分析,将卫星
+的运行轨道表示为真近点角和升交点赤经的函数,综合航天相机物理成像机理,建立仿真中的光线几何模
+型,并对误差源进行分析。
+不。
+1.1逆向光线追迹算法
+光线追迹算泰基于儿何光学原理,通过建立空间
+目标辑射模型
+和成像系统探测加能模城,对系统探测范围内的目标进行成像。传统的光线追迹是指从太阳光源出发,正
+向追踪每一根光线在场景中的传递过程,而本文采用的逆向光线迫迹算法是指从视点出发,向场景中发出
+光线,获取观测光线与地面交点处的辐亮度。到达探测器靶面(c,2)处的光亮度等于人瞳处光亮度与光学
+成像系统点扩展国数的卷积,即:
+五im重】Lge(〉(:，-〕又，/1′)=z′【】u薹)il〈_〉(:，-)'=′兄′)事丨霍"′(-〉(:，')'哀'乏{′〉
+探测器靶面处的辐通量可表示为17
+http://www.gdgc.ac.cn
+1.2TDICCD拼接模型
+随着对航天相机视场范围要求的扩大,成像系统焦平面的尺寸也在增大,远远超出了TDICCD探测器
+的长度。立体测绘中经常采用多个CCD拼接的方法来溃足航天相机中大成像幅宽的要求,因此在光线几
+何模型建立中需要考虑TDICCD拼接模型。CCD拼接方式主要有电子学拼接、机械拼接和光学拼接三种,
+工程上多采用机械交错拼接方法口,如图2所示,即在焦平面视场中心线的两侧分上下两行交错排列TDI
+CCD器件。
+为了避免在轨成像时存在视场漏缝的问题,相邻两片CCD需重叠一定像元。本文老虑了四片CCD拼
+接的情况,相邻两片搭接像元数为30,CCD器件中心与焦平面视场中心相差距离为9.94hm,假定CCD
+像元尺寸为10Hm,像元数为4096,图2中OXY为相机像面坐标系,乃方向为卫星飞行方向,了方向为垂
+直轨道方向。因此计算得到四片CCD中心位置在相机焦平面上的坐标如表1所示,各个探测像元在像面
+上的位置也得以确定。
+图 2 TDICCD交错拼接模型
+1.3轨道模型
+利用卫星星历和传感器姿态数据,根据严密物理几何模型进行对地目标定位具有非常高的精度。在同
+一轨道上获取的卫星星历和传感器姿态角包含的系统误差类似,因此能以栋一时刻精确的卫星轨道和传感
+器姿态参数为基准,通过外推计算获得其他时刻较为精确的卫星轨道和传感器姿态角,以此进行遥感影像
+的直接对地目标定位便能获得较高的精度。卫星在轨道上始终受着空间环境各种摄动力的作用,在摄动力
+作用下,卫星轨道不再遵循二体轨道特性,其偏心率、升交点赤经和倾角不断变化着。本文假定卫星运行
+辐道为太阳同步圆轨道,将轨道表示为真近点角和升交点赤经的函数,同时认为这两个参数在成像过程中
+随时间线性变化口。由于受到地球引力摄动的影响,该设计轨道平面会在惯性空间内进动,造成升交点赤
+经的变化,其变化速率为=
+式中:只为地球半径,a为轨道半长轴;1为轨道倾角;为升交点赤经,。为近地点幅角;f为真近点角。
+1.4坐标系选择
+a)WGS84华标系
+坐标原点为地球质心,Z轴指向平北极,九轴指向格林威治子午团,7轴和乙轴、Z轴构成右手直角坐|
+标系。
+b)J2000地心惯性坐标系
+坐标原点为地心,乙轴指向平春分点(2000年!月
+1日12时),Z轴指向平北极(2000年1月1日12时,
+ID=2451545.0),工轴和一乙轴构成右手直角坐标系,此坐标系也称为]2000地球惯性坐标系。
+?)地心轨道坐标系
+http://www.gdgc.ac.cn
+HJ八土VE1火Hb:tyu怡坂仲邓JAAllyLANEUTEN￡4HH,众矿月十传则吊心麻柜仕权垒-十凶门。
+d)轨道坐标系
+原点为卫星质心,加轴指向轨道前向,乃轴过地心指向天顶,卫与轨道面垂直。轨道坐标系在地心惯
+性坐标系内沿轨道以角速度作轨道运动。
+e)相机坐标系
+相机本体的主点为原点,不考虑相机安装误差的情况下,相机坐标系和卫星本体坐标系重合。卫星无
+姿态运动时,卫星本体坐标系和轨道坐标系重合。
+1.5动态成像严密物理几何建模
+若要对双线阵立体测绘卫星的物理成像过程进行精确建模,需对每一微小时刻的光线走向进行分析。
+本文中轨道进动间隔取行积分时间。
+双线阵相机立体成像儿何关系示意图如图3
+所示。空间目标的物方光线追迹是在相机坐标系
+内对目标进行观测时光线方向和位置的确定,相
+机发出的光线矢量经过坐标转换到达地面场景。
+地心轨道坐标系与2000赤道惯性坐标系的转换
+关系为:先将地心轨道坐标系绕矢量U转角
+(-@);再绕节线ONBMA(I);最后绕Z轴转角
+(-Q),相关物理量有升交点赤经、近地点幅角
+、轨道倾角i、相机焦距一俯仰角4横滚角b、
+图 3 双线阵相机立体成像几何关系
+偏航角y。
+地球自转轴因岁差和章动的影响在空间转
+动,岁差使平北天极绕北黄极运动,春分点西退,天体在不同瞬间的平坐标发生变化,章动使瞬时北天极
+绕平北天极运动,导致同一瞬间天体的平坐标和真坐标出现差异。经过分析得到,J2000赤道惯性坐标系
+到WGS84坂标系的转换关系为
+式中:o=213491°+w(1-1),W为地球自转角速度,f-卯=0,2,...。
+2“严密几何模型误差分析
+根据TDICCD相机成像机理可知,影响严密物理模型的误差因素主要有相机内方位元素、姿态角误差、
+轨道外推误差等。因此对影响几何建模精度的主要因素进行分析。
+以下分析中,表示相机焦平面发出的光线与主光轴之间的夹角,〖表示像元相对应的序号,最小
+值为0“,最大值为视场角的一半,表示实际光线出射时与主光轴之间的夹角。
+2.1相机内方位元素影响分析
+对于高精度立体测绘相机来说,内方位元素的标定精度直接影响了相机测绘精度。相机内方位元素由
+主距、主点位置、畸变系数等元素组成。本文重点分析了主距和主点位置对光线矢量方向的误差影响,示
+意图如图4所示。
+若主距存在偏差,计算得到的光线与主光轴之闭
+的夹角为.AB=Bu—Bu的最大差值表示主距偏
+差Af带来的光线观测角度误差的最大值,具体为
+http://www.gdgc.ac.cn
+老虚光线矢量方向与主点偏差最大的方向共面时。由于主点实际位置与理想位置存在偏差,实际光线
+矢量方向与理想主光轴方向之间的夹角为0.:,。AB,=Bur-Br的最大差值表示主点偏差As带来的光线观
+测角度误差的最大值,即:
+2.2姿态误差影响分析
+三轴姿态角误差是影响高分辨力立体测绘卫星影像对地目标定位精度的重要因素。假定卫星姿态角允
+许的测量误差为00012“,误差分布示意图如图5。
+图 4 主点、主距误差影响示意图
+Fig.4 The main point, the main error influence diagram
+3“几何模型分析与仿真
+成像链模型对立体测绘卫星在轨成像时的各个物理环节进行建模,利用上述计算结果对系统成像进行
+全链路仿真。采用分辨力为0.3m的深圳地区典型地物儿何与物理模型数据作为仿真输人图像源。输人源
+依靠数字航空摄影测量技术,由一系列含有波谱ID和波谱属性(遂度、反射率、折射率等数据)的三角面片
+组成,为后续光线追迹模型提供基础数据。
+全链路仿真条件部分参数设置如表2所示。前视相机与正视相机对同一目标点成像时观测方向夹角为
+0.0011°,光轴与场景的交点距离中心点124.45m,前视相机距离偏差为193.08m,因此验证上述所得的几
+何模型精度较高,满足TDL立体测绘全链路物理仿真的要求。
+图 6 正视相机像面在WGS84坐标系下的位置
+图 7 前视相机像面在WGS84坐标系下的位置
+Fig.6 Face up to the location of the camera image plane
+Fig.7 Former depending on the location of the camera image
+under the WGS84 coordinate system
+http://www.gdgc.ac.cn
+二二Ly三l亡【三1二二茎I亡豆量2鼻I二【h鼻f万董l茎\I二量量熹茎戛]壹L二茎芒言【菖工).亡三辜言亘薯′【亘二.工二1dorrain
+Fig.8 The simulation image
+4结论
+光线几何模型的建立对高精度高分辨力立体测绘卫星全链路成像仿真具有重要意义。模型既需要具备
+精确模拟卫星在轨成像的功能,也能反映在轨成像时所存在的问题,为更好地改善成像质量提供依据。
+针对双线阵立体测绘卫星物理成像机理,建立了
+前正视相机光线几何模型,并对误差源进行分析,为
+提高模型精度提供了坚实基础。此外,在地表物理模型中选取地面控制点,计算模型几何定位精度。结果
+表 明 ,本文建立的光线儿何模型精度较高,完全满足高精度高分辨力立体测绘卫星全链路仿真要求。

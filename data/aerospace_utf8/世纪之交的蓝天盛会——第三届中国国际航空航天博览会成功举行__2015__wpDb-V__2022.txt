@@ -1,0 +1,200 @@
+世纪之交的蓝天盛会——第三届中国国际航空航天博览会成功举行
+迎着新世纪的曙光,第三届中国国际航空航天博览会于11月6日至12日在风光秀丽的珠海隆重举行。尽管在7天的展期中,有几日天气不好,使飞行表演大受影响,但航展还是达到了比前两届规模更大,专业化、国际化、科
+
+航空航天 飞行表演 集团公司 航展 博览会 新世纪 国际化 专业化 中国航天 中国国际贸易促进委员会  
+
+The efficiency of engine is the most important priority
+during designing of modern engines. Those questions
+corresponding to the decrease of fuel consumption and
+decrease ofimpact on natural environment have become
+extreme importance efficiency is also important today,
+where intensification of transport use have negative
+impact on air clarity and economic growth is the cause
+for increase of fuel consumption,
+The direction of SI (spark ignition) engine
+development was based on the development of
+automotive market and introduction of new technology
+which gave many new products. Now the most
+important aims are decrease of fuel consumption and
+fulhlling more and more radical norms of emission
+relating to toxic gases emissions and keeping of high level
+of usable engine parameters as torque and power [1].
+Photochemical smoke over the city is today the
+“normal” effect of chemical reaction under sunrays in the
+big and high industrialized cities.
+In most of countries administration setup of limitation
+of emission was mode. These toxic gases [2] are:
+hydrocarbons (C,H), carbon monoxide (CO), nitro
+oxide (NO), molecular parts (PM) and sulfur oxide (SOx
+— mainly from the fuel pollution).
+Currently, in phase of continuous development are
+systems which are able to increase efficiency of SI
+engines and enhance the ecological parameters of fuel
+combustion process [3-5]. By applying a combination of
+a few different modern constructional systems, the
+considerable decrease of fuel consumption and exhaust
+gases emission could be achieved (Figs.1-2).
+The alternative fuels as a source of energy for the
+modern engine are still developed by the quality and
+exploitation requirements. It can be a cause of more
+effective use ofthis fuel as renewable source ofenergy in
+the future. Except ofthis,now we have many possibilities
+of adopting engine feeding system to specific properties
+of fuel [6-8].
+Indirect measures of these are achieved of low level
+of fuel consumption and low toxic gas emission as well
+as the increase (or keeping) of engine parameters like
+torque and power.
+The Impact of Flexible Element Inside of intake Canal on Kinematics of Load in Combustion Chamber 539
+Aversge fual consumption [dm?/100km]
+Fig. 2 Comparison of brake specific fuel consumption and
+hydrocarbons emission for gasoline direct injection engine
+by the mixture type—Brake Mean Effective Pressure [6].
+Many researchers [9-12] were engaged in the
+research about impact of intensification of vortrex in
+combustion chamber on heat transfer in SI engine.
+Others were engaged in the research about impact of
+turbulence on heat arising [13-15] and stabilization of
+burning process in piston [16]. The results of
+this type of research in different way indicate the
+impact of swirl on work conditions. The authors
+agree that the vortex has a positive impact on air-fuel
+mixture formation by achievement of more
+homogeneous form. This conclusion was made by the
+achievement of decrease of level emissions of carbon
+monoxides and hydrocarbons. Also the increase of
+nitro oxide was achieved. However, the impact of
+vortex on heat transfer wasn’t clear. The possibilities of
+intensification of preliminary swirl in intake canal are
+seldom mentioned in research works. This
+intensification can be very important when formatting
+the homogenous mixture, being in low engine rotatory
+speed (rpm) level, being for the engines with the
+relatively small capacity of one cylinder and for using
+of alternative fuel by engine feeding system.
+2. Experimental Stand
+The experimental stand was based on the real intake
+system of four strokes, four cylinders SI engine with
+displacement of 1,598 cm. The diameter of intake canal
+for experimental stand was 34 mm. The cause of
+difference between engine and model was accessibility
+of tubes on the local market. The effect of swirl was
+achieved by using of flexible element with the 65 mm
+length, width 32 mm and thickness 0.4 mm steel tape
+assembled inside the tube. The real view of this
+element was presented in Fig. 3.
+On the basis of these assumptions the airflow
+experimental model in the intake canal was built [17].
+The picture of experimental stand was illustrated in Fig. 4.
+The value of airflow resistance (Ap) was assigned on
+where,
+g: gravitational acceleration [rysz];
+n: manometer ratio;
+I: number of gradations.
+The value of velocity was achieved on the basis of
+dynamic pressure in two self-orthogonal planes.
+Measure points were based on divided field of tube
+surface. The diameter oftube was divided by nine rings
+with 2 mm width. And so the four measure points for
+each ring were achieved.
+The airflow velocity (v) for each point was
+calculated by the equation:
+The average value of airflow velocity for the field of
+tube surface was achieved from:
+540 The Impact of Flexible Element Inside of intake Canal on Kinematics of Load in Combustion Chamber
+1—twisted steel tape.
+2—airflow stabilizer; 3—flexible tape; 4—fixed end of tape;
+5 twisting ring; 6—Prandtl’s pipe; 7, 8—Recknagla’s
+micro manometers; 9—Interface; 10—PC.
+and,
+where,
+A: field of surface of orthogonal canal intersection;
+Ay: field of surface for ?—ring;
+N: number of the ring;
+Vai+4 airflow velocity for the successive n—ring and
+measure point;
+dy: outside diameter for ?—ring;
+dy: inside diameter for n—ring.
+3. Results and Discussion
+The research concerned to the assessment of impact
+of flexible geometry canal on airflow velocity and flow
+resistance. Also changing of airflow extreme of
+velocity positioning was important for evaluation of
+velocity profile. As it was mentioned, the steel tape was
+a flexible element ofintake canal. One end of tape was
+fixed to the tube by the first ring, but the second end of
+tape could change his position by the moving second
+ting. In this way, steel tape was twisted. The second
+ring was able to make steel length compensation too.
+The angle of tape twist was from 0 + 24 deg. however
+obtained average velocities were from 3.5 + 9.2 m/s.
+The composition of experimental research results
+concerned to the assessment of airflow resistance by
+average velocity and the angle of tape twist were
+presented in Fig. 5.
+allows writing very important conclusion. The results
+show that the use of flexible element of intake canal
+has no significant impact on airflow resistance and the
+airflow resistance is even less than for the clear air
+filter flow. The difference between the lowest and the
+highest resistant value for the tape twist 24 deg for
+achieved airflow velocity was only a bit more than 5 Pa,
+while the measure deviation of airflow resistance was
+0.96 Pa.
+These results are very promising for achieved
+change of airflow velocity profile for the cross
+intersection. Suitable velocity profile can help to
+deliver cylinder load without the meeting with valve
+head what impact the decrease of turbulence intensity.
+It will cause of in engine filling loses during
+intake stroke.
+On the basis of results presented in Fig. 6 we can see
+that by the change of angle tape’s twist, the change of
+airflow velocity profile was achieved. It was very
+effective for the angle of tape twist 24 deg There the
+two of extreme for velocity profile next to inside tube’s
+walls appeared. This experiment can be very useful for
+implementation of flexible intake canal for air inflow to
+combustion chamber to the piston engines. In this way,
+we can get not significant increase of flow resistance
+(about 7%). Suitable positioning of flexible element
+inside intake canal for intake valves has a positive impact
+on effect of load swirl penetration from intake’s canal
+to the combustion chamber.
+It will be very useful for the mixture preparation.
+On the composition of speed profile (Fig. 6) the
+The Impact of Flexible Element inside of Intake Canal on Kinematics of Load in Combustion Chamber 541
+Fig. 5 The airflow resistance (Ap) by average airflow
+velocity (5 ) and different angle of twist tape () and dry
+5 [ws]
+twe mutually perpendiculars planes inside the intake canal:
+1—the highest of airflow velocity (11.2 m/s).
+displacement of the minimum from the center was
+achieved. The cause of this was unexpected not axial
+deformation of tape during the twist—What will be
+involved during the next experimental research.
+In Fig. 7, the change of airflow speed profile during
+inlet to combustion chamber was illustrated. There we
+can see positive interaction of swirl from intake canal,
+which displaced of center of intake airflow to the center
+of cylinder. It will be very helpful from the points of
+view of the mixture preparation and combustion
+process.
+Fig. 7 The view of change of airflow velocity profile
+during inlet to the cylinder for paraliel canal: k-k—intake
+canal axis; c-￠—cylinder axis; a— measurement point
+location; 1—Prandt’s pipe; 2—micre manometer; 3 一
+measurement axis.
+4. Conclusions
+On the basis of experimental research results, the
+conclusions re reached that implementation of
+geometrically flexible element of intake canal has no
+significant impact on the flow resistance (even less
+than impact of air filter); the velocity of airflow and the
+angle of tape twist have impact on the kind of velocity
+profile change; the change of airflow velocity profile
+can be a cause of decrease of turbulence from valve
+head and effect of load swirl during filling of
+combustion chamber has impact on achievement of
+better condition of mixture preparation (mixture more
+homogeneous).

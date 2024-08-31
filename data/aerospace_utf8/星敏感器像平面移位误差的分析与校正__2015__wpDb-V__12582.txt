@@ -1,0 +1,310 @@
+星敏感器像平面移位误差的分析与校正
+星敏感器在长时间工作后会产生三种像平面移位误差，即主点漂移误差、倾斜误差与旋转误差。星敏感器的像平面移位误差会严重影响其测量精度。以往关于星敏感器像平面移位误差的研究仅考虑了像平面三自由度的主点漂移误差。而文中还考虑了星敏感器像平面在剩余三个自由度下的移位误差，即倾斜误差和旋转误差，从而提出了一种新的星敏感器六自由度像平面移位误差模型。最后，利用扩展卡尔曼滤波方法在轨标定了星敏感器的六自由度像平面移位误差。仿真结果显示该方法将星敏感器的测量精度大幅提高到了0.23″，因此新的星敏感器像平面移位误差模型弥补了旧模型的不足，显著提高了星敏感器的工作性能。
+
+星敏感器 移位 标定 扩展卡尔曼滤波  
+
+0 Introduction
+The aerospace area is attaching more and more
+importance to high-accuracy attitude determination and
+control of spacecraft. And the spacecraft「 s accuracy
+depends on the accuracy of its attitude determination
+instrument. Star sensor is the most accurate attitude
+determination instrument nowadays, and it's essentially
+an optical system working in space. A long time
+working in space will displace star sensor’ 8 image
+plane and decrease its measuring accuracy. And the
+micro star sensors, which are becoming more and
+more popular nowadays, need the consideration of
+image plane displacement especially.
+Image plane displacement is the main factor to
+influence star sensor’ s measuring accuracy. The
+previous researches on image plane displacement have
+only considered the principal point drift0-3, and there is
+less than adequate attention given to the incline
+displacement and the rotation displacement. Most
+image planes of star sensor are CCD planel4. And the
+CCD star sensor has the highest accuracy, for
+example, the American AST -301 star sensor’ s
+accuracy!51 is 0.18". A high accuracy of star sensor
+demands consideration of as many kinds of
+displacement as possible.
+There are many researches on the calibration method
+of star sensotr「s displacement. And the displacement can
+be calibrated either under the earth-based experimental
+environment or the space environmentl6-8、The on-orbit
+calibration of star sensor「8 displacement is meaningful
+inasmuch as most displacements come into being after
+a long time working in space. There are many
+algorithms to on-orbit calibrate the star sensor
+displacement., such as the Least Square Method
+(LSM), the Kalman Filter (KF), the Extended Kalman
+Filter (EKF), and the Unscented Kalman Filter (UKF).
+Considering the mathematical nature of image plane
+displacement, the accuracy and computation requirement
+of different algorithms, EKF is chosen to on-orbit
+calibrate the star sensor’ s six-degree-of-freedom
+displacement.
+1 Conventional model of star sensor's
+image plane displacement
+Star sensor can be divided into three parts, that
+are the optical system, the image plane and the data
+processing system. The conventional model of star
+sensor「 s image plane displacement can be described
+by Fig.1, and the principal point drift is the only kind
+of displacement considered in this model. In Fig.1,
+OXsV7sZs is the star sensor coordinate system without
+displacement, O'X,'Y'Zs' is the star sensor coordinate
+system with displacement,(xoyo) is the principal point
+drift in X-Z direction, f, is the principal point drift in
+Z direction, f is the distance between the focus point
+of the optical system and the image plane without
+displacement, 广 is the distance with displacement.
+Fig.1 Conventional model of star sensor's image plane displacement
+Suppose the number i(i=1,---,n) target star「s imaging
+point in the star sensor coordinate system is (x;y.).
+When there is no image plane displacement, the target
+star’ s direction vector in the star sensor coordinate
+system 1s
+Suppose there is image plane displacement and
+the image plane displacement is described by (xoyouh),
+the target star’ s direction vector in the star sensor
+coordinate system is:
+- Tee TT —
+The star sensor imagery corresponds with the
+ephemeris stored by the data processing system.
+Suppose the number i target star「s direction vector in
+the inertial coordinate system is:
+in which ?; and 8 are respectively the target star「 s
+right ascension and declination. Based on the principal
+of angular distance「s equality, the relationship between
+the target star’ s direction vector in the star sensor
+coordinate system and the corresponding one in the
+inertial coordinate system can be illuminated as
+希,卵-白吴(4
+Then with the principal of angular distance’ s
+equality, the attitude of satellite can be determined by
+matching the stellar map.
+Fig.2 and Fig.3 are the analysis results of star
+sensor image plane「 s principal point drift, in which
+r=Vx*+y* is the distance between the imaging point
+and the principal point, dr is the principal point drift
+in X-Y direction, df is the principal point drift in Z
+direction. It can be easily seen from Fig.2 and Fig.3
+that the measuring error caused by the principal point
+drift in X -Y direction is becoming bigger as the
+imaging point access the principal point, while the
+measuring error caused by the principal point drift in
+Z direction is becoming smaller as the imaging point
+access the principal point. When r=15 mm, both a
+0.000 3 mm drift in X-Y direction and a 0.001 mm
+drift in Z direction can engender a measuring error of
+star sensor bigger than 1 second of arc. Hence the
+image plane「s principal point drift has a big influence
+on star sensor's measuring accuracy, and the principal
+point drift must be calculated.
+However, the principal point drift is only one
+other two kinds of displacement are the incline
+displacement and the rotation displacement,and they
+also have an un-negligible influence on star sensor「 s
+measuring accuracy. The six-degree-of-freedom image
+plane displacement includes the principal point drift,
+the incline displacement and the rotation displacement.
+With the enhancement of star sensor’ s measuring
+accuracy and the emergence of micro star sensor,the
+six-degree-of-freedom image plane displacement
+should be considered and calibrated, not only the
+Principal point drift.
+Fig.2 Analysis of image plane「s principal point drift in X-￥ direction
+Fig.3 Analysis of image plane「s principal point drift in Z direction
+2 Incline displacement of star sensor's
+image plane
+Satellite may endure occasional oscillations when
+it is working in space!?!, and the irregular thermal
+environment in space can also displace star sensor’s
+image plane!-). Many different factors cause the
+incline displacement of star sensor「s image plane.
+“ Fig.4 is the model of .image plane’ s incline
+displacement, in which S, is the image plane without
+incline displacement, S, is the image plane with
+coordinate system without incline displacement,
+OX,Y,Z, is the star sensor coordinate system with
+incline displacement, and the axis Z, is the optical
+axis of the optical system.
+Focal point
+Fig.4 Incline displacement model of star sensor「s image plane
+Suppose the inclination vector is (a,b,0) in the
+coordinate system OX,Y,Z,, and the angle of inclination
+is a. As a result, the direction cosine matrix of the
+coordinate system OX,Y,Z, relative to the coordinate
+system OX,Y.Z, is
+imaging point A in the coordinate system OX. YZ,
+(x,y,0) be the coordinate of imaging point A in the
+coordinate system OX,Y,Z,, and there will be equations
+below.
+The coordinate of imaging point A in the
+coordinate system can be gotten with equation 7.
+The point A in Fig.4 is the imaging point with
+the incline displacement, and the imaging point will
+change to A’ if there is no incline displacement. With
+the point A’s coordinate (I,m,n) in the coordinate
+system OX,Y,Z, the point A's coordinate (x「,y「 ,0) in
+the coordinate system OXV:Z,。can be gotten, and
+(x’,y’,0) is the calibrated imaging point.
+Suppose the inclination vector (a,b,0) is an unit
+vector, and b=\/1-a* . Then the parameters of image
+plane「s incline displacement are (a,a). It can be seen
+from the parameters that the incline displacement of
+star sensor「s image plane is a two-degree-of-freedom
+displacement.
+Define the angle of incidence as the angle
+between target star「 s direction vector and the optical
+axis, and the angle of incidence in Fig.5 is 17.45°. It
+can be seen from Fig.5 that when the angle of
+inclination a=0.02°, the measuring error of star sensor
+is above 15”. And every kind of displacement which
+causes a measuring error bigger than 0.5” should be
+considered and calibrated. Therefore the incline
+displacement of image plane also has a big influence
+on the measuring accuracy of star sensor. The incline
+displacement of star sensor「 s image plane should be
+calibrated.
+Fig.5 Analysis of image plane's incline displacement
+image plane
+The terrible space environment can causes
+rotation displacement of star sensor’ s image plane.
+And Fig.6 is the model of star sensor image plane s
+rotation displacement.
+In Fig.6, OX,Y,Z is the coordinate system of star
+sensor without rotation displacement, OX,Y,Z is the
+coordinate system of star sensor with rotation
+displacement. If the rotation vector is Z axis and the
+angle of rotation is 4 the direction cosine matrix of
+the coordinate system OX,Y,Z relative to the
+coordinate system OX,Y.Z is:
+The coordinate of imaging point C is (x’,y’,0) in
+the coordinate system OX,Y,Z, and the coordinate of
+imaging point C is (x’,y’,0) in the coordinate system
+OX,Y,Z. Then the calibrated imaging point is:
+It「s easy to see from the equation above that the
+rotation displacement of star sensor「 s image plane is
+an one-degree-of-freedom displacement, and the
+displacement parameter is 传 .
+Fig.7 is the analysis results of image plane「s
+rotation displacement. The angle of incidence in Fig.7
+is 17.45°. It can be seen from Fig.7 that the rotation
+displacement’ s influence on star sensor’ s measuring
+accuracy is also significant. It is necessary to calibrate
+the star sensor image plane「s rotation displacement.
+of star sensor「s image plane
+The six-degree-of-freedom image plane displacement
+includes the three-degree-of-freedom principal point
+drift, the two-degree-of-freedom incline displacement
+and the one-degree-of-freedom rotation displacement.
+Three sub-kinds of displacement should all be
+calibrated to increase the performance of star sensor.
+Fig.8 is the six-degree-of-freedom displacement
+model of star sensor’ s image plane, in which the
+point A’ is the final calibrated imaging point. OX,Y.Z,
+Focal point
+Fig.8 Six-degree-of-freedom displacement model of star sensor's
+image plane
+is the coordinate system without image plane
+displacement,O「 XuV:Z, is the coordinate system with
+image plane displacement. Equation (12) and (13) are
+the calibration equations of star sensor「s six-degree-of-
+freedom image plane displacement, in which (x,y,0)’ is
+the coordinate of the real imaging point A in O 「
+X,Y, Z,, (x',y’f) is the coordinate of the real imaging
+point A in OX,Y,Z,, (Xucw,yuew,0)“is the coordinate of
+the calibrated imaging point A’ in OX,7:Z,,(0,0, 才 “ is
+the coordinate of the calibrated focus point in OX,Y.Z,.
+5 On-orbit calibration of star sensor’s
+image plane displacement
+On-orbit calibration of star sensor「s image plane
+displacement can effectively increase star sensor’ s
+measuring accuracy. There are many kinds of
+calibration algorithm to calibrate star sensor
+displacements. Considering the mathematical nature of
+image plane displacement, the accuracy and
+computation requirement of different algorithms, EKF
+is chosen to on-orbit calibrate star sensor’ s six-
+degree-of-freedom image plane displacement. EKF
+can efficiently filter the nonlinear system under the
+white Gaussian noise.
+The theoretical basis of star sensor’ s on-orbit
+calibration is the principle of angular distances’
+equality. And the calibration target is (a,a,y,Xxo,Yo fo).
+Based on the calibration equations in Section 5,the
+system functions of on-orbit calibration are:
+In which é(k) is the difference between the real
+displacement parameters and the calibrated displacement
+parameters, y(k) is the difference between the real
+angular distances and the calibrated angular distances
+after k times of iteration. They can be evinced as
+follows
+where is the number of imaged target stars used in
+this calibration. In the system functions, w(k) is the
+systematic noise and v(k) is the measured noise. They
+conform to the following rules.
+|E[w(D]=0, Elw(k)w(k)"1=0"(k)
+| E[w(k)v(k)T]=0,
+The state variable can be written as
+And the processes of measurement update and
+time update are:
+N(k)=F (k,&(k))P(k)H"(k,&(k))x
+[H(E,(D)P(DEHT(EE(D)+C“(D]
+P(k+1)=F(k,￡(k))P(k)F"(k,￡(k))+Q"(k)-N(k)
+Where F(k,6) and H(k,￡) are respectively the Jacobi
+matrix of f(k,￡) and h(k,￡).
+叹危雪)=景菖/(k逼〗圃=/(20)
+Fig.9 is the EKF calibration process of star
+sehsor「s six-degree-of-freedom image plane displacement.
+The displacement parameters can be calibrated with
+the initial value P(0) and &(0).
+6 Simulation and analysis
+In the simulation of on-orbit calibration, the focal
+length of star sensor is 45 mm. And the six
+displacement parameters are fixed as follows.
+, (a,a,Woxoyo)=(0.5,0.022,0.01“,0.02 mm,
+0.02 mm,0.02 mm) (22)
+20 groups of target stars’ imaging data are used
+in the simulation, and a certain amount of white
+Gaussian noise is mixed with the imaging data. The
+simulation results of on-orbit calibration are showed
+by Fig.10 and Fig.11.
+Fig.10 Calibration result of displacement parameters (a)
+Fig.11 Calibration result of displacement parameters (b)
+It can be easily seen from Fig.10 and Fig.11 that
+EKF is able to calibrate star sensor「 s six-degree-of-
+freedom image plane displacement effectively. And all
+the six calibration results become steady when the
+time of iteration is above 100. The ultimate on-orbit
+calibration result is
+[Aa Aa Ay Ax, Ay, Af]=(0.0002,-0.0001",0.00012”,
+-0.00011mm,-0.000 12 mm,—0.000 12 mm) (23)
+The measuring accuracy of star sensor has been
+increased to 0.23" after the calibration. Therefore the
+model of six-degree-of-freedom image plane
+displacement can perfectly describe the image plane
+displacement of star sensor, and the calibration method
+above can effectively calibrate it.
+7 Conclusion
+The conventional model of star sensor「 s image
+plane displacement has been analyzed and its
+deficiency has been pointed out. The models of image
+plane「s incline displacement and rotation displacement
+have been built and their influences on star sensor’ s
+measuring accuracy have been analyzed. The model of
+star sensor’ s six-degree-of-freedom image plane
+displacement has been built ultimately and the
+Extended Kalman Filter is utilized to calibrate the
+displacement. The simulation results show that the
+calibration method can effectively calibrate star sensor「 s
+image plane displacement and increase star sensor's
+measuring accuracy. Therefore the six-degree-of-
+freedom model and the on-orbit calibration method are
+practically meaningful. Future work researching on
+star sensor’ s working environment is needed to
+determine the magnitude of image plane displacement
+and further certify the six-degree-of-freedom model of
+image plane displacement.

@@ -1,0 +1,329 @@
+基于同步控制的行李电机ACA—RBF—PID控制
+针对机场行李准确地从传送带导入分拣机的问题，提出将基于同步控制的ACA—RBF—PID算法应用于机场行李导入电机。该方法利用蚁群算法优化RBF神经网络避免了传统RBF网络方法带来的局部优化问题，实现了全局最优，并且电机同步控制系统保证了从导入电机与导入电机速度始终保持一致，避免了同时将两件行李送上同一个行李托盘。仿真结果表明，该策略大大地提高了行李导入效率，为行李的后续分拣带来保证．
+
+行李导入电机 RBF神经网络 蚁群算法 同步控制 PID  
+
+CLC number; V211.3 Document code: A Article ID;1005-1120(2013)03-0237-06
+INTRODUCTION
+With the development of the techniques of
+hypersonic vehicles, aero-heating and thermal
+protection are not just for re-entry vehicles, but
+for other types of aircrafts, such as those flying in
+atmosphere in higher supersonic or hypersonic
+speed. To develop a high efficiency method of
+aero-heating analysis for thermal protection sys-
+tem is very important in hypersonic vehicle design
+engineering[11.
+The methods for the thermal environment a-
+nalysis are numerical simulation (computational
+fluid dynamic (CFD)), engineering approxima-
+tionra ,ground wind tunnel experiments and free-
+flying experiments. The last two methods are
+too costly to suit the early engineering design and
+modification.
+CFD method is well-known as solving the
+Navier-Stokes equations and for its various sim-
+plified form. The CFD methods have high preci-
+Received date: 2013-04-20; revision received date. 2013-07-08
+Corresponding author: Wang Jiangfeng, Professor, E-mail: wangjf@nuaa. edu. cn.
+sion, but the computation efficiency is terrible,
+especially in unsteady flying status 4,
+Because of its simple calculation process and
+high computational efficiency, the engineering ap-
+proach has been developing rapidly since it was
+put forward. The aerodynamic heating problems
+are divided into two categories according to exist-
+ence of similar solutions of the boundary layer
+equationst??, For the flat-panel flow, Eckert,
+Spalding-Chi, Van Driest and Zobyre“1made a lot
+of research to give out the laminar and turbulent
+heat flux engineering formula. A fast and effec-
+tive method for dissimilarity solution is put for-
+ward by Lees, Van Driest, Lee and Faget[81,
+There are axisymmetric simulation methods,
+equivalent cone methods and experimental data
+related methods for the aerodynamic heating cal-
+culation while the hypersonic aircraft has angle of
+attack. Engineering approach still has its limita-
+tions, such as the computation of boundary layer
+outer edge parameters, the partition of the air-
+craft with complex shape (cracks, bumps, irreg-
+ular shapes,etc. ) the correction of the formulas
+and the results based on the engineering experi-
+ences. 「
+In order to find a method coupling the re-
+spective advantages of CFD method and engineer-
+ing approach, the method used in this paper is
+based on the Prandtl boundary layer theory. The
+entire flow field is divided into two parts; Inviscid
+flow out of the boundary layer and viscous flow
+within the boundary layer. As a result, the
+process of solving aerodynamic heating can be
+simplified as two single steps. One is the solution
+of the hypersonic inviscid outflow. The other is
+the computation of the viscous dominated areas
+within the boundary layer. On the basis of a rea-
+sonable approximation, numerical solution in the
+inviscid outflow and engineering approach in the
+boundary layer are coupled to compute the high-
+speed aircraft surface heat flux distribution. And
+heat transfer equation is considered in order to an-
+alyze the thermal structure performance is,
+The characteristic of the method in this paper
+is to combine the respective advantages of the nu-
+merical simulation with the pure engineering ap-
+proach. It makes up for the defects of numerical
+simulation methods which have low efficiency,
+long life cycle and high cost, and expands the
+scope of application of the pure engineering ap-
+proach. The method can be easily used to com-
+pute the aerodynamic force and aerodynamic heat-
+ing of complex geometries in complex flow.
+1 AERODYNAMIC HEATING
+CALCULATION PROCESS
+Aerodynamic heating calculation method
+used in this paper is based on a new method,
+which couples the CFD method with the engineer-
+ing approach. The entire flow field is divided into
+two parts based on the Prandtl boundary layer
+theory. The thickness of the boundary layer is ig-
+nored because it is very thin. Namely the shape of
+the outer edge of the boundary layer is the same
+with the shape of aircraft. The parameters out of
+the boundary layer, such as pressure, tempera-
+ture and velocity, are computed by CFD meth-
+ods. The heat transfer characteristics within the
+boundary layer and the structure of thermal pro-
+tection system are worked out by engineering ap-
+proach. These two methods are coupled alter-
+nately forward.
+2 INVISCID OUTFLOW
+To solve the invisid outflow is to resolve the
+Euler equations of fluid dynamics in the flow
+field. The CFD methods of Euler equation are
+quiet mature and perfect. The solution of the in-
+viscid out flow in this paper is based on the hybrid
+grid and parallel computing. The space discretiza-
+tion uses AUSM?* scheme Dol and the time discret-
+ization uses fourth-order Runge-Kutta method.
+The states of inviscid outflow solutions are deter-
+mined by the type of aerodynamic heating such as
+transient heating, cruise state or trajectory state,
+etc. The flow parameters of grid points on body
+surface are taken as the interpolation parameters
+required by engineering approach in the boundary
+layer outer edge. If needed, the interpolation da-
+tabase can be established.
+3 ENGINEERING COMPUTING
+TECHNOLOGY
+3.1 Heat transfer in boundary layer
+The surface of the hypersonic aircrafts is di-
+vided into two parts; The stagnation points and
+non-stationary zones. For the former, the Fay-
+Riddell formula is fit for axisymmetric body, of
+which Pr=0.71, Le=1.0. The formula" is as
+follows
+where p, is the density on the object surface,
+sity in stagnation point, p, the viscosity coeffi-
+dient in stagnation point, and Ap the average air
+dissociation enthalpy.
+For the non-stagnation zone, the engineering
+corresponding empirical formulas are also given.
+For the case of zero angle of attack (AOA), there
+are Lees formula and reference enthalpy method.
+In this paper, the flat heat transfer model is used
+to calculate the heat transfer coefficient of the
+boundary layer, that is
+(z=-壹J〕，w一熹C【了Vickoo"(2)
+where a is the heat transfer coefficient, ￠; the
+specific heat capacity at constant pressure, V, the
+velocity in the outer edge of the boundary layer,
+po." the density in the outer edge of the boundary
+layer, and c related to turbulent viscosity coeffi-
+client,
+3.2 Heat transfer in structure
+Continuous aerodynamic heating process of
+hypersonic aircrafts is an unsteady process. The
+heat flux from external airflow to the aircraft sur-
+face is related to the wall temperature. Newton
+gives out the law of cooling, which states that
+gw二QC工w一工w)(3)
+where qw is the heat passed from the air to the
+structure, Ty the temperature on the aircraft
+surface, and T,y the recovery temperature.
+Engineering methods are used to solve the
+flow field aerodynamic heating. At the same
+time, heat transfer is computed in the thermal
+protection structure. This process is coupled. On
+one hand, as the heat flux increases, the wall
+temperature rises, On the other hand, the in-
+crease of the wall temperature has an influence on
+the heat flux. To compute the surface heat flux,
+it needs to know the wall temperature, And the
+latter one also depends on the former. That is the
+coupling of the heating process.
+The specific computing process is:
+(1) Give the wall temperature at initial mo-
+ment and then calculate the heat flux by engineer-
+ing approach. Take this heat flux as the thermal
+boundary condition to work out the wall tempera-
+ture in the next time. Repeat the process and pro-
+mote the solving by time step.
+(2) Within each time step, firstly, take the
+wall temperature in previous time as thermal
+boundary condition to get the wall heat flux dis-
+tribution. Then analyze the heat transfer in the
+thermal protection structure by considering the
+heat flux distribution as the thermal boundary
+condition, Thus the new wall temperature distri-
+bution can be used as the thermal boundary condi-
+tion in solving the flow field in the next time
+step.
+4 HIGH-TEMPERATURE CHEMI-
+CAL NON-EQUILIBRIUM EF-
+FECTS
+For the freezing catalytic wall, the non-cata-
+lytic wall and the limited catalytic wall, the stag-
+nation point heat flux formula given by Fay-red-
+dell has been widely used. But it should be noted
+that those results are obtained under the two-
+component assumption 《 e. , gas atoms and mol-
+ecules). That means the oxygen atoms, nitrogen
+atoms, oxygen molecules and nitrogen molecules
+are not distinguished when dealing with boundary
+layer equations. Some papers take the wall cata-
+lytic rate of the oxygen atoms and nitrogen atoms
+into consideration. The ratio of the stagnation
+point heat flux between the finite catalytic wall
+with freezing boundary layer and equilibriutn con-
+ditions are given as[
+ane
+Geq
+where gn. is the heat flux considering the effect of
+chemical non-equilibrium, g., the heat flux while
+ignoring the effect of chemical non-equilibrium,
+Re the formation enthalpy of oxygen atoms, Cg,
+the mass concentration of oxygen atoms, AY the
+formation enthalpy of nitrogen atoms, Cy, the
+mass concentration of nitrogen atoms, and k,; the
+wall catalytic rate,
+What we need to determine is the mass con-
+centration of the oxygen atoms and nitrogen at-
+oms at the stagnation point. Equilibrium stagna-
+tion point heat flux can be given out according to
+the Fay-Reddell heat flux formula. In the heat
+flux ratio relationship, heat flux ratio between
+Non-balance and balance flow in the course can be
+determined by the mass concentration of oxygen
+atoms and nitrogen atoms in stagnation points.
+Thus heat flux in the non-equilibrium effects can
+be obtained from the known heat flux in the equi-
+librium conditions,
+s EXAMPLES AND ANALYSIS
+5.1 Case 1:Heat flux
+RAMC-II test module is a ball cone. The
+head radius is 0. 152 4 m, the semi-cone angle is
+9°, and the total length is 1.295 m. Flight sta-
+tus: Mach number is 4. 0, AOA is 0°, flight alti-
+tude is 60 000 m. Compared with the result in
+other paper[il the tendency matches well. The
+maximum heat flux calculated in this paper is
+14 768 W/m’. The maximum heat flux is
+23 417 W/m* according to Lees「 s formula and it
+is 14 227 W/m? according Kemp-Riddel「 s law],
+The value in this paper is similar to that of Kemp-
+Riddel, Fig. 1 is the heat flux distribution of the
+RAMC-T test module. Fig. 2 shows the heat flux
+distribution in symmetry plane.
+cruise
+Case 2 is a winged missile body of complex
+shape. Fig. 3 shows the configuration of the Case
+6°, flight altitude is 30 000 m, and flying time is
+1 000 s, The entire aircraft is set as one thermal
+protection system ( TPS) section. The materials
+are divided into 21 layers in the thickness direc-
+tion. The first layer is aluminum of 0.002 m.
+The remaining 20 layers are 0.001 m Silica in
+each layer.
+cruise. The total CPU time is only about 20 min
+(excluding the CPU time when solving the invis-
+cid outflow). It is much less than the used nu-
+merical method (solving the NS equations and
+structural equations), Fig. 4 is the temperature
+distribution of outer surface in 1 000 s. It can be
+seen that the surface temperature in the head is
+about 950 K and the maximum temperature is
+nearly 1 250 K, Fig. 5 is the temperature distribu-
+tion of inner surface in 1 000 s. The maximum
+temperature of inner surface is nearly 1 050 K.
+Clearly, TPS reduces the temperature significant-
+ly. This case demonstrates that the method is ef-
+fective for long aerodynamic heating of high-speed
+aircraft with complex shape. It shows that this
+Fig. 4 Temperature distribution of outer surface in
+1 000 s
+Fig. 5 Temperature distribution of inner surface in
+1 000 s
+method is fast and efficient, and meets the engi-
+neering requirements,
+5.3 Case 3: Chemical non-equilibrium effect
+The shape of Case 3, RAMC-II test module,
+is a ball cone. The head radius is 0. 152 4 m. The
+semi-cone angle is of 9°. The total length is
+1. 295 m. Flight status: Mach number is 5.0,
+AOA is 6°, flight altitude is 60 000 m, and flying
+time is 1 000 s.
+Case 3 demonstrates the impact of chemical
+non-equilibrium effects on aerodynamic heat
+transfer. In this case, only the oxygen atoms and
+nitrogen atoms are taken into consideration,
+Fig. 6 is the variation of molar ratio with tempera-
+ture. Fig. 7 is the changes in mass concentration
+of oxygen atoms and nitrogen atoms with temper-
+ature. Figs. 8 — 10 are the comparisons of heat
+flux and surface temperature according to wheth-
+er to consider the effect of chemical non-equilibri-
+um. It can be seen that the effect of chemical
+non-equilibrium allows heat flux decreased and
+the surface temperature drops. In Fig. 9, the
+maximum surface temperature of the aircraft is
+839.055 K. And it is 821. 679 K in Fig. 10. Due
+to the low Mach number and high altitude,the
+chemical reaction is not obvious. This leads to a
+low concentration of nitrogen and oxygen atoms
+and a small temperature difference.
+These three cases show that coupling inviscid
+numerical solution with aerodynamic heating en-
+gineering approach forms a quick computing tech-
+石 伯 必 1 1ansactions OI Nanjing university
+Fig. 9 Temperature distribution in 1 000 s
+Fig. 10 Temperature distribution in 1 000 s (Consid-
+ering chemical non-equilibrium effects)
+nology for the surface heat flux, the aerodynamic
+heating and the aerodynamic force. The method is
+fast and efficient,and meets the engineering re-
+quirements well,
+6 CONCLUSION
+The main computing technology used in this
+paper is based on the Prandtl boundary layer the-
+ory. The entire flow field is divided into two
+parts: Inviscid flow out of the boundary layer and
+viscous flow within the boundary layer. Thus the
+problem can be simplified as two small questions.
+One is to solve the inviscid flow out of the bound-
+ary layer. The other is solving the viscous domi-
+nant region within the boundary layer. The invis-
+cid numerical solution,the aerodynamic heating
+engineering approach and the heat transfer in the
+thermal protection structure are combined to fast
+compute the long aerodynamic heating for hyper-
+sonic vehicle, The accuracy of the method devel-
+oped in this paper well meets the engineering re-
+quirements,and the computational efficiency is
+much higher than that of the numerical method
+01 Aeronautics Oo. Astronautics Vol. 30
+which is to solve the N-S equations. Currently the
+details of this method are still evolving to form a
+set of software, It is used for aerodynamic & aer-
+othermal quick calculation and analysis of com-
+plex geometries with complicated flight status.
