@@ -1,5 +1,5 @@
-EmbeddingTrainFile = "data/aerospace_utf8_ten"
-EmbeddingValFile = "data/aerospace_utf8_ten"
+EmbeddingTrainFile = "data/aerospace_utf8"
+EmbeddingValFile = "data/aerospace_utf8"
 
 EmbeddingTrainDataset = "out/train_dataset.json"
 EmbeddingValDataset = "out/val_dataset.json"

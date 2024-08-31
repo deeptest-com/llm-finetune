@@ -13,8 +13,8 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
 
-TRAIN_FILES = traverse_files("data/aerospace_utf8_mini", num=1)
-VAL_FILES = traverse_files("data/aerospace_utf8_mini", num=1)
+TRAIN_FILES = traverse_files(EmbeddingTrainFile, num=-1)
+VAL_FILES = traverse_files(EmbeddingValFile, num=-1)
 
 TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
 VAL_CORPUS_FPATH = EmbeddingValDataset
@@ -40,12 +40,10 @@ train_nodes = load_corpus(TRAIN_FILES, verbose=True)
 val_nodes = load_corpus(VAL_FILES, verbose=True)
 
 model = "llama3_cn"
-api_key = 'ollama'
-# openai_url='http://localhost:11434/v1/'
+base_url='http://vvtg1184983.bohrium.tech:11434'
 
 llm = Ollama(
         model=model,
-        api_key=api_key,
         request_timeout=600.0,
         query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
     
@@ -54,7 +52,7 @@ llm = Ollama(
                 """),
         max_new_tokens=3000,
         context_window=8*1024,
-        # openai_url=openai_url,
+        base_url=base_url,
     )
 
 train_dataset = generate_qa_embedding_pairs(
