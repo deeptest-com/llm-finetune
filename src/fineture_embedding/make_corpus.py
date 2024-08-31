@@ -13,8 +13,8 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
 
-TRAIN_FILES = traverse_files(EmbeddingTrainFile, num=-1)
-VAL_FILES = traverse_files(EmbeddingValFile, num=-1)
+TRAIN_FILES = traverse_files(EmbeddingTrainFile)
+VAL_FILES = traverse_files(EmbeddingValFile)
 
 TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
 VAL_CORPUS_FPATH = EmbeddingValDataset

@@ -15,7 +15,7 @@ def get_llama3_model_path():
     model_path = get_dotenv_var('Llama3ModulePath')
     return model_path
 
-def traverse_files(dir, num=3):
+def traverse_files(dir, num=-1):
     ret = []
 
     path = get_project_dir()
