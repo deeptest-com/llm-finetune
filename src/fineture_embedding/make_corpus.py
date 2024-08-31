@@ -13,8 +13,8 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
 
-TRAIN_FILES = traverse_files(EmbeddingTrainFile, num=2)
-VAL_FILES = traverse_files(EmbeddingValFile, num=2)
+TRAIN_FILES = traverse_files("data/aerospace_utf8_mini", num=1)
+VAL_FILES = traverse_files("data/aerospace_utf8_mini", num=1)
 
 TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
 VAL_CORPUS_FPATH = EmbeddingValDataset
@@ -46,7 +46,7 @@ api_key = 'ollama'
 llm = Ollama(
         model=model,
         api_key=api_key,
-        request_timeout=120.0,
+        request_timeout=600.0,
         query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
     
                     {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
