@@ -4,7 +4,7 @@ from src.fineture_llama3.helper import get_alpaca_prompt
 
 host = "localhost"
 port = "11434"
-ollama = Ollama(base_url=f"http://{host}:{port}", model="llama3-zh:latest", temperature=0)
+ollama = Ollama(base_url=f"http://{host}:{port}", model="llama3_cn", temperature=0)
 
 msg = "介绍下你自己"
 msg = get_alpaca_prompt().format(

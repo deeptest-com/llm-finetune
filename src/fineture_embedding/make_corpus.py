@@ -3,10 +3,13 @@ from llama_index.core.node_parser import SentenceSplitter
 
 from src.config import EmbeddingTrainDataset, EmbeddingValDataset, EmbeddingValFile, EmbeddingTrainFile
 from src.lib.file import traverse_files
-from src.lib.tool import get_openai_key, get_openai_url
 
-TRAIN_FILES = traverse_files(EmbeddingTrainFile)
-VAL_FILES = traverse_files(EmbeddingValFile)
+from llama_index.llms.ollama import Ollama
+from llama_index.core.prompts import PromptTemplate
+from llama_index.finetuning import generate_qa_embedding_pairs
+
+TRAIN_FILES = traverse_files(EmbeddingTrainFile, num=2)
+VAL_FILES = traverse_files(EmbeddingValFile, num=2)
 
 TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
 VAL_CORPUS_FPATH = EmbeddingValDataset
@@ -31,19 +34,22 @@ def load_corpus(files, verbose=False):
 train_nodes = load_corpus(TRAIN_FILES, verbose=True)
 val_nodes = load_corpus(VAL_FILES, verbose=True)
 
-from llama_index.finetuning import generate_qa_embedding_pairs
-from llama_index.llms.openai import OpenAI
-
-# model = "gpt-4o"
-# openai_url=get_openai_url(),
-# api_key=get_openai_key()
 model = "llama3_cn"
-openai_url='http://localhost:11434/v1/'
-api_key = 'ollama' # required but ignored
-llm = OpenAI(
+api_key = 'ollama'
+# openai_url='http://localhost:11434/v1/'
+
+llm = Ollama(
         model=model,
-        api_base=openai_url,
         api_key=api_key,
+        request_timeout=120.0,
+        query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+    
+                    {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+    
+                """),
+        max_new_tokens=3000,
+        context_window=8*1024,
+        # openai_url=openai_url,
     )
 
 train_dataset = generate_qa_embedding_pairs(

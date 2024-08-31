@@ -10,7 +10,7 @@ msg = get_alpaca_prompt().format(
     )
 
 stream = ollama.chat(
-    model='llama3-zh',
+    model='llama3_cn',
     messages=[{'role': 'user', 'content': msg}],
     stream=True,
 )

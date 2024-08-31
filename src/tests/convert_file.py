@@ -5,7 +5,7 @@ from src.lib.file import traverse_files
 encode_in = 'GB18030'
 encode_out = 'utf-8'
 
-src = traverse_files("data/aerospace", num=10)
+src = traverse_files("data/aerospace", num=-1)
 
 for filename in src:
     with codecs.open(filename=filename, mode='r', encoding=encode_in) as fi:
