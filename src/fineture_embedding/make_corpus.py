@@ -4,7 +4,7 @@ work_dir = os.getcwd()
 sys.path.append(work_dir)
 
 from llama_index.core import SimpleDirectoryReader
-from llama_index.core.node_parser import SentenceSplitter
+from llama_index.core.node_parser import SentenceSplitter, SimpleNodeParser
 
 from src.config import EmbeddingTrainDataset, EmbeddingValDataset, EmbeddingValFile, EmbeddingTrainFile
 from src.lib.file import traverse_files
@@ -14,30 +14,33 @@ from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
 
 TRAIN_FILES = traverse_files(EmbeddingTrainFile)
-VAL_FILES = traverse_files(EmbeddingValFile)
+# VAL_FILES = traverse_files(EmbeddingValFile)
 
 TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
 VAL_CORPUS_FPATH = EmbeddingValDataset
 
-def load_corpus(files, verbose=False):
-    if verbose:
-        print(f"Loading files {files}")
-
-    reader = SimpleDirectoryReader(input_files=files)
-    docs = reader.load_data()
-    if verbose:
-        print(f"Loaded {len(docs)} docs")
-
+def load_corpus(docs, for_training=False, verbose=False):
+    # parser = SimpleNodeParser.from_defaults()
     parser = SentenceSplitter()
-    nodes = parser.get_nodes_from_documents(docs, show_progress=verbose)
+
+    num = int(len(docs) * 0.7)
+
+    if for_training:
+        nodes = parser.get_nodes_from_documents(docs[:num], show_progress=verbose)
+    else:
+        nodes = parser.get_nodes_from_documents(docs[num:], show_progress=verbose)
 
     if verbose:
-        print(f"Parsed {len(nodes)} nodes")
+        print(f'Parsed {len(nodes)} nodes')
 
     return nodes
 
-train_nodes = load_corpus(TRAIN_FILES, verbose=True)
-val_nodes = load_corpus(VAL_FILES, verbose=True)
+reader = SimpleDirectoryReader(input_files=TRAIN_FILES)
+docs = reader.load_data()
+print(f"Loaded {len(docs)} docs")
+
+train_nodes = load_corpus(docs, for_training=True, verbose=True)
+val_nodes = load_corpus(docs, for_training=False, verbose=True)
 
 model = "llama3_cn"
 base_url='http://vvtg1184983.bohrium.tech:11434'
