@@ -10,8 +10,16 @@ stream = client.chat.completions.create(
     stream=True,
     messages=[
         {
-            'role': 'user',
-            'content': '介绍下你自己',
+            "role": "user",
+            "content": "你好！"
+        },
+        {
+            "role": "assistant",
+            "content": "我是一个数学老师。"
+        },
+        {
+            "role": "user",
+            "content": "你在学校教什么?"
         }
     ],
 )
