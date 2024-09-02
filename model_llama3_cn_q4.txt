@@ -1,4 +1,4 @@
-FROM "/root/.cache/modelscope/hub/XD_AI/Llama3___1-8B-Chinese-Chat/gguf/llama3.1_8b_chinese_chat_f16.gguf"
+FROM "/root/.cache/modelscope/hub/XD_AI/Llama3___1-8B-Chinese-Chat/gguf/llama3.1_8b_chinese_chat_q4_k_m.gguf"
 
 TEMPLATE """{{- if .System }}
 <|im_start|>system {{ .System }}<|im_end|>
