@@ -31,16 +31,20 @@ def load_corpus(docs, for_training=False, verbose=False):
 model = "llama3_cn"
 base_url = 'http://vvtg1184983.bohrium.tech:50001'
 
-dir_train_dataset = "out/train_dataset"
-if os.path.isfile(dir_train_dataset):
-    os.remove(dir_train_dataset)
-    os.mkdir(dir_train_dataset)
-dir_val_dataset = "out/val_dataset"
-if os.path.isfile(dir_val_dataset):
-    os.remove(dir_val_dataset)
-    os.mkdir(dir_val_dataset)
+from src.lib.file import get_project_dir
+project_dir = get_project_dir()
 
-for i in range(101):
+dir_train_dataset = os.path.join(project_dir, "out/train_dataset")
+if os.path.isdir(dir_train_dataset):
+    os.remove(dir_train_dataset)
+os.mkdir(dir_train_dataset)
+
+dir_val_dataset = os.path.join(project_dir, "out/val_dataset")
+if os.path.isdir(dir_val_dataset):
+    os.remove(dir_val_dataset)
+os.mkdir(dir_val_dataset)
+
+for i in range(0, 101):
     llm = Ollama(
         model=model,
         request_timeout=600.0,
@@ -73,6 +77,8 @@ for i in range(101):
     s = str(i).zfill(2)
     train_dataset.save_json(EmbeddingTrainDataset.format(s))
     val_dataset.save_json(EmbeddingValDataset.format(s))
+
+    print('====== completed i = {}'.format(i))
 
 # train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
 # val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
