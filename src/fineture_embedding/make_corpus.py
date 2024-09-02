@@ -43,7 +43,7 @@ train_nodes = load_corpus(docs, for_training=True, verbose=True)
 val_nodes = load_corpus(docs, for_training=False, verbose=True)
 
 model = "llama3_cn"
-base_url='http://vvtg1184983.bohrium.tech:11434'
+base_url='http://vvtg1184983.bohrium.tech:50001'
 
 llm = Ollama(
         model=model,
