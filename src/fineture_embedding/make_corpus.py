@@ -1,4 +1,5 @@
 import os
+import shutil
 import sys
 import time
 
@@ -38,29 +39,28 @@ project_dir = get_project_dir()
 
 dir_train_dataset = os.path.join(project_dir, "out/train_dataset")
 if os.path.isdir(dir_train_dataset):
-    os.remove(dir_train_dataset)
+    shutil.rmtree(dir_train_dataset)
 os.mkdir(dir_train_dataset)
 
 dir_val_dataset = os.path.join(project_dir, "out/val_dataset")
 if os.path.isdir(dir_val_dataset):
-    os.remove(dir_val_dataset)
+    shutil.rmtree(dir_val_dataset)
 os.mkdir(dir_val_dataset)
 
-llm = Ollama(
-    model=model,
-    request_timeout=600.0,
-    query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
-
-                    {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
-                """),
-    max_new_tokens=3000,
-    context_window=8 * 1024,
-    base_url=base_url,
-    num_gpu=4,
-)
-
 for i in range(0, 101):
+    llm = Ollama(
+        model=model,
+        request_timeout=600.0,
+        query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+                        {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+                    """),
+        max_new_tokens=3000,
+        context_window=8 * 1024,
+        base_url=base_url,
+        num_gpu=4,
+    )
 
     cache = os.path.join(project_dir, "qa_finetune_dataset.json")
     if os.path.isfile(cache):
