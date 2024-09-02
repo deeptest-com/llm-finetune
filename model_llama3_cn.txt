@@ -1,0 +1,14 @@
+FROM "/root/.cache/modelscope/hub/XD_AI/Llama3___1-8B-Chinese-Chat/gguf/llama3.1_8b_chinese_chat_f16.gguf"
+
+TEMPLATE """{{- if .System }}
+<|im_start|>system {{ .System }}<|im_end|>
+{{- end }}
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+SYSTEM """"""
+
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
