@@ -58,6 +58,10 @@ for i in range(0, 101):
         base_url=base_url,
     )
 
+    cache = os.path.join(project_dir, "qa_finetune_dataset.json")
+    if os.path.isfile(cache):
+        os.remove(cache)
+
     TRAIN_FILES = traverse_files(EmbeddingTrainFile, start=i * 10, num=10)
     # VAL_FILES = traverse_files(EmbeddingValFile)
 
