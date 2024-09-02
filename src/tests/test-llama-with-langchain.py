@@ -2,7 +2,7 @@ from langchain_community.llms import Ollama
 
 from src.fineture_llama3.helper import get_alpaca_prompt
 
-host = "localhost"
+host = "vvtg1184983.bohrium.tech"
 port = "11434"
 ollama = Ollama(base_url=f"http://{host}:{port}", model="llama3_cn", temperature=0)
 
