@@ -15,17 +15,22 @@ def get_llama3_model_path():
     model_path = get_dotenv_var('Llama3ModulePath')
     return model_path
 
-def traverse_files(dir, num=-1):
+def traverse_files(dir, start=0, num=-1):
     ret = []
 
     path = get_project_dir()
     path = os.path.join(path, dir)
 
+    index = 0
     count = 0
     brk = False
 
     for root, dirs, files in os.walk(path):
         for file in files:
+            if index < start:
+                index += 1
+                continue
+
             file_path = os.path.join(root, file)
             print(file_path)
 

@@ -12,13 +12,6 @@ from src.lib.file import traverse_files
 from llama_index.llms.ollama import Ollama
 from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
-
-TRAIN_FILES = traverse_files(EmbeddingTrainFile)
-# VAL_FILES = traverse_files(EmbeddingValFile)
-
-TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
-VAL_CORPUS_FPATH = EmbeddingValDataset
-
 def load_corpus(docs, for_training=False, verbose=False):
     # parser = SimpleNodeParser.from_defaults()
     parser = SentenceSplitter()
@@ -35,34 +28,51 @@ def load_corpus(docs, for_training=False, verbose=False):
 
     return nodes
 
-reader = SimpleDirectoryReader(input_files=TRAIN_FILES)
-docs = reader.load_data()
-print(f"Loaded {len(docs)} docs")
-
-train_nodes = load_corpus(docs, for_training=True, verbose=True)
-val_nodes = load_corpus(docs, for_training=False, verbose=True)
-
 model = "llama3_cn"
-base_url='http://vvtg1184983.bohrium.tech:50001'
+base_url = 'http://vvtg1184983.bohrium.tech:50001'
 
-llm = Ollama(
+dir_train_dataset = "out/train_dataset"
+if os.path.isfile(dir_train_dataset):
+    os.remove(dir_train_dataset)
+    os.mkdir(dir_train_dataset)
+dir_val_dataset = "out/val_dataset"
+if os.path.isfile(dir_val_dataset):
+    os.remove(dir_val_dataset)
+    os.mkdir(dir_val_dataset)
+
+for i in range(101):
+    llm = Ollama(
         model=model,
         request_timeout=600.0,
         query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
-    
-                    {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-    
-                """),
+
+                        {query_str}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+                    """),
         max_new_tokens=3000,
-        context_window=8*1024,
+        context_window=8 * 1024,
         base_url=base_url,
     )
 
-train_dataset = generate_qa_embedding_pairs(llm=llm, nodes=train_nodes)
-val_dataset = generate_qa_embedding_pairs(llm=llm, nodes=val_nodes)
+    TRAIN_FILES = traverse_files(EmbeddingTrainFile, start=i * 10, num=10)
+    # VAL_FILES = traverse_files(EmbeddingValFile)
 
-train_dataset.save_json(EmbeddingTrainDataset)
-val_dataset.save_json(EmbeddingValDataset)
+    TRAIN_CORPUS_FPATH = EmbeddingTrainDataset
+    VAL_CORPUS_FPATH = EmbeddingValDataset
+
+    reader = SimpleDirectoryReader(input_files=TRAIN_FILES)
+    docs = reader.load_data()
+    print(f"Loaded {len(docs)} docs")
+
+    train_nodes = load_corpus(docs, for_training=True, verbose=True)
+    val_nodes = load_corpus(docs, for_training=False, verbose=True)
+
+    train_dataset = generate_qa_embedding_pairs(llm=llm, nodes=train_nodes)
+    val_dataset = generate_qa_embedding_pairs(llm=llm, nodes=val_nodes)
+
+    s = str(i).zfill(2)
+    train_dataset.save_json(EmbeddingTrainDataset.format(s))
+    val_dataset.save_json(EmbeddingValDataset.format(s))
 
 # train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
 # val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
