@@ -87,7 +87,7 @@ for i in range(0, 101):
     val_dataset.save_json(EmbeddingValDataset.format(s))
 
     print('====== completed i = {}'.format(i))
-    time.sleep(10000)
+    time.sleep(10)
 
 # train_dataset = EmbeddingQAFinetuneDataset.from_json(TrainDataset)
 # val_dataset = EmbeddingQAFinetuneDataset.from_json(ValDataset)
