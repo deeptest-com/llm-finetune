@@ -12,7 +12,7 @@ from llama_index.core.node_parser import SentenceSplitter, SimpleNodeParser
 from src.config import EmbeddingTrainDataset, EmbeddingValDataset, EmbeddingValFile, EmbeddingTrainFile
 from src.lib.file import traverse_files
 
-from llama_index.llms.openai import OpenAI
+from llama_index.llms.ollama import Ollama
 from llama_index.core.prompts import PromptTemplate
 from llama_index.finetuning import generate_qa_embedding_pairs
 def load_corpus(docs, for_training=False, verbose=False):
@@ -31,6 +31,9 @@ def load_corpus(docs, for_training=False, verbose=False):
 
     return nodes
 
+model = "llama3_cn"
+base_url = 'http://vvtg1184983.bohrium.tech:50001'
+
 from src.lib.file import get_project_dir
 project_dir = get_project_dir()
 
@@ -44,11 +47,8 @@ if os.path.isdir(dir_val_dataset):
     shutil.rmtree(dir_val_dataset)
 os.mkdir(dir_val_dataset)
 
-model = "gpt-4"
-base_url = 'http://vvtg1184983.bohrium.tech:50001/v1/'
-
 for i in range(0, 101):
-    llm = OpenAI(
+    llm = Ollama(
         model=model,
         request_timeout=600.0,
         query_wrapper_prompt=PromptTemplate("""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
@@ -58,7 +58,7 @@ for i in range(0, 101):
                     """),
         max_new_tokens=3000,
         context_window=8 * 1024,
-        # api_base=base_url,
+        base_url=base_url,
     )
 
     cache = os.path.join(project_dir, "qa_finetune_dataset.json")
