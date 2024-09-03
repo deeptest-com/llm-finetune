@@ -1,0 +1,15 @@
+FROM "/root/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct-Q5_K_M.gguf"
+
+TEMPLATE """{{- if .System }}
+<|im_start|>system {{ .System }}<|im_end|>
+{{- end }}
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+SYSTEM """"""
+
+PARAMETER num_gpu 999
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
