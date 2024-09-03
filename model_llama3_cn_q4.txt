@@ -10,6 +10,6 @@ TEMPLATE """{{- if .System }}
 
 SYSTEM """"""
 
-PARAMETER num_gpu 4
+PARAMETER num_gpu 999
 PARAMETER stop <|im_start|>
 PARAMETER stop <|im_end|>
