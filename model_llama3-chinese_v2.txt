@@ -1,0 +1,15 @@
+FROM "/root/.cache/modelscope/hub/baicai003/Llama3-Chinese_v2"
+
+TEMPLATE """{{- if .System }}
+<|im_start|>system {{ .System }}<|im_end|>
+{{- end }}
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+SYSTEM """"""
+
+PARAMETER num_gpu 999
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
