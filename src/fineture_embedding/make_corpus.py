@@ -60,7 +60,7 @@ llm = Ollama(
     base_url=base_url,
 )
 
-for i in range(84, 101):
+for i in range(0, 101):
     cache = os.path.join(project_dir, "qa_finetune_dataset.json")
     if os.path.isfile(cache):
         os.remove(cache)
