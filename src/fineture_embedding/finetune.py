@@ -7,10 +7,12 @@ from llama_index.finetuning import SentenceTransformersFinetuneEngine
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 
 from src.config import EmbeddingValDataset, EmbeddingTrainDataset, EmbeddingFinetunedModelOutput
-from src.lib.file import get_embedding_model_path
+from src.lib.file import get_embedding_model_path, get_project_dir
 
-train_dataset = EmbeddingQAFinetuneDataset.from_json(EmbeddingTrainDataset)
-val_dataset = EmbeddingQAFinetuneDataset.from_json(EmbeddingValDataset)
+work_dir = get_project_dir()
+
+train_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/train_dataset.json"))
+val_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/val_dataset.json"))
 
 embedding_model_path = get_embedding_model_path()
 
