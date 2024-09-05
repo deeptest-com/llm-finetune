@@ -3,5 +3,3 @@
 /out/bge-base-zh-v1.5-finetuned/
 /qa_finetune_dataset.json
 /data/files/alpaca_data_cleaned_en/
-/out/train_dataset.json
-/out/val_dataset.json
