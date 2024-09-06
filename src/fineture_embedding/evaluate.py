@@ -72,13 +72,13 @@ def evaluate(
 val_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/val_dataset.json"))
 
 # 原始模型
-val_results_origin = evaluate(val_dataset, f"local:{get_embedding_model_path()}")
-df_finetuned_origin = pd.DataFrame(val_results_origin)
-hit_rate_finetuned = df_finetuned_origin["is_hit"].mean()
-print(f"===== before finetuned, hit rate = {hit_rate_finetuned} \n")
+# val_results_origin = evaluate(val_dataset, f"local:{get_embedding_model_path()}")
+# df_finetuned_origin = pd.DataFrame(val_results_origin)
+# hit_rate_finetuned = df_finetuned_origin["is_hit"].mean()
+# print(f"===== before finetuned, hit rate = {hit_rate_finetuned} \n")
 
 # 微调后模型
 val_results_finetuned = evaluate(val_dataset, f"local:{EmbeddingFinetunedModelOutput}")
-df_finetuned_finetuned = pd.DataFrame(val_results_origin)
+df_finetuned_finetuned = pd.DataFrame(val_results_finetuned)
 hit_rate_finetuned = df_finetuned_finetuned["is_hit"].mean()
 print(f"====== after finetuned, hit rate = {hit_rate_finetuned} \n")
