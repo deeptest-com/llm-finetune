@@ -12,6 +12,9 @@ from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 from src.config import EmbeddingValDataset, EmbeddingTrainDataset, EmbeddingFinetunedModelOutput
 from src.lib.file import get_project_dir
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:0"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
 work_dir = get_project_dir()
 
 train_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/train_dataset.json"))
