@@ -1,10 +1,9 @@
 import os
 import sys
-
-from src.lib.llm import get_embedding_model_path
-
 work_dir = os.getcwd()
 sys.path.append(work_dir)
+
+from src.lib.llm import get_embedding_model_path
 
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 from llama_index.core import VectorStoreIndex
