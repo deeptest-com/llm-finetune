@@ -40,23 +40,16 @@ def evaluate(
 
     print(f"1 {len(queries.items())} \n")
 
-
     eval_results = []
+
+    count = 0
     for query_id, query in tqdm(queries.items()):
         retrieved_nodes = retriever.retrieve(query)
 
-        print(retrieved_nodes.__str__())
-        if len(retrieved_nodes) > 0:
-            print(retrieved_nodes[0].__str__())
-        print("1\n")
-
         retrieved_ids = [node.node.node_id for node in retrieved_nodes]
-        print("2\n")
         expected_id = relevant_docs[query_id][0]
-        print("3\n")
 
         is_hit = expected_id in retrieved_ids  # assume 1 relevant doc
-        print("4\n")
 
         eval_result = {
             "is_hit": is_hit,
@@ -64,8 +57,16 @@ def evaluate(
             "expected": expected_id,
             "query": query_id,
         }
+
+        print(f"START {count} ------\n")
+        print(eval_result.__str__())
+        print(f"END   {count} ------\n")
+
         eval_results.append(eval_result)
-        print("5\n")
+
+        count += 1
+        if count >= 100:
+            break
 
     return eval_results
 
