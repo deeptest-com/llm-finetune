@@ -13,6 +13,8 @@ import pandas as pd
 
 from src.config import EmbeddingValDataset, EmbeddingFinetunedModelOutput
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:4000"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 def evaluate(
         dataset,
