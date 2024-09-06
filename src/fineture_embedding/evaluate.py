@@ -47,6 +47,7 @@ def evaluate(
         eval_results.append(eval_result)
     return eval_results
 
+
 val_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/val_dataset.json"))
 
 # 原始模型
