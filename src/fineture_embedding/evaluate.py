@@ -28,8 +28,6 @@ def evaluate(
 
     nodes = [TextNode(id_=id_, text=text) for id_, text in corpus.items()]
 
-    print("0\n")
-
     index = VectorStoreIndex(
         nodes,
         embed_model=embed_model_path,
