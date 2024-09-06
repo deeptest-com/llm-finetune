@@ -36,7 +36,7 @@ def evaluate(
 
     retriever = index.as_retriever(similarity_top_k=top_k)
 
-    print(f"1 {len(queries.items())} \n")
+    print(f"1 queries length = {len(queries.items())} \n")
 
     eval_results = []
 
@@ -56,9 +56,9 @@ def evaluate(
             "query": query_id,
         }
 
-        print(f"START {count} ------\n")
+        print(f"2 START {count} ------\n")
         print(eval_result.__str__())
-        print(f"END   {count} ------\n")
+        print(f"2 END   {count} ------\n")
 
         eval_results.append(eval_result)
 
