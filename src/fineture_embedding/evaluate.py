@@ -42,6 +42,10 @@ def evaluate(
 
     count = 0
     for query_id, query in tqdm(queries.items()):
+        count += 1
+        if count % 10 > 0:
+            continue
+
         retrieved_nodes = retriever.retrieve(query)
 
         retrieved_ids = [node.node.node_id for node in retrieved_nodes]
@@ -61,10 +65,6 @@ def evaluate(
         print(f"2 END   {count} ------\n")
 
         eval_results.append(eval_result)
-
-        count += 1
-        if count >= 100:
-            break
 
     return eval_results
 
