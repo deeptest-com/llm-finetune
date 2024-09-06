@@ -38,6 +38,9 @@ def evaluate(
 
     retriever = index.as_retriever(similarity_top_k=top_k)
 
+    print(f"1 {len(queries.items())} \n")
+
+
     eval_results = []
     for query_id, query in tqdm(queries.items()):
         retrieved_nodes = retriever.retrieve(query)
@@ -54,7 +57,7 @@ def evaluate(
 
         is_hit = expected_id in retrieved_ids  # assume 1 relevant doc
         print("4\n")
-        
+
         eval_result = {
             "is_hit": is_hit,
             "retrieved": retrieved_ids,
