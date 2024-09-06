@@ -1,5 +1,8 @@
 import os
 import sys
+
+from src.lib.llm import get_embedding_model_path
+
 work_dir = os.getcwd()
 sys.path.append(work_dir)
 
@@ -7,7 +10,7 @@ from llama_index.finetuning import SentenceTransformersFinetuneEngine
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 
 from src.config import EmbeddingValDataset, EmbeddingTrainDataset, EmbeddingFinetunedModelOutput
-from src.lib.file import get_embedding_model_path, get_project_dir
+from src.lib.file import get_project_dir
 
 work_dir = get_project_dir()
 
