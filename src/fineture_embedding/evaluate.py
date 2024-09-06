@@ -16,7 +16,7 @@ from src.config import EmbeddingValDataset, EmbeddingFinetunedModelOutput
 
 def evaluate(
         dataset,
-        embed_model,
+        embed_model_path,
         top_k=5,
         verbose=False,
 ):
@@ -27,9 +27,10 @@ def evaluate(
     nodes = [TextNode(id_=id_, text=text) for id_, text in corpus.items()]
     index = VectorStoreIndex(
         nodes,
-        embed_model=embed_model,
+        embed_model=embed_model_path,
         show_progress=True
     )
+
     retriever = index.as_retriever(similarity_top_k=top_k)
 
     eval_results = []
