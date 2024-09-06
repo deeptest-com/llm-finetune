@@ -27,7 +27,9 @@ def evaluate(
 
     nodes = [TextNode(id_=id_, text=text) for id_, text in corpus.items()]
     index = VectorStoreIndex(
-        nodes, embed_model=embed_model, show_progress=True
+        nodes,
+        embed_model=embed_model,
+        show_progress=True
     )
     retriever = index.as_retriever(similarity_top_k=top_k)
 
@@ -36,6 +38,7 @@ def evaluate(
         retrieved_nodes = retriever.retrieve(query)
         retrieved_ids = [node.node.node_id for node in retrieved_nodes]
         expected_id = relevant_docs[query_id][0]
+
         is_hit = expected_id in retrieved_ids  # assume 1 relevant doc
 
         eval_result = {
