@@ -1,5 +1,6 @@
 import os
 import sys
+
 work_dir = os.getcwd()
 sys.path.append(work_dir)
 
@@ -11,11 +12,12 @@ import pandas as pd
 
 from src.config import EmbeddingValDataset, EmbeddingFinetunedModelOutput
 
+
 def evaluate(
-    dataset,
-    embed_model,
-    top_k=5,
-    verbose=False,
+        dataset,
+        embed_model,
+        top_k=5,
+        verbose=False,
 ):
     corpus = dataset.corpus
     queries = dataset.queries
@@ -43,15 +45,14 @@ def evaluate(
         eval_results.append(eval_result)
     return eval_results
 
+
 # 原始模型
 
 # 微调后模型
-val_dataset = EmbeddingQAFinetuneDataset.from_json(EmbeddingValDataset)
+val_dataset = EmbeddingQAFinetuneDataset.from_json(os.path.join(work_dir, "out/val_dataset.json"))
 val_results_finetuned = evaluate(val_dataset, f"local:{EmbeddingFinetunedModelOutput}")
 
 df_finetuned = pd.DataFrame(val_results_finetuned)
 
 hit_rate_finetuned = df_finetuned["is_hit"].mean()
 print(hit_rate_finetuned)
-
-
