@@ -13,7 +13,7 @@ import pandas as pd
 
 from src.config import EmbeddingValDataset, EmbeddingFinetunedModelOutput
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:4000"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:0"
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 def evaluate(
@@ -27,17 +27,25 @@ def evaluate(
     relevant_docs = dataset.relevant_docs
 
     nodes = [TextNode(id_=id_, text=text) for id_, text in corpus.items()]
+
+    print("0\n")
+
     index = VectorStoreIndex(
         nodes,
         embed_model=embed_model_path,
         show_progress=True
     )
-
+    print("1\n")
     retriever = index.as_retriever(similarity_top_k=top_k)
+
+    print("2\n")
 
     eval_results = []
     for query_id, query in tqdm(queries.items()):
+        print("3\n")
         retrieved_nodes = retriever.retrieve(query)
+        print("4\n")
+
         retrieved_ids = [node.node.node_id for node in retrieved_nodes]
         expected_id = relevant_docs[query_id][0]
 
