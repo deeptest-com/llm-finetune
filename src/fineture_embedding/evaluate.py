@@ -35,22 +35,26 @@ def evaluate(
         embed_model=embed_model_path,
         show_progress=True
     )
-    print("1\n")
-    retriever = index.as_retriever(similarity_top_k=top_k)
 
-    print("2\n")
+    retriever = index.as_retriever(similarity_top_k=top_k)
 
     eval_results = []
     for query_id, query in tqdm(queries.items()):
-        print("3\n")
         retrieved_nodes = retriever.retrieve(query)
-        print("4\n")
+
+        print(retrieved_nodes.__str__())
+        if len(retrieved_nodes) > 0:
+            print(retrieved_nodes[0].__str__())
+        print("1\n")
 
         retrieved_ids = [node.node.node_id for node in retrieved_nodes]
+        print("2\n")
         expected_id = relevant_docs[query_id][0]
+        print("3\n")
 
         is_hit = expected_id in retrieved_ids  # assume 1 relevant doc
-
+        print("4\n")
+        
         eval_result = {
             "is_hit": is_hit,
             "retrieved": retrieved_ids,
@@ -58,6 +62,8 @@ def evaluate(
             "query": query_id,
         }
         eval_results.append(eval_result)
+        print("5\n")
+
     return eval_results
 
 
